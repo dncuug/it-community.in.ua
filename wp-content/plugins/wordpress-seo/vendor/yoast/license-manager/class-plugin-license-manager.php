@@ -20,7 +20,7 @@ if ( class_exists( 'Yoast_License_Manager' ) && ! class_exists( "Yoast_Plugin_Li
 					require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
 				}
 
-				$this->is_network_activated = is_plugin_active_for_network( $product->get_slug() );
+				$this->is_network_activated = is_plugin_active_for_network( $product->get_file() );
 			}
 		}
 
@@ -28,7 +28,12 @@ if ( class_exists( 'Yoast_License_Manager' ) && ! class_exists( "Yoast_Plugin_Li
 		 * Setup auto updater for plugins
 		 */
 		public function setup_auto_updater() {
-			if ( $this->license_is_valid() ) {
+			/**
+			 * Filter: 'yoast-license-valid' - Perform action when license is valid or hook returns true.
+			 *
+			 * @api bool $is_valid True if the license is valid.
+			 */
+			if ( apply_filters( 'yoast-license-valid', $this->license_is_valid() ) ) {
 				// setup auto updater
 				require_once( dirname( __FILE__ ) . '/class-update-manager.php' );
 				require_once( dirname( __FILE__ ) . '/class-plugin-update-manager.php' );
@@ -42,7 +47,7 @@ if ( class_exists( 'Yoast_License_Manager' ) && ! class_exists( "Yoast_Plugin_Li
 		public function specific_hooks() {
 
 			// deactivate the license remotely on plugin deactivation
-			register_deactivation_hook( $this->product->get_slug(), array( $this, 'deactivate_license' ) );
+			register_deactivation_hook( $this->product->get_file(), array( $this, 'deactivate_license' ) );
 		}
 
         /**
@@ -86,5 +91,5 @@ if ( class_exists( 'Yoast_License_Manager' ) && ! class_exists( "Yoast_Plugin_Li
 	        }
         }
 	}
-}
 
+}

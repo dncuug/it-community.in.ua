@@ -10,6 +10,12 @@
  */
 class WPSEO_Export {
 
+	const ZIP_FILENAME = 'yoast-seo-settings-export.zip';
+	const INI_FILENAME = 'settings.ini';
+
+	const NONCE_ACTION = 'wpseo_export';
+	const NONCE_NAME   = 'wpseo_export_nonce';
+
 	/**
 	 * @var string
 	 */
@@ -51,65 +57,68 @@ class WPSEO_Export {
 	public function __construct( $include_taxonomy = false ) {
 		$this->include_taxonomy = $include_taxonomy;
 		$this->dir              = wp_upload_dir();
-		$this->success          = $this->export_settings();
+
+		$this->export_settings();
 	}
 
 	/**
-	 * Returns an array with status and output message.
+	 * Returns true when the property error has a value.
 	 *
-	 * @return array $results
+	 * @return bool
 	 */
-	public function get_results() {
-		$results = array();
-		if ( $this->success ) {
-			$results['status'] = 'success';
-			$results['msg']    = sprintf( __( 'Export created: %1$sdownload your export file here%2$s.', 'wordpress-seo' ), '<a href="' . $this->export_zip_url . '">', '</a>' );
-		}
-		else {
-			$results['status'] = 'failure';
-			/* translators: %1$s expands to Yoast SEO */
-			$results['msg']    = sprintf( __( 'Error creating %1$s export: ', 'wordpress-seo' ), 'Yoast SEO' ) . $this->error;
-		}
+	public function has_error() {
+		return ( $this->error !== '' );
+	}
 
-		return $results;
+	/**
+	 * Sets the error hook, to display the error to the user.
+	 */
+	public function set_error_hook() {
+		/* translators: %1$s expands to Yoast SEO */
+		$message = sprintf( __( 'Error creating %1$s export: ', 'wordpress-seo' ), 'Yoast SEO' ) . $this->error;
+
+		printf(
+			'<div class="notice notice-error"><p>%1$s</p></div>',
+			$message
+		);
 	}
 
 	/**
 	 * Exports the current site's WP SEO settings.
-	 *
-	 * @return boolean|string $return true when success, error when failed.
 	 */
 	private function export_settings() {
 
 		$this->export_header();
 
 		foreach ( WPSEO_Options::get_option_names() as $opt_group ) {
-			$this->write_opt_group( $opt_group, $this->export );
+			$this->write_opt_group( $opt_group );
 		}
 
 		$this->taxonomy_metadata();
 
-		if ( $this->write_file() ) {
-			if ( $this->zip_file() ) {
-				return true;
-			}
-			else {
-				$this->error = __( 'Could not zip settings-file.', 'wordpress-seo' );
+		if ( ! $this->write_settings_file() ) {
+			$this->error = __( 'Could not write settings to file.', 'wordpress-seo' );
 
-				return false;
-			}
+			return;
 		}
-		$this->error = __( 'Could not write settings to file.', 'wordpress-seo' );
 
-		return false;
+		if ( $this->zip_file() ) {
+			// Just exit, because there is a download being served.
+			exit;
+		}
 	}
 
 	/**
 	 * Writes the header of the export file.
 	 */
 	private function export_header() {
-		/* translators: %1$s expands to Yoast SEO */
-		$this->write_line( '; ' . sprintf( __( 'This is a settings export file for the %1$s plugin by Yoast.com', 'wordpress-seo' ), 'Yoast SEO' ) . ' - https://yoast.com/wordpress/plugins/seo/' );
+		$header = sprintf(
+			/* translators: %1$s expands to Yoast SEO, %2$s expands to Yoast.com */
+			esc_html__( 'This is a settings export file for the %1$s plugin by %2$s', 'wordpress-seo' ),
+			'Yoast SEO',
+			'Yoast.com'
+		);
+		$this->write_line( '; ' . $header . ' - ' . esc_url( WPSEO_Shortlinker::get( 'https://yoa.st/1yd' ) ) );
 		if ( $this->include_taxonomy ) {
 			$this->write_line( '; ' . __( 'This export includes taxonomy metadata', 'wordpress-seo' ) );
 		}
@@ -134,6 +143,7 @@ class WPSEO_Export {
 	 * @param string $opt_group Option group name.
 	 */
 	private function write_opt_group( $opt_group ) {
+
 		$this->write_line( '[' . $opt_group . ']', true );
 
 		$options = get_option( $opt_group );
@@ -144,7 +154,8 @@ class WPSEO_Export {
 
 		foreach ( $options as $key => $elem ) {
 			if ( is_array( $elem ) ) {
-				for ( $i = 0; $i < count( $elem ); $i ++ ) {
+				$count = count( $elem );
+				for ( $i = 0; $i < $count; $i ++ ) {
 					$this->write_setting( $key . '[]', $elem[ $i ] );
 				}
 			}
@@ -175,7 +186,7 @@ class WPSEO_Export {
 			$taxonomy_meta = get_option( 'wpseo_taxonomy_meta' );
 			if ( is_array( $taxonomy_meta ) ) {
 				$this->write_line( '[wpseo_taxonomy_meta]', true );
-				$this->write_setting( 'wpseo_taxonomy_meta', urlencode( WPSEO_Utils::json_encode( $taxonomy_meta ) ) );
+				$this->write_setting( 'wpseo_taxonomy_meta', urlencode( wp_json_encode( $taxonomy_meta ) ) );
 			}
 			else {
 				$this->write_line( '; ' . __( 'No taxonomy metadata found', 'wordpress-seo' ), true );
@@ -188,8 +199,8 @@ class WPSEO_Export {
 	 *
 	 * @return boolean unsigned
 	 */
-	private function write_file() {
-		$handle = fopen( $this->dir['path'] . '/settings.ini', 'w' );
+	private function write_settings_file() {
+		$handle = fopen( $this->dir['path'] . '/' . self::INI_FILENAME, 'w' );
 		if ( ! $handle ) {
 			return false;
 		}
@@ -207,17 +218,68 @@ class WPSEO_Export {
 	/**
 	 * Zips the settings ini file
 	 *
-	 * @return boolean unsigned
+	 * @return bool|null
 	 */
 	private function zip_file() {
-		chdir( $this->dir['path'] );
-		$zip = new PclZip( './settings.zip' );
-		if ( 0 === $zip->create( './settings.ini' ) ) {
+		$is_zip_created = $this->create_zip();
+
+		// The settings.ini isn't needed, because it's in the zipfile.
+		$this->remove_settings_ini();
+
+		if ( ! $is_zip_created ) {
+			$this->error = __( 'Could not zip settings-file.', 'wordpress-seo' );
+
 			return false;
 		}
 
-		$this->export_zip_url = $this->dir['url'] . '/settings.zip';
+		$this->serve_settings_export();
+		$this->remove_zip();
 
 		return true;
+	}
+
+	/**
+	 * Creates the zipfile and returns true if it created successful.
+	 *
+	 * @return bool
+	 */
+	private function create_zip() {
+		chdir( $this->dir['path'] );
+		$zip = new PclZip( './' . self::ZIP_FILENAME );
+		if ( 0 === $zip->create( './' . self::INI_FILENAME ) ) {
+			return false;
+		}
+
+		return file_exists( self::ZIP_FILENAME );
+	}
+
+	/**
+	 * Downloads the zip file.
+	 */
+	private function serve_settings_export() {
+		// Clean any content that has been already output. For example by other plugins or faulty PHP files.
+		if ( ob_get_contents() ) {
+			ob_clean();
+		}
+		header( 'Content-Type: application/octet-stream; charset=utf-8' );
+		header( 'Content-Transfer-Encoding: Binary' );
+		header( 'Content-Disposition: attachment; filename=' . self::ZIP_FILENAME );
+		header( 'Content-Length: ' . filesize( self::ZIP_FILENAME ) );
+
+		readfile( self::ZIP_FILENAME );
+	}
+
+	/**
+	 * Removes the settings ini file.
+	 */
+	private function remove_settings_ini() {
+		unlink( './' . self::INI_FILENAME );
+	}
+
+	/**
+	 * Removes the files because they are already downloaded.
+	 */
+	private function remove_zip() {
+		unlink( './' . self::ZIP_FILENAME );
 	}
 }

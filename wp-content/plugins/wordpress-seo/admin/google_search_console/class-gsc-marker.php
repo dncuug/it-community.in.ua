@@ -47,6 +47,7 @@ class WPSEO_GSC_Marker {
 
 	/**
 	 * Getting the response for the AJAX request
+	 *
 	 * @return string
 	 */
 	public function get_response() {
@@ -128,7 +129,7 @@ class WPSEO_GSC_Marker {
 	 * @param WPSEO_GSC_Service $service Service object instance.
 	 */
 	private function update_issue_count( WPSEO_GSC_Service $service ) {
-		$counts  = new WPSEO_GSC_Count( $service );
+		$counts = new WPSEO_GSC_Count( $service );
 
 		// Get the issues.
 		$total_issues = $counts->get_issue_count( $this->platform, $this->category );

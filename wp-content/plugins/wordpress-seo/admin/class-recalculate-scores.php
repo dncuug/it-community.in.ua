@@ -11,38 +11,37 @@
 class WPSEO_Recalculate_Scores {
 
 	/**
-	 * @var array The fields which should be always queried, can be extended by array_merge
-	 */
-	private $query_fields   = array(
-		'post_type'      => 'any',
-		'meta_key'       => '_yoast_wpseo_focuskw',
-		'posts_per_page' => -1,
-	);
-
-	/**
-	 * Constructing the object by setting the AJAX hooks
+	 * Constructing the object by modalbox, the localization and the totals.
 	 */
 	public function __construct() {
-		// Loading the modal box.
-		$this->modal_box();
+		add_action( 'admin_enqueue_scripts', array( $this, 'recalculate_assets' ) );
+		add_action( 'admin_footer', array( $this, 'modal_box' ), 20 );
 	}
 
 	/**
-	 * Initializing the modal box to be displayed when needed.
+	 * Run the localize script.
 	 */
-	private function modal_box() {
+	public function recalculate_assets() {
+		$asset_manager = new WPSEO_Admin_Asset_Manager();
+		$asset_manager->enqueue_script( 'recalculate' );
+	}
+
+	/**
+	 * Initialize the modal box to be displayed when needed.
+	 */
+	public function modal_box() {
 		// Adding the thickbox.
 		add_thickbox();
 
 		$progress = sprintf(
 			/* translators: 1: expands to a <span> containing the number of posts recalculated. 2: expands to a <strong> containing the total number of posts. */
-			__( '%1$s of %2$s done.', 'wordpress-seo' ),
+			esc_html__( '%1$s of %2$s done.', 'wordpress-seo' ),
 			'<span id="wpseo_count">0</span>',
-			'<strong id="wpseo_count_total">' . $this->calculate_posts() . '</strong>'
+			'<strong id="wpseo_count_total">0</strong>'
 		);
 
 		?>
-		<div id="wpseo_recalculate" style="display:none;">
+		<div id="wpseo_recalculate" class="hidden">
 			<p><?php esc_html_e( 'Recalculating SEO scores for all pieces of content with a focus keyword.', 'wordpress-seo' ); ?></p>
 
 			<div id="wpseo_progressbar"></div>
@@ -50,16 +49,4 @@ class WPSEO_Recalculate_Scores {
 		</div>
 		<?php
 	}
-
-	/**
-	 * Getting the total number of posts
-	 *
-	 * @return int
-	 */
-	private function calculate_posts() {
-		$count_posts_query = new WP_Query( $this->query_fields );
-
-		return $count_posts_query->found_posts;
-	}
-
 }
