@@ -1,26 +1,16 @@
 <?php
 /**
  * 
-Plugin Name: WordPress author plugin widget 
+Plugin Name: WordPress Author Profile Avatars List 
  * Plugin URI: http://themefantasy.com/plugin/wordpress-author-plugin-widget/
- * Description: The plugin is developed to display the list of authors in your sidebar using the Widget area. The Plugin is very simple just dragging and drop in the widget area and everything works fine. You can exclude the authors which you do no want to display in the sidebar widgets just by typing the author name separated by comma. Eg: sam, sabir in the column.
-
-<b>Features</b>
-1. Each author has a link which links to the author post page. 
-2. It sort the author by number of posted by the author.
-3. Make a competition of posting articles on the  website. For eg: if the author has not posted any article its name will not appear in the list.
-4. Display in tabular format.
-5. If user mouse over on the link, then it will display the author post counts.
-6. Make your author list in fancy and attractive way.( <a href="http://codecanyon.net/item/a-fancy-wordpress-author-list/6135589">Pro Version</a> ) 
- For more information click here: http://themefantasy.com/plugin/wordpress-author-plugin-widget/
-7. Fancy author demo <a href="http://codecanyon.net/item/a-fancy-wordpress-author-list/full_screen_preview/6135589">link</a> 
-8. Hide the name and link ( Pro )
+ * Description: This plugin has a simple user interface to display author information in the sidebar. All you have to do is drag the author widget into the sidebar and the plugin will do the needful.  For further information or if you have any questions/installation please do not hesitate to contact us on our website: <a href="http://themefantasy.com/plugin/wordpress-author-plugin-widget/" target="_blank">Click here</a> Step 1: Go to Widget:-> Find "Author Avatar List" -> Drag and drop wherever you want to display and fill the value. Here is the link for tutorial <a href="https://s.w.org/plugins/author-profiles/screenshot-2.png" target="_blank"> link </a>
 
  
  For more information click here : http://themefantasy.com/plugin/wordpress-author-plugin-widget/
  
- * Version: 1.2
- * Author: Sabir Abdul Gafoor
+ * Version: 1.4
+ * Tested up to: 4.8.2
+ * Author: Themefantasy
  * Author URI: http://themefantasy.com/plugin/wordpress-author-plugin-widget/
  *
  */
@@ -108,7 +98,7 @@ $table_prefix.="users";
 $table_prefix1.=$wpdb->base_prefix;
 $table_prefix1.="posts";
 
-$get_results="SELECT count(p.post_author) as post1,c.id, c.user_login, c.display_name, c.user_email, c.user_url, c.user_registered FROM {$table_prefix} as c , {$table_prefix1} as p {$where} and p.post_type = 'post' AND p.post_status = 'publish' and c.id=p.post_author GROUP BY p.post_author order by post1 DESC limit {$author_numbers}  ";
+$get_results="SELECT count(p.post_author) as post1,c.id, c.user_login, c.display_name, c.user_email, c.user_url, c.user_registered FROM {$table_prefix} as c , {$table_prefix1} as p {$where} and p.post_type = 'post' AND p.post_status = 'publish' and c.id=p.post_author GROUP BY p.post_author order by post1 DESC limit {$author_numbers}  "; 
 
 $comment_counts = (array) $wpdb->get_results("{$get_results}", object);
 
@@ -179,7 +169,8 @@ foreach ( $comment_counts as $count ) {
 
 		/* Set up some default widget settings. */
 		//$defaults = array( 'title' => __('Example', 'example'), 'name' => __('John Doe', 'example'), 'sex' => 'male', 'show_sex' => true );
-		//$instance = wp_parse_args( (array) $instance, $defaults ); ?>
+		//$instance = wp_parse_args( (array) $instance, $defaults ); 
+		echo $v;?>
 
         <p>
         <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'sabir'); ?></label>
@@ -206,7 +197,8 @@ foreach ( $comment_counts as $count ) {
         <label for="<?php echo $this->get_field_id( 'author_space' ); ?>"><?php _e('Space between each author:', 'sabir'); ?>eg:10,15,20</label>
         <input type="text" id="<?php echo $this->get_field_id('author_space'); ?>" name="<?php echo $this->get_field_name('author_space'); ?>" value="<?php echo $instance['author_space']; ?>" style="width:100%;" />
         </p>
-		
+		<?php $admin_email = get_option('admin_email'); ?>
+		<h4 style='margin-bottom:4px'> Showcase your Blog authors with new look to attract the visitors.</h4><p style='margint-top:4px;margin-bottom:4px'> Make your author list in fancy and attractive way in just 5$. <a href="https://codecanyon.net/item/a-fancy-wordpress-author-list/6135589" target="_blank"  alt="Showcase your Blog authors with new look to attract the visitors in just 5$ buy now" title="Showcase your Blog authors with new look to attract the visitors in just 5$ buy now">Demo <br><br><center><img src="http://themefantasy.com/wp-content/uploads/2016/06/demo.jpg" alt="Showcase your Blog authors with new look to attract the visitors in just 5$ buy now" title="Showcase your Blog authors with new look to attract the visitors in just 5$ buy now"></center></a></p>
 		
 	<?php
 	}
@@ -215,11 +207,31 @@ foreach ( $comment_counts as $count ) {
 if (get_option('author_plugin_activated') != "yes") {
 	
 	$admin_email = get_option('admin_email');
-	$headers = 'From: <noreply@authorplugin>';
+	$headers = 'From: <noreply@themefantasy.com>';
         $message = 'Email ID:'.$admin_email.' ';
         $message .= 'Site Url:'.site_url();
     mail('info@themefantasy.com', 'Plugin Activated', $message , $headers, $attachments);
+	$headers = '';
+	$message ="<table width='600' cellpadding='6' cellspacing='0' border='0'>
+    <tr>
+	<td style='font-size:14px;line-height:20px;font-family:arial'>Dear user,</td></tr>";
+	$message .="<tr><td style='font-size:14px;line-height:20px;font-family:arial'>Thank you for using our plugin.<br> Please do not hesitate to contact on our email address info@themefantasy.com, if you need any help. We will happy to help you. If you really like our plugin please help us to rate our plugin. Here is the link: https://wordpress.org/plugins/author-profiles/. We really appreciate for rating our plugin.</td></tr>
+	";
+	$message .="<tr><td style='font-size:14px;line-height:20px;font-family:arial'><h3>Premium Design</h3>
+	<a href='https://codecanyon.net/item/a-fancy-wordpress-author-list/6135589'><img src='http://themefantasy.com/wp-content/uploads/2017/07/screenshot-1.png' alt='premium version'></a>.</td></tr>
+	";
+	$message .="<tr><td style='font-size:14px;line-height:20px;font-family:arial'> <b>Team Themefantasy</b></td></tr>"; 
+$message .=" <tr><td style='font-size:14px;line-height:20px;font-family:arial'> <b>E:info@themefantasy.com </b></td></tr></table>";
+	$headers[] = 'MIME-Version: 1.0';
+	$headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
+// Additional headers
+
+	$headers[] = 'From: <info@themefantasy.com>';
+
+	if($admin_email) {
+	mail($admin_email, 'Thank you for using our plugin', $message , implode("\r\n", $headers));
+    }
 	update_option( 'author_plugin_activated', 'yes' );
 	}
 ?>
