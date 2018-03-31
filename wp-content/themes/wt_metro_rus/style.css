@@ -1218,6 +1218,7 @@ a:hover{
 #content .archive-author-info .author-avatar{
 	float:left;
 	width: 80px;
+	margin-left: 10px;
 }
 
 #content .archive-author-info .avatar{
