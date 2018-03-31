@@ -1,0 +1,751 @@
+# Translation of Plugins - Google Analytics by MonsterInsights - Stable (latest release) in Danish
+# This file is distributed under the same license as the Plugins - Google Analytics by MonsterInsights - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-05-01 22:03:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: da_DK\n"
+"Project-Id-Version: Plugins - Google Analytics by MonsterInsights - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://www.monsterinsights.com/"
+msgstr "https://www.monsterinsights.com/"
+
+#. Author of the plugin/theme
+msgid "MonsterInsights"
+msgstr "MonsterInsights"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.monsterinsights.com/pricing/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpgaplugin&utm_content=v504"
+msgstr "https://www.monsterinsights.com/pricing/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpgaplugin&utm_content=v504"
+
+#: admin/views/content-footer.php:15
+msgid "Upgrade to Google Analytics By MonsterInsights Pro »"
+msgstr "Opgradér til Google Analytics Pro fra MonsterInsights »"
+
+#: admin/pages/dashboard.php:14 admin/pages/extensions.php:14
+#: admin/pages/settings.php:10
+msgid "Google Analytics by MonsterInsights: "
+msgstr "Google Analytics fra MonsterInsights: "
+
+#. #-#-#-#-#  tmp-google-analytics-for-wordpress.pot (Google Analytics by
+#. MonsterInsights 5.5.4)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/class-admin.php:553
+msgid "Google Analytics by MonsterInsights"
+msgstr "Google Analytics fra MonsterInsights"
+
+#: admin/class-admin.php:547
+msgid "Google Analytics by MonsterInsights Pro"
+msgstr "Google Analytics Pro fra MonsterInsights"
+
+#: admin/class-admin-menu.php:100
+msgid "Insights"
+msgstr "Insights"
+
+#: admin/class-admin-menu.php:100 admin/class-admin-menu.php:125
+msgid "Google Analytics by MonsterInsights:"
+msgstr "Google Analytics fra MonsterInsights:"
+
+#. Description of the plugin/theme
+msgid "This plugin makes it simple to add Google Analytics to your WordPress site, adding lots of features, e.g. error page, search result and automatic outgoing links and download tracking."
+msgstr "Dette plugin gør det enkelt at tilføje Google Analytics til dit WordPress-websted. Det tilføjer en masse funktioner, fx en fejlside, søgeresultater og automatisk sporing af udgående links og downloads."
+
+#: vendor/yoast/license-manager/views/form.php:84
+#: vendor/yoast/license-manager-2/views/form.php:84
+msgid "%sRenew your license now%s."
+msgstr "%sForny din licens nu%s."
+
+#: vendor/yoast/license-manager/views/form.php:81
+#: vendor/yoast/license-manager-2/views/form.php:81
+msgid "Your %s license will expire on %s."
+msgstr "Din %s licens vil udløbe den %s."
+
+#: vendor/yoast/license-manager/views/form.php:64
+#: vendor/yoast/license-manager-2/views/form.php:64
+msgid "You defined your license key using the %s PHP constant."
+msgstr "Du har defineret din licensnøgle med PHP-konstanten %s."
+
+#: vendor/yoast/license-manager/views/form.php:62
+#: vendor/yoast/license-manager-2/views/form.php:62
+msgid "Paste your %s license key here.."
+msgstr "Indtast din %s licensnøgle her.."
+
+#: vendor/yoast/license-manager/views/form.php:60
+#: vendor/yoast/license-manager-2/views/form.php:60
+msgid "License Key"
+msgstr "Licensnøgle"
+
+#: vendor/yoast/license-manager/views/form.php:52
+#: vendor/yoast/license-manager-2/views/form.php:52
+msgid "Please enter a license key in the field below first."
+msgstr "Indtast venligst en licensnøgle i feltet herunder først."
+
+#: vendor/yoast/license-manager/views/form.php:46
+#: vendor/yoast/license-manager-2/views/form.php:46
+msgid "(deactivate your license so you can activate it on another WordPress site)"
+msgstr "(deaktiver din licens, så den kan aktiveres på et andet WordPress-websted)"
+
+#: vendor/yoast/license-manager/views/form.php:45
+#: vendor/yoast/license-manager-2/views/form.php:45
+msgid "Deactivate License"
+msgstr "Deaktiver licens"
+
+#: vendor/yoast/license-manager/views/form.php:41
+#: vendor/yoast/license-manager-2/views/form.php:41
+msgid "Toggle license status"
+msgstr "Aktiver eller deaktiver licensstatus"
+
+#: vendor/yoast/license-manager/views/form.php:31
+#: vendor/yoast/license-manager-2/views/form.php:31
+msgid "License status"
+msgstr "Licens-status"
+
+#: vendor/yoast/license-manager/views/form.php:19
+#: vendor/yoast/license-manager-2/views/form.php:19
+msgid "Your server has an outdated version of the PHP module cURL (Version: %s). Please ask your hosting company to update this to a recent version of cURL. You can read more about that in our %sKnowledge base%s."
+msgstr "Din server har en forældet version af PHP-modulet cURL (Version: %s). Bed din udbyder om at opdatere til en nyere version af cURL. Du kan læse mere om dette i vores %svidenbase%s."
+
+#: vendor/yoast/license-manager/views/form.php:15
+#: vendor/yoast/license-manager-2/views/form.php:15
+msgid "We couldn't create a connection to our API to verify your license key(s). Please ask your hosting company to allow outgoing connections from your server to %s."
+msgstr "Vi kunne ikke oprette en forbindelse til vores API for at validere din(e) licensnøgle(r). Kontakt din udbyder for at tillade udgående forbindelser fra din server til %s."
+
+#: vendor/yoast/license-manager/class-update-manager.php:157
+#: vendor/yoast/license-manager-2/class-update-manager.php:157
+msgid "This site has not been activated properly on yoast.com and thus cannot check for future updates. Please activate your site with a valid license key."
+msgstr "Dette websted er ikke aktiveret korrekt på yoast.com og kan derfor ikke checke for fremtidige opdateringer. Aktivér venligst dit websted med en gyldig licensnøgle."
+
+#: vendor/yoast/license-manager/class-update-manager.php:79
+#: vendor/yoast/license-manager-2/class-update-manager.php:79
+msgid "%s failed to check for updates because of the following error: <em>%s</em>"
+msgstr "Det lykkedes ikke for %s at tjekke for opdateringer pga. den følgende fejl: <em>%s</em>"
+
+#: vendor/yoast/license-manager/class-theme-update-manager.php:97
+#: vendor/yoast/license-manager-2/class-theme-update-manager.php:97
+msgid "<strong>%s version %s</strong> is available. <a href=\"%s\" class=\"thickbox\" title=\"%s\">Check out what's new</a> or <a href=\"%s\" %s>update now</a>."
+msgstr "<strong>%s version %s</strong> er tilgængelig. <a href=\"%s\" class=\"thickbox\" title=\"%s\">Tjek, hvad der er nyt</a>, eller <a href=\"%s\" %s>opdatér nu</a>."
+
+#: vendor/yoast/license-manager/class-theme-update-manager.php:92
+#: vendor/yoast/license-manager-2/class-theme-update-manager.php:92
+msgid "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update."
+msgstr "Opdatering af dette tema vil medføre tab af de tilpasninger, du har lavet. 'Annuller' for at stoppe, 'OK' for at opdatere."
+
+#: vendor/yoast/license-manager/class-theme-license-manager.php:34
+#: vendor/yoast/license-manager-2/class-theme-license-manager.php:34
+msgid "Theme License"
+msgstr "Tema-licens"
+
+#: vendor/yoast/license-manager/class-theme-license-manager.php:34
+#: vendor/yoast/license-manager-2/class-theme-license-manager.php:34
+msgid "%s License"
+msgstr "%s licens"
+
+#: vendor/yoast/license-manager/class-plugin-license-manager.php:75
+#: vendor/yoast/license-manager-2/class-plugin-license-manager.php:75
+msgid "%s is network activated, please contact your site administrator to manage the license."
+msgstr "%s er netværksaktiveret. Kontakt venligst dit websteds administrator for håndtering af licensen."
+
+#: vendor/yoast/license-manager/class-plugin-license-manager.php:73
+#: vendor/yoast/license-manager-2/class-plugin-license-manager.php:73
+msgid "%s is network activated, you can manage your license in the <a href=\"%s\">network admin license page</a>."
+msgstr "%s er netværksaktiveret. Du kan håndtere din licens på <a href=\"%s\">netværksadministratorens licensside</a>."
+
+#: vendor/yoast/license-manager/class-license-manager.php:426
+#: vendor/yoast/license-manager-2/class-license-manager.php:426
+msgid "%s: License Settings"
+msgstr "%s: Licensindstillinger"
+
+#: vendor/yoast/license-manager/class-license-manager.php:267
+#: vendor/yoast/license-manager-2/class-license-manager.php:267
+msgid "Request error: \"%s\" (%scommon license notices%s)"
+msgstr "Forespørgselsfejl: \"%s\" (%salmindelige licensmeddelelser%s)"
+
+#: vendor/yoast/license-manager/class-license-manager.php:231
+#: vendor/yoast/license-manager-2/class-license-manager.php:231
+msgid "Failed to deactivate your %s license."
+msgstr "Din licens til %s kunne ikke deaktiveres."
+
+#: vendor/yoast/license-manager/class-license-manager.php:229
+#: vendor/yoast/license-manager-2/class-license-manager.php:229
+msgid "Your %s license has been deactivated."
+msgstr "Din licens til %s er blevet deaktiveret."
+
+#: vendor/yoast/license-manager/class-license-manager.php:205
+#: vendor/yoast/license-manager-2/class-license-manager.php:205
+msgid "Failed to activate your license, your license key seems to be invalid."
+msgstr "Din licens blev ikke aktiveret. Licensnøglen er ugyldig."
+
+#: vendor/yoast/license-manager/class-license-manager.php:202
+#: vendor/yoast/license-manager-2/class-license-manager.php:202
+msgid "Your license has expired. You must <a href=\"%s\">extend your license</a> in order to use it again."
+msgstr "Din licens er udløbet. Du skal <a href=\"%s\">forny din licens</a>, hvis du vil bruge den igen."
+
+#: vendor/yoast/license-manager/class-license-manager.php:199
+#: vendor/yoast/license-manager-2/class-license-manager.php:199
+msgid "You've reached your activation limit. You must <a href=\"%s\">upgrade your license</a> to use it on this site."
+msgstr "Du har nået din aktiveringsgrænse. Du skal <a href=\"%s\">opgradere din licens</a>, hvis du vil bruge den på dette websted."
+
+#: vendor/yoast/license-manager/class-license-manager.php:190
+#: vendor/yoast/license-manager-2/class-license-manager.php:190
+msgid "<a href=\"%s\">Your license is expiring in %d days, would you like to extend it?</a>"
+msgstr "<a href=\"%s\">Din licens udløber om %d dage. Vil du forlænge den?</a>"
+
+#: vendor/yoast/license-manager/class-license-manager.php:186
+#: vendor/yoast/license-manager-2/class-license-manager.php:186
+msgid "<a href=\"%s\">Did you know you can upgrade your license?</a>"
+msgstr "<a href=\"%s\">Vidste du, at du kan opgradere din licens?</a>"
+
+#: vendor/yoast/license-manager/class-license-manager.php:181
+#: vendor/yoast/license-manager-2/class-license-manager.php:181
+msgid "You have used %d/%d activations. "
+msgstr "Du har brugt %d/%d aktiveringer."
+
+#: vendor/yoast/license-manager/class-license-manager.php:179
+#: vendor/yoast/license-manager-2/class-license-manager.php:179
+msgid "You have an unlimited license. "
+msgstr "Du har en ubegrænset licens."
+
+#: vendor/yoast/license-manager/class-license-manager.php:175
+#: vendor/yoast/license-manager-2/class-license-manager.php:175
+msgid "Your %s license has been activated. "
+msgstr "Din %s licens er blevet aktiveret."
+
+#: vendor/yoast/license-manager/class-license-manager.php:134
+#: vendor/yoast/license-manager-2/class-license-manager.php:134
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %s updates. Please add %s to %s."
+msgstr "<b>Advarsel!</b> Du blokerer for eksterne anmodninger. Det betyder, at du ikke kan hente opdateringer til %s. Føj venligst %s til %s."
+
+#: googleanalytics.php:112
+msgid "The (standard) PHP filter extension seem to be unavailable. Please ask your web host to enable it."
+msgstr "PHPʼs standardfilterudvidelse ser ikke ud til at være tilgængelig. Bed venligst din webudbyder om at aktivere det."
+
+#: googleanalytics.php:99
+msgid "The Standard PHP Library (SPL) extension seem to be unavailable. Please ask your web host to enable it."
+msgstr "Udvidelsen Standard PHP Library  (SPL) ser ikke ud til at være tilgængelig. Bed din webhost om at aktivere den."
+
+#: frontend/abstract-class-tracking.php:482
+msgid "Normally you will find the Google Analytics tracking code here, but the webmaster has enabled the Debug Mode."
+msgstr "Normalt vil du finde din Google Analytics-sporingskode her, men webmasteren har aktiveret Debugfunktionen."
+
+#: frontend/abstract-class-tracking.php:479
+msgid "@Webmaster, normally you will find the Google Analytics tracking code here, but the Debug Mode is enabled. To change this, navigate to Analytics -> Settings -> (Tab) Debug Mode and disable Debug Mode to enable tracking of your site."
+msgstr "@Webmaster, du vil normalt finde din Google Analytics-sporingskode her, men debugfunktionen er slået til. For at ændre på det skal du gå til Analytics -> Indstillinger -> (Fane) Debugfunktion og deaktivere Debugfunktion for at aktivere sporing på dit site."
+
+#: frontend/abstract-class-tracking.php:461
+msgid "Normally you will find the Google Analytics tracking code here, but the webmaster disabled your user group."
+msgstr "Normalt finder du Google Analytics-sporingskoden her, men webmasteren deaktiverede din brugergruppe."
+
+#: frontend/abstract-class-tracking.php:458
+msgid "@Webmaster, normally you will find the Google Analytics tracking code here, but you are in the disabled user groups. To change this, navigate to Analytics -> Settings (Ignore usergroups)"
+msgstr "@Webmaster, normalt finder du Google Analytics-sporingskoden her, men du er i de deaktiverede brugergrupper. Vil du ændre dette, skal du gå til Analytics -> Indstillinger (Ignorér brugergrupper)"
+
+#: frontend/abstract-class-tracking.php:455
+#: frontend/abstract-class-tracking.php:476
+msgid "This site uses the %1$s plugin version %2$s"
+msgstr "Dette website bruger pluginnet %1$s version %2$s"
+
+#: admin/views/content-footer.php:14
+msgid "Remove these ads?"
+msgstr "Fjern disse annoncer?"
+
+#: admin/pages/settings.php:185
+msgid "Select the users to ignore"
+msgstr "Vælg brugerne, der skal ignoreres"
+
+#: admin/pages/settings.php:171
+msgid "Enable debug mode"
+msgstr "Aktiver fejlfindingstilstand"
+
+#: admin/pages/settings.php:169
+msgid "<strong>Note</strong> the debugging is only loaded for administrators."
+msgstr "<strong>Bemærk</strong> fejlfinding vises kun for administratorer."
+
+#: admin/pages/settings.php:168
+msgid "If you want to confirm that tracking on your blog is working as it should, enable this option and check the console of your browser. Be absolutely sure to disable debugging afterwards, as it is slower than normal tracking."
+msgstr "Hvis du vil bekræfte, at sporing på din blog fungerer, som det skal, skal du aktivere denne indstilling og kontrollere konsollen i din browser. Du skal sikre dig 100%, at du har deaktiveret fejlfinding bagefter, da det er langsommere end normalt sporing."
+
+#: admin/pages/settings.php:165
+msgid "Debug"
+msgstr "Fejlfinding"
+
+#: admin/pages/settings.php:158
+msgid "Custom dimensions"
+msgstr "Tilpassede dimensioner"
+
+#: admin/pages/settings.php:147
+msgid "Not for the average user: this allows you to add a line of code, to be added before the %1$s call."
+msgstr "Ikke for gennemsnitsbrugeren: dette lader dig tilføje en linje med kode, som tilføjes før anmodningen %1$s."
+
+#: admin/pages/settings.php:147
+msgid "Custom code"
+msgstr "Egen kode"
+
+#: admin/pages/settings.php:145
+msgid "This adds a %1$s call to your tracking code, allowing you to use %2$s and related functions."
+msgstr "Dette tilføjer anmodningen %1$s til din sporingskode og lader dig bruge %2$s og beslægtede funktioner."
+
+#: admin/pages/settings.php:145
+msgid "Add <code>_setAllowLinker</code>"
+msgstr "Tilføj <code>_setAllowLinker</code>"
+
+#: admin/pages/settings.php:144
+msgid "This adds a %1$s call to your tracking code, and makes RSS link tagging use a %2$s as well."
+msgstr "Dette tilføjer anmodningen %1$s til din sporingskode, og det medfører også, at RSS-linktagging bruger %2$s."
+
+#: admin/pages/settings.php:144
+msgid "Allow anchor"
+msgstr "Tillad anker"
+
+#: admin/pages/settings.php:143
+msgid "Do not use this feature if you use FeedBurner, as FeedBurner can do this automatically and better than this plugin can. Check <a href=\"https://support.google.com/feedburner/answer/165769?hl=en&amp;ref_topic=13075\" target=\"_blank\">this help page</a> for info on how to enable this feature in FeedBurner."
+msgstr "Brug ikke denne funktion, hvis du bruger FeedBurner, da FeedBurner kan gøre dette automatisk og bedre end dette plugin. Tjek <a href=\"https://support.google.com/feedburner/answer/165769?hl=en&amp;ref_topic=13075\" target=\"_blank\">denne hjælpeside</a> for oplysninger om, hvordan du aktiverer denne funktion i FeedBurner."
+
+#: admin/pages/settings.php:143
+msgid "Tag links in RSS feed with campaign variables"
+msgstr "Tag links i RSS-feeds med kampagnevariabler"
+
+#: admin/pages/settings.php:141
+msgid "Label for those links"
+msgstr "Etikette for disse links"
+
+#: admin/pages/settings.php:140
+msgid "If you want to track all internal links that begin with %1$s, enter %1$s in the box above. If you have multiple prefixes you can separate them with comma's: %2$s"
+msgstr "Hvis du ønsker at spore alle dine interne links, som begynder med %1$s, indtast %1$s i dette felt. Hvis du har flere præfikser, kan du adskille dem med kommaer: %2$s"
+
+#: admin/pages/settings.php:140
+msgid "Set path for internal links to track as outbound links"
+msgstr "Sæt stien for interne links, så de spores som udgående links"
+
+#: admin/pages/settings.php:138
+msgid "This allows you to set the domain that's set by %1$s for tracking subdomains.<br/>If empty, this will not be set."
+msgstr "Dette tillader dig at angive det domæne, som %1$s bruger til at spore subdomæner.<br/>Hvis der intet angives, bruges intet."
+
+#: admin/pages/settings.php:138
+msgid "Subdomain tracking"
+msgstr "Sporing af underdomæner"
+
+#: admin/pages/settings.php:137
+msgid "Track full URL of outbound clicks or just the domain"
+msgstr "Spor den fulde URL af udgående klik eller kun domænet"
+
+#: admin/pages/settings.php:136
+msgid "Extensions of files to track as downloads"
+msgstr "Filtyper, der skal spores som downloads"
+
+#: admin/pages/settings.php:135
+msgid "Not recommended, as this would skew your statistics, but it does make it possible to track downloads as goals."
+msgstr "Ikke anbefalet, da det vil skævvride dine statistikker, men det gør det muligt at måle downloads som mål."
+
+#: admin/pages/settings.php:135
+msgid "Track downloads as"
+msgstr "Spor downloads som"
+
+#: admin/pages/settings.php:134
+msgid "Advanced settings"
+msgstr "Avancerede indstillinger"
+
+#: admin/pages/settings.php:124
+msgid "Add %1$sEnhanced Link Attribution%2$s to your tracking code."
+msgstr "Tilføj %1$sForbedret link-attributions%2$s til din sporingskode."
+
+#: admin/pages/settings.php:124
+msgid "Enhanced Link Attribution"
+msgstr "Forbedret link-attribution"
+
+#: admin/pages/settings.php:118
+msgid "Check this setting to add the Demographics and Remarketing features to your Google Analytics tracking code. We've written an article in our %1$sknowledge base%2$s about Demographics and Interest reports. For more information about Remarketing, we refer you to %3$sGoogle's documentation%2$s."
+msgstr "Markér denne indstilling for at tilføje funktionerne Demografi og Remarketing til din Google Analytics-sporingskode. Vi har skrevet en artikel i vores %1$svidensbase%2$s om demografi- og interesserapporter. Ønsker du at vide mere om Remarketing, henviser vi til %3$sGoogles dokumentation%2$s."
+
+#: admin/pages/settings.php:115
+msgid "Note that usage of this function is affected by privacy and cookie laws around the world. Be sure to follow the laws that affect your target audience."
+msgstr "Bemærk, at brugen af denne funktion påvirkes privatlivs- og cookielovgivning rundt om i verden. Sørg for at følge de love, der gælder for det publikum, du går efter."
+
+#: admin/pages/settings.php:113
+msgid "Enable Demographics and Interests Reports for Remarketing and Advertising"
+msgstr "Aktivér demografi- og interesserapporterne for Remarketing og Annoncering"
+
+#: admin/pages/settings.php:110
+msgid "First enable Universal tracking in your Google Analytics account. Please read %1$sthis guide%2$s to learn how to do that."
+msgstr "Du skal først aktivere Universal tracking i din Google Analytics-profil.  Læs venligst %1$sdenne vejledning%2$s for at lære hvordan."
+
+#: admin/pages/settings.php:110
+msgid "Enable Universal tracking"
+msgstr "Aktiver Universal sporing"
+
+#: admin/pages/settings.php:109
+msgid "Universal settings"
+msgstr "Overordnede indstillinger"
+
+#: admin/pages/settings.php:103
+msgid "This will completely disable the dashboard and stop the plugin from fetching the latest analytics data."
+msgstr "Dette vil deaktivere dit kontrolpanel helt og forhindre pluginnet i at hente de seneste analysedata."
+
+#: admin/pages/settings.php:103
+msgid "Disable analytics dashboard"
+msgstr "Slå analyse fra i kontrolpanelet"
+
+#: admin/pages/settings.php:102
+msgid "Users of the role you select will be ignored, so if you select Editor, all Editors will be ignored."
+msgstr "Brugere i de valgte brugerroller vil blive ignoreret, så hvis du vælger redaktør, vil alle redaktører blive ignoreret."
+
+#: admin/pages/settings.php:102
+msgid "Ignore users"
+msgstr "Ignorer brugere"
+
+#: admin/pages/settings.php:101
+msgid "This adds %1$s, telling Google Analytics to anonymize the information sent by the tracker objects by removing the last octet of the IP address prior to its storage."
+msgstr "Dette tilføjer %1$s, som fortæller Google Analytics, at oplysninger sendt af sporingsobjektet skal anonymiseres ved at fjerne den sidste oktet i IP-adressen, inden den gemmes."
+
+#: admin/pages/settings.php:101
+msgid "Anonymize IPs"
+msgstr "Anonymiser IP-adresser"
+
+#: admin/pages/settings.php:100
+msgid "By allowing us to track anonymous data we can better help you, because we know with which WordPress configurations, themes and plugins we should test. No personal data will be submitted."
+msgstr "Hvis du lader os spore anonyme data, kan vi bedre hjælpe dig, fordi vi ved, hvilke WordPress-opsætninger, temaer og plugins vi bør teste med. Der indsendes ingen personlige data."
+
+#: admin/pages/settings.php:100
+msgid "Allow tracking of anonymous data"
+msgstr "Tillad sporing af anonyme data"
+
+#: admin/pages/settings.php:99
+msgid "Clicks and downloads will be tracked as events, you can find these under Content &#xBB; Event Tracking in your Google Analytics reports."
+msgstr "Klik og downloads bliver sporet som events. Du kan finde disse under sporing af Adfærd &#xBB; Hændelser i dine Google Analytics-rapporter."
+
+#: admin/pages/settings.php:99
+msgid "Track outbound click and downloads"
+msgstr "Spor udgående klik og downloads"
+
+#: admin/pages/settings.php:93
+msgid "Warning: If you use a manual UA code, you won't be able to use the dashboards."
+msgstr "Advarsel: Hvis du indsætter en manuel sporings-id, vil du ikke kunne bruge kontrolpaneler."
+
+#: admin/pages/settings.php:89
+msgid "Manually enter your UA code"
+msgstr "Indtast din UA-kode manuelt"
+
+#: admin/pages/settings.php:85
+msgid "Until this is fixed, you can only use the manual authentication method and cannot use the dashboards feature."
+msgstr "Indtil dette er løst, kan du kun bruge den manuelle autentifikationsmetode og kan ikke bruge kontrolpaneler."
+
+#: admin/pages/settings.php:83
+msgid "Your firewall or webhost is blocking requests to Google, please ask your webhost company to fix this."
+msgstr "Din firewall eller webudbyder blokerer anmodninger til Google. Bed venligst din webudbyder om at fikse dette."
+
+#: admin/pages/settings.php:80
+msgid "Your server is blocking requests to Google, to fix this, add <code>*.googleapis.com</code> to the <code>WP_ACCESSIBLE_HOSTS</code> constant in your <em>wp-config.php</em> or ask your webhost to do this."
+msgstr "Din server blokerer anmodninger til Google. For at løse dette, skal du tilføje <code>*.googleapis.com</code> til <code>WP_ACCESSIBLE_HOSTS</code>-konstanten i din <em>wp-config.php</em> eller bede din webudbyder gøre dette."
+
+#: admin/pages/settings.php:78
+msgid "Cannot connect to Google"
+msgstr "Kan ikke forbinde til Google"
+
+#: admin/pages/settings.php:74
+msgid "Save authentication code"
+msgstr "Gem godkendelseskode"
+
+#: admin/pages/settings.php:70
+msgid "Paste your Google code here"
+msgstr "Indsæt din Google-kode her"
+
+#: admin/pages/settings.php:64
+msgid "Re-authenticate with your Google account"
+msgstr "Forny godkendelse med din Google-konto"
+
+#: admin/pages/settings.php:60
+msgid "Select a profile"
+msgstr "Vælg en profil"
+
+#: admin/pages/settings.php:60
+msgid "Analytics profile"
+msgstr "Analytics-profil"
+
+#: admin/pages/settings.php:55
+msgid "Current UA-profile"
+msgstr "Nuværende UA-profil"
+
+#: admin/pages/settings.php:52
+msgid "Authenticate with your Google account"
+msgstr "Godkend med din Google-konto"
+
+#: admin/pages/settings.php:51
+msgid "Google profile"
+msgstr "Google-profil"
+
+#: admin/pages/settings.php:46
+msgid "Paste your Google authentication code"
+msgstr "Indsæt din godkendelseskode fra Google"
+
+#: admin/pages/settings.php:22
+msgid "Debug mode"
+msgstr "Fejlfindingstilstand"
+
+#: admin/pages/settings.php:20
+msgid "Custom Dimensions"
+msgstr "Egne dimensioner"
+
+#: admin/pages/settings.php:19
+msgid "Advanced"
+msgstr "Avanceret"
+
+#: admin/pages/settings.php:18
+msgid "Universal"
+msgstr "Universal"
+
+#: admin/pages/settings.php:17
+msgid "General"
+msgstr "Generelt"
+
+#: admin/pages/extensions.php:51
+msgid "You have not installed any extensions for Google Analytics by MonsterInsights, so there are no licenses to activate."
+msgstr "Du har ikke installeret nogen udvidelser for Google Analytics fra MonsterInsights, så der er ingen licenser at aktivere."
+
+#: admin/pages/extensions.php:41
+msgid "Installed"
+msgstr "Installeret"
+
+#: admin/pages/extensions.php:39 vendor/yoast/license-manager/views/form.php:50
+#: vendor/yoast/license-manager-2/views/form.php:50
+msgid "Activate License"
+msgstr "Aktiver licens"
+
+#: admin/pages/extensions.php:36
+msgid "Get this extension"
+msgstr "Få denne udvidelse"
+
+#: admin/pages/extensions.php:18
+msgid "Licenses"
+msgstr "Licenser"
+
+#: admin/pages/dashboard.php:101
+msgid "Select a dimension"
+msgstr "Vælg en dimension"
+
+#: admin/pages/dashboard.php:66 admin/pages/dashboard.php:112
+msgid "You have not yet finished setting up Google Analytics for Wordpress by MonsterInsights. Please %sadd your Analytics profile here%s to enable tracking."
+msgstr "Du har ikke færdiggjort opsætningen af Google Analytics for WordPress fra MonsterInsights. %sTilføj venligst din Analytics-profil her%s for at aktivere sporing."
+
+#: admin/pages/dashboard.php:53 admin/pages/dashboard.php:92
+msgid "Because we've switched to a newer version of the Google Analytics API, you'll need to re-authenticate with Google Analytics. We're sorry for the inconvenience. You can %sre-authenticate your Google Analytics profile here%s."
+msgstr "Fordi vi nu bruger en nyere udgave af Google Analytics API'en, skal du desværre authentificere dig hos Google Analytics igen. Vi undskylder ulejligheden. Du kan %sauthentificere din Google Analytics-profil her%s."
+
+#: admin/pages/dashboard.php:44 admin/pages/dashboard.php:83
+msgid "We need you to authenticate with Google Analytics to use this functionality. If you set your UA-code manually, this won't work. You can %sauthenticate your Google Analytics profile here%s to enable dashboards."
+msgstr "Hvis du vil bruge disse funktioner, skal du authentificere dig hos Google Analytics. Hvis du indtaster din UA-kode manuelt, virker det ikke. Du kan %sauthentificere din Google Analytics-profil her%s, hvis du vil aktivere kontrolpaneler."
+
+#: admin/pages/dashboard.php:17
+msgid "Overview"
+msgstr "Oversigt"
+
+#: admin/dashboards/views/graph.php:15 admin/dashboards/views/table.php:15
+msgid "Last month"
+msgstr "Sidste måned"
+
+#: admin/dashboards/class-admin-dashboards.php:223
+msgid "The country or territory from which visits originated. <a href=\"http://yoa.st/gacountry\" target=\"_blank\">[Learn more]</a>"
+msgstr "Landet eller territoriret, som besøgende stammer fra. <a href=\"http://yoa.st/gacountry\" target=\"_blank\">[Lær mere]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:222
+msgid "Countries"
+msgstr "Lande"
+
+#: admin/dashboards/class-admin-dashboards.php:214
+msgid "Pages by url."
+msgstr "Sider efter url."
+
+#: admin/dashboards/class-admin-dashboards.php:213
+msgid "Popular pages"
+msgstr "Populære sider"
+
+#: admin/dashboards/class-admin-dashboards.php:205
+msgid "Every referral to a web site has an origin, or (traffic) source. Possible sources include: “google” (the name of a search engine), “facebook.com” (the name of a referring site), “spring_newsletter” (the name of one of your newsletters), and “direct” (users that typed your URL directly into their browser, or who had bookmarked your site). <a href=\"http://yoa.st/gabnce\" target=\"_blank\">[Learn more]</a>"
+msgstr "Enhver henvisning til et websted har en oprindelse, eller en (trafik)kilde. Mulige kilder inkluderer: \"google\" (navnet på søgemaskinen), \"facebook.com\" (navnet på det henvisende site), \"foraar_nyhedsbrev\" (navnet på en af dine nyhedsbreve) og \"direkte\" (brugere, der har indtastet din URL direkte i deres browsere, eller som har bogmærket dit websted). <a href=\"http://yoa.st/gabnce\" target=\"_blank\">[Få mere at vide]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:204
+msgid "Traffic sources"
+msgstr "Trafik kilder"
+
+#: admin/dashboards/class-admin-dashboards.php:198
+msgid "Bounce Rate is the percentage of single-page sessions (i.e. sessions in which the person left your site from the entrance page without interacting with the page). <a href=\"http://yoa.st/gabounce\" target=\"_blank\">[Learn more]</a>"
+msgstr "Afvisningsprocent er procenten af enkeltsides sessioner (dvs. sessioner, hvor personen forlader dit site af indgangssiden uden at interagere med siden). <a href=\"http://yoa.st/gabounce\" target=\"_blank\">[Få mere at vide]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:197
+msgid "Bounce rate"
+msgstr "Afvisningsprocent"
+
+#: admin/dashboards/class-admin-dashboards.php:192
+msgid "A session is a group of interactions that take place on your website within a given time frame. For example a single session can contain multiple screen or page views, events, social interactions, and ecommerce transactions. <a href=\"http://yoa.st/gasessions\" target=\"_blank\">[Learn more]</a>"
+msgstr "En session er en gruppe interaktioner, som finder sted på dit websted inden for en given periode. For eksempel kan en enkelt session omfatte flere skærm- eller sidevisninger, events, sociale interaktioner og ehandelstransaktioner. <a href=\"http://yoa.st/gasessions\" target=\"_blank\">[Få mere at vide]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:191
+#: admin/dashboards/class-admin-dashboards.php:208
+#: admin/dashboards/class-admin-dashboards.php:217
+#: admin/dashboards/class-admin-dashboards.php:226
+msgid "Sessions"
+msgstr "Sessioner"
+
+#: admin/dashboards/class-admin-dashboards.php:153 admin/pages/dashboard.php:19
+msgid "Custom dimension reports"
+msgstr "Tilpassede dimensionsrapporter"
+
+#: admin/dashboards/class-admin-dashboards.php:152 admin/pages/dashboard.php:18
+msgid "Reports"
+msgstr "Rapporter"
+
+#: admin/dashboards/class-admin-dashboards.php:149
+msgid "No matching records found"
+msgstr "Ingen matchende poster fundet"
+
+#: admin/dashboards/class-admin-dashboards.php:148
+msgid "Search"
+msgstr "Søg"
+
+#: admin/dashboards/class-admin-dashboards.php:147
+msgid "Processing..."
+msgstr "Arbejder..."
+
+#: admin/dashboards/class-admin-dashboards.php:146
+msgid "Previous"
+msgstr "Forrige"
+
+#: admin/dashboards/class-admin-dashboards.php:145
+msgid "Next"
+msgstr "Næste"
+
+#: admin/dashboards/class-admin-dashboards.php:144
+msgid "Last"
+msgstr "Sidste"
+
+#: admin/dashboards/class-admin-dashboards.php:143
+msgid "First"
+msgstr "Første"
+
+#: admin/dashboards/class-admin-dashboards.php:142
+msgid "Loading..."
+msgstr "Indlæser..."
+
+#: admin/dashboards/class-admin-dashboards.php:141
+msgctxt "_MAX_ will be replaced by JS"
+msgid "Show _MENU_ rows"
+msgstr "Vis _MENU_ rækker"
+
+#: admin/dashboards/class-admin-dashboards.php:140
+msgctxt "_MAX_ will be replaced by JS (See: http://datatables.net/reference/option/language.infoFiltered)"
+msgid "(filtered from _MAX_ total rows)"
+msgstr "(filtreret fra _MAX_ rækker totalt)"
+
+#: admin/dashboards/class-admin-dashboards.php:139
+msgid "No rows to show"
+msgstr "Ingen rækker at vise"
+
+#: admin/dashboards/class-admin-dashboards.php:138
+msgctxt "_START_, _END_ and _TOTAL_ will be replaced by JS (See: http://datatables.net/reference/option/language.info)"
+msgid "Showing _START_ to _END_ of _TOTAL_ rows"
+msgstr "Viser _START_ til _END_ af _TOTAL_ rækker"
+
+#: admin/dashboards/class-admin-dashboards.php:137
+msgid "No data available"
+msgstr "Ingen data tilgængelig"
+
+#: admin/dashboards/class-admin-dashboards.php:136
+msgid ": activate to sort column descending"
+msgstr ": aktiver for at sortere kolonne faldende"
+
+#: admin/dashboards/class-admin-dashboards.php:135
+msgid ": activate to sort column ascending"
+msgstr ": aktiver for at sortere kolonne stigende"
+
+#: admin/class-google-analytics.php:349
+msgid "Data is not up-to-date, there was an error in retrieving the data from Google Analytics. This error could be caused by several issues. If the error persists, please see %sthis page%s."
+msgstr "Data er ikke opdateret. Der skete en fejl under hentningen af data fra Google Analytics. Dette kan skyldes flere forskellige ting. Hvis fejlen fortsætter, så se venligst %sdenne side%s."
+
+#: admin/class-google-analytics.php:336
+msgid "It seems the authentication for the plugin has expired, please %sre-authenticate%s with Google Analytics to allow the plugin to fetch data."
+msgstr "Det ser ud til, at godkendelsen for dette plugin er udløbet. %sGodkend%s pluginnet igen med Google Analytics for at tillade pluginnet at hente data."
+
+#: admin/class-google-analytics.php:323
+msgid "Please configure your %sGoogle Analytics settings%s!"
+msgstr "Konfigurer venligst dine %sGoogle Analytics-indstillinger%s!"
+
+#: admin/class-admin.php:554
+msgid "Track your eCommerce data and transactions with this eCommerce extension for Google Analytics."
+msgstr "Spor dine eCommerce data og transaktioner med denne eCommerce udvidelse til Google Analytics."
+
+#: admin/class-admin.php:553
+msgid "eCommerce tracking"
+msgstr "eCommerce sporing"
+
+#: admin/class-admin.php:548
+msgid "The premium version of Google Analytics by MonsterInsights with more features and support."
+msgstr "Premium-versionen af Google Analytics fra MonsterInsights med flere funktioner og support."
+
+#: admin/class-admin.php:469
+msgid "Full links"
+msgstr "Hele links"
+
+#: admin/class-admin.php:468
+msgid "Just the domain"
+msgstr "Bare domænet"
+
+#: admin/class-admin.php:457
+msgid "Pageview"
+msgstr "Sidevisning"
+
+#: admin/class-admin.php:456
+msgid "Event"
+msgstr "Event"
+
+#: admin/class-admin.php:342
+msgid "This will also give you access to the support team at MonsterInsights, who will provide support on the plugin 24/7."
+msgstr "Dette giver dig også adgang til supportteamet hos MonsterInsights, som yder support døgnet rundt ugen rundt."
+
+#: admin/class-admin.php:340
+msgid "If you want to track custom dimensions like page views per author or post type, you should upgrade to the %1$spremium version of Google Analytics by MonsterInsights%2$s."
+msgstr "Hvis du ønsker at spore brugerdefinerede så som sidevisninger per forfatter eller indholdstype, kan du opgradere til %1$sbetalingsudgaven af Google Analytics fra MonsterInsights%2$s."
+
+#: admin/class-admin.php:325
+msgid "FAQ"
+msgstr "FAQ"
+
+#: admin/class-admin.php:187
+msgid "The UA code needs to follow UA-XXXXXXXX-X format."
+msgstr "UA-koden skal følge formatet UA-XXXXXXXX-X."
+
+#: admin/class-admin.php:143
+msgid "There were no changes to save, please try again."
+msgstr "Der var ingen ændringer at gemme, prøv venligst igen."
+
+#: admin/class-admin.php:136
+msgid "Settings saved."
+msgstr "Indstillinger gemt."
+
+#: admin/class-admin.php:93
+msgid "MonsterInsights plugins share some code between them to make your site faster. As a result of that, we need all MonsterInsights plugins to be up to date. We've detected this isn't the case, so please update the MonsterInsights plugins that aren't up to date yet."
+msgstr "MonsterInsights&#39; plugins deler kode indbyrdes for at gøre dit site hurtigere. Derfor skal alle MonsterInsights plugins være opdaterede. Vi kan se, at det ikke er tilfældet. Opdatér derfor venligst de MonsterInsights&#39; plugins, der ikke er fuldt opdaterede."
+
+#: admin/class-admin-menu.php:239 admin/pages/extensions.php:14
+#: admin/pages/extensions.php:17
+msgid "Extensions"
+msgstr "Udvidelser"
+
+#: admin/class-admin-menu.php:232 admin/class-admin.php:328
+#: admin/pages/settings.php:10
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: admin/class-admin-menu.php:226 admin/pages/dashboard.php:14
+msgid "Dashboard"
+msgstr "Kontrolpanel"
+
+#: admin/class-admin-menu.php:100 admin/pages/settings.php:32
+msgid "General settings"
+msgstr "Generelle indstillinger"
+
+#: admin/class-admin-form.php:46 admin/pages/settings.php:176
+msgid "Save changes"
+msgstr "Gem ændringer"

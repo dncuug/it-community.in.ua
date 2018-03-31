@@ -1,0 +1,115 @@
+# Translation of Stable (latest release) in German
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-05-20 11:24:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#: simple-local-avatars.php:275 simple-local-avatars.php:278
+msgid "Rating"
+msgstr "Bewertung"
+
+#. Author URI of the plugin/theme
+msgid "http://10up.com"
+msgstr "http://10up.com"
+
+#. Author of the plugin/theme
+msgid "Jake Goldman, 10up"
+msgstr "Jake Goldman, 10up"
+
+#. Plugin URI of the plugin/theme
+msgid "http://10up.com/plugins/simple-local-avatars-wordpress/"
+msgstr "http://10up.com/plugins/simple-local-avatars-wordpress/"
+
+#: simple-local-avatars.php:409
+msgid "You do not have permission to edit this user."
+msgstr "Du hast keine Berechtigung, um diesen Benutzer zu bearbeiten."
+
+#: simple-local-avatars.php:370
+msgid "There was an error uploading the avatar:"
+msgstr "Es gab einen Fehler beim Hochladen:"
+
+#: simple-local-avatars.php:367
+msgid "Please upload a valid image file for the avatar."
+msgstr "Bitte lade eine gültige Bilddatei für den Avatar hoch."
+
+#: simple-local-avatars.php:261
+msgid "Choose from Media Library"
+msgstr "Wähle aus der Medienbibliothek "
+
+#: simple-local-avatars.php:256
+msgid "Choose an image from your computer:"
+msgstr "Wähle ein Bild von deinem Computer:"
+
+#: simple-local-avatars.php:157
+msgid "Local Avatars Only"
+msgstr "Nur lokale Avatare"
+
+#: simple-local-avatars.php:158
+msgid "Local Upload Permissions"
+msgstr "Lokale Upload-Berechtigungen"
+
+#: simple-local-avatars.php:182
+msgid "Set as avatar"
+msgstr "Als Avatar festlegen"
+
+#: simple-local-avatars.php:181
+msgid "Choose an Avatar"
+msgstr "Wähle einen Avatar"
+
+#: simple-local-avatars.php:339
+msgid "For security reasons, the extension \".php\" cannot be in your file name."
+msgstr "Aus Sicherheitsgründen ist die Dateiendung „.php“ nicht erlaubt."
+
+#: simple-local-avatars.php:287
+msgid "If the local avatar is inappropriate for this site, Gravatar will be attempted."
+msgstr "Wenn der lokale Avatar für diese Webseite nicht geeignet ist, wird bei Gravatar nachgeschaut."
+
+#: simple-local-avatars.php:262
+msgid "Delete local avatar"
+msgstr "Lokalen Avatar löschen"
+
+#: simple-local-avatars.php:229
+msgid "Avatar"
+msgstr "Avatar"
+
+#: simple-local-avatars.php:233
+msgid "Upload Avatar"
+msgstr "Avatar hochladen"
+
+#. Plugin Name of the plugin/theme
+msgid "Simple Local Avatars"
+msgstr "Simple Local Avatars"
+
+#. Description of the plugin/theme
+msgid "Adds an avatar upload field to user profiles. Generates requested sizes on demand, just like Gravatar! Simple and lightweight."
+msgstr "Fügt ein Feld zum Hochladen eines Avatars (Profilbild) hinzu, sofern der Benutzer zum Bearbeiten von Mediadateien berechtigt ist. Generiert die erforderlichen Maße, genau wie Gravatar! Einfach und schlank."
+
+#: simple-local-avatars.php:267
+msgid "No local avatar is set. Set up your avatar at Gravatar.com."
+msgstr "Es ist kein Avatar festgelegt. Lade deinen Avatar bei Gravatar.com hoch."
+
+#: simple-local-avatars.php:28
+msgid "G &#8212; Suitable for all audiences"
+msgstr "G &#8212; Jugendfrei"
+
+#: simple-local-avatars.php:269
+msgid "You do not have media management permissions. To change your local avatar, contact the blog administrator."
+msgstr "Du hast keine Berechtigung zur Bearbeitung von Mediadateien. Um deinen Avatar zu ändern, kontaktiere den Administrator dieser Website."
+
+#: simple-local-avatars.php:29
+msgid "PG &#8212; Possibly offensive, usually for audiences 13 and above"
+msgstr "PG &#8212; Entspricht dem deutschen FSK12"
+
+#: simple-local-avatars.php:31
+msgid "X &#8212; Even more mature than above"
+msgstr "X &#8212; Keine Jugendfreigabe"
+
+#: simple-local-avatars.php:30
+msgid "R &#8212; Intended for adult audiences above 17"
+msgstr "R &#8212; Entspricht in etwa dem deutschen FSK18"

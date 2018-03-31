@@ -1,0 +1,2252 @@
+# Translation of Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-01-13 23:53:25+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release)\n"
+
+#: includes/admin/settings/register-settings.php:378
+#: includes/admin/settings/tab-general.php:191
+msgid "None - Manually update everything."
+msgstr "なし - すべて手動で更新します。"
+
+#: includes/admin/settings/register-settings.php:377
+#: includes/admin/settings/tab-general.php:190
+msgid "Minor Only - Only get bugfixes and security updates, but not major features."
+msgstr "マイナーアップデートのみ - バグ修正とセキュリティアップデートのみ、新機能は取得しません。"
+
+#: includes/admin/settings/register-settings.php:376
+#: includes/admin/settings/tab-general.php:189
+msgid "Yes (Recommended) - Get the latest features, bugfixes, and security updates as they are released."
+msgstr "はい (推奨) - リリースされた新機能、バグ修正、セキュリティアップデートを取得しましょう。"
+
+#: includes/admin/settings/register-settings.php:372
+#: includes/admin/settings/tab-general.php:186
+msgid "Automatic Updates"
+msgstr "自動更新"
+
+#: includes/admin/admin.php:292
+msgid "Important: Please %1$sconfigure the Automatic Updates Settings%2$s in MonsterInsights."
+msgstr "重要: MonsterInsights で%1$s自動更新設定%2$sを行ってください。"
+
+#: includes/admin/admin.php:280
+msgid "Warning: You're currently using deprecated PHP based events tracking which we will be removing support for in an upcoming release. We recommend switching to JS events tracking, as it is significantly more accurate than PHP based events tracking. To switch %1$sclick here%2$s. Users who do not manually switch over will be automatically switched over in an upcoming release."
+msgstr "警告: 現在、非推奨の PHP ベースのイベントトラッキングをお使いのようですが、今後のリリースでサポートを終了する予定です。PHP ベースのイベントトラッキングよりもはるかに正確な JS イベントトラッキングに切り替えることをおすすめします。%1$s切り替えるにはここをクリック%2$sしてください。手動で切り替えられないユーザーは、今後のリリースで自動的に切り替えられます。"
+
+#: includes/admin/admin.php:274
+msgid "Warning: You're currently using deprecated ga.js tracking which we will be removing support for in an upcoming release. We recommend switching to analytics.js, as it is significantly more accurate than ga.js, and allows for functionality (like the more accurate Javascript based events tracking we offer). Further Google Analytics has deprecated support for ga.js, and it may stop working at any time when Google decides to disable it from their server. To switch to using the newer Universal Analytics (analytics.js) %1$sclick here%2$s. Users who do not manually switch over will be automatically switched over in an upcoming release."
+msgstr "警告: 現在、非推奨の ga.js ベースのイベントトラッキングをお使いのようですが、今後のリリースでサポートを終了する予定です。ga.js ベースのイベントトラッキングよりもはるかに正確で機能 (私たちが提供している、より正確な JavaScript ベースのイベントトラッキングなど) が豊富な analytics.js イベントトラッキングに切り替えることをおすすめします。さらに、Google アナリティクスは ga.js のサポートを非推奨としており、Google 側がサーバーで停止することを決定した場合は動作しなくなる可能性があります。新しいユニバーサルアナリティクス (analytics.js) に%1$s切り替えるにはここをクリック%2$sしてください。手動で切り替えられないユーザーは、今後のリリースで自動的に切り替えられます。"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:271
+msgid "Skip %s Deactivate"
+msgstr "スキップ %s 無効化"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:270
+msgid "Submit %s Deactivate"
+msgstr "送信 %s 無効化"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:255
+msgid "If you have a moment, please share why you are deactivating %s:"
+msgstr "よろしければ、%s を無効化する理由を教えてください。"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:254
+msgid "Quick Feedback"
+msgstr "クイックフィードバック"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:247
+msgid "Please share the reason"
+msgstr "理由をご記入ください"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:246
+msgid "Other"
+msgstr "その他"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:243
+msgid "It's a temporary deactivation"
+msgstr "一時的な無効化"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:240
+msgid "I couldn't get the plugin to work"
+msgstr "プラグインが動作しなかった"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:237
+msgid "Please share which plugin"
+msgstr "どのプラグインですか ?"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:236
+msgid "I'm switching to a different plugin"
+msgstr "他のプラグインに切り替える"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:233
+msgid "I no longer need the plugin"
+msgstr "このプラグインが不要になった"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:108
+msgid "Please select an option"
+msgstr "オプションを選択してください"
+
+#: lite/includes/admin/addons.php:150
+msgid "By upgrading to MonsterInsights Pro, you can adjust your Google Analytics bounce rate with MonsterInsights."
+msgstr "MonsterInsights Pro にアップグレードすると MonsterInsightsで Google アナリティクスの直帰率を調整できます。"
+
+#: lite/includes/admin/addons.php:148
+msgid "Want to adjust your website bounce rate?"
+msgstr "サイトのバウンスレートを調整したいですか ?"
+
+#: lite/includes/admin/addons.php:141
+msgid "By upgrading to MonsterInsights Pro, you can track your Facebook Instant Article visitors with MonsterInsights."
+msgstr "MonsterInsights Pro にアップグレードすると MonsterInsights で Facebook Instant Article の訪問者を追跡できます。"
+
+#: lite/includes/admin/addons.php:132
+msgid "By upgrading to MonsterInsights Pro, you can enable Google Optimize."
+msgstr "MonsterInsights Pro にアップグレードすると Google Optimize を有効化できます。"
+
+#: lite/includes/admin/addons.php:130
+msgid "Want to use Google Optimize to retarget your website vistors and perform A/B split tests with ease?"
+msgstr "Google Optimize を使ってサイトの訪問者をリターゲティングし、A/B スプリットテストを簡単に実行しませんか。"
+
+#: lite/includes/admin/addons.php:123
+msgid "By upgrading to MonsterInsights Pro, you can enable AMP page tracking."
+msgstr "MonsterInsights Pro にアップグレードすると AMP ページトラッキングを有効化できます。"
+
+#: lite/includes/admin/addons.php:121
+msgid "Want to use track users visiting your AMP pages?"
+msgstr "AMP ページを訪問したユーザーをトラッキングしたいですか ?"
+
+#: includes/admin/settings/register-settings.php:90
+msgid "Bounce Reduction"
+msgstr "Bounce Reduction"
+
+#: includes/admin/settings/register-settings.php:86
+msgid "FB Instant Articles"
+msgstr "FB Instant Articles"
+
+#: includes/admin/settings/register-settings.php:82
+msgid "Google Optimize"
+msgstr "Google Optimize"
+
+#: includes/admin/settings/register-settings.php:78
+msgid "Google AMP"
+msgstr "Google AMP"
+
+#: includes/admin/settings/register-settings.php:31
+msgid "Link Attribution"
+msgstr "リンク属性"
+
+#: lite/includes/admin/tools.php:11
+msgid "By upgrading to MonsterInsights Pro, you can unlock the MonsterInsights URL builder that helps you better track your advertising and email marketing campaigns."
+msgstr "MonsterInsights Pro にアップグレードすると、広告とメールマーケティングキャンペーンのトラッキングに役立つ MonsterInsights URL ビルダーを利用できるようになります。"
+
+#: lite/includes/admin/addons.php:168
+msgid "By upgrading to MonsterInsights Pro, you can add Ecommerce tracking to see who's buying your product, what's the most popular item on your store, the average order value, and tons more."
+msgstr "MonsterInsights Pro にアップグレードすると、eコマーストラッキングを追加して、商品を購入したユーザー、ストアで最も人気のある商品、平均注文額などを確認できます。"
+
+#: lite/includes/admin/addons.php:159
+msgid "By upgrading to MonsterInsights Pro, you can enable notifications."
+msgstr "MonsterInsights Pro にアップグレードすると通知を有効化できます。"
+
+#: lite/includes/admin/addons.php:114
+msgid "By upgrading to MonsterInsights Pro, you can enable enhanced reporting."
+msgstr "MonsterInsights Pro にアップグレードすると拡張レポートを有効化できます。"
+
+#: lite/includes/admin/addons.php:105
+msgid "By upgrading to MonsterInsights Pro, you can adjust the sample rate so you don't exceed Google Analytics' processing limit. You can also use it to enable Google Optimize for A/B testing and personalization."
+msgstr "MonsterInsights Pro にアップグレードすると、Google アナリティクスの処理制限を超えないようにサンプルレートを調整できます。また、A/B テストとパーソナライゼーション用に Google Optimize を使用することもできます。"
+
+#: lite/includes/admin/addons.php:96
+msgid "By upgrading to MonsterInsights Pro, you can add Custom Dimensions and track who's the most popular author on your site, which post types get the most traffic, and more. Why not check it out?"
+msgstr "MonsterInsights Pro にアップグレードすると、サイトで最も人気のある投稿者や最もトラフィックを得ている投稿タイプなどを追跡できます。試してみませんか。"
+
+#: lite/includes/admin/addons.php:87
+msgid "By upgrading to MonsterInsights Pro, you can add Membership tracking."
+msgstr "MonsterInsights Pro にアップグレードすると会員トラッキングを有効化できます。"
+
+#: lite/includes/admin/addons.php:78
+msgid "By upgrading to MonsterInsights Pro, you can add Media tracking to see who's interacting with the media on your site, so you know what your users are most interested in on your site. You can use this to tailor future content to meet your audience's interest to promote repeat visitors and expand your average user's time spent visiting your website on each visit."
+msgstr "MonsterInsights Pro にアップグレードすると、メディアトラッキングを追加して誰がサイト上のメディアとインタラクションしているのかを把握でき、ユーザーがサイトで最も関心を持っていることを知ることができます。これを使って、リピート訪問者を促進し、各訪問時にウェブサイトを訪れた平均的なユーザーの時間を拡大するために、今後のコンテンツを調整して訪問者の興味を満たすことができます。"
+
+#: lite/includes/admin/addons.php:51
+msgid "By upgrading to MonsterInsights Pro, you can add Social tracking to see who's clicking on your social share links, so you can track and maximize your social sharing exposure."
+msgstr "MonsterInsights Pro にアップグレードすると、ソーシャルトラッキングを追加して、ソーシャル共有リンクをクリックした人を確認できます。これにより、ソーシャル共有の露出を追跡し最大化できます。"
+
+#: lite/includes/admin/addons.php:49 lite/includes/admin/addons.php:58
+#: lite/includes/admin/addons.php:67 lite/includes/admin/addons.php:76
+#: lite/includes/admin/addons.php:85 lite/includes/admin/addons.php:94
+#: lite/includes/admin/addons.php:103 lite/includes/admin/addons.php:112
+#: lite/includes/admin/addons.php:157 lite/includes/admin/addons.php:166
+msgid "Want to increase your traffic, conversion, & engagement?"
+msgstr "トラフィック、コンバージョン、エンゲージメントを増加したいですか ?"
+
+#: includes/admin/settings/tab-tracking.php:106
+#: lite/includes/admin/tools.php:10
+msgid "Want even more fine tuned control over your website analytics?"
+msgstr "サイトアナリティクスをさらに細かく制御しませんか。"
+
+#: includes/admin/settings/settings-api.php:907
+#: includes/admin/settings/tab-tracking.php:108
+#: lite/includes/admin/tools.php:12
+msgid "Click here to Upgrade"
+msgstr "アップグレードするにはここをクリック"
+
+#: includes/admin/settings/register-settings.php:205
+msgid "Turn on anchor tracking"
+msgstr "アンカー追跡を有効化"
+
+#: includes/admin/pages/tools.php:31 includes/admin/pages/tools.php:32
+msgid "Import/Export"
+msgstr "インポート / エクスポート"
+
+#: includes/admin/google.php:428
+msgid "Google Analytics had a connection error. Error code: %1$s. Reason: %2$s"
+msgstr "Google アナリティクスに接続エラーがありました。エラーコード: %1$s。理由: %2$s"
+
+#: includes/admin/google.php:426
+msgid "Google Analytics is having API issues on their side. Wait 2 minutes and then try again."
+msgstr "Google アナリティクス側で API の問題が発生しています。2分待ってから、もう一度やり直してください。"
+
+#: includes/admin/google.php:424
+msgid "Project Rate Limit Quota Exceeded. Wait 2 minutes and then try again."
+msgstr "プロジェクト速度制限の割り当てを超えました。2分待ってから、もう一度やり直してください。"
+
+#: includes/admin/google.php:422
+msgid "Project Rate Limit Exceeded. Wait 2 minutes and then try again."
+msgstr "プロジェクト速度上限を超えました。2分待ってから、もう一度やり直してください。"
+
+#: includes/admin/google.php:420
+msgid "User Rate Limit Exceeded. Wait 2 minutes and then try again."
+msgstr "ユーザー率の上限を超えました。2分待ってから、もう一度やり直してください。"
+
+#: includes/admin/google.php:418
+msgid "Daily Limit Exceeded. Please contact support."
+msgstr "本日の上限を超えました。サポートにお問い合わせください。"
+
+#: includes/admin/google.php:416
+msgid "Bad Request. Please contact support."
+msgstr "不正なリクエスト形式。サポートにお問い合わせください。"
+
+#: includes/admin/google.php:414
+msgid "Please ensure your Google Account is signed up for Google Analytics."
+msgstr "Google アカウントが Google アナリティクスに登録されていることを確認してください。"
+
+#: includes/helpers.php:353
+msgid "Czechia"
+msgstr "チェチア"
+
+#: includes/admin/reports/overview.php:106
+msgid "If you've just installed MonsterInsights, data may take up to 24 hours to populate here. Check back soon!"
+msgstr "MonsterInsights をインストールしたばかりの場合、ここにデータが埋まるまでに最大24時間かかることがあります。後ほどもう一度ご確認ください。"
+
+#: includes/admin/pages/tools.php:190
+msgid "Please upload a real settings export file to import"
+msgstr "インポートするために実在するエクスポートファイルをアップロードしてください。"
+
+#: includes/admin/pages/tools.php:185
+msgid "Please upload a file to import"
+msgstr "インポートするファイルをアップロードしてください"
+
+#: includes/admin/pages/tools.php:179
+msgid "Please upload a valid .json file"
+msgstr "有効な .json ファイルをアップロードしてください"
+
+#: includes/admin/pages/tools.php:107
+msgid "Export"
+msgstr "エクスポート"
+
+#: includes/admin/pages/tools.php:95
+msgid "Export Settings:"
+msgstr "エクスポート設定:"
+
+#: includes/admin/pages/tools.php:82
+msgid "Paste the import field content from another MonsterInsights site in above."
+msgstr "他の MonsterInsights サイトのインポートフィールドコンテンツを上に貼り付けてください。"
+
+#: includes/admin/pages/tools.php:74
+msgid "Successfully imported settings!"
+msgstr "設定をインポートしました。"
+
+#: includes/admin/pages/tools.php:68
+msgid "Import Settings"
+msgstr "設定をインポート"
+
+#: includes/admin/pages/tools.php:61
+msgid "You can use the below tools to import settings from other MonsterInsights websites or export settings to import into another MonsterInsights install."
+msgstr "以下のツールを使用して、他の MonsterInsights サイトから設定をインポートしたり、別の MonsterInsights インストールにインポートするための設定を書き出すことができます。"
+
+#: includes/admin/pages/tools.php:60
+msgid "Setting Tools"
+msgstr "設定ツール"
+
+#: includes/admin/pages/tools.php:36
+msgid "URL Builder"
+msgstr "URL ビルダー"
+
+#: includes/admin/pages/tools.php:35
+msgid "Campaign URL Builder"
+msgstr "キャンペーン URL ビルダー"
+
+#: includes/admin/pages/network-settings.php:98
+msgid "This is the default UA code to use for subsites of a network (can be overriden at the single site level)."
+msgstr "これは、ネットワークのサブサイトに使用するデフォルトの UA コードです (個別サイトレベルで上書きできます)。"
+
+#: includes/admin/pages/network-settings.php:97
+msgid "Save Network UA code"
+msgstr "ネットワーク UA コードを保存"
+
+#: includes/admin/pages/network-settings.php:94
+msgid "Network UA code"
+msgstr "ネットワーク UA コード"
+
+#: includes/admin/google.php:321
+msgid "Google Analytics had a connection error or your Google account is not signed up for Google Analytics."
+msgstr "Google アナリティクスで接続エラーが発生したか、Google アナリティクスに Google アカウントが登録されていません。"
+
+#: includes/admin/common.php:184
+msgid "Imported!"
+msgstr "インポートしました。"
+
+#: includes/admin/common.php:183 includes/admin/pages/tools.php:87
+msgid "Import"
+msgstr "インポート"
+
+#: includes/admin/common.php:182
+msgid "Working..."
+msgstr "処理中…"
+
+#: includes/admin/common.php:181
+msgid "Shortened!"
+msgstr "短縮しました。"
+
+#: includes/admin/common.php:180
+msgid "Shorten URL"
+msgstr "URL を短縮"
+
+#: includes/admin/common.php:178
+msgid "Failed!"
+msgstr "失敗しました。"
+
+#: includes/admin/common.php:177
+msgid "Copy to Clipboard"
+msgstr "クリップボードにコピー"
+
+#: includes/admin/common.php:176
+msgid "Copied!"
+msgstr "コピーしました。"
+
+#: includes/admin/admin.php:58
+msgid "Tools"
+msgstr "ツール"
+
+#: includes/admin/admin.php:58
+msgid "Tools:"
+msgstr "ツール:"
+
+#: includes/admin/google.php:316 includes/admin/google.php:406
+msgid "MonsterInsights requires WordPress version 4.6 or newer to use oAuth. Please update your WordPress version."
+msgstr "MonsterInsights で oAuth を使用するには WordPress バージョン4.6以降が必要です。 WordPress のバージョンを更新してください。"
+
+#: includes/admin/pages/settings.php:163
+msgid "Invalid UA code."
+msgstr "無効な UA コード。"
+
+#. Description of the plugin/theme
+msgid "The best Google Analytics plugin for WordPress. See how visitors find and use your website, so you can keep them coming back."
+msgstr "WordPress のための最高な Google アナリティクスプラグイン。訪問者がサイトをどのように見つけ、使用しているかを確認することで、彼らが再訪してくれるようにしましょう。"
+
+#. Plugin Name of the plugin/theme
+msgid "Google Analytics for WordPress by MonsterInsights"
+msgstr "Google Analytics for WordPress by MonsterInsights"
+
+#: lite/includes/admin/addons.php:40
+msgid "This allows you to set the domain that's set by %1$s for tracking subdomains. If empty, this will not be set. Can be used to set localhost for ga.js tracking."
+msgstr "これにより、%1$s で設定されたドメインをサブドメインのトラッキングに指定できます。空の場合、設定されません。ga.js トラッキング用に localhost を設定するのに使用できます。"
+
+#: includes/helpers.php:543
+msgid "Zimbabwe"
+msgstr "ジンバブエ"
+
+#: includes/helpers.php:542
+msgid "Zambia"
+msgstr "ザンビア"
+
+#: includes/helpers.php:541
+msgid "Yemen"
+msgstr "イエメン"
+
+#: includes/helpers.php:540
+msgid "Western Samoa"
+msgstr "西サモア"
+
+#: includes/helpers.php:539
+msgid "Western Sahara"
+msgstr "西サハラ"
+
+#: includes/helpers.php:538
+msgid "Wallis and Futuna Islands"
+msgstr "ウォリス・フトゥーナ諸島"
+
+#: includes/helpers.php:537
+msgid "Virgin Islands (USA)"
+msgstr "バージン諸島（米国）"
+
+#: includes/helpers.php:536
+msgid "Virgin Islands (British)"
+msgstr "バージン諸島（英国）"
+
+#: includes/helpers.php:535
+msgid "Vietnam"
+msgstr "ベトナム"
+
+#: includes/helpers.php:534
+msgid "Venezuela"
+msgstr "ベネズエラ"
+
+#: includes/helpers.php:533
+msgid "Vanuatu"
+msgstr "バヌアツ"
+
+#: includes/helpers.php:532
+msgid "Uzbekistan"
+msgstr "ウズベキスタン"
+
+#: includes/helpers.php:531
+msgid "US Minor Outlying Islands"
+msgstr "米国外諸島"
+
+#: includes/helpers.php:530
+msgid "Uruguay"
+msgstr "ウルグアイ"
+
+#: includes/helpers.php:529
+msgid "United Arab Emirates"
+msgstr "アラブ首長国連邦"
+
+#: includes/helpers.php:528
+msgid "Ukraine"
+msgstr "ウクライナ"
+
+#: includes/helpers.php:527
+msgid "Uganda"
+msgstr "ウガンダ"
+
+#: includes/helpers.php:526
+msgid "Tuvalu"
+msgstr "ツバル"
+
+#: includes/helpers.php:525
+msgid "Turks and Caicos Islands"
+msgstr "タークス・カイコス諸島"
+
+#: includes/helpers.php:524
+msgid "Turkmenistan"
+msgstr "トルクメニスタン"
+
+#: includes/helpers.php:523
+msgid "Turkey"
+msgstr "トルコ"
+
+#: includes/helpers.php:522
+msgid "Tunisia"
+msgstr "チュニジア"
+
+#: includes/helpers.php:521
+msgid "Trinidad and Tobago"
+msgstr "トリニダード・トバゴ"
+
+#: includes/helpers.php:520
+msgid "Tonga"
+msgstr "トンガ"
+
+#: includes/helpers.php:519
+msgid "Tokelau"
+msgstr "トケラウ"
+
+#: includes/helpers.php:518
+msgid "Togo"
+msgstr "トーゴ"
+
+#: includes/helpers.php:517
+msgid "Timor-Leste"
+msgstr "東ティモール"
+
+#: includes/helpers.php:516
+msgid "Thailand"
+msgstr "タイ"
+
+#: includes/helpers.php:515
+msgid "Tanzania"
+msgstr "タンザニア"
+
+#: includes/helpers.php:514
+msgid "Tajikistan"
+msgstr "タジキスタン"
+
+#: includes/helpers.php:513
+msgid "Taiwan"
+msgstr "台湾"
+
+#: includes/helpers.php:512
+msgid "Syrian Arab Republic"
+msgstr "シリアアラブ共和国"
+
+#: includes/helpers.php:511
+msgid "Switzerland"
+msgstr "スイス"
+
+#: includes/helpers.php:510
+msgid "Sweden"
+msgstr "スウェーデン"
+
+#: includes/helpers.php:509
+msgid "Swaziland"
+msgstr "スワジランド"
+
+#: includes/helpers.php:508
+msgid "Svalbard and Jan Mayen Islands"
+msgstr "スバールバル諸島とヤンマイエン諸島"
+
+#: includes/helpers.php:507
+msgid "Suriname"
+msgstr "スリナム"
+
+#: includes/helpers.php:506
+msgid "Sudan"
+msgstr "スーダン"
+
+#: includes/helpers.php:505
+msgid "Sri Lanka"
+msgstr "スリランカ"
+
+#: includes/helpers.php:504
+msgid "Spain"
+msgstr "スペイン"
+
+#: includes/helpers.php:503
+msgid "South Sudan"
+msgstr "南スーダン"
+
+#: includes/helpers.php:502
+msgid "South Korea"
+msgstr "韓国"
+
+#: includes/helpers.php:501
+msgid "South Georgia"
+msgstr "サウスジョージア島"
+
+#: includes/helpers.php:500
+msgid "South Africa"
+msgstr "南アフリカ"
+
+#: includes/helpers.php:499
+msgid "Somalia"
+msgstr "ソマリア"
+
+#: includes/helpers.php:498
+msgid "Solomon Islands"
+msgstr "ソロモン諸島"
+
+#: includes/helpers.php:497
+msgid "Slovenia"
+msgstr "スロベニア"
+
+#: includes/helpers.php:496
+msgid "Slovak Republic"
+msgstr "スロバキア共和国"
+
+#: includes/helpers.php:495
+msgid "Singapore"
+msgstr "シンガポール"
+
+#: includes/helpers.php:494
+msgid "Sierra Leone"
+msgstr "シエラレオネ"
+
+#: includes/helpers.php:493
+msgid "Seychelles"
+msgstr "セイシェル"
+
+#: includes/helpers.php:492
+msgid "Serbia"
+msgstr "セルビア"
+
+#: includes/helpers.php:491
+msgid "Senegal"
+msgstr "セネガル"
+
+#: includes/helpers.php:490
+msgid "Saudi Arabia"
+msgstr "サウジアラビア"
+
+#: includes/helpers.php:489
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "サントメ・プリンシペ"
+
+#: includes/helpers.php:488
+msgid "San Marino"
+msgstr "サンマリノ"
+
+#: includes/helpers.php:487
+msgid "Saint Vincent and the Grenadines"
+msgstr "セントビンセントおよびグレナディーン諸島"
+
+#: includes/helpers.php:486
+msgid "Saint Pierre and Miquelon"
+msgstr "サンピエール・ミクロン島"
+
+#: includes/helpers.php:485
+msgid "Saint Martin (Dutch)"
+msgstr "セント・マーチン（オランダ）"
+
+#: includes/helpers.php:484
+msgid "Saint Martin (French)"
+msgstr "サンマルタン（フランス）"
+
+#: includes/helpers.php:483
+msgid "Saint Lucia"
+msgstr "セントルシア"
+
+#: includes/helpers.php:482
+msgid "Saint Kitts and Nevis"
+msgstr "セントクリストファー・ネイビス"
+
+#: includes/helpers.php:481
+msgid "Saint Helena"
+msgstr "セント・ヘレナ島"
+
+#: includes/helpers.php:480
+msgid "Saint Barth&eacute;lemy"
+msgstr "セントバーツ"
+
+#: includes/helpers.php:479
+msgid "Rwanda"
+msgstr "ルワンダ"
+
+#: includes/helpers.php:478
+msgid "Russian Federation"
+msgstr "ロシア連邦"
+
+#: includes/helpers.php:477
+msgid "Romania"
+msgstr "ルーマニア"
+
+#: includes/helpers.php:476
+msgid "Reunion Island"
+msgstr "レユニオン島"
+
+#: includes/helpers.php:475
+msgid "Republic of Kosovo"
+msgstr "コソボ共和国"
+
+#: includes/helpers.php:474
+msgid "Qatar"
+msgstr "カタール"
+
+#: includes/helpers.php:473
+msgid "Puerto Rico"
+msgstr "プエルトリコ"
+
+#: includes/helpers.php:472
+msgid "Portugal"
+msgstr "ポルトガル"
+
+#: includes/helpers.php:471
+msgid "Poland"
+msgstr "ポーランド"
+
+#: includes/helpers.php:470
+msgid "Pitcairn Island"
+msgstr "ピットケアン島"
+
+#: includes/helpers.php:469
+msgid "Philippines"
+msgstr "フィリピン"
+
+#: includes/helpers.php:468
+msgid "Peru"
+msgstr "ペルー"
+
+#: includes/helpers.php:467
+msgid "Paraguay"
+msgstr "パラグアイ"
+
+#: includes/helpers.php:466
+msgid "Papua New Guinea"
+msgstr "パプアニューギニア"
+
+#: includes/helpers.php:465
+msgid "Panama"
+msgstr "パナマ"
+
+#: includes/helpers.php:464
+msgid "Palestinian Territories"
+msgstr "パレスチナ領"
+
+#: includes/helpers.php:463
+msgid "Palau"
+msgstr "パラオ"
+
+#: includes/helpers.php:462
+msgid "Pakistan"
+msgstr "パキスタン"
+
+#: includes/helpers.php:461
+msgid "Oman"
+msgstr "オマーン"
+
+#: includes/helpers.php:460
+msgid "Norway"
+msgstr "ノルウェー"
+
+#: includes/helpers.php:459
+msgid "Northern Mariana Islands"
+msgstr "北マリアナ諸島連邦"
+
+#: includes/helpers.php:458
+msgid "North Korea"
+msgstr "北朝鮮"
+
+#: includes/helpers.php:457
+msgid "Norfolk Island"
+msgstr "ノーフォーク島"
+
+#: includes/helpers.php:456
+msgid "Niue"
+msgstr "ニウエ"
+
+#: includes/helpers.php:455
+msgid "Nigeria"
+msgstr "ナイジェリア"
+
+#: includes/helpers.php:454
+msgid "Niger"
+msgstr "ニジェール"
+
+#: includes/helpers.php:453
+msgid "Nicaragua"
+msgstr "ニカラグア"
+
+#: includes/helpers.php:452
+msgid "New Zealand"
+msgstr "ニュージーランド"
+
+#: includes/helpers.php:451
+msgid "New Caledonia"
+msgstr "ニューカレドニア"
+
+#: includes/helpers.php:450
+msgid "Netherlands Antilles"
+msgstr "オランダ領アンティル"
+
+#: includes/helpers.php:449
+msgid "Netherlands"
+msgstr "オランダ"
+
+#: includes/helpers.php:448
+msgid "Nepal"
+msgstr "ネパール"
+
+#: includes/helpers.php:447
+msgid "Nauru"
+msgstr "ナウル"
+
+#: includes/helpers.php:446
+msgid "Namibia"
+msgstr "ナミビア"
+
+#: includes/helpers.php:445
+msgid "Myanmar"
+msgstr "ミャンマー"
+
+#: includes/helpers.php:444
+msgid "Mozambique"
+msgstr "モザンビーク"
+
+#: includes/helpers.php:443
+msgid "Morocco"
+msgstr "モロッコ"
+
+#: includes/helpers.php:442
+msgid "Montserrat"
+msgstr "モントセラト"
+
+#: includes/helpers.php:441
+msgid "Montenegro"
+msgstr "モンテネグロ"
+
+#: includes/helpers.php:440
+msgid "Mongolia"
+msgstr "モンゴル"
+
+#: includes/helpers.php:439
+msgid "Monaco"
+msgstr "モナコ"
+
+#: includes/helpers.php:438
+msgid "Moldova, Republic of"
+msgstr "モルドバ共和国"
+
+#: includes/helpers.php:437
+msgid "Micronesia"
+msgstr "ミクロネシア"
+
+#: includes/helpers.php:436
+msgid "Mexico"
+msgstr "メキシコ"
+
+#: includes/helpers.php:435
+msgid "Mayotte"
+msgstr "マヨット島"
+
+#: includes/helpers.php:434
+msgid "Mauritius"
+msgstr "モーリシャス"
+
+#: includes/helpers.php:433
+msgid "Mauritania"
+msgstr "モーリタニア"
+
+#: includes/helpers.php:432
+msgid "Martinique"
+msgstr "マルティニーク島"
+
+#: includes/helpers.php:431
+msgid "Marshall Islands"
+msgstr "マーシャル諸島"
+
+#: includes/helpers.php:430
+msgid "Malta"
+msgstr "マルタ"
+
+#: includes/helpers.php:429
+msgid "Mali"
+msgstr "マリ"
+
+#: includes/helpers.php:428
+msgid "Maldives"
+msgstr "モルディブ"
+
+#: includes/helpers.php:427
+msgid "Malaysia"
+msgstr "マレーシア"
+
+#: includes/helpers.php:426
+msgid "Malawi"
+msgstr "マラウイ"
+
+#: includes/helpers.php:425
+msgid "Madagascar"
+msgstr "マダガスカル"
+
+#: includes/helpers.php:424
+msgid "Macedonia"
+msgstr "マケドニア"
+
+#: includes/helpers.php:423
+msgid "Macau"
+msgstr "マカオ"
+
+#: includes/helpers.php:422
+msgid "Luxembourg"
+msgstr "ルクセンブルク"
+
+#: includes/helpers.php:421
+msgid "Lithuania"
+msgstr "リトアニア"
+
+#: includes/helpers.php:420
+msgid "Liechtenstein"
+msgstr "リヒテンシュタイン"
+
+#: includes/helpers.php:419
+msgid "Libyan Arab Jamahiriya"
+msgstr "リビア・アラブ・ジャマーヒリーヤ"
+
+#: includes/helpers.php:418
+msgid "Liberia"
+msgstr "リベリア"
+
+#: includes/helpers.php:417
+msgid "Lesotho"
+msgstr "レソト"
+
+#: includes/helpers.php:416
+msgid "Lebanon"
+msgstr "レバノン"
+
+#: includes/helpers.php:415
+msgid "Latvia"
+msgstr "ラトビア"
+
+#: includes/helpers.php:414
+msgid "Lao People's Democratic Republic"
+msgstr "ラオス人民民主共和国"
+
+#: includes/helpers.php:413
+msgid "Kyrgyzstan"
+msgstr "キルギスタン"
+
+#: includes/helpers.php:412
+msgid "Kuwait"
+msgstr "クウェート"
+
+#: includes/helpers.php:411
+msgid "Kiribati"
+msgstr "キリバス"
+
+#: includes/helpers.php:410
+msgid "Kenya"
+msgstr "ケニア"
+
+#: includes/helpers.php:409
+msgid "Kazakhstan"
+msgstr "カザフスタン"
+
+#: includes/helpers.php:408
+msgid "Jordan"
+msgstr "ヨルダン"
+
+#: includes/helpers.php:407
+msgid "Jersey"
+msgstr "ジャージー"
+
+#: includes/helpers.php:406
+msgid "Japan"
+msgstr "日本"
+
+#: includes/helpers.php:405
+msgid "Jamaica"
+msgstr "ジャマイカ"
+
+#: includes/helpers.php:404
+msgid "Italy"
+msgstr "イタリア"
+
+#: includes/helpers.php:403
+msgid "Israel"
+msgstr "イスラエル"
+
+#: includes/helpers.php:402
+msgid "Isle of Man"
+msgstr "マン島"
+
+#: includes/helpers.php:401
+msgid "Ireland"
+msgstr "アイルランド"
+
+#: includes/helpers.php:400
+msgid "Iraq"
+msgstr "イラク"
+
+#: includes/helpers.php:399
+msgid "Iran"
+msgstr "イラン"
+
+#: includes/helpers.php:398
+msgid "Indonesia"
+msgstr "インドネシア"
+
+#: includes/helpers.php:397
+msgid "India"
+msgstr "インド"
+
+#: includes/helpers.php:396
+msgid "Iceland"
+msgstr "アイスランド"
+
+#: includes/helpers.php:395
+msgid "Hungary"
+msgstr "ハンガリー"
+
+#: includes/helpers.php:394
+msgid "Hong Kong"
+msgstr "香港"
+
+#: includes/helpers.php:393
+msgid "Honduras"
+msgstr "ホンジュラス"
+
+#: includes/helpers.php:392
+msgid "Holy See (City Vatican State)"
+msgstr "ホーリーシー（市バチカン市国）"
+
+#: includes/helpers.php:391
+msgid "Heard and McDonald Islands"
+msgstr "ハード島とマクドナルド諸島"
+
+#: includes/helpers.php:390
+msgid "Haiti"
+msgstr "ハイチ"
+
+#: includes/helpers.php:389
+msgid "Guyana"
+msgstr "ガイアナ"
+
+#: includes/helpers.php:388
+msgid "Guinea-Bissau"
+msgstr "ギニアビサウ"
+
+#: includes/helpers.php:387
+msgid "Guinea"
+msgstr "ギニア"
+
+#: includes/helpers.php:386
+msgid "Guernsey"
+msgstr "ガーンジー"
+
+#: includes/helpers.php:385
+msgid "Guatemala"
+msgstr "グアテマラ"
+
+#: includes/helpers.php:384
+msgid "Guam"
+msgstr "グアム"
+
+#: includes/helpers.php:383
+msgid "Guadeloupe"
+msgstr "グアドループ島"
+
+#: includes/helpers.php:382
+msgid "Grenada"
+msgstr "グレナダ"
+
+#: includes/helpers.php:381
+msgid "Greenland"
+msgstr "グリーンランド"
+
+#: includes/helpers.php:380
+msgid "Gibraltar"
+msgstr "ジブラルタル"
+
+#: includes/helpers.php:379
+msgid "Ghana"
+msgstr "ガーナ"
+
+#: includes/helpers.php:378
+msgid "Greece"
+msgstr "ギリシャ"
+
+#: includes/helpers.php:377
+msgid "Germany"
+msgstr "ドイツ"
+
+#: includes/helpers.php:376
+msgid "Georgia"
+msgstr "ジョージア"
+
+#: includes/helpers.php:375
+msgid "Gambia"
+msgstr "ガンビア"
+
+#: includes/helpers.php:374
+msgid "Gabon"
+msgstr "ガボン"
+
+#: includes/helpers.php:373
+msgid "French Southern Territories"
+msgstr "フランス南部領"
+
+#: includes/helpers.php:372
+msgid "French Polynesia"
+msgstr "フランス領ポリネシア"
+
+#: includes/helpers.php:371
+msgid "French Guiana"
+msgstr "仏領ギアナ"
+
+#: includes/helpers.php:370
+msgid "France"
+msgstr "フランス"
+
+#: includes/helpers.php:369
+msgid "Finland"
+msgstr "フィンランド"
+
+#: includes/helpers.php:368
+msgid "Fiji"
+msgstr "フィジー"
+
+#: includes/helpers.php:367
+msgid "Faroe Islands"
+msgstr "フェロー諸島"
+
+#: includes/helpers.php:366
+msgid "Falkland Islands"
+msgstr "フォークランド諸島"
+
+#: includes/helpers.php:365
+msgid "Ethiopia"
+msgstr "エチオピア"
+
+#: includes/helpers.php:364
+msgid "Estonia"
+msgstr "エストニア"
+
+#: includes/helpers.php:363
+msgid "Eritrea"
+msgstr "エリトリア"
+
+#: includes/helpers.php:362
+msgid "El Salvador"
+msgstr "エルサルバドル"
+
+#: includes/helpers.php:361
+msgid "Equatorial Guinea"
+msgstr "赤道ギニア共和国"
+
+#: includes/helpers.php:360
+msgid "Egypt"
+msgstr "エジプト"
+
+#: includes/helpers.php:359
+msgid "Ecuador"
+msgstr "エクアドル"
+
+#: includes/helpers.php:358
+msgid "East Timor"
+msgstr "東チモール"
+
+#: includes/helpers.php:357
+msgid "Dominican Republic"
+msgstr "ドミニカ共和国"
+
+#: includes/helpers.php:356
+msgid "Dominica"
+msgstr "ドミニカ"
+
+#: includes/helpers.php:355
+msgid "Djibouti"
+msgstr "ジブチ"
+
+#: includes/helpers.php:354
+msgid "Denmark"
+msgstr "デンマーク"
+
+#: includes/helpers.php:352
+msgid "Cyprus"
+msgstr "キプロス"
+
+#: includes/helpers.php:351
+msgid "Cura&Ccedil;ao"
+msgstr "キュラソー"
+
+#: includes/helpers.php:350
+msgid "Cuba"
+msgstr "キューバ"
+
+#: includes/helpers.php:349
+msgid "Croatia/Hrvatska"
+msgstr "クロアチア/フルバツカ"
+
+#: includes/helpers.php:348
+msgid "Cote d'Ivoire"
+msgstr "コー​​トジボアール"
+
+#: includes/helpers.php:347
+msgid "Costa Rica"
+msgstr "コスタリカ"
+
+#: includes/helpers.php:346
+msgid "Cook Islands"
+msgstr "クック諸島"
+
+#: includes/helpers.php:345
+msgid "Congo, Republic of"
+msgstr "コンゴ共和国"
+
+#: includes/helpers.php:344
+msgid "Congo, Democratic People's Republic"
+msgstr "コンゴ民主人民共和国"
+
+#: includes/helpers.php:343
+msgid "Comoros"
+msgstr "コモロ"
+
+#: includes/helpers.php:342
+msgid "Colombia"
+msgstr "コロンビア"
+
+#: includes/helpers.php:341
+msgid "Cocos Islands"
+msgstr "ココス諸島"
+
+#: includes/helpers.php:340
+msgid "Christmas Island"
+msgstr "クリスマス島"
+
+#: includes/helpers.php:339
+msgid "China"
+msgstr "中国"
+
+#: includes/helpers.php:338
+msgid "Chile"
+msgstr "チリ"
+
+#: includes/helpers.php:337
+msgid "Chad"
+msgstr "チャド"
+
+#: includes/helpers.php:336
+msgid "Central African Republic"
+msgstr "中央アフリカ共和国"
+
+#: includes/helpers.php:335
+msgid "Cayman Islands"
+msgstr "ケイマン諸島"
+
+#: includes/helpers.php:334
+msgid "Cape Verde"
+msgstr "カーボヴェルデ"
+
+#: includes/helpers.php:333
+msgid "Cameroon"
+msgstr "カメルーン"
+
+#: includes/helpers.php:332
+msgid "Cambodia"
+msgstr "カンボジア"
+
+#: includes/helpers.php:331
+msgid "Burundi"
+msgstr "ブルンジ"
+
+#: includes/helpers.php:330
+msgid "Burkina Faso"
+msgstr "ブルキナファソ"
+
+#: includes/helpers.php:329
+msgid "Bulgaria"
+msgstr "ブルガリア"
+
+#: includes/helpers.php:328
+msgid "Brunei Darrussalam"
+msgstr "ブルネイダルサラーム"
+
+#: includes/helpers.php:327
+msgid "British Indian Ocean Territory"
+msgstr "イギリス領インド洋地域"
+
+#: includes/helpers.php:326
+msgid "Brazil"
+msgstr "ブラジル"
+
+#: includes/helpers.php:325
+msgid "Bouvet Island"
+msgstr "ブーベ島"
+
+#: includes/helpers.php:324
+msgid "Botswana"
+msgstr "ボツワナ"
+
+#: includes/helpers.php:323
+msgid "Bosnia and Herzegovina"
+msgstr "ボスニア・ヘルツェゴビナ"
+
+#: includes/helpers.php:322
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "ボネール島、セントユースタティウスとサバ"
+
+#: includes/helpers.php:321
+msgid "Bolivia"
+msgstr "ボリビア"
+
+#: includes/helpers.php:320
+msgid "Bhutan"
+msgstr "ブータン"
+
+#: includes/helpers.php:319
+msgid "Bermuda"
+msgstr "バミューダ"
+
+#: includes/helpers.php:318
+msgid "Benin"
+msgstr "ベナン"
+
+#: includes/helpers.php:317
+msgid "Belize"
+msgstr "ベリーズ"
+
+#: includes/helpers.php:316
+msgid "Belgium"
+msgstr "ベルギー"
+
+#: includes/helpers.php:315
+msgid "Belarus"
+msgstr "ベラルーシ"
+
+#: includes/helpers.php:314
+msgid "Barbados"
+msgstr "バルバドス"
+
+#: includes/helpers.php:313
+msgid "Bangladesh"
+msgstr "バングラデシュ"
+
+#: includes/helpers.php:312
+msgid "Bahrain"
+msgstr "バーレーン"
+
+#: includes/helpers.php:311
+msgid "Bahamas"
+msgstr "バハマ"
+
+#: includes/helpers.php:310
+msgid "Azerbaijan"
+msgstr "アゼルバイジャン"
+
+#: includes/helpers.php:309
+msgid "Austria"
+msgstr "オーストリア"
+
+#: includes/helpers.php:308
+msgid "Australia"
+msgstr "オーストラリア"
+
+#: includes/helpers.php:307
+msgid "Aruba"
+msgstr "アルバ"
+
+#: includes/helpers.php:306
+msgid "Armenia"
+msgstr "アルメニア"
+
+#: includes/helpers.php:305
+msgid "Argentina"
+msgstr "アルゼンチン"
+
+#: includes/helpers.php:304
+msgid "Antigua and Barbuda"
+msgstr "アンチグアバーブーダ"
+
+#: includes/helpers.php:303
+msgid "Antarctica"
+msgstr "南極大陸"
+
+#: includes/helpers.php:302
+msgid "Anguilla"
+msgstr "アングィラ"
+
+#: includes/helpers.php:301
+msgid "Angola"
+msgstr "アンゴラ"
+
+#: includes/helpers.php:300
+msgid "Andorra"
+msgstr "アンドラ"
+
+#: includes/helpers.php:299
+msgid "American Samoa"
+msgstr "アメリカ領サモア"
+
+#: includes/helpers.php:298
+msgid "Algeria"
+msgstr "アルジェリア"
+
+#: includes/helpers.php:297
+msgid "Albania"
+msgstr "アルバニア"
+
+#: includes/helpers.php:296
+msgid "&#197;land Islands"
+msgstr "オーランド諸島"
+
+#: includes/helpers.php:295
+msgid "Afghanistan"
+msgstr "アフガニスタン"
+
+#: includes/helpers.php:294
+msgid "United Kingdom"
+msgstr "イギリス"
+
+#: includes/helpers.php:293
+msgid "Canada"
+msgstr "カナダ"
+
+#: includes/helpers.php:292
+msgid "United States"
+msgstr "アメリカ"
+
+#: includes/frontend/tracking/class-tracking-preview.php:88
+msgid "You are currently in a preview window. MonsterInsights doesn't track preview window traffic to avoid false visit reports."
+msgstr "現在プレビューウィンドウを表示しています。MonsterInsights は、誤った訪問レポートを避けるために、プレビューウィンドウのトラフィックを追跡しません。"
+
+#: includes/deprecated.php:247 includes/deprecated.php:262
+#: includes/deprecated.php:274 includes/deprecated.php:289
+#: includes/deprecated.php:303 includes/deprecated.php:320
+#: includes/deprecated.php:347
+msgid "Use %s instead."
+msgstr "代わりに %s を使ってください。"
+
+#: includes/deprecated.php:179
+msgid "%1$s is %3$sdeprecated%4$s since MonsterInsights version %2$s."
+msgstr "MonsterInsights バージョン%2$s以降から%1$s は %3$s非推奨%4$sです。"
+
+#: includes/deprecated.php:126
+msgid "%1$s is %3$sdeprecated%4$s since MonsterInsights version %2$s!"
+msgstr "MonsterInsights バージョン%2$s以降から%1$s は %3$s非推奨%4$sです。"
+
+#: includes/admin/tracking.php:336
+msgid "Once Weekly"
+msgstr "週1回"
+
+#: includes/admin/tracking.php:319
+msgid "Do not allow"
+msgstr "許可しない"
+
+#: includes/admin/tracking.php:318
+msgid "Allow"
+msgstr "許可する"
+
+#: includes/admin/tracking.php:317
+msgid "Allow MonsterInsights to track plugin usage? Opt-in to tracking and our newsletter to stay informed of the latest changes to MonsterInsights and help us ensure compatibility."
+msgstr "MonsterInsights にプラグインの使用状況を追跡させませんか ? トラッキングとメールマガジンに参加することで、MonsterInsights の最新の変更点を把握し、互換性を確保することができます。"
+
+#: includes/admin/settings/register-settings.php:384
+#: includes/admin/settings/tab-general.php:199
+msgid "By allowing us to track usage data we can better help you, because we know with which WordPress configurations, themes and plugins we should test."
+msgstr "使用データを追跡できるようにすることで、私たちはどの WordPress の設定、テーマ、プラグインをテストする必要があるのかが分かるため、皆さんをよりよくお助けできるようになります。"
+
+#: includes/admin/settings/register-settings.php:383
+#: includes/admin/settings/tab-general.php:198
+msgid "Allow Usage Tracking"
+msgstr "使用状況トラッキングを許可"
+
+#: includes/admin/settings/tab-general.php:176
+msgid "Warning: You're currently using deprecated PHP based events tracking. We recommend switching to JS events tracking, as it is significantly more accurate than PHP based events tracking and we will eventually discontinue PHP based events tracking. To switch %1$sclick here%2$s."
+msgstr "警告: 現在、非推奨の PHP ベースのイベントトラッキングをお使いのようです。PHP ベースのイベントトラッキングよりもはるかに正確な JS ベースのイベントトラッキングに切り替えることをおすすめします。将来的には PHP ベースのイベントトラッキングのサポートは終了する予定です。%1$s切り替えるにはここをクリック%2$sしてください。"
+
+#: includes/admin/settings/tab-general.php:170
+msgid "Switch to JS events tracking"
+msgstr "JS イベント追跡に切り替え"
+
+#: includes/admin/settings/tab-general.php:160
+msgid "Warning: You're currently using deprecated ga.js tracking. We recommend switching to analytics.js, as it is significantly more accurate than ga.js, and allows for functionality (like the more accurate Javascript based events tracking we offer). Further Google Analytics has deprecated support for ga.js, and it may stop working at any time when Google decides to disable it from their server. To switch to using the newer Universal Analytics (analytics.js) %1$sclick here%2$s."
+msgstr "警告: 現在、非推奨の ga.js ベースのイベントトラッキングをお使いのようです。ga.js ベースのイベントトラッキングよりもはるかに正確で機能 (私たちが提供している、より正確な JavaScript ベースのイベントトラッキングなど) が豊富な analytics.js イベントトラッキングに切り替えることをおすすめします。さらに、Google アナリティクスは ga.js のサポートを非推奨としており、Google 側がサーバーで停止することを決定した場合は動作しなくなる可能性があります。新しいユニバーサルアナリティクス (analytics.js) に%1$s切り替えるにはここをクリック%2$sしてください。"
+
+#: includes/admin/settings/tab-general.php:158
+msgid "Analytics.js (Universal Analytics)"
+msgstr "Analytics.js (ユニバーサルアナリティクス)"
+
+#: includes/admin/settings/tab-general.php:157
+msgid "GA.js (Deprecated)"
+msgstr "GA.js (非推奨)"
+
+#: includes/admin/settings/tab-general.php:151
+msgid "Pick Tracking Mode"
+msgstr "トラッキングモードを選択"
+
+#: includes/admin/settings/tab-general.php:144
+msgid "Hide the dashboard and reports pages."
+msgstr "ダッシュボードとレポートを非表示にします。"
+
+#: includes/admin/settings/tab-general.php:143
+msgid "Disable Dashboard"
+msgstr "ダッシュボードを無効化"
+
+#: includes/admin/settings/tab-general.php:114
+msgid "Having issues automatically authenticating? %s Click here to authenticate manually %s."
+msgstr "自動認証に問題がある場合、%sここをクリックして手動認証をお試しください%s。"
+
+#: includes/admin/settings/tab-general.php:110
+msgid "Deauthenticate"
+msgstr "認証を解除する"
+
+#: includes/admin/settings/tab-general.php:107
+msgid "Profile Active: "
+msgstr "有効なプロフィール:"
+
+#: includes/admin/settings/tab-general.php:101
+msgid "Google Authentication"
+msgstr "Google 認証"
+
+#: includes/admin/settings/tab-general.php:99
+msgid "Analytics Profile"
+msgstr "アナリティクスプロフィール"
+
+#: includes/admin/settings/settings-api.php:937
+msgid "The callback function used for the %s setting is missing."
+msgstr "%s 設定に使用されているコールバック関数がありません。"
+
+#: includes/admin/settings/settings-api.php:747
+msgid "You must have the %s capability to view/edit this setting"
+msgstr "この設定を表示/編集するには%s権限が必要です。"
+
+#: includes/admin/settings/register-settings.php:363
+msgid "Users that have at least one of these roles will be able to view and save the settings panel, along with any user with the %s capability."
+msgstr "これらの役割のうち少なくとも1つを持つユーザーは、%s権限を持つユーザーと共に、設定パネルを表示して保存することができます。"
+
+#: includes/admin/settings/register-settings.php:362
+msgid "Let these user roles save settings:"
+msgstr "以下のユーザーが設定を保存できるようにする:"
+
+#: includes/admin/settings/register-settings.php:352
+msgid "Let these user roles see reports (and the dashboard):"
+msgstr "以下のユーザーが設定をレポート (及びダッシュボード) を表示できるようにする:"
+
+#: includes/admin/settings/register-settings.php:342
+msgid "Turns on debugging in JS events tracking, logging of eCommerce requests and enables debug settings."
+msgstr "JS イベント追跡のデバッグ、eコマースリクエストのログ記録、デバッグ設定を有効にします。"
+
+#: includes/admin/settings/register-settings.php:246
+msgid "If you have enabled event tracking, MonsterInsights will send an event/pageview to GA if a link to a local file has one of the above extensions."
+msgstr "イベントトラッキングを有効にしており、ローカルファイルへのリンクに上記の拡張子が含まれている場合、MonsterInsights は GA にイベント/ページビューを送信します。"
+
+#: includes/admin/settings/register-settings.php:239
+msgid "Event (recommended)"
+msgstr "イベント (推奨)"
+
+#: includes/admin/settings/register-settings.php:235
+msgid "Tracking as pageviews is not recommended, as this would skew your statistics, but it does make it possible to track downloads as goals. This feature requires that event tracking be turned on."
+msgstr "統計情報を歪めてしまうため、ページビューとしてのトラッキングは推奨されませんが、ダウンロードを目標としてトラッキングすることは可能です。この機能を使うには、イベントトラッキングを有効化する必要があります。"
+
+#: includes/admin/settings/register-settings.php:234
+msgid "Track downloads as an:"
+msgstr "ダウンロードを以下として追跡:"
+
+#: includes/admin/settings/register-settings.php:224
+msgid "Do not use this feature if you use FeedBurner, as FeedBurner can do this automatically and better than this plugin can. Check %1$sthis help page%2$s for info on how to enable this feature in FeedBurner."
+msgstr "FeedBurner はこのプラグインよりも自動的かつ優れた処理を行うことができるため、FeedBurner をお使いの場合はこの機能を使用しないでください。 FeedBurner でこの機能を有効にする方法については、%1$sこのヘルプページ%2$sを確認してください。"
+
+#: includes/admin/settings/register-settings.php:223
+msgid "Turn on tag links in RSS"
+msgstr "RSS でタグリンクを有効化"
+
+#: includes/admin/settings/register-settings.php:217
+msgid "Turn on allowLinker"
+msgstr "allowLinker を有効化"
+
+#: includes/admin/settings/register-settings.php:211
+msgid "Turn on allowAnchor"
+msgstr "allowAnchor を有効化"
+
+#: includes/admin/settings/register-settings.php:199
+msgid "Enable enhanced link attribution?"
+msgstr "拡張リンク属性を有効にしますか ?"
+
+#: includes/admin/settings/register-settings.php:188
+msgid "Anonymize IP addresses?"
+msgstr "IP アドレスを匿名化しますか ?"
+
+#: includes/admin/settings/register-settings.php:170
+msgid "Using Javascript (recommended)"
+msgstr "JavaScript を使用 (推奨)"
+
+#: includes/admin/settings/register-settings.php:169
+msgid "Yes, using PHP (deprecated)"
+msgstr "はい、PHP を使用 (非推奨)"
+
+#: includes/admin/settings/register-settings.php:168
+msgid "No"
+msgstr "いいえ"
+
+#: includes/admin/settings/register-settings.php:164
+msgid "We recommend tracking clicks and downloads, so you know where users are exiting your site, and what downloads they are interacting with. "
+msgstr "クリックとダウンロードをトラッキングすることをおすすめします。ユーザーがサイトを離脱する場所とユーザーがどのようなダウンロードを行っているかを把握することができます。"
+
+#: includes/admin/settings/register-settings.php:154
+msgid "Users that have at least one of these roles will not be tracked into Google Analytics."
+msgstr "これらの権限グループのうち少なくとも1つに所属するユーザーは、Google アナリティクスにトラッキングされません。"
+
+#: includes/admin/settings/register-settings.php:153
+msgid "Ignore these user roles from tracking:"
+msgstr "以下の権限グループをトラッキングから除外:"
+
+#: includes/admin/settings/register-settings.php:109
+msgid "Permissions"
+msgstr "許可"
+
+#: includes/admin/settings/register-settings.php:105
+msgid "Compatibility"
+msgstr "互換性"
+
+#: includes/admin/settings/register-settings.php:100
+msgid "Notifications"
+msgstr "在庫通知"
+
+#: includes/admin/settings/register-settings.php:95
+msgid "Additional Reporting"
+msgstr "追加レポート"
+
+#: includes/admin/settings/register-settings.php:74
+msgid "Performance"
+msgstr "パフォーマンス"
+
+#: includes/admin/settings/register-settings.php:65
+msgid "Memberships"
+msgstr "メンバーシップ"
+
+#: includes/admin/settings/register-settings.php:60
+msgid "Media"
+msgstr "メディア"
+
+#: includes/admin/settings/register-settings.php:56
+msgid "eCommerce"
+msgstr "E-コマース"
+
+#: includes/admin/settings/register-settings.php:52
+msgid "Forms"
+msgstr "フォーム"
+
+#: includes/admin/settings/register-settings.php:48
+msgid "Ads"
+msgstr "広告"
+
+#: includes/admin/settings/register-settings.php:43
+msgid "Social"
+msgstr "ソーシャル"
+
+#: includes/admin/settings/register-settings.php:39
+msgid "Affiliate Links"
+msgstr "アフェリエイトリンク"
+
+#: includes/admin/settings/register-settings.php:35
+msgid "File Downloads"
+msgstr "ファイルダウンロード"
+
+#: includes/admin/settings/register-settings.php:27
+msgid "Demographics"
+msgstr "デモグラフィック"
+
+#: includes/admin/settings/register-settings.php:23
+msgid "Engagement"
+msgstr "エンゲージメント"
+
+#: includes/admin/reports/overview.php:458
+msgid "Country not set"
+msgstr "国未設定"
+
+#: includes/admin/reports/overview.php:443
+msgid "%"
+msgstr "%"
+
+#: includes/admin/reports/overview.php:437
+msgid "COUNTRY"
+msgstr "国"
+
+#: includes/admin/reports/overview.php:416
+msgid "views"
+msgstr "表示回数"
+
+#: includes/admin/reports/overview.php:408
+msgid "TOP COUNTRIES"
+msgstr "上位国"
+
+#: includes/admin/reports/overview.php:378
+msgid "Unknown Source"
+msgstr "不明なソース"
+
+#: includes/admin/reports/overview.php:362
+msgid "SITE"
+msgstr "サイト"
+
+#: includes/admin/reports/overview.php:357
+msgid "TOP TRAFFIC SOURCES"
+msgstr "上位トラフィックソース"
+
+#: includes/admin/reports/overview.php:333
+msgid "Unknown Page or Post"
+msgstr "不明なページまたは投稿"
+
+#: includes/admin/reports/overview.php:320
+#: includes/admin/reports/overview.php:365
+#: includes/admin/reports/overview.php:440
+msgid "VIEWS"
+msgstr "ビュー"
+
+#: includes/admin/reports/overview.php:317
+msgid "TITLE"
+msgstr "タイトル"
+
+#: includes/admin/reports/overview.php:312
+msgid "TOP POSTS AND PAGES"
+msgstr "人気の投稿とページ"
+
+#: includes/admin/reports/overview.php:137
+msgid "DOWN"
+msgstr "下"
+
+#: includes/admin/reports/overview.php:136
+msgid "UP"
+msgstr "上"
+
+#: includes/admin/reports/overview.php:127
+msgid "PAGE VIEWS"
+msgstr "ページビュー"
+
+#: includes/admin/partials/header.php:20
+msgid "MonsterInsights Mascot"
+msgstr "MonsterInsights マスコット"
+
+#: includes/admin/pages/settings.php:297
+msgid "Successfully migrated to JS events tracking!"
+msgstr "JS イベントトラッキングに切り替えました。"
+
+#: includes/admin/pages/settings.php:242
+msgid "Successfully migrated to Universal Analytics (analytics.js)!"
+msgstr "ユニバーサルアナリティクス (analytics.js) に切り替えました。"
+
+#: includes/admin/pages/settings.php:226 includes/admin/pages/settings.php:281
+msgid "Error"
+msgstr "エラー"
+
+#: includes/admin/pages/settings.php:226 includes/admin/pages/settings.php:281
+msgid "You do not have permission to manage MonsterInsights settings"
+msgstr "MonsterInsights の設定を管理する権限がありません。"
+
+#: includes/admin/pages/settings.php:151
+msgid "Settings saved successfully."
+msgstr "設定を保存しました。"
+
+#: includes/admin/pages/settings.php:66 includes/admin/pages/settings.php:67
+msgid "Tracking"
+msgstr "トラッキング"
+
+#: includes/admin/pages/network-settings.php:85
+#: includes/admin/settings/tab-general.php:88
+msgid "Refresh Key"
+msgstr "キーを再読み込み"
+
+#: includes/admin/pages/network-settings.php:82
+#: includes/admin/settings/tab-general.php:85
+msgid "Your license key type for this site is %s."
+msgstr "このサイトのライセンスキータイプは「%s」です。"
+
+#: includes/admin/pages/network-settings.php:78
+#: includes/admin/settings/tab-general.php:81
+msgid "License Key Type"
+msgstr "ライセンスキーの種類"
+
+#: includes/admin/pages/network-settings.php:69
+#: includes/admin/settings/tab-general.php:73
+msgid "Deactivate Key"
+msgstr "キーを無効化"
+
+#: includes/admin/pages/network-settings.php:68
+#: includes/admin/settings/tab-general.php:72
+msgid "Verify Key"
+msgstr "キーを検証"
+
+#: includes/admin/pages/network-settings.php:56
+msgid "Activate your MonsterInsights license key on this panel to hide the license key settings and addon pages for subsites."
+msgstr "サブサイトのライセンスキー設定とアドオンページを非表示にするには、このパネルの MonsterInsights ライセンスキーを有効化てください。"
+
+#: includes/admin/pages/dashboard.php:93 includes/admin/pages/reports.php:136
+msgid "Please %1$sauthenticate %2$swith Google Analytics to allow the plugin to fetch data."
+msgstr "プラグインがデータを取得できるよう、Google アナリティクスを%1$s再認証%2$sしてください。"
+
+#: includes/admin/pages/dashboard.php:85 includes/admin/pages/dashboard.php:99
+#: includes/admin/pages/dashboard.php:113
+#: includes/admin/pages/dashboard.php:127 includes/admin/pages/reports.php:128
+#: includes/admin/pages/reports.php:142 includes/admin/pages/reports.php:156
+#: includes/admin/pages/reports.php:170
+msgid "The Google oAuth authentication needs to be re-authenticated to view data."
+msgstr "データを表示するには Google oAuth 認証をやり直す必要があります。"
+
+#: includes/admin/pages/dashboard.php:79 includes/admin/pages/reports.php:122
+msgid "Please %1$senable the dashboard%2$s to see report data."
+msgstr "レポートデータを表示するには、%1$sダッシュボード%2$sを有効化してください。"
+
+#: includes/admin/pages/dashboard.php:39 includes/admin/pages/reports.php:56
+msgid "Access denied"
+msgstr "アクセス拒否"
+
+#: includes/admin/pages/addons.php:484
+msgid "Status: %1$sInactive%2$s"
+msgstr "ステータス: %1$s無効化中%2$s"
+
+#: includes/admin/pages/addons.php:482
+msgid "Status: %1$sNetwork Inactive%2$s"
+msgstr "ステータス: %1$sネットワークで無効化中%2$s"
+
+#: includes/admin/pages/addons.php:456
+msgid "Status: %1$sActive%2$s"
+msgstr "ステータス: %1$s有効化中%2$s"
+
+#: includes/admin/pages/addons.php:454
+msgid "Status: %1$sNetwork Active%2$s"
+msgstr "ステータス: %1$sネットワークで有効化中%2$s"
+
+#: includes/admin/pages/addons.php:427
+msgid "Why can't I install addons?"
+msgstr "どうしてアドオンがインストールできないのですか ?"
+
+#: includes/admin/pages/addons.php:416
+msgid "Status: %1$sNot Installed%2$s"
+msgstr "ステータス: %1$s未インストール%2$s"
+
+#: includes/admin/pages/addons.php:397
+msgid "Upgrade Now"
+msgstr "今すぐアップグレード"
+
+#: includes/admin/pages/addons.php:180
+msgid "Unlock More Addons"
+msgstr "追加アドオンをアンロック"
+
+#: includes/admin/pages/addons.php:160
+msgid "Available Addons:"
+msgstr "利用可能なアドオン:"
+
+#: includes/admin/pages/addons.php:142
+msgid "Refresh Addons"
+msgstr "アドオンを更新"
+
+#: includes/admin/pages/addons.php:123
+msgid "In order to get access to Addons, you need to resolve your license key errors."
+msgstr "アドオンにアクセスするにはライセンスキーのエラーを解消する必要があります。"
+
+#: includes/admin/pages/addons.php:89
+msgid "Sort Descending (Z-A)"
+msgstr "降順でソート (Z-A)"
+
+#: includes/admin/pages/addons.php:88
+msgid "Sort Ascending (A-Z)"
+msgstr "昇順でソート (A-Z)"
+
+#: includes/admin/pages/addons.php:86
+msgid "Search MI Addons"
+msgstr "MI アドオンを検索"
+
+#: includes/admin/pages/addons.php:83
+msgid "MonsterInsights Addons"
+msgstr "MonsterInsights アドオン"
+
+#: includes/admin/notice.php:225
+msgid "Dismiss this notice"
+msgstr "この警告を無視"
+
+#: includes/admin/licensing/skin.php:86
+msgid "There was an error installing the addon. Please try again."
+msgstr "アドオンのインストール中にエラーが発生しました。 後でもう一度お試しください。"
+
+#: includes/admin/licensing/license.php:475
+#: includes/admin/licensing/license.php:536
+msgid "Your license key for MonsterInsights has been disabled. Please use a different key to continue receiving automatic updates."
+msgstr "MonsterInsights のライセンスキーが無効になっています。 自動更新を引き続き受けるには別のキーを使用してください。"
+
+#: includes/admin/licensing/license.php:466
+#: includes/admin/licensing/license.php:527
+msgid "Your license key for MonsterInsights has expired. %1$sPlease click here to renew your license key and continue receiving automatic updates.%2$s"
+msgstr "MonsterInsights のライセンスキーが失効しました。 %1$sここをクリックしてライセンスキーを更新し、自動アップデートを受信して​​ください。%2$s"
+
+#: includes/admin/licensing/license.php:356
+msgid "Congratulations! You have deactivated the key from this site successfully."
+msgstr "このサイトでキーを無効にしました。"
+
+#: includes/admin/licensing/license.php:291
+msgid "Congratulations! Your key has been refreshed successfully."
+msgstr "おめでとうございます。キーをリフレッシュしました。"
+
+#: includes/admin/licensing/license.php:136
+#: includes/admin/licensing/license.php:145
+msgid "Congratulations! This site is now receiving automatic updates."
+msgstr "このサイトは現在自動更新を受信して​​います。"
+
+#: includes/admin/licensing/license.php:118
+#: includes/admin/licensing/license.php:218
+#: includes/admin/licensing/license.php:345
+msgid "There was an error connecting to the remote key API. Please try again later."
+msgstr "リモートキー API への接続中にエラーが発生しました。 後でもう一度お試しください。"
+
+#: includes/admin/googleauth.php:230
+msgid "EXIT"
+msgstr "終了"
+
+#: includes/admin/googleauth.php:215
+msgid "ERROR"
+msgstr "エラー"
+
+#: includes/admin/googleauth.php:208 includes/admin/googleauth.php:209
+#: includes/admin/googleauth.php:228
+msgid "Exit"
+msgstr "終了"
+
+#: includes/admin/googleauth.php:207
+msgid "An error has occured."
+msgstr "エラーが発生しました。"
+
+#: includes/admin/googleauth.php:187
+msgid "CLOSE"
+msgstr "閉じる"
+
+#: includes/admin/googleauth.php:185
+msgid "Save and close"
+msgstr "保存して閉じる"
+
+#: includes/admin/googleauth.php:173
+msgid "You're all set!"
+msgstr "準備ができました。"
+
+#: includes/admin/googleauth.php:172
+msgid "DONE"
+msgstr "完了"
+
+#: includes/admin/googleauth.php:167
+msgid "Your Google connection has been replaced."
+msgstr "Google 連携を切り替えました。"
+
+#: includes/admin/googleauth.php:130
+msgid "Select the Google Analytics Profile to Use"
+msgstr "使用する Google アナリティクスプロフィールを選択"
+
+#: includes/admin/googleauth.php:129
+msgid "SELECT PROFILE"
+msgstr "プロフィールを選択"
+
+#: includes/admin/googleauth.php:84
+msgid "Paste Google Code here"
+msgstr "ここに Google コードを貼り付ける"
+
+#: includes/admin/googleauth.php:83
+msgid "Copy the Google code into the box below and click next"
+msgstr "下のボックスに Google コードをコピーして「次へ」をクリック"
+
+#: includes/admin/googleauth.php:82
+msgid "Click To Get Google Code"
+msgstr "クリックして Google コードを取得"
+
+#: includes/admin/googleauth.php:81
+msgid "ENTER GOOGLE CODE"
+msgstr "Google コードを入力"
+
+#: includes/admin/googleauth.php:53 includes/admin/googleauth.php:101
+#: includes/admin/googleauth.php:148
+msgid "NEXT"
+msgstr "次"
+
+#: includes/admin/googleauth.php:45 includes/admin/googleauth.php:93
+#: includes/admin/googleauth.php:140
+msgid "CANCEL"
+msgstr "キャンセル"
+
+#: includes/admin/googleauth.php:38
+msgid "Authenticate your Google Analytics account with MonsterInsights"
+msgstr "MonsterInsights で Google アナリティクスアカウントを認証"
+
+#: includes/admin/googleauth.php:37
+msgid "AUTHENTICATION"
+msgstr "認証"
+
+#: includes/admin/googleauth.php:35
+msgid "Re-authenticate your Google Analytics account with MonsterInsights"
+msgstr "MonsterInsights で Google アナリティクスアカウントを再認証"
+
+#: includes/admin/googleauth.php:34
+msgid "RE-AUTHENTICATE"
+msgstr "再認証"
+
+#: includes/admin/googleauth.php:26 includes/admin/googleauth.php:27
+#: includes/admin/googleauth.php:45 includes/admin/googleauth.php:74
+#: includes/admin/googleauth.php:75 includes/admin/googleauth.php:93
+#: includes/admin/googleauth.php:121 includes/admin/googleauth.php:122
+#: includes/admin/googleauth.php:140
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: includes/admin/googleauth.php:25 includes/admin/googleauth.php:73
+#: includes/admin/googleauth.php:120
+msgid "This process will replace your current Google Analytics connection."
+msgstr "このプロセスは、現在の Google アナリティクスとの連携を置き換えます。"
+
+#: includes/admin/google.php:624
+msgid "Please select a profile."
+msgstr "プロフィールを選択してください。"
+
+#: includes/admin/google.php:618
+msgid "Invalid profile selected."
+msgstr "無効なプロフィールが選択されました。"
+
+#: includes/admin/google.php:592
+msgid "Please paste in your Google code."
+msgstr "Google コードを貼り付けてください。"
+
+#: includes/admin/google.php:585
+msgid "Bad Google Code. Please try again."
+msgstr "不正な Google コード。もう一度お試しください。"
+
+#: includes/admin/google.php:578
+msgid "No profiles viewable for that account. Please use another account."
+msgstr "そのアカウントで閲覧可能なプロフィールはありません。 別のアカウントを使用してください。"
+
+#: includes/admin/google.php:539 includes/admin/google.php:646
+msgid "Permission Denied"
+msgstr "権限がありません"
+
+#: includes/admin/common.php:174
+msgid "Proceed"
+msgstr "続行"
+
+#: includes/admin/common.php:173
+msgid "Installing..."
+msgstr "インストール中..."
+
+#: includes/admin/common.php:171 includes/admin/pages/addons.php:422
+msgid "Install"
+msgstr "インストール"
+
+#: includes/admin/common.php:170
+msgid "Status: Network inactive"
+msgstr "ステータス: ネットワーク全体で無効"
+
+#: includes/admin/common.php:169
+msgid "Status: Inactive"
+msgstr "ステータス: 無効"
+
+#: includes/admin/common.php:168
+msgid "Deactivating..."
+msgstr "無効化中…"
+
+#: includes/admin/common.php:166 includes/admin/pages/addons.php:463
+msgid "Network deactivate"
+msgstr "ネットワーク全体で無効化"
+
+#: includes/admin/common.php:165 includes/admin/pages/addons.php:465
+#: includes/admin/pages/addons.php:467
+msgid "Deactivate"
+msgstr "無効化"
+
+#: includes/admin/common.php:164
+msgid "Activating..."
+msgstr "有効化中…"
+
+#: includes/admin/common.php:162 includes/admin/pages/addons.php:490
+msgid "Network activate"
+msgstr "ネットワーク全体で有効化"
+
+#: includes/admin/common.php:161
+msgid "Status: Network Activated"
+msgstr "ステータス: ネットワーク全体で有効"
+
+#: includes/admin/common.php:160 includes/admin/pages/addons.php:492
+msgid "Activate"
+msgstr "有効化"
+
+#: includes/admin/common.php:159
+msgid "Status: Active"
+msgstr "ステータス: 有効"
+
+#: includes/admin/admin.php:130 includes/admin/admin.php:133
+msgid "Support"
+msgstr "サポート"
+
+#: includes/admin/admin.php:124
+msgid "Get MonsterInsights Pro"
+msgstr "MonsterInsights Pro を入手"
+
+#: includes/admin/admin.php:119
+msgid "Documentation"
+msgstr "ドキュメンテーション"
+
+#: includes/admin/admin.php:86 includes/admin/admin.php:88
+#: includes/admin/pages/network-settings.php:55
+msgid "Network Settings"
+msgstr "ネットワーク設定"
+
+#: includes/admin/admin.php:63 includes/admin/admin.php:91
+msgid "Addons"
+msgstr "アドオン"
+
+#: includes/admin/admin.php:63 includes/admin/admin.php:91
+msgid "Addons:"
+msgstr "アドオン:"
+
+#: includes/admin/admin.php:54
+msgid "Reports:"
+msgstr "レポート:"
+
+#: includes/admin/admin.php:42 includes/admin/admin.php:46
+msgid "Dashboard:"
+msgstr "ダッシュボード:"
+
+#: includes/admin/admin.php:36 includes/admin/admin.php:39
+#: includes/admin/admin.php:49
+msgid "Settings:"
+msgstr "設定:"
+
+#: googleanalytics.php:577
+msgid "Sorry, but your version of WordPress does not meet MonsterInsight's required version of %1$s3.8%2$s to run properly. The plugin not been activated. %3$sClick here to return to the Dashboard%4$s."
+msgstr "使用している WordPress のバージョンが MonsterInsights を適切に実行するための必須バージョンである%1$s3.8%2$sを満たしていません。プラグインは有効化されませんでした。%3$sダッシュボードに戻るにはここをクリックしてください%4$s。"
+
+#: googleanalytics.php:406
+msgid "Sorry, but your version of WordPress does not meet MonsterInsights's required version of %1$s3.8%2$s to run properly. The plugin not been activated. %3$sClick here to return to the Dashboard%4$s."
+msgstr "使用している WordPress のバージョンが MonsterInsights を適切に実行するための必須バージョンである%1$s3.8%2$sを満たしていません。プラグインは有効化されませんでした。%3$sダッシュボードに戻るにはここをクリックしてください%4$s。"
+
+#: googleanalytics.php:229 googleanalytics.php:243
+msgid "Cheatin&#8217; huh?"
+msgstr "間違えましたか ?"
+
+#. Author URI of the plugin/theme
+msgid "https://www.monsterinsights.com/"
+msgstr "https://www.monsterinsights.com/"
+
+#. #-#-#-#-#  google-analytics-for-wordpress-code.pot (Google Analytics for
+#. WordPress by MonsterInsights 6.2.8)  #-#-#-#-#
+#. Author of the plugin/theme
+#: includes/admin/partials/header.php:19
+msgid "MonsterInsights"
+msgstr "MonsterInsights"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.monsterinsights.com/?utm_source=wordpress&utm_medium=plugin&utm_campaign=wpmipluginpro&utm_content=v600"
+msgstr "https://www.monsterinsights.com/?utm_source=wordpress&utm_medium=plugin&utm_campaign=wpmipluginpro&utm_content=v600"
+
+#: includes/admin/admin.php:36 includes/admin/admin.php:42
+#: includes/admin/admin.php:86
+msgid "Insights"
+msgstr "インサイト"
+
+#: includes/admin/pages/network-settings.php:62
+#: includes/admin/settings/tab-general.php:66
+msgid "License Key"
+msgstr "ライセンスキー"
+
+#: includes/frontend/tracking/class-tracking-disabled.php:92
+msgid "Normally you will find the Google Analytics tracking code here, but the webmaster disabled your user group."
+msgstr "通常はここで Google アナリティクストラッキングコードを見つけられますが、ウェブマスターがあなたのユーザーグループを無効化しました。"
+
+#: includes/frontend/tracking/class-tracking-disabled.php:90
+msgid "@Webmaster, normally you will find the Google Analytics tracking code here, but you are in the disabled user groups. To change this, navigate to Insights %1$s Settings %1$s Ignore Users"
+msgstr "ウェブマスターの方へ。通常はここで Google アナリティクストラッキングコードを見つけられますが、現在あなたは無効なユーザーグループに属しています。これを変更するには「インサイト %1$s 設定 %1$s ユーザーを無視」画面に移動してください。"
+
+#: includes/admin/settings/register-settings.php:341
+msgid "Enable Debug Mode"
+msgstr "デバッグモードを有効化"
+
+#: includes/admin/settings/register-settings.php:336
+msgid "Not for the average user: this allows you to add a line of code, to be added before the %1$s call."
+msgstr "一般ユーザー向けのものではありません: ここでは %1$s のコール以前に追加される（カスタムな）コードの追加を許可します。"
+
+#: includes/admin/settings/register-settings.php:335
+msgid "Custom code"
+msgstr "カスタムコード"
+
+#: includes/admin/settings/register-settings.php:218
+msgid "This adds a %1$s call to your tracking code, allowing you to use %2$s and related functions."
+msgstr "これは、%2$s や関連ファンクションが使えるよう、トラッキングコードに %1$s のコールを追加します。"
+
+#: includes/admin/settings/register-settings.php:212
+msgid "This adds a %1$s call to your tracking code, and makes RSS link tagging use a %2$s as well."
+msgstr "トラッキングコードに %1$s へのコールを追加し、RSS リンクのタグ付けに %2$s を使うようにします。"
+
+#: includes/admin/settings/register-settings.php:262
+msgid "Label for those links:"
+msgstr "これらのリンクのラベル: "
+
+#: includes/admin/settings/register-settings.php:257
+msgid "If you want to track all internal links that begin with %1$s, enter %1$s in the box above. If you have multiple prefixes you can separate them with comma's: %2$s"
+msgstr "%1$s で始まるすべての内部リンクをトラックしたい場合、上記のボックス内に %1$s を入力します。 複数のプリフィクス（接頭辞）を持っている場合は、それらをカンマで区切って指定することができます： %2$s"
+
+#: includes/admin/settings/register-settings.php:256
+msgid "Set path for internal links to track as outbound links"
+msgstr "内部リンクを外部離脱リンクとしてトラックするためのパスを設定"
+
+#: lite/includes/admin/addons.php:39
+msgid "Subdomain tracking:"
+msgstr "サブドメインのトラッキング: "
+
+#: includes/admin/settings/register-settings.php:245
+msgid "Extensions of files to track as downloads:"
+msgstr "ダウンロードを計測するファイルの拡張子: "
+
+#: includes/admin/settings/register-settings.php:200
+msgid "Add %1$sEnhanced Link Attribution%2$s to your tracking code."
+msgstr "トラッキングコードに%1$s拡張リンク属性%2$sを追加する。"
+
+#: includes/admin/settings/register-settings.php:180
+msgid "Enable Demographics and Interests Reports for Remarketing and Advertising"
+msgstr "リマーケティングと広告用にユーザー属性・ユーザーインタレストのレポートを有効化"
+
+#: includes/admin/settings/register-settings.php:189
+msgid "This adds %1$s, telling Google Analytics to anonymize the information sent by the tracker objects by removing the last octet of the IP address prior to its storage."
+msgstr "ここでは %1$s を追加します。ストレージに格納する前に、IPアドレスの最後のオクテットが除去されたトラッカーオブジェクトにより、匿名化された情報が Google Analytics に送信されます。"
+
+#: includes/admin/settings/register-settings.php:163
+msgid "Track outbound clicks and download links?"
+msgstr "アウトバウンドクリックとダウンロードリンクを追跡しますか ?"
+
+#: includes/admin/settings/tab-general.php:136
+msgid "Warning: If you use a manual UA code, you won't be able to use the dashboard or reports."
+msgstr "警告: 手動 UA コードを使用する場合、ダッシュボードとレポートを利用できなくなります。"
+
+#: includes/admin/settings/tab-general.php:132
+msgid "Manually enter your UA code"
+msgstr "UA コードを手動入力"
+
+#: includes/admin/google.php:552
+msgid "Cannot connect to Google"
+msgstr "Google に接続できません"
+
+#: includes/admin/settings/tab-general.php:109
+msgid "Re-Authenticate with your Google account"
+msgstr "Google アカウントで再認証"
+
+#: includes/admin/google.php:689
+msgid "Select a profile"
+msgstr "プロフィールを選択"
+
+#: includes/admin/google.php:688
+msgid "Analytics profile"
+msgstr "アナリティクスプロフィール"
+
+#: includes/admin/settings/tab-general.php:113
+msgid "Authenticate with your Google account"
+msgstr "Google アカウントで認証"
+
+#: includes/admin/settings/register-settings.php:70
+msgid "Custom Dimensions"
+msgstr "カスタムサイズ"
+
+#: includes/admin/pages/settings.php:62 includes/admin/pages/settings.php:63
+msgid "General"
+msgstr "一般"
+
+#: includes/admin/reports/overview.php:32
+msgid "Overview"
+msgstr "概要"
+
+#: includes/admin/admin.php:54 includes/admin/pages/reports.php:93
+msgid "Reports"
+msgstr "レポート"
+
+#: includes/admin/googleauth.php:51 includes/admin/googleauth.php:99
+#: includes/admin/googleauth.php:146
+msgid "Next"
+msgstr "次へ"
+
+#: includes/admin/common.php:156
+msgid "Loading..."
+msgstr "読み込み中..."
+
+#: includes/admin/google.php:842 includes/admin/pages/dashboard.php:121
+#: includes/admin/pages/reports.php:164
+msgid "Data is not up-to-date, there was an error in retrieving the data from Google Analytics. This error could be caused by several issues. If the error persists, please see %1$sthis page%2$s."
+msgstr "データが最新ではありません。 Google Analytics からのデータ取得にエラーが生じています。このエラーは、いくつかの問題が原因で発生する可能性があります。 エラーが解決しない場合は %1$s こちらのページ %2$s を参照してください。"
+
+#: includes/admin/google.php:829
+msgid "It seems the authentication for the plugin is missing permissions. Please %1$sre-authenticate%2$s with Google Analytics to allow the plugin to fetch data."
+msgstr "プラグイン用の認証の有効期限が切れているようです。 データをフェッチするためのプラグインを可能にするために、Google Analytics で %1$s 再認証 %2$s を行ってください。"
+
+#: includes/admin/google.php:803
+msgid "Please configure your %1$sGoogle Analytics settings%2$s!"
+msgstr "%1$sGoogle アナリティクス設定%2$sを完了してください。"
+
+#: includes/admin/settings/register-settings.php:240
+msgid "Pageview"
+msgstr "ページビュー"
+
+#: includes/admin/admin.php:39 includes/admin/admin.php:49
+#: includes/admin/admin.php:137
+msgid "Settings"
+msgstr "設定"
+
+#: includes/admin/admin.php:46 includes/admin/pages/dashboard.php:56
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+#: includes/admin/settings/settings-api.php:969
+#: includes/admin/settings/tab-general.php:219
+msgid "Save Changes"
+msgstr "変更を保存"

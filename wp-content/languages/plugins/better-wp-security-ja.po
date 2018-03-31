@@ -1,0 +1,3902 @@
+# Translation of Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-07-28 11:38:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release)\n"
+
+#: core/modules/file-writing/settings-page.php:25
+#: core/modules/file-writing/settings-page.php:54
+msgid "Copy to Clipboard"
+msgstr "クリップボードにコピー"
+
+#: core/admin-pages/page-settings.php:117
+msgid "Copied!"
+msgstr "コピーしました。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:183
+msgid "The password has not been updated."
+msgstr "あなたのパスワードは更新されていません。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:181
+msgid "Your profile has not been updated."
+msgstr "あなたのプロフィールは更新されていません。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:179
+msgid "The user changes have not been saved."
+msgstr "ユーザーの変更は保存されていません。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:177
+msgid "The user has not been created."
+msgstr "ユーザーは作成されていません。"
+
+#: core/modules/security-check/scanner.php:157
+msgid "The email value is missing."
+msgstr "メールアドレスの値がありません。"
+
+#: core/lib/includes/function.login-header.php:81
+msgid "Powered by WordPress"
+msgstr "Powered by WordPress"
+
+#: core/lib/includes/function.login-header.php:80
+msgid "https://wordpress.org/"
+msgstr "https://ja.wordpress.org/"
+
+#: core/lib/class-itsec-lib-password-requirements.php:453
+msgid "Invalid User"
+msgstr "無効なユーザー"
+
+#: core/lib/class-itsec-lib-password-requirements.php:429
+msgid "A password change is required for your account."
+msgstr "アカウントのパスワードを変更する必要があります。"
+
+#: core/lib/class-itsec-lib-password-requirements.php:395
+msgid "&larr; Back to %s"
+msgstr "&larr; %s に戻る"
+
+#: core/lib/class-itsec-lib-password-requirements.php:378
+msgid "Update Password"
+msgstr "パスワードの更新"
+
+#: core/lib/class-itsec-lib-password-requirements.php:369
+msgid "Confirm new password"
+msgstr "新しいパスワードの確認"
+
+#: core/lib/class-itsec-lib-password-requirements.php:365
+msgid "Strength indicator"
+msgstr "強度インジケータ"
+
+#: core/lib/class-itsec-lib-password-requirements.php:356
+msgid "New Password"
+msgstr "新しいパスワード"
+
+#: core/admin-pages/page-settings.php:481
+msgid "Search"
+msgstr "検索"
+
+#: core/admin-pages/page-settings.php:477
+msgid "Search Modules"
+msgstr "検索モジュール"
+
+#: core/lib/class-itsec-lib-config-file.php:413
+msgid "Added by W3 Total Cache"
+msgstr "W3 Total Cache が追加"
+
+#: core/modules/security-check/scanner.php:63
+msgid "Enabled the Vulnerable Site Protection setting in Two-Factor Authentication."
+msgstr "二段階認証の「脆弱サイト保護」を有効化しました。"
+
+#: core/modules/security-check/scanner.php:62
+msgid "Enabled the Vulnerable User Protection setting in Two-Factor Authentication."
+msgstr "二段階認証の「脆弱ユーザー保護」を有効化しました。"
+
+#: core/modules/security-check/scanner.php:61
+msgid "Changed the User Type Protection setting in Two-Factor Authentication to \"Privileged Users\"."
+msgstr "二段階認証のユーザータイプ保護設定を「特権ユーザー」に変更しました。"
+
+#: core/modules/security-check/scanner.php:60
+msgid "Changed the Authentication Methods Available to Users setting in Two-Factor Authentication to \"All Methods\"."
+msgstr "二段階認証のユーザー設定で利用可能な認証メソッドを「すべてのメソッド」に変更しました。"
+
+#: core/modules/ipcheck/class-itsec-ipcheck.php:215
+msgid "IP Flagged by Network Brute Force Protection"
+msgstr "ネットワーク・ブルートフォース保護によってフラグが立てられた IP"
+
+#: core/modules/backup/class-itsec-backup.php:136
+msgid "Unable to write the backup file. This may be due to a permissions or disk space issue."
+msgstr "バックアップファイルに書き込めません。権限またはディスク領域の問題かも知れません。"
+
+#: core/modules/backup/class-itsec-backup.php:130
+msgid "Unable to create the backup directory due to an unknown error."
+msgstr "不明なエラーにより、バックアップディレクトリを作成できません。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:113
+msgid "<strong>Default Access</strong> - Access to REST API data is left as default. Information including published posts, user details, and media library entries is available for public access."
+msgstr "<strong>デフォルトアクセス</strong> - REST API データへのアクセスはデフォルトのままになります。公開された投稿、ユーザーの詳細、メディアライブラリのエントリを含む情報は、一般公開されます。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:112
+msgid "<strong>Restricted Access</strong> - Restrict access to most REST API data. This means that most requests will require a logged in user or a user with specific privileges, blocking public requests for potentially-private data. We recommend selecting this option."
+msgstr "<strong>制限付きアクセス</strong> - ほぼすべての REST API データへのアクセスを制限します。これにより、ほぼすべての要求でログインしているユーザー、または特定の特権を持つユーザーが必要となり、潜在的にプライベートなデータに対する一般的な要求をブロックします。このオプションの選択をおすすめします。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:109
+msgid "The <a href=\"%1$s\">WordPress REST API</a> is part of WordPress and provides developers with new ways to manage WordPress. By default, it could give public access to information that you believe is private on your site. For more details, see our post about the WordPress REST API <a href=\"%1$s\">here</a>."
+msgstr "<a href=\"%1$s\">WordPress REST API</a> は WordPress の一部であり、WordPress を管理する新しい方法を開発者に提供します。デフォルトでは、サイトのプライベートな情報へ一般的なアクセスをすることができます。詳細については、<a href=\"%1$s\">こちらの</a> WordPress REST API に関する記事をご覧ください。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:38
+msgid "Default Access"
+msgstr "デフォルトアクセス"
+
+#: core/modules/wordpress-tweaks/settings-page.php:37
+msgid "Restricted Access (recommended)"
+msgstr "制限付きアクセス (推奨)"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:220
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:235
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:262
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:284
+msgid "You do not have sufficient permission to access this endpoint. Access to REST API requests is restricted by iThemes Security settings."
+msgstr "このエンドポイントにアクセスする十分な権限がありません。REST API 要求へのアクセスは、iThemes Security の設定によって制限されています。"
+
+#: core/modules/security-check/scanner.php:69
+msgid "Changed the REST API setting in WordPress Tweaks to \"Restricted Access\"."
+msgstr "WordPress の微調整の REST API 設定を \"制限付きアクセス\" に変更しました。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:107
+#: core/modules/wordpress-tweaks/validator.php:18
+msgid "REST API"
+msgstr "REST API"
+
+#: core/modules/wordpress-tweaks/settings-page.php:146
+msgid "Enabling this feature helps protect visitors to this site (including logged in users) from phishing attacks launched by a linked site. Details on tabnapping via target=\"_blank\" links can be found in <a href=\"%s\">this article</a>."
+msgstr "この機能を有効にすると、リンクされたサイトで開始されたフィッシング攻撃からこのサイト (ログインしているユーザーを含む) の訪問者を保護することができます。target=\"_blank\" リンクによるタブナビングの詳細については、<a href=\"%s\">この記事</a> を参照してください。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:145
+msgid "Alter target=\"_blank\" links to protect against tabnapping"
+msgstr "タブナビングから保護するために target=\"_blank\" リンクを変更"
+
+#: core/modules/wordpress-tweaks/settings-page.php:142
+#: core/modules/wordpress-tweaks/validator.php:22
+msgid "Protect Against Tabnapping"
+msgstr "タブナビングからの保護"
+
+#: core/modules/global/settings-page.php:162
+msgid "The length of time a host or user will be banned from this site after hitting the limit of bad logins. The default setting of 15 minutes is recommended as increasing it could prevent attacking IP addresses from being added to the blacklist."
+msgstr "不正なログインの限界に達した後、ホストまたはユーザーがこのサイトから禁止される時間を指定してください。IP アドレスの攻撃がブラックリストに追加されるのを防ぐために、デフォルトの設定15分をおすすめします。"
+
+#. translators: 1: site URL, 2: email subject
+#: core/lib/class-itsec-mail.php:204
+msgid "[%1$s] %2$s"
+msgstr "[%1$s] %2$s"
+
+#: core/lib/class-itsec-mail.php:188
+msgid "Reason"
+msgstr "理由"
+
+#: core/lib/class-itsec-mail.php:187
+msgid "Lockout in Effect Until"
+msgstr "ロックアウトまでの効果"
+
+#: core/lib/class-itsec-mail.php:186
+msgid "Host/User"
+msgstr "ホスト / ユーザー"
+
+#. translators: 1: Hostname
+#: core/lib/class-itsec-mail.php:177
+msgid "<b>Host:</b> %1$s"
+msgstr "<b>ホスト:</b> %1$s"
+
+#. translators: 1: Username
+#: core/lib/class-itsec-mail.php:174
+msgid "<b>User:</b> %1$s"
+msgstr "<b>ユーザー:</b> %1$s"
+
+#: core/lockout.php:1213
+msgid "[%s] Site Lockout Notification"
+msgstr "[%s] サイトのロックアウト通知"
+
+#: core/lockout.php:1207
+msgid "Visit Banned Users Settings"
+msgstr "禁止ユーザーの設定へ移動"
+
+#: core/lockout.php:1206
+msgid "Release the permanent host ban from Ban Hosts list in the Banned Users section of the settings page."
+msgstr "設定ページの禁止ユーザーセクションの禁止ホストリストから永続的なホスト禁止を解除します。"
+
+#: core/lockout.php:1202
+msgid "Visit Settings Page"
+msgstr "設定ページへ移動"
+
+#: core/lockout.php:1201
+msgid "Release lockouts from the Active Lockouts section of the settings page."
+msgstr "設定ページのアクティブなロックアウトセクションからロックアウトを解除します。"
+
+#: core/modules/strong-passwords/settings-page.php:41
+msgid "For more information on WordPress roles and capabilities please see <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%1$s</a>."
+msgstr "WordPress の役割と機能の詳細については、<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%1$s</a> をご覧ください。"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:113
+msgid "Documentation: <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+msgstr "ドキュメント: <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:97
+msgid "Infected URL: <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+msgstr "感染した URL:  <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+
+#: core/modules/file-change/settings-page.php:25
+msgid "Changes were detected. Please check the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">logs page</a> for details."
+msgstr "変更が検出されました。詳細を <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">ログページ</a> で確認してください。"
+
+#: core/modules/ban-users/settings-page.php:33
+msgid "As a getting-started point you can include the blacklist developed by Jim Walker."
+msgstr "始める要点として、Jim Walker によって開発されたブラックリストを含めることができます。"
+
+#: core/modules/system-tweaks/settings-page.php:104
+msgid "Disable PHP execution in the themes directory. This blocks requests to PHP files inside theme directories that can be exploited directly."
+msgstr "テーマディレクトリで PHP の実行を無効にします。これにより、直接悪用される可能性があるテーマディレクトリ内の PHP ファイルへのリクエストがブロックされます。"
+
+#: core/modules/system-tweaks/settings-page.php:103
+msgid "Disable PHP in Themes"
+msgstr "テーマで PHP を無効"
+
+#: core/modules/backup/class-itsec-backup.php:282
+msgid "Database Backup"
+msgstr "データベースバックアップ"
+
+#: core/modules/backup/class-itsec-backup.php:282
+msgid "Site Database Backup for <b>%s</b>"
+msgstr "サイト <b>%s</b> のデータベースバックアップ"
+
+#: core/modules/backup/class-itsec-backup.php:283
+msgid "Attached is the database backup file for your site."
+msgstr "サイトのデータベースバックアップファイルが添付されています。"
+
+#: core/modules/backup/class-itsec-backup.php:286
+msgid "Website"
+msgstr "ウェブサイト"
+
+#: core/modules/system-tweaks/config-generators.php:91
+#: core/modules/system-tweaks/config-generators.php:215
+msgid "Disable PHP in Plugins - Security > Settings > System Tweaks > PHP in Plugins"
+msgstr "プラグインで PHP を無効 - セキュリティ > 設定 > システムの微調整 > プラグイン内の PHP"
+
+#: core/modules/system-tweaks/config-generators.php:103
+#: core/modules/system-tweaks/config-generators.php:228
+msgid "Disable PHP in Themes - Security > Settings > System Tweaks > PHP in Themes"
+msgstr "テーマで PHP を無効 - セキュリティ > 設定 > システムの微調整 > テーマ内の PHP"
+
+#: core/modules/system-tweaks/settings-page.php:48
+msgid "Filter out hits with the trace, delete, or track request methods. This should not be enabled if you use the <a href=\"%s\">WordPress REST API</a>."
+msgstr "トレース、削除、または追跡リクエストのメソッドでヒットを除外します。<a href=\"%s\">WordPress REST API</a> を使用している場合は、これを有効にしないでください。"
+
+#: core/modules/system-tweaks/settings-page.php:84
+#: core/modules/system-tweaks/validator.php:16
+msgid "PHP in Uploads"
+msgstr "アップロード内の PHP"
+
+#: core/modules/system-tweaks/settings-page.php:88
+msgid "Disable PHP execution in the uploads directory. This blocks requests to maliciously uploaded PHP files in the uploads directory."
+msgstr "アップロードディレクトリで PHP の実行を無効にします。これにより、直接悪用される可能性があるアップロードディレクトリ内の PHP ファイルへのリクエストがブロックされます。"
+
+#: core/modules/system-tweaks/settings-page.php:92
+#: core/modules/system-tweaks/validator.php:17
+msgid "PHP in Plugins"
+msgstr "プラグイン内の PHP"
+
+#: core/modules/system-tweaks/settings-page.php:95
+msgid "Disable PHP in Plugins"
+msgstr "プラグインで PHP を無効"
+
+#: core/modules/system-tweaks/settings-page.php:96
+msgid "Disable PHP execution in the plugins directory. This blocks requests to PHP files inside plugin directories that can be exploited directly."
+msgstr "プラグインディレクトリで PHP の実行を無効にします。これにより、直接悪用される可能性があるプラグインディレクトリ内の PHP ファイルへのリクエストがブロックされます。"
+
+#: core/modules/system-tweaks/settings-page.php:100
+#: core/modules/system-tweaks/validator.php:18
+msgid "PHP in Themes"
+msgstr "テーマ内の PHP"
+
+#: core/lib/class-itsec-mail.php:149
+msgid "Hosts"
+msgstr "ホスト"
+
+#: core/lib/class-itsec-mail.php:148
+msgid "Users"
+msgstr "ユーザー"
+
+#: core/lib/class-itsec-mail.php:87
+msgid "Learn simple WordPress security tips — including 3 kinds of security your site needs and 4 best security practices for keeping your WordPress site safe with our <a href=\"%s\">free guide</a>."
+msgstr "簡単な WordPress のセキュリティヒントを学ぶ - <a href=\"%s\">無料ガイド</a>には、サイトに必要な3種類のセキュリティと、WordPress のサイトを安全に保つための4つの高度なセキュリティ実践が含まれています。"
+
+#: core/lib/class-itsec-mail.php:86
+msgid "Free WordPress Security Guide"
+msgstr "無料の WordPress セキュリティガイド"
+
+#: core/lib/class-itsec-mail.php:85
+msgid "To unsubscribe from these updates, visit the Settings page in the iThemes Security plugin menu."
+msgstr "これらアップデートの登録を解除するには、iThemes Security プラグインメニューの設定ページにアクセスしてください。"
+
+#: core/lib/class-itsec-mail.php:85
+msgid "This email was generated by the iThemes Security plugin."
+msgstr "このメールは、iThemes Security プラグインによって生成されています。"
+
+#: core/lib/class-itsec-mail.php:83
+msgid "Pro customers can contact <a href=\"%s\">iThemes Helpdesk</a> for help. Our support team answers questions Monday – Friday, 8am – 5pm (CST)."
+msgstr "PRO のお客様は、<a href=\"%s\">iThemes ヘルプデスク</a> へご連絡ください。月曜日にサポートチームが質問にお答えします - 金曜日、午前8時 - 午後5時 (中部標準時)"
+
+#: core/lib/class-itsec-mail.php:80
+msgid "Read iThemes Security documentation and Frequently Asked Questions on <a href=\"%s\">the Codex</a>."
+msgstr "<a href=\"%s\">Codex</a> に関する iThemes Security のドキュメントとよくある質問を読む。"
+
+#: core/lib/class-itsec-mail.php:79
+msgid "Documentation"
+msgstr "ドキュメント"
+
+#: core/lib/class-itsec-mail.php:78
+msgid "Help & Support"
+msgstr "ヘルプ & サポート"
+
+#: core/lib/class-itsec-mail.php:77
+msgid "Make the most of iThemes Security features with our <a href=\"%s\">free iThemes Security tutorials</a>."
+msgstr "<a href=\"%s\">iThemes Security の無料チュートリアル</a>で iThemes Security の機能を最大限に活用しましょう。"
+
+#: core/lib/class-itsec-mail.php:76
+msgid "Tutorials"
+msgstr "チュートリアル"
+
+#: core/lib/class-itsec-mail.php:75
+msgid "Read the latest in WordPress Security news, tips, and updates on <a href=\"%s\">iThemes Blog</a>."
+msgstr "<a href=\"%s\">iThemes ブログ</a> で最新の WordPress セキュリティニュース、ヒント、更新をお読みください。"
+
+#: core/lib/class-itsec-mail.php:74
+msgid "Articles"
+msgstr "記事"
+
+#: core/lib/class-itsec-mail.php:73
+msgid "Security Resources"
+msgstr "セキュリティリソース"
+
+#: core/lib/class-itsec-mail.php:62
+msgid "Why go Pro? <a href=\"%s\">Check out the Free/Pro comparison chart.</a>"
+msgstr "PRO へ移行しますか？ <a href=\"%s\">無料 / プロの比較チャートを確認してください。</a>"
+
+#: core/lib/class-itsec-mail.php:60
+msgid "Want two-factor authentication, scheduled malware scanning, ticketed support and more?"
+msgstr "2段階認証、マルウェアスキャンのスケジュール、チケット取得サポートなど。"
+
+#: core/notify.php:188
+msgid "Debug info (source page): %s"
+msgstr "デバッグ情報 (ソースページ): %s"
+
+#: core/notify.php:185
+msgid "Run a Security Check ✓"
+msgstr "セキュリティチェックを実行する ✓"
+
+#: core/notify.php:184
+msgid "Ensure your site is using recommended settings and features with a security check."
+msgstr "サイトでセキュリティチェック付きの推奨設定と機能を使用しているか確認できます。"
+
+#: core/notify.php:183
+msgid "Is your site as secure as it could be?"
+msgstr "サイトは可能な限り安全ですか ?"
+
+#: core/notify.php:181
+msgid "For more details, <a href=\"%s\"><b>visit your security logs</b></a>"
+msgstr "詳細については、<a href=\"%s\"><b>セキュリティログをご覧ください</b></a>"
+
+#: core/notify.php:166
+msgid "Messages"
+msgstr "メッセージ"
+
+#: core/notify.php:155
+msgid "File changes detected on the site."
+msgstr "サイトでファイルの変更が検出されました。"
+
+#: core/notify.php:154
+msgid "File Changes"
+msgstr "ファイルの変更"
+
+#: core/notify.php:147
+msgid "No lockouts since the last email check."
+msgstr "最後のメールチェック以降にロックアウトはありませんでした。"
+
+#: core/notify.php:135
+msgid "The following is a summary of security related activity on your site: <b>%s</b>"
+msgstr "次のサイトでのセキュリティ関連アクティビティの概要です : <b>%s</b>"
+
+#: core/notify.php:134
+msgid "Your Daily Security Digest for <b>%s</b>"
+msgstr "<b>%s</b> のディリーセキュリティダイジェスト"
+
+#: core/modules/pro/settings-page.php:158
+msgid "Protect your site when outdated software is not updated quickly enough."
+msgstr "古いソフトウェアをすぐ更新できない場合は、サイトを保護します。"
+
+#: core/modules/pro/settings-page.php:157
+msgid "Version Management"
+msgstr "バージョン管理"
+
+#: core/modules/pro/settings-page.php:126
+msgid "Every user on your site affects overall security. See how your users might be affecting your security and take action when needed."
+msgstr "すべてのユーザーがサイト全体のセキュリティに影響します。ユーザーがセキュリティへどのように影響しているか確認し、必要に応じて対策を行います。"
+
+#: core/modules/pro/settings-page.php:125
+msgid "User Security Check"
+msgstr "ユーザーのセキュリティチェック"
+
+#: core/modules/security-check/settings-page.php:57
+msgid "When the button below is clicked the following modules will be enabled and configured:"
+msgstr "下のボタンをクリックすると、次のモジュールを有効化し構成されます:"
+
+#: core/modules/security-check/settings-page.php:56
+msgid "Some features and settings are recommended for every site to run. This tool will ensure that your site is using these recommendations."
+msgstr "一部の機能と設定は、実行されているすべてのサイトに対しておすすめします。このツールは、あなたのサイトがこれら推奨事項を満たしているかどうか確認を行います。"
+
+#: core/modules/security-check/scanner.php:109
+msgid "Activating Network Brute Force Protection..."
+msgstr "ネットワーク・ブルートフォース保護を有効化中..."
+
+#: core/modules/security-check/settings-page.php:21
+msgid "Run Secure Site Again"
+msgstr "再度サイトのセキュリティ保護を実行"
+
+#: core/modules/security-check/settings-page.php:20
+msgid "Securing Site..."
+msgstr "サイトのセキュリティ保護を実行中..."
+
+#: core/modules/security-check/settings-page.php:10
+msgid "Ensure that your site is using the recommended features and settings."
+msgstr "このサイトで推奨される機能や設定を使用しているか確認します。"
+
+#: core/modules/security-check/scanner.php:180
+msgid "Your site is now using Network Brute Force Protection."
+msgstr "現在サイトは、ネットワーク・ブルートフォース保護を使用しています。"
+
+#. Translators: 1: feature name
+#: core/modules/security-check/scanner.php:147
+msgid "Enabled %1$s."
+msgstr "%1$s が有効化済みです。"
+
+#. Translators: 1: feature name
+#: core/modules/security-check/scanner.php:141
+msgid "%1$s is enabled as recommended."
+msgstr "%1$s は、推奨されたとおり有効になっています。"
+
+#: core/modules/security-check/scanner.php:106
+msgid "Activate Network Brute Force Protection"
+msgstr "ネットワーク・ブルートフォース保護を有効化"
+
+#: core/modules/security-check/scanner.php:98
+msgid "Receive email updates about WordPress Security from iThemes: %1$s"
+msgstr "iThemes から WordPress のセキュリティに関する更新メールを受け取る : %1$s"
+
+#: core/modules/security-check/scanner.php:93
+msgid "Email Address: %1$s"
+msgstr "メールアドレス: %1$s"
+
+#: core/modules/security-check/scanner.php:91
+msgid "With Network Brute Force Protection, your site is protected against attackers found by other sites running iThemes Security. If your site identifies a new attacker, it automatically notifies the network so that other sites are protected as well. To join this site to the network and enable the protection, click the button below."
+msgstr "ネットワーク・ブルートフォース保護により、このサイトは iThemes セキュリティを実行している他のサイトで見つかった攻撃からも保護されます。このサイトが新しい攻撃を識別した場合、自動的にネットワークに通知することで他のサイトも同様に保護します。このサイトでネットワークへ参加し保護を有効化するには、下のボタンをクリックしてください。"
+
+#: core/modules/security-check/scanner.php:71
+msgid "Enabled the Write to Files setting in Global Settings."
+msgstr "グローバル設定のファイル設定へ書き込みを有効にします。"
+
+#: core/modules/security-check/scanner.php:68
+msgid "Changed the Multiple Authentication Attempts per XML-RPC Request setting in WordPress Tweaks to \"Block\"."
+msgstr "XML-RPC リクエストごとの複数の認証試行を WordPress の微調整で \"ブロック\" に変更しました。"
+
+#: core/modules/security-check/scanner.php:67
+msgid "Disabled the File Editor in WordPress Tweaks."
+msgstr "WordPress の微調整でファイルエディタを無効にします。"
+
+#: core/modules/security-check/scanner.php:54
+msgid "Enabled the Email Notifications setting in Malware Scan Scheduling."
+msgstr "マルウェアスキャンのスケジュール設定でメール通知の設定を有効にします。"
+
+#: core/modules/security-check/scanner.php:48
+msgid "Enabled the Enable Ban Lists setting in Banned Users."
+msgstr "禁止ユーザーへ禁止リストの設定の有効を有効にします。"
+
+#: core/modules/file-permissions/settings-page.php:109
+msgid "Reload File Permissions Details"
+msgstr "ファイルのパーミッション詳細を再読込み"
+
+#: core/modules/file-permissions/settings-page.php:98
+msgid "OK"
+msgstr "OK"
+
+#: core/modules/file-permissions/settings-page.php:20
+msgid "Load File Permissions Details"
+msgstr "ファイルのパーミッション詳細を読み込む"
+
+#: core/modules/file-permissions/settings-page.php:19
+msgid "Click the button to load the current file permissions."
+msgstr "現在のファイルのパーミッション読み込むには、このボタンをクリックしてください。"
+
+#: core/modules/file-permissions/settings-page.php:7
+msgid "Lists file and directory permissions of key areas of the site."
+msgstr "サイトの主要な領域にあるファイルとディレクトリのパーミッションを一覧表示します。"
+
+#: core/modules/file-permissions/settings-page.php:6
+msgid "File Permissions"
+msgstr "ファイルのパーミッション"
+
+#: core/modules/global/settings-page.php:191
+msgid "This feature will trigger an email to be sent to the email addresses listed in the Notification Email setting whenever a host or user is locked out of the system."
+msgstr "この機能により、ホストまたはユーザーがシステムからロックアウトされるたびに、通知メールの設定にリストされているメールアドレスへメールが送信します。"
+
+#. translators: 1: New directory name
+#: core/modules/content-directory/settings-page.php:104
+msgid "The content directory was successfully changed to <code>%1$s</code>."
+msgstr "コンテンツディレクトリを<code>%1$s</code> に変更しました。"
+
+#: core/sidebar-widget-active-lockouts.php:115
+#: core/sidebar-widget-temp-whitelist.php:112
+msgid "No lockouts were selected for removal."
+msgstr "削除するロックアウトを選択していません。"
+
+#: core/sidebar-widget-active-lockouts.php:113
+#: core/sidebar-widget-temp-whitelist.php:110
+msgid "Successfully removed the selected lockout."
+msgid_plural "Sucessfully remove the selected lockouts."
+msgstr[0] "選択したロックアウトを正常に削除しました。"
+
+#: core/sidebar-widget-active-lockouts.php:106
+#: core/sidebar-widget-temp-whitelist.php:103
+msgid "An unknown error prevented releasing the lockout the host with a lockout ID of %d"
+msgstr "%d のロックアウト ID を持つホストのロックアウトを不明なエラーが解除するのを防止しました"
+
+#: core/sidebar-widget-active-lockouts.php:95
+#: core/sidebar-widget-temp-whitelist.php:92
+msgid "An unknown error prevented releasing the lockout the user with a lockout ID of %d"
+msgstr "%d のロックアウト ID を持つユーザーのロックアウトを不明なエラーが解除するのを防止しました"
+
+#: core/sidebar-widget-active-lockouts.php:78
+#: core/sidebar-widget-temp-whitelist.php:77
+msgid "Release Selected Lockouts"
+msgstr "選択したロックアウトを解除"
+
+#: core/sidebar-widget-active-lockouts.php:68
+#: core/sidebar-widget-temp-whitelist.php:67
+msgctxt "HOST - Expires in TIME"
+msgid "%1$s - Expires in %2$s"
+msgstr "%1$s - 有効期限 %2$s"
+
+#: core/sidebar-widget-active-lockouts.php:53
+#: core/sidebar-widget-temp-whitelist.php:52
+msgctxt "USER - Expires in TIME"
+msgid "%1$s - Expires in %2$s"
+msgstr "%1$s - 有効期限 %2$s"
+
+#: core/sidebar-widget-active-lockouts.php:43
+#: core/sidebar-widget-temp-whitelist.php:42
+msgid "There are no active lockouts at this time."
+msgstr "現時点で、アクティブなロックアウトはありません。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:7
+msgid "Advanced settings that improve security by changing default WordPress behavior."
+msgstr "WordPress のデフォルトの動作を変更をすることで、セキュリティの向上をはかる高度な設定です。"
+
+#: core/modules/system-tweaks/settings-page.php:7
+msgid "Advanced settings that improve security by changing the server config for this site."
+msgstr "このサイトのサーバー設定を変更することで、セキュリティの向上をはかる高度な設定です。"
+
+#: core/modules/security-check/scanner.php:58
+#: core/modules/strong-passwords/settings-page.php:9
+msgid "Strong Password Enforcement"
+msgstr "強力なパスワードの実施"
+
+#: core/modules/ssl/settings-page.php:10
+msgid "Configure use of SSL to ensure that communications between browsers and the server are secure."
+msgstr "ブラウザとサーバ間の安全な通信を保証するために SSL の使用を構成します。"
+
+#: core/modules/ssl/settings-page.php:9
+msgid "SSL"
+msgstr "SSL"
+
+#: core/modules/ssl/class-itsec-ssl-admin.php:33
+msgid "Enable SSL:"
+msgstr "SSL の有効化 :"
+
+#: core/modules/salts/validator.php:55
+msgid "The WordPress salts were successfully regenerated."
+msgstr "WordPress のソルトを再生成しました。"
+
+#: core/modules/salts/validator.php:35
+msgid "You must check the Change WordPress Salts checkbox in order to change the WordPress salts."
+msgstr "WordPress のソルトを変更する場合は、WordPress のソルトを変更ボックスをチェックする必要があります。"
+
+#: core/modules/salts/validator.php:16
+msgid "Last Generated"
+msgstr "最後の生成"
+
+#: core/modules/salts/utilities.php:50
+msgid "Unable to update the <code>wp-config.php</code> file in order to update the salts. You will need to manually update the file. Error details as follows: %1$s (%2$s)"
+msgstr "ソルトを更新するための <code>wp-config.php</code> ファイルが更新できません。ファイルを手動で更新する必要があります。エラーの詳細は次のとおりです: %1$s (%2$s)"
+
+#: core/modules/salts/utilities.php:16
+msgid "Unable to read the <code>wp-config.php</code> file in order to update the salts. You will need to manually update the file. Error details as follows: %1$s (%2$s)"
+msgstr "ソルトを更新するための <code>wp-config.php</code> ファイルを読み込むことができません。ファイルを手動で更新する必要があります。エラーの詳細は次のとおりです: %1$s (%2$s)"
+
+#: core/modules/salts/settings-page.php:33
+msgid "Check this box and then save settings to change your WordPress Salts."
+msgstr "WordPress のソルトを変更する場合は、このボックスをチェックしてから設定を保存してください。"
+
+#: core/modules/salts/settings-page.php:7
+msgid "Update the secret keys WordPress uses to increase the security of your site."
+msgstr "WordPress サイトのセキュリティ強化で使用するシークレットキーを更新します。"
+
+#: core/modules/pro/settings-page.php:94
+msgid "Export your settings as a backup or to import on other sites for quicker setup."
+msgstr "バックアップとして設定をエクスポートしたり、他サイトで素早くセットアップを行うためにインポートを使用することができます。"
+
+#: core/modules/pro/settings-page.php:93
+msgid "Settings Import and Export"
+msgstr "設定のインポートとエクスポート"
+
+#: core/modules/pro/settings-page.php:142
+msgid "Log user actions such as login, saving content and others."
+msgstr "ログインなどのユーザーアクション、コンテンツなどを保存します。"
+
+#: core/modules/pro/settings-page.php:141
+#: core/modules/security-check/scanner.php:20
+#: core/modules/security-check/scanner.php:65
+msgid "User Logging"
+msgstr "ユーザーのログを記録"
+
+#: core/modules/pro/settings-page.php:110
+msgid "Two-Factor Authentication greatly increases the security of your WordPress user account by requiring additional information beyond your username and password in order to log in."
+msgstr "2段階認証は、ログインする際にユーザー名とパスワード以外の追加情報を要求することによって、WordPress ユーザーのアカウントセキュリティを大幅に向上させます。"
+
+#: core/modules/pro/settings-page.php:109
+#: core/modules/security-check/scanner.php:19
+#: core/modules/security-check/scanner.php:59
+msgid "Two-Factor Authentication"
+msgstr "2段階認証"
+
+#: core/modules/pro/settings-page.php:75
+msgid "Protect your site from bots by verifying that the person submitting comments or logging in is indeed human."
+msgstr "コメントを投稿したりログインしている人物が実際に人間であるか確認し、そうではないボットからはサイトを保護します。"
+
+#: core/modules/pro/settings-page.php:74
+msgid "reCAPTCHA"
+msgstr "reCAPTCHA"
+
+#: core/modules/pro/settings-page.php:43
+msgid "Strengthen the passwords on the site with automated password expiration."
+msgstr "自動化されたパスワードの有効期限とサイト上のパスワードを強化します。"
+
+#: core/modules/pro/settings-page.php:42
+msgid "Password Expiration"
+msgstr "パスワードの有効期限"
+
+#: core/modules/pro/settings-page.php:59
+msgid "Allow administrators to temporarily grant extra access to a user of the site for a specified period of time."
+msgstr "管理者が指定した期間、サイトのユーザーに特別なアクセス権を一時的に与えることを許可します。"
+
+#: core/modules/pro/settings-page.php:58
+msgid "Privilege Escalation"
+msgstr "権限の昇格"
+
+#: core/modules/pro/settings-page.php:27
+msgid "Protect your site with automated malware scans. When this feature is enabled, the site will be automatically scanned each day. If a problem is found, an email is sent to select users."
+msgstr "自動マルウェアスキャンを使用してサイトを保護します。この機能を有効にすると、サイトは毎日自動的にスキャンされます。問題が見つかった場合は、選択したユーザーにメールが送信されます。"
+
+#: core/modules/pro/settings-page.php:26
+#: core/modules/security-check/scanner.php:16
+#: core/modules/security-check/scanner.php:53
+msgid "Malware Scan Scheduling"
+msgstr "マルウェアスキャンのスケジュール"
+
+#: core/modules/multisite-tweaks/settings-page.php:7
+msgid "Advanced settings that improve security by changing default WordPress Multisite behavior."
+msgstr "WordPress にデフォルトで備わっているマルチサイトの動作を変更することでセキュリティの向上はかる高度な設定です。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:134
+msgid "The scan failed due to an unexpected technical error. The response from the wp_remote_get function contains an empty body entry. Since the body entry contains the response for the request to Sucuri's servers, the response cannot be processed. This could indicate a plugin/theme compatibility issue or a problem in WordPress."
+msgstr "予期しない技術的なエラーのためスキャンは失敗しました。wp_remote_get 関数からのレスポンスに、空のボディエントリが含まれています。ボディエントリには Sucuri サーバーのリクエストに対するレスポンスが含まれているため、レスポンスを処理することができません。これはプラグイン / テーマの互換性問題や、WordPress に問題がある可能性があります。"
+
+#: core/modules/ipcheck/validator.php:20
+msgid "API Secret"
+msgstr "API シークレット"
+
+#: core/modules/ipcheck/utilities.php:103
+msgid "An unknown error prevented the API key secrete request from succeeding. The request for an API key secret returned an empty key secret. Please wait a few minutes and try again."
+msgstr "不明なエラーにより API キーシークレットのリクエストが成功しなくなりました。API キーシークレットのリクエストは空のシークレットキーを返します。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/utilities.php:97
+msgid "An unknown error prevented the API key secret request from succeeding. The request for an API key secret returned an unrecognized response. Please wait a few minutes and try again."
+msgstr "不明なエラーにより API キーシークレットのリクエストが成功しなくなりました。API キーシークレットのリクエストが認識できないレスポンスを返してきます。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/utilities.php:95
+msgid "There was an error returned from the Network Brute Force Protection API: %1$s"
+msgstr "ネットワークのブルートフォース保護 API からエラーが返されました: %1$s"
+
+#: core/modules/ipcheck/utilities.php:87
+msgid "An unknown error prevented the API key secret request from succeeding. This problem could be due to a server configuration or plugin compatibility issue. Please wait a few minutes and try again."
+msgstr "不明なエラーにより API キーシークレットのリクエストが成功しなくなりました。この問題は、サーバーの構成やプラグインの互換性の問題が原因である可能性があります。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/utilities.php:69
+msgid "An unknown error prevented the API key secret request from succeeding. The request for an API key submitted an empty key. Please wait a few minutes and try again."
+msgstr "不明なエラーにより API キーシークレットのリクエストが成功しなくなりました。API キーのリクエストが空のキーを送信しています。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/utilities.php:50
+msgid "An unknown error prevented the API key request from succeeding. The request for an API key returned an empty key. Please wait a few minutes and try again."
+msgstr "不明なエラーにより API キーのリクエストが成功しなくなりました。API キーのリクエストが空のキーを返してきます。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/utilities.php:44
+msgid "An unknown error prevented the API key request from succeeding. The request for an API key returned an unrecognized response. Please wait a few minutes and try again."
+msgstr "不明なエラーにより API キーのリクエストが成功しなくなりました。API キーのリクエストが認識できないレスポンスを返してきます。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/utilities.php:38
+msgid "An unknown error prevented the API key request from succeeding. This problem could be due to a server configuration or plugin compatibility issue. Please wait a few minutes and try again."
+msgstr "不明なエラーにより API キーのリクエストが成功しなくなりました。この問題は、サーバーの構成やプラグインの互換性の問題が原因である可能性があります。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/utilities.php:20
+msgid "The supplied email address (%s) is invalid. A valid email address is required in order to sign up for the Network Bruteforce Protection by iThemes."
+msgstr "指定されたメールアドレス（%s）は無効です。iThemes のネットワークブルートフォースの保護にサインアップするには有効なメールアドレスが必要です。"
+
+#: core/modules/ipcheck/settings-page.php:93
+msgid "Automatically ban IPs reported as a problem by the network."
+msgstr "ネットワークで問題として報告された IP を自動的に禁止する。"
+
+#: core/modules/ipcheck/settings-page.php:90
+#: core/modules/ipcheck/validator.php:21
+msgid "Ban Reported IPs"
+msgstr "報告された禁止 IP"
+
+#: core/modules/ipcheck/settings-page.php:82
+#: core/modules/ipcheck/validator.php:19
+msgid "API Key"
+msgstr "API キー"
+
+#: core/modules/ipcheck/settings-page.php:72
+#: core/modules/ipcheck/validator.php:17
+msgid "Receive Email Updates"
+msgstr "更新をメールで受信"
+
+#: core/modules/ipcheck/settings-page.php:63
+msgid "To get started with iThemes Network Brute Force Protection, please supply your email address and save the settings. This will provide this site with an API key and starts the site protection."
+msgstr "iThemes ネットワーク・ブルートフォース保護を開始するには、メールアドレスを入力して設定を保存してください。これにより、このサイトに API キーが提供され、サイトの保護が開始されます。"
+
+#: core/modules/ipcheck/settings-page.php:39
+msgid "An unknown error prevented the API key from being reset properly. An unrecognized response was received. Please wait a few minutes and try again."
+msgstr "不明なエラーにより、API キーが正しくリセットされませんでした。認識できないレスポンスを受信しています。数分待ってから再度お試しください。"
+
+#: core/modules/ipcheck/settings-page.php:20
+msgid "Resetting..."
+msgstr "リセット中..."
+
+#: core/modules/ipcheck/settings-page.php:10
+msgid "Join a network of sites that reports and protects against bad actors on the internet."
+msgstr "インターネット上の悪意ある者に対して報告と保護を行うネットワークサイトに参加しましょう。"
+
+#: core/modules/ipcheck/settings-page.php:9
+#: core/modules/security-check/scanner.php:17
+#: core/modules/security-check/scanner.php:85
+msgid "Network Brute Force Protection"
+msgstr "ネットワーク・ブルートフォース保護"
+
+#: core/modules/hide-backend/validator.php:90
+msgid "[%1$s] WordPress Login Address Changed"
+msgstr "[%1$s] WordPress のログインアドレスが変更されました"
+
+#. translators: 1: Site name, 2: Site address, 3: New login address
+#: core/modules/hide-backend/validator.php:79
+msgid "The login address for %1$s (<code>%2$s</code>) has changed. The new login address is <code>%3$s</code>. You will be unable to use the old login address."
+msgstr "サイト %1$s のログインアドレス (<code>%2$s</code>) が変更されました。新しいログインアドレスは <code>%3$s</code> になります。これにより、古いログインアドレスは使用することはできません。"
+
+#: core/modules/hide-backend/validator.php:76
+msgid "Dear Site Admin,"
+msgstr "サイト管理者様へ"
+
+#: core/modules/hide-backend/validator.php:57
+msgid "The Hide Backend feature is now disabled. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Global settings."
+msgstr "バックエンドの非表示機能が無効化されました。新しいログイン URL は <strong><code>%1$s</code></strong> になります。リマインダーは、iThemes Security のグローバル設定で指定された通知メールアドレスにも送信されます。"
+
+#: core/modules/hide-backend/validator.php:54
+msgid "The Hide Backend feature is now active. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Global settings."
+msgstr "バックエンドの非表示機能が有効化されました。新しいログイン URL は <strong><code>%1$s</code></strong> になります。リマインダーは、iThemes Security のグローバル設定で指定された通知メールアドレスにも送信されます。"
+
+#: core/modules/hide-backend/validator.php:51
+msgid "The Hide Backend feature is now active. Your new login URL is <strong><code>%1$s</code></strong>. Please note this may be different than what you sent as the URL was sanitized to meet various requirements. A reminder has also been sent to the notification email addresses set in iThemes Security's Global settings."
+msgstr "バックエンドの非表示機能が有効化されました。新しいログイン URL は <strong><code>%1$s</code></strong> になります。これにより、さまざまな要件を満たすために URL がサニタイズされ、送信したものと異なる場合があります。リマインダーは、iThemes Security のグローバル設定で指定された通知メールアドレスにも送信されます。"
+
+#: core/modules/hide-backend/validator.php:43
+msgid "The Login Slug cannot be \"%1$s\" as WordPress uses that slug."
+msgstr "このスラッグ \"%1$s\" は、既に WordPress で使用されているのでログインスラッグには使用できません。"
+
+#: core/modules/hide-backend/settings-page.php:82
+msgid "Login URL: %s"
+msgstr "ログイン URL: %s"
+
+#: core/modules/hide-backend/settings-page.php:54
+msgid "You must change <a href=\"%s\">WordPress permalinks</a> to a setting other than \"Plain\" in order to use this feature."
+msgstr "この機能を使用するには、<a href=\"%s\">WordPress のパーマリンク</a> を \"プレーン\" 以外の設定に変更する必要があります。"
+
+#: core/modules/hide-backend/settings-page.php:10
+msgid "Hide the login page by changing its name and preventing access to wp-login.php and wp-admin."
+msgstr "ログインページを非表示にするには、名前を変更して wp-login.php と wp-admin のアクセスを禁止にしてください。"
+
+#: core/modules/global/validator.php:42
+msgid "Blacklist Lockout Period"
+msgstr "ブラックリストのロックアウト期間"
+
+#: core/modules/global/settings-page.php:265
+msgid "Each error message in iThemes Security has an associated error code that can help diagnose an issue. Changing this setting to \"Yes\" causes these codes to display. This setting should be left set to \"No\" unless iThemes Security support requests that you change it."
+msgstr "iThemes Security の各エラーメッセージには、問題の診断に役立つ関連エラーコードがあります。この設定を \"はい\" に変更すると、これらコードが表示されるようになります。この設定は、iThemes Security のサポートが変更を要求しないかぎり、\"いいえ\" に設定しておく必要があります。"
+
+#: core/modules/global/settings-page.php:262
+#: core/modules/global/validator.php:33
+msgid "Show Error Codes"
+msgstr "エラーコードの表示"
+
+#: core/modules/global/settings-page.php:241
+msgid "The path on your server where the nginx config file is located."
+msgstr "nginx の設定ファイルが置かれているサーバー上のパスを指定してください。"
+
+#: core/modules/global/settings-page.php:225
+msgid "Turning this feature on will enable compatibility with <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">InfiniteWP</a>. Do not turn it on unless you use the InfiniteWP service."
+msgstr "この機能をオンにすると、<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">InfiniteWP</a> との互換性が有効になります。InfiniteWP サービスを使用しないかぎり、オンにしないでください。"
+
+#: core/modules/global/settings-page.php:216
+msgid "Restore Default Log File Path"
+msgstr "デフォルトのログファイルパスを復元"
+
+#: core/modules/global/settings-page.php:83
+msgid "Whether or not iThemes Security should be allowed to write to wp-config.php and .htaccess automatically. If disabled you will need to manually place configuration options in those files."
+msgstr "iThemes Security が wp-config.php と .htaccess に対して自動書き込みを有効 / 無効にします。無効にすると、これらのファイルに手動で構成オプションを配置する必要があります。"
+
+#: core/modules/global/settings-page.php:82
+msgid "Allow iThemes Security to write to wp-config.php and .htaccess."
+msgstr "wp-config.php と .htaccess へ iThemes Security が書き込みできるように許可をします。"
+
+#: core/modules/global/settings-page.php:72
+msgid "No (default)"
+msgstr "いいえ (デフォルト)"
+
+#: core/modules/global/settings-page.php:61
+msgid "The following settings modify the behavior of many of the features offered by iThemes Security."
+msgstr "以下の設定は、iThemes Security が提供する多くの機能の作動を変更できます。"
+
+#: core/modules/global/settings-page.php:10
+msgid "Configure basic settings that control how iThemes Security functions."
+msgstr "iThemes Security の機能を制御する基本的な構成を設定します。"
+
+#: core/modules/global/active.php:24
+msgid "See what's new"
+msgstr "新着情報を見る"
+
+#: core/modules/global/active.php:23
+msgid "New! The iThemes Security dashboard just got a new look."
+msgstr "New! iThemes Security のダッシュボードの外観が新しくなりました。"
+
+#: core/modules/file-writing/settings-page.php:52
+msgid "The following rules need to be written to your <code>wp-config.php</code> file. Please make sure to keep the comments in place."
+msgstr "<code>wp-config.php</code> ファイルには、次のルールを記述する必要があります。コメントを適切な位置に維持してください。"
+
+#: core/modules/file-writing/settings-page.php:50
+msgid "There is nothing that needs to be written to your <code>wp-config.php</code> file."
+msgstr "<code>wp-config.php</code> ファイルへ書き込む必要はありません。"
+
+#: core/modules/file-writing/settings-page.php:36
+msgid "If you need to manually add the <code>wp-config.php</code> rules generated by iThemes Security to your server, you can find them here."
+msgstr "iThemes Security によって生成された <code>wp-config.php</code> ルールを、サーバーに手動で追加する必要がある場合は、こちらをご覧ください。"
+
+#: core/modules/file-writing/settings-page.php:23
+msgid "The following rules need to be written to your server's config file. Please make sure to keep the comments in place."
+msgstr "サーバー設定ファイルには、次のルールを記述する必要があります。コメントを適切な位置に維持してください。"
+
+#: core/modules/file-writing/settings-page.php:21
+msgid "There are no rules that need to be written."
+msgstr "書き込む必要のあるルールはありません。"
+
+#: core/modules/file-writing/settings-page.php:7
+msgid "If you need to manually add the server config rules generated by iThemes Security to your server, you can find them here."
+msgstr "iThemes Security によって生成されたサーバー設定のルールを、サーバーに手動で追加する必要がある場合は、こちらをご覧ください。"
+
+#: core/modules/file-writing/settings-page.php:6
+msgid "Server Config Rules"
+msgstr "サーバー構成のルール"
+
+#: core/modules/file-change/settings-page.php:27
+msgid "A scan is already in progress. Please check the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">logs page</a> at a later time for the results of the scan."
+msgstr "スキャンは既に進行中です。スキャンの結果については、<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">ログページ</a> を確認してください。"
+
+#: core/modules/file-change/settings-page.php:10
+msgid "Monitor the site for unexpected file changes."
+msgstr "予期しないファイルの変更などサイトの監視を行います。"
+
+#: core/modules/file-change/admin.php:68
+msgid "iThemes Security noticed file changes in your WordPress site. Please review the logs to make sure your system has not been compromised."
+msgstr "iThemes Security は WordPress サイト内のファイルの変更を検出しました。お使いのシステムが侵害されていないか確認するため、ログを確認してください。"
+
+#: core/modules/database-prefix/utility.php:85
+msgid "Could not rename table %1$s. You may have to rename the table manually."
+msgstr "テーブル %1$s の名前を変更できませんでした。手動でテーブル名を変更する必要があります。"
+
+#. translators: 1: New database table prefix
+#: core/modules/database-prefix/settings-page.php:77
+msgid "The database table prefix was successfully changed to <code>%1$s</code>."
+msgstr "データベーステーブルの接頭辞を <code>%1$s</code> に変更しました。"
+
+#: core/modules/database-prefix/settings-page.php:55
+msgid "Select \"Yes\" and save the settings to change the database table prefix."
+msgstr "データベーステーブルの接頭辞を変更する場合は、「はい」を選択し設定を保存してください。"
+
+#: core/modules/database-prefix/settings-page.php:51
+msgid "Change Prefix"
+msgstr "プレフィックス (接頭辞) の変更"
+
+#. translators: 1: WordPress database table prefix
+#: core/modules/database-prefix/settings-page.php:46
+msgid "Your current database table prefix is <code>%1$s</code>."
+msgstr "現在のデータベーステーブル接頭辞は <code>%1$s</code> です。"
+
+#: core/modules/database-prefix/settings-page.php:43
+msgid "Your database is using the default table prefix <code>wp_</code>. You should change this."
+msgstr "データベースは、デフォルトのテーブル接頭辞 <code>wp_</code> が使用されています。これを変更する必要があります。"
+
+#: core/modules/database-prefix/settings-page.php:19
+msgid "By default, WordPress assigns the prefix <code>wp_</code> to all tables in the database where your content, users, and objects exist. For potential attackers, this means it is easier to write scripts that can target WordPress databases as all the important table names for 95% of sites are already known. Changing the <code>wp_</code> prefix makes it more difficult for tools that are trying to take advantage of vulnerabilities in other places to affect the database of your site. <strong>Before using this tool, we strongly recommend creating a backup of your database.</strong>"
+msgstr "デフォルトの WordPress は、コンテンツ、ユーザー、およびオブジェクトが存在するデータベース内すべてのテーブルに <code>wp_</code> 接頭辞を割り当てます。潜在的な攻撃者にとって、これは、95%のサイトの、重要なテーブル名がすでに分かっているため、WordPress のデータベースをターゲットにできるスクリプトを作成する方が簡単であることを意味します。<code>wp_</code> 接頭辞を変更すると、他の場所の脆弱性を利用しようとするツールも、サイトのデータベースに影響を及ぼすことが難しくなります。<strong>このツールを使用する前に、データベースのバックアップ作成を強くおすすめします。</strong>"
+
+#: core/modules/database-prefix/settings-page.php:10
+msgid "Change the database table prefix that WordPress uses."
+msgstr "WordPress が使用するデータベーステーブルのプレフィックス (接頭辞) を変更します。"
+
+#: core/modules/database-prefix/settings-page.php:9
+msgid "Change Database Table Prefix"
+msgstr "データベーステーブルのプレフィックス（接頭辞）の変更"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:19
+msgid "+ more Pro-only features"
+msgstr "+ さらに PRO のみの多数の機能"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:18
+msgid "Private, ticketed support"
+msgstr "個人単位でのチケットサポート"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:17
+msgid "Google reCAPTCHA integration"
+msgstr "Google reCAPTCHA の統合"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:16
+msgid "Scheduled malware scanning"
+msgstr "マルウェアスキャンのスケジュール"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:15
+msgid "Two-factor authentication"
+msgstr "2段階認証"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:13
+msgid "Add an extra layer of protection to your WordPress site with <a href=\"%s\">iThemes Security Pro</a>, including:"
+msgstr "<a href=\"%s\">iThemes Security PRO</a> で、あなたの WordPress サイトに以下の保護機能をさらに追加できます: "
+
+#. translators: 1: Specific error details
+#: core/modules/content-directory/utility.php:93
+msgid "Unable to update the <code>wp-config.php</code> file. No directory or config file changes have been made. The error that prevented the file from updating is as follows: %1$s"
+msgstr "<code>wp-config.php</code> ファイルを更新できませんでした。これにより、ディレクトリや設定ファイルの変更は行われていません。ファイルの更新を妨げたエラーは次のとおりです: %1$s"
+
+#: core/modules/content-directory/utility.php:27
+msgid "The new directory name cannot be the same as the current directory name. Please supply a new directory name."
+msgstr "新しいディレクトリ名は、現在のディレクトリ名と同じものにすることはできません。新しいディレクトリ名を入力してください。"
+
+#: core/modules/content-directory/utility.php:8
+msgid "The content directory cannot be changed to a blank directory name."
+msgstr "コンテンツディレクトリはディレクトリ名を空白に変更することはできません。"
+
+#: core/modules/content-directory/settings-page.php:113
+msgid "Unable to change the content directory back to <code>wp-content</code>. If the above error cannot be fixed, you may need to manually change the content directory. Instructions on how to change the content directory manually can be found <a href=\"https://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder\">here</a>."
+msgstr "コンテンツディレクトリを <code>wp-content</code> に戻すことができません。上記のエラーが修正できない場合は、手動でコンテンツディレクトリを変更する必要があります。手動でコンテンツディレクトリを変更する方法については、<a href=\"http://wpdocs.osdn.jp/wp-config.php_%E3%81%AE%E7%B7%A8%E9%9B%86#wp-content_.E3.83.87.E3.82.A3.E3.83.AC.E3.82.AF.E3.83.88.E3.83.AA.E3.81.AE.E7.A7.BB.E5.8B.95\">こちら</a> を参照してください。 "
+
+#: core/modules/content-directory/settings-page.php:100
+msgid "Unable to change the content directory. If the above error cannot be fixed, you may need to manually change the content directory. Instructions on how to change the content directory manually can be found <a href=\"https://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder\">here</a>."
+msgstr "コンテンツディレクトリを変更できません。上記のエラーを修正できない場合は、コンテンツディレクトリを手動で変更する必要があります。コンテンツディレクトリを手動で変更する方法については、<a href=\"http://wpdocs.osdn.jp/wp-config.php_%E3%81%AE%E7%B7%A8%E9%9B%86#wp-content_.E3.83.87.E3.82.A3.E3.83.AC.E3.82.AF.E3.83.88.E3.83.AA.E3.81.AE.E7.A7.BB.E5.8B.95\">こちら</a> を参照してください。"
+
+#: core/modules/content-directory/settings-page.php:81
+msgid "Supply a new directory name and save the settings to change the location of the <code>wp-content</code> directory. You may need to log in again after performing this operation."
+msgstr "新しいディレクトリ名を指定し <code>wp-content</code> ディレクトリの場所を変更するための設定を保存します。この操作を実行した後に再度ログインする必要があります。"
+
+#: core/modules/content-directory/settings-page.php:77
+msgid "New Directory Name"
+msgstr "新しいディレクトリ名"
+
+#: core/modules/content-directory/settings-page.php:64
+msgid "Select \"Yes\" and save the settings to undo the content directory change."
+msgstr "コンテンツディレクトリの変更を元に戻す場合は、\"はい\" を選択してから設定を保存してください。"
+
+#: core/modules/content-directory/settings-page.php:49
+#: core/modules/database-prefix/settings-page.php:38
+#: core/modules/hide-backend/settings-page.php:62
+#: core/modules/salts/settings-page.php:39 core/modules/salts/utilities.php:6
+#: core/modules/salts/validator.php:37
+msgid "The \"Write to Files\" setting is disabled in Global Settings. In order to use this feature, you must enable the \"Write to Files\" setting."
+msgstr "グローバル設定では、\" ファイルの書き込み\" 設定は無効になっています。この機能を使用するには、\"ファイルの書き込み\" 設定を有効にする必要があります。"
+
+#: core/modules/content-directory/settings-page.php:46
+msgid "The content directory was changed by something other than iThemes Security. No further actions are available on this page."
+msgstr "コンテンツディレクトリが、iThemes Security 以外のものによって変更されました。このページではこれ以上の操作はできません。"
+
+#: core/modules/content-directory/settings-page.php:19
+msgid "Change the location of the <code>wp-content</code> directory so that it uses a different name."
+msgstr "<code>wp-content</code> ディレクトリ以外の名前を使用し、場所を移動します。"
+
+#: core/modules/content-directory/settings-page.php:10
+msgid "Advanced feature to rename the wp-content directory to a different name."
+msgstr "高度な機能は、別の名前で wp-content ディレクトリの名前を変更します。"
+
+#: core/modules/brute-force/settings-page.php:7
+msgid "Protect your site against attackers that try to randomly guess login details to your site."
+msgstr "サイトにランダムでログイン情報を推測しようとする攻撃からサイトを保護します。"
+
+#. translators: 1: input name, 2: invalid host list
+#: core/modules/ban-users/validator.php:39
+msgid "The following IP in %1$s is whitelisted and cannot be banned: %2$l"
+msgid_plural "The following IPs in %1$s are whitelisted and cannot be banned: %2$l"
+msgstr[0] "次の IP %1$s はホワイトリストで禁止にすることはできません : %2$l"
+
+#. translators: 1: input name, 2: invalid host
+#: core/modules/ban-users/validator.php:25
+msgid "The following host in %1$s matches your current IP and cannot be banned: %2$s"
+msgstr "次のホスト %1$s は、あなたの現在の IP と一致しているため、禁止にすることはできません : %2$s"
+
+#: core/modules/ban-users/settings-page.php:40
+msgid "Enable Ban Lists"
+msgstr "禁止リストを有効化"
+
+#: core/modules/ban-users/settings-page.php:37
+#: core/modules/ban-users/validator.php:10
+msgid "Ban Lists"
+msgstr "禁止リスト"
+
+#: core/modules/ban-users/settings-page.php:10
+msgid "Block specific IP addresses and user agents from accessing the site."
+msgstr "サイトへのアクセスを特定の IP アドレスとユーザーエージェントでブロックします。"
+
+#: core/modules/backup/validator.php:28
+#: core/modules/file-change/validator.php:30
+msgid "Last Run"
+msgstr "最終実行"
+
+#: core/modules/backup/settings-page.php:81
+msgid "Press the button below to create a database backup using the saved settings."
+msgstr "保存された設定を使用して、データベースのバックアップを作成する場合は、下のボタンを押してください。"
+
+#: core/modules/backup/settings-page.php:53
+msgid "The backup request returned an unexpected response. It returned a response of type <code>%1$s</code>."
+msgstr "バックアップのリクエストが予期しないレスポンスを返しました。タイプ <code>%1$s</code> のレスポンスを返しました。"
+
+#: core/modules/backup/settings-page.php:23
+msgid "Creating Backup..."
+msgstr "バックアップの作成中..."
+
+#: core/modules/backup/settings-page.php:10
+msgid "Create backups of your site's database. The backups can be created manually and on a schedule."
+msgstr "サイトのデータベースバックアップを作成します。バックアップは、手動かスケジュールの指定により作成することが可能です。"
+
+#: core/modules/backup/class-itsec-backup.php:86
+msgid "Unable to create a backup at this time since a backup is currently being created. If you wish to create an additional backup, please wait a few minutes before trying again."
+msgstr "バックアップが現在作成されているので、この時点ではバックアップを作成することができません。追加のバックアップ作成したい場合は、再試行まで数分お待ちください。"
+
+#: core/modules/backup/class-itsec-backup.php:101
+msgid "Backup complete. The backup was saved locally."
+msgstr "バックアップが完了しました。バックアップはローカルに保存しました。"
+
+#: core/modules/backup/class-itsec-backup.php:99
+msgid "Backup complete. The backup was sent to the selected email recipients."
+msgstr "バックアップが完了しました。バックアップは、選択したメール受信者に送信されました。"
+
+#: core/modules/backup/class-itsec-backup.php:97
+msgid "Backup complete. The backup was sent to the selected email recipients and was saved locally."
+msgstr "バックアップが完了しました。バックアップは選択したメール受信者に送信され、ローカルにも保存されました。"
+
+#. translators: 1: "Start Time", 2: "End Time"
+#: core/modules/away-mode/validator.php:128
+msgid "The %1$s and %2$s settings restrict the current time and would result in locking you out immediately. Please select a %1$s and %2$s that does not restrict the current time."
+msgstr "%1$s と %2$s の設定で現在の時間が制限され、即ロックアウトされます。現在の時間を制限しない %1$s と %2$s を選択してください。"
+
+#. translators: 1: "Start Time", 2: "End Time"
+#: core/modules/away-mode/validator.php:124
+msgid "The %1$s and %2$s cannot be the same."
+msgstr "%1$s と %2$s は同等にできません。"
+
+#. translators: 1: "Start Date", 2: "Start Time"
+#: core/modules/away-mode/validator.php:118
+msgid "The selected restriction date and time has already started and would result in locking you out immediately. Please select a %1$s and %2$s that has not already started."
+msgstr "選択した制限日時は既に開始されており、即あなたをロックアウトします。まだ開始していない %1$s と %2$s を選択してください。"
+
+#. translators: 1: "End Date", 2: "End Time"
+#: core/modules/away-mode/validator.php:114
+msgid "The selected restriction date and time has already ended. Please select an %1$s and %2$s that has not already ended."
+msgstr "選択した制限日時はすでに終了しています。まだ終了していない %1$s と %2$s を選択してください。"
+
+#. translators: 1: "Start Date", 2: "Start Time", 3: "End Date", 4: "End Time"
+#: core/modules/away-mode/validator.php:110
+msgid "The %1$s and %2$s must be before the %3$s and %4$s."
+msgstr "%1$s と %2$s は %3$s と %4$s の前になる必要があります。"
+
+#. translators: 1: date input name, 2: time input name, 3: submitted date time
+#: core/modules/away-mode/validator.php:78
+msgid "The %1$s and %2$s values resulted in a date and time of <code>%3$s</code>, which was unable to be processed properly. This could be an issue with PHP or a server configuration issue."
+msgstr "%1$s 値と %2$s 値の結果、<code>%3$s</code> の日付と時刻が正しく処理できませんでした。これは、PHP やサーバー構成の問題で問題になる可能性があります。"
+
+#: core/modules/away-mode/validator.php:31
+msgid "End Timestamp"
+msgstr "終了タイムスタンプ"
+
+#: core/modules/away-mode/validator.php:30
+msgid "Start Timestamp"
+msgstr "開始タイムスタンプ"
+
+#: core/modules/away-mode/validator.php:28
+msgid "Override End"
+msgstr "オーバーライド終了"
+
+#: core/modules/away-mode/validator.php:27
+msgid "Override Type"
+msgstr "上書きタイプ"
+
+#. translators: 1: start timestamp, 2: end timestamp
+#: core/modules/away-mode/utilities.php:94
+msgid "The supplied data is invalid. The supplied start (%1$s) is after the supplied end (%2$s)."
+msgstr "指定されたデータは無効です。指定開始（%1$s）は指定終了（%2$s）の後になります。"
+
+#: core/modules/away-mode/settings-page.php:167
+msgid "Time when the admin dashboard should become available again."
+msgstr "管理ダッシュボードが再び使用可能になる時間を指定してください。"
+
+#: core/modules/away-mode/settings-page.php:156
+msgid "Date when the admin dashboard should become available again."
+msgstr "管理ダッシュボードが再び利用可能になる日数を指定してください。"
+
+#: core/modules/away-mode/settings-page.php:148
+msgid "Time when the admin dashboard should become unavailable."
+msgstr "管理ダッシュボードを無効にする時間を指定してください。"
+
+#: core/modules/away-mode/settings-page.php:136
+msgid "Date when the admin dashboard should become unavailable."
+msgstr "管理ダッシュボードを無効にする日付を指定してください。"
+
+#. translators: 1: date, 2: time
+#: core/modules/away-mode/settings-page.php:113
+msgctxt "Date and time format"
+msgid "%1$s \\a\\t %2$s"
+msgstr "%1$s \\a\\t %2$s"
+
+#: core/modules/away-mode/settings-page.php:10
+msgid "Disable access to the WordPress Dashboard on a schedule."
+msgstr "スケジュールによって WordPress のダッシュボードアクセスを無効にします。"
+
+#: core/modules/away-mode/sync-verbs/itsec-override-away-mode.php:62
+msgid "iThemes Security received a request to modify the override behavior of the Away Mode module. However, the request is invalid as the required \"intention\" argument is set to an unrecognized value: \"\"."
+msgstr "iThemes Security が退席中モードモジュールのオーバーライドで動作を変更するリクエストを受け取りました。しかし、必要な \"intention\" 引数に設定された値 : \"\" が確認できないためリクエストは無効になりました。"
+
+#: core/modules/away-mode/sync-verbs/itsec-override-away-mode.php:58
+msgid "iThemes Security received a request to modify the override behavior of the Away Mode module. However, the request is invalid as the required \"intention\" argument is missing."
+msgstr "iThemes Security が退席中モードモジュールのオーバーライドで動作を変更するリクエストを受け取りました。しかし、必要な \"intention\" 引数が欠落しているためリクエストは無効になりました。"
+
+#: core/modules/away-mode/sync-verbs/itsec-override-away-mode.php:33
+msgid "iThemes Security received a request to modify the override behavior of the Away Mode module. However, the request is invalid as the module is configured for a one-time lockout that occurred in the past. Allowing an activate override would result in an unending Away Mode lockout."
+msgstr "iThemes Security が退席中モードモジュールのオーバーライドで動作を変更するリクエストを受け取りました。モジュールは、過去に発生したワンタイムロックアウト用に設定されましたが、リクエストが不正です。アクティベートのオーバーライドを許可すると限りなく退席中モードのロックアウトが発生する可能性があります。"
+
+#: core/modules/admin-user/validator.php:49
+msgid "The user was unable to be successfully updated. This could be due to a plugin or server configuration conflict."
+msgstr "ユーザーを正常に更新することができませんでした。これは、プラグインまたはサーバー構成の競合が原因である可能性があります。"
+
+#: core/modules/admin-user/validator.php:43
+msgid "The user was successfully updated."
+msgstr "ユーザーを正常に更新しました。"
+
+#: core/modules/admin-user/settings-page.php:27
+msgid "<span>Warning:</span> The changes made by this tool could cause compatibility issues with some plugins, themes, or customizations. Ensure that you <a href=\"%s\">create a database backup</a> before using this tool."
+msgstr "<span>警告 :</span> このツールの変更により、一部のプラグイン、テーマ、またはカスタマイズで互換性の問題が発生する可能性があります。このツールを使用する前に、<a href=\"%s\">データベースバックアップを作成</a> してください。"
+
+#: core/modules/admin-user/settings-page.php:10
+msgid "An advanced tool that removes users with a username of \"admin\" or a user ID of \"1\"."
+msgstr "ユーザー名が \"admin\" またはユーザー ID が \"1\" のユーザーを削除する高度なツールです。"
+
+#: core/modules/404-detection/settings-page.php:7
+msgid "Automatically block users snooping around for pages to exploit."
+msgstr "自動的に悪意あるユーザーからページ周辺のスヌーピング（情報の傍受）をブロックします。"
+
+#. translators: 1: sanitize type, 2: input name
+#: core/lib/validator.php:385
+msgid "An invalid sanitize type of \"%1$s\" was received for the %2$s input."
+msgstr "\"%1$s\" の無効なサニタイズタイプは、%2$s の入力を受け取りました。"
+
+#: core/lib/validator.php:380
+msgid "The following extension in %1$s is invalid: %2$l"
+msgid_plural "The following extensions in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 内の次の拡張機能が無効です : %2$l"
+
+#: core/lib/validator.php:360
+msgid "The following IP in %1$s is invalid: %2$l"
+msgid_plural "The following IPs in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 内の次の IP が無効です : %2$l"
+
+#: core/lib/validator.php:328
+msgid "The following email in %1$s is invalid: %2$l"
+msgid_plural "The following emails in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 内の以下のメールアドレスが無効です : %2$l"
+
+#: core/lib/validator.php:297
+msgid "The valid value for %1$s is: %2$l."
+msgid_plural "The valid values for %1$s are: %2$l."
+msgstr[0] "%1$s は有効な値です : %2$l"
+
+#: core/lib/validator.php:273 core/lib/validator.php:294
+msgid "The following entry in %1$s is invalid: %2$l"
+msgid_plural "The following entries in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 内の次のエントリは無効です : %2$l"
+
+#: core/lib/validator.php:249 core/lib/validator.php:304
+#: core/lib/validator.php:310 core/lib/validator.php:335
+#: core/lib/validator.php:367
+msgid "The %1$s value must be a string with each entry separated by a new line."
+msgstr "%1$s の値は改行で区切り、各エントリの文字列でなくてはなりません。"
+
+#: core/lib/validator.php:241
+msgid "The file path supplied in %1$s is not writable. Please supply a file path that can be written to."
+msgstr "%1$s で指定されたファイルパスが書き込み可能ではありません。書き込み可能なファイルパスを入力してください。"
+
+#: core/lib/validator.php:238
+msgid "The file path supplied in %1$s was successfully created, but it cannot be updated. Please supply a file path that can be written to."
+msgstr "%1$s で指定されたファイルパスは正常に作成されましたが、更新することはできません。書き込み可能なファイルパスを入力してください。"
+
+#: core/lib/validator.php:236
+msgid "The file path supplied in %1$s could not be created. Please supply a file path that can be written to."
+msgstr "%1$s で指定されたファイルパスを作成できませんでした。書き込み可能なファイルパスを入力してください。"
+
+#: core/lib/validator.php:231
+msgctxt "%1$s is the input name. %2$s is the error message."
+msgid "The file path supplied in %1$s cannot be used as the parent directory cannot be created. %2$s"
+msgstr "%1$s で指定されたファイルパスは親ディレクトリを作成できないため使用できません。%2$s"
+
+#: core/lib/validator.php:226
+msgid "The file path supplied in %1$s cannot be used as it already exists but is not a file. Please supply a valid file path."
+msgstr "%1$s で指定されたファイルパスは、既に存在するため使用できませんが、ファイルではありません。有効なファイルパスを入力してください。"
+
+#: core/lib/validator.php:212
+msgid "The directory supplied in %1$s is not writable. Please select a directory that can be written to."
+msgstr "%1$s で指定されたディレクトリは書き込み可能ではありません。書き込み可能なディレクトリを選択してください。"
+
+#: core/lib/validator.php:207
+msgctxt "%1$s is the input name. %2$s is the error message."
+msgid "The directory supplied in %1$s cannot be used as a valid directory. %2$s"
+msgstr "%1$s で指定されたディレクトリは有効なディレクトリとして使用することはできません。%2$s"
+
+#: core/lib/validator.php:197 core/lib/validator.php:221
+msgid "The %1$s value must be a string."
+msgstr "%1$s の値は文字列でなくてはなりません。"
+
+#: core/lib/validator.php:193
+msgid "The %1$s value must be a valid date in the format of YYYY-MM-DD."
+msgstr "%1$s の値は YYYY-MM-DD 形式の有効な日付でなくてはなりません。"
+
+#: core/lib/validator.php:190
+msgid "The %1$s value must be a valid date."
+msgstr "%1$s の値は有効な日付でなくてはなりません。"
+
+#: core/lib/validator.php:177
+msgid "The %1$s value is not a valid username."
+msgstr "%1$s の値が有効なユーザー名ではありません。"
+
+#: core/lib/validator.php:171
+msgid "The %1$s value must be a valid email address."
+msgstr "%1$s の値は有効なメールアドレスでなくてはなりません。"
+
+#: core/lib/validator.php:165
+msgid "The %1$s value must be a positive integer."
+msgstr "%1$s の値は正の整数でなくてはなりません。"
+
+#: core/lib/validator.php:158
+msgid "The %1$s value must be an integer."
+msgstr "%1$s の値は整数でなくてはなりません。"
+
+#: core/lib/validator.php:127 core/lib/validator.php:135
+msgid "The %1$s value cannot be empty."
+msgstr "%1$s の値は空にすることはできません。"
+
+#: core/lib/validator.php:111
+msgid "A validation check for %1$s failed. The %2$s value is missing. This could be due to a problem with the iThemes Security installation or an invalid modification. Please reinstall iThemes Security and try again."
+msgstr "%1$s の検証チェックに失敗しました。%2$s の値が不足しています。これは、iThemes Security のインストール、または無効な変更の問題が原因である可能性があります。iThemes Security を再インストールして、もう一度やり直してください。"
+
+#: core/lib/validator.php:85
+msgid "A validation function for %1$s received data that does not match the expected data type for the %2$s entry. A data type of %3$s was expected, but a data type of %4$s was received."
+msgstr " %1$s の検証関数は、%2$s エントリが想定していたデータタイプと一致しないデータを受け取りました。%3$s のデータタイプを想定していましたが、%4$s のデータタイプを受け取りました。"
+
+#: core/lib/validator.php:63
+msgid "A validation function for %1$s received data that has an entry for %2$s when no such entry exists."
+msgstr "%1$s の検証関数は、エントリが存在しない際に %2$s のエントリを持っているデータを受け取りました。"
+
+#: core/lib/validator.php:56
+msgid "A validation function for %1$s received data that did not have the required entry for %2$s."
+msgstr "%1$s の検証関数は %2$s に必要なエントリを持っていないデータを受け取りました。"
+
+#: core/lib/settings.php:56
+msgid "The data validator for %1$s is missing. Data for the module cannot be saved without the validator. This error could indicate a bad install of iThemes Security. Please remove the plugin and reinstall it. If this message persists, please contact support and send them this error message."
+msgstr "%1$s 用のデータ、バリデータが不足しています。モジュールのデータは、バリデータなしでは保存することができません。このエラーは不良を起こした iThemes Security をインストールしている可能性があります。プラグインを一度削除して再インストールしてください。このメッセージが続く場合はサポートに連絡し、このエラーメッセージを送信してください。"
+
+#: core/lib/class-itsec-lib-directory.php:257
+msgid "The directory %s could not be protected from file listing as the directory does not exist."
+msgstr "ディレクトリが存在しないので、ディレクトリ %s はファイルリストから保護することができませんでした。"
+
+#: core/lib/class-itsec-lib-directory.php:235
+msgid "This is a test file generated by iThemes Security. It can be removed."
+msgstr "これは、iThemes Security によって生成されたテストファイルです。これは削除することができます。"
+
+#: core/lib/class-itsec-lib-config-file.php:454
+msgid "The \"Write to Files\" setting is disabled. Manual configuration for the <code>%s</code> file can be found on the Security > Settings page in the Advanced section."
+msgstr "\"ファイル書き込み\" 設定が無効になっています。<code>%s</code> ファイルの手動構成は、セキュリティ > 詳細セクションの設定ページで見つけることができます。"
+
+#. translators: 1: variable type
+#: core/response.php:337
+msgid "Unknown error type received: %1$s."
+msgstr "不明なエラータイプを受け取りました: %1$s."
+
+#. translators: 1: error message, 2: error code
+#: core/response.php:316
+msgid "%1$s <span class=\"itsec-error-code\">(%2$s)</span>"
+msgstr "%1$s <span class=\"itsec-error-code\">（%2$s）</span>"
+
+#: core/modules.php:461 core/modules.php:494
+msgid "The %s module is a Core module and cannot be activated or deactivated."
+msgstr "%s モジュールはコアモジュールなので有効化または無効化することはできません。"
+
+#: core/modules.php:271
+msgid "Unable to find a valid settings object for %s. Setting was unable to be saved."
+msgstr "有効な設定 %s のオブジェクトを見つけることができませんでした。設定を保存することができませんでした。"
+
+#: core/modules.php:245
+msgid "Unable to find a valid settings object for %s. Settings were unable to be saved."
+msgstr "有効な設定 %s のオブジェクトを見つけることができませんでした。設定を保存することができませんでした。"
+
+#: core/lockout.php:529
+msgid "<strong>Is this computer white-listed:</strong> %s"
+msgstr "<strong>このコンピュータをホワイトリストに登録 :</strong> %s"
+
+#: core/lockout.php:527
+msgid "<strong>User lockout message:</strong> %s"
+msgstr "<strong>ユーザーのロックアウトメッセージ :</strong> %s"
+
+#: core/lockout.php:525
+msgid "<strong>Host lockout message:</strong> %s"
+msgstr "<strong>ホストのロックアウトメッセージ :</strong> %s"
+
+#: core/lockout.php:523
+msgid "<strong>How long lockouts will be remembered for ban:</strong> %s"
+msgstr "<strong>禁止までにロックアウトを記録する回数 :</strong> %s"
+
+#: core/lockout.php:521
+msgid "<strong>Number of lockouts before permanent ban:</strong> %s"
+msgstr "<strong>恒久的な禁止になる前のロックアウト回数 :</strong> %s"
+
+#: core/lockout.php:519
+msgid "<strong>Permanently ban:</strong> %s"
+msgstr "<strong>恒久的に禁止 :</strong> %s"
+
+#: core/sync-verbs/itsec-set-temp-whitelist.php:38
+msgid "The direction argument must be either \"add\", \"clear\", or \"remove\"."
+msgstr "direction 引数は \"add\", \"clear\", または \"remove\" のいずれかでなければなりません。"
+
+#: core/sync-verbs/itsec-set-temp-whitelist.php:26
+msgid "An empty ip argument was submitted."
+msgstr "空の IP 引数が送信されました。"
+
+#: core/sync-verbs/itsec-set-temp-whitelist.php:19
+msgid "The ip argument is missing."
+msgstr "IP の引数が不足しています。"
+
+#: core/admin-pages/page-settings.php:593
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: core/admin-pages/page-settings.php:578
+msgid "Configure previous iThemes Security setting"
+msgstr "前の iThemes Security 設定を構成"
+
+#: core/admin-pages/page-settings.php:577
+msgid "Configure next iThemes Security setting"
+msgstr "次の iThemes Security 設定を構成"
+
+#: core/admin-pages/page-settings.php:402
+msgctxt "List advanced modules"
+msgid "Advanced"
+msgstr "高度"
+
+#: core/admin-pages/page-settings.php:398
+msgctxt "List recommended modules"
+msgid "Recommended"
+msgstr "推奨"
+
+#: core/admin-pages/page-settings.php:394
+msgctxt "List all modules"
+msgid "All"
+msgstr "すべて"
+
+#: core/admin-pages/page-settings.php:360
+msgid "The requested widget (%s) does not exist. Settings for it cannot be rendered."
+msgstr "リクエストされた（%s）ウィジェットが存在しません。これにより設定をレンダリングすることができませんでした。"
+
+#: core/admin-pages/page-settings.php:327
+msgid "The requested module (%s) does not exist. Settings for it cannot be rendered."
+msgstr "リクエストされた（%s）モジュールが存在しません。これにより設定をレンダリングすることができませんでした。"
+
+#: core/admin-pages/page-settings.php:213
+msgid "The server did not receive a valid request. An unknown \"method\" argument was supplied. Please try again."
+msgstr "サーバーが有効なリクエストを受信できませんでした。未知の \"メソッド\" 引数が指定されました。もう一度やり直してください。"
+
+#: core/admin-pages/page-settings.php:207
+msgid "The server did not receive a valid request. The required \"data\" argument for the widget is missing. Please try again."
+msgstr "サーバーが有効なリクエストを受信できませんでした。ウィジェットに必要な \"データ\" 引数が不足しています。もう一度やり直してください。"
+
+#: core/admin-pages/page-settings.php:197
+msgid "The server did not receive a valid request. The required \"data\" argument for the module is missing. Please try again."
+msgstr "サーバーが有効なリクエストを受信できませんでした。モジュールに必要な \"データ\" 引数が不足しています。もう一度やり直してください。"
+
+#: core/admin-pages/page-settings.php:171
+msgid "The server did not receive a valid request. The required \"module\" argument is missing. Please try again."
+msgstr "サーバーが有効なリクエストを受信できませんでした。必要な \"モジュール\" 引数が不足しています。もう一度やり直してください。"
+
+#: core/admin-pages/page-settings.php:167
+msgid "The server did not receive a valid request. The required \"method\" argument is missing. Please try again."
+msgstr "サーバーが有効なリクエストを受信できませんでした。必要な \"メソッド\" 引数が不足しています。もう一度やり直してください。"
+
+#: core/admin-pages/page-settings.php:165
+msgid "A permissions security check failed, preventing the request from completing as expected. The currently logged in user does not have sufficient permissions to make this request. Please try reloading the page and trying again."
+msgstr "パーミッションのセキュリティチェックが想定していた完了からのリクエストを防止するはずが失敗しました。現在ログインしているユーザーは、このリクエストを行うための十分な権限がありません。ページを再読み込みして、もう一度お試しください。"
+
+#: core/admin-pages/page-settings.php:163
+msgid "A nonce security check failed, preventing the request from completing as expected. Please try reloading the page and trying again."
+msgstr "nonce セキュリティチェックが想定していた完了からのリクエストを防止するはずが失敗しました。ページを再読み込みして、もう一度お試しください。"
+
+#: core/admin-pages/page-settings.php:115
+msgid "Disable"
+msgstr "無効化"
+
+#: core/admin-pages/page-settings.php:114
+msgid "Enable"
+msgstr "有効"
+
+#: core/admin-pages/page-settings.php:111
+msgid "Learn More"
+msgstr "詳細を見る"
+
+#: core/admin-pages/page-settings.php:110
+msgid "Hide Settings"
+msgstr "設定を非表示"
+
+#: core/admin-pages/page-settings.php:109
+msgid "Configure Settings"
+msgstr "構成の設定"
+
+#: core/admin-pages/page-settings.php:108
+msgid "Close"
+msgstr "閉じる"
+
+#: core/admin-pages/page-settings.php:107
+msgid "Save Settings"
+msgstr "設定を保存"
+
+#: core/admin-pages/page-logs.php:311 core/admin-pages/page-settings.php:513
+msgid "iThemes Security requires Javascript in order for the settings to be modified. Please enable Javascript to configure the settings."
+msgstr "設定を変更するために iThemes Security が順々に Javascript を必要とします。この設定を構成する場合は Javascript を有効にしてください。"
+
+#: core/admin-pages/page-logs.php:278
+msgid "Logging settings can be managed in the Global Settings."
+msgstr "ログの設定は、グローバル設定で管理することができます。"
+
+#: core/admin-pages/page-logs.php:277
+msgid "Below are various logs of information collected by iThemes Security Pro. This information can help you get a picture of what is happening with your site and the level of success you have achieved in your security efforts."
+msgstr "以下に iThemes Security PRO によって収集された情報の様々なログがあります。この情報は、サイトで何が起こっているのか、そしてセキュリティ施行がどの程度成功しているか把握するのに役立ちます。"
+
+#: core/admin-pages/page-logs.php:255 core/admin-pages/page-settings.php:453
+#: core/lib/class-itsec-mail.php:81
+msgid "Support"
+msgstr "サポート"
+
+#: core/admin-pages/page-logs.php:254
+msgid "Manage Settings"
+msgstr "設定の管理"
+
+#: core/admin-pages/page-logs.php:194
+msgid "The requested widget (%s) does not exist. Logs for it cannot be rendered."
+msgstr "リクエストされた（%s）ウィジェットが存在しません。これによりログをレンダリングすることができませんでした。"
+
+#: core/admin-pages/page-logs.php:168 core/admin-pages/page-settings.php:302
+msgid "The settings could not be saved. Due to an unknown error. Please try refreshing the page and trying again."
+msgstr "設定は保存できませんでした。原因不明のエラーが発生しました。ページを更新し、再試行してください。"
+
+#: core/admin-pages/page-logs.php:166 core/admin-pages/page-settings.php:300
+msgid "The settings could not be saved. Please correct the error above and try again."
+msgid_plural "The settings could not be saved. Please correct the errors above and try again."
+msgstr[0] "設定は保存できませんでした。上記のエラーを修正して、もう一度お試しください。"
+
+#: core/admin-pages/page-logs.php:159 core/admin-pages/page-settings.php:293
+msgid "The settings saved successfully."
+msgstr "設定が正常に保存されました。"
+
+#: core/admin-pages/page-logs.php:144 core/admin-pages/page-settings.php:278
+msgid "The supplied module (%s) is not recognized. The module settings could not be saved."
+msgstr "指定のモジュール（%s）が認識されませんでした。モジュールの設定は保存できませんでした。"
+
+#: core/admin-pages/page-logs.php:86 core/admin-pages/page-settings.php:135
+msgid "A parser error prevented the request from completing as expected. The site sent a response that jQuery could not process. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "パーサエラーによりリクエストが成功しませんでした。サイトでは jQuery が処理できないレスポンスを送信しました。これはプラグインやテーマの競合、サーバー設定の問題の可能性があります。"
+
+#: core/admin-pages/page-logs.php:84 core/admin-pages/page-settings.php:133
+msgid "A timeout error prevented the request from completing as expected. The site took too long to respond. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "タイムアウトエラーによりリクエストが成功しませんでした。サイトからのレスポンスに時間がかかりすぎています。これはプラグインやテーマの競合、サーバー設定の問題の可能性があります。"
+
+#: core/admin-pages/page-logs.php:82 core/admin-pages/page-settings.php:131
+msgid "An unknown error prevented the request from completing as expected. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "不明なエラーによりリクエストが成功しませんでした。これはプラグインやテーマの競合、サーバー設定の問題の可能性があります。"
+
+#: core/admin-pages/page-logs.php:80 core/admin-pages/page-settings.php:129
+msgid "A \"internal server\" error prevented the request from completing as expected. The server returned a 500 status code, indicating that the server was unable to complete the request due to a fatal PHP error or a server problem. This could be due to a plugin/theme conflict, a server configuration issue, a temporary hosting issue, or invalid custom PHP modifications. Please check your server's error logs for details about the source of the error and contact your hosting company for assistance if required."
+msgstr "\"Internal Server\" エラーが想定していた完了からのリクエストを防止しました。サーバーは、サーバーが致命的なPHPのエラーやサーバーの問題でリクエストを完了できなかったことを示し、500のステータスコードを返しました。これはプラグイン / テーマの競合、サーバー構成の問題、一時的なホスティング問題、または無効なカスタム PHP の変更が原因である可能性があります。エラーの原因詳細については、サーバーのエラーログを確認し、必要に応じて改善 / 支援のためにホスティング会社へ連絡してください。"
+
+#: core/admin-pages/page-logs.php:78 core/admin-pages/page-settings.php:127
+msgid "A \"not found\" error prevented the request from completing as expected. The server returned a 404 status code, indicating that the server was unable to find the requested admin-ajax.php file. This could be due to a plugin/theme conflict, a server configuration issue, or an incomplete WordPress installation. Please try refreshing the page and trying again. If the request continues to fail, you may have to alter plugin settings, alter server configurations, or reinstall WordPress."
+msgstr "\"Not Found\" エラーが想定していた完了からのリクエストを防止しました。サーバーは、サーバーにリクエストされた admin-ajax.php ファイルを見つけられず、404のステータスコードを返しました。これはプラグイン / テーマの競合や、サーバー構成の問題または不完全な WordPress のインストールが原因である可能性があります。ページを更新し、再試行してみてください。リクエストが引き続き失敗する場合は、プラグインの設定、サーバー構成の変更、または WordPress を再インストールする必要があります。"
+
+#: core/admin-pages/page-logs.php:76 core/admin-pages/page-settings.php:125
+msgid "A \"request forbidden\" error prevented the request from completing as expected. The server returned a 403 status code, indicating that the server configuration is prohibiting this request. This could be due to a plugin/theme conflict or a server configuration issue. Please try refreshing the page and trying again. If the request continues to fail, you may have to alter plugin settings or server configuration that could account for this AJAX request being blocked."
+msgstr "\"Request Forbidden\" エラーが想定していた完了からのリクエストを防止しました。サーバーのサーバー構成がこのリクエストを禁止しており、403のステータスコードを返しました。これはプラグイン / テーマの競合や、サーバー構成の問題が原因である可能性があります。ページを更新し、再試行してみてください。リクエストが失敗し続ける場合は、このブロックされたAJAXリクエストのプラグインの設定や、サーバーの構成を変更することができるアカウントが必要になります。"
+
+#: core/admin-pages/page-logs.php:74 core/admin-pages/page-settings.php:123
+msgid "An \"invalid format\" error prevented the request from completing as expected. The format of data returned could not be recognized. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "\"Invalid Format\" エラーが想定していた完了からのリクエストを防止しました。返されたデータ形式が認識されませんでした。これはプラグイン / テーマの競合や、サーバー構成の問題が原因である可能性があります。"
+
+#. translators: 1: module name
+#: core/admin-pages/page-logs.php:72 core/admin-pages/page-settings.php:121
+msgid "Settings saved successfully for %1$s."
+msgstr "%1$sの設定を保存しました。"
+
+#: core/admin-pages/init.php:32
+msgid "iThemes Security Logs"
+msgstr "iThemes Security のログ"
+
+#: core/admin-pages/init.php:30
+msgid "iThemes Security Settings"
+msgstr "iThemes Security の設定"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:195
+msgid "This has been disabled."
+msgstr "無効にされています。"
+
+#: core/modules/hide-backend/settings-page.php:105
+#: core/modules/hide-backend/validator.php:30
+msgid "Redirection Slug"
+msgstr "リダイレクトのスラッグ"
+
+#: core/modules/hide-backend/settings-page.php:98
+#: core/modules/hide-backend/validator.php:29
+msgid "Enable Redirection"
+msgstr "リダイレクトを有効"
+
+#: core/modules/hide-backend/settings-page.php:101
+msgid "Redirect users to a custom location on your site, instead of throwing a 403 (forbidden) error."
+msgstr "403（禁止された）エラーを表示せず、サイトでカスタム指定された場所へユーザーをリダイレクトします。"
+
+#: core/modules/hide-backend/settings-page.php:110
+msgid "The slug to redirect users to when they attempt to access wp-admin while not logged in."
+msgstr "ログインしていない時に wp-admin にアクセスしようとした場合、ユーザーをこのスラッグへリダイレクトします。"
+
+#: core/modules/hide-backend/settings-page.php:109
+msgid "Redirect Location: %s"
+msgstr "リダイレクトのロケーション : %s"
+
+#. Description of the plugin/theme
+msgid "Take the guesswork out of WordPress security. iThemes Security offers 30+ ways to lock down WordPress in an easy-to-use WordPress security plugin."
+msgstr "WordPress のセキュリティでもう悩むことはありません。iThemes Security は、使いやすい WordPress のセキュリティプラグインで WordPress を保護する30+の方法を提供しています。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:154
+msgid "The scan failed due to an unexpected technical error. The response from the wp_remote_get function is missing some critical information that is needed in order to properly process the response from Sucuri's servers. This could indicate a plugin/theme compatibility issue or a problem in WordPress."
+msgstr "予期しない技術的なエラーのためスキャンは失敗しました。wp_remote_get 関数からのレスポンスに、Sucuri サーバーからのレスポンスを適切に処理するために必要な重要な情報がありません。これはプラグイン / テーマの互換性問題や、WordPress に問題がある可能性があります。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:130
+msgid "The scan failed due to an unexpected technical error. The response from the wp_remote_get function does not contain a body entry. Since the body entry contains the response for the request to Sucuri's servers, the response cannot be processed. This could indicate a plugin/theme compatibility issue or a problem in WordPress."
+msgstr "予期しない技術的なエラーのためスキャンは失敗しました。wp_remote_get 関数からのレスポンスにボディエントリが含まれていません。ボディエントリには Sucuri サーバーのリクエストに対するレスポンスが含まれているため、レスポンスを処理することができません。これはプラグイン / テーマの互換性問題や、WordPress に問題がある可能性があります。"
+
+#: core/modules/ban-users/settings-page.php:58
+msgid "Note: You cannot ban yourself."
+msgstr "注意: あなた自身を禁止することはできません。"
+
+#: core/modules/ban-users/settings-page.php:50
+msgid "You may ban users by individual IP address or IP address range using wildcards or CIDR notation."
+msgstr "ワイルドカード、または CIDR 表記使用して、個々の IP アドレスか、IP アドレスを範囲指定することによりユーザーを禁止することができます。"
+
+#: core/modules/ban-users/settings-page.php:47
+msgid "Use the guidelines below to enter hosts that will not be allowed access to your site."
+msgstr "サイトへのアクセスを拒否したいホストを入力する場合は、以下のガイドラインに従ってください。"
+
+#: core/modules/ban-users/settings-page.php:54
+#: core/modules/global/settings-page.php:177
+msgid "Wildcards are also supported with some limitations. If using wildcards (*), you must start with the right-most chunk in the IP address. For example ###.###.###.* and ###.###.*.* are permitted but ###.###.*.### is not. Wildcards are only for convenient entering of IP addresses, and will be automatically converted to their appropriate CIDR notation format on save."
+msgstr "ワイルドカードは、一部制限付きでサポートされています。一般的に知られるワイルドカード(*)の使い方をするのではなく、IP アドレスの右端から指定する必要があります。例えば ###.###.###.* または ###.###.*.* という表記は許可されていますが、次の ###.###.*.### という途中で指定する方法は許可されていません。ワイルドカードは、IP アドレスを入力する上での利便性の問題であり、保存する上では内部で自動的に適切な CIDR 表記の形式へ変換されています。"
+
+#: core/modules/ban-users/settings-page.php:53
+#: core/modules/global/settings-page.php:176
+msgid "CIDR notation is allowed to specify a range of IP addresses (###.###.###.###/## or ####:####:####:####:####:####:####:####/###)."
+msgstr "CIDR 表記は IP アドレスの範囲を指定することが可能です（###.###.###.###/## または ####:####:####:####:####:####:####:####/###）"
+
+#: core/modules/ban-users/settings-page.php:52
+#: core/modules/global/settings-page.php:175
+msgid "Individual IP addresses must be in IPv4 or IPv6 standard format (###.###.###.### or ####:####:####:####:####:####:####:####)."
+msgstr "個々の IP アドレスは IPv4 または IPv6 の標準形式で入力する必要があります（###.###.###.### または ####:####:####:####:####:####:####:###）"
+
+#: core/modules/global/settings-page.php:173
+msgid "You may white list users by individual IP address or IP address range using wildcards or CIDR notation."
+msgstr "ワイルドカードまたは CIDR 表記を使用して、個々の IP アドレスまたは IP アドレスの範囲でユーザーをホワイトリストに入れることができます。"
+
+#: core/show-multiple-version-notice.php:5
+msgid "Multiple versions of iThemes Security are active. Please disable all extra versions of iThemes Security."
+msgstr "複数の iThemes Security バージョンが有効になっています。iThemes Security すべての追加バージョンを無効にしてください。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:143
+msgid "The scan did not complete successfully. The Sucuri server should send its response in JSON encoding. The data received from the Sucuri server could not be decoded. In addition, a content type of <code>%s</code> was received when a content type of <code>application/json</code> was expected. This could indicate a temporary issue with the Sucuri servers."
+msgstr "スキャンが正常に完了しませんでした。JSON エンコードで Sucuri サーバーにレスポンスを送信する必要があります。Sucuri サーバーから受信したデータをデコードできませんでした。また、<code>application/json</code> のコンテンツタイプが想定された際に、<code>%s</code> のコンテンツタイプが受信しました。これは Sucuri サーバーとの一時的な問題を示す可能性があります。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:141
+msgid "The scan did not complete successfully. The Sucuri server should send its response in JSON encoding. The response indicates that the encoding is JSON, but the data could not be decoded. This problem could be due to a temporary Sucuri server issue or a compatibility issue on your server. If the problem continues, please contact iThemes Security support."
+msgstr "スキャンが正常に完了しませんでした。Sucuri サーバーは JSON エンコードでレスポンスを送信する必要があります。レスポンスはエンコードが JSON と認識しますが、データがデコードできません。この問題は、一時的な Sucuri サーバーの問題、またはサーバーの互換性問題が原因である可能性があります。問題が解決しない場合は、iThemes Security のサポートにお問い合わせください。"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:31
+msgid "If you contact support about this error, please provide the following debug details:"
+msgstr "このエラーについてサポートに連絡したい場合は、次のデバッグ詳細情報を提供してください :"
+
+#. Author of the plugin/theme
+msgid "iThemes"
+msgstr "iThemes"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:328
+msgid "XML-RPC services are disabled on this site."
+msgstr "このサイトでは XML-RPC サービスが無効化されています。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:96
+#: core/modules/wordpress-tweaks/validator.php:17
+msgid "Multiple Authentication Attempts per XML-RPC Request"
+msgstr "XML-RPC リクエストごとの複数の認証試行"
+
+#: core/modules/wordpress-tweaks/settings-page.php:102
+msgid "<strong>Allow</strong> - Allows XML-RPC requests that contain multiple login attempts. Only use this setting if a service requires it."
+msgstr "<strong>許可</strong> - 複数のログイン試行を含む XML-RPC へのリクエストを許可します。サービスが必要とする場合のみ、この設定を使用してください。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:101
+msgid "<strong>Block</strong> - Blocks XML-RPC requests that contain multiple login attempts. This setting is highly recommended."
+msgstr "<strong>ブロック</strong> - 複数のログイン試行を含む XML-RPC へのリクエストをブロックします。この設定を強くお勧めします。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:32
+msgid "Block (recommended)"
+msgstr "ブロック (推奨)"
+
+#: core/modules/wordpress-tweaks/settings-page.php:98
+msgid "WordPress' XML-RPC feature allows hundreds of username and password guesses per request. Use the recommended \"Block\" setting below to prevent attackers from exploiting this feature."
+msgstr "WordPress の XML-RPC 機能は、リクエストごとにユーザー名とパスワードの推測を数百件可能にしてしまいす。この機能を悪用する攻撃からサイトを保護するため、以下の推奨設定 \"ブロック\" を使用してください。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:91
+msgid "<strong>Enable XML-RPC</strong> - XML-RPC is fully enabled and will function as normal. Use this setting only if the site must have unrestricted use of XML-RPC."
+msgstr "<strong>XML-RPC を有効</strong> - XML-RPC は完全に有効化され、通常どおり機能します。サイトで XML-RPC を制限無しで使用する必要がある場合のみ設定してください。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:90
+msgid "<strong>Disable Pingbacks</strong> - Only disable pingbacks. Other XML-RPC features will work as normal. Select this setting if you require features such as Jetpack or the WordPress Mobile app."
+msgstr "<strong>ピンバックを無効</strong> - ピングバックのみを無効にします。その他の XML-RPC 機能は通常どおり動作します。Jetpack や WordPress Mobile app などを使用する場合は、こちらを設定してください。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:89
+msgid "<strong>Disable XML-RPC</strong> - XML-RPC is disabled on the site. This setting is highly recommended if Jetpack, the WordPress mobile app, pingbacks, and other services that use XML-RPC are not used."
+msgstr "<strong>XML-RPC を無効</strong> - サイト上での XML-RPC を無効にします。Jetpack, WordPress Mobile app, ピングバック、および XML-RPC を使用する他サービスを使用していない限り、この設定を強くお勧めします。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:27
+msgid "Disable Pingbacks"
+msgstr "ピンバックを無効化"
+
+#: core/modules/wordpress-tweaks/settings-page.php:26
+msgid "Disable XML-RPC (recommended)"
+msgstr "XML-RPCを無効化 (推奨)"
+
+#: core/modules/wordpress-tweaks/settings-page.php:86
+msgid "WordPress' XML-RPC feature allows external services to access and modify content on the site. Common example of services that make use of XML-RPC are <a href=\"%1$s\">the Jetpack plugin</a>, <a href=\"%2$s\">the WordPress mobile app</a>, and <a href=\"%3$s\">pingbacks</a>. If the site does not use a service that requires XML-RPC, select the \"Disable XML-RPC\" setting as disabling XML-RPC prevents attackers from using the feature to attack the site."
+msgstr "WordPress の XML-RPC 機能は、外部サービスにアクセスし、サイト上のコンテンツを変更することができます。XML-RPC を利用するサービスの一般的な代表例として、<a href=\"%1$s\">Jetpack プラグイン</a>、<a href=\"%2$s\">WordPress Mobile app</a>、および<a href=\"%3$s\">ピングバック</a>などがあります。サイトで XML-RPC を必要とするサービスを使用していない限り、攻撃目的で XML-RPC 機能を悪用しサイトを攻撃してくる者を阻止する必要があるため 「XML-RPC を無効」を選択し、これを設定します。"
+
+#. Author URI of the plugin/theme
+msgid "https://ithemes.com"
+msgstr "https://ithemes.com"
+
+#. Plugin URI of the plugin/theme
+msgid "https://ithemes.com/security"
+msgstr "https://ithemes.com/security"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:389
+msgid "A Nickname is required. Please choose a nickname or fill out your first and last name."
+msgstr "ニックネームが必要です。ニックネームを選択するか、あなたの姓名を入力してください。"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:371
+msgid "Your Nickname must be different than your login name. Please choose a different Nickname."
+msgstr "ニックネームはログイン名と異なっている必要があります。別のニックネームを選択してください。"
+
+#: core/modules/multisite-tweaks/settings-page.php:6
+msgid "Multisite Tweaks"
+msgstr "マルチサイトの微調整"
+
+#: core/modules/multisite-tweaks/settings-page.php:25
+#: core/modules/system-tweaks/settings-page.php:25
+#: core/modules/wordpress-tweaks/settings-page.php:49
+msgid "Remember, some of these settings might conflict with other plugins or themes, so test your site after enabling each setting."
+msgstr "これらの設定の一部は他のプラグインやテーマと競合する可能性があるので、各設定を有効にした後でサイトをテストしてください。"
+
+#: core/modules/multisite-tweaks/settings-page.php:24
+#: core/modules/system-tweaks/settings-page.php:24
+#: core/modules/wordpress-tweaks/settings-page.php:48
+msgid "Note: These settings are listed as advanced because they block common forms of attacks but they can also block legitimate plugins and themes that rely on the same techniques. When activating the settings below, we recommend enabling them one by one to test that everything on your site is still working as expected."
+msgstr "注意 : 彼らの攻撃方法で一般的な形式をブロックするため、これらの設定は高度なものとして記載していますが、これもまた同じ技術に依存している正当なプラグインやテーマをブロックしてしまう可能性があります。以下の設定を有効にする場合は、正常に稼働しているサイトで、すべてをテストし様子を見ながら慎重に一つずつ有効化することをおすすめします。"
+
+#: core/modules/multisite-tweaks/settings-page.php:16
+#: core/modules/system-tweaks/settings-page.php:16
+#: core/modules/wordpress-tweaks/settings-page.php:16
+msgid "These are advanced settings that may be utilized to further strengthen the security of your WordPress site."
+msgstr "あなたの WordPress サイトのセキュリティを、さらに強化するために利用できる高度な設定です。"
+
+#: core/modules/multisite-tweaks/settings-page.php:44
+#: core/modules/multisite-tweaks/validator.php:11
+msgid "Core Update Notifications"
+msgstr "コアの更新通知"
+
+#: core/modules/multisite-tweaks/settings-page.php:36
+#: core/modules/multisite-tweaks/validator.php:10
+msgid "Plugin Update Notifications"
+msgstr "プラグインの更新通知"
+
+#: core/modules/multisite-tweaks/settings-page.php:28
+#: core/modules/multisite-tweaks/validator.php:9
+msgid "Theme Update Notifications"
+msgstr "テーマの更新通知"
+
+#: core/modules/wordpress-tweaks/settings-page.php:134
+#: core/modules/wordpress-tweaks/validator.php:21
+msgid "Disable Extra User Archives"
+msgstr "追加ユーザーのアーカイブを無効"
+
+#: core/modules/wordpress-tweaks/settings-page.php:126
+#: core/modules/wordpress-tweaks/validator.php:20
+msgid "Force Unique Nickname"
+msgstr "ユニークなニックネームを強制"
+
+#: core/modules/wordpress-tweaks/settings-page.php:118
+#: core/modules/wordpress-tweaks/validator.php:19
+msgid "Login Error Messages"
+msgstr "ログインエラーメッセージ"
+
+#: core/modules/wordpress-tweaks/settings-page.php:84
+#: core/modules/wordpress-tweaks/validator.php:15
+#: core/modules/wordpress-tweaks/validator.php:16
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: core/modules/wordpress-tweaks/settings-page.php:76
+#: core/modules/wordpress-tweaks/validator.php:14
+msgid "File Editor"
+msgstr "ファイルエディター"
+
+#: core/modules/wordpress-tweaks/settings-page.php:68
+#: core/modules/wordpress-tweaks/validator.php:13
+msgid "Comment Spam"
+msgstr "コメントスパム"
+
+#: core/modules/wordpress-tweaks/settings-page.php:60
+#: core/modules/wordpress-tweaks/validator.php:12
+msgid "EditURI Header"
+msgstr "URI ヘッダーの編集"
+
+#: core/modules/wordpress-tweaks/settings-page.php:52
+#: core/modules/wordpress-tweaks/validator.php:11
+msgid "Windows Live Writer Header"
+msgstr "Windows Live Writer のヘッダー"
+
+#: core/modules/system-tweaks/settings-page.php:76
+#: core/modules/system-tweaks/validator.php:15
+msgid "File Writing Permissions"
+msgstr "ファイルの書き込み権限"
+
+#: core/modules/system-tweaks/settings-page.php:68
+#: core/modules/system-tweaks/validator.php:14
+msgid "Long URL Strings"
+msgstr "長い URL 文字列"
+
+#: core/modules/system-tweaks/settings-page.php:60
+#: core/modules/system-tweaks/validator.php:13
+msgid "Non-English Characters"
+msgstr "英語以外の文字"
+
+#: core/modules/system-tweaks/settings-page.php:52
+#: core/modules/system-tweaks/validator.php:12
+msgid "Suspicious Query Strings"
+msgstr "不審なクエリ文字列"
+
+#: core/modules/system-tweaks/settings-page.php:44
+#: core/modules/system-tweaks/validator.php:11
+msgid "Request Methods"
+msgstr "リクエストメソッド"
+
+#: core/modules/system-tweaks/settings-page.php:36
+#: core/modules/system-tweaks/validator.php:10
+msgid "Directory Browsing"
+msgstr "ディレクトリの参照"
+
+#: core/modules/system-tweaks/settings-page.php:28
+#: core/modules/system-tweaks/validator.php:9
+msgid "System Files"
+msgstr "システムファイル"
+
+#: core/modules/wordpress-tweaks/config-generators.php:8
+msgid "Disable File Editor - Security > Settings > WordPress Tweaks > File Editor"
+msgstr "ファイルエディタを無効 - セキュリティ > 設定 > WordPress の微調整 > ファイルエディタ"
+
+#: core/modules/wordpress-tweaks/config-generators.php:51
+#: core/modules/wordpress-tweaks/config-generators.php:104
+msgid "Reduce Comment Spam - Security > Settings > WordPress Tweaks > Comment Spam"
+msgstr "コメントスパムを削減 - セキュリティ > 設定 > WordPress の微調整 > コメントスパム"
+
+#: core/modules/system-tweaks/config-generators.php:142
+#: core/modules/system-tweaks/config-generators.php:271
+msgid "Filter Non-English Characters - Security > Settings > System Tweaks > Non-English Characters"
+msgstr "英語以外の文字をフィルタリング - セキュリティ > 設定 > システムの微調整 > 英語以外の文字"
+
+#: core/modules/system-tweaks/config-generators.php:117
+#: core/modules/system-tweaks/config-generators.php:243
+msgid "Filter Suspicious Query Strings in the URL - Security > Settings > System Tweaks > Suspicious Query Strings"
+msgstr "URL 内の不審なクエリ文字列をフィルタリング - セキュリティ > 設定 > システムの微調整 > 不審なクエリ文字列"
+
+#: core/modules/system-tweaks/config-generators.php:110
+#: core/modules/system-tweaks/config-generators.php:236
+msgid "Filter Request Methods - Security > Settings > System Tweaks > Request Methods"
+msgstr "リクエストメソッドのフィルタ - セキュリティ > 設定 > システムの微調整 > リクエストメソッド"
+
+#: core/modules/system-tweaks/config-generators.php:79
+#: core/modules/system-tweaks/config-generators.php:202
+msgid "Disable PHP in Uploads - Security > Settings > System Tweaks > PHP in Uploads"
+msgstr "アップロードで PHP を無効 - セキュリティ > 設定 > システムの微調整 > アップロード内の PHP"
+
+#: core/modules/system-tweaks/config-generators.php:49
+msgid "Disable Directory Browsing - Security > Settings > System Tweaks > Directory Browsing"
+msgstr "ディレクトリの参照を無効 - セキュリティ > 設定 > システムの微調整 > ディレクトリの参照"
+
+#: core/modules/wordpress-tweaks/config-generators.php:26
+#: core/modules/wordpress-tweaks/config-generators.php:96
+msgid "Disable XML-RPC - Security > Settings > WordPress Tweaks > XML-RPC"
+msgstr "XML-RPC を無効 - セキュリティ > 設定 > WordPress の微調整 > XML-RPC"
+
+#: core/modules/system-tweaks/config-generators.php:23
+#: core/modules/system-tweaks/config-generators.php:58
+#: core/modules/system-tweaks/config-generators.php:175
+msgid "Protect System Files - Security > Settings > System Tweaks > System Files"
+msgstr "システムファイルの保護 - セキュリティ > 設定 > システムの微調整 > システムファイル"
+
+#: core/modules/wordpress-tweaks/settings-page.php:56
+msgid "This is not needed if you do not use Windows Live Writer or other blogging clients that rely on this file."
+msgstr "このファイルに依存している Windows Live Writer または他のブログクライアントを使用していない限り、これは必要ありません。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:55
+msgid "Remove the Windows Live Writer header."
+msgstr "Windows Live Writer のヘッダを削除します。"
+
+#: core/modules/system-tweaks/settings-page.php:87
+msgid "Disable PHP in Uploads"
+msgstr "アップロードで PHP を無効"
+
+#: core/modules/multisite-tweaks/settings-page.php:32
+msgid "Hides theme update notifications from users who cannot update themes. Please note that this only makes a difference in multi-site installations."
+msgstr "テーマを更新できないユーザーから、テーマの更新通知を非表示にします。マルチサイトがインストールされている時のみ表示されるので注意してください。"
+
+#: core/modules/multisite-tweaks/settings-page.php:31
+msgid "Hide Theme Update Notifications"
+msgstr "テーマの更新通知を非表示"
+
+#: core/modules/multisite-tweaks/settings-page.php:40
+msgid "Hides plugin update notifications from users who cannot update plugins. Please note that this only makes a difference in multi-site installations."
+msgstr "プラグインを更新できないユーザーから、プラグインの更新通知を非表示にします。マルチサイトがインストールされている時のみ表示されるので注意してください。"
+
+#: core/modules/multisite-tweaks/settings-page.php:39
+msgid "Hide Plugin Update Notifications"
+msgstr "プラグインの更新通知を非表示"
+
+#: core/modules/wordpress-tweaks/settings-page.php:80
+msgid "Disables the file editor for plugins and themes requiring users to have access to the file system to modify files. Once activated you will need to manually edit theme and other files using a tool other than WordPress."
+msgstr "ファイルを変更する際に、ファイルシステムへアクセス権を持っているユーザーが必要とするプラグインやテーマのファイルエディタを無効にします。有効にした場合は、手動で WordPress 以外のツールを使用し、他のファイルを編集する必要があります。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:79
+msgid "Disable File Editor"
+msgstr "ファイルエディタを無効にする"
+
+#: core/modules/wordpress-tweaks/settings-page.php:64
+msgid "Removes the RSD (Really Simple Discovery) header. If you don't integrate your blog with external XML-RPC services such as Flickr then the \"RSD\" function is pretty much useless to you."
+msgstr "RSD (Really Simple Discovery) ヘッダーを削除します。Flickr などの外部の XML-RPC サービスでブログを統合していない限り \"RSD\" 機能は、ほぼ必要ありません。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:63
+msgid "Remove the RSD (Really Simple Discovery) header."
+msgstr "RSD (Really Simple Discovery) ヘッダーを削除します。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:28
+msgid "Enable XML-RPC"
+msgstr "XML-RPC を有効"
+
+#: core/modules/multisite-tweaks/settings-page.php:48
+msgid "Hides core update notifications from users who cannot update core. Please note that this only makes a difference in multi-site installations."
+msgstr "コアを更新できないユーザーから、コアの更新通知を非表示にします。マルチサイトがインストールされている時のみ表示されるので注意してください。"
+
+#: core/modules/multisite-tweaks/settings-page.php:47
+msgid "Hide Core Update Notifications"
+msgstr "コアの更新通知を非表示"
+
+#: core/modules/wordpress-tweaks/settings-page.php:72
+msgid "This option will cut down on comment spam by denying comments from bots with no referrer or without a user-agent identified."
+msgstr "このオプションは、識別されるユーザーエージェントの無い、またはリファラーを持たないボットからのコメントを拒否することで、コメントスパムを削減します。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:71
+msgid "Reduce Comment Spam"
+msgstr "コメントのスパムを削減"
+
+#: core/modules/wordpress-tweaks/settings-page.php:122
+msgid "Prevents error messages from being displayed to a user upon a failed login attempt."
+msgstr "ログイン試行が失敗した際に、ユーザーに表示されるエラーメッセージを防止します。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:121
+msgid "Disable login error messages"
+msgstr "ログインのエラーメッセージを無効"
+
+#: core/modules/wordpress-tweaks/settings-page.php:130
+msgid "This forces users to choose a unique nickname when updating their profile or creating a new account which prevents bots and attackers from easily harvesting user's login usernames from the code on author pages. Note this does not automatically update existing users as it will affect author feed urls if used."
+msgstr "自分のプロファイルを更新したり、作者のページコードからユーザーのログインユーザー名をボットから収集される行為、または攻撃から防ぐため、新しいアカウントを作成する際にユニーク（固有 / 一意）なニックネームを選択するようユーザーへ強制します。この機能を使用した場合、既存のユーザーは作者のフィード URL に影響を与えてしまうため、自動的に更新されないので注意してください。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:129
+msgid "Force users to choose a unique nickname"
+msgstr "ユニークなニックネームの選択をユーザーに強制"
+
+#: core/modules/wordpress-tweaks/settings-page.php:138
+msgid "This makes it harder for bots to determine usernames by disabling post archives for users that don't post to your site."
+msgstr "サイトへ投稿をしていないユーザーのアーカイブを無効にすることで、悪意あるボットがユーザー名を解決するまでの処理を困難にさせることが可能です。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:137
+msgid "Disables a user's author page if their post count is 0."
+msgstr "投稿カウントが0の場合は、ユーザーの作者ページを無効"
+
+#: core/modules/system-tweaks/settings-page.php:80
+msgid "Prevents scripts and users from being able to write to the wp-config.php file and .htaccess file. Note that in the case of this and many plugins this can be overcome however it still does make the files more secure. Turning this on will set the UNIX file permissions to 0444 on these files and turning it off will set the permissions to 0664."
+msgstr "スクリプトやユーザーから wp-config.php ファイルや .htaccess ファイルへ不正に書き込む行為を禁止します。これを有効にした場合でも、多くのプラグインがこの設定を克服してしまいますが、ファイルをより安全に保護するためには必要です。これを有効にすると、これらのファイルは UNIX ファイルのアクセス許可が0444に設定され、無効にするとアクセス許可が0664に設定されます。"
+
+#: core/modules/system-tweaks/settings-page.php:79
+msgid "Remove File Writing Permissions"
+msgstr "ファイルの書き込み権限を削除"
+
+#: core/modules/system-tweaks/settings-page.php:56
+msgid "These are very often signs of someone trying to gain access to your site but some plugins and themes can also be blocked."
+msgstr "これらは頻繁に、あなたのサイトの一部のプラグインやテーマへのアクセスを得ようとする不正者の兆候もブロックすることができます。"
+
+#: core/modules/system-tweaks/settings-page.php:55
+msgid "Filter Suspicious Query Strings in the URL"
+msgstr "URL 内の不審なクエリ文字列をフィルタリング"
+
+#: core/modules/system-tweaks/settings-page.php:47
+msgid "Filter Request Methods"
+msgstr "リクエストメソッドのフィルタ"
+
+#: core/modules/system-tweaks/settings-page.php:32
+msgid "Prevent public access to readme.html, readme.txt, wp-config.php, install.php, wp-includes, and .htaccess. These files can give away important information on your site and serve no purpose to the public once WordPress has been successfully installed."
+msgstr "readme.html, readme.txt, wp-config.php, install.php, wp-includes, および .htaccess への一般公開を防止します。これらファイルは WordPress が正常にインストールされた後に一般公開されても何も役目も果たさないものと、サイトの重要な情報が明らかになってしまう大切なファイルが含まれます。"
+
+#: core/modules/system-tweaks/settings-page.php:31
+msgid "Protect System Files"
+msgstr "システムファイルの保護"
+
+#: core/modules/system-tweaks/settings-page.php:64
+msgid "Filter out non-english characters from the query string. This should not be used on non-english sites and only works when \"Filter Suspicious Query String\" has been selected."
+msgstr "クエリ文字列から英語以外の文字を除外します。これにより \"不審なクエリ文字列のフィルタ\" が選択されたときにのみ作動します。英語以外のサイトでは使用する必要はありません。"
+
+#: core/modules/system-tweaks/settings-page.php:63
+msgid "Filter Non-English Characters"
+msgstr "英語以外の文字をフィルタリング"
+
+#: core/modules/system-tweaks/settings-page.php:72
+msgid "Limits the number of characters that can be sent in the URL. Hackers often take advantage of long URLs to try to inject information into your database."
+msgstr "URL に送信できる文字数を制限します。ハッカーは多くの場合、データベースに情報をインジェクト（データベースへ要素を組み合わせてオブジェクトを作成する操作）しようと、長い URL を利用してきます。"
+
+#: core/modules/system-tweaks/settings-page.php:71
+msgid "Filter Long URL Strings"
+msgstr "長い URL の文字列をフィルタリング"
+
+#: core/modules/system-tweaks/settings-page.php:40
+msgid "Prevents users from seeing a list of files in a directory when no index file is present."
+msgstr "インデックスファイルがまったく存在しない場合、ディレクトリ内のファイルリスト参照をユーザーから防止します。"
+
+#: core/modules/system-tweaks/settings-page.php:39
+msgid "Disable Directory Browsing"
+msgstr "ディレクトリの参照を無効"
+
+#: core/modules/security-check/scanner.php:21
+#: core/modules/security-check/scanner.php:66
+#: core/modules/wordpress-tweaks/settings-page.php:6
+msgid "WordPress Tweaks"
+msgstr "WordPress の微調整"
+
+#: core/modules/system-tweaks/settings-page.php:6
+msgid "System Tweaks"
+msgstr "システムの微調整"
+
+#: core/modules/strong-passwords/settings-page.php:42
+msgid "Warning: If your site invites public registrations setting the role too low may annoy your members."
+msgstr "警告: サイトで役割を極端に低く設定した公開登録を招待した場合、あなたのメンバーを困らせてしまうかもしれません。"
+
+#: core/modules/strong-passwords/settings-page.php:40
+msgid "Minimum role at which a user must choose a strong password."
+msgstr "ユーザーが強力なパスワードを選択する必要のある最小役割を選択してください。"
+
+#: core/modules/strong-passwords/settings-page.php:10
+#: core/modules/strong-passwords/settings-page.php:19
+msgid "Force users to use strong passwords as rated by the WordPress password meter."
+msgstr "WordPress のパスワードメータで評価される強力なパスワードの使用をユーザーへ強制します。"
+
+#: core/modules/strong-passwords/settings-page.php:36
+#: core/modules/strong-passwords/validator.php:9
+msgid "Select Role for Strong Passwords"
+msgstr "強力なパスワードを適用する最小役割"
+
+#: core/modules/security-check/scanner.php:18
+msgid "Strong Passwords"
+msgstr "強力なパスワード"
+
+#: core/modules/ssl/class-itsec-ssl.php:197
+msgid "Force SSL for Dashboard - Security > Settings > Secure Socket Layers (SSL) > SSL for Dashboard"
+msgstr "ダッシュボードの強制 SSL - セキュリティ > 設定 > セキュアソケットレイヤー（SSL）> ダッシュボードのSSL"
+
+#: core/modules/ssl/settings-page.php:104
+msgid "Forces all dashboard access to be served only over an SSL connection."
+msgstr "ダッシュボードのみ、すべてのアクセスを SSL 接続を経由して通信を行うように強制します。"
+
+#: core/modules/ssl/settings-page.php:103
+msgid "Force SSL for Dashboard"
+msgstr "ダッシュボードの強制 SSL"
+
+#: core/modules/ssl/settings-page.php:96
+msgid "Enables secure SSL connection for the front-end (public parts of your site). Turning this off will disable front-end SSL control, turning this on \"Per Content\" will place a checkbox on the edit page for all posts and pages (near the publish settings) allowing you to turn on SSL for selected pages or posts. Selecting \"Whole Site\" will force the whole site to use SSL."
+msgstr "フロントエンド (サイトの公開部分) にセキュアな SSL 接続を可能にします。これをオフにすると、フロントエンドの SSL コントロールは無効になり、\"コンテンツごと\" に設定すると、編集ページで、すべての投稿とページにチェックボックス (公開設定の近く) が表示され、選択したページや投稿で SSL を有効にできます。\"サイト全体\" を選択すると、サイト全体で SSL を使用するようになります。"
+
+#: core/modules/ssl/settings-page.php:58
+msgid "Whole Site"
+msgstr "サイト全体"
+
+#: core/modules/ssl/settings-page.php:57
+msgid "Per Content"
+msgstr "コンテンツ単位"
+
+#: core/modules/ssl/settings-page.php:100 core/modules/ssl/validator.php:12
+msgid "SSL for Dashboard"
+msgstr "ダッシュボードの SSL"
+
+#: core/modules/ssl/settings-page.php:93 core/modules/ssl/validator.php:10
+#: core/modules/ssl/validator.php:11
+msgid "Front End SSL Mode"
+msgstr "フロントエンドの SSL モード"
+
+#: core/modules/ssl/settings-page.php:19
+msgid "Are you sure you want to enable SSL? If your server does not support SSL you will be locked out of your WordPress Dashboard."
+msgstr "SSL を有効にしてもよろしいですか？サーバーが SSL をサポートしていない場合、あなたは WordPress のダッシュボードからロックアウトされます。"
+
+#: core/modules/salts/settings-page.php:29 core/modules/salts/validator.php:15
+msgid "Change WordPress Salts"
+msgstr "WordPress のソルトを変更"
+
+#: core/modules/salts/settings-page.php:6
+msgid "WordPress Salts"
+msgstr "WordPress のソルト（暗号化する際に付与されるデータ）"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:151
+msgid "An unknown error prevented the scan from completing successfully. The Sucuri server responded with a <code>%s</code> error code."
+msgstr "不明なエラーが原因でスキャンが正常に完了しませんでした。Sucuri サーバーはエラーコード <code>%s</code> を返しました。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:147
+msgid "The scan did not complete successfully. Sucuri sent the following error: %s"
+msgstr "スキャンが正常に完了しませんでした。Sucuri は次のエラーを送信しました : %s"
+
+#. translators: Scan result listing. %1$s is the status. %2$s is the
+#. description. %3$s is the details link.
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:179
+msgctxt "scan status, scan description, scan details link"
+msgid "%1$s %2$s %3$s"
+msgstr "%1$s %2$s %3$s"
+
+#: core/admin-pages/page-settings.php:113
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:176
+#: core/modules/malware/settings-page.php:18
+msgid "Show Details"
+msgstr "詳細を表示"
+
+#. translators: Scan result listing. %1$s is the status. %2$s is the
+#. description.
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:174
+msgctxt "scan status, scan description"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:126
+msgid "Payload:<pre>%s</pre>"
+msgstr "ペイロード: <pre>%s</pre>"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:111
+msgid "Type: %1$s"
+msgstr "タイプ: %1$s"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:107
+msgid "*Known Spam detected"
+msgstr "*既知のスパムが検出されました"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:88
+msgid "Malware found on URL"
+msgstr "URL でマルウェアが見つかりました"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:86
+msgid "Security warning in the URL"
+msgstr "URL のセキュリティ警告"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:70
+msgid "Malware"
+msgstr "マルウェア"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:42
+msgid "Blacklist"
+msgstr "ブラックリスト"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:25
+msgid "Error Code: <code>%s</code>"
+msgstr "エラーコード: <code>%s</code>"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:24
+msgid "Error Message: %s"
+msgstr "エラーメッセージ: %s"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:22
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:146
+msgid "The scan failed to properly scan the site."
+msgstr "スキャンは、正常にサイトをスキャンすることができませんでした。"
+
+#: core/modules/malware/class-itsec-malware-log.php:243
+msgid "Malware Scan Report"
+msgstr "マルウェアスキャンの報告"
+
+#: core/modules/malware/class-itsec-malware-log.php:192
+msgid "Results"
+msgstr "結果"
+
+#: core/modules/malware/class-itsec-malware-log.php:191
+msgid "Action"
+msgstr "アクション"
+
+#: core/modules/malware/class-itsec-malware-log.php:121
+msgid "Issues Detected"
+msgstr "検出された問題"
+
+#: core/modules/malware/class-itsec-malware-log.php:113
+#: core/modules/malware/class-itsec-malware-log.php:119
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:163
+msgid "Clean"
+msgstr "クリーン"
+
+#: core/modules/malware/class-itsec-malware-log.php:111
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:165
+msgid "Warning"
+msgstr "警告"
+
+#: core/modules/malware/class-itsec-malware-log.php:72
+msgid "Scan Details"
+msgstr "スキャンの詳細"
+
+#: core/modules/malware/class-itsec-malware-log.php:67
+msgid "Problems Found"
+msgstr "見つかった問題"
+
+#: core/modules/malware/class-itsec-malware-log.php:63
+msgid "Total Scans"
+msgstr "総スキャン"
+
+#: core/modules/malware/class-itsec-malware-log.php:57
+msgid "Resource Scanned"
+msgstr "スキャンされたリソース"
+
+#: core/modules/malware/settings-page.php:58
+msgid "The malware scanner requires Javascript in order to function. If Javascript is disabled in your browser, please enable it. If Javascript is not disabled, a script from another plugin, the theme, or a broken WordPress file is preventing the malware scanner's script from executing properly. Please try disabling other plugins to see if that resolves the issue."
+msgstr "マルウェアスキャナは作動のために JavaScript を必要とします。ブラウザで Javascript が無効になっている場合は、有効にしてください。そのうえで Javascript が無効になっていない場合、別のプラグイン、テーマ、または壊れた WordPress ファイルのスクリプトがマルウェアスキャナのスクリプトと競合し正しく実行出来ない可能性があります。他のプラグインを無効にし他状態で問題が解決するかどうか確認してください。"
+
+#: core/modules/malware/settings-page.php:55
+msgid "Scan Homepage for Malware"
+msgstr "ホームページのマルウェアスキャン"
+
+#: core/modules/malware/settings-page.php:53
+msgid "Results of previous malware scans can be found on the <a href=\"%s\">logs page</a>."
+msgstr "過去のマルウェアのスキャン結果は、 <a href=\"%s\">ログページ</a>で参照することができます。"
+
+#: core/modules/malware/settings-page.php:52
+msgid "This malware scan is powered by <a href=\"%s\">Sucuri SiteCheck</a>. It checks for known malware, blacklisting status, website errors and out-of-date software. Although the Sucuri team does its best to provide thorough results, 100%% accuracy is not realistic and is not guaranteed."
+msgstr "このマルウェアスキャンは、<a href=\"%s\">Sucuri SiteCheck</a> を搭載しています。既知のマルウェア、ブラックリストの状態、ウェブサイトのエラー、および古いソフトウェアをチェックします。Sucuri チームは徹底した結果を得るために最善を尽くしていますが、100%%の精度は非現実であり保証されていません。"
+
+#: core/modules/malware/settings-page.php:35
+msgid "An error prevented the scan from completing as expected. The currently logged in user does not have sufficient permissions to run this scan. You may need to log out of the site and log back in."
+msgstr "エラーにより、スキャンが正常に完了しませんでした。現在ログインしているユーザーに、このスキャンを実行する十分な権限がありません。サイトからログアウトして再度ログインする必要があります。"
+
+#: core/admin-pages/page-settings.php:112
+#: core/modules/malware/settings-page.php:19
+msgid "Hide Details"
+msgstr "詳細を非表示"
+
+#: core/modules/malware/class-itsec-malware.php:53
+#: core/modules/malware/class-itsec-malware.php:72
+#: core/modules/malware/settings-page.php:9
+msgid "Malware Scan"
+msgstr "マルウェアスキャン"
+
+#: core/modules/ipcheck/settings-page.php:85
+msgid "Reset API Key"
+msgstr "API キーをリセット"
+
+#: core/modules/ipcheck/settings-page.php:75
+msgid "Receive email updates about WordPress Security from iThemes."
+msgstr "iThemes から WordPress のセキュリティに関する更新メールを受信します。"
+
+#: core/modules/hide-backend/settings-page.php:43
+msgid "Hides the login page (wp-login.php, wp-admin, admin and login) making it harder to find by automated attacks and making it easier for users unfamiliar with the WordPress platform."
+msgstr "ログインページ (wp-login.php, wp-admin, admin, およびログイン) を非表示にして、自動化された攻撃から探し当てられ難くし、WordPress のプラットフォームに精通していないユーザーにとっても簡単な方法です。"
+
+#: core/modules/hide-backend/settings-page.php:114
+#: core/modules/hide-backend/validator.php:31
+msgid "Custom Login Action"
+msgstr "カスタムログインアクション"
+
+#: core/modules/hide-backend/settings-page.php:89
+#: core/modules/hide-backend/validator.php:25
+msgid "Register Slug"
+msgstr "登録のスラッグ"
+
+#: core/modules/hide-backend/settings-page.php:78
+#: core/modules/hide-backend/validator.php:28
+msgid "Login Slug"
+msgstr "ログインのスラッグ"
+
+#: core/modules/hide-backend/settings-page.php:9
+#: core/modules/hide-backend/settings-page.php:68
+#: core/modules/hide-backend/validator.php:9
+msgid "Hide Backend"
+msgstr "バックエンドの非表示"
+
+#: core/modules/hide-backend/settings-page.php:93
+msgid "Registration URL: %s"
+msgstr "登録 URL : %s"
+
+#: core/modules/hide-backend/settings-page.php:118
+msgid "WordPress uses the \"action\" variable to handle many login and logout functions. By default this plugin can handle the normal ones but some plugins and themes may utilize a custom action (such as logging out of a private post). If you need a custom action please enter it here."
+msgstr "WordPress は \"action\" 変数を使用して、多くのログイン機能とログアウト機能を処理します。デフォルトで、このプラグインは通常のプラグインを処理できますが、一部のプラグインやテーマはカスタムアクション (プライベート投稿からのログアウトなど) を利用する例があります。 そのカスタムアクションが必要な場合は、こちらに入力してください。"
+
+#: core/modules/hide-backend/settings-page.php:84
+msgid "Note: The output is limited to alphanumeric characters, underscore (_) and dash (-). Special characters such as \".\" and \"/\" are not allowed and will be converted in the same manner as a post title. Please review your selection before logging out."
+msgstr "注意 : 出力は、英数字、アンダースコア (_) およびダッシュ (-) に制限されています。 \".\" や \"/\" などの特殊文字は許可されず、投稿タイトルと同じ方法で変換されます。また、ログアウトする前に選択内容を確認してください。"
+
+#: core/modules/hide-backend/settings-page.php:83
+msgid "The login url slug cannot be \"login,\" \"admin,\" \"dashboard,\" or \"wp-login.php\" as these are use by default in WordPress."
+msgstr "ログイン URL のスラッグは、WordPress のデフォルトで使用されている \"login,\" \"admin,\" \"dashboard,\" または \"wp-login.php\" にすることはできません。"
+
+#: core/modules/hide-backend/settings-page.php:71
+msgid "Enable the hide backend feature."
+msgstr "バックエンド機能の非表示を有効にします。"
+
+#: core/modules/404-detection/class-itsec-four-oh-four.php:94
+msgid "404 Error"
+msgstr "404エラー"
+
+#: core/modules/404-detection/class-itsec-four-oh-four.php:74
+msgid "too many attempts to access a file that does not exist"
+msgstr "存在しないファイルへの過剰なアクセス試行"
+
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:110
+msgid "Last Recorded"
+msgstr "最後に記録"
+
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:109
+msgid "First Recorded"
+msgstr "最初に記録"
+
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:108
+msgid "Count"
+msgstr "カウント"
+
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:107
+msgid "Location"
+msgstr "ロケーション"
+
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:90
+msgid "Query"
+msgstr "クエリー"
+
+#: core/modules/404-detection/settings-page.php:53
+msgid "File types listed here will be recorded as 404 errors but will not lead to lockouts."
+msgstr "ここに記載されているファイルタイプは404エラーとして記録されますが、ロックアウトにはなりません。"
+
+#: core/modules/404-detection/class-itsec-four-oh-four.php:114
+msgid "404 Errors Found"
+msgstr "404エラーが見つかりました"
+
+#: core/modules/404-detection/settings-page.php:16
+msgid "404 detection looks at a user who is hitting a large number of non-existent pages and getting a large number of 404 errors. 404 detection assumes that a user who hits a lot of 404 errors in a short period of time is scanning for something (presumably a vulnerability) and locks them out accordingly. This also gives the added benefit of helping you find hidden problems causing 404 errors on unseen parts of your site. All errors will be logged in the \"View Logs\" page. You can set thresholds for this feature below."
+msgstr "404の検出は、大量の404エラーを取得している、および存在しないページに多数ヒットしているユーザーのように見えます。404検出は、短時間に大量の404エラーをヒットさせるユーザーが何かしらのスキャン（おそらく虚弱性）をする前提および、それらを目的に応じてロックアウトします。これは、あなたのサイトで気付かない部分に404エラーが発生していた場合、この隠れた問題を見つける手助けにもなる追加的の利点もあります。すべてのエラーは、\"ログを参照\" ページに記録されます。また、以下の項目で機能の閾値を設定することもできます。"
+
+#: core/modules/404-detection/settings-page.php:50
+msgid "Ignored File Types"
+msgstr "無視するファイルの種類"
+
+#: core/modules/404-detection/settings-page.php:43
+#: core/modules/404-detection/validator.php:12
+#: core/modules/404-detection/validator.php:13
+msgid "404 File/Folder White List"
+msgstr "404ファイル / フォルダのホワイトリスト"
+
+#: core/modules/404-detection/settings-page.php:35
+#: core/modules/404-detection/validator.php:10
+msgid "Error Threshold"
+msgstr "しきい値のエラー"
+
+#: core/modules/404-detection/settings-page.php:27
+#: core/modules/404-detection/validator.php:9
+msgid "Minutes to Remember 404 Error (Check Period)"
+msgstr "404エラーを記録する分数（指定した周期でチェック）"
+
+#: core/modules/404-detection/settings-page.php:46
+msgid "Use the white list above to prevent recording common 404 errors. If you know a common file on your site is missing and you do not want it to count towards a lockout record it here. You must list the full path beginning with the \"/\"."
+msgstr "一般的な404エラーの記録を防ぐために、上記ホワイトリストを使用してください。あなたがサイト上で不足していると判っている一般的なファイルや、ここでロックアウトの記録にカウントさせたくない場合は、そのファイル / フォルダまでのフルパスを指定してください。また、フルパスの指定方法は「/」で始まるパスでリストへ記述する必要があります。"
+
+#: core/modules/404-detection/settings-page.php:39
+msgid "The numbers of errors (within the check period time frame) that will trigger a lockout. Set to zero (0) to record 404 errors without locking out users. This can be useful for troubleshooting content or other errors. The default is 20."
+msgstr "ロックアウトをトリガー（発動）するまでのエラー数（チェック周期内の時間枠）を指定してください。ゼロ（0）に設定すると、ユーザーをロックアウトすることなく404エラーを記録します。これは、コンテンツやその他エラーのトラブルシューティングに役立ちます。デフォルトは20になります。"
+
+#: core/modules/404-detection/settings-page.php:38
+msgid "Errors"
+msgstr "エラー"
+
+#: core/modules/404-detection/settings-page.php:31
+msgid "The number of minutes in which 404 errors should be remembered and counted towards lockouts."
+msgstr "404エラーを記憶し、ロックアウトまでの猶予数を分数で指定してください。"
+
+#: core/modules/404-detection/settings-page.php:6
+msgid "404 Detection"
+msgstr "404の検出"
+
+#: core/modules/file-change/scanner.php:587
+msgid " have been changed. Please review the report below to verify changes are not the result of a compromise."
+msgstr "変更されました。以下のレポートを参照して、変更が確信のある結果であるか確認してください。"
+
+#: core/modules/file-change/scanner.php:587
+msgid "A file (or files) on your site at "
+msgstr "サイト上のファイル（またはファイル）"
+
+#: core/modules/file-change/scanner.php:585
+msgid "WordPress File Change Warning"
+msgstr "WordPress ファイルの変更警告"
+
+#: core/modules/file-change/class-itsec-file-change.php:81
+msgid "File Changes Detected"
+msgstr "ファイル変更の検出"
+
+#: core/modules/file-change/scanner.php:340
+msgid "Deleted"
+msgstr "削除済み"
+
+#: core/modules/file-change/scanner.php:339
+msgid "Added"
+msgstr "追加済み"
+
+#: core/modules/file-change/scanner.php:337
+msgid "Memory Used:"
+msgstr "使用メモリ:"
+
+#: core/modules/file-change/scanner.php:336
+msgid "Files Modified:"
+msgstr "修正済みファイル: "
+
+#: core/modules/file-change/scanner.php:335
+msgid "Files Deleted:"
+msgstr "削除済みファイル: "
+
+#: core/modules/file-change/scanner.php:334
+msgid "Files Added:"
+msgstr "追加済みファイル: "
+
+#: core/modules/file-change/scanner.php:333
+msgid "Scan Time:"
+msgstr "スキャン時間:"
+
+#: core/modules/file-change/scanner.php:387
+msgid "No files were changed."
+msgstr "ファイルは変更されませんでした。"
+
+#: core/modules/file-change/scanner.php:369
+msgid "File Hash"
+msgstr "ファイルハッシュ"
+
+#: core/modules/file-change/scanner.php:341
+#: core/modules/file-change/scanner.php:368
+msgid "Modified"
+msgstr "修正済み"
+
+#: core/modules/file-change/scanner.php:364
+msgid "Files"
+msgstr "ファイル"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:181
+msgid "Memory Used"
+msgstr "使用メモリ"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:179
+msgid "Files Deleted"
+msgstr "削除済みファイル"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:177
+msgid "Check Time"
+msgstr "チェック時間"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:158
+msgid "There are no changed files to report"
+msgstr "報告するファイルの変更はありません"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:146
+#: core/modules/file-change/class-itsec-file-change-log.php:180
+msgid "Files Changed"
+msgstr "変更済みファイル"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:140
+msgid "There are no deleted files to report"
+msgstr "報告する削除されたファイルはありません"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:128
+msgid "Files Removed"
+msgstr "削除済みファイル"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:122
+msgid "There are no added files to report"
+msgstr "報告する追加されたファイルはありません"
+
+#: core/modules/backup/class-itsec-backup.php:289
+#: core/modules/file-change/class-itsec-file-change-log.php:117
+#: core/modules/file-change/class-itsec-file-change-log.php:135
+#: core/modules/file-change/class-itsec-file-change-log.php:153
+msgid "Date"
+msgstr "日付"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:117
+#: core/modules/file-change/class-itsec-file-change-log.php:135
+#: core/modules/file-change/class-itsec-file-change-log.php:153
+#: core/modules/file-change/scanner.php:367
+msgid "File"
+msgstr "ファイル"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:110
+#: core/modules/file-change/class-itsec-file-change-log.php:178
+msgid "Files Added"
+msgstr "追加済みファイル"
+
+#: core/modules/file-change/class-itsec-file-change-log.php:90
+msgid "MB"
+msgstr "MB"
+
+#: core/modules/file-change/settings-page.php:125
+msgid "File types listed here will not be checked for changes. While it is possible to change files such as images it is quite rare and nearly all known WordPress attacks exploit php, js and other text files."
+msgstr "ここにリストされているファイルタイプは、変更をチェックしません。画像などのファイルを変更することは可能ですが、これは非常に稀で、WordPress の攻撃で大半は PHP や JS などのテキストファイルを悪用してきます。"
+
+#: core/modules/file-change/settings-page.php:99
+msgid "Splits file checking into 7 chunks (plugins, themes, wp-admin, wp-includes, uploads, the rest of wp-content and everything that is left over) and divides the checks evenly over the course of a day. This feature may result in more notifications but will allow for the scanning of bigger sites to continue even on a lower-end web host."
+msgstr "ファイルチェックを7つのチャンク (プラグイン、テーマ、wp-admin、wp-includes、アップロード、残りの WordPress コンテンツ、残りすべて) に分割し、チェックを1日を通して均等に分割します。この機能により、通知が増える可能性がありますが、性能の低いウェブホストでも大きなサイトスキャンを継続できます。"
+
+#: core/modules/file-change/settings-page.php:98
+msgid "Split file checking into chunks."
+msgstr "分割ファイルのチャンクをチェックします。"
+
+#: core/modules/file-change/settings-page.php:141
+msgid "Disabling this feature will prevent the file change warning from displaying to the site administrator in the WordPress Dashboard. Note that disabling both the error message and the email notification will result in no notifications of file changes. The only way you will be able to tell is by manually checking the log files."
+msgstr "この機能を無効にすると、ファイルの変更警告が WordPress のダッシュボードでサイト管理者にも表示されなくなります。エラーメッセージとメール通知の両方を無効にすると、ファイルの変更について通知もされません。指定できる唯一の方法は、手動でログファイルをチェックする方法のみになります。"
+
+#: core/modules/file-change/settings-page.php:140
+msgid "Display file change admin warning"
+msgstr "ファイル変更管理の警告を表示"
+
+#: core/modules/file-change/settings-page.php:107
+msgid "Select whether we should exclude files and folders selected or whether the scan should only include files and folders selected."
+msgstr "選択したファイルとフォルダを除外対象にするかどうか、またはスキャンで選択したファイルとフォルダのみを含めるかどうかを選択してください。"
+
+#: core/modules/file-change/settings-page.php:106
+msgid "Include/Exclude Files"
+msgstr "指定 / 除外するファイル"
+
+#: core/modules/file-change/settings-page.php:69
+msgid "Include Selected"
+msgstr "指定を選択"
+
+#: core/modules/file-change/settings-page.php:68
+msgid "Exclude Selected"
+msgstr "除外を選択"
+
+#: core/modules/file-change/settings-page.php:113
+msgid "Exclude files or folders by clicking the red minus next to the file or folder name."
+msgstr "ファイル名またはフォルダ名の横にある赤色のマイナスアイコンをクリックすることで、ファイルやフォルダを除外してください。"
+
+#: core/modules/file-change/settings-page.php:133
+msgid "Notifications will be sent to all emails set to receive notifications on the global settings page."
+msgstr "グローバル設定ページで通知を受け取るように設定したすべてのメールに通知が送信されます。"
+
+#: core/modules/file-change/settings-page.php:132
+msgid "Email file change notifications"
+msgstr "ファイル変更の通知メール"
+
+#: core/modules/file-change/settings-page.php:61
+msgid "Even the best security solutions can fail. How do you know if someone gets into your site? You will know because they will change something. File Change detection will tell you what files have changed in your WordPress installation alerting you to changes not made by yourself. Unlike other solutions, this plugin will look only at your installation and compare files to the last check instead of comparing them with a remote installation thereby taking into account whether or not you modify the files yourself."
+msgstr "最高のセキュリティソリューションでも失敗する可能性があります。誰かがサイトに侵入しようとしている行為をどうやって知りますか？彼らは何かを変更するので、それで知る事ができるでしょう。ファイルの変更検出は、WordPress のインストールでどのファイルが変更されたか、あなた自身が変更していないかを警告します。他のソリューションとは異なり、このプラグインはあなたのインストールだけを参照して、ファイルをリモートインストールと比較するのではなく最後のチェックと比較し、ファイルを自分で修正するかどうかを考慮に入れます。"
+
+#: core/modules/file-change/class-itsec-file-change.php:153
+msgid "Automatic file change scanning is triggered by a user visiting your page and may not happen exactly at the time listed."
+msgstr "自動のファイル変更スキャンは、ユーザーがページにアクセスした際に起動されるので、表示された時刻で正確に行われない場合があります。"
+
+#: core/modules/file-change/class-itsec-file-change.php:152
+msgid "Next automatic scan at: "
+msgstr "次の自動スキャン:"
+
+#: core/modules/file-change/class-itsec-file-change.php:147
+msgid "Tomorrow"
+msgstr "明日"
+
+#: core/modules/file-change/class-itsec-file-change.php:145
+msgid "Today"
+msgstr "今日"
+
+#: core/modules/file-change/class-itsec-file-change.php:104
+msgid "File Change History"
+msgstr "ファイル変更の履歴"
+
+#: core/modules/file-change/settings-page.php:137
+#: core/modules/file-change/validator.php:29
+msgid "Display File Change Admin Warning"
+msgstr "ファイルの変更管理の警告を表示"
+
+#: core/modules/file-change/settings-page.php:129
+#: core/modules/file-change/validator.php:28
+msgid "Email File Change Notifications"
+msgstr "ファイルの変更通知メール"
+
+#: core/modules/file-change/settings-page.php:121
+#: core/modules/file-change/validator.php:27
+msgid "Ignore File Types"
+msgstr "無視するファイルタイプ"
+
+#: core/modules/file-change/settings-page.php:111
+#: core/modules/file-change/validator.php:26
+msgid "Files and Folders List"
+msgstr "ファイルとフォルダの一覧"
+
+#: core/modules/file-change/settings-page.php:103
+#: core/modules/file-change/validator.php:25
+msgid "Include/Exclude Files and Folders"
+msgstr "指定 / 除外するファイルとフォルダ"
+
+#: core/modules/file-change/settings-page.php:95
+#: core/modules/file-change/validator.php:24
+msgid "Split File Scanning"
+msgstr "分割ファイルのスキャン"
+
+#: core/modules/file-change/settings-page.php:9
+msgid "File Change Detection"
+msgstr "ファイル変更の検出"
+
+#: core/modules/file-change/settings-page.php:88
+msgid "Press the button below to scan your site's files for changes. Note that if changes are found this will take you to the logs page for details."
+msgstr "下のボタンを押してサイトのファイルをスキャンし、変更を確認してください。変更が見つかった場合は、詳細を確認するためログページに移動ししてください。"
+
+#: core/modules/file-change/admin.php:74
+msgid "Dismiss Warning"
+msgstr "警告を非表示"
+
+#: core/admin-pages/page-settings.php:452 core/modules/file-change/admin.php:73
+msgid "View Logs"
+msgstr "ログを参照"
+
+#: core/modules/file-change/settings-page.php:26
+msgid "An unknown error occured. Please try again later"
+msgstr "不明なエラーが発生しました。後でもう一度お試しください"
+
+#: core/modules/file-change/settings-page.php:24
+msgid "No changes were detected."
+msgstr "変更は検出されませんでした。"
+
+#: core/modules/file-change/settings-page.php:23
+#: core/modules/malware/settings-page.php:17
+msgid "Scanning..."
+msgstr "スキャン中..."
+
+#: core/modules/file-change/settings-page.php:22
+#: core/modules/file-change/settings-page.php:84
+msgid "Scan Files Now"
+msgstr "今すぐファイルをスキャン"
+
+#: core/modules/file-change/settings-page.php:22
+#: core/modules/file-change/settings-page.php:84
+msgid "Scan Next File Chunk"
+msgstr "次のファイルチャンクをスキャン"
+
+#. translators: 1: Specific error details
+#: core/modules/database-prefix/utility.php:66
+msgid "Unable to update the <code>wp-config.php</code> file in order to update the Database Prefix. Error details as follows: %1$s"
+msgstr "データベースの接頭辞を更新する際に <code>wp-config.php</code> ファイルを更新できませんでした。エラーの詳細は次のとおりです: %1$s"
+
+#. translators: 1: Specific error details
+#: core/modules/database-prefix/utility.php:54
+msgid "Unable to read the <code>wp-config.php</code> file in order to update the Database Prefix. Error details as follows: %1$s"
+msgstr "データベースの接頭辞を更新する際に <code>wp-config.php</code> ファイルを読み込めませんでした。エラーの詳細は次のとおりです : %1$s"
+
+#: core/modules/database-prefix/utility.php:129
+msgid "Could not update prefix references in usermeta table."
+msgstr "ユーザーメタテーブル内の参照プレフィックスを更新できませんでした。"
+
+#: core/modules/database-prefix/utility.php:112
+msgid "Could not update prefix references in options table."
+msgstr "オプションテーブル内の参照プレフィックスを更新できませんでした。"
+
+#: core/modules/database-prefix/settings-page.php:20
+msgid "Note: The use of this tool requires quite a bit of system memory which may be more than some hosts can handle. If you back your database up you can't do any permanent damage but without a proper backup you risk breaking your site and having to perform a rather difficult fix."
+msgstr "注意: このツールを使用するには、かなりの量のシステムメモリが必要で、それ以上のホストではないと処理できないことがあります。データベースをバックアップしていれば永続的なダメージを受けることはありませんが、適切なバックアップがなければ、サイトが壊れてしまい、かなり難しく危険を伴う修正を行う必要があります。"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:23
+msgid "Try iThemes Sync for Free"
+msgstr "無料の iThemes Sync を試用"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:21
+msgid "Integrated with iThemes Security, so you can release lockouts and turn Away Mode on or off right from your Sync dashboard or your phone."
+msgstr "お使いの携帯電話、または即あなたのダッシュボードから退席中モードの順番と、ロックアウトを解除することが可能な iTheme Security との統合です。"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:20
+msgid "Manage updates remotely for up to 10 WordPress sites today for free!"
+msgstr "無料で最大10件の WordPress サイトをリモート更新で管理をします！"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:39
+msgid "Subscribe"
+msgstr "購読"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:37
+#: core/modules/ipcheck/settings-page.php:66
+#: core/modules/ipcheck/validator.php:13
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:158
+msgid "Email Address"
+msgstr "メールアドレス"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:31
+msgid "Get tips for securing your site + the latest WordPress security updates, news and releases from iThemes."
+msgstr "サイトのセキュリティ保護を行うためのヒントを入手 + iThemes からのリリースニュースと、最新の WordPress セキュリティの更新情報をお届けします。"
+
+#: core/lib/class-itsec-mail.php:61
+#: core/modules/core/sidebar-widget-pro-upsell.php:6
+#: core/modules/core/sidebar-widget-pro-upsell.php:21
+#: core/modules/core/sidebar-widget-support.php:16
+msgid "Get iThemes Security Pro"
+msgstr "iThemes Security PRO の購入"
+
+#: core/modules/core/sidebar-widget-support.php:15
+msgid "Get added peace of mind with professional support from our expert team and pro features with iThemes Security Pro."
+msgstr "iThemes Security PRO で私たちの専門家チームからプロのサポートやプロの機能追加、それとなによりも安心感を入手しましょう。"
+
+#: core/modules/core/sidebar-widget-support.php:14
+msgid "Get Free Support"
+msgstr "無料サポートを受ける"
+
+#: core/modules/core/sidebar-widget-support.php:13
+msgid "Since you are using the free version of iThemes Security from WordPress.org, you can get free support from the WordPress community."
+msgstr "WordPress.org から iThemes Security の無料版をご利用中です。あなたは WordPress コミュニティから無料でサポートを受けることができます。"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:16
+msgid "Get BackupBuddy"
+msgstr "BackupBuddy の購入"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:15
+msgid "BACKUPPROTECT"
+msgstr "BACKUPPROTECT"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:15
+msgid "25% off BackupBuddy with coupon code"
+msgstr "クーポンコードで BackupBuddy が 25%オフ"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:14
+msgid "BackupBuddy is the complete backup, restore and migration solution for your WordPress site. Schedule automated backups, store your backups safely off-site and restore your site quickly & easily."
+msgstr "BackupBuddy は WordPress サイトの完全なバックアップ、復元、および移行を可能にするソリューションです。迅速＆簡単にあなたのサイトを復元、安全にオフサイトのバックアップを保存し、自動バックアップもスケジュールできます。"
+
+#: core/modules/core/class-itsec-core-admin.php:33
+msgid "Get Support"
+msgstr "サポートを受ける"
+
+#: core/modules/core/sidebar-widget-support.php:6
+msgid "Need Help Securing Your Site?"
+msgstr "サイトのセキュリティ設定についてヘルプが必要ですか？"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:6
+msgid "Manage Your Sites Remotely"
+msgstr "リモートであなたのサイトを管理"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:6
+msgid "Complete Your Security Strategy With BackupBuddy"
+msgstr "BackupBuddy で完全なセキュリティ計画"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:6
+msgid "Download Our WordPress Security Pocket Guide"
+msgstr "WordPress のセキュリティポケットガイドをダウンロード"
+
+#. translators: 1: Old directory path, 2: New directory path, 3: Specific error
+#. details
+#: core/modules/content-directory/utility.php:96
+msgid "CRITICAL ERROR: The <code>%1$s</code> directory was successfully renamed to the new name (<code>%2$s</code>). However, an error occurred when updating the <code>wp-config.php</code> file to configure WordPress to use the new content directory. iThemes Security attempted to rename the directory back to its original name, but an unknown error prevented the rename from working as expected. In order for your site to function properly, you will either need to manually rename the <code>%2$s</code> directory back to <code>%1$s</code> or manually update the <code>wp-config.php</code> file with the necessary modifications. The error that prevented the file from updating is as follows: %3$s"
+msgstr "致命的なエラー: <code>%1$s</code> ディレクトリの名前が新しい名前 (<code>%2$s</code>) に変更されました。これにより、WordPress で新しいコンテンツディレクトリを使用するため <code>wp-config.php</code> ファイルの設定を更新しようとしましたが、この処理中にエラーが発生しました。iThemes Security は、元の名前にディレクトリ名を戻そうとしましたが、不明なエラーが原因で、名前の変更が想定どおりに作動しませんでした。サイトを正常に作動させるには、<code>%2$s</code> ディレクトリの名前を手動で <code>%1$s</code> に変更するか、手動で <code>wp-config.php</code> ファイルに必要な変更を加えてください。ファイルの更新を妨げたエラーは次のとおりです : %3$s"
+
+#. translators: 1: Directory path, 2: Directory permissions
+#: core/modules/content-directory/utility.php:60
+msgid "Unable to set the permissions of the new Directory Name (<code>%1$s</code>) to match the permissions of the old Directory Name. You may have to manually change the permissions of the directory to <code>%2$s</code> in order for your site to function properly."
+msgstr "新しいディレクトリ名 (<code>%1$s</code>) のアクセス許可を古いディレクトリ名のアクセス許可と一致するように設定できません。サイトを正しく機能させるためには、ディレクトリのアクセス許可を手動で <code>%2$s</code> に変更する必要があります。"
+
+#. translators: 1: Old directory path, 2: New directory path
+#: core/modules/content-directory/utility.php:43
+msgid "Unable to rename the <code>%1$s</code> directory to <code>%2$s</code>. This could indicate a file permission issue or that your server does not support the supplied name as a valid directory name. No config file or directory changes have been made."
+msgstr "ディレクトリ <code>%1$s</code> の名前を <code>%2$s</code> へ変更することはできません。これは、ファイルのアクセス許可の問題を示している可能性があり、サーバーが有効なディレクトリ名として指定された名前をサポートしていません。したがって、構成ファイルやディレクトリの変更は行われていません。"
+
+#: core/modules/content-directory/utility.php:31
+msgid "A file or directory already exists at <code>%s</code>. No Directory Name changes have been made. Please choose a new Directory Name or remove the existing file or directory and try again."
+msgstr "ファイルまたはディレクトリが既に <code>%s</code> で存在します。ディレクトリ名の変更は行われませんでした。新しいディレクトリ名を選択するか、既存のファイルまたはディレクトリを削除して、もう一度お試しください。"
+
+#: core/modules/content-directory/utility.php:12
+msgid "The new directory name cannot be an absolute path. Please supply a path that is relative to <code>ABSPATH</code> (<code>%s</code>)."
+msgstr "新しいディレクトリ名は絶対パスにすることはできません。<code>ABSPATH</code>（<code>%s</code>）の相対パスを入力してください。"
+
+#: core/modules/content-directory/settings-page.php:73
+msgid "<span>WARNING:</span> Changing the name of the Content Directory on a site that already has images and other content referencing it <strong>will break your site</strong>. For this reason, we highly recommend only changing the Content Directory on a fresh WordPress install."
+msgstr "<span>警告:</span> <strong>あなたのサイトは解除され</strong>、参照している他コンテンツとすでに存在する画像を持つサイトのコンテンツディレクトリ名を変更します。上記理由から、WordPress をインストールした直後の初期状態にあるコンテンツディレクトリを変更することを強くおすすめします。"
+
+#: core/modules/content-directory/settings-page.php:72
+msgid "<span>IMPORTANT:</span> Ensure that you <a href=\"%s\">create a database backup</a> before changing the Content Directory."
+msgstr "<span>重要: </span> コンテンツディレクトリを変更する前に、<a href=\"%s\">データベースのバックアップを作成</a> してください。"
+
+#: core/modules/content-directory/settings-page.php:71
+msgid "<span>IMPORTANT:</span> Deactivating or uninstalling this plugin will not revert the changes made by this feature."
+msgstr "<span>重要: </span> このプラグインを無効、またはアンインストールしても、この機能による変更は元に戻せません。"
+
+#: core/modules/content-directory/settings-page.php:70
+msgid "This tool provides an undo feature after changing the Content Directory. Since not all plugins, themes, or site contents function properly with a renamed Content Directory, please verify that the site is functioning correctly after the change. If any issues are encountered, the undo feature should be used to undo the change. Please note that the undo feature is only available when the changes added to the <code>wp-config.php</code> file for this feature are unmodified."
+msgstr "このツールは、コンテンツディレクトリを変更した後で元に戻す機能を提供します。名前が変更されたコンテンツディレクトリでは、すべてのプラグイン、テーマ、またはサイトコンテンツが正しく機能しないため、変更後にサイトが正しく機能していることを確認してください。問題が発生した場合は、元に戻す機能を使用して変更を復元する必要があります。取り消し機能は、この機能が <code>wp-config.php</code> ファイルに加えた変更が変更されていない場合のみ利用可能です。"
+
+#: core/modules/content-directory/settings-page.php:69
+msgid "By default, WordPress stores files for plugins, themes, and uploads in a directory called <code>wp-content</code>. Some older and less intelligent bots hard coded this directory in order to look for vulnerable files. Modern bots are intelligent enough to locate this folder programmatically, thus changing the Content Directory is no longer a recommended security step."
+msgstr "デフォルトの WordPress はプラグイン、テーマ、およびアップロードしたファイルを <code>wp-content</code> というディレクトリに保存します。脆弱なファイルを探すために、古いディレクトリや能力の高くないボットがこのディレクトリをハードコードしています。現代のロボットは、このフォルダをプログラム的に配置するのに十分な能力があるので、コンテンツディレクトリを変更することは、もはや推奨されるセキュリティ方法ではありません。"
+
+#: core/modules/content-directory/settings-page.php:61
+msgid "Undo Content Directory Change"
+msgstr "コンテンツディレクトリの変更を元に戻す"
+
+#: core/modules/content-directory/settings-page.php:57
+msgid "<span>WARNING:</span> Undoing the Content Directory change when images and other content were added after the change <strong>will break your site</strong>. Only undo the Content Directory change if absolutely necessary."
+msgstr "<span>警告: </span> 変更後に画像やその他のコンテンツが追加された際に、コンテンツディレクトリの変更を元に戻すと、<strong>サイトが壊れる可能性</strong>があります。確実に必要な場合は、コンテンツディレクトリの変更を元に戻してください。"
+
+#: core/modules/content-directory/settings-page.php:28
+msgid "The <code>wp-content</code> directory is available at <code>%s</code>."
+msgstr "<code>wp-content</code> ディレクトリは <code>%s</code> で利用可能です。"
+
+#. translators: 1: New directory name
+#: core/modules/content-directory/settings-page.php:117
+msgid "The content directory was successfully changed back to <code>%1$s</code>."
+msgstr "<code>%1$s</code> へ戻しコンテンツディレクトリは正常に変更されました。"
+
+#: core/modules/content-directory/settings-page.php:9
+msgid "Change Content Directory"
+msgstr "コンテンツディレクトリの変更"
+
+#: core/modules/content-directory/utility.php:118
+msgid "Do not remove. Removing this line could break your site. Added by Security > Settings > Change Content Directory."
+msgstr "削除しないでください。この行を削除すると、サイトが壊れる可能性があります。セキュリティ > 設定 > コンテンツディレクトリの変更で追加されました。"
+
+#: core/modules/brute-force/class-itsec-brute-force.php:120
+msgid "Invalid Login Attempt"
+msgstr "無効なログインの試行"
+
+#: core/modules/brute-force/class-itsec-brute-force.php:97
+msgid "user tried to login as \"admin.\""
+msgstr "\"admin\" としてログイン試行しようとしたユーザー"
+
+#: core/modules/brute-force/class-itsec-brute-force.php:89
+msgid "too many bad login attempts"
+msgstr "悪質な不正ログインの試行"
+
+#: core/modules/brute-force/class-itsec-brute-force-log.php:88
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:160
+msgid "Username"
+msgstr "ユーザー名"
+
+#: core/modules/brute-force/settings-page.php:39
+msgid "The number of login attempts a user has before their username is locked out of the system. Note that this is different from hosts in case an attacker is using multiple computers. In addition, if they are using your login name you could be locked out yourself. Set to 0 to log bad login attempts per user without ever locking the user out (this is not recommended)."
+msgstr "ユーザー名がシステムからロックアウトされる前に、ユーザーが猶予されるログイン試行回数を指定してください。これは、攻撃者が複数のコンピュータを使用している場合は、ホストが異なることに注意してください。攻撃者が、あなたのログイン名を使用している場合はさらに、あなた自身がロックアウトされてしまう可能性があります。常にユーザーをロックアウトせず、ユーザー単位で不正ログインの試行をログに記録する場合は、0 に設定（おすすめしません）してください。"
+
+#: core/modules/brute-force/settings-page.php:31
+msgid "The number of login attempts a user has before their host or computer is locked out of the system. Set to 0 to record bad login attempts without locking out the host."
+msgstr "ホストまたはコンピュータがシステムからロックアウトされる前に、ユーザーが猶予されるログイン試行回数を指定してください。ホストをロックアウトすることなく、不正ログインの試行を記録する場合は 0 に設定してください。"
+
+#: core/modules/brute-force/settings-page.php:30
+#: core/modules/brute-force/settings-page.php:38
+msgid "Attempts"
+msgstr "試行回数"
+
+#: core/modules/brute-force/settings-page.php:47
+msgid "The number of minutes in which bad logins should be remembered."
+msgstr "不正ログインを記憶しておきたい分数を指定してください。"
+
+#: core/modules/brute-force/settings-page.php:54
+msgid "Immediately ban a host that attempts to login using the \"admin\" username."
+msgstr "ユーザー名 \"admin\" を使用してログインを試行してきたホストを即禁止します。"
+
+#: core/modules/ipcheck/settings-page.php:59
+msgid "Local brute force protection looks only at attempts to access your site and bans users per the lockout rules specified locally. Network brute force protection takes this a step further by banning users who have tried to break into other sites from breaking into yours. The network protection will automatically report the IP addresses of failed login attempts to iThemes and will block them for a length of time necessary to protect your site based on the number of other sites that have seen a similar attack."
+msgstr "ローカルのブルートフォース保護は、サイトに不正アクセスしようとする試行がみられた場合、ローカルで指定されたロックアウトルールを用いてユーザー単位で禁止を行います。ネットワークのブルートフォース保護は、あなた側の侵入者から他サイトに侵入しようとしたユーザーを禁止することにより、事前にサイトの保護を行います。また、ネットワークの保護は自動的に iThemes へ失敗したログイン試行の IP アドレスを報告し、同様の攻撃が見られる他サイトの数に基づいて、サイトを保護するために必要な時間の長さで、これらをブロックします。"
+
+#: core/modules/ipcheck/settings-page.php:57
+msgid "Network vs Local Brute Force Protection"
+msgstr "ローカルのブルートフォース保護 vs ネットワーク"
+
+#: core/modules/brute-force/settings-page.php:16
+#: core/modules/ipcheck/settings-page.php:47
+msgid "If one had unlimited time and wanted to try an unlimited number of password combinations to get into your site they eventually would, right? This method of attack, known as a brute force attack, is something that WordPress is acutely susceptible to as, by default, the system doesn't care how many attempts a user makes to login. It will always let you try again. Enabling login limits will ban the host user from attempting to login again after the specified bad login threshold has been reached."
+msgstr "制限のない無数のパスワードを組み合わせ、無限の時間を持って試みたとしたら、最終的にこれらはあなたのサイトへ望みどおり侵入してきます。当然ですよね？ブルートフォース攻撃として知られているこの攻撃方法は、ユーザーがログイン可能となる無数の悪意ある試行を行います。これはデフォルトの WordPress システムのままでは防止できないので、非常に影響を受けやすい状態に曝されています。これでは常に悪意のある試行を許してしまうことになります。そこで、このログイン制限を有効にし、指定された不正なログインが閾値（しきい値）に達した後、再度ログインを試みようとした際にホストごとユーザーを禁止することができます。"
+
+#: core/modules/brute-force/class-itsec-brute-force.php:219
+msgid "Invalid Login Attempts"
+msgstr "無効なログインの試行"
+
+#: core/modules/brute-force/settings-page.php:51
+#: core/modules/brute-force/validator.php:13
+msgid "Automatically ban \"admin\" user"
+msgstr "自動的に \"admin\" ユーザーを禁止"
+
+#: core/modules/brute-force/settings-page.php:43
+#: core/modules/brute-force/validator.php:11
+msgid "Minutes to Remember Bad Login (check period)"
+msgstr "不正ログインを記録する分数（指定した周期でチェック）"
+
+#: core/modules/brute-force/settings-page.php:35
+#: core/modules/brute-force/validator.php:10
+msgid "Max Login Attempts Per User"
+msgstr "ユーザー単位での最大ログイン試行回数"
+
+#: core/modules/brute-force/settings-page.php:27
+#: core/modules/brute-force/validator.php:9
+msgid "Max Login Attempts Per Host"
+msgstr "ホスト単位での最大ログイン試行回数"
+
+#: core/modules/brute-force/settings-page.php:6
+#: core/modules/security-check/scanner.php:14
+#: core/modules/security-check/scanner.php:51
+msgid "Local Brute Force Protection"
+msgstr "ローカルのブルートフォース保護"
+
+#: core/modules/ban-users/settings-page.php:19
+msgid "This feature allows you to completely ban hosts and user agents from your site without having to manage any configuration of your server. Any IP addresses or user agents found in the lists below will not be allowed any access to your site."
+msgstr "この機能を使用すると、完全にあなたのサーバー側の構成で管理しなくても、サイト側からホストもしくはユーザーエージェントで禁止することが可能です。以下のリストにある IP アドレスやユーザーエージェントは、サイトへのアクセスを遮断します。"
+
+#: core/modules/ban-users/settings-page.php:64
+#: core/modules/ban-users/validator.php:43
+msgid "Ban User Agents"
+msgstr "ユーザーエージェントの禁止"
+
+#: core/modules/ban-users/settings-page.php:44
+#: core/modules/ban-users/validator.php:12
+#: core/modules/ban-users/validator.php:25
+#: core/modules/ban-users/validator.php:39
+msgid "Ban Hosts"
+msgstr "禁止ホスト"
+
+#: core/modules/ban-users/settings-page.php:29
+#: core/modules/ban-users/validator.php:9
+msgid "Default Blacklist"
+msgstr "デフォルトのブラックリスト"
+
+#: core/modules/ban-users/config-generators.php:168
+msgid "Ban User Agents - Security > Settings > Banned Users"
+msgstr "ユーザーエージェントの禁止 - セキュリティ > 設定 > 禁止ユーザー"
+
+#: core/modules/ban-users/config-generators.php:84
+#: core/modules/ban-users/config-generators.php:103
+#: core/modules/ban-users/config-generators.php:115
+msgid "Ban Hosts - Security > Settings > Banned Users"
+msgstr "禁止ホスト - セキュリティ > 設定 > 禁止ユーザー"
+
+#: core/modules/ban-users/config-generators.php:18
+msgid "Enable HackRepair.com's blacklist feature - Security > Settings > Banned Users > Default Blacklist"
+msgstr "HackRepair.com のブラックリスト機能を有効 - セキュリティ > 設定 > 禁止ユーザー > デフォルトのブラックリスト"
+
+#: core/modules/ban-users/settings-page.php:32
+msgid "Enable HackRepair.com's blacklist feature"
+msgstr "HackRepair.com のブラックリスト機能を有効"
+
+#: core/modules/ban-users/settings-page.php:69
+msgid "Enter only 1 user agent per line."
+msgstr "ユーザーエージェントは1行に1つずつ指定してください。"
+
+#: core/modules/ban-users/settings-page.php:67
+msgid "Use the guidelines below to enter user agents that will not be allowed access to your site."
+msgstr "サイトへのアクセスを拒否したいユーザーエージェントを入力する場合は、以下のガイドラインに従ってください。"
+
+#: core/modules/ban-users/settings-page.php:9
+#: core/modules/security-check/scanner.php:12
+#: core/modules/security-check/scanner.php:47
+msgid "Banned Users"
+msgstr "禁止ユーザー"
+
+#: core/modules/backup/class-itsec-backup.php:322
+msgid "Database Backup Executed"
+msgstr "実行されたデータベースのバックアップ"
+
+#: core/modules/backup/class-itsec-backup.php:256
+msgid "saved locally"
+msgstr "ローカルに保存"
+
+#: core/modules/backup/class-itsec-backup.php:270
+msgid "emailed to backup recipients"
+msgstr "バックアップの受信者にメールで送信"
+
+#: core/modules/backup/class-itsec-backup.php:268
+msgid "email to backup recipients could not be sent."
+msgstr "バックアップの受信者にメールを送信できませんでした。"
+
+#: core/modules/backup/class-itsec-backup.php:263
+msgid "emailed to backup recipients and saved locally"
+msgstr "バックアップの受信者にメールで送信し、ローカルにも保存"
+
+#: core/modules/backup/class-itsec-backup.php:255
+msgid "Success"
+msgstr "成功"
+
+#: core/modules/backup/class-itsec-backup.php:261
+msgid "saved locally but email to backup recipients could not be sent."
+msgstr "ローカル保存は出来ましたが、バックアップの受信者にはメールを送信できませんでした。"
+
+#: core/admin-pages/page-settings.php:116
+#: core/modules/backup/class-itsec-backup.php:260
+#: core/modules/backup/class-itsec-backup.php:267
+#: core/modules/malware/class-itsec-malware-log.php:109
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:167
+msgid "Error"
+msgstr "エラー"
+
+#: core/modules/backup/class-itsec-backup.php:298
+msgid "[%s] Database Backup"
+msgstr "[%s] データベースバックアップ"
+
+#: core/modules/backup/settings-page.php:127
+msgid "You may need to turn this off if you are having problems with backups."
+msgstr "バックアップに問題が発生した場合は、これをオフにする必要があります。"
+
+#: core/modules/backup/settings-page.php:126
+msgid "Zip Database Backups"
+msgstr "データベースのバックアップを Zip 形式で圧縮"
+
+#: core/modules/backup/settings-page.php:119
+msgid "Limit the number of backups stored locally (on this server). Any older backups beyond this number will be removed. Setting to \"0\" will retain all backups."
+msgstr "ローカルに（このサーバー上に）保存するバックアップ数を制限できます。この数を越えた場合、古いバックアップは順に削除されます。\"0\" に設定すると、すべてのバックアップを制限なしで保管します。"
+
+#: core/modules/backup/settings-page.php:100
+msgid "Select what we should do with your backup file. You can have it emailed to you, saved locally or both."
+msgstr "バックアップファイルをどのように保存する必要があるか選択してください。ローカルまたはメールで送信、または両方での保存を選択することが可能です。"
+
+#: core/modules/backup/settings-page.php:99
+msgid "Backup Save Method"
+msgstr "バックアップの保存方法"
+
+#: core/modules/backup/settings-page.php:74
+msgid "Save Locally Only"
+msgstr "ローカル保存のみ"
+
+#: core/modules/backup/settings-page.php:73
+msgid "Email Only"
+msgstr "メールのみ"
+
+#: core/modules/backup/settings-page.php:72
+msgid "Save Locally and Email"
+msgstr "ローカルに保存してメール"
+
+#: core/modules/backup/settings-page.php:107
+msgid "The path on your machine where backup files should be stored."
+msgstr "バックアップファイルを保管するローカル（サーバー）上のフルパスを指定してください。"
+
+#: core/modules/backup/settings-page.php:151
+msgid "The number of days between database backups."
+msgstr "データベースのバックアップを実行したい間隔を日数で指定してください。"
+
+#: core/modules/backup/settings-page.php:135
+msgid "Some plugins can create log files in your database. While these logs might be handy for some functions, they can also take up a lot of space and, in some cases, even make backing up your database almost impossible. Select log tables above to exclude their data from the backup. Note: The table itself will be backed up, but not the data in the table."
+msgstr "一部のプラグインは、データベース内にログファイルを作成する場合があります。これらのログは、一部の機能のためには便利かもしれませんが、他のケースでは不完全なデータベースをバックアップしてしまい、容量もその分増えてしまいます。選択したログ関係のテーブルは、上記バックアップデータから除外されます。注意 : テーブル内のデータではなく、テーブル自体がバックアップされなくなります。"
+
+#: core/modules/backup/settings-page.php:133
+msgid "Tables with data that does not need to be backed up"
+msgstr "必要のないデータを含むテーブルもバックアップ"
+
+#: core/modules/backup/settings-page.php:142
+msgid "Enable Scheduled Database Backups"
+msgstr "スケジュールされたデータベースのバックアップを有効にする"
+
+#: core/modules/backup/settings-page.php:91
+msgid "Checking this box will have the backup script backup all tables in your database, even if they are not part of this WordPress site."
+msgstr "このチェックボックスをオンにすると、バックアップスクリプトはバックアップにデータベース内の Wordpress サイトの一部ではないテーブルであっても、すべてを保存します。"
+
+#: core/modules/backup/settings-page.php:82
+msgid "Create a Database Backup"
+msgstr "データベースのバックアップを作成"
+
+#: core/modules/backup/settings-page.php:131
+#: core/modules/backup/validator.php:25
+msgid "Exclude Tables"
+msgstr "除外するテーブル"
+
+#: core/modules/backup/settings-page.php:123
+#: core/modules/backup/validator.php:24
+msgid "Compress Backup Files"
+msgstr "バックアップファイルを圧縮"
+
+#: core/modules/backup/settings-page.php:115
+#: core/modules/backup/validator.php:23
+msgid "Backups to Retain"
+msgstr "バックアップの保持数"
+
+#: core/modules/backup/settings-page.php:104
+#: core/modules/backup/validator.php:22
+msgid "Backup Location"
+msgstr "バックアップの保存場所"
+
+#: core/modules/backup/settings-page.php:95
+#: core/modules/backup/validator.php:20 core/modules/backup/validator.php:21
+msgid "Backup Method"
+msgstr "バックアップ方法"
+
+#: core/modules/backup/settings-page.php:88
+#: core/modules/backup/validator.php:19
+msgid "Backup Full Database"
+msgstr "データベースの完全バックアップ"
+
+#: core/modules/backup/settings-page.php:147
+#: core/modules/backup/validator.php:27
+msgid "Backup Interval"
+msgstr "バックアップの間隔"
+
+#: core/modules/backup/settings-page.php:139
+#: core/modules/backup/validator.php:26
+msgid "Schedule Database Backups"
+msgstr "データベースのバックアップスケジュール"
+
+#: core/modules/backup/settings-page.php:9
+#: core/modules/security-check/scanner.php:13
+#: core/modules/security-check/scanner.php:50
+msgid "Database Backups"
+msgstr "データベースのバックアップ"
+
+#: core/modules/backup/settings-page.php:22
+msgid "Excluded Tables"
+msgstr "除外するテーブル"
+
+#: core/modules/backup/settings-page.php:21
+msgid "Tables for Backup"
+msgstr "バックアップするテーブル"
+
+#: core/modules/backup/settings-page.php:62
+msgid "One of the best ways to protect yourself from an attack is to have access to a database backup of your site. If something goes wrong, you can get your site back by restoring the database from a backup and replacing the files with fresh ones. Use the button below to create a backup of your database for this purpose. You can also schedule automated backups and download or delete previous backups."
+msgstr "サイトを攻撃から守るための最善な方法の一つとして、あなたのサイトのデータベースをバックアップするためのアクセス権を持つことです。何かが原因で不具合が発生した場合など、バックアップからデータベースを復元し、最新のファイルを使用して、これを置き換えることで、あなたのサイトを復元すことが可能です。この用途でデータベースのバックアップを作成する場合は、以下のボタンを使用してください。また、自動バックアップのスケジュールを設定し、ダウンロードしたり、以前のバックアップを削除することも可能です。"
+
+#: core/modules/away-mode/class-itsec-away-mode.php:119
+msgid "Away Mode Triggered"
+msgstr "トリガーされる退席中モード"
+
+#: core/modules/away-mode/class-itsec-away-mode.php:91
+msgid "A host was prevented from accessing the dashboard due to away-mode restrictions being in effect"
+msgstr "ホストが原因で離席モードの制限も有効のため、ダッシュボードにアクセスできなくなりました"
+
+#: core/modules/away-mode/settings-page.php:121
+msgid "If this is incorrect, please update it on the <a href=\"%s\">WordPress General Settings page</a> by selecting the appropriate time zone. Failure to set the correct timezone may result in unintended lockouts."
+msgstr "これが正しくない場合は、適切なタイムゾーンを選択するために、<a href=\"%s\">WordPress の一般設定ページ</a> にて更新してください。正しいタイムゾーンを設定しなかった場合、意図しないロックアウトが発生することがあります。"
+
+#: core/modules/away-mode/settings-page.php:119
+msgid "Please note that according to your <a href=\"%s\">WordPress Timezone settings</a> your current time is:"
+msgstr "現在時刻は、<a href=\"%s\">WordPress の設定 > 一般設定 >タイムゾーン</a>で設定された規定値に準じます :"
+
+#: core/modules/away-mode/settings-page.php:26
+msgid "As most sites are only updated at certain times of the day it is not always necessary to provide access to the WordPress dashboard 24 hours a day, 7 days a week. The options below will allow you to disable access to the WordPress Dashboard for the specified period. In addition to limiting exposure to attackers this could also be useful to disable site access based on a schedule for classroom or other reasons."
+msgstr "ほとんどのサイトは、特定の時間帯のみ更新をすることから、WordPress のダッシュボードへ1日24時間、週7日のアクセスを提供することは必ずしも必要ではありません。以下のオプションは、指定した期間で WordPress のダッシュボードアクセスを無効にすることができます。攻撃への露出を制限することに加えて、スケジュールに基づき、教室や他の理由においてサイトのアクセスを無効化するのに有用です。"
+
+#: core/modules/away-mode/settings-page.php:160
+#: core/modules/away-mode/validator.php:31
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:114
+#: core/modules/away-mode/validator.php:124
+#: core/modules/away-mode/validator.php:128
+msgid "End Time"
+msgstr "終了時間"
+
+#: core/modules/away-mode/settings-page.php:152
+#: core/modules/away-mode/validator.php:31
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:114
+msgid "End Date"
+msgstr "終了日"
+
+#: core/modules/away-mode/settings-page.php:140
+#: core/modules/away-mode/validator.php:30
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:118
+#: core/modules/away-mode/validator.php:124
+#: core/modules/away-mode/validator.php:128
+msgid "Start Time"
+msgstr "開始時間"
+
+#: core/modules/away-mode/settings-page.php:132
+#: core/modules/away-mode/validator.php:30
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:118
+msgid "Start Date"
+msgstr "開始日"
+
+#: core/modules/away-mode/settings-page.php:124
+#: core/modules/away-mode/validator.php:25
+msgid "Type of Restriction"
+msgstr "制限のタイプ"
+
+#: core/modules/away-mode/settings-page.php:128
+msgid "Select the type of restriction you would like to enable."
+msgstr "希望する有効にしたい制限タイプを選択してください。"
+
+#: core/modules/away-mode/validator.php:11
+msgid "One Time"
+msgstr "ワンタイム"
+
+#: core/modules/away-mode/validator.php:10
+msgid "Daily"
+msgstr "毎日"
+
+#: core/modules/away-mode/settings-page.php:9
+msgid "Away Mode"
+msgstr "退席中モード"
+
+#: core/modules/admin-user/settings-page.php:45
+msgid "Change the ID of the user with ID 1."
+msgstr "D1 を持つユーザー ID 変更します。"
+
+#: core/modules/admin-user/settings-page.php:42
+#: core/modules/admin-user/validator.php:22
+msgid "Change User ID 1"
+msgstr "ユーザー ID1 を変更"
+
+#: core/modules/admin-user/settings-page.php:36
+msgid "Enter a new username to replace \"admin.\" Please note that if you are logged in as admin you will have to log in again."
+msgstr "新しいユーザー名を入力して \"admin\" を置き換えます。管理者としてログインしている場合は、再度ログインする必要があります。"
+
+#: core/modules/admin-user/settings-page.php:32
+#: core/modules/admin-user/validator.php:15
+msgid "New Admin Username"
+msgstr "新しい管理者のユーザー名"
+
+#: core/modules/file-permissions/settings-page.php:95
+msgid "WARNING"
+msgstr "警告"
+
+#: core/modules/admin-user/settings-page.php:19
+msgid "This feature will improve the security of your WordPress installation by removing common user attributes that can be used to target your site."
+msgstr "この機能は、あなたのサイトを標的とする攻撃に使用可能な、初期インストールの際に作成される共通したユーザー属性を除去することにより、WordPress のセキュリティを向上させます。"
+
+#: core/admin-pages/init.php:31 core/core.php:346
+#: core/modules/security-check/settings-page.php:9
+msgid "Security Check"
+msgstr "セキュリティチェック"
+
+#: core/modules/admin-user/settings-page.php:9
+msgid "Admin User"
+msgstr "管理者ユーザー"
+
+#: core/lib/class-itsec-wp-list-table.php:783
+msgid "Select All"
+msgstr "すべて選択"
+
+#: core/lib/class-itsec-wp-list-table.php:634
+msgid "Go to the last page"
+msgstr "最後のページに移動"
+
+#: core/lib/class-itsec-wp-list-table.php:627
+msgid "Go to the next page"
+msgstr "次のページに進む"
+
+#: core/lib/class-itsec-wp-list-table.php:623
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%2$s件中%1$s件"
+
+#: core/lib/class-itsec-wp-list-table.php:616
+msgid "Current page"
+msgstr "現在のページ"
+
+#: core/lib/class-itsec-wp-list-table.php:607
+msgid "Go to the previous page"
+msgstr "前のページに戻る"
+
+#: core/lib/class-itsec-wp-list-table.php:600
+msgid "Go to the first page"
+msgstr "最初のページに戻る"
+
+#: core/lib/class-itsec-wp-list-table.php:580
+#: core/lib/class-itsec-wp-list-table.php:1027
+msgid "1 item"
+msgid_plural "%s items"
+msgstr[0] "%s件"
+
+#: core/lib/class-itsec-wp-list-table.php:503
+msgid "%s pending"
+msgstr "%s 保留中"
+
+#: core/lib/class-itsec-wp-list-table.php:476
+msgid "Excerpt View"
+msgstr "抜粋表示"
+
+#: core/lib/class-itsec-wp-list-table.php:475
+msgid "List View"
+msgstr "リスト表示"
+
+#. translators: 1: month name, 2: 4-digit year
+#: core/lib/class-itsec-wp-list-table.php:458
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: core/lib/class-itsec-wp-list-table.php:444
+msgid "Show all dates"
+msgstr "全日付を表示"
+
+#: core/lib/class-itsec-wp-list-table.php:352
+msgid "Apply"
+msgstr "適用"
+
+#: core/lib/class-itsec-wp-list-table.php:342
+msgid "Bulk Actions"
+msgstr "一括操作"
+
+#: core/lib/class-itsec-wp-list-table.php:206
+msgid "No items found."
+msgstr "項目が見つかりません。"
+
+#: core/lib/class-itsec-lib-utility.php:159
+msgid "Unable to strip comments from the source code as the token_get_all() function returned an unrecognized value (type: %s)"
+msgstr "token_get_all() 関数が認識できない値を返したため、ソースコードからコメントを削除することができません（タイプ : %s）"
+
+#: core/lib/class-itsec-lib-utility.php:152
+msgid "Unable to strip comments from the source code as the token_get_all() function is disabled. This is a system configuration issue."
+msgstr "token_get_all() 関数が無効になっているので、ソースコードからコメントを削除することができません。これは、システム構成の問題になります。"
+
+#: core/lib/class-itsec-lib-file.php:334
+msgid "Permissions for the file %s could not be read as the fileperms() function is disabled. This is a system configuration issue."
+msgstr "ファイル %s の権限が無効になっているので、 fileperms() 関数として読み取ることができませんでした。これは、システム構成の問題になります。"
+
+#: core/lib/class-itsec-lib-file.php:330
+msgid "Permissions for the file %s could not be read as the file could not be found."
+msgstr "ファイルが見つからないため、ファイル %s の権限は読み取ることができませんでした。"
+
+#: core/lib/class-itsec-lib-file.php:286
+msgid "The file %s could not have its permissions updated as the chmod() function is disabled. This is a system configuration issue."
+msgstr "ファイル %s は chmod() 関数が無効になっているので更新することができませんでした。これは、システム構成の問題になります。"
+
+#: core/lib/class-itsec-lib-file.php:282
+msgid "The file %1$s could not have its permissions updated as non-integer permissions were sent: (%2$s) %3$s"
+msgstr "送信された非整数のパーミッションにより、ファイル %1$s のパーミッションは更新されませんでした:（%2$s）%3$s"
+
+#: core/lib/class-itsec-lib-file.php:256
+msgid "The file %s could not be removed as the unlink() function is disabled. This is a system configuration issue."
+msgstr "ファイル %s は unlink() 関数が無効になっているので削除することができませんでした。これは、システム構成の問題になります。"
+
+#: core/lib/class-itsec-lib-file.php:227
+msgid "%s could not be written. This could be due to a permissions issue. Ensure that PHP runs as a user that has permission to write to this location."
+msgstr "%s へ書き込むことができませんでした。これは、パーミッションの問題が原因である可能性があります。PHP が、この場所の書き込み権限を持つユーザーとして実行されているか確認してください。"
+
+#: core/lib/class-itsec-lib-file.php:130
+msgid "%s could not be written as a file. The requested path already exists as a directory. The directory must be removed or a new file name must be chosen before the file can be written."
+msgstr "%s はファイルとして書き込むことができませんでした。リクエストされたパスは既にディレクトリとして存在しています。ファイルを書き込み可能にする前に、新しいファイル名を選択するかディレクトリを削除する必要があります。"
+
+#: core/lib/class-itsec-lib-file.php:125
+msgid "%s could not be written. Both the fopen/fwrite/flock and file_put_contents functions are disabled on the server. This is a server configuration issue that must be resolved before iThemes Security can write files."
+msgstr "%s へ書き込むことができませんでした。fopen/fwrite/flock と file_put_contents 関数の両方がサーバー上で無効になっています。これは、iThemes Security がファイルへ書き込むことはできないので、事前に解決する必要のあるサーバーの設定問題になります。"
+
+#: core/lib/class-itsec-lib-file.php:43
+msgid "%s could not be read. Both the fopen/feof/fread/flock and file_get_contents functions are disabled on the server."
+msgstr "%s は読み取ることができませんでした。fopen/feof/fread/flock と file_get_contents 関数の両方がサーバー上で無効になっています。"
+
+#: core/lib/class-itsec-lib-file.php:29
+msgid "%s could not be read. It does not appear to be a file."
+msgstr "%s を読み取ることができませんでした。これはファイルではありません。"
+
+#: core/lib/class-itsec-lib-directory.php:283
+msgid "Permissions for the directory %s could not be read as the fileperms() function is disabled. This is a system configuration issue."
+msgstr "fileperms() 関数が無効のため、ディレクトリ %s のアクセス権を読み取れませんでした。これは、システム構成の問題になります。"
+
+#: core/lib/class-itsec-lib-directory.php:279
+msgid "Permissions for the directory %s could not be read as the directory could not be found."
+msgstr "ディレクトリが見つからなかったので、ディレクトリ %s のアクセス権を読み取れませんでした。"
+
+#: core/lib/class-itsec-lib-directory.php:207
+#: core/lib/class-itsec-lib-file.php:267
+msgid "Unable to remove %s due to an unknown error."
+msgstr "原因不明のエラーで %s を削除することができません。"
+
+#: core/lib/class-itsec-lib-directory.php:189
+msgid "Unable to remove %1$s due to the following error: %2$s"
+msgstr "次のエラーが原因で %1$s は削除することができませんでした : %2$s"
+
+#: core/lib/class-itsec-lib-directory.php:182
+msgid "The directory %s could not be removed as the rmdir() function is disabled. This is a system configuration issue."
+msgstr "ディレクトリ %s は rmdir() 関数が無効になっているため、削除することができませんでした。これは、システム構成の問題になります。"
+
+#: core/lib/class-itsec-lib-directory.php:165
+msgid "The directory %s could not be created due to an unknown error. This could be due to a permissions issue."
+msgstr "ディレクトリ %s は不明なエラーのために作成できませんでした。これは、パーミッションの問題が原因である可能性があります。"
+
+#: core/lib/class-itsec-lib-directory.php:145
+msgid "The directory %s could not be created as an existing parent directory could not be found."
+msgstr "既存の親ディレクトリが見つからないため、ディレクトリ %s を作成できませんでした。"
+
+#: core/lib/class-itsec-lib-directory.php:134
+msgid "The directory %s could not be created as the mkdir() function is disabled. This is a system configuration issue."
+msgstr "ディレクトリ %s は mkdir() 関数が無効になっているため、作成することができませんでした。これは、システム構成の問題になります。"
+
+#: core/lib/class-itsec-lib-directory.php:130
+msgid "The directory %s could not be created as a file with that name already exists."
+msgstr "この名前のファイルが既に存在しているので、ディレクトリ %s を作成できませんでした。"
+
+#: core/lib/class-itsec-lib-directory.php:89
+#: core/lib/class-itsec-lib-file.php:101
+msgid "%s could not be read due to an unknown error."
+msgstr "%s の不明なエラーのため、読み取ることができませんでした。"
+
+#: core/lib/class-itsec-lib-directory.php:38
+msgid "%s could not be read. Both the opendir/readdir/closedir and glob functions are disabled on the server."
+msgstr "%s は読み取ることができませんでした。 opendir/readdir/closedir とグローバル関数の両方がサーバー上で無効になっています。"
+
+#: core/lib/class-itsec-lib-config-file.php:560
+#: core/lib/class-itsec-lib-config-file.php:563
+msgid "Do not modify or remove this line"
+msgstr "変更またはこの行を削除しないでください"
+
+#: core/lib/class-itsec-lib-config-file.php:302
+msgid "Unable to read %1$s due to the following error: %2$s"
+msgstr "次のエラーのため %1$s を読み取ることができません: %2$s"
+
+#: core/lib/class-itsec-lib-config-file.php:258
+#: core/lib/class-itsec-lib-config-file.php:279
+msgid "Updates to <code>wp-config.php</code> are disabled via a filter."
+msgstr "<code>wp-config.php</code> の更新は、フィルタを経由して無効になっています。"
+
+#: core/lib/class-itsec-lib-config-file.php:66
+#: core/lib/class-itsec-lib-config-file.php:182
+msgid "iThemes Security preserved the following settings as removing them could prevent the site from functioning correctly."
+msgstr "iThemes Security は、それらが正常に機能してからサイトの防止可能な消去に応じて次の設定を保存しました。"
+
+#: core/modules/ssl/settings-page.php:47
+msgid "Enabled"
+msgstr "有効"
+
+#: core/modules/content-directory/settings-page.php:38
+#: core/modules/database-prefix/settings-page.php:31
+#: core/modules/security-check/scanner.php:99
+msgid "No"
+msgstr "いいえ"
+
+#: core/modules/ssl/settings-page.php:56
+msgid "Off"
+msgstr "オフ"
+
+#: core/modules/content-directory/settings-page.php:37
+#: core/modules/database-prefix/settings-page.php:30
+#: core/modules/global/settings-page.php:73
+#: core/modules/security-check/scanner.php:99
+msgid "Yes"
+msgstr "はい"
+
+#: core/modules/file-permissions/settings-page.php:115
+#: core/modules/file-permissions/settings-page.php:124
+msgid "Value"
+msgstr "値"
+
+#: core/modules/file-permissions/settings-page.php:117
+#: core/modules/file-permissions/settings-page.php:126
+msgid "Status"
+msgstr "状態"
+
+#: core/modules/file-permissions/settings-page.php:116
+#: core/modules/file-permissions/settings-page.php:125
+msgid "Result"
+msgstr "結果"
+
+#: core/modules/file-permissions/settings-page.php:114
+#: core/modules/file-permissions/settings-page.php:123
+msgid "Suggestion"
+msgstr "推薦値"
+
+#: core/modules/file-permissions/settings-page.php:113
+#: core/modules/file-permissions/settings-page.php:122
+msgid "Relative Path"
+msgstr "相対パス"
+
+#: core/notify.php:134 core/notify.php:198
+msgid "Daily Security Digest"
+msgstr "ディリーセキュリティダイジェスト"
+
+#: core/admin-pages/page-logs.php:240 core/logger.php:265
+msgid "All Log Data"
+msgstr "すべてのログデータ"
+
+#: core/logger.php:263
+msgid "Select Filter: "
+msgstr "フィルターを選択:"
+
+#: core/logger.php:261
+msgid "To adjust logging options visit the global settings page."
+msgstr "ログの記録を調整するオプションに関しては、グローバル設定ページへアクセスしてください。"
+
+#: core/admin-pages/page-logs.php:274
+msgid "To view logs within the plugin you must enable database logging in the Global Settings. File logging is not available for access within the plugin itself."
+msgstr "プラグイン内のログを表示するには、グローバル設定でのデータベースのログを有効にする必要があります。ファイルログは、プラグイン内のアクセス自体には使用できません。"
+
+#: core/admin-pages/page-logs.php:393
+msgid "Clear Logs"
+msgstr "ログをクリア"
+
+#: core/admin-pages/page-logs.php:390
+msgid "Use the button below to purge the log table in your database. Please note this will purge all log entries in the database including 404s."
+msgstr "データベース内のログテーブルを削除する場合は、以下のボタンを使用してください。404エラーなどを含め、データベース内のすべてのログエントリを削除しますのでご注意ください。"
+
+#: core/admin-pages/page-logs.php:387
+msgid "log entries."
+msgstr "件のログエントリー。"
+
+#: core/admin-pages/page-logs.php:386
+msgid "Your database contains"
+msgstr "データベースには"
+
+#: core/admin-pages/page-logs.php:382
+msgid "Log Summary"
+msgstr "ログの概要"
+
+#: core/logger-all-logs.php:203
+msgid "Data"
+msgstr "データ"
+
+#: core/logger-all-logs.php:202
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:90
+msgid "Referrer"
+msgstr "リファラー"
+
+#: core/logger-all-logs.php:201
+msgid "URL"
+msgstr "URL"
+
+#: core/logger-all-logs.php:200
+#: core/modules/malware/class-itsec-malware-log.php:193
+#: core/sidebar-widget-active-lockouts.php:49
+#: core/sidebar-widget-temp-whitelist.php:48
+msgid "User"
+msgstr "ユーザー"
+
+#: core/logger-all-logs.php:199
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:90
+#: core/modules/brute-force/class-itsec-brute-force-log.php:87
+#: core/sidebar-widget-active-lockouts.php:64
+#: core/sidebar-widget-temp-whitelist.php:63
+msgid "Host"
+msgstr "ホスト"
+
+#: core/logger-all-logs.php:198
+#: core/modules/404-detection/class-itsec-four-oh-four-log.php:90
+#: core/modules/brute-force/class-itsec-brute-force-log.php:86
+#: core/modules/malware/class-itsec-malware-log.php:190
+msgid "Time"
+msgstr "時間"
+
+#: core/logger-all-logs.php:197
+msgid "Priority"
+msgstr "優先度"
+
+#: core/logger-all-logs.php:196
+msgid "Function"
+msgstr "機能"
+
+#: core/logger-all-logs.php:176
+#: core/modules/file-change/class-itsec-file-change-log.php:106
+#: core/modules/file-change/class-itsec-file-change-log.php:182
+#: core/modules/malware/class-itsec-malware-log.php:41
+#: core/modules/malware/class-itsec-malware-log.php:52
+#: core/modules/malware/class-itsec-malware-log.php:194
+msgid "Details"
+msgstr "詳細"
+
+#: core/lockout.php:1197
+msgid "Site Lockout Notification"
+msgstr "サイトのロックアウト通知"
+
+#: core/lockout.php:1179
+msgid "Permanently"
+msgstr "永続的"
+
+#: core/lockout.php:1091
+msgid "The selected lockouts have been cleared."
+msgstr "選択したロックアウトはクリアされました。"
+
+#: core/lockout.php:987
+msgid "Host or User Lockout"
+msgstr "ホストまたはユーザーのロックアウト"
+
+#: core/lockout.php:858 core/lockout.php:887
+msgid "White Listed"
+msgstr "ホワイトリストに登録"
+
+#: core/lockout.php:519 core/lockout.php:529
+msgid "no"
+msgstr "いいえ"
+
+#: core/lockout.php:519 core/lockout.php:529
+msgid "yes"
+msgstr "はい"
+
+#: core/lockout.php:517
+msgid "Your current settings are configured as follows:"
+msgstr "現在の設定は以下のように構成されています :"
+
+#: core/lockout.php:513
+msgid "About Lockouts"
+msgstr "ロックアウトについて"
+
+#: core/lockout.php:447 core/modules/global/settings.php:15
+msgid "You have been locked out due to too many invalid login attempts."
+msgstr "あなたの過剰な無効ログイン試行によりロックアウトされました。"
+
+#: core/lockout.php:401
+msgid "A whitelisted host has triggered a lockout condition but was not locked out."
+msgstr "ホワイトリストのホストがロックアウト状態をトリガしましたが、ロックアウトされませんでした。"
+
+#: core/sidebar-widget-active-lockouts.php:6
+#: core/sidebar-widget-temp-whitelist.php:6
+msgid "Active Lockouts"
+msgstr "ロックアウト有効"
+
+#: core/modules/wordpress-tweaks/settings-page.php:33
+msgid "Allow"
+msgstr "許可"
+
+#: core/modules/global/settings-page.php:121
+msgid "The message to display to a user when their account has been locked out."
+msgstr "アカウントがロックアウトされた際に、上記メッセージをユーザーに表示します。"
+
+#: core/modules/global/settings-page.php:251
+msgid "If you're not using a proxy service such as Varnish, Cloudflare or others turning this on may result in more accurate IP detection."
+msgstr "Varnish, Cloudflare などのプロキシサービスを使用していない場合は、IP をより正確に検出することができます。"
+
+#: core/modules/global/settings-page.php:250
+msgid "Disable Proxy IP Detection"
+msgstr "プロキシの IP 検出を無効"
+
+#: core/modules/global/settings-page.php:90
+msgid "The email address(es) all security notifications will be sent to. One address per line."
+msgstr "すべてのセキュリティ通知が、このメールアドレス宛に送信されます。アドレスは1行に1つずつ指定してください。"
+
+#: core/modules/global/settings-page.php:199
+msgid "iThemes Security can log events in multiple ways, each with advantages and disadvantages. Database Only puts all events in the database with your posts and other WordPress data. This makes it easy to retrieve and process but can be slower if the database table gets very large. File Only is very fast but the plugin does not process the logs itself as that would take far more resources. For most users or smaller sites Database Only should be fine. If you have a very large site or a log processing software then File Only might be a better option."
+msgstr "iThemes Security は、複数の方法でイベントをログに記録できますが、それぞれ長所と短所があります。\"データベースのみ\" の場合は、他の WordPress データと投稿と共にデータベース内のすべてのイベントを標準出力します。これにより、検索と処理が容易になりますが、データベーステーブルが非常に肥大化するので処理速度が低下するおそれがあります。\"ファイルのみ\" の場合は非常に高速ですが、プラグインはログそのものを処理しません。これは非常に多くのリソースを必要とするためです。大部分のユーザーまたは小規模なサイトのデータベースのみなら問題はありません。非常に大きなサイト、またはログ処理ソフトウェアをお持ちの場合は、\"ファイルのみ\" を選択する方法がおすすめです。"
+
+#: core/modules/global/settings-page.php:198
+msgid "How should event logs be kept"
+msgstr "イベントログの保存方法"
+
+#: core/modules/global/validator.php:70
+msgid "Both"
+msgstr "両方"
+
+#: core/modules/global/validator.php:69
+msgid "File Only"
+msgstr "ファイルのみ"
+
+#: core/modules/global/validator.php:68
+msgid "Database Only"
+msgstr "データベースのみ"
+
+#: core/modules/global/settings-page.php:207
+msgid "The number of days database logs should be kept. File logs will be kept indefinitely but will be rotated once the file hits 10MB."
+msgstr "データベースのログを保存する日数を指定してください。ログファイルは無期限に保存されますが、ファイルが10MBに達するとローテーションされます。"
+
+#: core/modules/backup/settings-page.php:110
+msgid "Restore Default Location"
+msgstr "初期設定に戻す"
+
+#: core/modules/backup/settings-page.php:108
+#: core/modules/global/settings-page.php:215
+#: core/modules/global/settings-page.php:242
+msgid "This path must be writable by your website. For added security, it is recommended you do not include it in your website root folder."
+msgstr "このパスは、ウェブサイト側で書き込み可能である必要があります。セキュリティの強化維持のため、あなたのウェブサイトのルートフォルダ内に指定することはおすすめしません。"
+
+#: core/modules/global/settings-page.php:214
+msgid "The path on your server where log files should be stored."
+msgstr "ログファイルを保管しておくサーバー上のパスを指定してください。"
+
+#: core/modules/global/settings-page.php:183
+msgid "This white list will prevent any IP listed from triggering an automatic lockout. You can still block the IP address manually in the banned users settings."
+msgstr "このホワイトリストは、リストされた IP が自動ロックアウトを起動させないようにします。ただし、禁止ユーザーの設定で IP アドレスを手動でブロックすることは可能です。"
+
+#: core/modules/ban-users/settings-page.php:57
+#: core/modules/global/settings-page.php:180
+msgid "Enter only 1 IP address or 1 IP address range per line."
+msgstr "個々の IP アドレス、または範囲指定の IP アドレスは、1行につき1つずつ指定してください。"
+
+#: core/modules/ban-users/settings-page.php:60
+#: core/modules/global/settings-page.php:182
+msgid "Lookup IP Address."
+msgstr "[ IP アドレスを調査 ]"
+
+#: core/modules/global/settings-page.php:170
+msgid "Use the guidelines below to enter hosts that will not be locked out from your site. This will keep you from locking yourself out of any features if you should trigger a lockout. Please note this does not override away mode and will only prevent a temporary ban. Should a permanent ban be triggered you will still be added to the \"Ban Users\" list unless the IP address is also white listed in that section."
+msgstr "サイトのロックアウトから除外したいホストを入力する場合は、次のガイドラインに従ってください。あなたがロックアウトをトリガーする必要がある場合、すべての機能から除外されるロックから自分自身を維持します。一時的な禁止を防止する時のみ、また退席中モードは上書きされないことに注意してください。そのセクション内のホワイトリストにある IP アドレスではない限り \"禁止ユーザー\" のリストに追加され永久的な禁止をトリガーする必要があります。"
+
+#: core/modules/global/settings-page.php:169
+msgid "Add my current IP to the White List"
+msgstr "ホワイトリストに現在の自分の IP アドレスを追加"
+
+#: core/modules/404-detection/settings-page.php:30
+#: core/modules/brute-force/settings-page.php:46
+#: core/modules/global/settings-page.php:161
+msgid "Minutes"
+msgstr "分"
+
+#: core/modules/global/settings-page.php:113
+msgid "The message to display when a computer (host) has been locked out."
+msgstr "コンピュータ（ホスト）がロックアウトされた際に、上記メッセージを表示します。"
+
+#: core/modules/global/settings.php:14
+msgid "error"
+msgstr "エラー"
+
+#: core/modules/global/settings-page.php:224
+msgid "Enable InfiniteWP Compatibility"
+msgstr "InfiniteWP の互換性を有効"
+
+#: core/modules/global/settings-page.php:258
+msgid "Hide security menu in admin bar."
+msgstr "管理バーのセキュリティメニューを非表示にします。"
+
+#: core/modules/global/settings-page.php:190
+msgid "Enable Email Lockout Notifications"
+msgstr "ロックアウトの通知メールを有効"
+
+#: core/modules/global/settings-page.php:98
+msgid "During periods of heavy attack or other times a security plugin can generate a LOT of email just telling you that it is doing its job. Turning this on will reduce the emails from this plugin to no more than one per day for any notification."
+msgstr "激しい攻撃または他の時間の周期中であっても、セキュリティプラグインはかろうじてジョブの完了を知らせる通知メールを多数生成することが可能です。これを実行すると、すべての通知を1日1回を超えないように、プラグインからのメールを減らすことができます。"
+
+#: core/modules/global/settings-page.php:97
+msgid "Send digest email"
+msgstr "ダイジェストメールを送信"
+
+#: core/modules/global/settings-page.php:114
+#: core/modules/global/settings-page.php:122
+#: core/modules/global/settings-page.php:130
+msgid "You can use HTML in your message. Allowed tags include: a, br, em, strong, h1, h2, h3, h4, h5, h6, div."
+msgstr "メッセージに HTML を使用することができます。使用できるタグ : a, br, em, strong, h1, h2, h3, h4, h5, h6, div"
+
+#: core/modules/global/settings-page.php:129
+msgid "The message to display to a user when their IP has been flagged as bad by the iThemes network."
+msgstr "この IP が iThemes security network から脅威としてフラグ指定されるとユーザーにメッセージを表示します。"
+
+#: core/lockout.php:439 core/modules/global/settings.php:16
+msgid "Your IP address has been flagged as a threat by the iThemes Security network."
+msgstr "あなたの IP アドレスは iThemes Security network による脅威としてフラグ付けがされています。"
+
+#: core/modules/global/settings-page.php:154
+msgid "How many days should a lockout be remembered to meet the blacklist count above."
+msgstr "上記のブラックリスト入を満たすまでのロックアウトを記憶する日数を指定してください。"
+
+#: core/modules/backup/settings-page.php:150
+#: core/modules/global/settings-page.php:153
+#: core/modules/global/settings-page.php:206
+msgid "Days"
+msgstr "日"
+
+#: core/modules/global/settings-page.php:146
+msgid "The number of lockouts per IP before the host is banned permanently from this site."
+msgstr "このサイトからホストが永久に禁止される前の IP 単位でのロックアウト数を指定してください。"
+
+#: core/modules/global/settings-page.php:145 core/notify.php:138
+msgid "Lockouts"
+msgstr "ロックアウト"
+
+#: core/modules/global/settings-page.php:138
+msgid "If this box is checked the IP address of the offending computer will be added to the \"Ban Users\" blacklist after reaching the number of lockouts listed below."
+msgstr "このチェックボックスをオンにすると、問題のあるコンピュータの IP アドレスが、以下にリストされているロックアウトの数に達した後、\"禁止ユーザー\" のブラックリストに追加されます。"
+
+#: core/modules/global/settings-page.php:137
+msgid "Enable Blacklist Repeat Offender"
+msgstr "違反者のブラックリストを有効"
+
+#: core/modules/global/settings-page.php:106
+msgid "The email address(es) all database backups will be sent to. One address per line."
+msgstr "このメールアドレス宛に、すべてのデータベースバックアップが送信されます。1行に1つのアドレスを指定してください。"
+
+#: core/modules/global/settings-page.php:233
+msgid "Allow iThemes to track plugin usage via anonymous data."
+msgstr "iThemes の匿名データを経由して、プラグイン使用状況の追跡を許可します。"
+
+#: core/admin-pages/page-logs.php:120 core/lockout.php:1087
+msgid "Security error!"
+msgstr "セキュリティエラー！"
+
+#: core/modules/global/settings-page.php:255
+#: core/modules/global/validator.php:32
+msgid "Hide Security Menu in Admin Bar"
+msgstr "管理バーのセキュリティメニューを非表示"
+
+#: core/modules/global/settings-page.php:247
+#: core/modules/global/validator.php:31
+msgid "Override Proxy Detection"
+msgstr "プロキシ検出をオーバーライド"
+
+#: core/modules/global/settings-page.php:238
+#: core/modules/global/validator.php:16
+msgid "NGINX Conf File"
+msgstr "NGINX Conf ファイル"
+
+#: core/modules/global/settings-page.php:230
+#: core/modules/global/validator.php:30
+msgid "Allow Data Tracking"
+msgstr "データの追跡を許可"
+
+#: core/modules/global/settings-page.php:221
+#: core/modules/global/validator.php:10
+msgid "Add InfiniteWP Compatibility"
+msgstr "InfiniteWP の互換性を追加"
+
+#: core/modules/global/settings-page.php:211
+#: core/modules/global/validator.php:39
+msgid "Path to Log Files"
+msgstr "ログファイルのパス"
+
+#: core/modules/global/settings-page.php:203
+#: core/modules/global/validator.php:44
+msgid "Days to Keep Database Logs"
+msgstr "データベースのログを保存する日数"
+
+#: core/modules/global/settings-page.php:195
+#: core/modules/global/validator.php:47
+msgid "Log Type"
+msgstr "ログタイプ"
+
+#: core/modules/global/settings-page.php:187
+#: core/modules/global/validator.php:29
+msgid "Email Lockout Notifications"
+msgstr "ロックアウトの通知メール"
+
+#: core/modules/global/settings-page.php:166
+#: core/modules/global/validator.php:49
+msgid "Lockout White List"
+msgstr "ロックアウトのホワイトリスト"
+
+#: core/modules/global/settings-page.php:158
+#: core/modules/global/validator.php:43
+msgid "Lockout Period"
+msgstr "ロックアウトの期間"
+
+#: core/modules/global/settings-page.php:150
+msgid "Blacklist Lookback Period"
+msgstr "ブラックリスト解除までの期間"
+
+#: core/modules/global/settings-page.php:142
+#: core/modules/global/validator.php:41
+msgid "Blacklist Threshold"
+msgstr "ブラックリストのしきい値"
+
+#: core/modules/global/settings-page.php:134
+#: core/modules/global/validator.php:28
+msgid "Blacklist Repeat Offender"
+msgstr "違反者のブラックリスト"
+
+#: core/modules/global/settings-page.php:126
+#: core/modules/global/validator.php:37
+msgid "Community Lockout Message"
+msgstr "コミュニティのロックアウトメッセージ"
+
+#: core/modules/global/settings-page.php:118
+#: core/modules/global/validator.php:36
+msgid "User Lockout Message"
+msgstr "ユーザーのロックアウトメッセージ"
+
+#: core/modules/global/settings-page.php:110
+#: core/modules/global/validator.php:35
+msgid "Host Lockout Message"
+msgstr "ホストのロックアウトメッセージ"
+
+#: core/modules/global/settings-page.php:102
+#: core/modules/global/validator.php:52
+msgid "Backup Delivery Email"
+msgstr "バックアップの配信メール"
+
+#: core/modules/global/settings-page.php:94
+#: core/modules/global/validator.php:27
+msgid "Send Digest Email"
+msgstr "ダイジェストメールを送信"
+
+#: core/modules/global/settings-page.php:87
+#: core/modules/global/validator.php:51
+msgid "Notification Email"
+msgstr "通知メール"
+
+#: core/modules/global/settings-page.php:79
+#: core/modules/global/validator.php:26
+msgid "Write to Files"
+msgstr "ファイルへの書き込み"
+
+#: core/modules/global/settings-page.php:9
+msgid "Global Settings"
+msgstr "グローバル設定"
+
+#: core/files.php:69
+msgid "You must restart your NGINX server for the changes to take effect."
+msgstr "変更を有効にするには、あなたの NGINX サーバーを再起動する必要があります。"
+
+#: core/files.php:127
+msgid "Quick ban IP. Will be updated on next formal rules save."
+msgstr "クイック禁止 IP です。以下の正式なルールの保存で更新されます。"
+
+#: core/modules/file-writing/settings-page.php:35
+msgid "wp-config.php Rules"
+msgstr "wp-config.php のルール"
+
+#: core/modules/global/active.php:49
+msgid "Get Free API Key"
+msgstr "無料の API キーを取得"
+
+#: core/modules/global/active.php:48
+msgid "New! Take your site security to the next level by activating iThemes Brute Force Network Protection."
+msgstr "NEW！iThemes Brute Force Network Protection を有効にすることで、サイトのセキュリティを次のレベルまで引き上げることができます。"
+
+#: core/admin-pages/init.php:29 core/core.php:328
+msgid "Security"
+msgstr "セキュリティ"
+
+#: core/modules/backup/settings-page.php:118
+msgid "Backups"
+msgstr "バックアップ"
+
+#: core/admin-pages/init.php:35
+msgid "Go Pro"
+msgstr "PRO へ移動"
+
+#: core/admin-pages/page-settings.php:554 core/lib/class-itsec-mail.php:82
+msgid "Pro"
+msgstr "PRO"
+
+#: core/admin-pages/init.php:32 core/core.php:355
+msgid "Logs"
+msgstr "ログ"
+
+#: core/modules/ssl/settings-page.php:48
+msgid "Advanced"
+msgstr "上級者モード"
+
+#: core/admin-pages/init.php:29 core/admin-pages/init.php:30 core/core.php:280
+#: core/core.php:337
+msgid "Settings"
+msgstr "設定"
+
+#. #-#-#-#-#  better-wp-security-code.pot (iThemes Security 6.6.1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: better-wp-security.php:34 core/admin-pages/page-logs.php:253
+#: core/admin-pages/page-settings.php:451
+msgid "iThemes Security"
+msgstr "iThemes Security"

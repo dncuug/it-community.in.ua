@@ -1,0 +1,318 @@
+# Translation of Themes - Twenty Seventeen in Thai
+# This file is distributed under the same license as the Themes - Twenty Seventeen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-12-05 15:10:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: th\n"
+"Project-Id-Version: Themes - Twenty Seventeen\n"
+
+#. Description of the plugin/theme
+msgid "Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device."
+msgstr "ธีม Twenty Seventeen จะทำให้เว็บไซต์ของคุณมีชีวิตชีวาด้วยส่วนบนของเว็บไซต์ที่รองรับวีดีโอ และรูปภาพขนาดใหญ่ หน้าหลักสามารถแบ่งเป็นส่วนต่างๆเพื่อสร้างเนื้อหาที่หลากหลาย หรือใช้สำหรับวิดเจ็ต, เครื่องมือนำทาง, เมนูสื่อสังคมออนไลน์, โลโก้ และอื่นๆ เป็นการรองรับการใช้งานเว็บไซต์แบบธุรกิจ หรือหากเป็นเว็บไซต์บุคคล สามารถกำหนดเฉดสี และแสดงข้อมูลได้สอดคล้องตามรูปแบบเรื่องที่โพส สำหรับธีมเริ่มต้นของปี 2017 นั้น ทำงานได้ดีกับภาษาต่างๆ มีความสามารถที่หลากหลาย และรองรับทุกๆอุปกรณ์"
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Seventeen"
+msgstr "Twenty Seventeen"
+
+#: template-parts/header/site-branding.php:34
+#: template-parts/navigation/navigation-top.php:27
+msgid "Scroll down to content"
+msgstr "เลื่อนลงไปที่บทความ"
+
+#: functions.php:159
+msgctxt "Theme starter content"
+msgid "Coffee"
+msgstr "กาแฟ"
+
+#: functions.php:155
+msgctxt "Theme starter content"
+msgid "Sandwich"
+msgstr "แซนวิช"
+
+#: functions.php:151
+msgctxt "Theme starter content"
+msgid "Espresso"
+msgstr "เอสเพรสโซ"
+
+#: inc/custom-header.php:119
+msgid "Pause background video"
+msgstr "กดวีดีโอพื้นหลัง"
+
+#: inc/custom-header.php:118
+msgid "Play background video"
+msgstr "เล่นวีดีโอพื้นหลัง"
+
+#: inc/template-tags.php:150
+msgid "Front Page Section %1$s Placeholder"
+msgstr "หน้าแรก %1$s Placeholder"
+
+#: single.php:32
+msgid "Next Post"
+msgstr "เรื่องถัดไป"
+
+#: index.php:27
+msgid "Posts"
+msgstr "เรื่อง"
+
+#: inc/template-tags.php:88
+msgid "Tags"
+msgstr "ป้ายกำกับ"
+
+#: inc/template-tags.php:84
+msgid "Categories"
+msgstr "หมวดหมู่"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:65
+msgid ", "
+msgstr ","
+
+#. translators: %s: post date
+#: inc/template-tags.php:51
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr "<span class=\"screen-reader-text\">เขียนวันที่</span> %s"
+
+#. translators: %s: post author
+#: inc/template-tags.php:21
+msgid "by %s"
+msgstr "โดย %s"
+
+#: inc/icon-functions.php:44
+msgid "Please define an SVG icon filename."
+msgstr "กรุณาตั้งชื่อของสัญลักษณ์ SVG"
+
+#: inc/icon-functions.php:39
+msgid "Please define default parameters in the form of an array."
+msgstr "กรุณาตั้งพารามิเตอร์ในฟอร์มของอาเรย์"
+
+#: inc/customizer.php:108
+msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
+msgstr "เลือกหน้าจากรายการให้เป็นหน้าพิเศษ ใส่รูปภาพพิเศษจากหน้าแก้ไข หากเว้นว่างไว้ข้อมูลจะไม่แสดงผล"
+
+#. translators: %d is the front page section number
+#: inc/customizer.php:107
+msgid "Front Page Section %d Content"
+msgstr "ส่วนของหน้าแรก %d เนื้อหา"
+
+#: inc/customizer.php:83 inc/customizer.php:132
+msgid "Two Column"
+msgstr "สองคอลัมน์"
+
+#: inc/customizer.php:82 inc/customizer.php:131
+msgid "One Column"
+msgstr "หนึ่งคอลัมน์"
+
+#: inc/customizer.php:77
+msgid "Page Layout"
+msgstr "รูปแบบหน้า"
+
+#: inc/customizer.php:66
+msgid "Theme Options"
+msgstr "ตัวเลือกธีม"
+
+#: inc/customizer.php:50
+msgid "Custom"
+msgstr "กำหนดเอง"
+
+#: inc/customizer.php:48
+msgid "Light"
+msgstr "สว่าง"
+
+#: inc/customizer.php:46
+msgid "Color Scheme"
+msgstr "เฉดสี"
+
+#: inc/custom-header.php:49
+msgid "Default Header Image"
+msgstr "รูปส่วนหัว"
+
+#: functions.php:335
+msgid "Footer 2"
+msgstr "พื้นที่ส่วนท้ายเว็บที่สอง"
+
+#: functions.php:327 functions.php:337
+msgid "Add widgets here to appear in your footer."
+msgstr "วิดเจ็ตเหล่านี้จะแสดงผลที่พื้นที่ส่วนท้ายของเว็บไซต์"
+
+#: functions.php:325
+msgid "Footer 1"
+msgstr "พื้นที่ส่วนท้ายเว็บที่หนึ่ง"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Libre Franklin, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:269
+msgctxt "Libre Franklin font: on or off"
+msgid "on"
+msgstr "เปิด"
+
+#: functions.php:63 functions.php:183
+#: template-parts/navigation/navigation-top.php:12
+msgid "Top Menu"
+msgstr "เมนูด้านบน"
+
+#: comments.php:60
+msgid "Reply"
+msgstr "ตอบกลับ"
+
+#: template-parts/post/content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "ดูเหมือนว่าเราไม่สามารถค้นหาสิ่งที่คุณกำลังมองหาอยู่  บางทีการค้นหาอาจช่วยคุณได้"
+
+#: search.php:50
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "ขอโทษครับ  แต่ไม่มีสิ่งใดตรงกับเงื่อนไขการค้นหาของคุณ  กรุณาลองใหม่อีกครั้งด้วยคำที่ต่างออกไป"
+
+#: template-parts/post/content-none.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "พร้อมที่จะเผยแพร่เรื่องแรกของคุณหรือไม่? <a href=\"%1$s\">เริ่มต้นได้ที่นี่</a>"
+
+#: search.php:21 template-parts/post/content-none.php:17
+msgid "Nothing Found"
+msgstr "ไม่พบสิ่งใด"
+
+#: single.php:31
+msgid "Previous Post"
+msgstr "เรื่องก่อนหน้า"
+
+#: comments.php:66 single.php:31
+msgid "Previous"
+msgstr "ก่อนหน้า"
+
+#: comments.php:67 single.php:32
+msgid "Next"
+msgstr "ถัดไป"
+
+#: searchform.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr "ค้นหา"
+
+#: searchform.php:19
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "ค้นหา &hellip;"
+
+#: searchform.php:17
+msgctxt "label"
+msgid "Search for:"
+msgstr "ค้นหา:"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "ผลลัพท์การค้นหาสำหรับ: %s"
+
+#. translators: %s: Name of current post
+#: functions.php:363 template-parts/page/content-front-page-panels.php:43
+#: template-parts/page/content-front-page.php:44
+#: template-parts/post/content-audio.php:83
+#: template-parts/post/content-gallery.php:70
+#: template-parts/post/content-image.php:59
+#: template-parts/post/content-video.php:82 template-parts/post/content.php:56
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "อ่านเพิ่มเติม<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: inc/customizer.php:49
+msgid "Dark"
+msgstr "มืด"
+
+#: inc/back-compat.php:39 inc/back-compat.php:51 inc/back-compat.php:66
+msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Seventeen ต้องใช้กับเวิร์ดเพรสรุ่น 4.7 ขึ้นไป  คุณกำลังใช้งานรุ่น %s โปรดอัปเกรดและลองใหม่อีกครั้ง"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:116
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "แก้ไข<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/page/content-page.php:25
+#: template-parts/post/content-audio.php:88
+#: template-parts/post/content-gallery.php:75
+#: template-parts/post/content-image.php:64
+#: template-parts/post/content-video.php:87 template-parts/post/content.php:61
+msgid "Pages:"
+msgstr "หน้า:"
+
+#: template-parts/navigation/navigation-top.php:17
+msgid "Menu"
+msgstr "เมนู"
+
+#: header.php:27
+msgid "Skip to content"
+msgstr "ข้ามไปยังบทความ"
+
+#: functions.php:446
+msgid "Collapse child menu"
+msgstr "หดเมนูย่อย"
+
+#: functions.php:445
+msgid "Expand child menu"
+msgstr "ขยายเมนูย่อย"
+
+#: functions.php:64 functions.php:194
+msgid "Social Links Menu"
+msgstr "เมนูลิงก์โซเชียล"
+
+#: template-parts/footer/site-info.php:13
+msgid "Proudly powered by %s"
+msgstr "ภูมิใจนำเสนอโดย %s"
+
+#. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.3)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: template-parts/footer/site-info.php:13
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: footer.php:25
+msgid "Footer Social Links Menu"
+msgstr "ส่วนล่างเมนูลิงก์โซเชียล"
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr "การแสดงความเห็นถูกปิด"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:40
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s ความเห็นบน &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:36
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "หนึ่งความเห็นบน &ldquo;%s&rdquo;"
+
+#: archive.php:47 index.php:52 search.php:45
+msgid "Page"
+msgstr "หน้า"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "ขอโทษครับ  ไม่พบหน้านั้น"
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "ดูเหมือนว่าไม่พบสิ่งใดบนที่อยู่นั้น  บางทีคุณอยากลองใช้การค้นหา?"
+
+#: archive.php:45 index.php:50 search.php:43
+msgid "Previous page"
+msgstr "หน้าก่อนหน้า"
+
+#: archive.php:46 index.php:51 search.php:44
+msgid "Next page"
+msgstr "หน้าต่อไป"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "ทีมเวิร์ดเพรส"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyseventeen/"
+msgstr "https://wordpress.org/themes/twentyseventeen/"

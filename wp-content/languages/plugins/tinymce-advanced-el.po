@@ -1,0 +1,260 @@
+# Translation of Plugins - TinyMCE Advanced - Stable (latest release) in Greek
+# This file is distributed under the same license as the Plugins - TinyMCE Advanced - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-06-26 08:27:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: el_GR\n"
+"Project-Id-Version: Plugins - TinyMCE Advanced - Stable (latest release)\n"
+
+#: tadv_admin.php:333
+msgid "Replace the size setting available for fonts with: %s."
+msgstr "Αντικατάσταση της ρύθμισης μεγέθους για τις γραμματοσειρές με: %s."
+
+#: tadv_admin.php:380
+msgid "To use this option, add editor-style.css to your theme or a child theme. Enabling this option will also load that stylesheet in the editor."
+msgstr "Για να χρησιμοποιήσετε αυτή την επιλογή, προσθέστε το αρχείο editor-style.css στο θέμα σας ή σε ένα θέμα απόγονο του. Η ενεργοποίηση αυτής της επιλογής, θα φορτώσει επίσης αυτό το φύλλο στυλ στον επεξεργαστή."
+
+#: tadv_admin.php:375
+msgid "A stylesheet file named editor-style.css was not added by your theme."
+msgstr "Δεν έχει προστεθεί αρχείο φύλλου στυλ με όνομα editor-style.css από το θέμα σας."
+
+#: tadv_admin.php:369
+msgid "Your theme does not support editor-style.css."
+msgstr "Το θέμα εμφάνιση που χρησιμοποιείται δεν υποστηρίζει το editor-style.css."
+
+#: tadv_admin.php:368 tadv_admin.php:374
+msgid "ERROR:"
+msgstr "ΣΦΑΛΜΑ:"
+
+#: tinymce-advanced.php:867
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: tadv_admin.php:428
+msgid "Editors on the front end of the site"
+msgstr "Επεξεργαστές στο front end του ιστότοπου"
+
+#: tadv_admin.php:424
+msgid "Other editors in wp-admin"
+msgstr "Άλλους επεξεργαστές στο wp-admin"
+
+#: tadv_admin.php:420
+msgid "The main editor (Add New and Edit posts and pages)"
+msgstr "Τον κύριο επεξεργαστή (Προσθήκη Νέου και Επεξεργασία άρθρων και σελίδων)"
+
+#: tadv_admin.php:417
+msgid "Enable the editor enhancements for:"
+msgstr "Ενεργοποιήστε τις βελτιώσεις επεξεργαστή για:"
+
+#: tadv_admin.php:410
+msgid "Settings import and export"
+msgstr "Εισαγωγή και εξαγωγή ρυθμίσεων"
+
+#: tadv_admin.php:388
+msgid "Keep paragraph tags"
+msgstr "Διατήρηση ετικετών παραγράφου"
+
+#: tadv_admin.php:359
+msgid "Create CSS classes menu"
+msgstr "Δημιουργία μενού CSS κλάσεων"
+
+#: tadv_admin.php:332
+msgid "Font sizes"
+msgstr "Μεγέθη γραμματοσειράς"
+
+#: tadv_admin.php:327
+msgid "Open the TinyMCE link dialog when using the link button on the toolbar or the link menu item."
+msgstr "Άνοιγμα του διαλόγου συνδέσμου του TinyMCE όταν γίνεται χρήση του κουμπιού συνδέσμου στην γραμμή εργαλείων ή του στοιχείου σύνδεσμος από το μενού."
+
+#: tadv_admin.php:325
+msgid "Alternative link dialog"
+msgstr "Εναλλακτικός διάλογος συνδέσμου"
+
+#: tadv_admin.php:320
+msgid "Replace the browser context (right-click) menu."
+msgstr "Αντικατάσταση του μενού περιβάλλοντος (δεξί κλικ) του περιηγητή."
+
+#: tadv_admin.php:313
+msgid "Enable more list options: upper or lower case letters for ordered lists, disk or square for unordered lists, etc."
+msgstr "Ενεργοποίηση περισσότερων επιλογών λιστών: κεφαλαία ή πεζά γράμματα για αριθμημένες λίστες, δίσκο ή τετράγωνο για μη αριθμημένες λίστες, κτλ."
+
+#: tadv_admin.php:308
+msgid "Options"
+msgstr "Επιλογές"
+
+#. Author URI of the plugin/theme
+msgid "http://www.laptoptips.ca/"
+msgstr "http://www.laptoptips.ca/"
+
+#. Author of the plugin/theme
+msgid "Andrew Ozz"
+msgstr "Andrew Ozz"
+
+#. Description of the plugin/theme
+msgid "Enables advanced features and plugins in TinyMCE, the visual editor in WordPress."
+msgstr "Ενεργοποιεί προηγμένες λειτουργίες και πρόσθετα στο TinyMCE, τον Κειμενογράφο του WordPress."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.laptoptips.ca/projects/tinymce-advanced/"
+msgstr "http://www.laptoptips.ca/projects/tinymce-advanced/"
+
+#. Plugin Name of the plugin/theme
+msgid "TinyMCE Advanced"
+msgstr "TinyMCE Advanced"
+
+#: tinymce-advanced.php:298
+msgid "Please upgrade your WordPress installation or download an <a href=\"%s\">older version of the plugin</a>."
+msgstr "Παρακαλώ αναβαθμίστε την εγκατάσταση WordPress σας ή κάντε λήψη μια <a href=\"%s\">παλιότερη έκδοση του πρόσθετου</a>."
+
+#: tinymce-advanced.php:291
+msgid "TinyMCE Advanced requires WordPress version %1$s or newer. It appears that you are running %2$s. This can make the editor unstable."
+msgstr "Το TinyMCE Advanced απαιτεί έκδοση WordPress %1$s ή νεότερη. Φαίνεται πως τρέχετε την %2$s. Αυτό μπορεί να κάνει τον επεξεργαστή ασταθή."
+
+#: tadv_admin.php:445
+msgid "The [Toolbar toggle] button shows or hides the second, third, and forth button rows. It will only work when it is in the first row and there are buttons in the second row."
+msgstr "Το κουμπί [Εναλλαγή γραμμής εργαλείων] εμφανίζει ή κρύβει την δεύτερη, τρίτη, και τέταρτη σειρά κουμπιών. Θα λειτουργήσει μόνο όταν είναι στην πρώτη σειρά και υπάρχουν κουμπιά στην δεύτερη σειρά."
+
+#: tadv_admin.php:439
+msgid "Restore Default Settings"
+msgstr "Επαναφορά προεπιλεγμένων ρυθμίσεων"
+
+#: tadv_admin.php:413
+msgid "Import Settings"
+msgstr "Εισαγωγή Ρυθμίσεων"
+
+#: tadv_admin.php:412
+msgid "Export Settings"
+msgstr "Εξαγωγή Ρυθμίσεων"
+
+#: tadv_admin.php:408
+msgid "Administration"
+msgstr "Διαχείριση"
+
+#: tadv_admin.php:402
+msgid "These images will not be available in the Media Library."
+msgstr "Αυτές οι εικόνες δεν θα είναι διαθέσιμες στην Βιβλιοθήκη Πολυμέσων."
+
+#: tadv_admin.php:401
+msgid "This is not acceptable for larger images like photos or graphics, but may be useful in some cases for very small images like icons, not larger than 2-3KB."
+msgstr "Αυτό δεν είναι αποδεκτό για μεγαλύτερες εικόνες όπως φωτογραφίες ή γραφικά, αλλά μπορεί να είναι χρήσιμο σε μερικές περιπτώσεις για μικρές εικόνες όπως εικονίδια, όχι μεγαλύτερα από 2-3KB."
+
+#: tadv_admin.php:400
+msgid "Works only in Firefox and Safari. These browsers support pasting of images directly in the editor and convert them to base64 encoded text."
+msgstr "Λειτουργεί μόνο σε Firefox και Safari. Αυτοί οι περιηγητές υποστηρίζουν επικόλληση εικόνων απευθείας στον επεξεργαστή και τις μετατρέπουν σε κωδικοποιημένο κείμενο base64."
+
+#: tadv_admin.php:398
+msgid "Enable pasting of image source"
+msgstr "Ενεργοποίηση επικόλλησης πηγής εικόνας"
+
+#: tadv_admin.php:393
+msgid "Line breaks in the Text editor would still affect the output, in particular do not use empty lines, line breaks inside HTML tags or multiple &lt;br /&gt; tags."
+msgstr "Οι αλλαγές γραμμής στον επεξεργαστή Κειμένου θα συνεχίσουν να επηρεάζουν το αποτέλεσμα, συγκεκριμένα μην χρησιμοποιείτε κενές γραμμές, αλλαγές γραμμής μέσα σε ετικέτες HTML ή πολλαπλές ετικέτες &lt;br /&gt;."
+
+#: tadv_admin.php:392
+msgid "However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently."
+msgstr "Ωστόσο μπορεί να συμπεριφερθεί απροσδόκητα σε μερικές περιπτώσεις, γιαυτό δοκιμάστε το προσεκτικά πριν το ενεργοποιήσετε μόνιμα."
+
+#: tadv_admin.php:391
+msgid "This will make it possible to use more advanced coding in the Text editor without the back-end filtering affecting it much."
+msgstr "Αυτό θα καταστήσει δυνατή τη χρήση πιο προηγμένης κωδικοποίησης στον επεξεργαστή Κειμένου χωρίς να επηρεάζεται πολύ από το φιλτράρισμα του back-end."
+
+#: tadv_admin.php:390
+msgid "Stop removing the &lt;p&gt; and &lt;br /&gt; tags when saving and show them in the Text editor."
+msgstr "Σταματήστε την αφαίρεση των ετικετών &lt;p&gt; και &lt;br /&gt; όταν αποθηκεύετε και εμφανίστε τες στο Κείμενο."
+
+#: tadv_admin.php:363
+msgid "Load the CSS classes used in editor-style.css and replace the Formats menu."
+msgstr "Φόρτωση των κλάσεων CSS που χρησιμοποιούνται στο editor-style.css και αντικατάσταση του μενού Μορφές."
+
+#: tadv_admin.php:341
+msgid "Advanced Options"
+msgstr "Προχωρημένες Ρυθμίσεις"
+
+#: tadv_admin.php:318
+msgid "Context Menu"
+msgstr "Μενού Περιβάλλοντος"
+
+#: tadv_admin.php:311
+msgid "List Style Options"
+msgstr "Επιλογές Στυλ Λιστών"
+
+#: tadv_admin.php:266
+msgid "Unused Buttons"
+msgstr "Μη χρησιμοποιούμενα κουμπιά"
+
+#: tadv_admin.php:263
+msgid "Drag buttons from the unused buttons below and drop them in the toolbars above, or drag the buttons in the toolbars to rearrange them."
+msgstr "Σύρετε κουμπιά από τα παρακάτω μη χρησιμοποιούμενα και αποθέστε τα στις γραμμές εργαλείων παραπάνω, ή σύρετε τα κουμπιά στις γραμμές εργαλείων για να τα αναδιατάξετε."
+
+#: tadv_admin.php:151
+msgid "Enable the editor menu."
+msgstr "Ενεργοποίηση μενού του επεξεργαστή."
+
+#: tadv_admin.php:144 tadv_admin.php:440
+msgid "Save Changes"
+msgstr "Αποθήκευση Αλλαγών"
+
+#: tadv_admin.php:135
+msgid "Settings saved."
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
+
+#: tadv_admin.php:128
+msgid "Editor Settings"
+msgstr "Ρυθμίσεις Επεξεργαστή"
+
+#: tadv_admin.php:117
+msgid "ERROR: All toolbars are empty. Default settings loaded."
+msgstr "ΣΦΑΛΜΑ: Όλες οι γραμμές εργαλείων είναι άδειες. Φορτώθηκαν οι προεπιλεγμένες ρυθμίσεις."
+
+#: tadv_admin.php:104
+msgid "Importing of settings failed."
+msgstr "Η εισαγωγή των ρυθμίσεων απέτυχε."
+
+#: tadv_admin.php:86
+msgid "Import"
+msgstr "Εισαγωγή"
+
+#: tadv_admin.php:85
+msgid "Verify"
+msgstr "Επικύρωση"
+
+#: tadv_admin.php:80
+msgid "The settings are imported from a JSON encoded string. Please paste the exported string in the text area below."
+msgstr "Οι ρυθμίσεις εισάγονται από μια κωδικοποιημένη συμβολοσειρά JSON. Παρακαλώ επικολλήστε την εξαγόμενη συμβολοσειρά στο παρακάτω πεδίο κειμένου."
+
+#: tadv_admin.php:77
+msgid "TinyMCE Advanced Settings Import"
+msgstr "Εισαγωγή Ρυθμίσεων του TinyMCE Advanced"
+
+#: tadv_admin.php:65 tadv_admin.php:91
+msgid "Back to Editor Settings"
+msgstr "Επιστροφή στις Ρυθμίσεις Επεξεργαστή"
+
+#: tadv_admin.php:63
+msgid "Select All"
+msgstr "Επιλογή όλων"
+
+#: tadv_admin.php:58
+msgid "It is important that the export is not changed in any way, no spaces, line breaks, etc."
+msgstr "Είναι σημαντικό η εξαγωγή να μην αλλαχθεί με κανένα τρόπο, όχι κενά, αλλαγές γραμμής, κτλ."
+
+#: tadv_admin.php:57
+msgid "Please copy the content and save it in a <b>text</b> (.txt) file, using a plain text editor like Notepad."
+msgstr "Παρακαλώ αντιγράψτε το περιεχόμενο και αποθηκεύστε το σε ένα αρχείο <b>κειμένου</b> (.txt), χρησιμοποιώντας ένα πρόγραμμα επεξεργασίας απλού κειμένου όπως το σημειωματάριο (Notepad)."
+
+#: tadv_admin.php:56
+msgid "The settings are exported as a JSON encoded string."
+msgstr "Οι ρυθμίσεις εξάγονται ως κωδικοποιημένη συμβολοσειρά JSON."
+
+#: tadv_admin.php:52
+msgid "TinyMCE Advanced Settings Export"
+msgstr "Εξαγωγή ρυθμίσεων του TinyMCE Advanced"
+
+#: tadv_admin.php:40
+msgid "Default settings restored."
+msgstr "Έγινε επαναφορά στις προεπιλεγμένες ρυθμίσεις."

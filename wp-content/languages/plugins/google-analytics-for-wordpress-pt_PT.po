@@ -1,0 +1,759 @@
+# Translation of Plugins - Google Analytics by MonsterInsights - Stable (latest release) in Portuguese (Portugal)
+# This file is distributed under the same license as the Plugins - Google Analytics by MonsterInsights - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-10-12 15:15:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: pt\n"
+"Project-Id-Version: Plugins - Google Analytics by MonsterInsights - Stable (latest release)\n"
+
+#: googleanalytics.php:57
+msgid "MonsterInsights 6.0 is Coming Soon — %sCheck out the sneak peak%s — It’s going to be awesome"
+msgstr "Brevemente o MonsterInsights 6.0 — %sVeja aqui alguns detalhes%s — Vai ser fantástico"
+
+#: admin/pages/dashboard.php:20
+msgid "System Info"
+msgstr "Informações do sistema"
+
+#. Author URI of the plugin/theme
+msgid "https://www.monsterinsights.com/"
+msgstr "https://www.monsterinsights.com/"
+
+#. Author of the plugin/theme
+msgid "MonsterInsights"
+msgstr "MonsterInsights"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.monsterinsights.com/pricing/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpgaplugin&utm_content=v504"
+msgstr "https://www.monsterinsights.com/pricing/#utm_source=wordpress&utm_medium=plugin&utm_campaign=wpgaplugin&utm_content=v504"
+
+#: admin/views/content-footer.php:15
+msgid "Upgrade to Google Analytics By MonsterInsights Pro »"
+msgstr "Actualizar para Google Analytics By MonsterInsights Pro »"
+
+#: admin/pages/dashboard.php:14 admin/pages/extensions.php:14
+#: admin/pages/settings.php:10
+msgid "Google Analytics by MonsterInsights: "
+msgstr "Google Analytics by MonsterInsights: "
+
+#. #-#-#-#-#  tmp-google-analytics-for-wordpress.pot (Google Analytics by
+#. MonsterInsights 5.5.4)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/class-admin.php:553
+msgid "Google Analytics by MonsterInsights"
+msgstr "Google Analytics by MonsterInsights"
+
+#: admin/class-admin.php:547
+msgid "Google Analytics by MonsterInsights Pro"
+msgstr "Google Analytics by MonsterInsights Pro"
+
+#: admin/class-admin-menu.php:100
+msgid "Insights"
+msgstr "Insights"
+
+#: admin/class-admin-menu.php:100 admin/class-admin-menu.php:125
+msgid "Google Analytics by MonsterInsights:"
+msgstr "Google Analytics by MonsterInsights:"
+
+#. Description of the plugin/theme
+msgid "This plugin makes it simple to add Google Analytics to your WordPress site, adding lots of features, e.g. error page, search result and automatic outgoing links and download tracking."
+msgstr "Este plugin permite-lhe usar de modo simples o Google Analytics com o seu site WordPress, adicionando funcionalidades como, páginas de erro, resultados de pesquisa, ligações de saída e acompanhamento de descarregamentos."
+
+#: vendor/yoast/license-manager/views/form.php:84
+#: vendor/yoast/license-manager-2/views/form.php:84
+msgid "%sRenew your license now%s."
+msgstr "%sRenovar a sua licença agora%s."
+
+#: vendor/yoast/license-manager/views/form.php:81
+#: vendor/yoast/license-manager-2/views/form.php:81
+msgid "Your %s license will expire on %s."
+msgstr "A sua licença %s expira em %s."
+
+#: vendor/yoast/license-manager/views/form.php:64
+#: vendor/yoast/license-manager-2/views/form.php:64
+msgid "You defined your license key using the %s PHP constant."
+msgstr "Definiu a sua chave de licença através da constante de PHP %s."
+
+#: vendor/yoast/license-manager/views/form.php:62
+#: vendor/yoast/license-manager-2/views/form.php:62
+msgid "Paste your %s license key here.."
+msgstr "Cole aqui a sua chave da licença de %s..."
+
+#: vendor/yoast/license-manager/views/form.php:60
+#: vendor/yoast/license-manager-2/views/form.php:60
+msgid "License Key"
+msgstr "Chave da licença"
+
+#: vendor/yoast/license-manager/views/form.php:52
+#: vendor/yoast/license-manager-2/views/form.php:52
+msgid "Please enter a license key in the field below first."
+msgstr "Por favor, insira primeiro a chave da licença no campo abaixo."
+
+#: vendor/yoast/license-manager/views/form.php:46
+#: vendor/yoast/license-manager-2/views/form.php:46
+msgid "(deactivate your license so you can activate it on another WordPress site)"
+msgstr "(desactive a sua licença para que possa ativá-la noutro site WordPress)"
+
+#: vendor/yoast/license-manager/views/form.php:45
+#: vendor/yoast/license-manager-2/views/form.php:45
+msgid "Deactivate License"
+msgstr "Desactivar licença"
+
+#: vendor/yoast/license-manager/views/form.php:41
+#: vendor/yoast/license-manager-2/views/form.php:41
+msgid "Toggle license status"
+msgstr "Alterar o estado da licença"
+
+#: vendor/yoast/license-manager/views/form.php:31
+#: vendor/yoast/license-manager-2/views/form.php:31
+msgid "License status"
+msgstr "Estado da licença"
+
+#: vendor/yoast/license-manager/views/form.php:19
+#: vendor/yoast/license-manager-2/views/form.php:19
+msgid "Your server has an outdated version of the PHP module cURL (Version: %s). Please ask your hosting company to update this to a recent version of cURL. You can read more about that in our %sKnowledge base%s."
+msgstr "O seu servidor tem uma versão desactualizada do módulo cURL do PHP (Versão: %s). Por favor peça ao seu serviço de alojamento para actualizar o cURL para uma versão mais recente. Pode obter mais informações sobre este assunto na nossa %sbase de conhecimento%s."
+
+#: vendor/yoast/license-manager/views/form.php:15
+#: vendor/yoast/license-manager-2/views/form.php:15
+msgid "We couldn't create a connection to our API to verify your license key(s). Please ask your hosting company to allow outgoing connections from your server to %s."
+msgstr "Não foi possível estabelecer ligação à nossa API para verificar a sua licença. Por favor peça ao seu serviço de alojamento que permita ligações externas do seu servidor para o nosso %s."
+
+#: vendor/yoast/license-manager/class-update-manager.php:157
+#: vendor/yoast/license-manager-2/class-update-manager.php:157
+msgid "This site has not been activated properly on yoast.com and thus cannot check for future updates. Please activate your site with a valid license key."
+msgstr "Este site não foi correctamente activado em yoast.com e por isso não poderá verificar futuras actualizações. Por favor, active o seu site com uma chave de licença válida."
+
+#: vendor/yoast/license-manager/class-update-manager.php:79
+#: vendor/yoast/license-manager-2/class-update-manager.php:79
+msgid "%s failed to check for updates because of the following error: <em>%s</em>"
+msgstr "O %s falhou a verificação de actualizações devido ao seguinte erro: <em>%s</em>"
+
+#: vendor/yoast/license-manager/class-theme-update-manager.php:97
+#: vendor/yoast/license-manager-2/class-theme-update-manager.php:97
+msgid "<strong>%s version %s</strong> is available. <a href=\"%s\" class=\"thickbox\" title=\"%s\">Check out what's new</a> or <a href=\"%s\" %s>update now</a>."
+msgstr "<strong>O %s versão %s</strong> está disponível. <a href=\"%s\" class=\"thickbox\" title=\"%s\">Descubra o que há de novo</a> ou <a href=\"%s\" %s>atualize agora</a>."
+
+#: vendor/yoast/license-manager/class-theme-update-manager.php:92
+#: vendor/yoast/license-manager-2/class-theme-update-manager.php:92
+msgid "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update."
+msgstr "Ao actualizar este tema perderá qualquer personalização que tenha feito. 'Cancelar' para parar, 'OK' para actualizar."
+
+#: vendor/yoast/license-manager/class-theme-license-manager.php:34
+#: vendor/yoast/license-manager-2/class-theme-license-manager.php:34
+msgid "Theme License"
+msgstr "Licença do tema"
+
+#: vendor/yoast/license-manager/class-theme-license-manager.php:34
+#: vendor/yoast/license-manager-2/class-theme-license-manager.php:34
+msgid "%s License"
+msgstr "Licença de %s"
+
+#: vendor/yoast/license-manager/class-plugin-license-manager.php:75
+#: vendor/yoast/license-manager-2/class-plugin-license-manager.php:75
+msgid "%s is network activated, please contact your site administrator to manage the license."
+msgstr "O %s está activado na rede, por favor contacte o administrador do site para gerir a licença."
+
+#: vendor/yoast/license-manager/class-plugin-license-manager.php:73
+#: vendor/yoast/license-manager-2/class-plugin-license-manager.php:73
+msgid "%s is network activated, you can manage your license in the <a href=\"%s\">network admin license page</a>."
+msgstr "O %s está activado na rede, poderá gerir a sua licença na <a href=\"%s\">página de gestão de licenças de rede</a>."
+
+#: vendor/yoast/license-manager/class-license-manager.php:426
+#: vendor/yoast/license-manager-2/class-license-manager.php:426
+msgid "%s: License Settings"
+msgstr "%s: Definições da licença"
+
+#: vendor/yoast/license-manager/class-license-manager.php:267
+#: vendor/yoast/license-manager-2/class-license-manager.php:267
+msgid "Request error: \"%s\" (%scommon license notices%s)"
+msgstr "Erro de pedido: \"%s\" (%savisos comuns de licenças%s)"
+
+#: vendor/yoast/license-manager/class-license-manager.php:231
+#: vendor/yoast/license-manager-2/class-license-manager.php:231
+msgid "Failed to deactivate your %s license."
+msgstr "Falhou ao desactivar a sua licença de %s."
+
+#: vendor/yoast/license-manager/class-license-manager.php:229
+#: vendor/yoast/license-manager-2/class-license-manager.php:229
+msgid "Your %s license has been deactivated."
+msgstr "A sua licença %s foi desactivada."
+
+#: vendor/yoast/license-manager/class-license-manager.php:205
+#: vendor/yoast/license-manager-2/class-license-manager.php:205
+msgid "Failed to activate your license, your license key seems to be invalid."
+msgstr "Falhou ao activar a sua licença, a sua chave parece ser inválida."
+
+#: vendor/yoast/license-manager/class-license-manager.php:202
+#: vendor/yoast/license-manager-2/class-license-manager.php:202
+msgid "Your license has expired. You must <a href=\"%s\">extend your license</a> in order to use it again."
+msgstr "A sua licença expirou. Terá de <a href=\"%s\">renovar a sua licença</a> para poder utilizá-la de novo."
+
+#: vendor/yoast/license-manager/class-license-manager.php:199
+#: vendor/yoast/license-manager-2/class-license-manager.php:199
+msgid "You've reached your activation limit. You must <a href=\"%s\">upgrade your license</a> to use it on this site."
+msgstr "Atingiu o seu limite de activações. Terá de <a href=\"%s\">actualizar a sua licença</a> para poder utilizá-la neste site."
+
+#: vendor/yoast/license-manager/class-license-manager.php:190
+#: vendor/yoast/license-manager-2/class-license-manager.php:190
+msgid "<a href=\"%s\">Your license is expiring in %d days, would you like to extend it?</a>"
+msgstr "<a href=\"%s\">A sua licença expira em %d dias, deseja renová-la?</a>"
+
+#: vendor/yoast/license-manager/class-license-manager.php:186
+#: vendor/yoast/license-manager-2/class-license-manager.php:186
+msgid "<a href=\"%s\">Did you know you can upgrade your license?</a>"
+msgstr "<a href=\"%s\">Sabia que pode actualizar a sua licença?</a>"
+
+#: vendor/yoast/license-manager/class-license-manager.php:181
+#: vendor/yoast/license-manager-2/class-license-manager.php:181
+msgid "You have used %d/%d activations. "
+msgstr "Usou %d/%d ativações."
+
+#: vendor/yoast/license-manager/class-license-manager.php:179
+#: vendor/yoast/license-manager-2/class-license-manager.php:179
+msgid "You have an unlimited license. "
+msgstr "Tem uma licença ilimitada."
+
+#: vendor/yoast/license-manager/class-license-manager.php:175
+#: vendor/yoast/license-manager-2/class-license-manager.php:175
+msgid "Your %s license has been activated. "
+msgstr "A sua licença %s foi activada. "
+
+#: vendor/yoast/license-manager/class-license-manager.php:134
+#: vendor/yoast/license-manager-2/class-license-manager.php:134
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %s updates. Please add %s to %s."
+msgstr "<b>Aviso!</b> Está a bloquear pedidos externos, o que significa que não receberá actualizações de %s. Por favor adicione %s a %s."
+
+#: googleanalytics.php:112
+msgid "The (standard) PHP filter extension seem to be unavailable. Please ask your web host to enable it."
+msgstr "A extensão PHP filter (padrão) não está disponível. Por favor peça ao seu serviço de alojamento para activá-la."
+
+#: googleanalytics.php:99
+msgid "The Standard PHP Library (SPL) extension seem to be unavailable. Please ask your web host to enable it."
+msgstr "A extensão PHP Library (padrão) não está disponível. Por favor peça ao seu serviço de alojamento para activá-la."
+
+#: frontend/abstract-class-tracking.php:482
+msgid "Normally you will find the Google Analytics tracking code here, but the webmaster has enabled the Debug Mode."
+msgstr "Por norma encontra aqui o código de acompanhamento do Google Analytics, mas o webmaster activou o modo de depuração."
+
+#: frontend/abstract-class-tracking.php:479
+msgid "@Webmaster, normally you will find the Google Analytics tracking code here, but the Debug Mode is enabled. To change this, navigate to Analytics -> Settings -> (Tab) Debug Mode and disable Debug Mode to enable tracking of your site."
+msgstr "@Webmaster, normalmente encontraria aqui o código de acompanhamento do Google Analytics, mas o modo de depuração está activo. Para alterar, navegue até Insights -> Definições -> (Separador) Modo de depuração e desactive o modo de depuração para permitir o acompanhamento do seu site."
+
+#: frontend/abstract-class-tracking.php:461
+msgid "Normally you will find the Google Analytics tracking code here, but the webmaster disabled your user group."
+msgstr "Por norma encontra aqui o código de acompanhamento do Google Analytics, mas o webmaster desactivou o seu grupo de utilizadores."
+
+#: frontend/abstract-class-tracking.php:458
+msgid "@Webmaster, normally you will find the Google Analytics tracking code here, but you are in the disabled user groups. To change this, navigate to Analytics -> Settings (Ignore usergroups)"
+msgstr "@Webmaster, normalmente encontraria aqui o código de acompanhamento do Google Analytics, mas está no grupo de utilizadores desactivado. Para alterar isto, navegue até Insights -> Definições (Ignorar grupos de utilizadores)"
+
+#: frontend/abstract-class-tracking.php:455
+#: frontend/abstract-class-tracking.php:476
+msgid "This site uses the %1$s plugin version %2$s"
+msgstr "Este site usa a plugin %1$s versão %2$s"
+
+#: admin/views/content-footer.php:14
+msgid "Remove these ads?"
+msgstr "Remover estes anúncios?"
+
+#: admin/pages/settings.php:185
+msgid "Select the users to ignore"
+msgstr "Escolha os utilizadores a ignorar"
+
+#: admin/pages/settings.php:171
+msgid "Enable debug mode"
+msgstr "Activar o modo de depuração"
+
+#: admin/pages/settings.php:169
+msgid "<strong>Note</strong> the debugging is only loaded for administrators."
+msgstr "<strong>Atenção</strong> que a depuração só é carregada para os administradores."
+
+#: admin/pages/settings.php:168
+msgid "If you want to confirm that tracking on your blog is working as it should, enable this option and check the console of your browser. Be absolutely sure to disable debugging afterwards, as it is slower than normal tracking."
+msgstr "Se quiser confirmar que o acompanhamento do seu site está a funcionar correctamente, active esta opção e veja a consola do seu navegador. Tenha a certeza que desactiva esta opção posteriormente, porque o acompanhamento fica mais lento que o normal."
+
+#: admin/pages/settings.php:165
+msgid "Debug"
+msgstr "Depuração"
+
+#: admin/pages/settings.php:158
+msgid "Custom dimensions"
+msgstr "Dimensões personalizadas"
+
+#: admin/pages/settings.php:147
+msgid "Not for the average user: this allows you to add a line of code, to be added before the %1$s call."
+msgstr "Não é para o utilizador médio: isto permite adicionar uma linha de código, para ser adicionado antes da chamada %1$s."
+
+#: admin/pages/settings.php:147
+msgid "Custom code"
+msgstr "Código personalizado"
+
+#: admin/pages/settings.php:145
+msgid "This adds a %1$s call to your tracking code, allowing you to use %2$s and related functions."
+msgstr "Isto adiciona uma chamada %1$s ao seu código de acompanhamento, permitindo que use %2$s e funções relacionadas."
+
+#: admin/pages/settings.php:145
+msgid "Add <code>_setAllowLinker</code>"
+msgstr "Adicionar <code>_setAllowLinker</code>"
+
+#: admin/pages/settings.php:144
+msgid "This adds a %1$s call to your tracking code, and makes RSS link tagging use a %2$s as well."
+msgstr "Isto adiciona uma chamada %1$s ao seu código de acompanhamento e faz com que a ligação RSS use também um %2$s."
+
+#: admin/pages/settings.php:144
+msgid "Allow anchor"
+msgstr "Permitir âncora"
+
+#: admin/pages/settings.php:143
+msgid "Do not use this feature if you use FeedBurner, as FeedBurner can do this automatically and better than this plugin can. Check <a href=\"https://support.google.com/feedburner/answer/165769?hl=en&amp;ref_topic=13075\" target=\"_blank\">this help page</a> for info on how to enable this feature in FeedBurner."
+msgstr "Se usar o FeedBurner não use esta funcionalidade, porque o FeedBurner pode fazer isto automaticamente e melhor do que este plugin. Veja <a href=\"https://support.google.com/feedburner/answer/165769?hl=en&amp;ref_topic=13075\" target=\"_blank\">esta página de ajuda</a> para obter informações sobre como activar esta função no FeedBurner."
+
+#: admin/pages/settings.php:143
+msgid "Tag links in RSS feed with campaign variables"
+msgstr "Marcar ligações dos conteúdos RSS com etiquetas de variáveis de campanha"
+
+#: admin/pages/settings.php:141
+msgid "Label for those links"
+msgstr "Etiqueta para estas ligações"
+
+#: admin/pages/settings.php:140
+msgid "If you want to track all internal links that begin with %1$s, enter %1$s in the box above. If you have multiple prefixes you can separate them with comma's: %2$s"
+msgstr "Se quiser acompanhar todas as ligações internas que começam por %1$s, insira %1$s no campo. Se tiver vários prefixos pode separá-los por vírgulas vírgulas: %2$s"
+
+#: admin/pages/settings.php:140
+msgid "Set path for internal links to track as outbound links"
+msgstr "Define o caminho de ligações internas a serem acompanhadas como ligações de saída"
+
+#: admin/pages/settings.php:138
+msgid "This allows you to set the domain that's set by %1$s for tracking subdomains.<br/>If empty, this will not be set."
+msgstr "Isto permite-lhe inserir o domínio definido por %1$s para acompanhar subdomínios.<br/> Se deixar em branco, não ficará definido."
+
+#: admin/pages/settings.php:138
+msgid "Subdomain tracking"
+msgstr "Acompanhar subdomínio"
+
+#: admin/pages/settings.php:137
+msgid "Track full URL of outbound clicks or just the domain"
+msgstr "Acompanhar o URL completo dos cliques de saída ou somente o domínio"
+
+#: admin/pages/settings.php:136
+msgid "Extensions of files to track as downloads"
+msgstr "Extensões dos ficheiros a acompanhar como descarregamentos"
+
+#: admin/pages/settings.php:135
+msgid "Not recommended, as this would skew your statistics, but it does make it possible to track downloads as goals."
+msgstr "Não é recomendado, porque isto irá adulterar as suas estatísticas, mas permite acompanhar os descarregamentos como objectivos."
+
+#: admin/pages/settings.php:135
+msgid "Track downloads as"
+msgstr "Acompanhar descarregamentos como"
+
+#: admin/pages/settings.php:134
+msgid "Advanced settings"
+msgstr "Definições avançadas"
+
+#: admin/pages/settings.php:124
+msgid "Add %1$sEnhanced Link Attribution%2$s to your tracking code."
+msgstr "Adicionar %1$sAtribuição avançada de ligações%2$s ao código de acompanhamento."
+
+#: admin/pages/settings.php:124
+msgid "Enhanced Link Attribution"
+msgstr "Atribuição avançada de ligações"
+
+#: admin/pages/settings.php:118
+msgid "Check this setting to add the Demographics and Remarketing features to your Google Analytics tracking code. We've written an article in our %1$sknowledge base%2$s about Demographics and Interest reports. For more information about Remarketing, we refer you to %3$sGoogle's documentation%2$s."
+msgstr "Seleccione esta opção para adicionar as funcionalidades de Dados demográficos e Marketing ao código de acompanhamento do Google Analytics. Escrevemos um artigo na nossa %1$sbase de conhecimento%2$s sobre relatórios de Dados demográficos e Interesses. Para mais informações sobre marketing, aconselhamos a %3$sdocumentação do Google%2$s."
+
+#: admin/pages/settings.php:115
+msgid "Note that usage of this function is affected by privacy and cookie laws around the world. Be sure to follow the laws that affect your target audience."
+msgstr "Atenção que o uso desta função é afectado pelas lei de privacidade e de cookies em todo o mundo. Tenha a certeza de cumprir as leis que afectam o seu público alvo."
+
+#: admin/pages/settings.php:113
+msgid "Enable Demographics and Interests Reports for Remarketing and Advertising"
+msgstr "Activar os relatórios de Dados demográficos e Interesses para marketing e publicidade"
+
+#: admin/pages/settings.php:110
+msgid "First enable Universal tracking in your Google Analytics account. Please read %1$sthis guide%2$s to learn how to do that."
+msgstr "Primeiro active o acompanhamento universal na sua conta do Google Analytics. Por favor, leia %1$seste guia%2$s para saber como o fazer."
+
+#: admin/pages/settings.php:110
+msgid "Enable Universal tracking"
+msgstr "Activar acompanhamento universal"
+
+#: admin/pages/settings.php:109
+msgid "Universal settings"
+msgstr "Definições universais"
+
+#: admin/pages/settings.php:103
+msgid "This will completely disable the dashboard and stop the plugin from fetching the latest analytics data."
+msgstr "Isto desactivará completamente o painel e impede o plugin de obter os últimos dados do Analytics."
+
+#: admin/pages/settings.php:103
+msgid "Disable analytics dashboard"
+msgstr "Desactivar painel Analytics"
+
+#: admin/pages/settings.php:102
+msgid "Users of the role you select will be ignored, so if you select Editor, all Editors will be ignored."
+msgstr "Serão ignorados os utilizadores com os papéis seleccionados, logo se escolher Editor, todos os Editores serão ignorados."
+
+#: admin/pages/settings.php:102
+msgid "Ignore users"
+msgstr "Ignorar utilizadores"
+
+#: admin/pages/settings.php:101
+msgid "This adds %1$s, telling Google Analytics to anonymize the information sent by the tracker objects by removing the last octet of the IP address prior to its storage."
+msgstr "Isto adiciona %1$s, para pedir ao Google Analytics que torne anónima a informação enviada pelos objetos acompanhados, removendo o último octeto do endereço IP antes de seu armazenamento."
+
+#: admin/pages/settings.php:101
+msgid "Anonymize IPs"
+msgstr "Tornar IPs anónimos"
+
+#: admin/pages/settings.php:100
+msgid "By allowing us to track anonymous data we can better help you, because we know with which WordPress configurations, themes and plugins we should test. No personal data will be submitted."
+msgstr "Ao permitir o acompanhamento de dados anónimos será possível ajudá-lo melhor, porque assim será possível saber que configurações de WordPress, temas e plugins têm que ser testadas. Nenhuns dados pessoais serão submetidos."
+
+#: admin/pages/settings.php:100
+msgid "Allow tracking of anonymous data"
+msgstr "Permitir acompanhamento de dados anónimos"
+
+#: admin/pages/settings.php:99
+msgid "Clicks and downloads will be tracked as events, you can find these under Content &#xBB; Event Tracking in your Google Analytics reports."
+msgstr "Os cliques e descarregamentos serão acompanhados como eventos, pode encontrá-los no acompanhamento de Conteúdo &#xBB; Eventos nos relatórios do Google Analytics."
+
+#: admin/pages/settings.php:99
+msgid "Track outbound click and downloads"
+msgstr "Acompanhe cliques de saída e descarregamentos"
+
+#: admin/pages/settings.php:93
+msgid "Warning: If you use a manual UA code, you won't be able to use the dashboards."
+msgstr "Aviso: se usar um código UA manualmente, não será possível usar os painéis."
+
+#: admin/pages/settings.php:89
+msgid "Manually enter your UA code"
+msgstr "Inserir manualmente o seu código UA"
+
+#: admin/pages/settings.php:85
+msgid "Until this is fixed, you can only use the manual authentication method and cannot use the dashboards feature."
+msgstr "Até que isto seja corrigido, só pode usar o método de autenticação manual e não poderá usar os painéis."
+
+#: admin/pages/settings.php:83
+msgid "Your firewall or webhost is blocking requests to Google, please ask your webhost company to fix this."
+msgstr "A sua firewall ou serviço de alojamento está a bloquear os pedidos do Google, por favor, contacte a empresa de alojamento para corrigir isto."
+
+#: admin/pages/settings.php:80
+msgid "Your server is blocking requests to Google, to fix this, add <code>*.googleapis.com</code> to the <code>WP_ACCESSIBLE_HOSTS</code> constant in your <em>wp-config.php</em> or ask your webhost to do this."
+msgstr "O seu servidor está a bloquear pedidos do Google, para corrigir isto, adicione <code>*.googleapis.com</code> à constante <code>WP_ACCESSIBLE_HOSTS</code> no seu <em>wp-config.php</em> ou peça ao serviço de alojamento para fazer isto."
+
+#: admin/pages/settings.php:78
+msgid "Cannot connect to Google"
+msgstr "Não é possível ligar ao Google"
+
+#: admin/pages/settings.php:74
+msgid "Save authentication code"
+msgstr "Guardar código de autenticação"
+
+#: admin/pages/settings.php:70
+msgid "Paste your Google code here"
+msgstr "Cole aqui o código do Google"
+
+#: admin/pages/settings.php:64
+msgid "Re-authenticate with your Google account"
+msgstr "Autenticar de novo com a sua conta Google"
+
+#: admin/pages/settings.php:60
+msgid "Select a profile"
+msgstr "Seleccione um perfil"
+
+#: admin/pages/settings.php:60
+msgid "Analytics profile"
+msgstr "Perfil do Google Analytics"
+
+#: admin/pages/settings.php:55
+msgid "Current UA-profile"
+msgstr "Perfil actual UA"
+
+#: admin/pages/settings.php:52
+msgid "Authenticate with your Google account"
+msgstr "Autenticar com a sua conta Google"
+
+#: admin/pages/settings.php:51
+msgid "Google profile"
+msgstr "Perfil do Google"
+
+#: admin/pages/settings.php:46
+msgid "Paste your Google authentication code"
+msgstr "Cole o código de autenticação do Google"
+
+#: admin/pages/settings.php:22
+msgid "Debug mode"
+msgstr "Modo de depuração "
+
+#: admin/pages/settings.php:20
+msgid "Custom Dimensions"
+msgstr "Dimensões personalizadas"
+
+#: admin/pages/settings.php:19
+msgid "Advanced"
+msgstr "Avançadas"
+
+#: admin/pages/settings.php:18
+msgid "Universal"
+msgstr "Universais"
+
+#: admin/pages/settings.php:17
+msgid "General"
+msgstr "Gerais"
+
+#: admin/pages/extensions.php:51
+msgid "You have not installed any extensions for Google Analytics by MonsterInsights, so there are no licenses to activate."
+msgstr "Não instalou nenhuma extensão do Google Analytics by MonsterInsights, por isto não tem nenhuma licença para activar."
+
+#: admin/pages/extensions.php:41
+msgid "Installed"
+msgstr "Instalado"
+
+#: admin/pages/extensions.php:39 vendor/yoast/license-manager/views/form.php:50
+#: vendor/yoast/license-manager-2/views/form.php:50
+msgid "Activate License"
+msgstr "Activar licença"
+
+#: admin/pages/extensions.php:36
+msgid "Get this extension"
+msgstr "Obter esta extensão"
+
+#: admin/pages/extensions.php:18
+msgid "Licenses"
+msgstr "Licenças"
+
+#: admin/pages/dashboard.php:101
+msgid "Select a dimension"
+msgstr "Seleccione uma dimensão"
+
+#: admin/pages/dashboard.php:66 admin/pages/dashboard.php:112
+msgid "You have not yet finished setting up Google Analytics for Wordpress by MonsterInsights. Please %sadd your Analytics profile here%s to enable tracking."
+msgstr "Ainda não está concluída a configuração do Google Analytics by MonsterInsights. Por favor %sadicione aqui o seu perfil do Analytics%s para activar o acompanhamento."
+
+#: admin/pages/dashboard.php:53 admin/pages/dashboard.php:92
+msgid "Because we've switched to a newer version of the Google Analytics API, you'll need to re-authenticate with Google Analytics. We're sorry for the inconvenience. You can %sre-authenticate your Google Analytics profile here%s."
+msgstr "Como o plugin mudou para uma nova versão da API do Google Analytics, é preciso autenticar de novo com o Google Analytics. Lamentamos o inconveniente. Pode %sautenticar de novo o seu perfil do Google Analytics aqui%s."
+
+#: admin/pages/dashboard.php:44 admin/pages/dashboard.php:83
+msgid "We need you to authenticate with Google Analytics to use this functionality. If you set your UA-code manually, this won't work. You can %sauthenticate your Google Analytics profile here%s to enable dashboards."
+msgstr "Tem que se autenticar com o Google Analytics para utilizar esta funcionalidade. Não vai funcionar se definir o seu código UA manualmente. Pode %sautenticar aqui o seu perfil do Google Analytics%s para activar os painéis."
+
+#: admin/pages/dashboard.php:17
+msgid "Overview"
+msgstr "Visão geral"
+
+#: admin/dashboards/views/graph.php:15 admin/dashboards/views/table.php:15
+msgid "Last month"
+msgstr "Mês anterior"
+
+#: admin/dashboards/class-admin-dashboards.php:223
+msgid "The country or territory from which visits originated. <a href=\"http://yoa.st/gacountry\" target=\"_blank\">[Learn more]</a>"
+msgstr "O país ou território de origem das visitas. <a href=\"http://yoa.st/gacountry\" target=\"_blank\">[Saiba mais]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:222
+msgid "Countries"
+msgstr "Países"
+
+#: admin/dashboards/class-admin-dashboards.php:214
+msgid "Pages by url."
+msgstr "Páginas por URL."
+
+#: admin/dashboards/class-admin-dashboards.php:213
+msgid "Popular pages"
+msgstr "Páginas populares"
+
+#: admin/dashboards/class-admin-dashboards.php:205
+msgid "Every referral to a web site has an origin, or (traffic) source. Possible sources include: “google” (the name of a search engine), “facebook.com” (the name of a referring site), “spring_newsletter” (the name of one of your newsletters), and “direct” (users that typed your URL directly into their browser, or who had bookmarked your site). <a href=\"http://yoa.st/gabnce\" target=\"_blank\">[Learn more]</a>"
+msgstr "Todas as referências a um site têm uma origem, ou fonte (de tráfego). Fontes possíveis incluem: \"Google\" (o nome de um motor de pesquisa), \"facebook.com\" (o nome de um site de referência), \"spring_newsletter\" (o nome de um dos seus boletins de notícias), e \"directos\" (utilizadores que digitaram o URL directamente no navegador, ou que tinham o seu site nos favoritos). <a href=\"http://yoa.st/gabnce\" target=\"_blank\">[Saiba mais]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:204
+msgid "Traffic sources"
+msgstr "Fontes de tráfego"
+
+#: admin/dashboards/class-admin-dashboards.php:198
+msgid "Bounce Rate is the percentage of single-page sessions (i.e. sessions in which the person left your site from the entrance page without interacting with the page). <a href=\"http://yoa.st/gabounce\" target=\"_blank\">[Learn more]</a>"
+msgstr "A taxa de rejeição é a percentagem de sessões de uma única página (ou seja, sessões em que a pessoa deixou o seu site a partir da página de entrada, sem interagir com a página). <a href=\"http://yoa.st/gabounce\" target=\"_blank\">[Saiba mais]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:197
+msgid "Bounce rate"
+msgstr "Taxa de rejeição"
+
+#: admin/dashboards/class-admin-dashboards.php:192
+msgid "A session is a group of interactions that take place on your website within a given time frame. For example a single session can contain multiple screen or page views, events, social interactions, and ecommerce transactions. <a href=\"http://yoa.st/gasessions\" target=\"_blank\">[Learn more]</a>"
+msgstr "A sessão é um grupo de interações que ocorrem no seu site durante um determinado período de tempo. Por exemplo, uma única sessão pode conter vários ecrãs ou visita de páginas, eventos, interações sociais e transações de comércio eletrónico. <a href=\"http://yoa.st/gasessions\" target=\"_blank\">[Saiba mais]</a>"
+
+#: admin/dashboards/class-admin-dashboards.php:191
+#: admin/dashboards/class-admin-dashboards.php:208
+#: admin/dashboards/class-admin-dashboards.php:217
+#: admin/dashboards/class-admin-dashboards.php:226
+msgid "Sessions"
+msgstr "Sessões"
+
+#: admin/dashboards/class-admin-dashboards.php:153 admin/pages/dashboard.php:19
+msgid "Custom dimension reports"
+msgstr "Relatórios personalizados"
+
+#: admin/dashboards/class-admin-dashboards.php:152 admin/pages/dashboard.php:18
+msgid "Reports"
+msgstr "Relatórios"
+
+#: admin/dashboards/class-admin-dashboards.php:149
+msgid "No matching records found"
+msgstr "Não foram encontrados registos correspondentes"
+
+#: admin/dashboards/class-admin-dashboards.php:148
+msgid "Search"
+msgstr "Procurar"
+
+#: admin/dashboards/class-admin-dashboards.php:147
+msgid "Processing..."
+msgstr "A processar..."
+
+#: admin/dashboards/class-admin-dashboards.php:146
+msgid "Previous"
+msgstr "Anterior"
+
+#: admin/dashboards/class-admin-dashboards.php:145
+msgid "Next"
+msgstr "Seguinte"
+
+#: admin/dashboards/class-admin-dashboards.php:144
+msgid "Last"
+msgstr "Último"
+
+#: admin/dashboards/class-admin-dashboards.php:143
+msgid "First"
+msgstr "Primeiro"
+
+#: admin/dashboards/class-admin-dashboards.php:142
+msgid "Loading..."
+msgstr "A carregar..."
+
+#: admin/dashboards/class-admin-dashboards.php:141
+msgctxt "_MAX_ will be replaced by JS"
+msgid "Show _MENU_ rows"
+msgstr "Mostrar _MENU_ linhas"
+
+#: admin/dashboards/class-admin-dashboards.php:140
+msgctxt "_MAX_ will be replaced by JS (See: http://datatables.net/reference/option/language.infoFiltered)"
+msgid "(filtered from _MAX_ total rows)"
+msgstr "(Filtrado de _MAX_ total linhas)"
+
+#: admin/dashboards/class-admin-dashboards.php:139
+msgid "No rows to show"
+msgstr "Nenhuma linha para mostrar"
+
+#: admin/dashboards/class-admin-dashboards.php:138
+msgctxt "_START_, _END_ and _TOTAL_ will be replaced by JS (See: http://datatables.net/reference/option/language.info)"
+msgid "Showing _START_ to _END_ of _TOTAL_ rows"
+msgstr "A mostrar _START_ to _END_ of _TOTAL_ linhas"
+
+#: admin/dashboards/class-admin-dashboards.php:137
+msgid "No data available"
+msgstr "Sem dados disponíveis"
+
+#: admin/dashboards/class-admin-dashboards.php:136
+msgid ": activate to sort column descending"
+msgstr ": activar para ordenar a coluna em modo descendente"
+
+#: admin/dashboards/class-admin-dashboards.php:135
+msgid ": activate to sort column ascending"
+msgstr ": activar para ordenar a coluna em modo ascendente"
+
+#: admin/class-google-analytics.php:349
+msgid "Data is not up-to-date, there was an error in retrieving the data from Google Analytics. This error could be caused by several issues. If the error persists, please see %sthis page%s."
+msgstr "Os dados não estão atualizados, ocorreu um erro ao obter os dados do Google Analytics. Este erro pode ser causado por vários problemas. Se o erro persistir, consulte %sesta página%s."
+
+#: admin/class-google-analytics.php:336
+msgid "It seems the authentication for the plugin has expired, please %sre-authenticate%s with Google Analytics to allow the plugin to fetch data."
+msgstr "Parece que a autenticação para o plugin expirou, por favor %sautentique-se de novo%s com o Google Analytics para permitir que o plugin possa recolher dados."
+
+#: admin/class-google-analytics.php:323
+msgid "Please configure your %sGoogle Analytics settings%s!"
+msgstr "Por favor, configure as suas %sdefinições do Google Analytics%s!"
+
+#: admin/class-admin.php:554
+msgid "Track your eCommerce data and transactions with this eCommerce extension for Google Analytics."
+msgstr "Acompanhe os seus dados de comércio eletrónico e transações com esta extensão eCommerce para o Google Analytics."
+
+#: admin/class-admin.php:553
+msgid "eCommerce tracking"
+msgstr "Acompanhamento de eCommerce"
+
+#: admin/class-admin.php:548
+msgid "The premium version of Google Analytics by MonsterInsights with more features and support."
+msgstr "A versão premium do Google Analytics by MonsterInsights com mais funcionalidades e suporte."
+
+#: admin/class-admin.php:469
+msgid "Full links"
+msgstr "Ligações completas"
+
+#: admin/class-admin.php:468
+msgid "Just the domain"
+msgstr "Apenas o domínio"
+
+#: admin/class-admin.php:457
+msgid "Pageview"
+msgstr "Páginas visitadas"
+
+#: admin/class-admin.php:456
+msgid "Event"
+msgstr "Evento"
+
+#: admin/class-admin.php:342
+msgid "This will also give you access to the support team at MonsterInsights, who will provide support on the plugin 24/7."
+msgstr "Isto também lhe permite o acesso à equipa de suporte da MonsterInsights, com suporte 24/7 sobre o plugin."
+
+#: admin/class-admin.php:340
+msgid "If you want to track custom dimensions like page views per author or post type, you should upgrade to the %1$spremium version of Google Analytics by MonsterInsights%2$s."
+msgstr "Se quiser acompanhar dimensões personalizadas, tais como visitas de páginas por autor ou por tipo de conteúdo, deve actualizar para a %1$sversão premium do Google Analytics by MonsterInsights%2$s."
+
+#: admin/class-admin.php:325
+msgid "FAQ"
+msgstr "FAQ"
+
+#: admin/class-admin.php:187
+msgid "The UA code needs to follow UA-XXXXXXXX-X format."
+msgstr "O código UA tem que ter o formato UA-XXXXXXXX-X."
+
+#: admin/class-admin.php:143
+msgid "There were no changes to save, please try again."
+msgstr "Nenhuma alteração a guardar, por favor tente de novo."
+
+#: admin/class-admin.php:136
+msgid "Settings saved."
+msgstr "Definições guardadas."
+
+#: admin/class-admin.php:93
+msgid "MonsterInsights plugins share some code between them to make your site faster. As a result of that, we need all MonsterInsights plugins to be up to date. We've detected this isn't the case, so please update the MonsterInsights plugins that aren't up to date yet."
+msgstr "Os plugins MonsterInsights partilham algum código entre eles, para que o seu site seja rápido. Para isto, é necessário que os plugins MonsterInsights estejam actualizados. Foi detectado que este não é o caso, por favor, actualize os plugins MonsterInsights que não estão actualizados."
+
+#: admin/class-admin-menu.php:239 admin/pages/extensions.php:14
+#: admin/pages/extensions.php:17
+msgid "Extensions"
+msgstr "Extensões"
+
+#: admin/class-admin-menu.php:232 admin/class-admin.php:328
+#: admin/pages/settings.php:10
+msgid "Settings"
+msgstr "Definições"
+
+#: admin/class-admin-menu.php:226 admin/pages/dashboard.php:14
+msgid "Dashboard"
+msgstr "Painel"
+
+#: admin/class-admin-menu.php:100 admin/pages/settings.php:32
+msgid "General settings"
+msgstr "Definições gerais"
+
+#: admin/class-admin-form.php:46 admin/pages/settings.php:176
+msgid "Save changes"
+msgstr "Guardar alterações"

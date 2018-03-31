@@ -1,0 +1,260 @@
+# Translation of Plugins - TinyMCE Advanced - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - TinyMCE Advanced - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-06-26 14:22:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - TinyMCE Advanced - Stable (latest release)\n"
+
+#: tadv_admin.php:333
+msgid "Replace the size setting available for fonts with: %s."
+msgstr "Замінити налаштування розміру доступні для шрифтів на: %s."
+
+#: tadv_admin.php:380
+msgid "To use this option, add editor-style.css to your theme or a child theme. Enabling this option will also load that stylesheet in the editor."
+msgstr "Щоб використовувати цю опцію, додайте editor-style.css до вашої теми або дочірньої темі. Включення цієї опції, також завантажить таблицю стилів в редактор."
+
+#: tadv_admin.php:375
+msgid "A stylesheet file named editor-style.css was not added by your theme."
+msgstr "Файл таблиці стилів з ім'ям editor-style.css не додано вашою темою."
+
+#: tadv_admin.php:369
+msgid "Your theme does not support editor-style.css."
+msgstr "Ваша тема не підтримує editor-style.css."
+
+#: tadv_admin.php:368 tadv_admin.php:374
+msgid "ERROR:"
+msgstr "ПОМИЛКА:"
+
+#: tinymce-advanced.php:867
+msgid "Settings"
+msgstr "Налаштування"
+
+#: tadv_admin.php:428
+msgid "Editors on the front end of the site"
+msgstr "Редактори зовнішнього представлення сайту"
+
+#: tadv_admin.php:424
+msgid "Other editors in wp-admin"
+msgstr "Інші редактори wp-admin"
+
+#: tadv_admin.php:420
+msgid "The main editor (Add New and Edit posts and pages)"
+msgstr "Головний редактор (Додати запис і редагувати повідомлення і сторінки)"
+
+#: tadv_admin.php:417
+msgid "Enable the editor enhancements for:"
+msgstr "Включити удосконалення редактора для:"
+
+#: tadv_admin.php:410
+msgid "Settings import and export"
+msgstr "Імпорт та експорт налаштувань"
+
+#: tadv_admin.php:388
+msgid "Keep paragraph tags"
+msgstr "Зберігати теги параграфів."
+
+#: tadv_admin.php:359
+msgid "Create CSS classes menu"
+msgstr "Створення меню класів CSS"
+
+#: tadv_admin.php:332
+msgid "Font sizes"
+msgstr "Розміри шрифту"
+
+#: tadv_admin.php:327
+msgid "Open the TinyMCE link dialog when using the link button on the toolbar or the link menu item."
+msgstr "Відкривати діалог посилань TinyMCE при використанні кнопки посилань на панелі інструментів або з пункту меню."
+
+#: tadv_admin.php:325
+msgid "Alternative link dialog"
+msgstr "Альтернативний діалог посилань"
+
+#: tadv_admin.php:320
+msgid "Replace the browser context (right-click) menu."
+msgstr "Замінити в контекстному меню браузера (клацання правою кнопкою миші)."
+
+#: tadv_admin.php:313
+msgid "Enable more list options: upper or lower case letters for ordered lists, disk or square for unordered lists, etc."
+msgstr "Включити більше можливостей списків: верхній і нижній регістр букв для упорядкованих списків, диск або коло для неупорядкованих і.т.д."
+
+#: tadv_admin.php:308
+msgid "Options"
+msgstr "Параметри"
+
+#. Author URI of the plugin/theme
+msgid "http://www.laptoptips.ca/"
+msgstr "http://www.laptoptips.ca/"
+
+#. Author of the plugin/theme
+msgid "Andrew Ozz"
+msgstr "Andrew Ozz"
+
+#. Description of the plugin/theme
+msgid "Enables advanced features and plugins in TinyMCE, the visual editor in WordPress."
+msgstr "Ввімкнути поліпшені можливості і плагіни в TinyMCE, візуальному редакторі WordPress."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.laptoptips.ca/projects/tinymce-advanced/"
+msgstr "http://www.laptoptips.ca/projects/tinymce-advanced/"
+
+#. Plugin Name of the plugin/theme
+msgid "TinyMCE Advanced"
+msgstr "TinyMCE Advanced"
+
+#: tinymce-advanced.php:298
+msgid "Please upgrade your WordPress installation or download an <a href=\"%s\">older version of the plugin</a>."
+msgstr "Будь ласка, оновіть Ваш WordPress або завантажте <a href=\"%s\">стару версію плагіну</a>."
+
+#: tinymce-advanced.php:291
+msgid "TinyMCE Advanced requires WordPress version %1$s or newer. It appears that you are running %2$s. This can make the editor unstable."
+msgstr "Для роботи TinyMCE Advanced потрібен WordPress версії %1$s або вище. Схоже, що Ви працюєте на %2$s. Це може зробити роботу редактора нестійкою."
+
+#: tadv_admin.php:445
+msgid "The [Toolbar toggle] button shows or hides the second, third, and forth button rows. It will only work when it is in the first row and there are buttons in the second row."
+msgstr "Кнопка [Панель перемикання] відображає/приховує другу, третю і четверту рядки кнопок. Вона буде працювати тільки тоді, коли вона знаходиться в першому рядку і є кнопки у другому рядку."
+
+#: tadv_admin.php:439
+msgid "Restore Default Settings"
+msgstr "Відновити налаштування за замовчуванням"
+
+#: tadv_admin.php:413
+msgid "Import Settings"
+msgstr "Імпорт налаштувань"
+
+#: tadv_admin.php:412
+msgid "Export Settings"
+msgstr "Експорт налаштувань"
+
+#: tadv_admin.php:408
+msgid "Administration"
+msgstr "Управління"
+
+#: tadv_admin.php:402
+msgid "These images will not be available in the Media Library."
+msgstr "Ці зображення не будуть доступні в бібліотеці мультимедіа."
+
+#: tadv_admin.php:401
+msgid "This is not acceptable for larger images like photos or graphics, but may be useful in some cases for very small images like icons, not larger than 2-3KB."
+msgstr "Це неприйнятно для великих зображень, таких як фотографії або графіки, але може бути корисним в деяких випадках для дуже маленьких зображень, таких як іконки розміром не більше 2-3KB."
+
+#: tadv_admin.php:400
+msgid "Works only in Firefox and Safari. These browsers support pasting of images directly in the editor and convert them to base64 encoded text."
+msgstr "Працює тільки в Firefox і Safari. Ці браузери підтримують вставку зображень безпосередньо в редакторі і конвертацію їх в base64-закодований текст."
+
+#: tadv_admin.php:398
+msgid "Enable pasting of image source"
+msgstr "Ввімкнути вставку вихідного коду зображення"
+
+#: tadv_admin.php:393
+msgid "Line breaks in the Text editor would still affect the output, in particular do not use empty lines, line breaks inside HTML tags or multiple &lt;br /&gt; tags."
+msgstr "Перенесення рядків у редакторі HTML як і раніше будуть впливати на результат, зокрема, не використовуйте порожні рядки, переноси рядків усередині тегів HTML або багаторазові теги &lt;br /&gt;."
+
+#: tadv_admin.php:392
+msgid "However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently."
+msgstr "Однак в окремих випадках це може поводитися непередбачувано, тому ретельно перевірте його перед включенням на постійно."
+
+#: tadv_admin.php:391
+msgid "This will make it possible to use more advanced coding in the Text editor without the back-end filtering affecting it much."
+msgstr "Це дозволить використовувати більш передові методи кодування в редакторі HTML без фонової фільтрації, що істотно впливає на нього."
+
+#: tadv_admin.php:390
+msgid "Stop removing the &lt;p&gt; and &lt;br /&gt; tags when saving and show them in the Text editor."
+msgstr "Не прибирати теги &lt;p&gt; и &lt;br /&gt; при збереженні, показувати їх в текстовому редакторі."
+
+#: tadv_admin.php:363
+msgid "Load the CSS classes used in editor-style.css and replace the Formats menu."
+msgstr "Завантажити класи CSS, використовувані в editor-style.css і замінити меню Формати."
+
+#: tadv_admin.php:341
+msgid "Advanced Options"
+msgstr "Додаткові параметри"
+
+#: tadv_admin.php:318
+msgid "Context Menu"
+msgstr "Контекстне меню"
+
+#: tadv_admin.php:311
+msgid "List Style Options"
+msgstr "Список налаштувань стилів"
+
+#: tadv_admin.php:266
+msgid "Unused Buttons"
+msgstr "Невикористані кнопки"
+
+#: tadv_admin.php:263
+msgid "Drag buttons from the unused buttons below and drop them in the toolbars above, or drag the buttons in the toolbars to rearrange them."
+msgstr "Перетягніть кнопки з області невикористаних, розташованої нижче і помістіть їх в панелі інструментів нагорі, або перемістіть кнопки в панелях інструментів, щоб змінити їх."
+
+#: tadv_admin.php:151
+msgid "Enable the editor menu."
+msgstr "Ввімкнути меню редактора."
+
+#: tadv_admin.php:144 tadv_admin.php:440
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: tadv_admin.php:135
+msgid "Settings saved."
+msgstr "Налаштування збережено."
+
+#: tadv_admin.php:128
+msgid "Editor Settings"
+msgstr "Налаштування редактора"
+
+#: tadv_admin.php:117
+msgid "ERROR: All toolbars are empty. Default settings loaded."
+msgstr "ПОМИЛКА: Всі панелі інструментів порожні. Завантажені налаштування за замовчуванням."
+
+#: tadv_admin.php:104
+msgid "Importing of settings failed."
+msgstr "Імпорт налаштувань не виконаний."
+
+#: tadv_admin.php:86
+msgid "Import"
+msgstr "Імпорт"
+
+#: tadv_admin.php:85
+msgid "Verify"
+msgstr "Перевірити"
+
+#: tadv_admin.php:80
+msgid "The settings are imported from a JSON encoded string. Please paste the exported string in the text area below."
+msgstr "Налаштування імпортуються з закодованого JSON-рядка. Будь ласка вставте експортований рядок в текстовому полі нижче."
+
+#: tadv_admin.php:77
+msgid "TinyMCE Advanced Settings Import"
+msgstr "Імпорт налаштувань TinyMCE Advanced"
+
+#: tadv_admin.php:65 tadv_admin.php:91
+msgid "Back to Editor Settings"
+msgstr "Назад в налаштування редактора"
+
+#: tadv_admin.php:63
+msgid "Select All"
+msgstr "Обрати все"
+
+#: tadv_admin.php:58
+msgid "It is important that the export is not changed in any way, no spaces, line breaks, etc."
+msgstr "Важливо, щоб експорт ніяк не змінювався, без пробілів, розриви рядків і т.д."
+
+#: tadv_admin.php:57
+msgid "Please copy the content and save it in a <b>text</b> (.txt) file, using a plain text editor like Notepad."
+msgstr "Будь ласка скопіюйте вміст і збережіть його в <b>текстовий</b> (.txt) файл, використовуючи текстовий редактор, наприклад Блокнот."
+
+#: tadv_admin.php:56
+msgid "The settings are exported as a JSON encoded string."
+msgstr "Налаштування експортується як закодований JSON-рядок."
+
+#: tadv_admin.php:52
+msgid "TinyMCE Advanced Settings Export"
+msgstr "Експорт налаштувань TinyMCE Advanced"
+
+#: tadv_admin.php:40
+msgid "Default settings restored."
+msgstr "Налаштування за замовчуванням відновлені."

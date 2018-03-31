@@ -1,0 +1,2355 @@
+# Translation of Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-09-25 07:53:18+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release)\n"
+
+#: includes/admin/settings/register-settings.php:378
+#: includes/admin/settings/tab-general.php:191
+msgid "None - Manually update everything."
+msgstr "Ninguno - Actualizar todo manualmente."
+
+#: includes/admin/settings/register-settings.php:377
+#: includes/admin/settings/tab-general.php:190
+msgid "Minor Only - Only get bugfixes and security updates, but not major features."
+msgstr "Menor solamente - Obtén solamente soluciones a fallos y actualizaciones de seguridad pero no características mayores."
+
+#: includes/admin/settings/register-settings.php:376
+#: includes/admin/settings/tab-general.php:189
+msgid "Yes (Recommended) - Get the latest features, bugfixes, and security updates as they are released."
+msgstr "Sí (recomendado) - Obtén las últimas características, soluciones a fallos y actualizaciones de seguridad en cuando se lancen."
+
+#: includes/admin/settings/register-settings.php:372
+#: includes/admin/settings/tab-general.php:186
+msgid "Automatic Updates"
+msgstr "Actualizaciones automáticas"
+
+#: includes/admin/admin.php:292
+msgid "Important: Please %1$sconfigure the Automatic Updates Settings%2$s in MonsterInsights."
+msgstr "Importante: Por favor,  %1$slos ajustes de actualizaciones automáticas%2$s en MonsterInsights."
+
+#: includes/admin/admin.php:280
+msgid "Warning: You're currently using deprecated PHP based events tracking which we will be removing support for in an upcoming release. We recommend switching to JS events tracking, as it is significantly more accurate than PHP based events tracking. To switch %1$sclick here%2$s. Users who do not manually switch over will be automatically switched over in an upcoming release."
+msgstr "Advertencia: Actualmente estás utilizando el seguimiento de eventos basados en PHP obsoleto, del que eliminaremos compatibilidad en una próxima versión. Te recomendamos cambiar al seguimiento de eventos de JS, ya que es significativamente más preciso que el seguimiento de eventos basado en PHP. Para cambiar %1$shaz clic aquí%2$s. A los usuarios que no lo cambien manualmente se les cambiará automáticamente en una próxima versión."
+
+#: includes/admin/admin.php:274
+msgid "Warning: You're currently using deprecated ga.js tracking which we will be removing support for in an upcoming release. We recommend switching to analytics.js, as it is significantly more accurate than ga.js, and allows for functionality (like the more accurate Javascript based events tracking we offer). Further Google Analytics has deprecated support for ga.js, and it may stop working at any time when Google decides to disable it from their server. To switch to using the newer Universal Analytics (analytics.js) %1$sclick here%2$s. Users who do not manually switch over will be automatically switched over in an upcoming release."
+msgstr "Advertencia: Actualmente estás utilizando el seguimiento de ga.js que está obsoleto y del que eliminaremos el soporte en una próxima versión. Recomendamos cambiar a analytics.js, ya que es significativamente más preciso que ga.js, y permite otras funcionalidades (como el seguimiento de eventos basado en Javascript más preciso). Google Analytics ha abandonado el soporte de ga.js y puede dejar de funcionar en cualquier momento cuando Google decida desactivarlo desde su servidor. Para cambiar y usar el nuevo Universal Analytics (analytics.js) %1$shaz clic aquí%2$s. A los usuarios que no lo cambien manualmente se les cambiará automáticamente en una próxima versión."
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:271
+msgid "Skip %s Deactivate"
+msgstr "Saltar %s desactivar"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:270
+msgid "Submit %s Deactivate"
+msgstr "Enviar %s desactivar"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:255
+msgid "If you have a moment, please share why you are deactivating %s:"
+msgstr "Si tienes un momento, por favor dinos por qué estás desactivando %s:"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:254
+msgid "Quick Feedback"
+msgstr "Contacto rápido"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:247
+msgid "Please share the reason"
+msgstr "Por favor, comparte el motivo"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:246
+msgid "Other"
+msgstr "Otro"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:243
+msgid "It's a temporary deactivation"
+msgstr "Es una desactivación temporal"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:240
+msgid "I couldn't get the plugin to work"
+msgstr "No he podido hacer que funcione el plugin"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:237
+msgid "Please share which plugin"
+msgstr "Por favor, comparte qué plugin"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:236
+msgid "I'm switching to a different plugin"
+msgstr "Estoy cambiando a un plugin diferente"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:233
+msgid "I no longer need the plugin"
+msgstr "Ya no necesito el plugin"
+
+#: assets/lib/pandora/class-am-deactivation-survey.php:108
+msgid "Please select an option"
+msgstr "Por favor, elige una opción"
+
+#: lite/includes/admin/addons.php:150
+msgid "By upgrading to MonsterInsights Pro, you can adjust your Google Analytics bounce rate with MonsterInsights."
+msgstr "Actualizando a MonsterInsights Pro puedes ajustar tu tasa de rebote de Google Analytics con MonsterInsights."
+
+#: lite/includes/admin/addons.php:148
+msgid "Want to adjust your website bounce rate?"
+msgstr "¿Quieres ajustar la tasa de rebote de tu web?"
+
+#: lite/includes/admin/addons.php:141
+msgid "By upgrading to MonsterInsights Pro, you can track your Facebook Instant Article visitors with MonsterInsights."
+msgstr "Actualizando a MonsterInsights Pro podrás hacer seguimiento de tus visitantes de Facebook Instant Article con MonsterInsights."
+
+#: lite/includes/admin/addons.php:139
+msgid "Want to expand your website audience beyond your website with Facebook Instant Articles?"
+msgstr "¿Quieres expandir la audiencia de tu sitio más allá de tu web con Facebook Instant Articles?"
+
+#: lite/includes/admin/addons.php:132
+msgid "By upgrading to MonsterInsights Pro, you can enable Google Optimize."
+msgstr "Actualizando a MonsterInsights Pro podrás activar Google Optimize."
+
+#: lite/includes/admin/addons.php:130
+msgid "Want to use Google Optimize to retarget your website vistors and perform A/B split tests with ease?"
+msgstr "¿Quires usar Google Optimize para redirigir los visitantes de tu web y realizar pruebas A/B con facilidad?"
+
+#: lite/includes/admin/addons.php:123
+msgid "By upgrading to MonsterInsights Pro, you can enable AMP page tracking."
+msgstr "Actualizando a MonsterInsights Pro podrás activar el seguimiento de páginas AMP."
+
+#: lite/includes/admin/addons.php:121
+msgid "Want to use track users visiting your AMP pages?"
+msgstr "¿Quieres activar el seguimiento de los usuarios que visitan tus páginas AMP?"
+
+#: includes/admin/settings/register-settings.php:90
+msgid "Bounce Reduction"
+msgstr "Reducción de rebote"
+
+#: includes/admin/settings/register-settings.php:86
+msgid "FB Instant Articles"
+msgstr "FB Instant Articles"
+
+#: includes/admin/settings/register-settings.php:82
+msgid "Google Optimize"
+msgstr "Google Optimize"
+
+#: includes/admin/settings/register-settings.php:78
+msgid "Google AMP"
+msgstr "Google AMP"
+
+#: includes/admin/settings/register-settings.php:31
+msgid "Link Attribution"
+msgstr "Atribución de enlace"
+
+#: lite/includes/admin/tools.php:11
+msgid "By upgrading to MonsterInsights Pro, you can unlock the MonsterInsights URL builder that helps you better track your advertising and email marketing campaigns."
+msgstr "Actualizando a MonsterInsights Pro puedes desbloquear el constructor de URLs de MonsterInsights, que te ayudará a hacer un mejor seguimiento de tus campañas de anuncios y de email marketing."
+
+#: lite/includes/admin/addons.php:168
+msgid "By upgrading to MonsterInsights Pro, you can add Ecommerce tracking to see who's buying your product, what's the most popular item on your store, the average order value, and tons more."
+msgstr "Actualizando a MonsterInsights Pro puedes añadir seguimiento de ecommerce para ver quién está comprando tu producto, cuál es el producto más popular de tu tienda, el valor medio de pedido y mucho más. "
+
+#: lite/includes/admin/addons.php:159
+msgid "By upgrading to MonsterInsights Pro, you can enable notifications."
+msgstr "Actualizando a MonsterInsights Pro puedes activar avisos."
+
+#: lite/includes/admin/addons.php:114
+msgid "By upgrading to MonsterInsights Pro, you can enable enhanced reporting."
+msgstr "Actualizando a MonsterInsights Pro podrás activar los informes mejorados."
+
+#: lite/includes/admin/addons.php:105
+msgid "By upgrading to MonsterInsights Pro, you can adjust the sample rate so you don't exceed Google Analytics' processing limit. You can also use it to enable Google Optimize for A/B testing and personalization."
+msgstr "Al actualizar a MonsterInsights Pro podrás ajustar la tasa de muestreo para no exceder el límite de procesamiento de Google analytics. También podrás usarla para activar Google Optimize para tests A/B y personalizaciones."
+
+#: lite/includes/admin/addons.php:96
+msgid "By upgrading to MonsterInsights Pro, you can add Custom Dimensions and track who's the most popular author on your site, which post types get the most traffic, and more. Why not check it out?"
+msgstr "Al actualizar a MonsterInsights Pro podrás añadir dimensiones personalizadas y hacer un seguimiento del autor más popular de tu sitio, de la entrada que más tráfico genera y más. ¿Por qué no comprobarlo?"
+
+#: lite/includes/admin/addons.php:87
+msgid "By upgrading to MonsterInsights Pro, you can add Membership tracking."
+msgstr "Actualizando a MonsterInsights Prop puedes añadir seguimiento de membresía."
+
+#: lite/includes/admin/addons.php:78
+msgid "By upgrading to MonsterInsights Pro, you can add Media tracking to see who's interacting with the media on your site, so you know what your users are most interested in on your site. You can use this to tailor future content to meet your audience's interest to promote repeat visitors and expand your average user's time spent visiting your website on each visit."
+msgstr "Al actualizar a MonsterInsights Pro, podrás añadir el seguimiento de medios para ver quién está interactuando con los medios de tu sitio y cuáles son lo que más interesan. Puedes usar esto para adaptar el futuro contenido y satisfacer el interés de tu audiencia favoreciendo las visitas repetidas y ampliando el tiempo promedio que tu usuario dedica en cada visita a tu sitio web."
+
+#: lite/includes/admin/addons.php:69
+msgid "By upgrading to MonsterInsights Pro, you can add Forms tracking to see who's seeing and submitting your forms, so you can increase your conversion rate."
+msgstr "Al actualizar a MonsterInsights Pro, puedes añadir un seguimiento a tus formularios para ver quién los está viendo y enviando, y así aumentar tu tasa de conversión."
+
+#: lite/includes/admin/addons.php:60
+msgid "By upgrading to MonsterInsights Pro, you can add Ads tracking to see who's clicking on your Google Ads, so you can increase your revenue."
+msgstr "Al actualizar a MonsterInsights Pro, podrás añadir un código de seguimiento a tus anuncios para ver quién está haciendo clic en tus anuncios de Google y aumentar así tus ingresos."
+
+#: lite/includes/admin/addons.php:51
+msgid "By upgrading to MonsterInsights Pro, you can add Social tracking to see who's clicking on your social share links, so you can track and maximize your social sharing exposure."
+msgstr "Al actualizar a MonsterInsights Pro podrás añadir seguimiento social para ver quién hace clic en tus enlaces sociales y ser capaz de maximizar tu alcance en redes sociales."
+
+#: lite/includes/admin/addons.php:49 lite/includes/admin/addons.php:58
+#: lite/includes/admin/addons.php:67 lite/includes/admin/addons.php:76
+#: lite/includes/admin/addons.php:85 lite/includes/admin/addons.php:94
+#: lite/includes/admin/addons.php:103 lite/includes/admin/addons.php:112
+#: lite/includes/admin/addons.php:157 lite/includes/admin/addons.php:166
+msgid "Want to increase your traffic, conversion, & engagement?"
+msgstr "¿Quieres incrementar tu tráfico, conversión e interacción?"
+
+#: includes/admin/settings/tab-tracking.php:107
+msgid "By upgrading to MonsterInsights Pro, you get access to numerous addons and tools that help you better understand what people are doing on your website, so you can keep doing more of what's working. Some of the features include: Ecommerce tracking, Author tracking, Post Type tracking, Ads tracking, Google AMP tracking, Performance optimization, and so much more!"
+msgstr "Al actualizar a MonsterInsights Pro conseguiras acceder a muchas extensiones y herramientas que te ayudarán a entender mejor qué es lo que está haciendo la gente que visita tu sitio y así seguir haciendo lo que mejor funciona. Algunas de las características incluidas son: seguimiento de ecommerce, seguimiento por autor, seguimiento por tipos de contenido, seguimiento de anuncios, seguimiento de Google AMP, optimización del rendimiento y mucho más."
+
+#: includes/admin/settings/tab-tracking.php:106
+#: lite/includes/admin/tools.php:10
+msgid "Want even more fine tuned control over your website analytics?"
+msgstr "¿Quieres un control aún más refinado sobre las analíticas de tu sitio web?"
+
+#: includes/admin/settings/settings-api.php:907
+#: includes/admin/settings/tab-tracking.php:108
+#: lite/includes/admin/tools.php:12
+msgid "Click here to Upgrade"
+msgstr "Haz clic aquí para actualizar"
+
+#: includes/admin/settings/register-settings.php:206
+msgid "Many WordPress \"1-page\" style themes rely on anchor tags for navigation to show virtual pages. The problem is that to Google Analytics, these are all just a single page, and it makes it hard to get meaningful statistics about pages viewed. This feature allows proper tracking in those themes."
+msgstr "Muchos temas de WordPress de estilo \"1-página\" se basan en etiquetas anchor en la navegación para mostrar páginas virtuales. El problema es que para Google Analytics, estos sitios son sólo una única página, y hace que sea difícil obtener estadísticas significativas sobre las páginas vistas. Esta característica permite el seguimiento adecuado en este tipo temas."
+
+#: includes/admin/settings/register-settings.php:205
+msgid "Turn on anchor tracking"
+msgstr "Activar seguimiento de anclajes"
+
+#: includes/admin/pages/tools.php:31 includes/admin/pages/tools.php:32
+msgid "Import/Export"
+msgstr "Importar/Exportar"
+
+#: includes/admin/google.php:428
+msgid "Google Analytics had a connection error. Error code: %1$s. Reason: %2$s"
+msgstr "Google Analytics tenía un error de conexión. Código de error:%1$s. Razón:%2$s"
+
+#: includes/admin/google.php:426
+msgid "Google Analytics is having API issues on their side. Wait 2 minutes and then try again."
+msgstr "La API Google Analytics está teniendo problemas de su lado. Espera 2 minutos y vuelve a intentarlo."
+
+#: includes/admin/google.php:424
+msgid "Project Rate Limit Quota Exceeded. Wait 2 minutes and then try again."
+msgstr "Cupo de límite de velocidad excedido. Espera 2 minutos y vuelve a intentarlo."
+
+#: includes/admin/google.php:422
+msgid "Project Rate Limit Exceeded. Wait 2 minutes and then try again."
+msgstr "Límite del proyecto excedido. Espera 2 minutos e inténtalo otra vez"
+
+#: includes/admin/google.php:420
+msgid "User Rate Limit Exceeded. Wait 2 minutes and then try again."
+msgstr "Límite del usuario excedido. Espera 2 minutos e inténtalo otra vez."
+
+#: includes/admin/google.php:418
+msgid "Daily Limit Exceeded. Please contact support."
+msgstr "Límite Diario Excedido. Por favor, contacta con Soporte."
+
+#: includes/admin/google.php:416
+msgid "Bad Request. Please contact support."
+msgstr "Solicitud Incorrecta. Por favor, contacta con soporte."
+
+#: includes/admin/google.php:414
+msgid "Please ensure your Google Account is signed up for Google Analytics."
+msgstr "Asegúrate de que tu cuenta de Google esté registrada en Google Analytics."
+
+#: includes/helpers.php:353
+msgid "Czechia"
+msgstr "República Checa"
+
+#: includes/admin/reports/overview.php:106
+msgid "If you've just installed MonsterInsights, data may take up to 24 hours to populate here. Check back soon!"
+msgstr "Si acabas de instalar MonsterInsights, los datos pueden tardar hasta 24 horas en aparecer aquí. ¡Vuelve a consultarlo pronto!"
+
+#: includes/admin/pages/tools.php:190
+msgid "Please upload a real settings export file to import"
+msgstr "Carga un archivo de exportación de configuración real para importar"
+
+#: includes/admin/pages/tools.php:185
+msgid "Please upload a file to import"
+msgstr "Carga un archivo para importarlo"
+
+#: includes/admin/pages/tools.php:179
+msgid "Please upload a valid .json file"
+msgstr "Por favor, carga un archivo .json válido"
+
+#: includes/admin/pages/tools.php:107
+msgid "Export"
+msgstr "Exportar"
+
+#: includes/admin/pages/tools.php:95
+msgid "Export Settings:"
+msgstr "Exportar Ajustes:"
+
+#: includes/admin/pages/tools.php:82
+msgid "Paste the import field content from another MonsterInsights site in above."
+msgstr "Pega el contenido del campo de importación de otro sitio de MonsterInsights en la parte superior."
+
+#: includes/admin/pages/tools.php:74
+msgid "Successfully imported settings!"
+msgstr "¡Ajustes importados con éxito!"
+
+#: includes/admin/pages/tools.php:68
+msgid "Import Settings"
+msgstr "Importar Ajustes"
+
+#: includes/admin/pages/tools.php:61
+msgid "You can use the below tools to import settings from other MonsterInsights websites or export settings to import into another MonsterInsights install."
+msgstr "Puedes utilizar las herramientas siguientes para importar la configuración de otros sitios de MonsterInsights o exportar la configuración para importarla a otra instalación de MonsterInsights."
+
+#: includes/admin/pages/tools.php:60
+msgid "Setting Tools"
+msgstr "Ajustes de Herramientas"
+
+#: includes/admin/pages/tools.php:36
+msgid "URL Builder"
+msgstr "Constructor de URLs"
+
+#: includes/admin/pages/tools.php:35
+msgid "Campaign URL Builder"
+msgstr "Creador de URLs de campaña"
+
+#: includes/admin/pages/network-settings.php:98
+msgid "This is the default UA code to use for subsites of a network (can be overriden at the single site level)."
+msgstr "Este es el código UA por defecto que se usará en los subsitios de una red (puede ser sobrescrito en el nivel del sitio único)."
+
+#: includes/admin/pages/network-settings.php:97
+msgid "Save Network UA code"
+msgstr "Guardar código UA en la red"
+
+#: includes/admin/pages/network-settings.php:94
+msgid "Network UA code"
+msgstr "Código UA de la red"
+
+#: includes/admin/google.php:321
+msgid "Google Analytics had a connection error or your Google account is not signed up for Google Analytics."
+msgstr "Google Analytics sufría un error de conexión o bien tu cuenta de Google no esta conectada con Google Analytics."
+
+#: includes/admin/common.php:184
+msgid "Imported!"
+msgstr "¡Importado!"
+
+#: includes/admin/common.php:183 includes/admin/pages/tools.php:87
+msgid "Import"
+msgstr "Importar"
+
+#: includes/admin/common.php:182
+msgid "Working..."
+msgstr "Trabajando…"
+
+#: includes/admin/common.php:181
+msgid "Shortened!"
+msgstr "¡Acortado!"
+
+#: includes/admin/common.php:180
+msgid "Shorten URL"
+msgstr "Acortar url"
+
+#: includes/admin/common.php:178
+msgid "Failed!"
+msgstr "¡Falló!"
+
+#: includes/admin/common.php:177
+msgid "Copy to Clipboard"
+msgstr "Copiar al portapapeles"
+
+#: includes/admin/common.php:176
+msgid "Copied!"
+msgstr "¡Copiado!"
+
+#: includes/admin/admin.php:58
+msgid "Tools"
+msgstr "Herramientas"
+
+#: includes/admin/admin.php:58
+msgid "Tools:"
+msgstr "Herramientas:"
+
+#: includes/admin/google.php:316 includes/admin/google.php:406
+msgid "MonsterInsights requires WordPress version 4.6 or newer to use oAuth. Please update your WordPress version."
+msgstr "MonsterInsights requiere una versión 4.6 o más reciente de WordPress para usar oAuth. Por favor actualiza tu versión de WordPress."
+
+#: includes/admin/pages/settings.php:163
+msgid "Invalid UA code."
+msgstr "Código UA no válido"
+
+#: includes/admin/google.php:816
+msgid "It seems the authentication for the plugin has expired or the connection to Google Analytics is blocked, please try %1$sre-authenticating%2$s with Google Analytics to allow the plugin to fetch data."
+msgstr "Parece que la autenticación del plugin ha caducado o que la conexión con Google Analytics ha sido bloqueada. Por favor intenta %1$sre-autenticarte%2$s con Google Analytics para permitir que el plugin obtenga datos."
+
+#. Description of the plugin/theme
+msgid "The best Google Analytics plugin for WordPress. See how visitors find and use your website, so you can keep them coming back."
+msgstr "El mejor plugin de WordPress para Google Analytics. Descubre cómo los visitantes encuentran y usan tu sitio web para asegurarte de que vuelvan."
+
+#. Plugin Name of the plugin/theme
+msgid "Google Analytics for WordPress by MonsterInsights"
+msgstr "Google Analytics para WordPress por MonsterInsights"
+
+#: lite/includes/admin/addons.php:40
+msgid "This allows you to set the domain that's set by %1$s for tracking subdomains. If empty, this will not be set. Can be used to set localhost for ga.js tracking."
+msgstr "Esto te permite establecer el dominio que está definido por %1$s para el seguimiento de subdominios. Si está vacío, no se establecerá. Se puede usar para definir el seguimiento de localhost por ga.js."
+
+#: lite/includes/admin/addons.php:34
+msgid "Enhanced Link Attribution tracking is only available on Universal Tracking (analytics.js). You're currently using deprecated ga.js tracking. We recommend switching to analytics.js, as it is significantly more accurate than ga.js, and allows for additional functionality (like the more accurate Javascript based events tracking we offer). Further Google Analytics has deprecated support for ga.js, and it may stop working at any time when Google decides to disable it from their server. To switch to using the newer Universal Analytics (analytics.js) %1$sclick here%2$s."
+msgstr "El seguimiento de atribución de enlace mejorado sólo está disponible con el seguimiento Universal Analytics (analytics.js). Actualmente estás utilizando el seguimiento de ga.js, que ya es obsoleto. Te recomendamos cambiar a analytics.js, ya que es significativamente más preciso que ga.js, y permite funcionalidades adicionales (como el seguimiento de eventos basado en JavaScript, más preciso). Google Analytics ha abandonado la compatibilidad con ga.js y puede dejar de funcionar en cualquier momento al decidir desactivarlo desde su servidor. Para cambiarlo y usar el nuevo Universal Analytics (analytics.js) %1$shaz clic aquí%2$s."
+
+#: lite/includes/admin/addons.php:28
+msgid "Demographics and Interests tracking is only available on Universal Tracking (analytics.js). You're currently using deprecated ga.js tracking. We recommend switching to analytics.js, as it is significantly more accurate than ga.js, and allows for additional functionality (like the more accurate Javascript based events tracking we offer). Further Google Analytics has deprecated support for ga.js, and it may stop working at any time when Google decides to disable it from their server. To switch to using the newer Universal Analytics (analytics.js) %1$sclick here%2$s."
+msgstr "El seguimiento de datos demográficos e intereses sólo está disponible en el seguimiento con Universal Analytics (analytics.js). Actualmente estás utilizando el seguimiento con ga.js, que ya es obsoleto. Te recomendamos cambiar a analytics.js, ya que es significativamente más preciso que ga.js, y permite funcionalidades adicionales (como el seguimiento de eventos basado en JavaScript, más preciso). Google Analytics ha abandonado la compatibilidad con ga.js y puede dejar de funcionar en cualquier momento al decidir desactivarlo desde su servidor. Para cambiarlo y usar el nuevo Universal Analytics (analytics.js) %1$shaz clic aquí%2$s."
+
+#: includes/helpers.php:543
+msgid "Zimbabwe"
+msgstr "Zimbawe"
+
+#: includes/helpers.php:542
+msgid "Zambia"
+msgstr "Zambia"
+
+#: includes/helpers.php:541
+msgid "Yemen"
+msgstr "Yemen"
+
+#: includes/helpers.php:540
+msgid "Western Samoa"
+msgstr "Samoa Occidental"
+
+#: includes/helpers.php:539
+msgid "Western Sahara"
+msgstr "Sahara Occidental"
+
+#: includes/helpers.php:538
+msgid "Wallis and Futuna Islands"
+msgstr "Islas Wallis y Futuna"
+
+#: includes/helpers.php:537
+msgid "Virgin Islands (USA)"
+msgstr "Islas Vírgenes (EE.UU.)"
+
+#: includes/helpers.php:536
+msgid "Virgin Islands (British)"
+msgstr "Islas Vírgenes (Británica)"
+
+#: includes/helpers.php:535
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: includes/helpers.php:534
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: includes/helpers.php:533
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: includes/helpers.php:532
+msgid "Uzbekistan"
+msgstr "Uzbekistán"
+
+#: includes/helpers.php:531
+msgid "US Minor Outlying Islands"
+msgstr "Islas Menores Alejadas de los Estados Unidos"
+
+#: includes/helpers.php:530
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: includes/helpers.php:529
+msgid "United Arab Emirates"
+msgstr "Emiratos Árabes Unidos"
+
+#: includes/helpers.php:528
+msgid "Ukraine"
+msgstr "Ucrania"
+
+#: includes/helpers.php:527
+msgid "Uganda"
+msgstr "Uganda"
+
+#: includes/helpers.php:526
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: includes/helpers.php:525
+msgid "Turks and Caicos Islands"
+msgstr "Islas Turcas y Caicos"
+
+#: includes/helpers.php:524
+msgid "Turkmenistan"
+msgstr "Turkmenistán"
+
+#: includes/helpers.php:523
+msgid "Turkey"
+msgstr "Turquía"
+
+#: includes/helpers.php:522
+msgid "Tunisia"
+msgstr "Túnez"
+
+#: includes/helpers.php:521
+msgid "Trinidad and Tobago"
+msgstr "Trinidad y Tobago"
+
+#: includes/helpers.php:520
+msgid "Tonga"
+msgstr "Tonga"
+
+#: includes/helpers.php:519
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: includes/helpers.php:518
+msgid "Togo"
+msgstr "Togo"
+
+#: includes/helpers.php:517
+msgid "Timor-Leste"
+msgstr "Timor Oriental"
+
+#: includes/helpers.php:516
+msgid "Thailand"
+msgstr "Tailandia"
+
+#: includes/helpers.php:515
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: includes/helpers.php:514
+msgid "Tajikistan"
+msgstr "Tayikistán"
+
+#: includes/helpers.php:513
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: includes/helpers.php:512
+msgid "Syrian Arab Republic"
+msgstr "República Árabe Siria"
+
+#: includes/helpers.php:511
+msgid "Switzerland"
+msgstr "Suiza"
+
+#: includes/helpers.php:510
+msgid "Sweden"
+msgstr "Suecia"
+
+#: includes/helpers.php:509
+msgid "Swaziland"
+msgstr "Suazilandia"
+
+#: includes/helpers.php:508
+msgid "Svalbard and Jan Mayen Islands"
+msgstr "Svalbard e Isla Jan Mayen"
+
+#: includes/helpers.php:507
+msgid "Suriname"
+msgstr "Surinam"
+
+#: includes/helpers.php:506
+msgid "Sudan"
+msgstr "Sudán"
+
+#: includes/helpers.php:505
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: includes/helpers.php:504
+msgid "Spain"
+msgstr "España"
+
+#: includes/helpers.php:503
+msgid "South Sudan"
+msgstr "Sudán del Sur"
+
+#: includes/helpers.php:502
+msgid "South Korea"
+msgstr "Corea del Sur"
+
+#: includes/helpers.php:501
+msgid "South Georgia"
+msgstr "Georgia del Sur"
+
+#: includes/helpers.php:500
+msgid "South Africa"
+msgstr "Sudáfrica"
+
+#: includes/helpers.php:499
+msgid "Somalia"
+msgstr "Somalia"
+
+#: includes/helpers.php:498
+msgid "Solomon Islands"
+msgstr "Islas Salomón"
+
+#: includes/helpers.php:497
+msgid "Slovenia"
+msgstr "Eslovenia"
+
+#: includes/helpers.php:496
+msgid "Slovak Republic"
+msgstr "República Eslovaca"
+
+#: includes/helpers.php:495
+msgid "Singapore"
+msgstr "Singapur"
+
+#: includes/helpers.php:494
+msgid "Sierra Leone"
+msgstr "Sierra Leona"
+
+#: includes/helpers.php:493
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: includes/helpers.php:492
+msgid "Serbia"
+msgstr "Serbia"
+
+#: includes/helpers.php:491
+msgid "Senegal"
+msgstr "Senegal"
+
+#: includes/helpers.php:490
+msgid "Saudi Arabia"
+msgstr "Arabia Saudí"
+
+#: includes/helpers.php:489
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "Santo Tomé y Príncipe"
+
+#: includes/helpers.php:488
+msgid "San Marino"
+msgstr "San Marino"
+
+#: includes/helpers.php:487
+msgid "Saint Vincent and the Grenadines"
+msgstr "San Vicente y Granadinas"
+
+#: includes/helpers.php:486
+msgid "Saint Pierre and Miquelon"
+msgstr "San Pedro y Miquelón"
+
+#: includes/helpers.php:485
+msgid "Saint Martin (Dutch)"
+msgstr "San Martín (Holanda)"
+
+#: includes/helpers.php:484
+msgid "Saint Martin (French)"
+msgstr "Saint Martin (Francia)"
+
+#: includes/helpers.php:483
+msgid "Saint Lucia"
+msgstr "Santa Lucía"
+
+#: includes/helpers.php:482
+msgid "Saint Kitts and Nevis"
+msgstr "San Cristóbal y Nieves"
+
+#: includes/helpers.php:481
+msgid "Saint Helena"
+msgstr "Santa Elena"
+
+#: includes/helpers.php:480
+msgid "Saint Barth&eacute;lemy"
+msgstr "San Bartolomé"
+
+#: includes/helpers.php:479
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: includes/helpers.php:478
+msgid "Russian Federation"
+msgstr "Federación Rusa"
+
+#: includes/helpers.php:477
+msgid "Romania"
+msgstr "Rumania"
+
+#: includes/helpers.php:476
+msgid "Reunion Island"
+msgstr "Isla Reunión"
+
+#: includes/helpers.php:475
+msgid "Republic of Kosovo"
+msgstr "República de Kosovo"
+
+#: includes/helpers.php:474
+msgid "Qatar"
+msgstr "Qatar"
+
+#: includes/helpers.php:473
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: includes/helpers.php:472
+msgid "Portugal"
+msgstr "Portugal"
+
+#: includes/helpers.php:471
+msgid "Poland"
+msgstr "Polonia"
+
+#: includes/helpers.php:470
+msgid "Pitcairn Island"
+msgstr "Islas Pitcairn"
+
+#: includes/helpers.php:469
+msgid "Philippines"
+msgstr "Filipinas"
+
+#: includes/helpers.php:468
+msgid "Peru"
+msgstr "Perú"
+
+#: includes/helpers.php:467
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: includes/helpers.php:466
+msgid "Papua New Guinea"
+msgstr "Papua Nueva Guinea"
+
+#: includes/helpers.php:465
+msgid "Panama"
+msgstr "Panamá"
+
+#: includes/helpers.php:464
+msgid "Palestinian Territories"
+msgstr "Territorios Palestinos"
+
+#: includes/helpers.php:463
+msgid "Palau"
+msgstr "Palau"
+
+#: includes/helpers.php:462
+msgid "Pakistan"
+msgstr "Pakistán"
+
+#: includes/helpers.php:461
+msgid "Oman"
+msgstr "Omán"
+
+#: includes/helpers.php:460
+msgid "Norway"
+msgstr "Noruega"
+
+#: includes/helpers.php:459
+msgid "Northern Mariana Islands"
+msgstr "Islas Marianas del Norte"
+
+#: includes/helpers.php:458
+msgid "North Korea"
+msgstr "Corea del Norte"
+
+#: includes/helpers.php:457
+msgid "Norfolk Island"
+msgstr "Islas Norfolk"
+
+#: includes/helpers.php:456
+msgid "Niue"
+msgstr "Niue"
+
+#: includes/helpers.php:455
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: includes/helpers.php:454
+msgid "Niger"
+msgstr "Nigeria"
+
+#: includes/helpers.php:453
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: includes/helpers.php:452
+msgid "New Zealand"
+msgstr "Nueva Zelanda"
+
+#: includes/helpers.php:451
+msgid "New Caledonia"
+msgstr "Nueva Caledonia"
+
+#: includes/helpers.php:450
+msgid "Netherlands Antilles"
+msgstr "Antillas Holandesas"
+
+#: includes/helpers.php:449
+msgid "Netherlands"
+msgstr "Países Bajos"
+
+#: includes/helpers.php:448
+msgid "Nepal"
+msgstr "Nepal"
+
+#: includes/helpers.php:447
+msgid "Nauru"
+msgstr "Naurú"
+
+#: includes/helpers.php:446
+msgid "Namibia"
+msgstr "Namibia"
+
+#: includes/helpers.php:445
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: includes/helpers.php:444
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: includes/helpers.php:443
+msgid "Morocco"
+msgstr "Marruecos"
+
+#: includes/helpers.php:442
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: includes/helpers.php:441
+msgid "Montenegro"
+msgstr "Montenegro"
+
+#: includes/helpers.php:440
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: includes/helpers.php:439
+msgid "Monaco"
+msgstr "Mónaco"
+
+#: includes/helpers.php:438
+msgid "Moldova, Republic of"
+msgstr "Moldavia"
+
+#: includes/helpers.php:437
+msgid "Micronesia"
+msgstr "Micronesia"
+
+#: includes/helpers.php:436
+msgid "Mexico"
+msgstr "México"
+
+#: includes/helpers.php:435
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: includes/helpers.php:434
+msgid "Mauritius"
+msgstr "Mauricio"
+
+#: includes/helpers.php:433
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: includes/helpers.php:432
+msgid "Martinique"
+msgstr "Martinica"
+
+#: includes/helpers.php:431
+msgid "Marshall Islands"
+msgstr "Islas Marshall"
+
+#: includes/helpers.php:430
+msgid "Malta"
+msgstr "Malta"
+
+#: includes/helpers.php:429
+msgid "Mali"
+msgstr "Malí"
+
+#: includes/helpers.php:428
+msgid "Maldives"
+msgstr "Maldivas"
+
+#: includes/helpers.php:427
+msgid "Malaysia"
+msgstr "Malasia"
+
+#: includes/helpers.php:426
+msgid "Malawi"
+msgstr "Malaui"
+
+#: includes/helpers.php:425
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: includes/helpers.php:424
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: includes/helpers.php:423
+msgid "Macau"
+msgstr "Macao"
+
+#: includes/helpers.php:422
+msgid "Luxembourg"
+msgstr "Luxemburgo"
+
+#: includes/helpers.php:421
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: includes/helpers.php:420
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: includes/helpers.php:419
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libia"
+
+#: includes/helpers.php:418
+msgid "Liberia"
+msgstr "Liberia"
+
+#: includes/helpers.php:417
+msgid "Lesotho"
+msgstr "Lesoto"
+
+#: includes/helpers.php:416
+msgid "Lebanon"
+msgstr "Líbano"
+
+#: includes/helpers.php:415
+msgid "Latvia"
+msgstr "Letonia"
+
+#: includes/helpers.php:414
+msgid "Lao People's Democratic Republic"
+msgstr "República Popular Democrática de Laos"
+
+#: includes/helpers.php:413
+msgid "Kyrgyzstan"
+msgstr "Kirguistán"
+
+#: includes/helpers.php:412
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: includes/helpers.php:411
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: includes/helpers.php:410
+msgid "Kenya"
+msgstr "Kenia"
+
+#: includes/helpers.php:409
+msgid "Kazakhstan"
+msgstr "Kazajistán"
+
+#: includes/helpers.php:408
+msgid "Jordan"
+msgstr "Jordán"
+
+#: includes/helpers.php:407
+msgid "Jersey"
+msgstr "Jersey"
+
+#: includes/helpers.php:406
+msgid "Japan"
+msgstr "Japón"
+
+#: includes/helpers.php:405
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: includes/helpers.php:404
+msgid "Italy"
+msgstr "Italia"
+
+#: includes/helpers.php:403
+msgid "Israel"
+msgstr "Israel"
+
+#: includes/helpers.php:402
+msgid "Isle of Man"
+msgstr "Isla de Man"
+
+#: includes/helpers.php:401
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: includes/helpers.php:400
+msgid "Iraq"
+msgstr "Irak"
+
+#: includes/helpers.php:399
+msgid "Iran"
+msgstr "Irán"
+
+#: includes/helpers.php:398
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: includes/helpers.php:397
+msgid "India"
+msgstr "India"
+
+#: includes/helpers.php:396
+msgid "Iceland"
+msgstr "Islandia"
+
+#: includes/helpers.php:395
+msgid "Hungary"
+msgstr "Hungría"
+
+#: includes/helpers.php:394
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: includes/helpers.php:393
+msgid "Honduras"
+msgstr "Honduras"
+
+#: includes/helpers.php:392
+msgid "Holy See (City Vatican State)"
+msgstr "Santa Sede (Ciudad estado del Vaticano)"
+
+#: includes/helpers.php:391
+msgid "Heard and McDonald Islands"
+msgstr "Islas Heard y McDonald"
+
+#: includes/helpers.php:390
+msgid "Haiti"
+msgstr "Haití"
+
+#: includes/helpers.php:389
+msgid "Guyana"
+msgstr "Guyana"
+
+#: includes/helpers.php:388
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bisáu"
+
+#: includes/helpers.php:387
+msgid "Guinea"
+msgstr "Guinea"
+
+#: includes/helpers.php:386
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: includes/helpers.php:385
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: includes/helpers.php:384
+msgid "Guam"
+msgstr "Guam"
+
+#: includes/helpers.php:383
+msgid "Guadeloupe"
+msgstr "Guadalupe"
+
+#: includes/helpers.php:382
+msgid "Grenada"
+msgstr "Granada"
+
+#: includes/helpers.php:381
+msgid "Greenland"
+msgstr "Groenlandia"
+
+#: includes/helpers.php:380
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: includes/helpers.php:379
+msgid "Ghana"
+msgstr "Ghana"
+
+#: includes/helpers.php:378
+msgid "Greece"
+msgstr "Grecia"
+
+#: includes/helpers.php:377
+msgid "Germany"
+msgstr "Alemania"
+
+#: includes/helpers.php:376
+msgid "Georgia"
+msgstr "Georgia"
+
+#: includes/helpers.php:375
+msgid "Gambia"
+msgstr "Gambia"
+
+#: includes/helpers.php:374
+msgid "Gabon"
+msgstr "Gabón"
+
+#: includes/helpers.php:373
+msgid "French Southern Territories"
+msgstr "Territorios Australes Franceses"
+
+#: includes/helpers.php:372
+msgid "French Polynesia"
+msgstr "Polinesia Francesa"
+
+#: includes/helpers.php:371
+msgid "French Guiana"
+msgstr "Guyana Francesa"
+
+#: includes/helpers.php:370
+msgid "France"
+msgstr "Francia"
+
+#: includes/helpers.php:369
+msgid "Finland"
+msgstr "Finlandia"
+
+#: includes/helpers.php:368
+msgid "Fiji"
+msgstr "Fiji"
+
+#: includes/helpers.php:367
+msgid "Faroe Islands"
+msgstr "Islas Feroe"
+
+#: includes/helpers.php:366
+msgid "Falkland Islands"
+msgstr "Islas Malvinas"
+
+#: includes/helpers.php:365
+msgid "Ethiopia"
+msgstr "Etiopía"
+
+#: includes/helpers.php:364
+msgid "Estonia"
+msgstr "Estonia"
+
+#: includes/helpers.php:363
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: includes/helpers.php:362
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: includes/helpers.php:361
+msgid "Equatorial Guinea"
+msgstr "Guinea Ecuatorial"
+
+#: includes/helpers.php:360
+msgid "Egypt"
+msgstr "Egipto"
+
+#: includes/helpers.php:359
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: includes/helpers.php:358
+msgid "East Timor"
+msgstr "Timor Oriental"
+
+#: includes/helpers.php:357
+msgid "Dominican Republic"
+msgstr "República Dominicana"
+
+#: includes/helpers.php:356
+msgid "Dominica"
+msgstr "Dominica"
+
+#: includes/helpers.php:355
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: includes/helpers.php:354
+msgid "Denmark"
+msgstr "Dinamarca"
+
+#: includes/helpers.php:352
+msgid "Cyprus"
+msgstr "Chipre"
+
+#: includes/helpers.php:351
+msgid "Cura&Ccedil;ao"
+msgstr "Curazao"
+
+#: includes/helpers.php:350
+msgid "Cuba"
+msgstr "Cuba"
+
+#: includes/helpers.php:349
+msgid "Croatia/Hrvatska"
+msgstr "Croacia"
+
+#: includes/helpers.php:348
+msgid "Cote d'Ivoire"
+msgstr "Costa de Marfil"
+
+#: includes/helpers.php:347
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: includes/helpers.php:346
+msgid "Cook Islands"
+msgstr "Islas Cook"
+
+#: includes/helpers.php:345
+msgid "Congo, Republic of"
+msgstr "Congo, República del"
+
+#: includes/helpers.php:344
+msgid "Congo, Democratic People's Republic"
+msgstr "Congo, Democratic People's Republic"
+
+#: includes/helpers.php:343
+msgid "Comoros"
+msgstr "Comoras"
+
+#: includes/helpers.php:342
+msgid "Colombia"
+msgstr "Colombia"
+
+#: includes/helpers.php:341
+msgid "Cocos Islands"
+msgstr "Islas Cocos"
+
+#: includes/helpers.php:340
+msgid "Christmas Island"
+msgstr "Isla de Navidad"
+
+#: includes/helpers.php:339
+msgid "China"
+msgstr "China"
+
+#: includes/helpers.php:338
+msgid "Chile"
+msgstr "Chile"
+
+#: includes/helpers.php:337
+msgid "Chad"
+msgstr "Chad"
+
+#: includes/helpers.php:336
+msgid "Central African Republic"
+msgstr "República Centroafricana"
+
+#: includes/helpers.php:335
+msgid "Cayman Islands"
+msgstr "Islas Caimán"
+
+#: includes/helpers.php:334
+msgid "Cape Verde"
+msgstr "Cabo Verde"
+
+#: includes/helpers.php:333
+msgid "Cameroon"
+msgstr "Camerún"
+
+#: includes/helpers.php:332
+msgid "Cambodia"
+msgstr "Camboya"
+
+#: includes/helpers.php:331
+msgid "Burundi"
+msgstr "Burundi"
+
+#: includes/helpers.php:330
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: includes/helpers.php:329
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: includes/helpers.php:328
+msgid "Brunei Darrussalam"
+msgstr "Brunei Darrussalam"
+
+#: includes/helpers.php:327
+msgid "British Indian Ocean Territory"
+msgstr "Territorio Británico del Océano Índico"
+
+#: includes/helpers.php:326
+msgid "Brazil"
+msgstr "Brasil"
+
+#: includes/helpers.php:325
+msgid "Bouvet Island"
+msgstr "Isla Bouvet"
+
+#: includes/helpers.php:324
+msgid "Botswana"
+msgstr "Botsuana"
+
+#: includes/helpers.php:323
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia y Herzegovina"
+
+#: includes/helpers.php:322
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "Caribe Neerlandés"
+
+#: includes/helpers.php:321
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: includes/helpers.php:320
+msgid "Bhutan"
+msgstr "Bután"
+
+#: includes/helpers.php:319
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: includes/helpers.php:318
+msgid "Benin"
+msgstr "Benín"
+
+#: includes/helpers.php:317
+msgid "Belize"
+msgstr "Belice"
+
+#: includes/helpers.php:316
+msgid "Belgium"
+msgstr "Bélgica"
+
+#: includes/helpers.php:315
+msgid "Belarus"
+msgstr "Bielorrusia"
+
+#: includes/helpers.php:314
+msgid "Barbados"
+msgstr "Barbados"
+
+#: includes/helpers.php:313
+msgid "Bangladesh"
+msgstr "Bangladés"
+
+#: includes/helpers.php:312
+msgid "Bahrain"
+msgstr "Baréin"
+
+#: includes/helpers.php:311
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: includes/helpers.php:310
+msgid "Azerbaijan"
+msgstr "Azerbaiyán"
+
+#: includes/helpers.php:309
+msgid "Austria"
+msgstr "Austria"
+
+#: includes/helpers.php:308
+msgid "Australia"
+msgstr "Australia"
+
+#: includes/helpers.php:307
+msgid "Aruba"
+msgstr "Aruba"
+
+#: includes/helpers.php:306
+msgid "Armenia"
+msgstr "Armenia"
+
+#: includes/helpers.php:305
+msgid "Argentina"
+msgstr "Argentina"
+
+#: includes/helpers.php:304
+msgid "Antigua and Barbuda"
+msgstr "Antigua y Barbuda"
+
+#: includes/helpers.php:303
+msgid "Antarctica"
+msgstr "Antartida"
+
+#: includes/helpers.php:302
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: includes/helpers.php:301
+msgid "Angola"
+msgstr "Angola"
+
+#: includes/helpers.php:300
+msgid "Andorra"
+msgstr "Andorra"
+
+#: includes/helpers.php:299
+msgid "American Samoa"
+msgstr "Samoa Americana"
+
+#: includes/helpers.php:298
+msgid "Algeria"
+msgstr "Argelia"
+
+#: includes/helpers.php:297
+msgid "Albania"
+msgstr "Albania"
+
+#: includes/helpers.php:296
+msgid "&#197;land Islands"
+msgstr "&#197;land Islands"
+
+#: includes/helpers.php:295
+msgid "Afghanistan"
+msgstr "Afganistán"
+
+#: includes/helpers.php:294
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
+#: includes/helpers.php:293
+msgid "Canada"
+msgstr "Canadá"
+
+#: includes/helpers.php:292
+msgid "United States"
+msgstr "Estados Unidos"
+
+#: includes/frontend/tracking/class-tracking-preview.php:88
+msgid "You are currently in a preview window. MonsterInsights doesn't track preview window traffic to avoid false visit reports."
+msgstr "Actualmente te encuentras en una ventana de previsualización. MonsterInsights no realiza el seguimiento del tráfico de la ventana de vista previa para evitar informes de visitas falsas."
+
+#: includes/deprecated.php:247 includes/deprecated.php:262
+#: includes/deprecated.php:274 includes/deprecated.php:289
+#: includes/deprecated.php:303 includes/deprecated.php:320
+#: includes/deprecated.php:347
+msgid "Use %s instead."
+msgstr "Usar %s en su lugar."
+
+#: includes/deprecated.php:179
+msgid "%1$s is %3$sdeprecated%4$s since MonsterInsights version %2$s."
+msgstr "%1$s está %3$sobsoleto%4$s desde la versión %2$s de MonsterInsights."
+
+#: includes/deprecated.php:126
+msgid "%1$s is %3$sdeprecated%4$s since MonsterInsights version %2$s!"
+msgstr "¡%1$s está %3$sobsoleto%4$s desde la versión %2$s de MonsterInsights!"
+
+#: includes/admin/tracking.php:336
+msgid "Once Weekly"
+msgstr "Una vez a la semana"
+
+#: includes/admin/tracking.php:319
+msgid "Do not allow"
+msgstr "No permitir"
+
+#: includes/admin/tracking.php:318
+msgid "Allow"
+msgstr "Permitir"
+
+#: includes/admin/tracking.php:317
+msgid "Allow MonsterInsights to track plugin usage? Opt-in to tracking and our newsletter to stay informed of the latest changes to MonsterInsights and help us ensure compatibility."
+msgstr "¿Permites que MonsterInsights haga un seguimiento del uso del plugin? Acepta y suscríbete a nuestro boletín para mantenerte informado sobre los últimos cambios de MonsterInsights y ayudarnos a asegurar su compatibilidad."
+
+#: includes/admin/settings/register-settings.php:384
+#: includes/admin/settings/tab-general.php:199
+msgid "By allowing us to track usage data we can better help you, because we know with which WordPress configurations, themes and plugins we should test."
+msgstr "Al permitirnos rastrear tus datos de uso, podemos ayudarte mejor, ya que sabremos con qué configuraciones, temas y complementos de WordPress debemos probar."
+
+#: includes/admin/settings/register-settings.php:383
+#: includes/admin/settings/tab-general.php:198
+msgid "Allow Usage Tracking"
+msgstr "Permitir seguimiento de usuarios"
+
+#: includes/admin/settings/tab-general.php:176
+msgid "Warning: You're currently using deprecated PHP based events tracking. We recommend switching to JS events tracking, as it is significantly more accurate than PHP based events tracking and we will eventually discontinue PHP based events tracking. To switch %1$sclick here%2$s."
+msgstr "Advertencia: Actualmente estás utilizando un seguimiento de eventos basado en PHP obsoleto. Te recomendamos cambiar al seguimiento de eventos de JS, ya que es significativamente más preciso que el seguimiento de eventos basado en PHP y próximamente lo discontinuaremos. Para cambiarlo %1$shaz clic aquí%2$s."
+
+#: includes/admin/settings/tab-general.php:170
+msgid "Switch to JS events tracking"
+msgstr "Cambiar al seguimiento de eventos JS"
+
+#: includes/admin/settings/tab-general.php:160
+msgid "Warning: You're currently using deprecated ga.js tracking. We recommend switching to analytics.js, as it is significantly more accurate than ga.js, and allows for functionality (like the more accurate Javascript based events tracking we offer). Further Google Analytics has deprecated support for ga.js, and it may stop working at any time when Google decides to disable it from their server. To switch to using the newer Universal Analytics (analytics.js) %1$sclick here%2$s."
+msgstr "Advertencia: Actualmente estás utilizando el seguimiento de ga.js, que ya es obsoleto. Te recomendamos cambiar a analytics.js, ya que es significativamente más preciso que ga.js, y permite mayores funcionalidades (como el seguimiento de eventos basado en Javascript, más preciso). Google Analytics ha abandonado la compatibilidad con ga.js y puede dejar de funcionar en cualquier momento al desactivarlo desde su servidor. Para cambiarlo y usar el más reciente Universal Annalytics (analytics.js) %1$shaz clic aquí%2$s."
+
+#: includes/admin/settings/tab-general.php:158
+msgid "Analytics.js (Universal Analytics)"
+msgstr "Analytics.js (Universal Analytics)"
+
+#: includes/admin/settings/tab-general.php:157
+msgid "GA.js (Deprecated)"
+msgstr "GA.js (obsoleto)"
+
+#: includes/admin/settings/tab-general.php:151
+msgid "Pick Tracking Mode"
+msgstr "Modo de seguimiento puntual"
+
+#: includes/admin/settings/tab-general.php:144
+msgid "Hide the dashboard and reports pages."
+msgstr "Oculta las páginas de informes del escritorio."
+
+#: includes/admin/settings/tab-general.php:143
+msgid "Disable Dashboard"
+msgstr "Desactivar escritorio"
+
+#: includes/admin/settings/tab-general.php:114
+msgid "Having issues automatically authenticating? %s Click here to authenticate manually %s."
+msgstr "¿Tienes problemas con la autenticación automática? %s Haz clic aquí para autenticarte manualmente %s."
+
+#: includes/admin/settings/tab-general.php:110
+msgid "Deauthenticate"
+msgstr "Anular identificación"
+
+#: includes/admin/settings/tab-general.php:107
+msgid "Profile Active: "
+msgstr "Perfil activo:"
+
+#: includes/admin/settings/tab-general.php:101
+msgid "Google Authentication"
+msgstr "Identificación en Google"
+
+#: includes/admin/settings/tab-general.php:99
+msgid "Analytics Profile"
+msgstr "Perfil de Analytics"
+
+#: includes/admin/common.php:411
+msgid "MonsterInsights has detected that it's files are being blocked. This is usually caused by a adblock browser plugin (particularly uBlock Origin), or a conflicting WordPress theme or plugin. This issue only affects the admin side of MonsterInsights. To solve this, ensure MonsterInsights is whitelisted for your website URL in any adblock browser plugin you use. For step by step directions on how to do this, %1$sclick here%2$s. If this doesn't solve the issue (rare), send us a ticket %3$shere%2$s and we'll be happy to help diagnose the issue."
+msgstr "MonsterInsights ha detectado que tus archivos están siendo bloqueados. Generalmente esto es causado por una extensión de tipo adblocker del navegador (en concreto uBlock Origin) o por un conflicto con algún tema o plugin de WordPress. Este problema solo afecta a la parte de administración de MonsterInsights. Para resolverlo confirma que MonsterInsights está en la lista blanca para la URL de tu sitio en cualquier extensión adblocker que use tu navegador. Para ver una explicación paso a paso de cómo actuar %1$shaz clic aquí%2$s. Si esto no resuelve el problema (raro), envíanos un ticket %3$saquí%2$s y estaremos encantados de ayudarte a resolverlo."
+
+#: includes/admin/settings/settings-api.php:937
+msgid "The callback function used for the %s setting is missing."
+msgstr "Se ha perdido la función de llamada usada por el ajuste %s."
+
+#: includes/admin/settings/settings-api.php:747
+msgid "You must have the %s capability to view/edit this setting"
+msgstr "Debes tener la capacidad de %s para ver/editar este ajuste"
+
+#: includes/admin/settings/register-settings.php:363
+msgid "Users that have at least one of these roles will be able to view and save the settings panel, along with any user with the %s capability."
+msgstr "Los usuarios que tengan al menos uno de estos pefiles podrán ver y guardar el panel de ajustes, igual que cualquier usuario con la capacidad %s."
+
+#: includes/admin/settings/register-settings.php:362
+msgid "Let these user roles save settings:"
+msgstr "Dejar a estos perfiles de usuario guardar ajustes:"
+
+#: includes/admin/settings/register-settings.php:352
+msgid "Let these user roles see reports (and the dashboard):"
+msgstr "Permite a estos perfiles de usuario ver los informes (y el escritorio):"
+
+#: includes/admin/settings/register-settings.php:342
+msgid "Turns on debugging in JS events tracking, logging of eCommerce requests and enables debug settings."
+msgstr "Activa la depuración en el seguimiento de eventos JS, el registro de solicitudes de comercio electrónico y activa los ajustes de depuración."
+
+#: includes/admin/settings/register-settings.php:330
+msgid "This allows you to %1$sset the domain%2$s that's used for tracking. Only is used if set to a value, else defaults to automatic determination. It is very rare that you would need to use this setting."
+msgstr "Esto te permite %1$sdefinir el dominio%2$s que se usará para el seguimiento. Sólo se utiliza si se establece un valor, de lo contrario la configuración por defecto es automática. Es muy raro que necesites usar este ajuste."
+
+#: includes/admin/settings/register-settings.php:329
+msgid "Domain to track as:"
+msgstr "Dominio a seguir como:"
+
+#: includes/admin/settings/register-settings.php:263
+msgid "The label to use for these links, this will be added to where the click came from, so if the label is %s, the label for a click from the content of an article becomes \"outbound-article-aff\"."
+msgstr "La etiqueta que se utilizará para estos enlaces, se añadirá a de dónde vino el clic, por lo que si la etiqueta es %s, la etiqueta de un clic del contenido de un artículo se convierte en \"outbound-article-aff\"."
+
+#: includes/admin/settings/register-settings.php:246
+msgid "If you have enabled event tracking, MonsterInsights will send an event/pageview to GA if a link to a local file has one of the above extensions."
+msgstr "Si has activado el seguimiento de eventos, MonsterInsights enviará un evento/página vista a GA si llega un enlace a un archivo local con alguna de las siguientes extensiones."
+
+#: includes/admin/settings/register-settings.php:239
+msgid "Event (recommended)"
+msgstr "Evento (recomendado)"
+
+#: includes/admin/settings/register-settings.php:235
+msgid "Tracking as pageviews is not recommended, as this would skew your statistics, but it does make it possible to track downloads as goals. This feature requires that event tracking be turned on."
+msgstr "No se recomienda realizar el seguimiento como páginas vistas, ya que esto podría sesgar tus estadísticas, pero sí hace posible rastrear las descargas como objetivos. Esta función requiere que se active el seguimiento de eventos."
+
+#: includes/admin/settings/register-settings.php:234
+msgid "Track downloads as an:"
+msgstr "Rastrear descargas como:"
+
+#: includes/admin/settings/register-settings.php:224
+msgid "Do not use this feature if you use FeedBurner, as FeedBurner can do this automatically and better than this plugin can. Check %1$sthis help page%2$s for info on how to enable this feature in FeedBurner."
+msgstr "No utilices esta función si utilizas FeedBurner, ya que FeedBurner puede hacerlo automáticamente y mejor que este plugin. Consulta %1$sesta página de ayuda%2$s para obtener información sobre cómo activar esta función en FeedBurner."
+
+#: includes/admin/settings/register-settings.php:223
+msgid "Turn on tag links in RSS"
+msgstr "Activar etiquetas de enlaces en RSS"
+
+#: includes/admin/settings/register-settings.php:217
+msgid "Turn on allowLinker"
+msgstr "Activar allowLinker"
+
+#: includes/admin/settings/register-settings.php:211
+msgid "Turn on allowAnchor"
+msgstr "Activar allowAnchor"
+
+#: includes/admin/settings/register-settings.php:199
+msgid "Enable enhanced link attribution?"
+msgstr "¿Habilitar la atribución de enlace mejorada?"
+
+#: includes/admin/settings/register-settings.php:188
+msgid "Anonymize IP addresses?"
+msgstr "¿Anonimizar las direcciones IP?"
+
+#: includes/admin/settings/register-settings.php:181
+msgid "Check this setting to add the Demographics and Remarketing features to your Google Analytics tracking code. Make sure to enable Demographics and Remarketing in your Google Analaytics account. We have a guide for how to do that in our %1$sknowledge base%2$s. For more information about Remarketing, we refer you to %3$sGoogle's documentation%2$s."
+msgstr "Compruebe esta configuración para añadir las características de demografía y Remarketing a tu código de seguimiento de Google Analytics. Asegúrate de habilitar los datos demográficos y de remarketing en tu cuenta de Google Analytics. Tenemos una guía para saber cómo hacerlo en nuestra %1$sbase de conocimientos%2$s. Para obtener más información sobre el remarketing, te remitimos a la %3$sdocumentación de Google%2$s."
+
+#: includes/admin/settings/register-settings.php:170
+msgid "Using Javascript (recommended)"
+msgstr "Utilizando Javascript (recomendado)"
+
+#: includes/admin/settings/register-settings.php:169
+msgid "Yes, using PHP (deprecated)"
+msgstr "Sí, utilizando PHP (obsoleto)"
+
+#: includes/admin/settings/register-settings.php:168
+msgid "No"
+msgstr "No"
+
+#: includes/admin/settings/register-settings.php:164
+msgid "We recommend tracking clicks and downloads, so you know where users are exiting your site, and what downloads they are interacting with. "
+msgstr "Recomendamos realizar un seguimiento de los clics y las descargas, para que puedas saber dónde van los usuarios que salen de tu sitio y con qué descargas interactúan."
+
+#: includes/admin/settings/register-settings.php:154
+msgid "Users that have at least one of these roles will not be tracked into Google Analytics."
+msgstr "Los usuarios que tengan al menos uno de estos perfiles no serán rastreados en Google Analytics."
+
+#: includes/admin/settings/register-settings.php:153
+msgid "Ignore these user roles from tracking:"
+msgstr "Ignorar estos perfiles de usuario en el seguimiento:"
+
+#: includes/admin/settings/register-settings.php:109
+msgid "Permissions"
+msgstr "Permisos"
+
+#: includes/admin/settings/register-settings.php:105
+msgid "Compatibility"
+msgstr "Compatibilidad"
+
+#: includes/admin/settings/register-settings.php:100
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#: includes/admin/settings/register-settings.php:95
+msgid "Additional Reporting"
+msgstr "Informes adicionales"
+
+#: includes/admin/settings/register-settings.php:74
+msgid "Performance"
+msgstr "Rendimiento"
+
+#: includes/admin/settings/register-settings.php:65
+msgid "Memberships"
+msgstr "Membresías"
+
+#: includes/admin/settings/register-settings.php:60
+msgid "Media"
+msgstr "Multimedia"
+
+#: includes/admin/settings/register-settings.php:56
+msgid "eCommerce"
+msgstr "Comercio electrónico"
+
+#: includes/admin/settings/register-settings.php:52
+msgid "Forms"
+msgstr "Formularios"
+
+#: includes/admin/settings/register-settings.php:48
+msgid "Ads"
+msgstr "Anuncios"
+
+#: includes/admin/settings/register-settings.php:43
+msgid "Social"
+msgstr "Social"
+
+#: includes/admin/settings/register-settings.php:39
+msgid "Affiliate Links"
+msgstr "Enlaces de afiliados"
+
+#: includes/admin/settings/register-settings.php:35
+msgid "File Downloads"
+msgstr "Descargas de archivos"
+
+#: includes/admin/settings/register-settings.php:27
+msgid "Demographics"
+msgstr "Datos demográficos"
+
+#: includes/admin/settings/register-settings.php:23
+msgid "Engagement"
+msgstr "Compromiso"
+
+#: includes/admin/reports/overview.php:458
+msgid "Country not set"
+msgstr "País no establecido"
+
+#: includes/admin/reports/overview.php:443
+msgid "%"
+msgstr "%"
+
+#: includes/admin/reports/overview.php:437
+msgid "COUNTRY"
+msgstr "PAÍS"
+
+#: includes/admin/reports/overview.php:416
+msgid "views"
+msgstr "vistas"
+
+#: includes/admin/reports/overview.php:408
+msgid "TOP COUNTRIES"
+msgstr "PRINCIPALES PAÍSES"
+
+#: includes/admin/reports/overview.php:378
+msgid "Unknown Source"
+msgstr "Fuente desconocida"
+
+#: includes/admin/reports/overview.php:362
+msgid "SITE"
+msgstr "SITIO"
+
+#: includes/admin/reports/overview.php:357
+msgid "TOP TRAFFIC SOURCES"
+msgstr "PRINCIPALES FUENTES DE TRÁFICO"
+
+#: includes/admin/reports/overview.php:333
+msgid "Unknown Page or Post"
+msgstr "Página o Entrada desconocida"
+
+#: includes/admin/reports/overview.php:320
+#: includes/admin/reports/overview.php:365
+#: includes/admin/reports/overview.php:440
+msgid "VIEWS"
+msgstr "VISTAS"
+
+#: includes/admin/reports/overview.php:317
+msgid "TITLE"
+msgstr "TÍTULO"
+
+#: includes/admin/reports/overview.php:312
+msgid "TOP POSTS AND PAGES"
+msgstr "PRINCIPALES ENTRADAS Y PÁGINAS"
+
+#: includes/admin/reports/overview.php:137
+msgid "DOWN"
+msgstr "ABAJO"
+
+#: includes/admin/reports/overview.php:136
+msgid "UP"
+msgstr "ARRIBA"
+
+#: includes/admin/reports/overview.php:127
+msgid "PAGE VIEWS"
+msgstr "PÁGINAS VISTAS"
+
+#: includes/admin/partials/header.php:20
+msgid "MonsterInsights Mascot"
+msgstr "Mascota de MonsterInsights"
+
+#: includes/admin/pages/settings.php:297
+msgid "Successfully migrated to JS events tracking!"
+msgstr "¡Se ha migrado correctamente al seguimiento de eventos con JS!"
+
+#: includes/admin/pages/settings.php:242
+msgid "Successfully migrated to Universal Analytics (analytics.js)!"
+msgstr "¡Se ha migrado correctamente a Universal Analytics (analytics.js)!"
+
+#: includes/admin/pages/settings.php:226 includes/admin/pages/settings.php:281
+msgid "Error"
+msgstr "Error"
+
+#: includes/admin/pages/settings.php:226 includes/admin/pages/settings.php:281
+msgid "You do not have permission to manage MonsterInsights settings"
+msgstr "No tienes permiso para administrar la configuración de MonsterInsights"
+
+#: includes/admin/pages/settings.php:151
+msgid "Settings saved successfully."
+msgstr "Ajustes guardados correctamente."
+
+#: includes/admin/pages/settings.php:66 includes/admin/pages/settings.php:67
+msgid "Tracking"
+msgstr "Seguimiento"
+
+#: includes/admin/pages/network-settings.php:86
+#: includes/admin/settings/tab-general.php:89
+msgid "Your license key type (handles updates and Addons). Click refresh if your license has been upgraded or the type is incorrect."
+msgstr "Tu tipo de clave de licencia (maneja actualizaciones y complementos). Haz clic en Actualizar si la licencia se ha actualizado o si el tipo es incorrecto."
+
+#: includes/admin/pages/network-settings.php:85
+#: includes/admin/settings/tab-general.php:88
+msgid "Refresh Key"
+msgstr "Actualizar clave"
+
+#: includes/admin/pages/network-settings.php:82
+#: includes/admin/settings/tab-general.php:85
+msgid "Your license key type for this site is %s."
+msgstr "Tu tipo de clave de licencia para este sitio es %s."
+
+#: includes/admin/pages/network-settings.php:78
+#: includes/admin/settings/tab-general.php:81
+msgid "License Key Type"
+msgstr "Tipo de clave de licencia"
+
+#: includes/admin/pages/network-settings.php:70
+#: includes/admin/settings/tab-general.php:74
+msgid "License key to enable automatic updates for MonsterInsights Pro & addons. Deactivate your license if you want to use it on another WordPress site."
+msgstr "Clave de licencia para activar actualizaciones automáticas para MonsterInsights Pro y complementos. Desactiva tu licencia si deseas utilizarla en otro sitio de WordPress."
+
+#: includes/admin/pages/network-settings.php:69
+#: includes/admin/settings/tab-general.php:73
+msgid "Deactivate Key"
+msgstr "Desactivar clave"
+
+#: includes/admin/pages/network-settings.php:68
+#: includes/admin/settings/tab-general.php:72
+msgid "Verify Key"
+msgstr "Verificar clave"
+
+#: includes/admin/pages/network-settings.php:56
+msgid "Activate your MonsterInsights license key on this panel to hide the license key settings and addon pages for subsites."
+msgstr "Activa tu clave de licencia de MonsterInsights en este panel para ocultar la configuración de las claves de licencia y las páginas de complementos para los subsitios."
+
+#: includes/admin/pages/dashboard.php:107 includes/admin/pages/reports.php:150
+msgid "Please %1$sre-authenticate%2$s with Google Analytics to allow the plugin to fetch data."
+msgstr "Por favor, %1$svuelve a identificarte%2$s con Google Analytics para permitir que el plugin recupere datos."
+
+#: includes/admin/pages/dashboard.php:93 includes/admin/pages/reports.php:136
+msgid "Please %1$sauthenticate %2$swith Google Analytics to allow the plugin to fetch data."
+msgstr "Por favor, %1$sidentifícate%2$s con Google Analytics para permitir que el plugin recupere datos."
+
+#: includes/admin/pages/dashboard.php:85 includes/admin/pages/dashboard.php:99
+#: includes/admin/pages/dashboard.php:113
+#: includes/admin/pages/dashboard.php:127 includes/admin/pages/reports.php:128
+#: includes/admin/pages/reports.php:142 includes/admin/pages/reports.php:156
+#: includes/admin/pages/reports.php:170
+msgid "The Google oAuth authentication needs to be re-authenticated to view data."
+msgstr "La autenticación oAuth de Google debe volver a identificarse para ver los datos."
+
+#: includes/admin/pages/dashboard.php:79 includes/admin/pages/reports.php:122
+msgid "Please %1$senable the dashboard%2$s to see report data."
+msgstr "Por favor, %1$sactiva el panel de control%2$s para ver los datos del informe."
+
+#: includes/admin/pages/dashboard.php:39 includes/admin/pages/reports.php:56
+msgid "Access denied"
+msgstr "Acceso denegado"
+
+#: includes/admin/pages/addons.php:484
+msgid "Status: %1$sInactive%2$s"
+msgstr "Estado: %1$sInactivo%2$s"
+
+#: includes/admin/pages/addons.php:482
+msgid "Status: %1$sNetwork Inactive%2$s"
+msgstr "Estado: %1$sRed inactiva%2$s"
+
+#: includes/admin/pages/addons.php:456
+msgid "Status: %1$sActive%2$s"
+msgstr "Estado: %1$sActivo%2$s"
+
+#: includes/admin/pages/addons.php:454
+msgid "Status: %1$sNetwork Active%2$s"
+msgstr "Estado: %1$sRed activa%2$s"
+
+#: includes/admin/pages/addons.php:427
+msgid "Why can't I install addons?"
+msgstr "¿Por qué no puedo instalar complementos?"
+
+#: includes/admin/pages/addons.php:416
+msgid "Status: %1$sNot Installed%2$s"
+msgstr "Estado: %1$sNo instalado%2$s"
+
+#: includes/admin/pages/addons.php:397
+msgid "Upgrade Now"
+msgstr "Actualizar ahora"
+
+#: includes/admin/pages/addons.php:181
+msgid "%1$sWant even more addons?%2$sUpgrade your MonsterInsights account%3$s and unlock the following addons:"
+msgstr "%1$s¿Quieres más complementos?%2$sActualiza tu cuenta de MonsterInsights%3$s y desbloquea los siguientes complementos:"
+
+#: includes/admin/pages/addons.php:180
+msgid "Unlock More Addons"
+msgstr "Desbloquear más complementos"
+
+#: includes/admin/pages/addons.php:160
+msgid "Available Addons:"
+msgstr "Complementos disponibles:"
+
+#: includes/admin/pages/addons.php:142
+msgid "Refresh Addons"
+msgstr "Actualizar complementos"
+
+#: includes/admin/pages/addons.php:139
+msgid "There was an issue retrieving the addons for this site. Please click on the button below the refresh the addons data."
+msgstr "Se produjo un problema al recuperar los complementos de este sitio. Por favor, haz clic en el botón inferior para la actualización de los datos de los complementos."
+
+#: includes/admin/pages/addons.php:123
+msgid "In order to get access to Addons, you need to resolve your license key errors."
+msgstr "Para obtener acceso a los complementos, debes resolver los errores de tu clave de licencia."
+
+#: includes/admin/pages/addons.php:89
+msgid "Sort Descending (Z-A)"
+msgstr "Orden descendente (Z-A)"
+
+#: includes/admin/pages/addons.php:88
+msgid "Sort Ascending (A-Z)"
+msgstr "Orden ascendente (A-Z)"
+
+#: includes/admin/pages/addons.php:86
+msgid "Search MI Addons"
+msgstr "Buscar complementos MI"
+
+#: includes/admin/pages/addons.php:83
+msgid "MonsterInsights Addons"
+msgstr "Complementos MonsterInsights"
+
+#: includes/admin/notice.php:225
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: includes/admin/licensing/skin.php:86
+msgid "There was an error installing the addon. Please try again."
+msgstr "Se ha producido un error al instalar el complemento. Por favor, vuelve a intentarlo."
+
+#: includes/admin/licensing/license.php:518
+msgid "No valid license key has been entered, so automatic updates for MonsterInsights have been turned off. %1$sPlease click here to enter your license key and begin receiving automatic updates.%2$s"
+msgstr "No se ha introducido una clave de licencia válida, por lo que las actualizaciones automáticas de MonsterInsights se han desactivado. %1$sHaz clic aquí para introducir tu clave de licencia y comenzar a recibir actualizaciones automáticas.%2$s"
+
+#: includes/admin/licensing/license.php:484
+#: includes/admin/licensing/license.php:545
+msgid "Your license key for MonsterInsights is invalid. The key no longer exists or the user associated with the key has been deleted. Please use a different key to continue receiving automatic updates."
+msgstr "Tu clave de licencia de MonsterInsights no es válida. La clave ya no existe o el usuario asociado con dicha clave ha sido eliminado. Utiliza una clave diferente para seguir recibiendo actualizaciones automáticas."
+
+#: includes/admin/licensing/license.php:475
+#: includes/admin/licensing/license.php:536
+msgid "Your license key for MonsterInsights has been disabled. Please use a different key to continue receiving automatic updates."
+msgstr "Tu clave de licencia de MonsterInsights ha sido desactivada. Utiliza una clave diferente para seguir recibiendo actualizaciones automáticas."
+
+#: includes/admin/licensing/license.php:466
+#: includes/admin/licensing/license.php:527
+msgid "Your license key for MonsterInsights has expired. %1$sPlease click here to renew your license key and continue receiving automatic updates.%2$s"
+msgstr "Tu clave de licencia de MonsterInsights ha expirado. %1$sHaz clic aquí para renovar tu clave de licencia y comenzar a recibir actualizaciones automáticas.%2$s"
+
+#: includes/admin/licensing/license.php:356
+msgid "Congratulations! You have deactivated the key from this site successfully."
+msgstr "¡Enhorabuena! Has desactivado la clave de este sitio correctamente."
+
+#: includes/admin/licensing/license.php:291
+msgid "Congratulations! Your key has been refreshed successfully."
+msgstr "¡Enhorabuena! Tu clave se ha actualizado correctamente."
+
+#: includes/admin/licensing/license.php:136
+#: includes/admin/licensing/license.php:145
+msgid "Congratulations! This site is now receiving automatic updates."
+msgstr "¡Enhorabuena! Este sitio está recibiendo actualizaciones automáticas."
+
+#: includes/admin/licensing/license.php:118
+#: includes/admin/licensing/license.php:218
+#: includes/admin/licensing/license.php:345
+msgid "There was an error connecting to the remote key API. Please try again later."
+msgstr "Se ha producido un error al conectarse a la API de clave remota. Por favor, inténtalo de nuevo más tarde."
+
+#: includes/admin/googleauth.php:230
+msgid "EXIT"
+msgstr "SALIR"
+
+#: includes/admin/googleauth.php:215
+msgid "ERROR"
+msgstr "ERROR"
+
+#: includes/admin/googleauth.php:208 includes/admin/googleauth.php:209
+#: includes/admin/googleauth.php:228
+msgid "Exit"
+msgstr "Salir"
+
+#: includes/admin/googleauth.php:207
+msgid "An error has occured."
+msgstr "Se ha producido un error."
+
+#: includes/admin/googleauth.php:187
+msgid "CLOSE"
+msgstr "CERRAR"
+
+#: includes/admin/googleauth.php:185
+msgid "Save and close"
+msgstr "Guardar y cerrar"
+
+#: includes/admin/googleauth.php:173
+msgid "You're all set!"
+msgstr "¡Ya está todo listo!"
+
+#: includes/admin/googleauth.php:172
+msgid "DONE"
+msgstr "HECHO"
+
+#: includes/admin/googleauth.php:167
+msgid "Your Google connection has been replaced."
+msgstr "Tu conexión de Google se ha reemplazado."
+
+#: includes/admin/googleauth.php:130
+msgid "Select the Google Analytics Profile to Use"
+msgstr "Selecciona el perfil de Google Analytics que deseas usar"
+
+#: includes/admin/googleauth.php:129
+msgid "SELECT PROFILE"
+msgstr "SELECCIONAR PERFIL"
+
+#: includes/admin/googleauth.php:84
+msgid "Paste Google Code here"
+msgstr "Pega tu código de Google aquí"
+
+#: includes/admin/googleauth.php:83
+msgid "Copy the Google code into the box below and click next"
+msgstr "Copia el código de Google en el cuadro de abajo y haz clic en Siguiente"
+
+#: includes/admin/googleauth.php:82
+msgid "Click To Get Google Code"
+msgstr "Haz clic para obtener el Código de Google"
+
+#: includes/admin/googleauth.php:81
+msgid "ENTER GOOGLE CODE"
+msgstr "INTRODUCE EL CÓDIGO DE GOOGLE"
+
+#: includes/admin/googleauth.php:53 includes/admin/googleauth.php:101
+#: includes/admin/googleauth.php:148
+msgid "NEXT"
+msgstr "SIGUIENTE"
+
+#: includes/admin/googleauth.php:45 includes/admin/googleauth.php:93
+#: includes/admin/googleauth.php:140
+msgid "CANCEL"
+msgstr "CANCELAR"
+
+#: includes/admin/googleauth.php:38
+msgid "Authenticate your Google Analytics account with MonsterInsights"
+msgstr "Identifica tu cuenta de Google Analytics con MonsterInsights"
+
+#: includes/admin/googleauth.php:37
+msgid "AUTHENTICATION"
+msgstr "IDENTIFICACIÓN"
+
+#: includes/admin/googleauth.php:35
+msgid "Re-authenticate your Google Analytics account with MonsterInsights"
+msgstr "Re-identifica tu cuenta de Google Analytics con MonsterInsights"
+
+#: includes/admin/googleauth.php:34
+msgid "RE-AUTHENTICATE"
+msgstr "RE-IDENTIFICAR"
+
+#: includes/admin/googleauth.php:26 includes/admin/googleauth.php:27
+#: includes/admin/googleauth.php:45 includes/admin/googleauth.php:74
+#: includes/admin/googleauth.php:75 includes/admin/googleauth.php:93
+#: includes/admin/googleauth.php:121 includes/admin/googleauth.php:122
+#: includes/admin/googleauth.php:140
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: includes/admin/googleauth.php:25 includes/admin/googleauth.php:73
+#: includes/admin/googleauth.php:120
+msgid "This process will replace your current Google Analytics connection."
+msgstr "Este proceso sustituirá a la conexión actual de Google Analytics."
+
+#: includes/admin/google.php:624
+msgid "Please select a profile."
+msgstr "Por favor, selecciona un perfil."
+
+#: includes/admin/google.php:618
+msgid "Invalid profile selected."
+msgstr "Perfil seleccionado no válido."
+
+#: includes/admin/google.php:592
+msgid "Please paste in your Google code."
+msgstr "Por favor, pega tu código de Google."
+
+#: includes/admin/google.php:585
+msgid "Bad Google Code. Please try again."
+msgstr "Código de Google incorrecto. Por favor, vuelve a intentarlo."
+
+#: includes/admin/google.php:578
+msgid "No profiles viewable for that account. Please use another account."
+msgstr "No hay perfiles visibles para esa cuenta. Por favor, utiliza otra cuenta."
+
+#: includes/admin/google.php:539 includes/admin/google.php:646
+msgid "Permission Denied"
+msgstr "Permiso Denegado"
+
+#: includes/admin/common.php:174
+msgid "Proceed"
+msgstr "Proceder"
+
+#: includes/admin/common.php:173
+msgid "Installing..."
+msgstr "Instalando..."
+
+#: includes/admin/common.php:171 includes/admin/pages/addons.php:422
+msgid "Install"
+msgstr "Instalar"
+
+#: includes/admin/common.php:170
+msgid "Status: Network inactive"
+msgstr "Estado: Red inactiva"
+
+#: includes/admin/common.php:169
+msgid "Status: Inactive"
+msgstr "Estado: Inactivo"
+
+#: includes/admin/common.php:168
+msgid "Deactivating..."
+msgstr "Desactivando..."
+
+#: includes/admin/common.php:166 includes/admin/pages/addons.php:463
+msgid "Network deactivate"
+msgstr "Desactivar la red"
+
+#: includes/admin/common.php:165 includes/admin/pages/addons.php:465
+#: includes/admin/pages/addons.php:467
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: includes/admin/common.php:164
+msgid "Activating..."
+msgstr "Activando..."
+
+#: includes/admin/common.php:162 includes/admin/pages/addons.php:490
+msgid "Network activate"
+msgstr "Activar la red"
+
+#: includes/admin/common.php:161
+msgid "Status: Network Activated"
+msgstr "Estado: Red Activada"
+
+#: includes/admin/common.php:160 includes/admin/pages/addons.php:492
+msgid "Activate"
+msgstr "Activar"
+
+#: includes/admin/common.php:159
+msgid "Status: Active"
+msgstr "Estado: Activo"
+
+#: includes/admin/common.php:157
+msgid "Warning: You have unsaved setting changes. If you leave the settings page without saving your changes will be lost. Did you still want to leave the page?"
+msgstr "Advertencia: Tienes cambios de configuración no guardados. Si dejas la página de configuración sin guardar los cambios se perderán. ¿Todavía quieres salir de la página?"
+
+#: includes/admin/admin.php:248
+msgid "Please rate %sMonsterInsights%s %s on %sWordPress.org%s to help us spread the word. Thank you from the MonsterInsights team!"
+msgstr "Por favor valora %sMonsterInsights%s %s en %sWordPress.org%s para ayudarnos a difundir la palabra. ¡Gracias desde el equipo de MonsterInsights!"
+
+#: includes/admin/admin.php:130 includes/admin/admin.php:133
+msgid "Support"
+msgstr "Soporte"
+
+#: includes/admin/admin.php:124
+msgid "Get MonsterInsights Pro"
+msgstr "Obtener MonsterInsights Pro"
+
+#: includes/admin/admin.php:119
+msgid "Documentation"
+msgstr "Documentación"
+
+#: includes/admin/admin.php:86 includes/admin/admin.php:88
+#: includes/admin/pages/network-settings.php:55
+msgid "Network Settings"
+msgstr "Ajustes de red "
+
+#: includes/admin/admin.php:63 includes/admin/admin.php:91
+msgid "Addons"
+msgstr "Complementos"
+
+#: includes/admin/admin.php:63 includes/admin/admin.php:91
+msgid "Addons:"
+msgstr "Complementos:"
+
+#: includes/admin/admin.php:54
+msgid "Reports:"
+msgstr "Informes:"
+
+#: includes/admin/admin.php:42 includes/admin/admin.php:46
+msgid "Dashboard:"
+msgstr "Escritorio:"
+
+#: includes/admin/admin.php:36 includes/admin/admin.php:39
+#: includes/admin/admin.php:49
+msgid "Settings:"
+msgstr "Ajustes:"
+
+#: googleanalytics.php:582
+msgid "Please uninstall and remove MonsterInsights Pro before activating MonsterInsights Lite. The Lite version has not been activated. %1$sClick here to return to the Dashboard%2$s."
+msgstr "Por favor desinstala y elimina MonsterInsights Pro antes de activar MonsterInsights Lite. La versión Lite no ha sido activada. %1$sHaz clic aquí para volver al escritorio%2$s."
+
+#: googleanalytics.php:577
+msgid "Sorry, but your version of WordPress does not meet MonsterInsight's required version of %1$s3.8%2$s to run properly. The plugin not been activated. %3$sClick here to return to the Dashboard%4$s."
+msgstr "Lo siento pero tu versión de WordPress no coincide con la mínima versión requerida por MonsterInsight que es la %1$s3.8%2$s. El plugin no ha sido activado. %3$sHaz clic aquí para volver al escritorio%4$s."
+
+#: googleanalytics.php:427
+msgid "Please %1$uninstall%2$s the MonsterInsights Lite Plugin. Your Pro version of MonsterInsights may not work as expected until the Lite version is uninstalled."
+msgstr "Por favor %1$sdesinstala%2$s el plugin MonsterInsights Lite. Tu versión Pro de MonsterInsights no podrá trabajar adecuadamente hasta que la versión Lite no sea desinstalada."
+
+#: googleanalytics.php:406
+msgid "Sorry, but your version of WordPress does not meet MonsterInsights's required version of %1$s3.8%2$s to run properly. The plugin not been activated. %3$sClick here to return to the Dashboard%4$s."
+msgstr "Lo siento pero tu versión de WordPress no coincide con la mínima versión requerida por MonsterInsight que es la %1$s3.8%2$s. El plugin no ha sido activado. %3$sHaz clic aquí para volver al escritorio%4$s."
+
+#: googleanalytics.php:384
+msgid "The version of MonsterInsights eCommerce addon you have is not compatible with the version of MonsterInsights installed. Please update the eCommerce addon as soon as possible"
+msgstr "La versión de la extensión MonsterInsights eCommerce que tienes no es compatible con la versión de MonsterInsights instalada. Por favor actualiza la extensión eCommerce lo antes posible."
+
+#: googleanalytics.php:229 googleanalytics.php:243
+msgid "Cheatin&#8217; huh?"
+msgstr "Haciendo trampa, ¿eh?"
+
+#. Author URI of the plugin/theme
+msgid "https://www.monsterinsights.com/"
+msgstr "https://www.monsterinsights.com/"
+
+#. #-#-#-#-#  google-analytics-for-wordpress-code.pot (Google Analytics for
+#. WordPress by MonsterInsights 6.2.8)  #-#-#-#-#
+#. Author of the plugin/theme
+#: includes/admin/partials/header.php:19
+msgid "MonsterInsights"
+msgstr "MonsterInsights"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.monsterinsights.com/?utm_source=wordpress&utm_medium=plugin&utm_campaign=wpmipluginpro&utm_content=v600"
+msgstr "https://www.monsterinsights.com/?utm_source=wordpress&utm_medium=plugin&utm_campaign=wpmipluginpro&utm_content=v600"
+
+#: includes/admin/admin.php:36 includes/admin/admin.php:42
+#: includes/admin/admin.php:86
+msgid "Insights"
+msgstr "Insights"
+
+#: includes/admin/pages/network-settings.php:62
+#: includes/admin/settings/tab-general.php:66
+msgid "License Key"
+msgstr "Número de Licencia"
+
+#: includes/frontend/tracking/class-tracking-disabled.php:92
+msgid "Normally you will find the Google Analytics tracking code here, but the webmaster disabled your user group."
+msgstr "Normalmente usted encontraría su código de seguimiento de Google Analytics aquí, pero el administrador del sitio ha deshabilitado su grupo de usuarios."
+
+#: includes/frontend/tracking/class-tracking-disabled.php:90
+msgid "@Webmaster, normally you will find the Google Analytics tracking code here, but you are in the disabled user groups. To change this, navigate to Insights %1$s Settings %1$s Ignore Users"
+msgstr "@Webmaster, habitualmente encontrarás aquí el código de seguimiento de Google Analytics, pero estás en el grupo de usuarios deshabilitados. Para cambiar esto vaya a Insights %1$sAjustes %1$s Ignorar usuarios"
+
+#: includes/admin/settings/register-settings.php:341
+msgid "Enable Debug Mode"
+msgstr "Activar modo debug"
+
+#: includes/admin/settings/register-settings.php:336
+msgid "Not for the average user: this allows you to add a line of code, to be added before the %1$s call."
+msgstr "No es para el usuario promedio: esto le permite añadir una línea de código, que se añade antes de la llamada %1$s."
+
+#: includes/admin/settings/register-settings.php:335
+msgid "Custom code"
+msgstr "Código personalizado"
+
+#: includes/admin/settings/register-settings.php:218
+msgid "This adds a %1$s call to your tracking code, allowing you to use %2$s and related functions."
+msgstr "Esto añade una %1$s llamada al código de seguimiento, lo que permite utilizar %2$s y funciones relacionadas."
+
+#: includes/admin/settings/register-settings.php:212
+msgid "This adds a %1$s call to your tracking code, and makes RSS link tagging use a %2$s as well."
+msgstr "Esto añade una llamada %1$s a su código de seguimiento, y hace que el etiquetado de enlaces  RSS utilice también un %2$s."
+
+#: includes/admin/settings/register-settings.php:262
+msgid "Label for those links:"
+msgstr "Nombre para esos enlaces:"
+
+#: includes/admin/settings/register-settings.php:257
+msgid "If you want to track all internal links that begin with %1$s, enter %1$s in the box above. If you have multiple prefixes you can separate them with comma's: %2$s"
+msgstr "Si quiere rastrear todos los enlaces internos que empiecen con %1$s, introduce %1$s en el campo superior. Si tiene múltiples prefijos los puede separar con comas : %2$s"
+
+#: includes/admin/settings/register-settings.php:256
+msgid "Set path for internal links to track as outbound links"
+msgstr "Establece la dirección para los enlaces internos que serán rastreados como enlaces salientes"
+
+#: lite/includes/admin/addons.php:39
+msgid "Subdomain tracking:"
+msgstr "Monitorizar subdominio:"
+
+#: includes/admin/settings/register-settings.php:245
+msgid "Extensions of files to track as downloads:"
+msgstr "Extensión de los archivos a seguir como descargas:"
+
+#: includes/admin/settings/register-settings.php:200
+msgid "Add %1$sEnhanced Link Attribution%2$s to your tracking code."
+msgstr "Añadir %1$sEnhanced Link Attribution%2$s a su códico de seguimiento."
+
+#: includes/admin/settings/register-settings.php:180
+msgid "Enable Demographics and Interests Reports for Remarketing and Advertising"
+msgstr "Activar Informes  Demográficos y de Intereses para Remarketing y Publicidad"
+
+#: includes/admin/settings/register-settings.php:189
+msgid "This adds %1$s, telling Google Analytics to anonymize the information sent by the tracker objects by removing the last octet of the IP address prior to its storage."
+msgstr "Esto añade %1$s, diciéndole a  Google Analytics que anonimice la información enviada por los objetos de seguimiento mediante la eliminación del último octeto de la dirección IP antes de su almacenamiento."
+
+#: includes/admin/settings/register-settings.php:163
+msgid "Track outbound clicks and download links?"
+msgstr "¿Rastrear enlaces salientes y descargas?"
+
+#: includes/admin/settings/tab-general.php:136
+msgid "Warning: If you use a manual UA code, you won't be able to use the dashboard or reports."
+msgstr "Advertencia: Si usas un código UA manual, no serás capaz de usar el escritorio o los informes."
+
+#: includes/admin/settings/tab-general.php:132
+msgid "Manually enter your UA code"
+msgstr "Introduce manualmente tu código UA"
+
+#: includes/admin/google.php:552
+msgid "Cannot connect to Google"
+msgstr "No se ha podido conectar con Google"
+
+#: includes/admin/settings/tab-general.php:109
+msgid "Re-Authenticate with your Google account"
+msgstr "Volver a autentificar con una cuenta de Google"
+
+#: includes/admin/google.php:689
+msgid "Select a profile"
+msgstr "Seleccione un perfil"
+
+#: includes/admin/google.php:688
+msgid "Analytics profile"
+msgstr "Perfil de Analytics"
+
+#: includes/admin/settings/tab-general.php:113
+msgid "Authenticate with your Google account"
+msgstr "Autentificarse con su cuenta de Google"
+
+#: includes/admin/settings/register-settings.php:70
+msgid "Custom Dimensions"
+msgstr "Dimensiones personalizadas"
+
+#: includes/admin/pages/settings.php:62 includes/admin/pages/settings.php:63
+msgid "General"
+msgstr "General"
+
+#: includes/admin/reports/overview.php:32
+msgid "Overview"
+msgstr "Vista previa"
+
+#: includes/admin/admin.php:54 includes/admin/pages/reports.php:93
+msgid "Reports"
+msgstr "Informes"
+
+#: includes/admin/googleauth.php:51 includes/admin/googleauth.php:99
+#: includes/admin/googleauth.php:146
+msgid "Next"
+msgstr "Próximo"
+
+#: includes/admin/common.php:156
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: includes/admin/google.php:842 includes/admin/pages/dashboard.php:121
+#: includes/admin/pages/reports.php:164
+msgid "Data is not up-to-date, there was an error in retrieving the data from Google Analytics. This error could be caused by several issues. If the error persists, please see %1$sthis page%2$s."
+msgstr "Los datos no están actualizados, ha habido un error al acceder a los datos de Google Analytics. Este error puede estar causado por varias razones. Si el error persiste, por favor consulta %1$spage%2$s"
+
+#: includes/admin/google.php:829
+msgid "It seems the authentication for the plugin is missing permissions. Please %1$sre-authenticate%2$s with Google Analytics to allow the plugin to fetch data."
+msgstr "Parece que la autenticación para el plugin ha caducado, por favor %1$sre-autenticar%2$s con Google Analytics para permitir que el plugin obtenga datos."
+
+#: includes/admin/google.php:803
+msgid "Please configure your %1$sGoogle Analytics settings%2$s!"
+msgstr "Por favor ¡configura tus %1$sajustes de Google Analytics%2$s!"
+
+#: includes/admin/settings/register-settings.php:240
+msgid "Pageview"
+msgstr "Vista de página"
+
+#: includes/admin/admin.php:39 includes/admin/admin.php:49
+#: includes/admin/admin.php:137
+msgid "Settings"
+msgstr "Configuraciones"
+
+#: includes/admin/admin.php:46 includes/admin/pages/dashboard.php:56
+msgid "Dashboard"
+msgstr "Escritorio"
+
+#: includes/admin/settings/settings-api.php:969
+#: includes/admin/settings/tab-general.php:219
+msgid "Save Changes"
+msgstr "Guardar cambios"
