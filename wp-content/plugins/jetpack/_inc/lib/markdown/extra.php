@@ -32,7 +32,7 @@ define( 'MARKDOWNEXTRA_VERSION',  "1.2.8" ); # 29 Nov 2013
 @define( 'MARKDOWN_FN_BACKLINK_TITLE',     "" );
 
 # Optional class attribute for footnote links and backlinks.
-@define( 'MARKDOWN_FN_LINK_CLASS',         "" );
+@define( 'MARKDOWN_FN_LINK_CLASS',         "jetpack-footnote" );
 @define( 'MARKDOWN_FN_BACKLINK_CLASS',     "" );
 
 # Optional class prefix for fenced code block.
@@ -61,6 +61,19 @@ function Markdown($text) {
 
 	# Transform text using parser.
 	return $parser->transform($text);
+}
+
+/**
+ * Returns the length of $text loosely counting the number of UTF-8 characters with regular expression.
+ * Used by the Markdown_Parser class when mb_strlen is not available.
+ *
+ * @since 5.9
+ *
+ * @return string Length of the multibyte string
+ *
+ */
+function jetpack_utf8_strlen( $text ) {
+	return preg_match_all( "/[\\\\x00-\\\\xBF]|[\\\\xC0-\\\\xFF][\\\\x80-\\\\xBF]*/", $text, $m );
 }
 
 #
@@ -1518,14 +1531,14 @@ class Markdown_Parser {
 	function _initDetab() {
 	#
 	# Check for the availability of the function in the `utf8_strlen` property
-	# (initially `mb_strlen`). If the function is not available, create a
-	# function that will loosely count the number of UTF-8 characters with a
+	# (initially `mb_strlen`). If the function is not available, use jetpack_utf8_strlen 
+	# that will loosely count the number of UTF-8 characters with a
 	# regular expression.
 	#
-		if (function_exists($this->utf8_strlen)) return;
-		$this->utf8_strlen = create_function('$text', 'return preg_match_all(
-			"/[\\\\x00-\\\\xBF]|[\\\\xC0-\\\\xFF][\\\\x80-\\\\xBF]*/",
-			$text, $m);');
+		if ( function_exists( $this->utf8_strlen ) )  {
+			return;
+		}
+		$this->utf8_strlen = 'jetpack_utf8_strlen';
 	}
 
 
@@ -2949,7 +2962,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 			$text .= "<hr". $this->empty_element_suffix ."\n";
 			$text .= "<ol>\n\n";
 
-			$attr = " rev=\"footnote\"";
+			$attr = "";
 			if ($this->fn_backlink_class != "") {
 				$class = $this->fn_backlink_class;
 				$class = $this->encodeAttribute($class);
@@ -3018,7 +3031,7 @@ class MarkdownExtra_Parser extends Markdown_Parser {
 				$ref_count_mark = $this->footnotes_ref_count[$node_id] += 1;
 			}
 
-			$attr = " rel=\"footnote\"";
+			$attr = "";
 			if ($this->fn_link_class != "") {
 				$class = $this->fn_link_class;
 				$class = $this->encodeAttribute($class);

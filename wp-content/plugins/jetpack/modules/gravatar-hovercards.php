@@ -9,7 +9,7 @@
  * Requires Connection: No
  * Auto Activate: Yes
  * Module Tags: Social, Appearance
- * Feature: Jumpstart
+ * Feature: Appearance, Jumpstart
  * Additional Search Queries: gravatar, hovercards
  */
 
@@ -81,7 +81,7 @@ jQuery( function($) {
 		}
 	} ).parents( 'tr' );
 	var ftr = tr.parents( 'table' ).find( 'tr:first' );
-	if ( ftr.size() && !ftr.find( '#gravatar_disable_hovercards' ).size() ) {
+	if ( ftr.length && !ftr.find( '#gravatar_disable_hovercards' ).length ) {
 		ftr.after( tr );
 	}
 } );
@@ -181,7 +181,7 @@ function grofiles_attach_cards() {
 	}
 
 	// Is the display of Gravatar Hovercards disabled?
-	if ( 'disabled' == get_option( 'gravatar_disable_hovercards' ) ) {
+	if ( 'disabled' == Jetpack_Options::get_option_and_ensure_autoload( 'gravatar_disable_hovercards', '0' ) ) {
 		return;
 	}
 
@@ -229,15 +229,26 @@ function grofiles_extra_data() {
 /**
  * Echoes the data from grofiles_hovercards_data() as HTML elements.
  *
- * @param int|string $author User ID or email address
+ * @since 5.5.0 Add support for a passed WP_User object
+ *
+ * @param int|string|WP_User $author User ID, email address, or a WP_User object
  */
 function grofiles_hovercards_data_html( $author ) {
 	$data = grofiles_hovercards_data( $author );
+	$hash = '';
 	if ( is_numeric( $author ) ) {
 		$user = get_userdata( $author );
-		$hash = md5( $user->user_email );
-	} else {
+		if ( $user ) {
+			$hash = md5( $user->user_email );
+		}
+	} elseif ( is_email( $author ) ) {
 		$hash = md5( $author );
+	} elseif ( is_a( $author, 'WP_User' ) ) {
+		$hash = md5( $author->user_email );
+	}
+	
+	if ( ! $hash ) {
+		return;
 	}
 ?>
 	<div class="grofile-hash-map-<?php echo $hash; ?>">

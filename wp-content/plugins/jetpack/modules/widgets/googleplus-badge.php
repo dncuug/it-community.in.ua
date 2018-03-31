@@ -42,13 +42,14 @@ class WPCOM_Widget_GooglePlus_Badge extends WP_Widget {
 			apply_filters( 'jetpack_widget_name', __( 'Google+ Badge', 'jetpack' ) ),
 			array(
 				'classname'   => 'widget_googleplus_badge',
-				'description' => __( 'Display a Google+ Badge to connect visitors to your Google+', 'jetpack' )
+				'description' => __( 'Display a Google+ Badge to connect visitors to your Google+', 'jetpack' ),
+				'customize_selective_refresh' => true,
 			)
 		);
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
 
-		if ( is_active_widget( '', '', 'googleplus-badge' ) ) {
+		if ( is_active_widget( '', '', 'googleplus-badge' ) || is_customize_preview() ) {
 			add_action( 'wp_print_styles',   array( $this, 'enqueue_script' ) );
 			add_filter( 'script_loader_tag', array( $this, 'replace_script_tag' ), 10, 2 );
 		}
@@ -70,11 +71,21 @@ class WPCOM_Widget_GooglePlus_Badge extends WP_Widget {
 		global $pagenow;
 
 		if ( 'widgets.php' == $pagenow || 'customize.php' == $pagenow ) {
-			wp_enqueue_script( 'googleplus-widget-admin', plugins_url( '/google-plus/js/admin.js', __FILE__ ), array( 'jquery' ) );
+			wp_enqueue_script(
+				'googleplus-widget-admin',
+				Jetpack::get_file_url_for_environment(
+					'_inc/build/widgets/google-plus/js/admin.min.js',
+					'modules/widgets/google-plus/js/admin.js'
+				),
+				array( 'jquery' )
+			);
 		}
 	}
 
 	function widget( $args, $instance ) {
+		/** This action is documented in modules/widgets/gravatar-profile.php */
+		do_action( 'jetpack_stats_extra', 'widget_view', 'googleplus-badge' );
+
 		if ( empty( $instance['href'] ) || ! $this->is_valid_googleplus_url( $instance['href'] ) ) {
 			if ( current_user_can( 'edit_theme_options' ) ) {
 				echo $args['before_widget'];
@@ -92,7 +103,10 @@ class WPCOM_Widget_GooglePlus_Badge extends WP_Widget {
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
 		echo $args['before_widget'];
-		echo $args['before_title'] . esc_html( $title ) . $args['after_title'];
+
+		if ( ! empty( $title ) ) {
+			echo $args['before_title'] . esc_html( $title ) . $args['after_title'];
+		}
 
 		switch( $instance['type'] ) {
 			case 'person':
@@ -124,9 +138,6 @@ class WPCOM_Widget_GooglePlus_Badge extends WP_Widget {
 		}
 
 		echo $args['after_widget'];
-
-		/** This action is already documented in modules/widgets/gravatar-profile.php */
-		do_action( 'jetpack_stats_extra', 'widget', 'googleplus-badge' );
 	}
 
 	function update( $new_instance, $old_instance ) {

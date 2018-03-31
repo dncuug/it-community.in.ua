@@ -1,12 +1,13 @@
 <?php
 /**
  * Module Name: WP.me Shortlinks
- * Module Description: Enable WP.me-powered shortlinks for all posts and pages.
+ * Module Description: Create short and simple links for all posts and pages.
  * Sort Order: 8
  * First Introduced: 1.1
  * Requires Connection: Yes
  * Auto Activate: Yes
  * Module Tags: Social
+ * Feature: Writing
  * Additional Search Queries: shortlinks, wp.me
  */
 
@@ -52,8 +53,7 @@ function wpme_get_shortlink( $id = 0, $context = 'post', $allow_slugs = true ) {
 		if ( empty( $id ) )
 			$id = $blog_id;
 
-		$wpme_url = 'http://wp.me/' . wpme_dec2sixtwo( $id );
-		return set_url_scheme( $wpme_url );
+		return 'https://wp.me/' . wpme_dec2sixtwo( $id );
 	}
 
 	$post = get_post( $id );
@@ -81,8 +81,7 @@ function wpme_get_shortlink( $id = 0, $context = 'post', $allow_slugs = true ) {
 	if ( empty( $type ) )
 		return '';
 
-	$url = 'http://wp.me/' . $type . wpme_dec2sixtwo( $blog_id ) . '-' . $id;
-	return set_url_scheme( $url );
+	return 'https://wp.me/' . $type . wpme_dec2sixtwo( $blog_id ) . '-' . $id;
 }
 
 function wpme_get_shortlink_handler( $shortlink, $id, $context, $allow_slugs ) {

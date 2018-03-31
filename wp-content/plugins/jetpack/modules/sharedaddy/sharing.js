@@ -1,4 +1,5 @@
 /* global WPCOM_sharing_counts, grecaptcha */
+/* jshint unused:false */
 var sharing_js_options;
 if ( sharing_js_options && sharing_js_options.counts ) {
 	var WPCOMSharing = {
@@ -18,12 +19,7 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 				}
 
 				requests = {
-					// LinkedIn actually gets the share count for both the http and https version automatically -- so we don't need to do extra magic
-					linkedin: [
-							'https://www.linkedin.com/countserv/count/share?format=jsonp&callback=WPCOMSharing.update_linkedin_count&url=' +
-							encodeURIComponent( url )
-					],
-					// Pinterest, like LinkedIn, handles share counts for both http and https
+					// Pinterest handles share counts for both http and https
 					pinterest: [
 						window.location.protocol +
 							'//api.pinterest.com/v1/urls/count.json?callback=WPCOMSharing.update_pinterest_count&url=' +
@@ -71,7 +67,7 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 			}
 
 			for ( url in data ) {
-				if ( ! data.hasOwnProperty( url ) || ! data[ url ].shares ) {
+				if ( ! data.hasOwnProperty( url ) || ! data[ url ].share || ! data[ url ].share.share_count ) {
 					continue;
 				}
 
@@ -81,12 +77,7 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 					continue;
 				}
 
-				WPCOMSharing.inject_share_count( 'sharing-facebook-' + WPCOM_sharing_counts[ permalink ], data[ url ].shares );
-			}
-		},
-		update_linkedin_count : function( data ) {
-			if ( 'undefined' !== typeof data.count && ( data.count * 1 ) > 0 ) {
-				WPCOMSharing.inject_share_count( 'sharing-linkedin-' + WPCOM_sharing_counts[ data.url ], data.count );
+				WPCOMSharing.inject_share_count( 'sharing-facebook-' + WPCOM_sharing_counts[ permalink ], data[ url ].share.share_count );
 			}
 		},
 		update_pinterest_count : function( data ) {
@@ -124,7 +115,7 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 	} );
 
 	$body = $( document.body ).on( 'post-load', WPCOMSharing_do );
-	$( document ).on( 'ready', function() {
+	$( document ).ready( function() {
 		$sharing_email = $( '#sharing_email' );
 		$body.append( $sharing_email );
 		WPCOMSharing_do();
@@ -199,7 +190,7 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 								$more_sharing_pane.data( 'justSlid', false );
 							}, 300 );
 
-							if ( $more_sharing_pane.find( '.share-google-plus-1' ).size() ) {
+							if ( $more_sharing_pane.find( '.share-google-plus-1' ).length ) {
 								// The pane needs to stay open for the Google+ Button
 								return;
 							}
@@ -262,6 +253,8 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 				} );
 				$more_sharing_buttons.data( 'timer', false );
 			} );
+		} else {
+			$( document.body ).addClass( 'jp-sharing-input-touch' );
 		}
 
 		$( document ).click(function() {
@@ -352,7 +345,7 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 					$( '#sharing_email form a.sharing_cancel' ).show();
 
 					// Reset reCATPCHA if exists.
-					if ( 'object' === typeof grecaptcha && 'function' === typeof grecaptcha.reset ) {
+					if ( 'object' === typeof grecaptcha && 'function' === typeof grecaptcha.reset && window.___grecaptcha_cfg.count ) {
 						grecaptcha.reset();
 					}
 
@@ -373,6 +366,8 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 					// Submit validation
 					$( '#sharing_email input[type=submit]' ).unbind( 'click' ).click( function() {
 						var form = $( this ).parents( 'form' );
+						var source_email_input = form.find( 'input[name=source_email]' );
+						var target_email_input = form.find( 'input[name=target_email]' );
 
 						// Disable buttons + enable loading icon
 						$( this ).prop( 'disabled', true );
@@ -382,12 +377,12 @@ if ( sharing_js_options && sharing_js_options.counts ) {
 						$( '#sharing_email .errors' ).hide();
 						$( '#sharing_email .error' ).removeClass( 'error' );
 
-						if ( ! $( '#sharing_email input[name=source_email]' ).share_is_email() ) {
-							$( '#sharing_email input[name=source_email]' ).addClass( 'error' );
+						if ( ! source_email_input.share_is_email() ) {
+							source_email_input.addClass( 'error' );
 						}
 
-						if ( ! $( '#sharing_email input[name=target_email]' ).share_is_email() ) {
-							$( '#sharing_email input[name=target_email]' ).addClass( 'error' );
+						if ( ! target_email_input.share_is_email() ) {
+							target_email_input.addClass( 'error' );
 						}
 
 						if ( $( '#sharing_email .error' ).length === 0 ) {

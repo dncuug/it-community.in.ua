@@ -1,15 +1,4 @@
 <?php
-
-function grunion_menu_alter() {
-	if( is_rtl() ){
-		wp_enqueue_style( 'grunion-menu-alter', plugins_url( 'css/rtl/menu-alter-rtl.css', __FILE__ ) );
-	} else {
-		wp_enqueue_style( 'grunion-menu-alter', plugins_url( 'css/menu-alter.css', __FILE__ ) );
-	}
-}
-
-add_action( 'admin_enqueue_scripts', 'grunion_menu_alter' );
-
 /**
  * Add a contact form button to the post composition screen
  */
@@ -37,7 +26,9 @@ function grunion_media_button( ) {
 add_action( 'wp_ajax_grunion_form_builder', 'grunion_display_form_view' );
 
 function grunion_display_form_view() {
-	require_once GRUNION_PLUGIN_DIR . 'grunion-form-view.php';
+	if ( current_user_can( 'edit_posts' ) ) {
+		require_once GRUNION_PLUGIN_DIR . 'grunion-form-view.php';
+	}
 	exit;
 }
 
@@ -48,7 +39,7 @@ function grunion_admin_css() {
 	if ( is_null( $current_screen ) ) {
 		return;
 	}
-	if ( ! in_array( $current_screen->id, array( 'edit-feedback', 'jetpack_page_omnisearch', 'dashboard_page_omnisearch' ) ) ) {
+	if ( 'edit-feedback' !== $current_screen->id ) {
 		return;
 	}
 
@@ -84,13 +75,6 @@ function grunion_admin_css() {
 .unspam a {
 color: #D98500;
 }
-
-#icon-edit.icon32-posts-feedback, #icon-post.icon32-posts-feedback { background: url("<?php echo GRUNION_PLUGIN_URL; ?>images/grunion-menu-big.png") no-repeat !important; }
-@media only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-	#icon-edit.icon32-posts-feedback, #icon-post.icon32-posts-feedback { background: url("<?php echo GRUNION_PLUGIN_URL; ?>images/grunion-menu-big-2x.png") no-repeat !important; background-size: 30px 31px !important; }
-}
-
-#icon-edit.icon32-posts-feedback { background-position: 2px 2px !important; }
 
 </style>
 
@@ -314,7 +298,7 @@ function grunion_manage_post_columns( $col, $post_id ) {
 
 			$author_email_line = '';
 			if ( !empty( $author_email ) ) {
-				$author_email_line = sprintf( "<a href='%1\$s'>%2\$s</a><br />", esc_url( "mailto:" . $author_email ) , esc_html( $author_email ) );
+				$author_email_line = sprintf( "<a href='%1\$s' target='_blank'>%2\$s</a><br />", esc_url( "mailto:" . $author_email ) , esc_html( $author_email ) );
 			}
 
 			$author_url_line = '';
@@ -525,6 +509,10 @@ function grunion_sort_objects( $a, $b ) {
 function grunion_ajax_shortcode() {
 	check_ajax_referer( 'grunion_shortcode' );
 
+	if ( ! current_user_can( 'edit_posts' ) ) {
+		die( '-1' );
+	}
+
 	$attributes = array();
 
 	foreach ( array( 'subject', 'to' ) as $attribute ) {
@@ -567,6 +555,12 @@ function grunion_ajax_shortcode_to_json() {
 	global $post, $grunion_form;
 
 	check_ajax_referer( 'grunion_shortcode_to_json' );
+
+	if ( ! empty( $_POST['post_id'] ) && ! current_user_can( 'edit_post', $_POST['post_id'] ) ) {
+		die( '-1' );
+	} elseif ( ! current_user_can( 'edit_posts' ) ) {
+		die( '-1' );
+	}
 
 	if ( !isset( $_POST['content'] ) || !is_numeric( $_POST['post_id'] ) ) {
 		die( '-1' );
@@ -714,7 +708,7 @@ function grunion_ajax_spam() {
 			 */
 			$subject = apply_filters( 'contact_form_subject', $content_fields['_feedback_subject'], $content_fields['_feedback_all_fields'] );
 
-			wp_mail( $to, $subject, $message, $headers );
+			Grunion_Contact_Form::wp_mail( $to, $subject, $message, $headers );
 		}
 	} elseif( $_POST['make_it'] == 'publish' ) {
 		if ( ! current_user_can($post_type_object->cap->delete_post, $post_id) ) {
@@ -789,15 +783,6 @@ function grunion_ajax_spam() {
 	exit;
 }
 
-add_action( 'omnisearch_add_providers', 'grunion_omnisearch_add_providers' );
-function grunion_omnisearch_add_providers() {
-	// Feedback uses capability_type 'page'
-	if ( current_user_can( 'edit_pages' ) ) {
-		require_once( GRUNION_PLUGIN_DIR . '/grunion-omnisearch.php' );
-		new Jetpack_Omnisearch_Grunion;
-	}
-}
-
 /**
  * Add the scripts that will add the "Check for Spam" button to the Feedbacks dashboard page.
  */
@@ -814,7 +799,14 @@ function grunion_enable_spam_recheck() {
 	}
 
 	// Add the scripts that handle the spam check event.
-	wp_register_script( 'grunion-admin', plugin_dir_url( __FILE__ ) . 'js/grunion-admin.js', array( 'jquery' ) );
+	wp_register_script(
+		'grunion-admin',
+		Jetpack::get_file_url_for_environment(
+			'_inc/build/contact-form/js/grunion-admin.min.js',
+			'modules/contact-form/js/grunion-admin.js'
+		),
+		array( 'jquery' )
+	);
 	wp_enqueue_script( 'grunion-admin' );
 
 	wp_enqueue_style( 'grunion.css' );

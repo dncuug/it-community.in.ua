@@ -32,26 +32,21 @@ function jetpack_facebook_embed_handler( $matches, $attr, $url ) {
 	if ( false !== strpos( $url, 'video.php' ) || false !== strpos( $url, '/videos/' ) ) {
 		$embed = sprintf( '<div class="fb-video" data-allowfullscreen="true" data-href="%s"></div>', esc_url( $url ) );
 	} else {
-		$embed = sprintf( '<fb:post href="%s"></fb:post>', esc_url( $url ) );
+		$width = 552; // As of 01/2017, the default width of Facebook embeds when no width attribute provided
+
+		global $content_width;
+		if ( isset( $content_width ) ) {
+			$width = min( $width, $content_width );
+		}
+
+		$embed = sprintf( '<fb:post href="%s" data-width="%s"></fb:post>', esc_url( $url ), esc_attr( $width ) );
 	}
 
 	// since Facebook is a faux embed, we need to load the JS SDK in the wpview embed iframe
 	if ( defined( 'DOING_AJAX' ) && DOING_AJAX && ! empty( $_POST['action'] ) && 'parse-embed' == $_POST['action'] ) {
-		return $embed . '<script src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>';
+		return $embed . wp_scripts()->do_items( array( 'jetpack-facebook-embed' ) );
 	} else {
-		wp_enqueue_script( 'jetpack-facebook-embed', plugins_url( 'js/facebook.js', __FILE__ ), array( 'jquery' ), null, true );
-		/** This filter is documented in modules/sharedaddy/sharing-sources.php */
-		$fb_app_id = apply_filters( 'jetpack_sharing_facebook_app_id', '249643311490' );
-		if ( ! is_numeric( $fb_app_id ) ) {
-			$fb_app_id = '';
-		}
-		wp_localize_script(
-			'jetpack-facebook-embed',
-			'jpfbembed',
-			array(
-				'appid' => $fb_app_id
-			)
-		);
+		wp_enqueue_script( 'jetpack-facebook-embed' );
 		return $embed;
 	}
 }

@@ -173,13 +173,17 @@ class Jetpack_Comic {
 	}
 
 	public function register_scripts() {
-		if( is_rtl() ) {
-			wp_enqueue_style( 'jetpack-comics-style', plugins_url( 'comics/rtl/comics-rtl.css', __FILE__ ) );
-		} else {
-			wp_enqueue_style( 'jetpack-comics-style', plugins_url( 'comics/comics.css', __FILE__ ) );
-		}
+		wp_enqueue_style( 'jetpack-comics-style', plugins_url( 'comics/comics.css', __FILE__ ) );
+		wp_style_add_data( 'jetpack-comics-style', 'rtl', 'replace' );
 
-		wp_enqueue_script( 'jetpack-comics', plugins_url( 'comics/comics.js', __FILE__ ), array( 'jquery', 'jquery.spin' ) );
+		wp_enqueue_script(
+			'jetpack-comics',
+			Jetpack::get_file_url_for_environment(
+				'_inc/build/custom-post-types/comics/comics.min.js',
+				'modules/custom-post-types/comics/comics.js'
+			),
+			array( 'jquery', 'jquery.spin' )
+		);
 
 		$options = array(
 			'nonce' => wp_create_nonce( 'jetpack_comic_upload_nonce' ),
@@ -257,6 +261,7 @@ class Jetpack_Comic {
 			'map_meta_cap'    => true,
 			'has_archive'     => true,
 			'query_var'       => 'comic',
+			'show_in_rest'    => true,
 		) );
 	}
 
@@ -520,7 +525,7 @@ function comics_welcome_email( $welcome_email, $blog_id, $user_id, $password, $t
 
 Your webcomic's new site is ready to go. Get started by <a href=\"BLOG_URLwp-admin/customize.php#title\">setting your comic's title and tagline</a> so your readers know what it's all about.
 
-Looking for more help with setting up your site? Check out the WordPress.com <a href=\"http://learn.wordpress.com/\">beginner's tutorial</a> and the <a href=\"http://en.support.wordpress.com/comics/\">guide to comics on WordPress.com</a>. Dive right in by <a href=\"BLOG_URLwp-admin/customize.php#title\">publishing your first strip!</a>
+Looking for more help with setting up your site? Check out the WordPress.com <a href=\"http://learn.wordpress.com/\" target=\"_blank\">beginner's tutorial</a> and the <a href=\"http://en.support.wordpress.com/comics/\" target=\"_blank\">guide to comics on WordPress.com</a>. Dive right in by <a href=\"BLOG_URLwp-admin/customize.php#title\">publishing your first strip!</a>
 
 Lots of laughs,
 The WordPress.com Team", 'jetpack' );

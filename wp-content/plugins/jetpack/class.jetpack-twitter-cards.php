@@ -36,8 +36,28 @@ class Jetpack_Twitter_Cards {
 		}
 
 		if ( ! is_singular() || ! empty( $og_tags['twitter:card'] ) ) {
+			/**
+			 * Filter the default Twitter card image, used when no image can be found in a post.
+			 *
+			 * @module sharedaddy, publicize
+			 *
+			 * @since 5.9.0
+			 *
+			 * @param string $str Default image URL.
+			 */
+			$image = apply_filters( 'jetpack_twitter_cards_image_default', '' );
+			if ( ! empty( $image ) ) {
+				$og_tags['twitter:image'] = $image;
+			}
+
 			return $og_tags;
 		}
+
+		$the_title = get_the_title();
+		if ( ! $the_title ) {
+			$the_title = get_bloginfo( 'name' );
+		}
+		$og_tags['twitter:text:title'] = $the_title;
 
 		/*
 		 * The following tags only apply to single pages.
@@ -62,6 +82,10 @@ class Jetpack_Twitter_Cards {
 		if ( empty( $og_tags['twitter:image'] ) && empty( $og_tags['twitter:image:src'] ) ) {
 			if ( ! class_exists( 'Jetpack_Media_Summary' ) && defined('IS_WPCOM') && IS_WPCOM ) {
 				include( WP_CONTENT_DIR . '/lib/class.wpcom-media-summary.php' );
+			}
+
+			if ( ! class_exists( 'Jetpack_Media_Summary' ) ) {
+				jetpack_require_lib( 'class.media-summary' );
 			}
 
 			// Test again, class should already be auto-loaded in Jetpack.
@@ -96,9 +120,19 @@ class Jetpack_Twitter_Cards {
 		if ( ! isset( $og_tags['og:description'] ) || '' == trim( $og_tags['og:description'] ) || __('Visit the post for more.', 'jetpack') == $og_tags['og:description'] ) { // empty( trim( $og_tags['og:description'] ) ) isn't valid php
 			$has_creator = ( ! empty($og_tags['twitter:creator']) && '@wordpressdotcom' != $og_tags['twitter:creator'] ) ? true : false;
 			if ( ! empty( $extract ) && 'video' == $extract['type'] ) { // use $extract['type'] since $card_type is 'summary' for video posts
-				$og_tags['twitter:description'] = ( $has_creator ) ? sprintf( __('Video post by %s.', 'jetpack'), $og_tags['twitter:creator'] ) : __('Video post.', 'jetpack');
+				/* translators: %s is the post author */
+				$og_tags['twitter:description'] = ( $has_creator ) ? sprintf( __( 'Video post by %s.', 'jetpack' ), $og_tags['twitter:creator'] ) : __( 'Video post.', 'jetpack' );
 			} else {
-				$og_tags['twitter:description'] = ( $has_creator ) ? sprintf( __('Post by %s.', 'jetpack'), $og_tags['twitter:creator'] ) : __('Visit the post for more.', 'jetpack');
+				/* translators: %s is the post author */
+				$og_tags['twitter:description'] = ( $has_creator ) ? sprintf( __( 'Post by %s.', 'jetpack' ), $og_tags['twitter:creator'] ) : __( 'Visit the post for more.', 'jetpack');
+			}
+		}
+
+		if ( empty( $og_tags['twitter:image'] ) && empty( $og_tags['twitter:image:src'] ) ) {
+			/** This action is documented in class.jetpack-twitter-cards.php */
+			$image = apply_filters( 'jetpack_twitter_cards_image_default', '' );
+			if ( ! empty( $image ) ) {
+				$og_tags['twitter:image'] = $image;
 			}
 		}
 
@@ -136,8 +170,8 @@ class Jetpack_Twitter_Cards {
 			}
 
 			// Third fall back, Site Icon
-			if ( empty( $og_tags['twitter:image'] ) && ( function_exists( 'jetpack_has_site_icon' ) && jetpack_has_site_icon() ) ) {
-				$og_tags['twitter:image'] = jetpack_site_icon_url( null, '240' );
+			if ( empty( $og_tags['twitter:image'] ) && ( function_exists( 'has_site_icon' ) && has_site_icon() ) ) {
+				$og_tags['twitter:image'] = get_site_icon_url( '240' );
 			}
 
 			// Not falling back on Gravatar, because there's no way to know if we end up with an auto-generated one.
@@ -174,7 +208,7 @@ class Jetpack_Twitter_Cards {
 	}
 
 	static function site_tag() {
-		$site_tag = get_option( 'jetpack-twitter-cards-site-tag' );
+		$site_tag = Jetpack_Options::get_option_and_ensure_autoload( 'jetpack-twitter-cards-site-tag', '' );
 		if ( empty( $site_tag ) ) {
 			if ( defined( 'IS_WPCOM' ) && IS_WPCOM ) {
 				return 'wordpressdotcom';
