@@ -1,0 +1,173 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced Spoiler 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-25 17:02+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: 082net <082net@gmail.com>\n"
+"Language-Team: 082net <082net@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../../advanced-spoiler\n"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:78
+#: ../../advanced-spoiler/advanced-spoiler.php:377
+msgid "Show"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:79
+#: ../../advanced-spoiler/advanced-spoiler.php:378
+msgid "Hide"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:127
+#: ../../advanced-spoiler/advanced-spoiler.php:355
+msgid "Advanced Spoiler"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:220
+msgid "Visit blog to check out this spoiler"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:273
+msgid "Make a spoiler"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:274
+msgid "Select a effect type:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:275
+#: ../../advanced-spoiler/advanced-spoiler.php:386
+msgid "Show Text:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:276
+#: ../../advanced-spoiler/advanced-spoiler.php:398
+msgid "Hide Text:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:280
+msgid "Insert Spoiler"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:345
+msgid "Settings saved."
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:360
+msgid "General Options"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:364
+msgid "Mode:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:366
+msgid "jQuery"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:367
+msgid "Simple"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:370
+msgid "If you don't want animated show/hide spoiler, select 'Simple'"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:375
+msgid "Feed Visibility:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:381
+msgid "If you want to hide spoiler content on feed, select 'hide'"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:389
+#: ../../advanced-spoiler/advanced-spoiler.php:401
+#, php-format
+msgid "(default: %s)"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:391
+#: ../../advanced-spoiler/advanced-spoiler.php:403
+msgid "Preview:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:393
+msgid "Text for spoiler link when it's content is collapsed and marker for the text"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:405
+msgid "Text for spoiler link when it's content is expanded and marker for the text"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:410
+msgid "Default Effect:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:417
+msgid "Default effect for spoilers. (useless if mode is simple)"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:422
+msgid "Effect Speed:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:424
+msgid "fast"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:424
+msgid "normal"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:424
+msgid "slow"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:430
+msgid "The lower value, the faster speed."
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:435
+msgid "Allow Nested:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:438
+#: ../../advanced-spoiler/advanced-spoiler.php:452
+msgid "No"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:439
+#: ../../advanced-spoiler/advanced-spoiler.php:453
+msgid "Yes"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:442
+msgid "Allow nested child spoilers."
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:444
+msgid "e.g."
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:444
+msgid "[spoiler] my content [spoiler] child content [/spoiler] rest of content [/spoiler]"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:449
+msgid "Parse Old Parameters:"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:456
+msgid "Parse old plugin(Ajax Spoiler) parameters."
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:463
+msgid "Save Changes"
+msgstr ""
+

@@ -1,0 +1,389 @@
+/* MESSAGE BOXES
+====================*/
+.msgbox {
+  padding: 10px 10px 10px 25px;
+  margin: 15px 0;
+}
+
+.msgbox-info{
+	background: url("../images/icn16/info.png") no-repeat 5px 14px #E9F3F8;
+	color: #4581B9;
+}
+
+.msgbox-warning{
+	background: url("../images/icn16/warning.png") no-repeat 5px 14px #FFF8D8;
+	color: #6C6600;
+}
+
+.msgbox-error{
+	background: url("../images/icn16/error.png") no-repeat 5px 14px #F8E9E9;
+	color: #8D0D0D;
+}
+
+.msgbox-success{
+	background: url("../images/icn16/success.png") no-repeat 5px 14px #EBF9E2;
+	color: #336801;
+}
+
+.msgbox-doc{
+	background: url("../images/icn16/doc.png") no-repeat 5px 14px #f9f9f9;
+	color: #666666;
+}
+
+.msgbox-download{
+	background: url("../images/icn16/download.png") no-repeat 5px 14px #f2f2f2;
+	color: #666666;
+}
+
+.msgbox-media{
+	background: url("../images/icn16/camera.png") no-repeat 5px 14px #eef8f8;
+	color: #55A0B4;
+}
+
+.msgbox-note{
+	background: url("../images/icn16/note.png") no-repeat 5px 14px #fefbeb;
+	color: #776606;	
+}
+
+.msgbox-new{
+	background: url("../images/icn16/new.png") no-repeat 5px 14px #fff7f0;
+	color: 	#B76F38;	
+}
+
+.msgbox-help{
+	background: url("../images/icn16/help.png") no-repeat 5px 14px #f0f5fa;
+	color: 	#6187B3;	
+}
+
+
+/* BUTTONS
+================*/
+
+.wt-btn {
+	color: #fff !important;
+	display: inline-block;	
+	text-decoration: none;
+	line-height: 1;
+	border: 0px;
+	-moz-transition: all 0.8s ease-in-out 0s;
+	margin: 5px 8px;
+}
+
+.wt-btn:hover{
+	opacity: 0.8;
+}
+
+.wt-btn-small{
+	padding: 7px 10px;
+	font-weight: 700;
+}
+
+.wt-btn-medium{
+	font-size: 14px;
+	padding: 10px 16px;
+	font-weight: 700;
+}
+
+.wt-btn-large{
+	font-size: 16px;
+	font-weight: 700;
+	padding: 12px 20px;
+}
+
+.wt-btn-default{
+	background: #37414E;	
+}
+
+.wt-btn-black{
+	background: #111111;	
+}
+
+.wt-btn-blue{
+	background: #318CE7;
+}
+
+.wt-btn-brown{
+	background: #6B3C02;
+}
+
+.wt-btn-coral{
+	background: #CD5B45;
+}
+.wt-btn-dark-brown{
+	background: #372E25;
+}
+
+.wt-btn-dark-green{
+	background: #3A491A;
+}
+
+.wt-btn-green{
+	background: #74941F;
+}
+.wt-btn-magenta{
+	background: #CF71AF;
+}
+.wt-btn-maroon{
+	background: #800000;
+}
+
+.wt-btn-orange{
+	background: #E98813;
+}
+
+.wt-btn-pink{
+	background: #DE5D83;
+}
+
+.wt-btn-purple{
+	background: #69359C;
+}
+
+.wt-btn-red{
+	background: #CC0000;
+}
+
+.wt-btn-royal-blue{
+	background: #002366;
+}
+
+.wt-btn-sienna{
+	background: #E97451;
+}
+
+.wt-btn-silver{
+	background: #C0C0C0;
+}
+
+.wt-btn-sky-blue{
+	background: #87CEEB;
+}
+
+.wt-btn-teal{
+	background: #008080;
+}
+
+.wt-btn-yellow{
+	background: #F7C808;
+}
+
+/* HIGHLIGHT
+=================*/
+.wt-highlight{
+	padding: 1px 5px;
+}
+
+.wt-highlight-default{
+	background: #FFFFCC;
+}
+
+.wt-highlight-alice-blue{
+	background: #F0F8FF;	
+}
+
+.wt-highlight-beige{
+	background: #F5F5DC;
+}
+
+.wt-highlight-buff{
+	background: #F0DC82;
+}
+.wt-highlight-cream{
+	background: #FFFDD0;
+}
+
+.wt-highlight-bubbles{
+	background: #E7FEFF;
+}
+
+.wt-highlight-cyan{
+	background: #CCFFFF;
+}
+
+.wt-highlight-magenta{
+	background: #FFCCFF;
+}
+
+.wt-highlight-misty-rose{
+	background: #FFE4E1;
+}
+
+.wt-highlight-pearl{
+	background: #F0EAD6;
+}
+
+.wt-highlight-peach{
+	background: #FFE5B4;
+}
+
+.wt-highlight-pear-green{
+	background: #D1E231;
+}
+
+.wt-highlight-pink{
+	background: #FFC1CC;
+}
+
+.wt-highlight-platinum{
+	background: #E5E4E2;
+}
+
+.wt-highlight-salmon{
+	background: #FFA07A;
+}
+
+.wt-highlight-seashell{
+	background: #FFF5EE;
+}
+
+.wt-highlight-smoke{
+	background: #F5F5F5;
+}
+
+.wt-highlight-yellow{
+	background: #FFFFAA;
+}
+
+.wt-highlight-vanilla{
+	background: #F3E5AB;
+}
+
+.wt-highlight-wheat{
+	background: #F5DEB3;
+}
+
+
+/* LISTS
+=================*/
+.wt-list {
+	padding:0;
+	margin: 10px 0;
+	list-style: none;	
+}
+
+.wt-list li{
+	padding-left: 14px;
+	margin-bottom: 2px;
+}
+
+.wtlist-arrow li{
+	background: url("../images/icn12/arrow.png") no-repeat left center;	
+}
+
+.wtlist-circle li{
+	background: url("../images/icn12/circle.png") no-repeat left center;	
+}
+
+.wtlist-check li{
+	background: url("../images/icn12/check.png") no-repeat left center;	
+}
+
+.wtlist-check-green li{
+	background: url("../images/icn12/check_green.png") no-repeat left center;	
+}
+
+.wtlist-star li{
+	background: url("../images/icn12/star.png") no-repeat left center;
+}
+
+.wtlist-warning li{
+	background: url("../images/icn12/warning.png") no-repeat left center;
+}
+
+.wtlist-diamond  li{
+	background: url("../images/icn12/diamond.png") no-repeat left center;
+}
+
+.wtlist-doc  li{
+	background: url("../images/icn12/doc.png") no-repeat left center;
+}
+
+.wtlist-plus  li{
+	background: url("../images/icn12/plus.png") no-repeat left center;
+}
+
+.wtlist-plus-green  li{
+	background: url("../images/icn12/plus_green.png") no-repeat left center;
+}
+
+.wtlist-error  li{
+	background: url("../images/icn12/error.png") no-repeat left center;
+}
+
+.wtlist-square  li{
+	background: url("../images/icn12/square.png") no-repeat left center;
+}
+
+.wtlist-pencil  li{
+	background: url("../images/icn12/pencil.png") no-repeat left center;
+}
+
+.wtlist-delete  li{
+	background: url("../images/icn12/delete.png") no-repeat left center;
+}
+
+.wtlist-minus  li{
+	background: url("../images/icn12/minus.png") no-repeat left center;
+}
+
+.wtlist-minus-red  li{
+	background: url("../images/icn12/minus_red.png") no-repeat left center;
+}
+
+.wtlist-info  li{
+	background: url("../images/icn12/info.png") no-repeat left center;
+}
+
+
+/* DROPCAPS
+=================*/
+.wt-dropcap-default, 
+.wt-dropcap-round,
+.wt-dropcap-square, .wt-dropcap-circle {
+	float: left;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 600;
+	height: 36px;
+	line-height: 36px;
+	width: 36px;
+	margin: 6px 10px 0px 0px;	
+}
+
+.wt-dropcap-square {
+	background: #f1f1f1;	
+}
+
+.wt-dropcap-circle {
+	background: #f1f1f1;
+	border-radius: 50px 50px 50px 50px;
+}
+
+.wt-dropcap-round {
+	background: #f1f1f1;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/* VIDEO
+=================*/
+.wt-video {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+iframe.wt-video{
+	max-width: 100% !important;
+}
+
+/* SOCIAL
+=================*/
+.wt_social{
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;	
+}
+
+.wt_social_fb{
+	margin-top: 4px;
+	vertical-align: top;	
+}

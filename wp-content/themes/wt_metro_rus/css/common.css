@@ -1,0 +1,271 @@
+ul, ol {
+	margin: 0 0 1.5em 2.5em;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ol ol {
+	list-style: upper-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+
+dl {
+	margin: 0 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.5em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+small { 
+	font-size: 80%; 
+}
+
+big {
+	font-size: 120%;
+}
+
+cite, em, i {
+	font-style: italic;
+}
+
+cite {
+	border: none;
+}
+
+blockquote {
+	font-style:italic;
+    margin: 7px 35px 10px 45px;    
+	font-style:italic;
+	background:#EFEFEF;
+	padding:10px;
+	clear: both;
+}
+
+blockquote p {
+	margin: 0px;
+	padding: 0px;
+}
+blockquote em, blockquote i, blockquote cite {
+	font-style: normal;
+}
+pre {
+	background: rgba(0, 0, 0, 0.05);
+	font: 87.5% "Courier 10 Pitch", Courier, monospace;
+	line-height: normal;
+	margin-bottom: 1.5em;
+	padding: 0.75em 1.5em;
+}
+code, kbd {
+	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup, sub {
+	font-size: 62.5%;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+
+input[type=text], textarea {
+	border: 1px solid #E7E7E7;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+
+address {
+	display: block;
+	margin: 0 0 1.625em;
+}
+
+table {
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 1.625em;
+	width: 100%;
+	text-align:left;
+}
+
+th {
+	color: #666;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	line-height: 2.6em;
+}
+
+td {
+	border-top: 1px solid #ddd;
+	padding: 6px 10px 6px 0;
+}
+
+p{
+	margin-bottom: 15px;
+}
+
+img{
+	max-width: 100%; 
+	height: auto;
+}
+
+/*-- WordPress common classes*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.25em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.25em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignnone{
+	display: inline;
+	float: left;
+	margin-right: 1.25em;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter{
+	margin-bottom: 1.25em;	
+}
+
+p img,
+.wp-caption {
+	margin-top: 0.4em;
+}
+.wp-caption {
+	margin-bottom: 1.25em;
+	max-width: 96%;
+	text-align:center;
+}
+
+.wp-caption img {
+	display: block;
+	margin: 0 auto;
+	max-width: 98%;
+}
+
+p.wp-caption-text{
+	margin-bottom: 0;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	color: #666;
+	
+	font-size: 12px;
+}
+
+.gallery{
+	margin-bottom:15px !important;
+}
+
+.gallery dl{	
+	margin: 0;
+}
+
+.gallery img{
+	border: none !important;
+}
+
+.sticky {
+	
+}
+
+.sticky:before{	
+	content: "Sticky Post";	
+	background:#EEEEEE;
+	padding:4px 6px;
+	display: inline-block;
+}
+
+.button {
+	background: #FA824F;
+	color: #FFFFFF !important;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+    padding: 10px 12px;
+    text-decoration: none;
+	border: none;
+	-moz-transition:  .4s ease-in-out; 
+	-webkit-transition:  .4s ease-in-out; 
+	transition:  .4s ease-in-out;
+}
+
+.clear{
+	clear:both;
+}
+ 
+.clearfix:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+ .clearfix { 
+ display: inline-block; 
+ } 
+ 
+ /* Hide from IE Mac \*/ 
+ .clearfix { 
+	display: block; 
+ }
+ 
+ .bypostauthor{
+ 
+ }
+ 

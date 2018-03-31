@@ -1,0 +1,493 @@
+@import url("color-picker.css"); 
+
+#wt-admin {
+	width: 960px;
+	margin-top: 15px; 
+	font-family: Arial,sans-serif;
+	color: #5A5F64;
+	font-size: 12px;
+	overflow:hidden;
+}
+
+#wt-admin a{
+	outline: 0;
+}
+
+#wt-admin .header{
+	width:960px;
+	overflow:hidden;	
+	background: url(images/bg1.png) repeat;	
+}
+
+#container .innerpro {
+  background: -moz-linear-gradient(center bottom , #EEEEEE 1%, #F4F4F4 100%) repeat scroll 0 0 #F4F4F4;
+  border-bottom: 1px solid #E3E3E3;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 1px 1px #FFFFFF inset;
+  height: 128px;
+  position: relative;
+  width: 600px;
+}
+
+#wt-admin .header h2 {
+  background: url("images/tool1.png") no-repeat left center;
+  color: #fff;
+  font: bold 30px "Arial",Helvetica,sans-serif;
+  padding-left: 36px;
+}
+
+#wt-admin .main{
+	overflow:hidden;
+	height:90px;
+}
+
+#wt-admin .gazpo-logo{
+	float: left;
+	display: inline;
+	margin: 5px 0 0 20px;
+}
+
+#wt-admin .header .main .left{
+	float: left;
+	display: inline;
+	margin: 5px 0 0 20px;
+}
+	
+#wt-admin .theme-info{
+	float: right;
+	margin-right: 15px;
+	text-align:right;	
+}
+
+#wt-admin .theme-info h3{
+	text-align:right;
+	margin-top: 10px; 
+	color: #f6f8f9;
+	font-size:20px;
+	font-weight:700;
+	margin-bottom:10px;
+}
+
+#wt-admin .theme-info ul{
+	overflow:auto;
+	margin-top: 10px; 
+	float:right;
+	
+}
+
+#wt-admin .theme-info ul li {
+	padding-left: 20px;
+	float: left;
+	display: inline;
+	margin-left: 10px;	
+}
+	
+#wt-admin .theme-info ul li.support{
+	background: url(images/support.png) no-repeat top left;
+}
+	
+#wt-admin .theme-info ul li.contact{
+	background: url(images/email.png) no-repeat top left;
+}
+#wt-admin .theme-info ul li  a{
+	text-decoration:none;
+	color:white;
+}
+
+#wt-admin .clear{
+	clear:both;
+}
+
+#wt-admin .tabs{
+	float: left;
+	width: 195px;	
+}
+
+#wt-admin .tabs ul li{
+	border-bottom: 1px solid #D8D8D8;
+	box-shadow: 0 1px 0 #F9F9F9 inset;
+	margin-bottom: 0;
+	padding-left: 20px;	
+}
+
+#wt-admin .tabs ul li:hover,
+#wt-admin .tabs ul .active {
+	background: #fff;
+	margin-right: -1px;
+	border-right: 1px solid #fff;	
+}
+
+#wt-admin .tabs ul li a{
+	color: #777777;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 13px 10px 13px;
+	text-decoration: none;
+}
+
+#wt-admin .tabs ul li.general a{
+	background: url("images/tools16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .tabs ul li.home a{
+	background: url("images/home16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .tabs ul li.posts a{
+	background: url("images/files16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .tabs ul li.styles a{
+	background: url("images/style16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .tabs ul li.typography a{
+	background: url("images/pen16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .tabs ul li.seo a{
+	background: url("images/graph16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .tabs ul li.footer a{
+	background: url("images/layout16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .tabs ul li.reset a{
+	background: url("images/refresh16.png") no-repeat center left;
+	padding-left: 24px;
+}
+
+#wt-admin .options-wrap {
+	background-color: #F1F1F1;
+	border-bottom: 1px solid #D8D8D8;
+	border-left: 1px solid #D8D8D8;
+	border-right: 1px solid #D8D8D8;	
+}
+
+#wt-admin .options-form{
+	border-top: none;
+	padding: 15px 20px;
+	background-color: #fff; 
+	box-shadow: 0 1px 0 #FFFFFF inset;
+	margin-left: 194px;
+	min-height: 500px;
+	overflow: hidden;
+	padding: 0 20px 50px;
+	border-left: 1px solid #D8D8D8;
+}
+
+#wt-admin .options-form .field{
+	margin-bottom:15px;
+	overflow:auto;	
+}
+
+#wt-admin .options-form .block,
+#wt-admin .options-form .support-block{
+	overflow:hidden;
+	padding:20px 10px;
+	border-top:none;	
+}
+
+#wt-admin .options-form .support-block p{
+	margin-top:0;
+}
+
+#wt-admin .options-form label {
+	text-align:right;
+	float: left;
+    font-weight: bold;
+	margin-right:10px;
+	width:140px;
+	padding-top: 7px;
+	margin-right: 10px;
+}	
+
+#wt-admin .options-form input[type="text"], #wt-admin .options-form textarea{
+	width:260px;
+	background-color: #f5f5f5;
+	border-color: #CCCCCC #E6E6E6 #E6E6E6 #CCCCCC;
+	border-width: 1px;
+	border-style: solid;	
+	font-family: Arial,Verdana,sans-serif;
+	font-size: 12px;
+	margin-bottom: 9px !important;
+	padding: 5px 7px;
+	float:left;
+}
+
+#wt-admin .options-form input[type="text"]:focus, #wt-admin .options-form textarea:focus{
+    background: none repeat scroll 0 0 white !important;
+    border: 1px solid #C8C8CC !important;
+    box-shadow: none;
+    color: #5A5F64;
+    outline: medium none;
+}
+
+#wt-admin .options-form input[type="checkbox"]{
+	width: 13px;
+    height: 13px;
+    margin-top: 8px;
+	float: left;
+}
+
+#wt-admin .options-form .description {
+	font-size: 12px;
+	color:#777777;	
+    display: inline-block;
+	font-style: normal;	
+	color: #999999;
+	float: right;
+	font-size: 11px;
+	width:260px;
+	margin-top:7px;
+}
+
+#wt-admin .options-form .updesc{
+	width:200px;
+}
+
+#wt-admin .options-form .chkdesc{
+	float: left;
+	width: 350px;
+	margin-left: 20px;
+}
+
+#wt-admin .options-form .slcdesc{
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+}
+
+#wt-admin .options-form .fontdesc{	
+	width: 150px;
+}
+
+#wt-admin .options-form .txtfontdesc{	
+	width: 250px;
+}
+
+
+
+#wt-admin .options-form .long{
+	margin-top:0px;
+}
+
+#wt-admin .options-form input.upload_image_button {
+	padding: 4px 8px 4px;
+	margin-left:5px;
+	background-color: #ffffff;
+	background-image: -ms-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image: -moz-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image: -o-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
+	background-image: -webkit-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image: linear-gradient(top,#F9F9F9,#ECECEC);
+	border: 1px solid #dedede;
+	cursor:pointer;
+	color: #777;
+}
+
+#wt-admin .options-form input.upload_image_button :hover{	border-color:#999; color: #464646;}
+
+#wt-admin .options-form .tab_content h2{
+	color: #333333;
+	padding-bottom: 10px;
+	margin-bottom: 15px;	
+	border-bottom: 1px solid #d8d8d8;	
+}
+
+#wt-admin .options-form .tab_content h3{
+	color: #333333;
+	padding-bottom: 10px;
+	margin-bottom: 15px;	
+	border-bottom: 1px solid #ececec;	
+}
+
+
+
+#wt-admin .options-form .reset-info{
+	margin-top: 0;
+}
+
+#wt-admin .options-form .textarea{
+	border: 1px solid #d5d5d5;
+	color: #444444;   
+    height:90px;
+	font-size:12px;
+    padding:6px 8px;
+    width:260px;
+    display: inline-block;
+	vertical-align: middle;
+    margin-right:10px;	
+}
+
+#wt-admin .options-form .large-textarea {
+	height: 200px;
+}
+
+#wt-admin  .updated_status{
+	color:#ffffff;
+	padding:7px 10px;
+	margin:10px 20px;
+	font-weight:bold;
+}
+
+#wt-admin .submit {
+	margin:10px;
+	clear: both;
+	overflow:hidden;
+}
+
+#wt-admin .options-form  .updated {
+	overflow:auto;
+	padding:2px 4px;
+	background:#DFF0D8;
+	border: 1px solid #D6E9C6;
+	color: #468847;
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 15px 0;	
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#wt-admin .infobox{
+	background: #D9EDF7;
+	border: 1px solid #BCE8F1;
+	color: #3A87AD;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	margin: 15px 0;	
+	padding:5px 8px;
+}
+
+#wt-admin .warningbox{
+	background: #FCF8E3;
+	border: 1px solid #FBEED5;
+	color: #C09853;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	margin: 15px 0;	
+	padding:5px 8px;
+}
+
+#wt-admin .infobox p,
+#wt-admin .warningbox p{
+	margin: 5px 0;
+}
+
+#wt-admin input.button-primary {
+	background-color: #298cba !important;
+	background-position: left bottom;
+	border: medium none !important;
+	border-radius: 2px 2px 2px 2px;
+	float: left;
+    line-height: 26px !important;
+	height:26px !important;
+}
+
+#wt-admin .options-footer input.button-primary{
+	float: right;
+	line-height: 22px !important;
+	height:22px !important;
+	
+}
+
+#wt-admin .options-form .bg-images{
+	overflow: hidden;		
+}
+
+#wt-admin .options-form .bg-images li {
+	float: left;
+	margin-right: 7px;
+	margin-bottom: 5px;
+}
+
+#wt-admin .options-form .bg-images li img {
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	padding: 3px;
+	border: 1px solid #eee;	
+}
+
+#wt-admin .options-form .bg-images li img:hover {
+	background: #ccc !important;
+}
+
+#wt-admin .options-form .bg-images li.selected img {
+	background:#9ACD32 !important;
+	border: 1px solid #88b52d;
+}
+
+#wt-admin .options-form .bg-images li input {
+	display: none;
+}
+
+#wt-admin  .narrow{
+	width: 80px;
+}
+
+#wt-admin  .narrow select{
+	width: 108px;
+	padding-top: 3px !important;
+}
+
+#wt-admin  .narrow120{
+	width: 120px;
+}
+
+#wt-admin  .narrow120 select{
+	width: 148px;
+	padding-top: 3px !important;
+}
+
+#wt-admin  .wide{
+	width: 232px;
+}
+
+#wt-admin  .wide select{
+	width: 260px;
+}
+
+#wt-admin .select-wrap {
+	overflow: hidden;   
+	background: #f5f5f5 url(images/select.png) no-repeat right;
+	float: left; 
+	border: 1px solid #D6D6DA;	
+	margin-right: 10px;
+	border-radius: 3px;	
+	border-color: #CCCCCC #E6E6E6 #E6E6E6 #CCCCCC;
+}
+
+#wt-admin .select-wrap select{
+	background: transparent;
+	height: 22px;	
+	padding: 0;
+	padding-top: 2px;
+	border: none;
+}
+
+#wt-admin .options-footer{
+	overflow: hidden;
+	padding: 8px 12px;
+	background: #f1f1f1;
+	border: solid #ccc;
+	border-width:0px 1px 1px 1px;
+	
+	text-align: right;
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	
+	-moz-box-shadow: inset 0 1px 0 #fff,0 1px 0 #FFF,0 2px 0 rgba(0,0,0,0.2),0 3px 0 #FFF,0 4px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow:  inset 0 1px 0 #fff,0 1px 0 #FFF,0 2px 0 rgba(0,0,0,0.2),0 3px 0 #FFF,0 4px 0 rgba(0,0,0,0.2);
+	box-shadow:  inset 0 1px 0 #fff,0 1px 0 #FFF,0 2px 0 rgba(0,0,0,0.2),0 3px 0 #FFF,0 4px 0 rgba(0,0,0,0.2);
+
+}

@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced Spoiler\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-25 17:02+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: 082net <082net@gmail.com>\n"
+"Language-Team: 082net <082net@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Korean\n"
+"X-Poedit-Country: KOREA, REPUBLIC OF\n"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:78
+#: ../../advanced-spoiler/advanced-spoiler.php:377
+msgid "Show"
+msgstr "보이기"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:79
+#: ../../advanced-spoiler/advanced-spoiler.php:378
+msgid "Hide"
+msgstr "감추기"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:127
+#: ../../advanced-spoiler/advanced-spoiler.php:355
+msgid "Advanced Spoiler"
+msgstr ""
+
+#: ../../advanced-spoiler/advanced-spoiler.php:220
+msgid "Visit blog to check out this spoiler"
+msgstr "감춰진 내용을 보려면 블로그에 방문하세요"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:273
+msgid "Make a spoiler"
+msgstr "스포일러 만들기"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:274
+msgid "Select a effect type:"
+msgstr "효과 선택:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:275
+#: ../../advanced-spoiler/advanced-spoiler.php:386
+msgid "Show Text:"
+msgstr "보이기 문구:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:276
+#: ../../advanced-spoiler/advanced-spoiler.php:398
+msgid "Hide Text:"
+msgstr "감추기 문구:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:280
+msgid "Insert Spoiler"
+msgstr "스포일러 삽입"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:345
+msgid "Settings saved."
+msgstr "변경사항이 저정되었습니다."
+
+#: ../../advanced-spoiler/advanced-spoiler.php:360
+msgid "General Options"
+msgstr "일반 설정"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:364
+msgid "Mode:"
+msgstr "모드:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:366
+msgid "jQuery"
+msgstr "jQuery"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:367
+msgid "Simple"
+msgstr "심플"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:370
+msgid "If you don't want animated show/hide spoiler, select 'Simple'"
+msgstr "스포일러를 보이거나 감추는데 효과를 사용하지 않으려면 '심플'을 선택하세요"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:375
+msgid "Feed Visibility:"
+msgstr "피드 가시성:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:381
+msgid "If you want to hide spoiler content on feed, select 'hide'"
+msgstr "피드에서 스포일러 내용을 감추려면 '감춤' 을 선택하세요"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:389
+#: ../../advanced-spoiler/advanced-spoiler.php:401
+#, php-format
+msgid "(default: %s)"
+msgstr "(기본값: %s)"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:391
+#: ../../advanced-spoiler/advanced-spoiler.php:403
+msgid "Preview:"
+msgstr "미리보기:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:393
+msgid "Text for spoiler link when it's content is collapsed and marker for the text"
+msgstr "내용이 감추어져 있을때 스포일러 링크의 문구와 마커"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:405
+msgid "Text for spoiler link when it's content is expanded and marker for the text"
+msgstr "내용이 보여지고 있을때 스포일러 링크의 문구와 마커"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:410
+msgid "Default Effect:"
+msgstr "기본 효과:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:417
+msgid "Default effect for spoilers. (useless if mode is simple)"
+msgstr "스포일러에 사용할 기본 효과. ('심플' 모드에서는 무시됨)"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:422
+msgid "Effect Speed:"
+msgstr "효과 속도:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:424
+msgid "fast"
+msgstr "빠름"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:424
+msgid "normal"
+msgstr "보통"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:424
+msgid "slow"
+msgstr "느림"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:430
+msgid "The lower value, the faster speed."
+msgstr "값이 낮을수록 속도는 빠름"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:435
+msgid "Allow Nested:"
+msgstr "중복 허용:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:438
+#: ../../advanced-spoiler/advanced-spoiler.php:452
+msgid "No"
+msgstr "아니오"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:439
+#: ../../advanced-spoiler/advanced-spoiler.php:453
+msgid "Yes"
+msgstr "예"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:442
+msgid "Allow nested child spoilers."
+msgstr "스포일러 안의 또 다른 스포일러를 허용함."
+
+#: ../../advanced-spoiler/advanced-spoiler.php:444
+msgid "e.g."
+msgstr "예:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:444
+msgid "[spoiler] my content [spoiler] child content [/spoiler] rest of content [/spoiler]"
+msgstr "[spoiler] 내용... [spoiler] 부속 내용... [/spoiler] 나머지 내용... [/spoiler]"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:449
+msgid "Parse Old Parameters:"
+msgstr "이전 플러그인 지원:"
+
+#: ../../advanced-spoiler/advanced-spoiler.php:456
+msgid "Parse old plugin(Ajax Spoiler) parameters."
+msgstr "이전 플러그인(Ajax Spoiler)에서 사용했던 설정변수를 분석하여 적용함."
+
+#: ../../advanced-spoiler/advanced-spoiler.php:463
+msgid "Save Changes"
+msgstr "변경사항 저장"
+
