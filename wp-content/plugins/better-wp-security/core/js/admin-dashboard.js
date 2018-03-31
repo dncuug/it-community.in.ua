@@ -2,7 +2,7 @@ jQuery( document ).ready( function () {
 
 	jQuery( '#screen-meta-links' ).append(
 		'<div id="itsec-meta-link-wrap" class="hide-if-no-js screen-meta-toggle">' +
-		'<a href="' + document.location + '&show_admin_modal=true" class="show-settings">' + itsec_dashboard.text + '</a>' +
+		'<a href="' + itsec_dashboard.url + '" class="show-settings">' + itsec_dashboard.text + '</a>' +
 		'</div>'
 	);
 
@@ -11,8 +11,6 @@ jQuery( document ).ready( function () {
 		event.preventDefault();
 
 		var goto = jQuery( this ).attr( 'href' );
-
-		console.log( goto );
 
 		jQuery( 'html, body' ).animate(
 			{

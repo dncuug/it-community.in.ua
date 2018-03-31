@@ -16,7 +16,6 @@ if ($http_user_agent ~* "^checkprivacy"){return 403;}
 if ($http_user_agent ~* "^ChinaClaw"){return 403;}
 if ($http_user_agent ~* "^clshttp"){return 403;}
 if ($http_user_agent ~* "^cmsworldmap"){return 403;}
-if ($http_user_agent ~* "^comodo"){return 403;}
 if ($http_user_agent ~* "^Custo"){return 403;}
 if ($http_user_agent ~* "^Default Browser 0"){return 403;}
 if ($http_user_agent ~* "^diavol"){return 403;}
@@ -47,7 +46,6 @@ if ($http_user_agent ~* "^GrabNet"){return 403;}
 if ($http_user_agent ~* "^Grafula"){return 403;}
 if ($http_user_agent ~* "^harvest"){return 403;}
 if ($http_user_agent ~* "^HMView"){return 403;}
-if ($http_user_agent ~* "^ia_archiver"){return 403;}
 if ($http_user_agent ~* "^Image Stripper"){return 403;}
 if ($http_user_agent ~* "^Image Sucker"){return 403;}
 if ($http_user_agent ~* "^InterGET"){return 403;}
@@ -105,7 +103,6 @@ if ($http_user_agent ~* "^turnit"){return 403;}
 if ($http_user_agent ~* "^vikspider"){return 403;}
 if ($http_user_agent ~* "^VoidEYE"){return 403;}
 if ($http_user_agent ~* "^Web Image Collector"){return 403;}
-if ($http_user_agent ~* "^Web Sucker"){return 403;}
 if ($http_user_agent ~* "^WebAuto"){return 403;}
 if ($http_user_agent ~* "^WebBandit"){return 403;}
 if ($http_user_agent ~* "^WebCopier"){return 403;}
@@ -119,7 +116,6 @@ if ($http_user_agent ~* "^Website Quester"){return 403;}
 if ($http_user_agent ~* "^WebStripper"){return 403;}
 if ($http_user_agent ~* "^WebWhacker"){return 403;}
 if ($http_user_agent ~* "^WebZIP"){return 403;}
-if ($http_user_agent ~* "^Wget"){return 403;}
 if ($http_user_agent ~* "^Widow"){return 403;}
 if ($http_user_agent ~* "^WPScan"){return 403;}
 if ($http_user_agent ~* "^WWW\-Mechanize"){return 403;}
@@ -128,7 +124,6 @@ if ($http_user_agent ~* "^Xaldon WebSpider"){return 403;}
 if ($http_user_agent ~* "^Zeus"){return 403;}
 if ($http_user_agent ~* "^zmeu"){return 403;}
 if ($http_user_agent ~* "360Spider"){return 403;}
-if ($http_user_agent ~* "AhrefsBot"){return 403;}
 if ($http_user_agent ~* "CazoodleBot"){return 403;}
 if ($http_user_agent ~* "discobot"){return 403;}
 if ($http_user_agent ~* "EasouSpider"){return 403;}

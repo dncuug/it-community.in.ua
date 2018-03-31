@@ -20,11 +20,7 @@ if ( ! class_exists( 'ITSEC_Core_Setup' ) ) {
 		 *
 		 * @return void
 		 */
-		public function execute_activate() {
-
-			add_site_option( 'itsec_free_just_activated', true );
-
-		}
+		public function execute_activate() {}
 
 		/**
 		 * Execute module deactivation
@@ -53,8 +49,18 @@ if ( ! class_exists( 'ITSEC_Core_Setup' ) ) {
 		 *
 		 * @return void
 		 */
-		public function execute_upgrade() {
+		public function execute_upgrade( $build ) {
+			if ( $build < 4069 ) {
+				delete_site_option( 'itsec_free_just_activated' );
+			}
 
+			if ( $build < 4076 ) {
+				$digest = wp_next_scheduled( 'itsec_digest_email' );
+
+				if ( $digest ) {
+					wp_unschedule_event( $digest, 'itsec_digest_email' );
+				}
+			}
 		}
 
 	}

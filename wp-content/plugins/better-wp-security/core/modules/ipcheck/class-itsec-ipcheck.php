@@ -10,181 +10,184 @@
  * @since   4.5
  *
  */
-class ITSEC_IPCheck extends ITSEC_Lockout {
+class ITSEC_IPCheck {
+	private $endpoint = 'http://ipcheck-api.ithemes.com/?action=';
+	private $settings;
 
-	private static $endpoint = 'http://ipcheck-api.ithemes.com/?action=';
-
-	private
-		$settings;
-
-	function run() {
-
-		$this->settings = get_site_option( 'itsec_ipcheck' );
-
-		//Execute API Brute force protection
-		if ( isset( $this->settings['api_ban'] ) && $this->settings['api_ban'] === true ) {
-
-			add_action( 'wp_login', array( $this, 'wp_login' ), 10, 2 );
-			add_action( 'wp_login_failed', array( $this, 'wp_login_failed' ), 1, 1 );
-
-			add_filter( 'authenticate', array( $this, 'authenticate' ), 10, 3 );
-			add_filter( 'itsec_logger_modules', array( $this, 'itsec_logger_modules' ) );
-
-		}
-
+	public function run() {
+		add_filter( 'authenticate', array( $this, 'filter_authenticate' ), 10000, 3 ); // Set a very late priority so that we run after actual authentication takes place.
 	}
 
-	/**
-	 * Sends to lockout class when login form isn't completely filled out and process xml_rpc username
-	 *
-	 * @since 4.5
-	 *
-	 * @param object $user     user or wordpress error
-	 * @param string $username username attempted
-	 * @param string $password password attempted
-	 *
-	 * @return user object or WordPress error
-	 */
-	public function authenticate( $user, $username = '', $password = '' ) {
+	private function load_settings() {
+		if ( ! isset( $this->settings ) ) {
+			$this->settings = ITSEC_Modules::get_settings( 'network-brute-force' );
+		}
+	}
 
-		global $itsec_logger;
+	public function filter_authenticate( $user, $username, $password ) {
+		global $itsec_lockout;
 
-		//Execute brute force if username or password are empty
-		if ( isset( $_POST['wp-submit'] ) && ( empty( $username ) || empty( $password ) ) ) {
+		if ( is_wp_error( $user ) && $user->get_error_codes() == array( 'empty_username', 'empty_password' ) ) {
+			// This is not an authentication attempt. It is simply the login page loading.
+			return $user;
+		}
 
-			if ( $this->report_ip() === 1 ) {
+		$this->load_settings();
 
-				$itsec_logger->log_event( 'ipcheck', 10, array(), ITSEC_Lib::get_ip() );
-
-				$this->execute_lock( false, true );
-
+		if ( is_wp_error( $user ) || null == $user ) {
+			if ( $this->report_ip() && $this->settings['enable_ban'] ) {
+				ITSEC_Log::add_notice( 'ipcheck', 'failed-login-by-blocked-ip', array( 'details' => ITSEC_Lib::get_login_details() ) );
+				$itsec_lockout->execute_lock( array( 'network_lock' => true ) );
 			}
-
+		} else if ( $this->settings['enable_ban'] && $this->is_ip_banned() ) {
+			ITSEC_Log::add_critical_issue( 'ipcheck', 'successful-login-by-blocked-ip', array( 'details' => ITSEC_Lib::get_login_details() ) );
+			$itsec_lockout->execute_lock( array( 'network_lock' => true ) );
 		}
 
 		return $user;
-
 	}
 
 	/**
-	 * Set transient for caching IPs
+	 * Check visitor IP to see if it is banned by IPCheck.
 	 *
-	 * @since 4.5
+	 * @since 3.0.0
 	 *
-	 * @param string $ip     IP Address
-	 * @param bool   $status if the IP is blocked or not
-	 * @param int    $time   length, in seconds, to cache
-	 *
-	 * @return void
+	 * @return bool true if banned, false otherwise.
 	 */
-	private function cache_ip( $ip, $status, $time ) {
-
-		//@todo one size fits all is too long. Need to adjust time
-		set_site_transient( 'itsec_ip_cache_' . esc_sql( $ip ), $status, $time );
-
+	private function is_ip_banned() {
+		return $this->get_server_response( 'check-ip' );
 	}
 
 	/**
-	 * IP to check for blacklist
+	 * Report visitor IP for blacklistable-offense to IPCheck.
 	 *
-	 * @since 4.5
+	 * @since 3.0.0
 	 *
-	 * @param string|null $ip ip to report
-	 *
-	 * @return bool true if successfully reported else false
+	 * @return bool true if banned, false otherwise.
 	 */
-	public function check_ip( $ip = null ) {
+	private function report_ip() {
+		return $this->get_server_response( 'report-ip' );
+	}
 
-		global $itsec_globals, $itsec_logger;
+	private function get_server_response( $action ) {
+		$this->load_settings();
 
-		//get current IP if needed
-		if ( $ip === null ) {
-
-			$ip = ITSEC_Lib::get_ip();
-
-		} else {
-
-			$ip = trim( sanitize_text_field( $ip ) );
-
-		}
-
-		if ( $this->is_ip_whitelisted( $ip ) ) {
+		if ( empty( $this->settings['api_key'] ) || empty( $this->settings['api_secret'] ) ) {
 			return false;
 		}
 
-		//See if we've checked this IP in the last hour
-		$cache_check = get_site_transient( 'itsec_ip_cache_' . esc_sql( $ip ) );
 
-		if ( is_array( $cache_check ) && isset( $cache_check['status'] ) ) {
-			return $cache_check['status'];
+		$ip = ITSEC_Lib::get_ip();
+
+		require_once( ITSEC_Core::get_core_dir() . '/lib/class-itsec-lib-ip-tools.php' );
+
+		if ( ! ITSEC_Lib_IP_Tools::validate( $ip ) || ITSEC_Lib::is_ip_whitelisted( $ip ) ) {
+			return false;
 		}
 
-		$action = 'check-ip';
 
-		if ( ITSEC_Lib::validates_ip_address( $ip ) ) { //verify IP address is valid
+		$cache = $this->get_cache( $ip );
 
-			if ( ! isset( $this->settings['api_key'] ) || ! isset( $this->settings['api_s'] ) ) {
-				return false; //invalid key or secret
+		if ( 'check-ip' === $action ) {
+			if ( $cache['cache_ttl'] >= ITSEC_Core::get_current_time_gmt() ) {
+				return $cache['block'];
 			}
+		} else if ( 'report-ip' === $action ) {
+			if ( $cache['report_ttl'] >= ITSEC_Core::get_current_time_gmt() ) {
+				return $cache['block'];
+			}
+		}
 
-			$args = json_encode(
-				array(
-					'apikey'    => $this->settings['api_key'], //the api key
-					'behavior'  => 'brute-force-login', //type of behanvior we're reporting
-					'ip'        => $ip, //the ip to report
-					'site'      => home_url( '', 'http' ), //the current site URL
-					'timestamp' => $itsec_globals['current_time_gmt'], //current time (GMT)
-				)
+
+		$args = json_encode(
+			array(
+				'apikey'    => $this->settings['api_key'],
+				'behavior'  => 'brute-force-login',
+				'ip'        => $ip,
+				'site'      => home_url( '', 'http' ),
+				'timestamp' => ITSEC_Core::get_current_time_gmt(),
+			)
+		);
+
+		$request = array(
+			'body' => array(
+				'request'   => $args,
+				'signature' => $this->hmac_sha1( $this->settings['api_secret'], $action . $args ),
+			),
+		);
+
+
+		$response = wp_remote_post( $this->endpoint . $action, $request );
+
+		if ( is_wp_error( $response ) || ! isset( $response['body'] ) ) {
+			return false;
+		}
+
+
+		$response = json_decode( $response['body'], true );
+
+		if ( ! is_array( $response ) || ! isset( $response['success'] ) || ! $response['success'] ) {
+			return false;
+		}
+
+
+		$this->set_cache( $ip, $response );
+
+		$cache_seconds = isset( $response['cache_ttl'] ) ? absint( $response['cache_ttl'] ) : 3600;
+
+		if ( isset( $response['block'] ) && $response['block'] ) {
+			$data = array(
+				'expires'     => date( 'Y-m-d H:i:s', ITSEC_Core::get_current_time() + $cache_seconds ),
+				'expires_gmt' => date( 'Y-m-d H:i:s', ITSEC_Core::get_current_time_gmt() + $cache_seconds ),
+				'type'        => 'host',
 			);
 
-			//Build the request parameters
-			$request = array(
-				'body' => array(
-					'request'   => $args,
-					'signature' => self::hmac_sha1( $this->settings['api_s'], $action . $args ),
-				),
-			);
+			ITSEC_Log::add_action( 'ipcheck', 'ip-blocked', $data );
 
-			$response = wp_remote_post( self::$endpoint . $action, $request );
-
-			//Make sure the request was valid and has a valid body
-			if ( is_array( $response ) && isset( $response['body'] ) ) {
-
-				$response = json_decode( $response['body'], true );
-
-				if ( is_array( $response ) && isset( $response['success'] ) && $response['success'] == true ) {
-
-					$cache = isset( $response['cache_ttl'] ) ? absint( $response['cache_ttl'] ) : 3600;
-
-					if ( isset( $response['block'] ) && $response['block'] == true ) {
-
-						$expiration     = date( 'Y-m-d H:i:s', $itsec_globals['current_time'] + $cache );
-						$expiration_gmt = date( 'Y-m-d H:i:s', $itsec_globals['current_time_gmt'] + $cache );
-
-						$itsec_logger->log_event( __( 'lockout', 'better-wp-security' ), 10, array(
-							'expires' => $expiration, 'expires_gmt' => $expiration_gmt, 'type' => 'host'
-						), $ip );
-
-						self::cache_ip( $ip, array( 'status' => true ), $cache );
-
-						return true; //API reports IP is blocked
-
-					} else {
-
-						self::cache_ip( $ip, array( 'status' => false ), $cache );
-
-						return false; //API reports IP is not blocked or no report (default to no block)
-
-					}
-
-				}
-
-			}
-
+			return true;
 		}
 
 		return false;
+	}
 
+	private function set_cache( $ip, $response ) {
+		$cache = $this->get_cache( $ip );
+		$time = ITSEC_Core::get_current_time_gmt();
+
+		if ( isset( $response['block'] ) ) {
+			$cache['block'] = (boolean) $response['block'];
+		}
+
+		if ( isset( $response['cache_ttl'] ) ) {
+			$cache['cache_ttl'] = intval( $response['cache_ttl'] ) + $time;
+		} else if ( 0 === $cache['cache_ttl'] ) {
+			$cache['cache_ttl'] = $time + HOUR_IN_SECONDS;
+		}
+
+		if ( isset( $response['report_ttl'] ) ) {
+			$cache['report_ttl'] = intval( $response['report_ttl'] ) + $time;
+		}
+
+		$transient_time = max( $cache['cache_ttl'], $cache['report_ttl'] ) - $time;
+
+
+		set_site_transient( "itsec_ipcheck_$ip", $cache, $transient_time );
+	}
+
+	private function get_cache( $ip ) {
+		$cache = get_site_transient( "itsec_ipcheck_$ip" );
+
+		$defaults = array(
+			'block'      => false,
+			'cache_ttl'  => 0,
+			'report_ttl' => 0,
+		);
+
+		if ( ! is_array( $cache ) ) {
+			return $defaults;
+		}
+
+		return array_merge( $defaults, $cache );
 	}
 
 	/**
@@ -200,195 +203,16 @@ class ITSEC_IPCheck extends ITSEC_Lockout {
 	 * @return  string    base64 encoded hmac
 	 */
 	private function hmac_sha1( $key, $data ) {
-
 		if ( strlen( $key ) > 64 ) {
 			$key = pack( 'H*', sha1( $key ) );
 		}
 
 		$key = str_pad( $key, 64, chr( 0x00 ) );
-
 		$ipad = str_repeat( chr( 0x36 ), 64 );
-
 		$opad = str_repeat( chr( 0x5c ), 64 );
-
 		$hmac = pack( 'H*', sha1( ( $key ^ $opad ) . pack( 'H*', sha1( ( $key ^ $ipad ) . $data ) ) ) );
 
 		return base64_encode( $hmac );
-
-	}
-
-	/**
-	 * Register IPCheck for logger
-	 *
-	 * @since 4.5
-	 *
-	 * @param  array $logger_modules array of logger modules
-	 *
-	 * @return array                   array of logger modules
-	 */
-	public function itsec_logger_modules( $logger_modules ) {
-
-		$logger_modules['ipcheck'] = array(
-			'type'     => 'ipcheck',
-			'function' => __( 'IP Flagged as bad by iThemes IPCheck', 'better-wp-security' ),
-		);
-
-		return $logger_modules;
-
-	}
-
-	/**
-	 * Send offending IP to IPCheck API
-	 *
-	 * @since 4.5
-	 *
-	 * @param string|null $ip   ip to report
-	 * @param int         $type type of behavior to report
-	 *
-	 * @return int -1 on failure, 0 if report successful and IP not blocked, 1 if IP successful and IP blocked
-	 */
-	public function report_ip( $ip = null, $type = 1 ) {
-
-		global $itsec_globals, $itsec_logger;
-
-		$action = 'report-ip';
-
-		/**
-		 * Switch types or return false if no valid type
-		 *
-		 * Valid types:
-		 * 1 = invalid/failed login
-		 *
-		 */
-		switch ( $type ) {
-
-			case 1:
-				$behavior = 'brute-force-login';
-				break;
-			default:
-				return -1;
-
-		}
-
-		//get current IP if needed
-		if ( $ip === null ) {
-
-			$ip = ITSEC_Lib::get_ip();
-
-		} else {
-
-			$ip = trim( sanitize_text_field( $ip ) );
-
-		}
-
-		if ( $this->is_ip_whitelisted( $ip ) ) {
-			return 0;
-		}
-
-		if ( ITSEC_Lib::validates_ip_address( $ip ) ) { //verify IP address is valid
-
-			if ( ! isset( $this->settings['api_key'] ) || ! isset( $this->settings['api_s'] ) ) {
-				return -1; //invalid key or secret
-			}
-
-			$args = json_encode(
-				array(
-					'apikey'    => $this->settings['api_key'], //the api key
-					'behavior'  => $behavior, //type of behanvior we're reporting
-					'ip'        => $ip, //the ip to report
-					'site'      => home_url( '', 'http' ), //the current site URL
-					'timestamp' => $itsec_globals['current_time_gmt'], //current time (GMT)
-				)
-			);
-
-			//Build the request parameters
-			$request = array(
-				'body' => array(
-					'request'   => $args,
-					'signature' => self::hmac_SHA1( $this->settings['api_s'], $action . $args ),
-				),
-			);
-
-			$response = wp_remote_post( self::$endpoint . $action, $request );
-
-			//Make sure the request was valid and has a valid body
-			if ( is_array( $response ) && isset( $response['body'] ) ) {
-
-				$response = json_decode( $response['body'], true );
-
-				if ( is_array( $response ) && isset( $response['success'] ) && $response['success'] == true ) {
-
-					if ( isset( $response['block'] ) && $response['block'] == true ) {
-
-						$cache = isset( $response['cache_ttl'] ) ? absint( $response['cache_ttl'] ) : 3600;
-
-						$expiration     = date( 'Y-m-d H:i:s', $itsec_globals['current_time'] + $cache );
-						$expiration_gmt = date( 'Y-m-d H:i:s', $itsec_globals['current_time_gmt'] + $cache );
-
-						$itsec_logger->log_event( __( 'lockout', 'better-wp-security' ), 10, array(
-							'expires' => $expiration, 'expires_gmt' => $expiration_gmt, 'type' => 'host'
-						), $ip );
-
-						self::cache_ip( $ip, array( 'status' => true ), $cache );
-
-						return 1; //ip report success. Just return true for now
-
-					} else {
-
-						return 0;
-
-					}
-
-				}
-
-			}
-
-		}
-
-		return -1;
-
-	}
-
-	/**
-	 * Make sure user isn't already locked out even on successful form submission
-	 *
-	 * @since 4.5
-	 *
-	 * @return void
-	 */
-	public function wp_login() {
-
-		global $itsec_logger;
-
-		if ( $this->check_ip() === true ) {
-
-			$itsec_logger->log_event( 'ipcheck', 10, array(), ITSEC_Lib::get_ip() );
-
-			$this->execute_lock( false, true );
-
-		}
-
-	}
-
-	/**
-	 * Sends to lockout class when username and password are filled out and wrong
-	 *
-	 * @since 4.5
-	 *
-	 * @return void
-	 */
-	public function wp_login_failed() {
-
-		global $itsec_logger;
-
-		if ( $this->report_ip() === 1 ) {
-
-			$itsec_logger->log_event( 'ipcheck', 10, array(), ITSEC_Lib::get_ip() );
-
-			$this->execute_lock( false, true );
-
-		}
-
 	}
 
 }
