@@ -1,3 +1,4 @@
+2018-04-01 07:22:55	66.249.64.152	/page-sitemap.xml	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 2018-04-01 07:20:46	66.249.64.152	/post_tag-sitemap.xml	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 2018-04-01 07:20:03	66.249.64.156	/mobile/	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 2018-04-01 07:19:47	66.249.64.152	/it-pro/	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
