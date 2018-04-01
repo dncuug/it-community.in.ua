@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-03-25 13:26:50+0000\n"
+"PO-Revision-Date: 2018-04-01 19:29:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3195,7 +3195,7 @@ msgstr "Registrierungs-URL: %s"
 
 #: core/modules/hide-backend/settings-page.php:118
 msgid "WordPress uses the \"action\" variable to handle many login and logout functions. By default this plugin can handle the normal ones but some plugins and themes may utilize a custom action (such as logging out of a private post). If you need a custom action please enter it here."
-msgstr "WordPress nutzt die „action“-Variable zur Handhabung vieler Anmelde- und Abmeldefunktionen. Standardmäßig kann dieses Plugin mit den Normalen umgehen. Einige Plugins und Themes nutzen aber eine anwendungsspezifische Aktion (wie bei der Abmeldung von einem privaten Beitrag). Wenn du eine individuelle Aktion benötigst, gebe sie bitte hier ein."
+msgstr "WordPress verwendet die „action“-Variable zur Handhabung vieler Anmelde- und Abmeldefunktionen. Standardmäßig kann dieses Plugin mit den Normalen umgehen. Einige Plugins und Themes benutzen aber eine anwendungsspezifische Aktion (wie bei der Abmeldung von einem privaten Beitrag). Wenn du eine individuelle Aktion benötigst, gib sie bitte hier ein."
 
 #: core/modules/hide-backend/settings-page.php:84
 msgid "Note: The output is limited to alphanumeric characters, underscore (_) and dash (-). Special characters such as \".\" and \"/\" are not allowed and will be converted in the same manner as a post title. Please review your selection before logging out."
