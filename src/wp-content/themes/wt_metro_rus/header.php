@@ -27,6 +27,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta property="fb:pages" content="1433941660200957" />
 
 <title><?php
 	/*
