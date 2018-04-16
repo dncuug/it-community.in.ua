@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-03-08 11:12:38+0000\n"
+"PO-Revision-Date: 2018-04-10 08:41:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,11 +11,15 @@ msgstr ""
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - Google Analytics for WordPress by MonsterInsights - Stable (latest release)\n"
 
-#: includes/frontend/tracking/class-tracking-analytics.php:276
+#: includes/frontend/tracking/class-tracking-analytics.php:201
+msgid "Note: You have not accepted the Cookie Notice."
+msgstr "Observera: Du har inte godkänt cookie-meddelandet."
+
+#: includes/frontend/tracking/class-tracking-analytics.php:291
 msgid "because you're not being tracked. %s"
 msgstr "för att du inte spåras. %s"
 
-#: includes/frontend/tracking/class-tracking-analytics.php:276
+#: includes/frontend/tracking/class-tracking-analytics.php:291
 msgid "Not running function"
 msgstr "Funktionen körs inte"
 
@@ -60,27 +64,27 @@ msgstr "Utgivare"
 msgid "Dimensions"
 msgstr "Omfång"
 
-#: includes/frontend/tracking/class-tracking-analytics.php:200
+#: includes/frontend/tracking/class-tracking-analytics.php:204
 msgid "Note: The site owner has disabled Google Analytics tracking for your user role."
 msgstr "Observera: Webbplatsägaren har inaktiverat Google Analytics-spårning för din användarroll."
 
-#: includes/frontend/tracking/class-tracking-analytics.php:194
+#: includes/frontend/tracking/class-tracking-analytics.php:195
 msgid "Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel."
 msgstr "Observera: MonsterInsights är för närvarande inte konfigurerat på denna webbplats. Webbplatsägaren måste autentisera med Google Analytics i MonsterInsights inställningspanel."
 
-#: includes/api-request.php:293
+#: includes/api-request.php:295
 msgid "Improper API request."
 msgstr "Felaktig API-begäran."
 
-#: includes/api-request.php:281 includes/api-request.php:285
+#: includes/api-request.php:283 includes/api-request.php:287
 msgid "The API returned a <strong>%d</strong> response with this message: <strong>%s</strong>"
 msgstr "API:et returnerade ett <strong>%d</strong> svar med meddelandet: <strong>%s</strong>"
 
-#: includes/api-request.php:277
+#: includes/api-request.php:279
 msgid "The API returned a <strong>%s</strong> response"
 msgstr "API:et returnerade ett <strong>%s</strong> svar "
 
-#: includes/api-request.php:273
+#: includes/api-request.php:275
 msgid "The API was unreachable."
 msgstr "API:et kunde inte nås."
 
@@ -158,8 +162,8 @@ msgid "Top Posts / Pages"
 msgstr "Topp inlägg/sidor"
 
 #: includes/admin/reports/overview.php:559
-msgid "View All Referral Resources"
-msgstr "Visa alla referensresurser"
+msgid "View All Referral Sources"
+msgstr "Visa alla referenskällor"
 
 #: includes/admin/reports/overview.php:532
 msgid "This list shows the top websites that send your website traffic, known as \"referral traffic\"."
@@ -414,139 +418,139 @@ msgstr "Licensnyckeln används för att aktivera uppdateringar för MonsterInsig
 msgid "Activate Key"
 msgstr "Aktivera nyckel"
 
-#: includes/admin/common.php:177
+#: includes/admin/common.php:176
 msgid "Retrieved the new report data successfully"
 msgstr "Hämtade de nya rapportuppgifterna"
 
-#: includes/admin/common.php:176
+#: includes/admin/common.php:175
 msgid "Success"
 msgstr "Lyckades"
 
-#: includes/admin/common.php:175
+#: includes/admin/common.php:174
 msgid "Loading new report data..."
 msgstr "Laddar nya rapportdata&hellip;"
 
-#: includes/admin/common.php:174
+#: includes/admin/common.php:173
 msgid "Refreshing Report"
 msgstr "Uppdaterar rapport"
 
-#: includes/admin/common.php:173
+#: includes/admin/common.php:172
 msgid "Force Deauthenticate"
 msgstr "Tvinga avautentisering"
 
-#: includes/admin/common.php:172
+#: includes/admin/common.php:171
 msgid "OK"
 msgstr "OK"
 
-#: includes/admin/common.php:171
+#: includes/admin/common.php:170
 msgid "Your site is connected to MonsterInsights!"
 msgstr "Din webbplats är ansluten till MonsterInsights!"
 
-#: includes/admin/common.php:170
+#: includes/admin/common.php:169
 msgid "Verified Successfully!"
 msgstr "Verifieringen lyckades!"
 
-#: includes/admin/common.php:169
+#: includes/admin/common.php:168
 msgid "Verification Error:"
 msgstr "Verifieringsfel:"
 
-#: includes/admin/common.php:168
+#: includes/admin/common.php:167
 msgid "We're verifying your site. This may take a couple seconds."
 msgstr "Vi verifierar din webbplats. Det kan ta några sekunder."
 
-#: includes/admin/common.php:167
+#: includes/admin/common.php:166
 msgid "Verifying...."
 msgstr "Verifiera&hellip;"
 
-#: includes/admin/common.php:166
+#: includes/admin/common.php:165
 msgid "You've disconnected your site from MonsterInsights. Your site is no longer being tracked by Google Analytics and you won't see reports anymore."
 msgstr "Du har kopplat bort din webbplats från MonsterInsights. Din webbplats spåras inte längre av Google Analytics och du kommer inte att se rapporter längre."
 
-#: includes/admin/common.php:165
+#: includes/admin/common.php:164
 msgid "Deactivated Successfully!"
 msgstr "Inaktiveringen lyckades!"
 
-#: includes/admin/common.php:164
+#: includes/admin/common.php:163
 msgid "Deactivation Error:"
 msgstr "Inaktiveringsfel:"
 
-#: includes/admin/common.php:163
+#: includes/admin/common.php:162
 msgid "We're deactivating your site. This may take a couple seconds."
 msgstr "Vi inaktiverar din webbplats. Det kan ta några sekunder."
 
-#: includes/admin/common.php:162
+#: includes/admin/common.php:161
 msgid "Deauthenticating...."
 msgstr "Avautentiserar&helliup;"
 
-#: includes/admin/common.php:161
+#: includes/admin/common.php:160
 msgid "Authentication Error:"
 msgstr "Autentiseringsfel:"
 
-#: includes/admin/common.php:160
+#: includes/admin/common.php:159
 msgid "You'll be redirected momentarily to complete authentication. This may take a couple seconds."
 msgstr "Du omdirigeras snart för att slutföra autentiseringen. Det kan ta några sekunder."
 
-#: includes/admin/common.php:159
+#: includes/admin/common.php:158
 msgid "Preparing to redirect:"
 msgstr "Förbereder omdirigering:"
 
-#: includes/admin/api-auth.php:379
+#: includes/admin/api-auth.php:386
 msgid "Could not deauthenticate."
 msgstr "Det gick inte att avautentisera."
 
-#: includes/admin/api-auth.php:377
+#: includes/admin/api-auth.php:384
 msgid "Successfully force deauthenticated."
 msgstr "Den tvingade avautentiseringen lyckades."
 
-#: includes/admin/api-auth.php:374
+#: includes/admin/api-auth.php:381
 msgid "Successfully deauthenticated."
 msgstr "Avautentiseringen lyckades."
 
-#: includes/admin/api-auth.php:367
+#: includes/admin/api-auth.php:374
 msgid "Cannot deauthenticate. Please enter a valid, active license key for MonsterInsights Pro into the settings."
 msgstr "Kan inte avautentisera. Ange en giltig, aktiv licensnyckel för MonsterInsights Pro i inställningarna."
 
-#: includes/admin/api-auth.php:360 includes/admin/api-auth.php:362
+#: includes/admin/api-auth.php:367 includes/admin/api-auth.php:369
 msgid "Cannot deauthenticate. You are not currently authed."
 msgstr "Kan inte avautentisera. Du är för närvarande inte autentiserad."
 
-#: includes/admin/api-auth.php:351
+#: includes/admin/api-auth.php:358
 msgid "You don't have permission to deauthenticate MonsterInsights."
 msgstr "Du har inte behörighet att avautentisera MonsterInsights."
 
-#: includes/admin/api-auth.php:323
+#: includes/admin/api-auth.php:330
 msgid "Could not verify."
 msgstr "Det gick inte att verifiera."
 
-#: includes/admin/api-auth.php:321
+#: includes/admin/api-auth.php:328
 msgid "Successfully verified."
 msgstr "Verifieringen lyckades."
 
-#: includes/admin/api-auth.php:316
+#: includes/admin/api-auth.php:323
 msgid "Cannot verify. Please enter a valid, active license key for MonsterInsights Pro into the settings."
 msgstr "Det gick inte att verifiera. Ange en giltig, aktiv licensnyckel för MonsterInsights Pro i inställningarna."
 
-#: includes/admin/api-auth.php:309 includes/admin/api-auth.php:311
+#: includes/admin/api-auth.php:316 includes/admin/api-auth.php:318
 msgid "Cannot verify. Please authenticate."
 msgstr "Det gick inte att verifiera. Vänligen autentisera."
 
-#: includes/admin/api-auth.php:300
+#: includes/admin/api-auth.php:307
 msgid "You don't have permission to verify MonsterInsights."
 msgstr "Du har inte behörighet att verifiera MonsterInsights."
 
-#: includes/admin/api-auth.php:202
+#: includes/admin/api-auth.php:207
 msgid "Cannot re-authenticate the network. Please authenticate on the network settings panel."
 msgstr "Det gick inte att återautentisera nätverket. Vänligen autentisera i nätverksadminpanelen."
 
-#: includes/admin/api-auth.php:200
+#: includes/admin/api-auth.php:205
 msgid "Cannot re-authenticate. Please authenticate."
 msgstr "Det gick inte att återautentisera. Vänligen autentisera."
 
-#: includes/admin/api-auth.php:195
+#: includes/admin/api-auth.php:200
 msgid "Cannot re-authenticate. Please enter a valid, active license key for MonsterInsights Pro into the settings."
 msgstr "Det gick inte att återautentisera. Ange en giltig, aktiv licensnyckel för MonsterInsights Pro i inställningarna."
 
-#: includes/admin/api-auth.php:185
+#: includes/admin/api-auth.php:190
 msgid "You don't have permission to re-authenticate MonsterInsights."
 msgstr "Du har inte behörighet att återautentisera MonsterInsights."
 
@@ -888,35 +892,35 @@ msgstr "Spara nätverks-UA-kod"
 msgid "Network UA code"
 msgstr "Nätverks-UA-kod"
 
-#: includes/admin/common.php:158
+#: includes/admin/common.php:157
 msgid "Imported!"
 msgstr "Importerad!"
 
-#: includes/admin/common.php:157 includes/admin/pages/tools.php:87
+#: includes/admin/common.php:156 includes/admin/pages/tools.php:87
 msgid "Import"
 msgstr "Importera"
 
-#: includes/admin/common.php:156
+#: includes/admin/common.php:155
 msgid "Working..."
 msgstr "Bearbetar…"
 
-#: includes/admin/common.php:155
+#: includes/admin/common.php:154
 msgid "Shortened!"
 msgstr "Förkortad!"
 
-#: includes/admin/common.php:154
+#: includes/admin/common.php:153
 msgid "Shorten URL"
 msgstr "Förkorta URL"
 
-#: includes/admin/common.php:152
+#: includes/admin/common.php:151
 msgid "Failed!"
 msgstr "Misslyckades!"
 
-#: includes/admin/common.php:151
+#: includes/admin/common.php:150
 msgid "Copy to Clipboard"
 msgstr "Kopiera till urklipp"
 
-#: includes/admin/common.php:150
+#: includes/admin/common.php:149
 msgid "Copied!"
 msgstr "Kopierad!"
 
@@ -1956,7 +1960,7 @@ msgstr "%1$s är %3$sborttagen%4$s sedan MonsterInsights version %2$s."
 msgid "%1$s is %3$sdeprecated%4$s since MonsterInsights version %2$s!"
 msgstr "%1$s är %3$sborttagen%4$s sedan MonsterInsights version %2$s!"
 
-#: includes/admin/tracking.php:238
+#: includes/admin/tracking.php:241
 msgid "Once Weekly"
 msgstr "En gång i veckan"
 
@@ -2155,7 +2159,7 @@ msgstr "UPP"
 msgid "MonsterInsights Mascot"
 msgstr "MonsterInsights maskot"
 
-#: includes/admin/common.php:178
+#: includes/admin/common.php:177
 msgid "Error"
 msgstr "Fel"
 
@@ -2308,60 +2312,60 @@ msgstr "Grattis! Denna webbplats tar nu emot automatiska uppdateringar."
 msgid "There was an error connecting to the remote key API. Please try again later."
 msgstr "Ett problem uppstod vid anslutning till fjärrnyckel-API:et. Vänligen försök igen senare."
 
-#: includes/admin/common.php:148
+#: includes/admin/common.php:147
 msgid "Proceed"
 msgstr "Fortsätt"
 
-#: includes/admin/common.php:147
+#: includes/admin/common.php:146
 msgid "Installing..."
 msgstr "Installerar..."
 
-#: includes/admin/common.php:145 includes/admin/pages/addons.php:398
+#: includes/admin/common.php:144 includes/admin/pages/addons.php:398
 msgid "Install"
 msgstr "Installera"
 
-#: includes/admin/common.php:144
+#: includes/admin/common.php:143
 msgid "Status: Network inactive"
 msgstr "Status: Nätverk inaktivt"
 
-#: includes/admin/common.php:143
+#: includes/admin/common.php:142
 msgid "Status: Inactive"
 msgstr "Status: Inaktiv"
 
-#: includes/admin/common.php:142
+#: includes/admin/common.php:141
 msgid "Deactivating..."
 msgstr "Inaktiverar..."
 
-#: includes/admin/common.php:140 includes/admin/pages/addons.php:439
+#: includes/admin/common.php:139 includes/admin/pages/addons.php:439
 msgid "Network deactivate"
 msgstr "Nätverk avaktiverat"
 
-#: includes/admin/common.php:139 includes/admin/pages/addons.php:441
+#: includes/admin/common.php:138 includes/admin/pages/addons.php:441
 #: includes/admin/pages/addons.php:443
 msgid "Deactivate"
 msgstr "Inaktivera"
 
-#: includes/admin/common.php:138
+#: includes/admin/common.php:137
 msgid "Activating..."
 msgstr "Aktiverar..."
 
-#: includes/admin/common.php:136 includes/admin/pages/addons.php:466
+#: includes/admin/common.php:135 includes/admin/pages/addons.php:466
 msgid "Network activate"
 msgstr "Aktivera nätverk"
 
-#: includes/admin/common.php:135
+#: includes/admin/common.php:134
 msgid "Status: Network Activated"
 msgstr "Status: Nätverk är aktiverat"
 
-#: includes/admin/common.php:134 includes/admin/pages/addons.php:468
+#: includes/admin/common.php:133 includes/admin/pages/addons.php:468
 msgid "Activate"
 msgstr "Aktivera"
 
-#: includes/admin/common.php:133
+#: includes/admin/common.php:132
 msgid "Status: Active"
 msgstr "Status: Aktiv"
 
-#: includes/admin/common.php:131
+#: includes/admin/common.php:130
 msgid "Warning: You have unsaved setting changes. If you leave the settings page without saving your changes will be lost. Did you still want to leave the page?"
 msgstr "Varning: Du har osparade ändringar. Om du lämnar sidan för inställningar utan att spara förlorar du dina ändringar. Vill du ändå lämna sidan?"
 
@@ -2427,7 +2431,7 @@ msgid "https://www.monsterinsights.com/"
 msgstr "https://www.monsterinsights.com/"
 
 #. #-#-#-#-#  google-analytics-for-wordpress-code.pot (Google Analytics for
-#. WordPress by MonsterInsights 7.0.4)  #-#-#-#-#
+#. WordPress by MonsterInsights 7.0.5)  #-#-#-#-#
 #. Author of the plugin/theme
 #: includes/admin/partials/header.php:19
 msgid "MonsterInsights"
@@ -2539,7 +2543,7 @@ msgstr "Session"
 msgid "Reports"
 msgstr "Rapporter"
 
-#: includes/admin/common.php:130
+#: includes/admin/common.php:129
 msgid "Loading..."
 msgstr "Laddar..."
 

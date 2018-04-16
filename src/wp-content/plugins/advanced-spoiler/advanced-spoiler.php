@@ -477,7 +477,7 @@ class AdvSpoiler {
 	function &get_instance() {
 		static $instance = array();
 		if ( empty( $instance ) ) {
-			$instance[] =& new AdvSpoiler();
+			$instance[] = new AdvSpoiler();
 		}
 		return $instance[0];
 	}
