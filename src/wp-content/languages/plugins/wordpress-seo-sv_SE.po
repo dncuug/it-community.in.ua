@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-04-03 11:09:53+0000\n"
+"PO-Revision-Date: 2018-04-18 12:21:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,65 @@ msgstr ""
 "Language: sv_SE\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
 
+#. translators: %1$s expands to a link start tag to the Baidu Webmaster Tools
+#. site add page, %2$s is the link closing tag.
+#: admin/views/tabs/dashboard/webmaster-tools.php:44
+msgid "Get your Baidu verification code in %1$sBaidu Webmaster Tools%2$s."
+msgstr "Skaffa din verifieringskod för Baidu i %1$sBaidu Webmaster Tools%2$s."
+
+#: admin/views/tabs/dashboard/webmaster-tools.php:40
+msgid "Baidu verification code"
+msgstr "Verifieringskod för Baidu"
+
+#. translators: 1: The link tag to email examples page; 2: The link closing
+#. tag; 3: The link tag for the list of recommended WordPress hosting partners;
+#: admin/class-unsupported-php-message.php:60
+msgid "If you cannot update your PHP yourself, you can send an email to your host. We have %1$sexamples%2$s here. If they don't want to upgrade your PHP version, we recommend switching hosts. Take a look at our list of %3$srecommended WordPress hosting partners%2$s, they've been vetted by the Yoast support team and offer all the features a modern host should have."
+msgstr "Om du inte kan uppdatera PHP själv, kan du skicka ett e-postmeddelande till ditt webbhotell. Vi har %1$sexempel%2$s här. Om de inte vill uppgradera din PHP-version rekommenderar vi att du byter webbhotell. Ta en titt på vår lista över %3$srekommenderade webbhotell för WordPress%2$s, de har granskats av Yoasts supportteam och erbjuder alla funktioner som ett modern webbhotell ska ha."
+
+#. translators: 1: The link tag to the  WordPress instructions page for
+#. upgrading to newer versions of PHP; 2: The link closing tag; 3: The
+#. recommended PHP version; 4: The Yoast article about testing plugin
+#. compatibility with newer PHP versions;
+#: admin/class-unsupported-php-message.php:50
+msgid "For any questions you may have about updating your PHP version, WordPress %1$shas a great page with instructions here%2$s. We recommend going up to version %3$s. Not all plugins may be ready for PHP 7 though, so %4$swe wrote an article on how to test them before you update here%2$s."
+msgstr "För eventuella frågor som du har om uppdatering av din PHP-version, så har WordPress %1$sen bra sida med instruktioner här%2$s. Vi rekommenderar att du använder version %3$s. Det är dock inte säkert att alla dina tillägg är kompatibla med PHP 7, så %4$svi skrev en artikel om hur man testar dem innan du uppdaterar här%2$s."
+
+#: admin/class-unsupported-php-message.php:46
+msgid "How?"
+msgstr "Hur?"
+
+#. translators: 1: the PHP version that will no longer be supported; 2: The
+#. year the unsupported PHP version was released; 3: The minimal PHP version
+#. that will be supported; 4: The year the minimally supported version of PHP
+#. was released;
+#: admin/class-unsupported-php-message.php:38
+msgid "PHP is the programming language WordPress is developed in and your site runs on. PHP %1$s was released in %2$s and was replaced by PHP %3$s in %4$s. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site. Plus, it it enables our developers to use the latest technologies to make Yoast SEO even better."
+msgstr "PHP är programmeringsspråket WordPress är utvecklat i och det din webbplats körs på. PHP %1$s släpptes %2$s och ersattes av PHP %3$s %4$s. Nyare versioner av PHP är både snabbare och säkrare, så det är bara positivt för din webbplats om PHP uppdateras. Dessutom innebär det att våra utvecklare kan använda den senaste tekniken för att göra Yoast SEO ännu bättre."
+
+#: admin/class-unsupported-php-message.php:34
+msgid "Why?"
+msgstr "Varför?"
+
+#: admin/class-unsupported-php-message.php:21
+msgid "PHP update required."
+msgstr "PHP-uppdatering krävs."
+
+#. translators: 1: The strong opening tag; 2: The strong closing tag; 3: the
+#. Yoast SEO version that is dropping support; 4: The release date of the
+#. version of Yoast SEO that is dropping support; 5: The PHP version no longer
+#. being supported;
+#: admin/class-admin-init.php:422 admin/class-unsupported-php-message.php:25
+msgid "%1$sAction is needed%2$s: As of version %3$s, due to be released on %4$s, Yoast SEO will no longer work with PHP %5$s. Unfortunately, your site is running on PHP %5$s right now, so action is needed. Thankfully, you can update your PHP yourself."
+msgstr "%1$sÅtgärd behövs%2$s: Vid version %3$s, som släpps %4$s, kommer Yoast SEO inte längre att fungera med PHP %5$s. Din webbplats körs för tillfället på PHP %5$s, vilket behöver åtgärdas. Lyckligtvis så kan du uppdatera PHP själv."
+
 #. translators: %s is replaced with Yoast SEO.
-#: admin/import/plugins/class-abstract-plugin-importer.php:227
+#: admin/import/plugins/class-abstract-plugin-importer.php:250
 msgid "The %s importer functionality uses temporary database tables. It seems your WordPress install does not have the capability to do this, please consult your hosting provider."
 msgstr "Importfunktionen %s använder temporära databastabeller. Det verkar som om din WordPress-installation inte har möjlighet att göra detta, vänligen kontakta ditt webbhotell."
 
 #. translators: %s is replaced with the plugin's name.
-#: admin/import/plugins/class-abstract-plugin-importer.php:110
+#: admin/import/plugins/class-abstract-plugin-importer.php:132
 msgid "Cleanup of %s data failed."
 msgstr "Rensningen av %s data misslyckades."
 
@@ -35,7 +87,7 @@ msgstr "Visa alla innehållstyper"
 
 #. translators: %1$s resolves to the opening tag of the link to the comment
 #. setting page, %2$s resolves to the closing tag of the link
-#: admin/class-admin-init.php:153
+#: admin/class-admin-init.php:154
 msgid "To fix this uncheck the box in front of the \"Break comments into pages...\" on the %1$sComment settings page%2$s."
 msgstr "För att åtgärda detta, avmarkera rutan innan ”Dela upp kommentarer i sidor...” på %1$sinställningssidan för kommentarer%2$s."
 
@@ -43,19 +95,19 @@ msgstr "För att åtgärda detta, avmarkera rutan innan ”Dela upp kommentarer 
 msgid "Replaced with the normal title for an archive generated by WordPress"
 msgstr "Ersatt med den vanliga rubriken för ett arkiv som genereras av WordPress"
 
-#: admin/views/tabs/tool/import-seo.php:109
+#: admin/views/tabs/tool/import-seo.php:113
 msgid "Clean"
 msgstr "Rensa"
 
-#: admin/views/tabs/tool/import-seo.php:100
+#: admin/views/tabs/tool/import-seo.php:104
 msgid "Once you're certain your site is OK, you can clean up. This will remove all the original data."
 msgstr "När du är säker på att din webbplats är OK så kan du rensa den. Detta kommer ta bort alla originaldata."
 
-#: admin/views/tabs/tool/import-seo.php:98
+#: admin/views/tabs/tool/import-seo.php:102
 msgid "Step 5: Clean up"
 msgstr "Steg 5: Rensa"
 
-#: admin/views/tabs/tool/import-seo.php:92
+#: admin/views/tabs/tool/import-seo.php:93
 msgid "You should run the configuration wizard, from the SEO &rarr; General &rarr; Dashboard page, to make sure all the settings for your site are correct."
 msgstr "Du bör köra konfigurationsguiden från adminpanel SEO &rarr; Allmänt &rarr;, för att se till att du har rätt inställningar för din webbplats."
 
@@ -189,11 +241,12 @@ msgstr "Ranka för upp till 5 fokusnyckelord per sida"
 msgid "Upgrade to %1$s"
 msgstr "Uppgradera till %1$s"
 
-#: admin/views/user-profile.php:30
+#: admin/views/user-profile.php:13
 msgid "this author's archives"
 msgstr "arkiv för denna författare"
 
-#: admin/views/user-profile.php:30
+#. translators: %s expands to "this author's archives".
+#: admin/views/user-profile.php:12
 msgid "Do not allow search engines to show %s in search results."
 msgstr "Tillåt inte sökmotorer att visa %s i sökresultat."
 
@@ -337,29 +390,29 @@ msgid "Learn more about the archives setting"
 msgstr "Lär dig mer om inställningen för arkiv"
 
 #. translators: 1: link open tag; 2: link close tag.
-#: admin/views/tabs/dashboard/webmaster-tools.php:65
+#: admin/views/tabs/dashboard/webmaster-tools.php:79
 msgid "Get your Yandex verification code in %1$sYandex Webmaster Tools%2$s."
 msgstr "Skaffa din verifieringskod för Yandex i %1$sYandex Webmaster Tools%2$s."
 
-#: admin/views/tabs/dashboard/webmaster-tools.php:61
+#: admin/views/tabs/dashboard/webmaster-tools.php:75
 msgid "Yandex verification code"
 msgstr "Yandex verifieringskod"
 
 #. translators: 1: link open tag; 2: link close tag.
-#: admin/views/tabs/dashboard/webmaster-tools.php:55
+#: admin/views/tabs/dashboard/webmaster-tools.php:69
 msgid "Get your Google verification code in %1$sGoogle Search Console%2$s."
 msgstr "Skaffa din verifieringskod för Google i %1$sGoogle Search Console%2$s."
 
-#: admin/views/tabs/dashboard/webmaster-tools.php:51
+#: admin/views/tabs/dashboard/webmaster-tools.php:65
 msgid "Google verification code"
 msgstr "Google verifieringskod"
 
 #. translators: 1: link open tag; 2: link close tag.
-#: admin/views/tabs/dashboard/webmaster-tools.php:45
+#: admin/views/tabs/dashboard/webmaster-tools.php:59
 msgid "Get your Bing verification code in %1$sBing Webmaster Tools%2$s."
 msgstr "Skaffa din verifieringskod för Bing i %1$sBing Webmaster Tools%2$s."
 
-#: admin/views/tabs/dashboard/webmaster-tools.php:41
+#: admin/views/tabs/dashboard/webmaster-tools.php:55
 msgid "Bing verification code"
 msgstr "Bing verifieringskod"
 
@@ -371,51 +424,51 @@ msgstr "Du kan använda rutorna nedan för att verifiera med olika webbmaster-ve
 msgid "Learn more about the Webmaster Tools verification"
 msgstr "Lär dig mer om verifiering med webbmaster-verktygen"
 
-#: admin/views/tabs/dashboard/features.php:146
+#: admin/views/tabs/dashboard/features.php:152
 msgid "On"
 msgstr "På"
 
 #. translators: %s expands to a feature's name
-#: admin/views/tabs/dashboard/features.php:139
+#: admin/views/tabs/dashboard/features.php:145
 msgid "Help on: %s"
 msgstr "Hjälp med: %s"
 
 #. translators: %1$s expands to Yoast SEO
-#: admin/views/tabs/dashboard/features.php:108
+#: admin/views/tabs/dashboard/features.php:110
 msgid "%1$s comes with a lot of features. You can enable / disable some of them below. Clicking the question mark gives more information about the feature."
 msgstr "%1$s kommer med många funktioner. Du kan aktivera/inaktivera några av dem nedan. Om du klickar på frågetecknet får du mer information om funktionen."
 
-#: admin/views/tabs/dashboard/features.php:90
-#: admin/views/tabs/dashboard/features.php:147
+#: admin/views/tabs/dashboard/features.php:91
+#: admin/views/tabs/dashboard/features.php:153
 msgid "Off"
 msgstr "Av"
 
 #. translators: %1$s expands to Yoast SEO, %2$s expands to the translated
 #. version of "Off"
-#: admin/views/tabs/dashboard/features.php:88
+#: admin/views/tabs/dashboard/features.php:89
 msgid "The advanced section of the %1$s meta box allows a user to remove posts from the search results or change the canonical. These are things you might not want any author to do. That's why, by default, only editors and administrators can do this. Setting to \"%2$s\" allows all users to change these settings."
 msgstr "Den avancerade sektionen av %1$s-metaboxen låter an användare ta bort inlägg från sökresultat eller ändra den kanoniska. Detta är saker som du kanske inte vill att författare ska göra. Därför kan endast redaktörer och administratörer göra detta som standard. Om du ändrar till ”%2$s” kommer alla användare kunna ändra dessa inställningar."
 
-#: admin/views/tabs/dashboard/features.php:60
+#: admin/views/tabs/dashboard/features.php:61
 msgid "Read why XML Sitemaps are important for your site."
 msgstr "Läs om varför XML-webbplatskartor är viktiga för din webbplats."
 
 #. translators: %s expands to Yoast SEO
-#: admin/views/tabs/dashboard/features.php:59
+#: admin/views/tabs/dashboard/features.php:60
 msgid "Enable the XML sitemaps that %s generates."
 msgstr "Aktivera XML-webbplatskartan som %s genererar."
 
-#: admin/views/tabs/dashboard/features.php:20
+#: admin/views/tabs/dashboard/features.php:21
 msgid "See the XML sitemap."
 msgstr "Visa XML-webbplatskartan."
 
 #. translators: %1$s expands to the taxonomy name %2$s expands to the current
 #. taxonomy index value
-#: admin/taxonomy/class-taxonomy-settings-fields.php:65
+#: admin/taxonomy/class-taxonomy-settings-fields.php:66
 msgid "%2$s (current default for %1$s)"
 msgstr "%2$s (i nuläget standard för %1$s)"
 
-#: admin/views/tabs/dashboard/features.php:84
+#: admin/views/tabs/dashboard/features.php:85
 msgid "Security: no advanced settings for authors"
 msgstr "Säkerhet: inga avancerade inställningar för författare"
 
@@ -456,12 +509,14 @@ msgid "Should search engines follow links on this %1$s?"
 msgstr "Ska sökmotorer följa länkar på denna %1$s?"
 
 #. translators: %s expands to the post type name.
+#. translators: %s = taxonomy name.
 #: admin/metabox/class-metabox.php:83
-#: admin/taxonomy/class-taxonomy-settings-fields.php:34
+#: admin/taxonomy/class-taxonomy-settings-fields.php:35
 msgid "Allow search engines to show this %s in search results?"
 msgstr "Tillåt sökmotorer att visa denna %s i sökresultat?"
 
-#: admin/menu/class-admin-menu.php:120 inc/wpseo-non-ajax-functions.php:271
+#: admin/menu/class-admin-menu.php:120 frontend/class-frontend.php:1207
+#: inc/wpseo-non-ajax-functions.php:271
 msgid "Search Appearance"
 msgstr "Sökutseende"
 
@@ -506,7 +561,7 @@ msgstr ""
 
 #. translators: %s expands to an indexable object's name, like a post type or
 #. taxonomy
-#: admin/class-yoast-form.php:643
+#: admin/class-yoast-form.php:628
 msgid "Show %s in search results?"
 msgstr "Visa %s i sökresultaten?"
 
@@ -514,7 +569,7 @@ msgstr "Visa %s i sökresultaten?"
 msgid "Enable this feature if you want Twitter to display a preview with images and a text excerpt when a link to your site is shared."
 msgstr "Aktivera den här funktionen om du vill att Twitter ska visa en förhandsgranskning med bilder och ett textutdrag när en länk till din webbplats delas."
 
-#: admin/formatter/class-metabox-formatter.php:163
+#: admin/formatter/class-metabox-formatter.php:164
 msgid "Good results"
 msgstr "Bra resultat"
 
@@ -547,7 +602,7 @@ msgid "SEO: %1$sGood%2$s"
 msgstr "SEO: %1$sBra%2$s"
 
 #. translators: %s expands to Ryte.
-#: admin/views/tabs/dashboard/features.php:72
+#: admin/views/tabs/dashboard/features.php:73
 msgid "Read more about how %s works."
 msgstr "Läs mer om hur %s fungerar."
 
@@ -560,7 +615,7 @@ msgid "If you have a problem that you can't solve with our video tutorials or kn
 msgstr "Om du har ett problem som du inte kan lösa med våra videohandledningar eller kunskapsbas kan du skicka ett meddelande till vårt supportteam. De kan nås 24/7."
 
 #. translators: %s expands to Ryte.
-#: admin/views/tabs/dashboard/features.php:67
+#: admin/views/tabs/dashboard/features.php:68
 msgid "%s integration"
 msgstr "Integration med %s"
 
@@ -569,7 +624,7 @@ msgstr "Integration med %s"
 msgid "Allow customers to pick up their %s order locally"
 msgstr "Låt dina kunder hämta upp deras order från %s lokalt"
 
-#: admin/views/tabs/dashboard/features.php:35
+#: admin/views/tabs/dashboard/features.php:36
 msgid "Discover why readability is important for SEO."
 msgstr "Få reda på varför läsbarhet är viktigt för SEO."
 
@@ -581,11 +636,11 @@ msgstr "Aktivera den här funktionen om du vill att Facebook och andra sociala m
 msgid "Enhance your contact pages with Google Maps, opening hours and a store locator"
 msgstr "Förbättra dina kontaktsidor med Google Maps, öppettider och en butikslokaliserare"
 
-#: admin/views/tabs/dashboard/features.php:43
+#: admin/views/tabs/dashboard/features.php:44
 msgid "Find out how cornerstone content can help you improve your site structure."
 msgstr "Få reda på hur grundstensinnehåll kan hjälpa dig förbättra strukturen för din webbplats."
 
-#: admin/views/tabs/dashboard/features.php:51
+#: admin/views/tabs/dashboard/features.php:52
 msgid "Find out how the text link counter can enhance your SEO."
 msgstr "Få reda på hur textlänkräknaren kan förbättra din SEO."
 
@@ -593,7 +648,7 @@ msgstr "Få reda på hur textlänkräknaren kan förbättra din SEO."
 msgid "Get better search results in local search"
 msgstr "Få bättre sökresultat i lokala sökningar"
 
-#: admin/views/tabs/dashboard/features.php:27
+#: admin/views/tabs/dashboard/features.php:28
 msgid "Learn how the SEO analysis can help you rank."
 msgstr "Lär dig hur SEO-analysen kan hjälpa dig ranka."
 
@@ -615,7 +670,7 @@ msgstr "Läsbarhet: %1$sInte tillgänglig%2$s"
 msgid "Readability: %1$sOK%2$s"
 msgstr "Läsbarhet: %1$sOK%2$s"
 
-#: admin/views/tabs/dashboard/features.php:24
+#: admin/views/tabs/dashboard/features.php:25
 msgid "SEO analysis"
 msgstr "SEO-analys"
 
@@ -623,19 +678,19 @@ msgstr "SEO-analys"
 msgid "Support requests you create here are sent directly into our support system, which is secured with 256 bit SSL, so communication is 100% secure."
 msgstr "Supportärenden som du skapar här skickas direkt till vårt supportsystem, vilket säkras med 256 bit SSL, så kommunikationen är 100 % säker."
 
-#: admin/views/tabs/dashboard/features.php:26
+#: admin/views/tabs/dashboard/features.php:27
 msgid "The SEO analysis offers suggestions to improve the SEO of your text."
 msgstr "SEO-analysen visar dig hur du kan förbättra SEO för din text."
 
-#: admin/views/tabs/dashboard/features.php:42
+#: admin/views/tabs/dashboard/features.php:43
 msgid "The cornerstone content feature lets you to mark and filter cornerstone content on your website."
 msgstr "Funktionen grundstensinnehåll låter dig markera och filtrera grundstensinnehåll på din webbplats."
 
-#: admin/views/tabs/dashboard/features.php:34
+#: admin/views/tabs/dashboard/features.php:35
 msgid "The readability analysis offers suggestions to improve the structure and style of your text."
 msgstr "Läsbarhetsanalysen visar dig hur du förbättrar strukturen och stilen för din text."
 
-#: admin/views/tabs/dashboard/features.php:50
+#: admin/views/tabs/dashboard/features.php:51
 msgid "The text link counter helps you improve your site structure."
 msgstr "Textlänkräknaren hjälper dig förbättra strukturen för din webbplats."
 
@@ -699,11 +754,11 @@ msgstr "Du har använt detta fokusnyckelord %1$s%2$d gånger tidigare%3$s. Det �
 msgid "You've used this focus keyword %1$sonce before%2$s. It’s probably a good idea to read about %3$swhy you should not use your focus keyword more than once%4$s."
 msgstr "Du har använt detta fokusnyckelord %1$sen gång tidigare%2$s. Det är nog en bra idé att läsa om %3$svarför du inte bör använda ditt fokusnyckelord mer än en gång%4$s."
 
-#: admin/formatter/class-metabox-formatter.php:167
+#: admin/formatter/class-metabox-formatter.php:168
 msgid "Remove highlight from the text"
 msgstr "Ta bort markering från texten"
 
-#: admin/formatter/class-metabox-formatter.php:164
+#: admin/formatter/class-metabox-formatter.php:165
 msgid "Your site language is set to {language}."
 msgstr "Ditt språk är angivet som {language}."
 
@@ -717,19 +772,19 @@ msgstr "Kom igång snabbt med hjälp av %2$skonfigurationsguiden%3$s för %1$s!"
 msgid "First-time SEO configuration"
 msgstr "Startkonfiguration för SEO"
 
-#: admin/formatter/class-metabox-formatter.php:166
+#: admin/formatter/class-metabox-formatter.php:167
 msgid "Highlight this result in the text"
 msgstr "Markera detta resultat i texten"
 
-#: admin/formatter/class-metabox-formatter.php:162
+#: admin/formatter/class-metabox-formatter.php:163
 msgid "Considerations"
 msgstr "Överväganden"
 
-#: admin/formatter/class-metabox-formatter.php:159
+#: admin/formatter/class-metabox-formatter.php:160
 msgid "Errors"
 msgstr "Fel"
 
-#: admin/formatter/class-metabox-formatter.php:158
+#: admin/formatter/class-metabox-formatter.php:159
 msgid "Change language"
 msgstr "Byt språk"
 
@@ -742,7 +797,7 @@ msgstr "Metabeskrivningen har en bra längd."
 msgid "Number of results found: %s"
 msgstr "Antal hittade resultat: %s"
 
-#: admin/formatter/class-metabox-formatter.php:165
+#: admin/formatter/class-metabox-formatter.php:166
 msgid "Your site language is set to {language}. If this is not correct, contact your site administrator."
 msgstr "Ditt angivna språk är {language}. Kontakta webbplatsens administratör om detta inte stämmer."
 
@@ -820,7 +875,7 @@ msgstr "Integrera %1$s problemfritt med dina AMP-sidor!"
 
 #. translators: %1$s expands to Yoast SEO, %2$s expands to the plugin version,
 #. %3$s expands to the plugin name
-#: admin/class-admin-init.php:310
+#: admin/class-admin-init.php:311
 msgid "%1$s and %2$s can work together a lot better by adding a helper plugin. Please install %3$s to make your life better."
 msgstr "%1$s och %2$s kan fungera tillsammans mycket bättre genom att lägga till ett hjälptillägg. Vänligen installera %3$s för att göra ditt liv enklare."
 
@@ -830,7 +885,7 @@ msgstr "%1$s och %2$s kan fungera tillsammans mycket bättre genom att lägga ti
 msgid "Seamlessly integrate %2$s with %1$s for the content analysis!"
 msgstr "Integrera %2$s med %1$s problemfritt för innehållsanalysen!"
 
-#: admin/views/licenses.php:191 admin/views/licenses.php:250
+#: admin/views/licenses.php:191 admin/views/licenses.php:249
 msgid "Manage your subscription on My Yoast"
 msgstr "Hantera din prenumeration på ”My Yoast”"
 
@@ -865,7 +920,7 @@ msgid "Go back to the search results"
 msgstr "Gå tillbaka till sökresultaten"
 
 #: admin/class-help-center.php:257
-#: admin/formatter/class-metabox-formatter.php:169
+#: admin/formatter/class-metabox-formatter.php:170
 msgid "(Opens in a new browser tab)"
 msgstr "(Öppnas i en ny webbläsarflik)"
 
@@ -969,7 +1024,7 @@ msgstr ""
 "Om du väljer nej, kommer ditt författararkiv att inaktiveras för att\n"
 " förhindra problem med duplicerat innehåll."
 
-#: admin/config-ui/fields/class-field-google-search-console-intro.php:30
+#: admin/config-ui/fields/class-field-google-search-console-intro.php:33
 msgid ""
 "Note: we don't store your data in any way and don't have full access to your account. \n"
 "Your privacy is safe with us."
@@ -982,14 +1037,14 @@ msgstr ""
 #: admin/config-ui/fields/class-field-google-search-console-intro.php:21
 msgid ""
 "%1$s integrates with Google Search Console, a must-have tool for site owners.\n"
-" It provides you with information about the health of your site. \n"
+" It provides you with information about the health of your site.\n"
 " Don't have a Google account or is your site not activated yet?\n"
 " Find out %2$show to connect Google Search Console to your site.%3$s"
 msgstr ""
-"%1$s integrerar med Googles sökkonsol, ett måste-ha-verktyg för webbplatsägare.\n"
-" Det ger dig information om hälsan för din webbplats. \n"
-" Har du inte ett Google-konto eller är din webbplats inte aktiverad ännu?\n"
-" Ta reda på %2$shur du ansluter Googles sökkonsol till din webbplats.%3$s"
+"%1$s integrerar med Googles sökkonsol, ett oumbärligt verktyg för webbplatsägare.\n"
+" Det ger dig information om hur din webbplats mår. \n"
+" Har du inte ännu något Google-konto eller är din webbplats inte aktiverad?\n"
+" Ta reda på %2$shur du kopplar Googles sökkonsol till din webbplats.%3$s"
 
 #: admin/config-ui/fields/class-field-environment.php:20
 msgid ""
@@ -1033,11 +1088,11 @@ msgstr ""
 "Denna information kommer att användas i Googles Faktaruta, det stora\n"
 " blocket av information som du ser på den högra sidan av sökresultaten."
 
-#: admin/views/licenses.php:193 admin/views/licenses.php:252
+#: admin/views/licenses.php:193 admin/views/licenses.php:251
 msgid "Not activated"
 msgstr "Inte aktiverad"
 
-#: admin/views/licenses.php:190 admin/views/licenses.php:249
+#: admin/views/licenses.php:190 admin/views/licenses.php:248
 msgid "Activated"
 msgstr "Aktiverad"
 
@@ -1064,11 +1119,11 @@ msgid "You are not receiving updates or support! Fix this problem by adding this
 msgstr "Du tar inte emot uppdateringar eller support! Åtgärda problemet genom att lägga till denna webbplats och aktivera %1$s för det i %2$s."
 
 #. translators: %1$s expands to "Yoast".
-#: admin/class-yoast-form.php:207
+#: admin/class-yoast-form.php:192
 msgid "%1s recommendations for you"
 msgstr "%1s rekommendationer för dig"
 
-#: admin/views/licenses.php:194 admin/views/licenses.php:253
+#: admin/views/licenses.php:194 admin/views/licenses.php:252
 msgid "Activate your site on My Yoast"
 msgstr "Aktivera din webbplats på ”My Yoast”"
 
@@ -1080,7 +1135,7 @@ msgstr "Läsbarhet: Behöver förbättras"
 msgid "SEO: Needs improvement"
 msgstr "SEO: Behöver förbättras"
 
-#: vendor/yoast/whip/src/facades/wordpress.php:29
+#: admin/class-admin.php:361 vendor/yoast/whip/src/facades/wordpress.php:29
 msgid "Remind me again in 4 weeks."
 msgstr "Påminn mig igen om 4 veckor."
 
@@ -1170,7 +1225,7 @@ msgstr "Länkarna i alla dina publika texter behöver räknas. Detta kommer att 
 
 #: admin/links/class-link-reindex-dashboard.php:56
 #: admin/links/class-link-reindex-dashboard.php:80
-#: admin/views/tabs/dashboard/features.php:48
+#: admin/views/tabs/dashboard/features.php:49
 msgid "Text link counter"
 msgstr "Textlänkräknare"
 
@@ -1201,19 +1256,19 @@ msgid ""
 "\t\t\t\t\tPlease read the following %5$sknowledge base article%6$s to find out how to resolve this problem."
 msgstr "Funktionen <strong>Textlänkräknaren</strong> (introducerad i %1$s %2$s) är för närvarande inaktiverad. För att denna funktion ska fungera kräver %1$s minst PHP-version %3$s. Vi har upptäckt PHP-version %4$s på denna webbplats.Vänligen läs följande %5$skunskapsartikel%6$s för att få reda på hur du löser detta problem."
 
-#: admin/links/class-link-columns.php:174
+#: admin/links/class-link-columns.php:177
 msgid "# internal links to"
 msgstr "# interna länkar till"
 
-#: admin/links/class-link-columns.php:174
+#: admin/links/class-link-columns.php:177
 msgid "Number of internal links linking to this post. See \"Yoast Columns\" text in the help tab for more info."
 msgstr "Antal interna länkar som länkar till detta inlägg. Se texten ”Yoast-kolumner” i hjälpfliken för mer info."
 
-#: admin/links/class-link-columns.php:171
+#: admin/links/class-link-columns.php:174
 msgid "# links in post"
 msgstr "# länkar i inlägg"
 
-#: admin/links/class-link-columns.php:171
+#: admin/links/class-link-columns.php:174
 msgid "Number of internal links in this post. See \"Yoast Columns\" text in the help tab for more info."
 msgstr "Antal interna länkar i detta inlägg. Se texten ”Yoast kolumner” i hjälpfliken för mer info."
 
@@ -1293,7 +1348,7 @@ msgid "%1$s will now take care of all the needed technical optimization of your 
 msgstr "%1$s tar nu hand om all teknisk optimering som behövs av din webbplats. För att verkligen förbättra webbplatsens prestanda i sökresultaten är det viktigt att börja skapa innehåll som rankas bra för nyckelord du bryr dig om. Kolla in den här videon där vi förklarar hur du använder metaboxen %1$s när du redigerar inlägg eller sidor."
 
 #: admin/filters/class-cornerstone-filter.php:48
-#: admin/views/tabs/dashboard/features.php:40
+#: admin/views/tabs/dashboard/features.php:41
 msgid "Cornerstone content"
 msgstr "Grundstensinnehåll"
 
@@ -1819,7 +1874,7 @@ msgstr "Stäng redigeraren för förhandsvisningstexten"
 msgid "Please provide an SEO title by editing the snippet below."
 msgstr "Vänligen ange en SEO-titel genom att redigera förhandsvisningstexten nedan."
 
-#: admin/formatter/class-metabox-formatter.php:168
+#: admin/formatter/class-metabox-formatter.php:169
 #: languages/yoast-seo-js.php:350
 msgid "Marks are disabled in current view"
 msgstr "Markeringen är inaktiverade i aktuell vy"
@@ -1990,7 +2045,7 @@ msgstr "Nyckelfrasen är över 10 ord, en nyckelfras bör vara kortare."
 msgid "Name"
 msgstr "Namn"
 
-#: admin/views/tool-import-export.php:85
+#: admin/views/tool-import-export.php:88
 msgid "Export settings"
 msgstr "Exportera inställningar"
 
@@ -2156,7 +2211,7 @@ msgid "Choose your settings.zip file"
 msgstr "Välj din settings.zip-fil"
 
 #: admin/metabox/class-metabox.php:73
-#: admin/taxonomy/class-taxonomy-fields-presenter.php:114
+#: admin/taxonomy/class-taxonomy-fields-presenter.php:109
 msgid "Enter a focus keyword"
 msgstr "Ange ett fokusnyckelord"
 
@@ -2170,12 +2225,12 @@ msgstr "(ingen titel)"
 msgid "By the way, did you know we also have a %1$sPremium plugin%2$s? It offers advanced features, like a redirect manager and support for multiple keywords. It also comes with 24/7 personal support."
 msgstr "Förresten, visste du att vi har också ett %1$sPremium-tillägg%2$s? Det erbjuder avancerade funktioner, som en omdirigeringshanterare och stöd för flera sökord. Det kommer också med 24/7 personlig support."
 
-#: admin/views/tabs/dashboard/features.php:77
+#: admin/views/tabs/dashboard/features.php:78
 msgid "Admin bar menu"
 msgstr "Administratörsmeny"
 
 #. translators: %1$s expands to Yoast SEO
-#: admin/views/tabs/dashboard/features.php:80
+#: admin/views/tabs/dashboard/features.php:81
 msgid "The %1$s admin bar menu contains useful links to third-party tools for analyzing pages and makes it easy to see if you have new notifications."
 msgstr "Administratörsmenyn %1$s innehåller användbara länkar till tredje-parts-verktyg för att analysera sidor och gör det lätt att se om du har nya notiser."
 
@@ -2184,9 +2239,9 @@ msgid "%s installation wizard"
 msgstr "Installationsguide för %s"
 
 #. translators: %1$s expands to Ryte.
-#: admin/views/tabs/dashboard/features.php:70
-msgid "%1$s can check daily if your site is still indexable by search engines and will notify you when this is not the case."
-msgstr "%1$s kan dagligen kontrollera om din webbplats fortfarande indexeras av sökmotorer och meddelar dig när detta inte är fallet."
+#: admin/views/tabs/dashboard/features.php:71
+msgid "%1$s will check weekly if your site is still indexable by search engines and Yoast SEO will notify you when this is not the case."
+msgstr "%1$s kan dagligen kontrollera om din webbplats fortfarande kan indexeras av sökmotorer och Yoast SEO meddelar dig om så inte är fallet."
 
 #: admin/metabox/class-metabox.php:468
 #: admin/taxonomy/class-taxonomy-metabox.php:288
@@ -2208,7 +2263,7 @@ msgstr "Se hur ditt inlägg på Facebook eller Twitter kommer att se ut."
 msgid "Social Previews"
 msgstr "Sociala förhandsgranskningar"
 
-#: admin/pages/dashboard.php:49 admin/views/tabs/dashboard/features.php:104
+#: admin/pages/dashboard.php:49 admin/views/tabs/dashboard/features.php:105
 msgid "Features"
 msgstr "Funktioner"
 
@@ -2328,20 +2383,20 @@ msgstr "Mindre än-tecken"
 msgid "Title settings"
 msgstr "Inställningar för titeln"
 
-#: admin/class-yoast-form.php:635
+#: admin/class-yoast-form.php:620
 #: admin/config-ui/fields/class-field-choice-post-type.php:31
 #: admin/config-ui/fields/class-field-multiple-authors.php:24
 #: admin/metabox/class-metabox.php:90 admin/metabox/class-metabox.php:95
-#: admin/taxonomy/class-taxonomy-settings-fields.php:67
+#: admin/taxonomy/class-taxonomy-settings-fields.php:68
 #: admin/views/tabs/metas/media.php:34
 msgid "No"
 msgstr "Nej"
 
-#: admin/class-yoast-form.php:634
+#: admin/class-yoast-form.php:619
 #: admin/config-ui/fields/class-field-choice-post-type.php:30
 #: admin/config-ui/fields/class-field-multiple-authors.php:23
 #: admin/metabox/class-metabox.php:89 admin/metabox/class-metabox.php:94
-#: admin/taxonomy/class-taxonomy-settings-fields.php:66
+#: admin/taxonomy/class-taxonomy-settings-fields.php:67
 #: admin/views/tabs/metas/media.php:33
 msgid "Yes"
 msgstr "Ja"
@@ -2443,13 +2498,13 @@ msgstr "se hur dina inlägg på Facebook eller Twitter kommer se ut."
 msgid "Premium support"
 msgstr "Premiumsupport"
 
-#: admin/views/licenses.php:187 admin/views/licenses.php:246
+#: admin/views/licenses.php:187 admin/views/licenses.php:245
 msgid "Installed"
 msgstr "Installerad"
 
 #. translators: Text between %1$s and %2$s will only be shown to screen
 #. readers. %3$s expands to the product name.
-#: admin/views/licenses.php:209 admin/views/licenses.php:264
+#: admin/views/licenses.php:209 admin/views/licenses.php:263
 msgid "More information %1$sabout %3$s%2$s"
 msgstr "Mer information %1$som %3$s%2$s"
 
@@ -2463,7 +2518,7 @@ msgid "%1$s extensions"
 msgstr "%1$s tillägg"
 
 #. translators: %1$s expands to Yoast SEO extensions
-#: admin/views/licenses.php:230
+#: admin/views/licenses.php:229
 msgid "%1$s to optimize your site even further"
 msgstr "%1$s för att optimera din webbplats ytterligare"
 
@@ -2545,7 +2600,7 @@ msgstr "Skaffa Premium"
 msgid "Notifications"
 msgstr "Notiser"
 
-#: admin/views/user-profile.php:40
+#: admin/views/user-profile.php:44
 msgid "Removes the keyword tab from the metabox and disables all SEO-related suggestions."
 msgstr "Tar bort fliken nyckelord från metarutan och inaktiverar alla SEO-relaterade förslag."
 
@@ -2573,7 +2628,7 @@ msgstr "Google Trends"
 msgid "Facebook settings"
 msgstr "Facebook-inställningar"
 
-#: admin/views/user-profile.php:37
+#: admin/views/user-profile.php:41
 msgid "Disable SEO analysis"
 msgstr "Inaktivera SEO-analys"
 
@@ -2637,15 +2692,15 @@ msgstr "Symbol för rubrikavgränsare"
 msgid "Readability"
 msgstr "Läsbarhet"
 
-#: admin/views/tabs/dashboard/features.php:32
+#: admin/views/tabs/dashboard/features.php:33
 msgid "Readability analysis"
 msgstr "Läsbarhetsanalys"
 
-#: admin/views/user-profile.php:52
+#: admin/views/user-profile.php:56
 msgid "Removes the readability tab from the metabox and disables all readability-related suggestions."
 msgstr "Tar bort fliken läsbarhet från metarutan och inaktiverar alla läsbarhetsrelaterade förslag."
 
-#: admin/views/user-profile.php:49
+#: admin/views/user-profile.php:53
 msgid "Disable readability analysis"
 msgstr "Inaktivera läsbarhetsanalys"
 
@@ -2677,13 +2732,13 @@ msgstr "Panel"
 msgid "Knowledge base"
 msgstr "Kunskapsbank"
 
-#: admin/class-admin-init.php:148
+#: admin/class-admin-init.php:149
 msgid "Paging comments is enabled, this is not needed in 999 out of 1000 cases, we recommend to disable it."
 msgstr "Kommentarspaginering är aktiverat, detta behövs inte i 999 ur 1000 fall, vi rekommenderar att du inaktiverar den."
 
 #. translators: %1$s resolves to the starting tag of the link to the permalink
 #. settings page, %2$s resolves to the closing tag of the link
-#: admin/class-admin-init.php:200
+#: admin/class-admin-init.php:201
 msgid "You can fix this on the %1$sPermalink settings page%2$s."
 msgstr "Du kan åtgärda detta på %1$sinställningssidan för permalänkar%2$s."
 
@@ -2754,14 +2809,14 @@ msgstr "Återställ detta objekt."
 msgid "Video tutorial"
 msgstr "Videokurs"
 
-#: admin/formatter/class-metabox-formatter.php:160
+#: admin/formatter/class-metabox-formatter.php:161
 #: admin/views/partial-alerts-errors.php:11
 msgid "Problems"
 msgstr "Problem"
 
-#: admin/metabox/class-metabox.php:67 admin/metabox/class-metabox.php:577
+#: admin/formatter/class-metabox-formatter.php:132
+#: admin/metabox/class-metabox.php:67
 #: admin/taxonomy/class-taxonomy-content-fields.php:41
-#: admin/taxonomy/class-taxonomy-fields-presenter.php:105
 msgid "Analysis"
 msgstr "Analys"
 
@@ -2791,7 +2846,7 @@ msgstr "Laddar&hellip;"
 msgid "Pick the main keyword or keyphrase that this post/page is about. %1$sLearn more about the Focus Keyword%2$s."
 msgstr "Välj det viktigaste nyckelordet eller nyckelfrasen som detta inlägg eller denna webbplats handlar om. %1$sLär dig mer om fokusnyckelordet%2$s."
 
-#: admin/formatter/class-metabox-formatter.php:161
+#: admin/formatter/class-metabox-formatter.php:162
 msgid "Improvements"
 msgstr "Förbättringar"
 
@@ -2855,7 +2910,7 @@ msgid "Show information about errors in category 'Soft 404'"
 msgstr "Visa information om fel i kategorin 'Mjuk 404'"
 
 #. translators: %s expands to the product name
-#: admin/views/licenses.php:258
+#: admin/views/licenses.php:257
 msgid "Buy %s"
 msgstr "Köp %s"
 
@@ -2928,17 +2983,17 @@ msgstr "Gör %1$s primär %2$s"
 msgid "Author archives"
 msgstr "Arkiv för författare"
 
-#: admin/class-yoast-form.php:665
+#: admin/class-yoast-form.php:650
 msgid "Show"
 msgstr "Visa"
 
-#: admin/class-yoast-form.php:321 admin/views/tabs/metas/archives.php:48
+#: admin/class-yoast-form.php:306 admin/views/tabs/metas/archives.php:48
 #: admin/views/tabs/metas/archives.php:98
 #: admin/views/tabs/metas/taxonomies.php:32
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: admin/class-yoast-form.php:321 admin/views/tabs/metas/archives.php:49
+#: admin/class-yoast-form.php:306 admin/views/tabs/metas/archives.php:49
 #: admin/views/tabs/metas/archives.php:99
 #: admin/views/tabs/metas/taxonomies.php:32
 msgid "Disabled"
@@ -3023,7 +3078,7 @@ msgstr "Lägg till nyckelord"
 
 #. translators: 1: is a link to 'admin_url /
 #. admin.php?page=wpseo_tools&recalculate=1' 2: closing link tag
-#: admin/class-admin-init.php:400
+#: admin/class-admin-init.php:401
 msgid "We've updated our SEO score algorithm. %1$sRecalculate the SEO scores%2$s for all posts and pages."
 msgstr "Vi har uppdaterat vår SEO poäng-algoritm. %1$sRäkna om SEO-poäng%2$s för alla inlägg och sidor."
 
@@ -3065,7 +3120,7 @@ msgid "The post %1$s appeared first on %2$s."
 msgstr "Inlägget %1$s dök först upp på %2$s."
 
 #. translators: 1: Verification string from user input; 2: Service name.
-#: inc/options/class-wpseo-option.php:275
+#: inc/options/class-wpseo-option.php:280
 msgid "%1$s does not seem to be a valid %2$s verification string. Please correct."
 msgstr "%1$s verkar inte vara en giltig %2$s-verifieringssträng. Vänligen korrigera."
 
@@ -3085,7 +3140,7 @@ msgstr "Mobilvänligt test"
 msgid "Paste your %s license key here..."
 msgstr "Klistra in din licensnyckeln för %s här..."
 
-#: wp-seo-main.php:505
+#: wp-seo-main.php:507
 msgid "The filter extension seem to be unavailable. Please ask your web host to enable it."
 msgstr "Filtreringstillägget är inte tillgängligt. Be ditt webbhotell att aktivera det."
 
@@ -3104,7 +3159,7 @@ msgid "%s does not seem to be a valid Twitter user-id. Please correct."
 msgstr "%s ser inte ut att vara ett korrekt användar-id för Twitter. Var vänlig korrigera."
 
 #. translators: %s expands to an invalid URL.
-#: inc/options/class-wpseo-option.php:310
+#: inc/options/class-wpseo-option.php:315
 msgid "%s does not seem to be a valid url. Please correct."
 msgstr "%s verkar inte vara en giltig url. Vänligen korrigera."
 
@@ -3146,7 +3201,7 @@ msgstr "<b>Varning!</b> Du blockerar externa förfrågningar vilket innebär att
 msgid "Activate License"
 msgstr "Aktivera licens"
 
-#: wp-seo-main.php:515
+#: wp-seo-main.php:517
 msgid "Activation failed:"
 msgstr "Aktiveringen misslyckades:"
 
@@ -3235,12 +3290,12 @@ msgid "Please enter a license key in the field below first."
 msgstr "Ange din licens nyckel i fältet nedan först."
 
 #. translators: %s expands to a taxonomy slug.
-#: inc/options/class-wpseo-option-titles.php:469
+#: inc/options/class-wpseo-option-titles.php:467
 msgid "Please select a valid post type for taxonomy \"%s\""
 msgstr "Var vänlig välj en giltig posttyp för taxonomi \"%s\""
 
 #. translators: %s expands to a post type.
-#: inc/options/class-wpseo-option-titles.php:432
+#: inc/options/class-wpseo-option-titles.php:430
 msgid "Please select a valid taxonomy for post type \"%s\""
 msgstr "Var vänlig välj en korrekt taxanomi för posttypen \"%s\""
 
@@ -3293,7 +3348,7 @@ msgstr "Översättning av %s"
 msgid "We couldn't create a connection to our API to verify your license key(s). Please ask your hosting company to allow outgoing connections from your server to %s."
 msgstr "Vi kunde inte skapa en anslutning till vårt API för att verifiera din/dina licensnyckel/licensnycklar. Be ditt webbhotell att tillåta utgående anslutningar från din server till %s."
 
-#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 7.2)  #-#-#-#-#
+#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 7.3)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/capabilities/class-capability-manager-integration.php:68
 msgid "Yoast SEO"
@@ -3354,11 +3409,11 @@ msgstr "%1$s är inte ett giltigt val för vem som ska ha tillgång till instäl
 #. translators: %1$s expands to Yoast SEO, %2$s / %3$s: links to the
 #. installation manual in the Readme for the Yoast SEO code repository on
 #. GitHub
-#: wp-seo-main.php:481
+#: wp-seo-main.php:483
 msgid "The %1$s plugin installation is incomplete. Please refer to %2$sinstallation instructions%3$s."
 msgstr "Installationen av tillägget %1$s är inte färdig. Se %2$sinstallationsinstruktionerna%3$s."
 
-#: wp-seo-main.php:459
+#: wp-seo-main.php:461
 msgid "The Standard PHP Library (SPL) extension seem to be unavailable. Please ask your web host to enable it."
 msgstr "Tillägget standardbibliotek för PHP (SPL) verkar inte kunna nås. Be ditt webbhotell att aktivera det."
 
@@ -3500,7 +3555,7 @@ msgstr "Lägg till Open Graph-metadata"
 msgid "Add Twitter card meta data"
 msgstr "Lägg till Twitter card meta data"
 
-#: admin/views/tabs/metas/breadcrumbs.php:83
+#: admin/views/tabs/metas/breadcrumbs.php:88
 msgid "Blog"
 msgstr "Blogg"
 
@@ -3569,12 +3624,12 @@ msgstr "Importera och exportera"
 #. from.
 #: admin/views/tabs/tool/import-seo.php:23
 #: admin/views/tabs/tool/import-seo.php:50
-#: admin/views/tool-import-export.php:89
+#: admin/views/tool-import-export.php:92
 msgid "Import from other SEO plugins"
 msgstr "Importera från andra SEO-tillägg"
 
 #: admin/views/tabs/tool/wpseo-import.php:40
-#: admin/views/tool-import-export.php:81
+#: admin/views/tool-import-export.php:84
 msgid "Import settings"
 msgstr "Importera inställningar"
 
@@ -3582,7 +3637,7 @@ msgstr "Importera inställningar"
 msgid "Import settings from other SEO plugins and export your settings for re-use on (another) blog."
 msgstr "Importera inställningar från andra SEO-tillägg och exportera dina inställningar för återanvändning på (annan) blogg."
 
-#: admin/views/user-profile.php:21
+#: admin/views/user-profile.php:25
 msgid "Meta description to use for Author page"
 msgstr "Metabeskrivning att använda för författar-sida"
 
@@ -3693,7 +3748,7 @@ msgstr "Detta verktyg låter dig snabbt ändra viktiga fler för din SEO, t.ex. 
 msgid "This tool allows you to quickly change titles and descriptions of your posts and pages without having to go into the editor for each page."
 msgstr "Detta verktyg låter dig snabbt ändra titlar och beskrivningar för dina inlägg och sidor utan att du behöver gå in i redigeraren för respektive sida."
 
-#: admin/views/user-profile.php:17
+#: admin/views/user-profile.php:21
 msgid "Title to use for Author page"
 msgstr "Sidtitel att använda för författar-sida"
 
@@ -3784,11 +3839,11 @@ msgstr "Om din %s var skrivbar, skulle du kunna redigera den här."
 
 #. translators: %1$s / %2$s: links to the breadcrumbs implementation page on
 #. the Yoast knowledgebase
-#: admin/views/tabs/metas/breadcrumbs.php:108
+#: admin/views/tabs/metas/breadcrumbs.php:114
 msgid "Usage of this breadcrumbs feature is explained in %1$sour knowledge-base article on breadcrumbs implementation%2$s."
 msgstr "Användning av denna funktion för synliga sökvägar är förklarad i %1$svår kunskapsdatabas om tillämpning av synliga sökvägar%2$s."
 
-#: admin/views/tabs/metas/breadcrumbs.php:103
+#: admin/views/tabs/metas/breadcrumbs.php:109
 msgid "How to insert breadcrumbs in your theme"
 msgstr "Hur du lägger till synliga sökvägar i ditt tema"
 
@@ -3820,7 +3875,7 @@ msgstr "Aktivera synliga sökvägar"
 msgid "Taxonomy to show in breadcrumbs for content types"
 msgstr "Taxonomi att visa i synliga sökvägar för innehållstyper"
 
-#: admin/views/tabs/metas/breadcrumbs.php:79
+#: admin/views/tabs/metas/breadcrumbs.php:84
 msgid "Content type archive to show in breadcrumbs for taxonomies"
 msgstr "Arkiv för innehållstyp att visa i synliga sökvägar för taxonomier"
 
@@ -3832,10 +3887,6 @@ msgstr "Kopiera metabeskrivningen för startsidan"
 msgid "Separator between breadcrumbs"
 msgstr "Avgränsare mellan synliga sökvägar"
 
-#: frontend/class-frontend.php:1194
-msgid "Admin only notice: this page doesn't show a meta description because it doesn't have one, either write it for this page specifically or go into the SEO -> Search Appearance menu and set up a template."
-msgstr "Meddelande till administratören: Denna sida visar ingen metabeskrivning för den har ingen. Skriv en specifikt för denna sida eller gå till menyn SEO -> Sökutseende och skapa en mall."
-
 #: inc/class-wpseo-replace-vars.php:1149
 msgid "Replaced with the content type plural label"
 msgstr "Ersatt med flertalsetiketten för aktuell inläggstyp"
@@ -3843,6 +3894,12 @@ msgstr "Ersatt med flertalsetiketten för aktuell inläggstyp"
 #: inc/class-wpseo-replace-vars.php:1148
 msgid "Replaced with the content type single label"
 msgstr "Ersatt med entalsetiketten för aktuell inläggstyp"
+
+#. Translators: %1$s resolves to the SEO menu item, %2$s resolves to the Search
+#. Appearance submenu item.
+#: frontend/class-frontend.php:1205
+msgid "Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [%1$s - %2$s] menu and set up a template."
+msgstr "Meddelande endast till administratören: Denna sida visar ingen metabeskrivning eftersom den inte har någon. Skriv antingen en specifik beskrivning för denna sida eller gå till menyn [%1$s - %2$s] och skapa en mall."
 
 #: admin/views/class-view-utils.php:96
 msgid "Date in Snippet Preview"
@@ -4040,7 +4097,7 @@ msgstr "Mobiltelefon"
 msgid "Get Google Authorization Code"
 msgstr "Hämta auktoriseringskod från Google"
 
-#: admin/class-yoast-form.php:666
+#: admin/class-yoast-form.php:651
 msgid "Hide"
 msgstr "Göm"
 
@@ -4152,7 +4209,7 @@ msgstr "Webbadress"
 msgid "Website name"
 msgstr "Webbplatsnamn"
 
-#: admin/class-admin-init.php:196
+#: admin/class-admin-init.php:197
 msgid "You do not have your postname in the URL of your posts and pages, it is highly recommended that you do. Consider setting your permalink structure to <strong>/%postname%/</strong>."
 msgstr "Du har inte med inläggets/sidans namn i dina urler, något som verkligen kan rekommenderas. Överväg att ändra strukturen för permalänkar till <strong>/%postname%/</strong>."
 
@@ -4339,7 +4396,7 @@ msgstr "Väldigt svår"
 msgid "The slug for this page is a bit long, consider shortening it."
 msgstr "Urlen för denna sida är rätt så lång. Överväg att förkorta den."
 
-#: admin/taxonomy/class-taxonomy-settings-fields.php:48
+#: admin/taxonomy/class-taxonomy-settings-fields.php:49
 msgid "The canonical link is shown on the archive page for this term."
 msgstr "Den kanoniska länken visas på arkiv-sidan för denna term."
 
@@ -4351,7 +4408,7 @@ msgstr "Epost"
 msgid "Focus keyword not set."
 msgstr "Fokusnyckelord har inte angetts."
 
-#: admin/metabox/class-metabox.php:909
+#: admin/metabox/class-metabox.php:903
 msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
 msgstr "SEO-problem: Den utvalda bilden bör vara minst 200 x 200 pixlar för att plockas upp av Facebook och andra sociala medier."
 
@@ -4393,18 +4450,10 @@ msgstr "Arkiv"
 msgid "Close"
 msgstr "Stäng"
 
-#: admin/class-yoast-form.php:171
-msgid "Current option:"
-msgstr "Nuvarande alternativ:"
-
 #. translators: %s: 'Facebook' plugin name of possibly conflicting plugin
 #: admin/class-yoast-plugin-conflict.php:205
 msgid "Deactivate %s"
 msgstr "Inaktivera %s"
-
-#: admin/class-yoast-form.php:169
-msgid "Debug Information"
-msgstr "Felsökningsinformation"
 
 #: admin/class-social-admin.php:42 admin/class-social-admin.php:163
 #: admin/pages/social.php:19 admin/taxonomy/class-taxonomy-social-fields.php:97
@@ -4500,8 +4549,8 @@ msgstr "Webbadressen pekar mot en icke existerande sida."
 msgid "Upgrade to %1$s &raquo;"
 msgstr "Uppgradera till %1$s &raquo;"
 
-#: admin/class-yoast-form.php:519 admin/metabox/class-metabox.php:689
-#: admin/taxonomy/class-taxonomy-fields-presenter.php:134
+#: admin/class-yoast-form.php:504 admin/metabox/class-metabox.php:683
+#: admin/taxonomy/class-taxonomy-fields-presenter.php:129
 msgid "Upload Image"
 msgstr "Ladda upp bild"
 
@@ -4656,7 +4705,7 @@ msgstr "Inget fokusnyckelord var angett för den här sidan. Om du inte anger et
 msgid "SEO: No Focus Keyword"
 msgstr "SEO: Inget fokusnyckelord"
 
-#: admin/taxonomy/class-taxonomy-settings-fields.php:41
+#: admin/taxonomy/class-taxonomy-settings-fields.php:42
 msgid "The Breadcrumbs Title is used in the breadcrumbs where this taxonomy appears."
 msgstr "Rubriken för synliga sökvägar används i de synliga sökvägarna där den här taxonomin visas."
 
@@ -4686,7 +4735,7 @@ msgid_plural "Trash <span class=\"count\">(%s)</span>"
 msgstr[0] "Papperskorg <span class=\"count\">(%s)</span>"
 msgstr[1] "Papperskorg <span class=\"count\">(%s)</span>"
 
-#: admin/class-admin-init.php:186
+#: admin/class-admin-init.php:187
 msgid "Just another WordPress site"
 msgstr "Bara en annan WordPress sida"
 
@@ -4706,7 +4755,7 @@ msgstr "Inlägget existerar ej."
 msgid "Unzipping failed - file settings.ini not found."
 msgstr "Uppackning misslyckades - filen settings.ini hittades ej."
 
-#: admin/class-admin-init.php:117
+#: admin/class-admin-init.php:118
 msgid "Huge SEO Issue: You're blocking access to robots."
 msgstr "Stort SEO problem: Du blockerar sökmotorernas tillgång till din webbplats."
 
@@ -4738,7 +4787,7 @@ msgstr "Sid-url"
 msgid "No settings found in file."
 msgstr "Inga inställningar funna i fil."
 
-#: admin/class-admin.php:506 admin/pages/metas.php:65
+#: admin/class-admin.php:543 admin/pages/metas.php:65
 msgid "Note that not all variables can be used in every template."
 msgstr "Notera att alla variablar inte kan användas i alla mallar"
 
@@ -4748,7 +4797,7 @@ msgstr "Nuvarande Yoast Meta-beskrivning"
 
 #. translators: %1$s resolves to the opening tag of the link to the reading
 #. settings, %1$s resolves to the closing tag for the link
-#: admin/class-admin-init.php:120
+#: admin/class-admin-init.php:121
 msgid "You must %1$sgo to your Reading Settings%2$s and uncheck the box for Search Engine Visibility."
 msgstr "Du måste %1$sgå till läsinställningarna%2$s och avmarkera rutan för sökmotorsynlighet."
 
@@ -4799,16 +4848,16 @@ msgstr "Åtgärd"
 msgid "Advanced"
 msgstr "Avancerat"
 
-#: admin/class-admin.php:521 admin/class-admin.php:522 admin/pages/metas.php:76
+#: admin/class-admin.php:558 admin/class-admin.php:559 admin/pages/metas.php:76
 msgid "Advanced Variables"
 msgstr "Avancerade variabler"
 
-#: admin/class-admin.php:513 admin/class-admin.php:514 admin/pages/metas.php:70
+#: admin/class-admin.php:550 admin/class-admin.php:551 admin/pages/metas.php:70
 msgid "Basic Variables"
 msgstr "Grundläggande variabler"
 
 #: admin/metabox/class-metabox.php:109
-#: admin/taxonomy/class-taxonomy-settings-fields.php:47
+#: admin/taxonomy/class-taxonomy-settings-fields.php:48
 msgid "Canonical URL"
 msgstr "Kanonisk URL"
 
@@ -4847,7 +4896,7 @@ msgstr "URL till Facebookprofil"
 msgid "Filter"
 msgstr "Filtrera"
 
-#: admin/class-admin.php:491
+#: admin/class-admin.php:528
 msgid "For more information:"
 msgstr "För mer information:"
 
@@ -4883,7 +4932,7 @@ msgstr "Ingen taxonomi-metadata hittad"
 
 #: admin/metabox/class-metabox.php:101 admin/pages/network.php:59
 #: admin/views/tabs/metas/breadcrumbs.php:57
-#: admin/views/tabs/metas/breadcrumbs.php:81 inc/class-wpseo-meta.php:392
+#: admin/views/tabs/metas/breadcrumbs.php:86 inc/class-wpseo-meta.php:398
 msgid "None"
 msgstr "Ingen"
 
@@ -4900,7 +4949,7 @@ msgid "Publication date"
 msgstr "Publiceringsdatum"
 
 #: admin/menu/class-admin-menu.php:49
-#: admin/menu/class-network-admin-menu.php:48
+#: admin/menu/class-network-admin-menu.php:48 frontend/class-frontend.php:1206
 #: inc/wpseo-non-ajax-functions.php:110
 msgid "SEO"
 msgstr "SEO"
@@ -4939,7 +4988,7 @@ msgstr "Standard för hela webbplatsen: %s"
 msgid "Social"
 msgstr "Sociala medier"
 
-#: admin/class-admin.php:499 admin/class-admin.php:500 admin/pages/metas.php:42
+#: admin/class-admin.php:536 admin/class-admin.php:537 admin/pages/metas.php:42
 #: admin/pages/metas.php:63
 msgid "Template explanation"
 msgstr "Mallförklaring"
@@ -4948,7 +4997,7 @@ msgstr "Mallförklaring"
 msgid "This export includes taxonomy metadata"
 msgstr "Denna export inkluderar taxonomi-metadata"
 
-#: admin/class-admin.php:492
+#: admin/class-admin.php:529
 msgid "Title optimization"
 msgstr "Titeloptimering"
 
@@ -4969,7 +5018,7 @@ msgstr "Uppackning misslyckades med felmeddelande \"%s\"."
 msgid "Upload failed."
 msgstr "Uppladdning misslyckades."
 
-#: admin/class-config.php:109 admin/metabox/class-metabox.php:922
+#: admin/class-config.php:109 admin/metabox/class-metabox.php:916
 #: admin/taxonomy/class-taxonomy.php:113
 msgid "Use Image"
 msgstr "Använd bild"
@@ -4988,7 +5037,7 @@ msgstr "Visa &#8220;%s&#8221;"
 msgid "WP Page Title"
 msgstr "WP-sidtitel"
 
-#: admin/class-admin.php:493
+#: admin/class-admin.php:530
 msgid "Why Google won't display the right page title"
 msgstr "Varför Google inte visar den korrekta sidtiteln"
 
@@ -5006,7 +5055,7 @@ msgstr "Du kan inte redigera %s."
 #. to Google Analytics by Yoast
 #. translators: %1$s expands to Yoast SEO, %2$s expands to the plugin version,
 #. %3$s expands to the plugin name
-#: admin/class-admin-init.php:257 admin/class-admin-init.php:360
+#: admin/class-admin-init.php:258 admin/class-admin-init.php:361
 msgid "%1$s detected you are using version %2$s of %3$s, please update to the latest version to prevent compatibility issues."
 msgstr "%1$s upptäckte att du använder version %2$s av %3$s, vänligen uppdatera till den senaste versionen för att förhindra kompatibilitetsproblem."
 
@@ -5032,12 +5081,12 @@ msgid "Search Console"
 msgstr "Sökkonsol"
 
 #. translators: %1$s expands to Yoast SEO.
-#: admin/class-admin.php:503
+#: admin/class-admin.php:540
 msgid "The title &amp; metas settings for %1$s are made up of variables that are replaced by specific values from the page when the page is displayed. The tabs on the left explain the available variables."
 msgstr "Inställningarna för rubrik och metadata för %1$s byggs upp av variabler som ersätts med specifika värden från sidan när sidan visas. Flikarna på vänster sida förklarar de tillgängliga variablerna."
 
 #. translators: 1: link open tag; 2: link close tag.
-#: admin/class-admin-init.php:90
+#: admin/class-admin-init.php:91
 msgid "You still have the default WordPress tagline, even an empty one is probably better. %1$sYou can fix this in the customizer%2$s."
 msgstr "Du har fortfarande förvald WordPress-slogan, till och med en tom sådan är troligtvis bättre. %1$sDu kan fixa detta i anpassaren%2$s."
 
@@ -5052,7 +5101,7 @@ msgstr "Inget fokusnyckelord är angivet."
 
 #: admin/metabox/class-metabox.php:72
 #: admin/taxonomy/class-taxonomy-content-fields.php:31
-#: admin/taxonomy/class-taxonomy-fields-presenter.php:113
+#: admin/taxonomy/class-taxonomy-fields-presenter.php:108
 msgid "Focus keyword"
 msgstr "Fokusnyckelord"
 
@@ -5066,7 +5115,7 @@ msgid "Title to use for this page in breadcrumb paths"
 msgstr "Rubrik som används för denna sida till sökvägen för synlig sökväg"
 
 #: admin/metabox/class-metabox.php:106
-#: admin/taxonomy/class-taxonomy-settings-fields.php:40
+#: admin/taxonomy/class-taxonomy-settings-fields.php:41
 msgid "Breadcrumbs Title"
 msgstr "Rubrik för synlig sökväg"
 
@@ -5091,7 +5140,7 @@ msgstr "Synliga sökvägar från %s"
 msgid "Breadcrumbs separator:"
 msgstr "Avgränsare för synliga sökvägar:"
 
-#: admin/views/tabs/dashboard/features.php:56
+#: admin/views/tabs/dashboard/features.php:57
 msgid "XML sitemaps"
 msgstr "XML-webbplatskartor"
 

@@ -1,0 +1,418 @@
+# Translation of Plugins - SendGrid - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - SendGrid - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-02-14 22:55:27+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - SendGrid - Stable (latest release)\n"
+
+#: view/sendgrid_settings_test_email.php:16
+msgid "SendGrid Test - Send a test email with these settings"
+msgstr "Probar SendGrid - Enviar un correo electrónico de prueba con estos ajustes"
+
+#: view/sendgrid_settings_test_contact.php:28
+msgid "Test"
+msgstr "Probar"
+
+#: view/sendgrid_settings_test_contact.php:21
+msgid "An email will be send to this address to confirm the subscription as it does for users that subscribe using the widget."
+msgstr "Se va a enviar a esta dirección un correo de confirmación de suscripción igual que el de los usuarios que se suscriben usando el widget."
+
+#: view/sendgrid_settings_test_contact.php:18
+msgid "Email: "
+msgstr "Correo electrónico:"
+
+#: view/sendgrid_settings_test_contact.php:14
+msgid "SendGrid Test - Subscription"
+msgstr "Probar SendGrid - Suscripción"
+
+#: view/sendgrid_settings_nlvx.php:182
+msgid "The padding values for the button on the subscription form."
+msgstr "Márgenes internos del botón del formulario de suscripción."
+
+#: view/sendgrid_settings_nlvx.php:169
+msgid "Button Padding (in px):"
+msgstr "Margen interno del botón (en px):"
+
+#: view/sendgrid_settings_nlvx.php:164
+msgid "The padding values for the input fields on the subscription form."
+msgstr "Márgenes interiores de los campos del formulario de suscripción."
+
+#: view/sendgrid_settings_nlvx.php:162 view/sendgrid_settings_nlvx.php:180
+msgid "Left:"
+msgstr "Izquierda:"
+
+#: view/sendgrid_settings_nlvx.php:159 view/sendgrid_settings_nlvx.php:177
+msgid "Bottom:"
+msgstr "Abajo:"
+
+#: view/sendgrid_settings_nlvx.php:156 view/sendgrid_settings_nlvx.php:174
+msgid "Right:"
+msgstr "Derecha:"
+
+#: view/sendgrid_settings_nlvx.php:153 view/sendgrid_settings_nlvx.php:171
+msgid "Top:"
+msgstr "Arriba:"
+
+#: view/sendgrid_settings_nlvx.php:151
+msgid "Input Padding (in px):"
+msgstr "Margen interno del campo (en px):"
+
+#: view/sendgrid_settings_nlvx.php:146
+msgid "The label for 'Subscribe' button on the subscription form."
+msgstr "Etiqueta del botón 'Suscríbete ' del formulario de suscripción."
+
+#: view/sendgrid_settings_nlvx.php:143
+msgid "Subscribe Label:"
+msgstr "Etiqueta suscríbete:"
+
+#: view/sendgrid_settings_nlvx.php:139
+msgid "The label for 'Last Name' field on the subscription form."
+msgstr "Etiqueta del campo \"Apellido\" del formulario de suscripción."
+
+#: view/sendgrid_settings_nlvx.php:136
+msgid "Last Name Label:"
+msgstr "Etiqueta apellido:"
+
+#: view/sendgrid_settings_nlvx.php:132
+msgid "The label for 'First Name' field on the subscription form."
+msgstr "Etiqueta del campo \"Nombre\" del formulario de suscripción."
+
+#: view/sendgrid_settings_nlvx.php:129
+msgid "First Name Label:"
+msgstr "Etiqueta nombre:"
+
+#: view/sendgrid_settings_nlvx.php:125
+msgid "The label for 'Email' field on the subscription form."
+msgstr "La etiqueta del campo 'Correo electrónico' del formulario de suscripción."
+
+#: view/sendgrid_settings_nlvx.php:122
+msgid "Email Label:"
+msgstr "Etiqueta correo electrónico:"
+
+#: view/sendgrid_settings_nlvx.php:118
+msgid "Form Customization"
+msgstr "Personalización del formulario"
+
+#: view/sendgrid_settings_nlvx.php:112
+msgid "If the user clicks the confirmation link received in the email, he will be redirected to this page after the contact details are uploaded successfully to SendGrid."
+msgstr "Si el usuario pincha en el enlace de confirmación del correo electrónico, será redirigido a esta página una vez que sus detalles de contacto sean enviados con éxito a SendGrid."
+
+#: view/sendgrid_settings_nlvx.php:91
+msgid "Signup confirmation page:"
+msgstr "Página de confirmación de la suscripción:"
+
+#: view/sendgrid_settings_nlvx.php:86
+msgid " You can control the placement of this link by inserting a <b>%confirmation_link%</b> tag in your email content. This tag is required."
+msgstr " Puedes controlar la posición de este enlace utilizando la etiqueta <b>%confirmation_link%</b> en el contenido de tu mensaje. Esta etiqueta es obligatoria."
+
+#: view/sendgrid_settings_nlvx.php:83
+msgid "Signup email content (Plain Text):"
+msgstr "Contenido del mensaje de suscripción (texto plano):"
+
+#: view/sendgrid_settings_nlvx.php:78
+msgid " You can control the placement of this link by inserting a <b>&lt;a href=\"%confirmation_link%\"&gt; &lt;/a&gt;</b> tag in your email content. This tag is required."
+msgstr "Puedes controlar la posición de este enlace utilizando la etiqueta <b>&lt;a href=\"%confirmation_link%\"&gt; &lt;/a&gt;</b> en el contenido de tu mensaje. Esta etiqueta es obligatoria."
+
+#: view/sendgrid_settings_nlvx.php:78 view/sendgrid_settings_nlvx.php:86
+msgid "Confirmation emails must contain a verification link to confirm the email address being added."
+msgstr "Los mensajes de confirmación deben incluir un enlace de verificación para confirmar la dirección de correo electrónico que se está añadiendo."
+
+#: view/sendgrid_settings_nlvx.php:75
+msgid "Signup email content (HTML):"
+msgstr "Contenido del mensaje de suscripción (HTML):"
+
+#: view/sendgrid_settings_nlvx.php:70
+msgid "The subject for the confirmation email."
+msgstr "El asunto de correo electrónico de confirmación."
+
+#: view/sendgrid_settings_nlvx.php:67
+msgid "Signup email subject:"
+msgstr "Asunto del correo electrónico de bienvenida:"
+
+#: view/sendgrid_settings_nlvx.php:62
+msgid "If checked, empty values for the first and last name fields will be rejected."
+msgstr "Si está marcado, los campos de nombre y apellido serán rechazados si están vacíos."
+
+#: view/sendgrid_settings_nlvx.php:59
+msgid "First and Last Name are required:"
+msgstr "Nombre y apellido son obligatorios:"
+
+#: view/sendgrid_settings_nlvx.php:54
+msgid "If checked, the first and last name fields will be displayed in the widget."
+msgstr "Si está marcado, se mostrarán los campos de nombre y apellido en el widget."
+
+#: view/sendgrid_settings_nlvx.php:51
+msgid "Include First and Last Name fields:"
+msgstr "Incluir campos de nombre y apellido:"
+
+#: view/sendgrid_settings_nlvx.php:46
+msgid "The contact details of a subscriber will be uploaded to the selected list."
+msgstr "Los datos de contacto del suscriptor se enviarán a la lista seleccionada."
+
+#: view/sendgrid_settings_nlvx.php:31
+msgid "Contact list to upload to: "
+msgstr "Subir los contactos a:"
+
+#: view/sendgrid_settings_nlvx.php:27
+msgid "Subscription Options"
+msgstr "Opciones de suscripción"
+
+#: view/sendgrid_settings_nlvx.php:21
+msgid "If checked, the contacts will be uploaded using the same credentials that are used for sending emails."
+msgstr "Si está marcado, los contactos se subirán usando las misma credenciales empleadas para enviar mensajes de correo electrónico."
+
+#: view/sendgrid_settings_nlvx.php:18
+msgid "Use same authentication as transactional: "
+msgstr "Usar la misma autentificación que para las transacciones:"
+
+#: view/sendgrid_settings_nlvx.php:14
+msgid "An API Key to use for uploading contacts to SendGrid. This API Key needs to have full Marketing Campaigns permissions."
+msgstr "Clave de API usada para subir los contactos a SendGrid. Esta clave de API debe tener los permisos completos para campañas de marketing."
+
+#: view/sendgrid_settings_multisite.php:78
+msgid "Save Settings"
+msgstr "Guardar ajustes"
+
+#: view/sendgrid_settings_multisite.php:49
+msgid "Self-Managed?"
+msgstr "¿Autogestionado?"
+
+#: view/sendgrid_settings_multisite.php:48
+msgid "Site URL"
+msgstr "URL del sitio"
+
+#: view/sendgrid_settings_multisite.php:47
+msgid "Public"
+msgstr "Público"
+
+#: view/sendgrid_settings_multisite.php:46
+msgid "Name"
+msgstr "Nombre"
+
+#: view/sendgrid_settings_multisite.php:45
+msgid "ID"
+msgstr "ID"
+
+#: view/sendgrid_settings_general.php:145
+msgid ""
+"Add some categories for which you would like to see your stats. <br />\n"
+"          Categories must be separated by commas (Example: category1,category2)."
+msgstr ""
+"Añade alguna categorías de las que quieres ver las estadísticas<br />\n"
+"          Las categorías deben estar separadas por comas (Por ejemplo: categoría1,categoría2)."
+
+#: view/sendgrid_settings_general.php:144
+msgid "Leave blank for not showing category stats."
+msgstr "Déjalo en blanco para que no se muestren tus estadísticas."
+
+#: view/sendgrid_settings_general.php:137
+msgid "Statistics settings"
+msgstr "Ajustes de estadísticas"
+
+#: view/sendgrid_settings_general.php:127
+msgid "User will have the option to unsubscribe from the selected group. <br /> The API Key needs to have 'Unsubscribe Groups' permissions to be able to select a group."
+msgstr "El usuario tendrá la opción de darse de baja del grupo seleccionado. <br /> La clave de API debe tener el permiso 'Unsubscribe Groups' para que se pueda seleccionar un grupo."
+
+#: view/sendgrid_settings_general.php:114
+msgid "Global Unsubscribe"
+msgstr "Baja completa"
+
+#: view/sendgrid_settings_general.php:111
+msgid "Unsubscribe Group: "
+msgstr "Baja del grupo:"
+
+#: view/sendgrid_settings_general.php:106
+msgid "text/html"
+msgstr "text/html"
+
+#: view/sendgrid_settings_general.php:105
+msgid "text/plain"
+msgstr "text/plain"
+
+#: view/sendgrid_settings_general.php:102
+msgid "Content-type: "
+msgstr "Content-type: "
+
+#: view/sendgrid_settings_general.php:97
+msgid ""
+"The template ID used to send emails. <br />\n"
+"            Example: 0b1240a5-188d-4ea7-93c1-19a7a89466b2."
+msgstr ""
+"El ID de la plantilla usada para enviar los mensajes. <br />\n"
+"            Ejemplo: 0b1240a5-188d-4ea7-93c1-19a7a89466b2."
+
+#: view/sendgrid_settings_general.php:96
+msgid "Leave blank to send without template."
+msgstr "Déjalo en blanco para enviar sin plantilla."
+
+#: view/sendgrid_settings_general.php:93
+msgid "Template: "
+msgstr "Plantilla:"
+
+#: view/sendgrid_settings_general.php:46 view/sendgrid_settings_nlvx.php:193
+msgid "Disabled fields are already configured in the config file."
+msgstr "Los campos deshabilitados ya has sido configurados en el fichero de configuración."
+
+#: view/sendgrid_settings_general.php:32
+msgid "Port: "
+msgstr "Puerto:"
+
+#: view/sendgrid_settings_general.php:26
+msgid "Swift is required in order to be able to send via SMTP."
+msgstr "Es necesario usar Swift para poder realizar envíos por SMTP."
+
+#: lib/class-sendgrid-tools.php:1482
+msgid "Check out the new SendGrid Subscription Widget! See the SendGrid Plugin settings page in order to configure it."
+msgstr "¡No te pierdas el nuevo widget de suscripción de SendGrid! Puedes configurarlo en la página de ajustes del plugin de SendGrid."
+
+#: lib/class-sendgrid-statistics.php:101
+msgid "SendGrid Stats"
+msgstr "Estadísticas de SendGrid"
+
+#: lib/class-sendgrid-settings.php:72
+msgid "SendGrid Settings"
+msgstr "Ajustes de SendGrid"
+
+#: lib/class-sendgrid-nlvx-widget.php:98
+msgid "Message to display for success:"
+msgstr "Mensaje que mostrar para suscripción correcta:"
+
+#: lib/class-sendgrid-nlvx-widget.php:92
+msgid "Message to display for invalid email address:"
+msgstr "Mensaje que mostrar cuando la dirección de correo electrónico no es válida:"
+
+#: lib/class-sendgrid-nlvx-widget.php:86
+msgid "Message to display for errors:"
+msgstr "Mensaje que mostrar para los errores:"
+
+#: lib/class-sendgrid-nlvx-widget.php:80
+msgid "Message to display before subscription form:"
+msgstr "Mensaje que mostrar antes del formulario de suscripción:"
+
+#: lib/class-sendgrid-nlvx-widget.php:74
+msgid "Title:"
+msgstr "Título:"
+
+#. Author URI of the plugin/theme
+msgid "http://sendgrid.com"
+msgstr "http://sendgrid.com"
+
+#. Description of the plugin/theme
+msgid "Email Delivery. Simplified. SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability and real-time analytics along with flexible APIs that make custom integration a breeze."
+msgstr "Envío de correo electrónico, simplificado. La infraestructura de correo electrónico basada en nube de SendGrid libera a las empresas del coste y la complejidad de mantener sistemas de correo electrónico personalizados. SendGrid proporciona una entrega fiable, escalabilidad y análiticas en tiempo real junto con APIs flexibles que hacen de la integración algo trivial."
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/sendgrid-email-delivery-simplified/"
+msgstr "http://es.wordpress.org/plugins/sendgrid-email-delivery-simplified/"
+
+#: wpsendgrid.php:28
+msgid "SendGrid: Plugin requires PHP >= 5.4.0."
+msgstr "SendGrid: el plugin necesita PHP >= 5.4.0."
+
+#: view/sendgrid_settings_test_email.php:48
+msgid "Send"
+msgstr "Enviar"
+
+#: view/sendgrid_settings_test_email.php:38
+msgid "Headers: "
+msgstr "Cabeceras: "
+
+#: view/sendgrid_settings_test_email.php:32
+msgid "Body: "
+msgstr "Cuerpo: "
+
+#: view/sendgrid_settings_test_email.php:26
+msgid "Subject: "
+msgstr "Asunto: "
+
+#: view/sendgrid_settings_test_email.php:20
+msgid "To: "
+msgstr "Para: "
+
+#: view/sendgrid_settings_general.php:159 view/sendgrid_settings_nlvx.php:203
+msgid "Update Settings"
+msgstr "Actualizar opciones"
+
+#: view/sendgrid_settings_general.php:152
+msgid "Disabled fields in this form means that they are already configured in the config file."
+msgstr "Los campos deshabilitados de esta forma quieren decir que ya estaban configurados en el fichero de configuración."
+
+#: view/sendgrid_settings_general.php:88
+msgid ""
+"Associates the category of the email this should be logged as. <br />\n"
+"            Categories must be separated by commas (Example: category1,category2)."
+msgstr ""
+"Asocia con qué categoría de email debe guardarse el registro de esto. <br />\n"
+"             Las categorías deben estar separadas por comas (Ejemplo: categoria1,categoria2)."
+
+#: view/sendgrid_settings_general.php:87
+msgid "Leave blank to send without categories."
+msgstr "Dejar en blanco para enviar sin categorías."
+
+#: view/sendgrid_settings_general.php:84 view/sendgrid_settings_general.php:141
+msgid "Categories: "
+msgstr "Categorías: "
+
+#: view/sendgrid_settings_general.php:80
+msgid "Email address where replies will be returned."
+msgstr "Dirección de correo electrónico donde se devolverán las respuestas."
+
+#: view/sendgrid_settings_general.php:79
+msgid "Leave blank to use Sending Address."
+msgstr "Dejar en blanco para usar la Dirección de envío."
+
+#: view/sendgrid_settings_general.php:76
+msgid "Reply Address: "
+msgstr "Dirección respuesta:"
+
+#: view/sendgrid_settings_general.php:72
+msgid "Email address from which the message will be sent."
+msgstr "Dirección de email desde donde el mensaje se enviará."
+
+#: view/sendgrid_settings_general.php:69
+msgid "Sending Address: "
+msgstr "Dirección de envío:"
+
+#: view/sendgrid_settings_general.php:65
+msgid "Name as it will appear in recipient clients."
+msgstr "El nombre que aparecerá en la bandeja de entrada de los clientes."
+
+#: view/sendgrid_settings_general.php:62
+msgid "Name: "
+msgstr "Nombre:"
+
+#: view/sendgrid_settings_general.php:58
+msgid "Mail settings"
+msgstr "Configuración email"
+
+#: view/sendgrid_settings_general.php:17
+msgid "Send Mail with: "
+msgstr "Enviar email con:"
+
+#: view/sendgrid_settings_general.php:11 view/sendgrid_settings_nlvx.php:11
+msgid "API Key: "
+msgstr "Clave de API:"
+
+#: view/sendgrid_settings_general.php:7 view/sendgrid_settings_nlvx.php:7
+msgid "SendGrid Credentials"
+msgstr "Credenciales de SendGrid"
+
+#: wpsendgrid.php:48
+msgid "SendGrid: wp_mail has been declared by another process or plugin, so you won't be able to use SendGrid until the conflict is solved."
+msgstr "SendGrid: wp_mail ha sido declarado por otro proceso o plugin, por lo que no podrás usar SendGrid hasta que se resuelva el conflicto."
+
+#. #-#-#-#-#  sendgrid-email-delivery-simplified-code.pot (SendGrid 1.11.8) 
+#. #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#. #-#-#-#-#  sendgrid-email-delivery-simplified-code.pot (SendGrid 1.11.8) 
+#. #-#-#-#-#
+#. Author of the plugin/theme
+#: lib/class-sendgrid-settings.php:62
+msgid "SendGrid"
+msgstr "SendGrid"

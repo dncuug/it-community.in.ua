@@ -1,0 +1,178 @@
+.wp-insert #wpInsertLogo img {
+    max-width: 100%;
+}
+
+.wp-insert .upgrade-notice {
+	background: #FFFFD1;
+	padding: 10px;
+	border: 1px dashed red;
+	text-align: center;
+	font-weight: bold;
+}
+
+.wp_insert_ajaxloader {
+	background: url(../images/ajax-loader.gif) no-repeat center center;
+	max-width: 320px;
+	min-width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
+.wp_insert_ajaxloader_flat {
+	background: url(../images/ajax-loader-flat.gif) no-repeat center center;
+	max-width: 320px;
+	min-width: 100px;
+	height: 50px;
+	margin: auto;
+}
+
+.wp-insert .plugin-card {
+	background: #fafafa;
+	transition: height 0;
+}
+
+.wp-insert .plugin-card .plugin-card-top {
+	background: #ffffff;
+}
+
+.wp-insert .plugin-card-bottom .wp_insert_delete_icon {
+	color: #b20a0a;
+	cursor: pointer;
+	float: right;
+}
+
+.wp-insert .plugin-card-bottom .wp_insert_delete_icon:hover {
+	color: #FC0505;
+}
+
+.wp-insert .plugin-card-bottom p {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.wp-insert .plugin-card-bottom p:first-child {
+	border-top: none;
+}
+
+.wp_insert_OR {
+    font-size: larger;
+    margin: 10px;
+    text-align: center;
+}
+
+.smartlogixControlsSectionInner .wp_insert_generate_page_button  {
+    border-radius: 7px;
+    display: block;
+    font-size: 18px;
+    height: auto;
+    margin: auto;
+    padding: 10px 18px;
+    text-transform: uppercase;
+}
+
+.wp_insert_rule_block {
+	width: calc(50% - 40px);
+	margin: 0 20px 5px;
+	float: left;
+}
+
+.wp_insert_rule_block .ui-button {
+    background: #6ddc5f !important;
+    border: 2px solid #000 !important;
+    color: #fff !important;
+    display: block;
+    font-weight: bold !important;
+    height: 30px;
+    margin: 15px auto 0;
+    text-shadow: 1px 1px 5px #000;
+    width: 80%;
+}
+
+.wp_insert_rule_block .ui-helper-hidden-accessible {
+	display: none;
+}
+
+.wp_insert_rule_block .ui-button.ui-state-active {
+	background: #C8161B !important;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: #ddd;
+	border-radius: 12px;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator:after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	background: #ddd;
+	top: 5px;
+	left: 5px;
+	border-radius: 4px;
+
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator:before {
+	content: '';
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	background: #fff;
+	top: 3px;
+	left: 3px;
+	border-radius: 12px;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator:hover, .wp_insert_popup_content_wrapper label:hover .isSelectedIndicator {
+	background: #4D3EDB;;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator:hover:after, .wp_insert_popup_content_wrapper label:hover .isSelectedIndicator:after {
+	background: #4D3EDB;;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator.active, .wp_insert_popup_content_wrapper .isSelectedIndicator.active:after {
+	background: #6ddc5f;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator.active:hover, .wp_insert_popup_content_wrapper label:hover .isSelectedIndicator.active {
+	background: #6ddc5f;;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator.disabled:before {
+    background: #ddd;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator.disabled:hover, .wp_insert_popup_content_wrapper label:hover .isSelectedIndicator.disabled {
+    background: #ddd;
+}
+
+.wp_insert_popup_content_wrapper .isSelectedIndicator.disabled:hover:after, .wp_insert_popup_content_wrapper label:hover .isSelectedIndicator.disabled:after {
+    background: #ddd;
+}
+
+.codeSnippet code {
+    display: block;
+    font-size: 18px;
+    height: auto;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width:768px) {
+	.wp_insert_rule_block {
+		width: auto;
+		float: none;
+	}
+}

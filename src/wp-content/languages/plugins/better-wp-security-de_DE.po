@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-04-16 10:35:16+0000\n"
+"PO-Revision-Date: 2018-04-16 11:27:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2620,11 +2620,11 @@ msgstr "<strong>XML-RPC aktivieren</strong> - XML-RPC ist vollständig aktiviert
 
 #: core/modules/wordpress-tweaks/settings-page.php:90
 msgid "<strong>Disable Pingbacks</strong> - Only disable pingbacks. Other XML-RPC features will work as normal. Select this setting if you require features such as Jetpack or the WordPress Mobile app."
-msgstr "<strong>Pingbacks deaktivieren</strong> - Nur Pingbacks sind deaktiviert. Andere XML-RPC-Funktionen werden normal funktionieren. Wähle diese Einstellung, wenn du Plugins wie Jetpack oder das WordPress Mobile App benötigst."
+msgstr "<strong>Pingbacks deaktivieren</strong> - Nur Pingbacks sind deaktiviert. Andere XML-RPC-Funktionen werden normal funktionieren. Wähle diese Einstellung, wenn du Plugins wie Jetpack oder WordPress Mobile App benötigst."
 
 #: core/modules/wordpress-tweaks/settings-page.php:89
 msgid "<strong>Disable XML-RPC</strong> - XML-RPC is disabled on the site. This setting is highly recommended if Jetpack, the WordPress mobile app, pingbacks, and other services that use XML-RPC are not used."
-msgstr "<strong>XML-RPC deaktivieren</strong> - XML-RPC ist auf der Website deaktiviert. Diese Einstellung ist dringend empfohlen, wenn Jetpack, das WordPress Mobile App, Pingbacks und andere Dienste, die XML-RPC verwenden, nicht benutzt werden."
+msgstr "<strong>XML-RPC deaktivieren</strong> - XML-RPC ist auf der Website deaktiviert. Diese Einstellung wird dringend empfohlen, wenn Jetpack, WordPress Mobile App, Pingbacks und andere Dienste, die XML-RPC verwenden, nicht benutzt werden."
 
 #: core/modules/wordpress-tweaks/settings-page.php:27
 msgid "Disable Pingbacks"
@@ -2636,7 +2636,7 @@ msgstr "XML-RPC deaktivieren (empfohlen)"
 
 #: core/modules/wordpress-tweaks/settings-page.php:86
 msgid "WordPress' XML-RPC feature allows external services to access and modify content on the site. Common example of services that make use of XML-RPC are <a href=\"%1$s\">the Jetpack plugin</a>, <a href=\"%2$s\">the WordPress mobile app</a>, and <a href=\"%3$s\">pingbacks</a>. If the site does not use a service that requires XML-RPC, select the \"Disable XML-RPC\" setting as disabling XML-RPC prevents attackers from using the feature to attack the site."
-msgstr "Die WordPress XML-RPC-Funktion ermöglicht externen Diensten den Zugriff und das Ändern von Inhalten der Website. Typische Beispiele für Dienste, die XML-RPC verwenden, sind <a href=\"%1$s\">das Jetpack-Plugin</a>, <a href=\"%2$s\">die WordPress Mobile App</a> und <a href=\"%3$s\">Pingbacks</a>. Wenn die Website keinen Dienst verwendet, der XML-RPC benötigt, wähle die Einstellung „XML-RPC deaktivieren“. Dadurch wird verhindert das Angreifer mit Hilfe dieser Funktion die Website angreifen."
+msgstr "Die WordPress XML-RPC-Funktion ermöglicht externen Diensten den Zugriff und das Ändern von Inhalten der Website. Typische Beispiele für Dienste, die XML-RPC verwenden, sind <a href=\"%1$s\">das Jetpack-Plugin</a>, <a href=\"%2$s\">WordPress Mobile App</a> und <a href=\"%3$s\">Pingbacks</a>. Wenn die Website keinen Dienst verwendet, der XML-RPC benötigt, wähle die Einstellung „XML-RPC deaktivieren“. Dadurch wird verhindert das Angreifer mit Hilfe dieser Funktion die Website angreifen."
 
 #. Author URI of the plugin/theme
 msgid "https://ithemes.com"
@@ -3001,7 +3001,7 @@ msgstr "SSL für das Dashboard erzwingen"
 
 #: core/modules/ssl/settings-page.php:96
 msgid "Enables secure SSL connection for the front-end (public parts of your site). Turning this off will disable front-end SSL control, turning this on \"Per Content\" will place a checkbox on the edit page for all posts and pages (near the publish settings) allowing you to turn on SSL for selected pages or posts. Selecting \"Whole Site\" will force the whole site to use SSL."
-msgstr "Aktiviert die sichere SSL-Verbindung für das Frontend (der öffentliche Teil deiner Website). Wenn du diese Option deaktivierst, wird die Frontend-SSL-Steuerung deaktiviert. Wenn du die Option „Je Inhalt“ aktivierst, wird für alle Beiträge und Seiten auf der Bearbeitungsseite (in der Nähe der Veröffentlichungseinstellungen) ein Kontrollkästchen aktiviert, mit dem du SSL für ausgewählte Seiten oder Beiträge aktivieren kannst. Wenn du „gesamte Website“ auswählst erzwingst du, dass SSL für die gesamte Website verwendet wird."
+msgstr "Aktiviert die sichere SSL-Verbindung für das Frontend (der öffentliche Teil deiner Website). Wenn du diese Option deaktivierst, wird die Frontend-SSL-Steuerung deaktiviert. Für den Fall, dass du die Option „Je Inhalt“ aktivierst, wird für alle Beiträge und Seiten auf der Bearbeitungsseite (in der Nähe der Veröffentlichungseinstellungen) ein Kontrollkästchen aktiviert, mit dem du SSL für ausgewählte Seiten oder Beiträge aktivieren kannst. Wenn du „gesamte Website“ auswählst erzwingst du, dass SSL für die gesamte Website verwendet wird."
 
 #: core/modules/ssl/settings-page.php:58
 msgid "Whole Site"
