@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-04-18 08:51:57+0000\n"
+"PO-Revision-Date: 2018-04-20 10:44:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -530,22 +530,10 @@ msgstr "Vérifier la configuration SEO"
 msgid "Want to make sure your %1$s settings are still OK? %2$sOpen the configuration wizard again%3$s to validate them."
 msgstr "Vous souhaitez vérifier que vos réglages de %1$s sont toujours bons ? %2$sOuvrez l’assistant de configuration%3$s pour le déterminer."
 
-#. translators: %1$s expands to the post type name.
-#: admin/metabox/class-metabox.php:93
-msgid "Should search engines follow links on this %1$s?"
-msgstr "Les moteurs de recherche doivent-ils suivre les liens sur cet·te %1$s ?"
-
 #. translators: %1$s expands to Yes or No,  %2$s expands to the post type name.
 #: admin/metabox/class-metabox.php:88
 msgid "Default for %2$s, currently: %1$s"
 msgstr "Réglages par défaut pour %2$s, actuellement : %1$s"
-
-#. translators: %s expands to the post type name.
-#. translators: %s = taxonomy name.
-#: admin/metabox/class-metabox.php:83
-#: admin/taxonomy/class-taxonomy-settings-fields.php:35
-msgid "Allow search engines to show this %s in search results?"
-msgstr "Autoriser les moteurs de recherche à afficher cet·te %s dans les résultats de recherche ?"
 
 #: admin/config-ui/fields/class-field-post-type-visibility.php:19
 msgid ""
@@ -566,6 +554,18 @@ msgstr "Réglages SEO"
 #: admin/pages/metas.php:22
 msgid "Media"
 msgstr "Médias"
+
+#. translators: %1$s expands to the post type name.
+#: admin/metabox/class-metabox.php:93
+msgid "Should search engines follow links on this %1$s?"
+msgstr "Les moteurs de recherche doivent-ils suivre les liens sur le contenu %1$s ?"
+
+#. translators: %s expands to the post type name.
+#. translators: %s = taxonomy name.
+#: admin/metabox/class-metabox.php:83
+#: admin/taxonomy/class-taxonomy-settings-fields.php:35
+msgid "Allow search engines to show this %s in search results?"
+msgstr "Autoriser les moteurs de recherche à afficher le contenu %s dans les résultats de recherche ?"
 
 #: admin/views/tabs/social/twitterbox.php:23
 msgid "Enable this feature if you want Twitter to display a preview with images and a text excerpt when a link to your site is shared."
