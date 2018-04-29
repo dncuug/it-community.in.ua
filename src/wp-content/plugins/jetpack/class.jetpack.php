@@ -150,7 +150,6 @@ class Jetpack {
 			'Security-protection'                  => 'security-protection/security-protection.php',
 			'Login Security'                       => 'login-security/login-security.php',
 			'Botnet Attack Blocker'                => 'botnet-attack-blocker/botnet-attack-blocker.php',
-			'Wordfence Security'                   => 'wordfence/wordfence.php',
 			'All In One WP Security & Firewall'    => 'all-in-one-wp-security-and-firewall/wp-security.php',
 			'iThemes Security'                     => 'better-wp-security/better-wp-security.php',
 		),
