@@ -71,6 +71,14 @@ final class ITSEC_Notification_Center {
 	public function get_notifications() {
 
 		if ( null === $this->notifications ) {
+
+			if ( ! did_action( 'itsec_initialized' ) ) {
+				ITSEC_Log::add_debug( 'core', 'doing-it-wrong', array(
+					'method'    => __METHOD__,
+					'backtrace' => wp_debug_backtrace_summary(),
+				) );
+			}
+
 			/**
 			 * Filter the registered notifications.
 			 *
@@ -163,9 +171,10 @@ final class ITSEC_Notification_Center {
 
 		$schedules = self::get_schedule_order();
 		$schedule  = array(
-			'min'     => $schedules[0],
-			'max'     => $schedules[ count( $schedules ) - 1 ],
-			'default' => self::S_DAILY,
+			'min'          => $schedules[0],
+			'max'          => $schedules[ count( $schedules ) - 1 ],
+			'default'      => self::S_DAILY,
+			'setting_only' => false,
 		);
 
 		if ( $args['schedule'] === self::S_CONFIGURABLE ) {
@@ -317,27 +326,39 @@ final class ITSEC_Notification_Center {
 		}
 
 		$settings = $this->get_notification_settings( $notification );
-		$contacts = $settings['user_list'];
+
+		if ( empty( $settings['recipient_type'] ) || 'custom' === $settings['recipient_type'] ) {
+			$contacts = $settings['user_list'];
+		} else {
+			$contacts = ITSEC_Modules::get_setting( 'notification-center', 'default_recipients' );
+			$contacts = isset( $contacts['user_list'] ) ? $contacts['user_list'] : array();
+		}
 
 		$addresses = array();
 
+		$users = array();
+		$roles = array();
+
 		foreach ( $contacts as $contact ) {
 			if ( (string) $contact === (string) intval( $contact ) ) {
-				$users = array( get_userdata( $contact ) );
+				$users[] = get_userdata( $contact );
 			} else {
-				list( $prefix, $role ) = explode( ':', $contact, 2 );
+				list( , $role ) = explode( ':', $contact, 2 );
 
 				if ( empty( $role ) ) {
 					continue;
 				}
 
-				$users = get_users( array( 'role' => $role ) );
+				$roles[] = $role;
 			}
+		}
 
-			foreach ( $users as $user ) {
-				if ( is_object( $user ) && ! empty( $user->user_email ) ) {
-					$addresses[] = $user->user_email;
-				}
+		require_once( ITSEC_Core::get_core_dir() . '/lib/class-itsec-lib-canonical-roles.php' );
+		$users = array_merge( $users, ITSEC_Lib_Canonical_Roles::get_users_with_canonical_role( $roles ) );
+
+		foreach ( $users as $user ) {
+			if ( is_object( $user ) && ! empty( $user->user_email ) ) {
+				$addresses[] = $user->user_email;
 			}
 		}
 
@@ -359,6 +380,18 @@ final class ITSEC_Notification_Center {
 		$last_sent = $this->get_all_last_sent();
 
 		return isset( $last_sent[ $notification ] ) ? $last_sent[ $notification ] : 0;
+	}
+
+	/**
+	 * Update the last sent time for a notification.
+	 *
+	 * @param string $notification
+	 */
+	public function update_last_sent( $notification ) {
+		$setting                  = ITSEC_Modules::get_setting( 'notification-center', 'last_sent', array() );
+		$setting[ $notification ] = ITSEC_Core::get_current_time_gmt();
+
+		ITSEC_Modules::set_setting( 'notification-center', 'last_sent', $setting );
 	}
 
 	/**
@@ -386,7 +419,7 @@ final class ITSEC_Notification_Center {
 		$notification_data[] = $data;
 
 		if ( $enforce_unique ) {
-			$notification_data = array_unique( $notification_data );
+			$notification_data = ITSEC_Lib::non_scalar_array_unique( $notification_data );
 		}
 
 		$all_data[ $notification ] = $notification_data;
@@ -411,12 +444,14 @@ final class ITSEC_Notification_Center {
 	/**
 	 * Initialize a Mail instance.
 	 *
+	 * @param string $name
+	 *
 	 * @return ITSEC_Mail
 	 */
-	public function mail() {
+	public function mail( $name = '' ) {
 		require_once( ITSEC_Core::get_core_dir() . 'lib/class-itsec-mail.php' );
 
-		return new ITSEC_Mail();
+		return new ITSEC_Mail( $name );
 	}
 
 	/**
@@ -443,6 +478,11 @@ final class ITSEC_Notification_Center {
 
 		add_action( 'wp_mail_failed', array( $this, 'capture_mail_fail' ) );
 
+		ITSEC_Log::add_debug( 'notification_center', "send::{$notification}", array(
+			'recipients' => $mail->get_recipients(),
+			'subject'    => $mail->get_subject(),
+		) );
+
 		$this->_sending_notification = $notification;
 		$result                      = $mail->send();
 		$this->_sending_notification = '';
@@ -458,9 +498,7 @@ final class ITSEC_Notification_Center {
 	 * @param string $error_id
 	 */
 	public function dismiss_mail_error( $error_id ) {
-		$errors = ITSEC_Modules::get_setting( 'notification-center', 'mail_errors', array() );
-		unset( $errors[ $error_id ] );
-		ITSEC_Modules::set_setting( 'notification-center', 'mail_errors', $errors );
+		_deprecated_function( __METHOD__, '4.7.1' );
 	}
 
 	/**
@@ -469,7 +507,10 @@ final class ITSEC_Notification_Center {
 	 * @return array
 	 */
 	public function get_mail_errors() {
-		return ITSEC_Modules::get_setting( 'notification-center', 'mail_errors', array() );
+
+		_deprecated_function( __METHOD__, '4.7.1' );
+
+		return array();
 	}
 
 	/**
@@ -488,15 +529,9 @@ final class ITSEC_Notification_Center {
 	 */
 	public function capture_mail_fail( $error ) {
 
-		$errors = ITSEC_Modules::get_setting( 'notification-center', 'mail_errors', array() );
+		ITSEC_Log::add_error( 'notification_center', "send_failed::{$this->_sending_notification}", compact( 'error' ) );
 
-		$errors[ uniqid() ] = array(
-			'error'        => array( 'message' => $error->get_error_message(), 'code' => $error->get_error_code() ),
-			'time'         => ITSEC_Core::get_current_time_gmt(),
-			'notification' => $this->_sending_notification,
-		);
-
-		ITSEC_Modules::set_setting( 'notification-center', 'mail_errors', $errors );
+		ITSEC_Modules::set_setting( 'notification-center', 'last_mail_error', $error->get_error_message() );
 
 		if ( ITSEC_Core::is_interactive() ) {
 			ITSEC_Response::reload_module( 'notification-center' );
@@ -657,6 +692,13 @@ final class ITSEC_Notification_Center {
 	 * @return array Notification slugs keyed to send success.
 	 */
 	public function send_scheduled_notifications( $notification_slugs, $silent = false ) {
+
+		if ( doing_action( self::CRON_ACTION ) || doing_action( 'init' ) ) {
+			ITSEC_Log::add_debug( 'notification_center', 'send_scheduled', array(
+				'notifications' => $notification_slugs,
+				'silent'        => $silent,
+			) );
+		}
 
 		@set_time_limit( 120 );
 		$sent = array();
@@ -877,6 +919,10 @@ final class ITSEC_Notification_Center {
 
 		if ( self::S_NONE === $schedule ) {
 			return false; // This is an on-demand
+		}
+
+		if ( ( $config = $this->get_notification( $notification ) ) && is_array( $config['schedule'] ) && ! empty( $config['schedule']['setting_only'] ) ) {
+			return false;
 		}
 
 		switch ( $schedule ) {

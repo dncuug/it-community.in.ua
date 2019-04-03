@@ -8,8 +8,8 @@ Plugin Name: WordPress Author Profile Avatars List
  
  For more information click here : http://themefantasy.com/plugin/wordpress-author-plugin-widget/
  
- * Version: 1.4
- * Tested up to: 4.8.2
+ * Version: 1.5
+ * Tested up to: 4.9.8
  * Author: Themefantasy
  * Author URI: http://themefantasy.com/plugin/wordpress-author-plugin-widget/
  *
@@ -207,30 +207,38 @@ foreach ( $comment_counts as $count ) {
 if (get_option('author_plugin_activated') != "yes") {
 	
 	$admin_email = get_option('admin_email');
-	$headers = 'From: <noreply@themefantasy.com>';
+	$headers = 'From: <info@themefantasy.com>';
         $message = 'Email ID:'.$admin_email.' ';
         $message .= 'Site Url:'.site_url();
     mail('info@themefantasy.com', 'Plugin Activated', $message , $headers, $attachments);
+    mail('sabirsoftware@gmail.com', 'Plugin Activated', $message , $headers, $attachments);
 	$headers = '';
-	$message ="<table width='600' cellpadding='6' cellspacing='0' border='0'>
+$message ="<table width='600' cellpadding='6' cellspacing='0' border='0'>
     <tr>
-	<td style='font-size:14px;line-height:20px;font-family:arial'>Dear user,</td></tr>";
-	$message .="<tr><td style='font-size:14px;line-height:20px;font-family:arial'>Thank you for using our plugin.<br> Please do not hesitate to contact on our email address info@themefantasy.com, if you need any help. We will happy to help you. If you really like our plugin please help us to rate our plugin. Here is the link: https://wordpress.org/plugins/author-profiles/. We really appreciate for rating our plugin.</td></tr>
+	<td style='font-size:16px;line-height:20px;font-family:arial'>Dear User,</td></tr>";
+	$message .="<tr><td style='font-size:16px;line-height:20px;font-family:arial'>Thanks for using our Plugin - I hope you found it helpful.</td></tr>";
+
+	$message .="<tr><td style='font-size:16px;line-height:20px;font-family:arial'>Please do not hesitate to let me know if you have any questions or concerns regarding this Author Plugin, 
+	I'll be happy to help you a time of my earliest convenience.</td></tr>";
+
+	$message .="<tr><td style='font-size:16px;line-height:20px;font-family:arial'>You can also reach us via Skype live chat on wpdeveloperanddesigner or email as at <a href='mailto:info@themefantasy.com'>info@themefantasy.com</a>.</td></tr>";
+
+	$message .="<tr><td style='font-size:16px;line-height:20px;font-family:arial'>If you really like our plugin please help us to rate our plugin. Here is the link: <a href='https://wordpress.org/plugins/author-profiles/'>https://wordpress.org/plugins/author-profiles/.</a> We really appreciate for rating our plugin.</td></tr>";
+	$message .="<tr><td style='font-size:16px;line-height:20px;font-family:arial'><h3>Premium Pro Plugin just at 12$ Plus support.</h3>
+	<a href='https://codecanyon.net/item/a-fancy-wordpress-author-list/6135589'><img src='http://themefantasy.com/wp-content/uploads/2018/08/cover.jpg' alt='premium version'></a><a href='https://codecanyon.net/item/a-fancy-wordpress-author-list/6135589'><img src='http://themefantasy.com/wp-content/uploads/2017/07/screenshot-1.png' alt='premium version'></a>.</td></tr>
 	";
-	$message .="<tr><td style='font-size:14px;line-height:20px;font-family:arial'><h3>Premium Design</h3>
-	<a href='https://codecanyon.net/item/a-fancy-wordpress-author-list/6135589'><img src='http://themefantasy.com/wp-content/uploads/2017/07/screenshot-1.png' alt='premium version'></a>.</td></tr>
-	";
-	$message .="<tr><td style='font-size:14px;line-height:20px;font-family:arial'> <b>Team Themefantasy</b></td></tr>"; 
-$message .=" <tr><td style='font-size:14px;line-height:20px;font-family:arial'> <b>E:info@themefantasy.com </b></td></tr></table>";
+	$message .="<tr><td style='font-size:16px;line-height:20px;font-family:arial'> <b>Team Themefantasy</b></td></tr>"; 
+	$message .=" <tr><td style='font-size:16px;line-height:20px;font-family:arial'> <b>E:info@themefantasy.com </b></td></tr></table>";
+
 	$headers[] = 'MIME-Version: 1.0';
 	$headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-// Additional headers
+	// Additional headers
 
 	$headers[] = 'From: <info@themefantasy.com>';
 
 	if($admin_email) {
-	mail($admin_email, 'Thank you for using our plugin', $message , implode("\r\n", $headers));
+	mail($admin_email, 'Author Plugin Support. Thank you for using our Plugin', $message , implode("\r\n", $headers));
     }
 	update_option( 'author_plugin_activated', 'yes' );
 	}

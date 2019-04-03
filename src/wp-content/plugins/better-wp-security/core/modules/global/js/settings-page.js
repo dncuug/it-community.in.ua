@@ -23,12 +23,15 @@ var itsec_log_type_changed = function() {
 
 	if ( 'both' === type ) {
 		jQuery( '#itsec-global-log_rotation' ).parents( 'tr' ).show();
+		jQuery( '#itsec-global-file_log_rotation' ).parents( 'tr' ).show();
 		jQuery( '#itsec-global-log_location' ).parents( 'tr' ).show();
 	} else if ( 'file' === type ) {
 		jQuery( '#itsec-global-log_rotation' ).parents( 'tr' ).hide();
+		jQuery( '#itsec-global-file_log_rotation' ).parents( 'tr' ).show();
 		jQuery( '#itsec-global-log_location' ).parents( 'tr' ).show();
 	} else {
 		jQuery( '#itsec-global-log_rotation' ).parents( 'tr' ).show();
+		jQuery( '#itsec-global-file_log_rotation' ).parents( 'tr' ).hide();
 		jQuery( '#itsec-global-log_location' ).parents( 'tr' ).hide();
 	}
 };

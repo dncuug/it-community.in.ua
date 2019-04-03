@@ -222,6 +222,8 @@ class ITSEC_Backup {
 
 		if ( 2 !== $this->settings['method'] || true === $one_time ) {
 			$mail_success = $this->send_mail( $file );
+		} else {
+			$mail_success = null;
 		}
 
 		if ( 1 === $this->settings['method'] ) {

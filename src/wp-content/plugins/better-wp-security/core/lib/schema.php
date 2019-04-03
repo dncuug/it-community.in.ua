@@ -72,6 +72,17 @@ CREATE TABLE {$wpdb->base_prefix}itsec_temp (
 	KEY temp_host (temp_host),
 	KEY temp_user (temp_user),
 	KEY temp_username (temp_username)
+) $charset_collate;
+
+CREATE TABLE {$wpdb->base_prefix}itsec_distributed_storage (
+	storage_id bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+	storage_group varchar(40) NOT NULL,
+	storage_key varchar(40) NOT NULL default '',
+	storage_chunk int NOT NULL default 0,
+	storage_data longtext NOT NULL,
+	storage_updated datetime NOT NULL,
+	PRIMARY KEY  (storage_id),
+	UNIQUE KEY storage_group__key__chunk (storage_group,storage_key,storage_chunk)
 ) $charset_collate;";
 
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
@@ -85,5 +96,6 @@ CREATE TABLE {$wpdb->base_prefix}itsec_temp (
 		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->base_prefix}itsec_log;" );
 		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->base_prefix}itsec_lockouts;" );
 		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->base_prefix}itsec_temp;" );
+		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->base_prefix}itsec_distributed_storage;" );
 	}
 }

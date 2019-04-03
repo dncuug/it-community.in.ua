@@ -4,8 +4,8 @@ Donate link: http://themefantasy.com/plugin/wordpress-author-plugin-widget/
 Tags: Author, Author profile, author pic, widget author, authors avatar list, author gravatar, author own image, wordpress author profile
 Donate link: http://themefantasy.com/plugin/wordpress-author-plugin-widget/
 Requires at least: 3.4
-Tested up to: 4.8.2
-Stable tag: 4.7
+Tested up to: 4.9.8
+Stable tag: 4.9
 
 
 

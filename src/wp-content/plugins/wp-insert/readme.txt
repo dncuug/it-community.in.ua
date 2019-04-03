@@ -3,8 +3,8 @@ Contributors: Namith Jawahar
 Tags: google adsense, adsense, google ads, google analytics, privacy policy, best adsense plugin, ad management, ad rotation, tracking codes
 Donate link: http://wpinsert.smartlogix.co.in/support/
 Requires at least: 4.1.0
-Tested up to: 4.9.4
-Stable tag: 2.4.1
+Tested up to: 4.9.6
+Stable tag: 2.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ Wp-Insert is the most powerful yet easiest to use wordpress ad management / ad i
      
 * Adsense Optimized
 * Builtin support for Google Page-Level Ads
-* Builtin support for Google Adsense Auto Ads
+* Builtin support for Google Adsnese Auto Ads
 * Unlimited Adblocks (No restrictions placed on you)
 * Insert Ad Above, Below, To the Left and Right of Page or Post Content
 * Insert Ad in the Middle of Page/Post Content with intelligent midpoint detection algorithms
@@ -31,6 +31,7 @@ Wp-Insert is the most powerful yet easiest to use wordpress ad management / ad i
 * Hide ads for Loggedin users
 * Hide ads for Mobile users
 * Builtin support for AMP plugin by Automattic
+* Woocommerce aware
 * Hide ads on specific pages
 * Insert Ads directly into the theme files with control over when and where to display Ads
 * Insert Google Analytics, Facebook trackng pixel or any other tracking Code easily
@@ -83,3 +84,23 @@ Wp-Insert is the most powerful yet easiest to use wordpress ad management / ad i
 <a href="http://wp-insert.smartlogix.co.in/" title="The Ultimate Adsense / Ad-Management Plugin for Wordpress">Wp-Insert Tutorial and Support Website</a>
  
 <a href="http://www.smartlogix.co.in/" title="SmartLogix Technologies : Experts in WordPress Themes and Plugins">Wp-Insert Developers</a>
+
+== Privacy Policy ==
+
+Users privacy is very important to us and we make extra effort not to collect data about the users to the maximum extend possible.
+However to provide enhanced functionality we utilize the APIs from different third party services as listed below and the usage of those API are in accordance with their privacy policies.
+
+= Geo Targeting =
+
+To enable Geo Targeting functionality for Ads we have to send the visitor IP address to a third party service (http://freegeoip.net/ OR https://ipstack.com/) and the usage of thier API is in accordance to their privacy policy located at https://ipstack.com/privacy/.
+This third party API is utilized only when you enable or use Geo Targetting features in the plugin admin.
+
+= video intelligence =
+
+The plugin provides deep integration with video intelligence to provide enhanced features and for easy integration with their services.
+This third party API and features are utilized only when you enable or use video inteligence related features in the plugin admin and the usage of thier API and features are in accordance to their privacy policy.
+
+video intelligence ("vi") as a third party, needs to process the user's technical data such as cookie ID, IP Address, Geo-Location and Device ID to personalize content and advertising and analyse our traffic.
+You can find below a link vi's Legal webpage where there are transparently presented all GDPR relevant information.
+Please access the link to check vi's Privacy Policy, Terms&Conditions pages, Opt Out Mechanism, Vendor and Purposes lists.
+https://www.vi.ai/legals/

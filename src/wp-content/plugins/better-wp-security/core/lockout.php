@@ -84,9 +84,6 @@ final class ITSEC_Lockout {
 		//Set an error message on improper logout
 		add_action( 'login_head', array( $this, 'set_lockout_error' ) );
 
-		//Process clear lockout form
-		add_action( 'itsec_admin_init', array( $this, 'release_lockout' ) );
-
 		add_action( 'ithemes_sync_register_verbs', array( $this, 'register_sync_verbs' ) );
 		add_filter( 'itsec-filter-itsec-get-everything-verbs', array( $this, 'register_sync_get_everything_verbs' ) );
 
@@ -132,7 +129,7 @@ final class ITSEC_Lockout {
 
 		$host = ITSEC_Lib::get_ip();
 
-		if ( $this->is_host_locked_out( $host ) ) {
+		if ( $this->is_host_locked_out( $host ) || ITSEC_Lib::is_ip_blacklisted() ) {
 			$this->execute_lock();
 		}
 	}

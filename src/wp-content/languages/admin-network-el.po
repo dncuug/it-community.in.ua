@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-15 17:24:35+0000\n"
+"PO-Revision-Date: 2018-08-08 13:52:55+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,7 +43,7 @@ msgstr "Εγκατάσταση σε υποκατάλογο"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:636
 msgid "Active Child Theme"
-msgstr "Ενεργό θέμα απόγονος"
+msgstr "Ενεργό θυγατρικό θέμα"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:631
 msgid "Active Theme"
@@ -204,7 +204,7 @@ msgstr "Δε μπορείτε να χρησιμοποιήσετε αριθμό �
 #: wp-admin/includes/class-wp-ms-users-list-table.php:171
 msgctxt "user"
 msgid "Registered"
-msgstr "Εγγραφή"
+msgstr "Εγγεγραμμένος"
 
 #: wp-admin/includes/class-wp-ms-users-list-table.php:141
 msgid "Super Admin <span class=\"count\">(%s)</span>"

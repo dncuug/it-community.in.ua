@@ -303,13 +303,36 @@ class Jetpack_Top_Posts_Widget extends WP_Widget {
 			echo $args['before_title'] . $title . $args['after_title'];
 
 		if ( ! $posts ) {
+			$link = 'https://jetpack.com/support/getting-more-views-and-traffic/';
+			if ( defined( 'IS_WPCOM' ) && IS_WPCOM ) {
+				$link = 'http://en.support.wordpress.com/getting-more-site-traffic/';
+			}
+
 			if ( current_user_can( 'edit_theme_options' ) ) {
 				echo '<p>' . sprintf(
 					__( 'There are no posts to display. <a href="%s" target="_blank">Want more traffic?</a>', 'jetpack' ),
-					'https://jetpack.com/support/getting-more-views-and-traffic/'
+					esc_url( $link )
 				) . '</p>';
 			}
 
+			echo $args['after_widget'];
+			return;
+		}
+
+		/**
+		 * Filter the layout of the Top Posts Widget
+		 *
+		 * @module widgets
+		 * 
+		 * @since 6.4.0 
+		 *
+		 * @param string $layout layout of the Top Posts Widget (empty string)
+		 * @param array $posts IDs of the posts to be displayed
+		 * @param array $display Display option from widget form
+		 */
+		$layout = apply_filters( 'jetpack_top_posts_widget_layout', '', $posts, $display );
+		if ( ! empty( $layout ) ) {
+			echo $layout;
 			echo $args['after_widget'];
 			return;
 		}

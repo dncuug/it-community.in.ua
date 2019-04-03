@@ -1,0 +1,218 @@
+# Translation of Plugins - Redis Object Cache - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - Redis Object Cache - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-12-01 13:49:39+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - Redis Object Cache - Stable (latest release)\n"
+
+#: includes/diagnostics.php:54
+msgid "Invalid"
+msgstr "Ungültig"
+
+#: includes/diagnostics.php:52
+msgid "Ignored Groups"
+msgstr "Ignorierte Gruppen"
+
+#: includes/diagnostics.php:51
+msgid "Global Groups"
+msgstr "Globale Gruppen"
+
+#: includes/diagnostics.php:50
+msgid "Blog Prefix"
+msgstr "Blog-Präfix"
+
+#: includes/diagnostics.php:49
+msgid "Global Prefix"
+msgstr "Globale Präfix"
+
+#: includes/diagnostics.php:48
+msgid "Valid"
+msgstr "Gültig"
+
+#: includes/diagnostics.php:19
+msgid "Client"
+msgstr "Client"
+
+#: includes/diagnostics.php:18
+msgid "Status"
+msgstr "Status:"
+
+#: includes/admin-page.php:60
+msgid "Diagnostics"
+msgstr "Diagnose"
+
+#: includes/admin-page.php:66
+msgid "Show Diagnostics"
+msgstr "Diagnose anzeigen"
+
+#: includes/diagnostics.php:13
+msgid "Multisite"
+msgstr "Multisite"
+
+#: includes/diagnostics.php:15 includes/diagnostics.php:16
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: includes/diagnostics.php:16
+msgid "Predis"
+msgstr "Predis"
+
+#: redis-cache.php:270
+msgid "Object cache drop-in could not be updated."
+msgstr "Drop-in von Object Cache konnte nicht aktualisiert werden."
+
+#: includes/wp-cli-commands.php:144
+msgid "Object Cache drop-in could not be updated."
+msgstr "Drop-in von Object Cache konnte nicht aktualisiert werden."
+
+#: includes/wp-cli-commands.php:142 redis-cache.php:267
+msgid "Updated object cache drop-in and enabled Redis object cache."
+msgstr "Drop-in von Object Cache wurde aktualisiert und Redis-Objektcache aktiviert."
+
+#: includes/wp-cli-commands.php:100
+msgid "No object cache drop-in found."
+msgstr "Kein Objekt Cache Drop-in gefunden."
+
+#: includes/wp-cli-commands.php:64 includes/wp-cli-commands.php:106
+msgid "An unknown object cache drop-in was found. To use Redis run: wp redis update-dropin."
+msgstr "Ein unbekannte Objekt Cache Drop-in wurde gefunden. Um Redis zu benutzen verwende folgendes: wp redis update-dropin."
+
+#: includes/wp-cli-commands.php:62
+msgid "Redis object cache already enabled."
+msgstr "Redis Objektcache bereits aktiviert."
+
+#. Author URI of the plugin/theme
+msgid "https://till.im/"
+msgstr "https://till.im/"
+
+#. Description of the plugin/theme
+msgid "A persistent object cache backend powered by Redis. Supports Predis, PhpRedis, HHVM, replication, clustering and WP-CLI."
+msgstr "Ein Cache-Backend für Redis. Unterstützt Predis, PhpRedis, HHVM, Replikation, Clustering und WP-CLI."
+
+#: includes/diagnostics.php:13 includes/servers-list.php:77
+msgid "No"
+msgstr "Nein"
+
+#: includes/diagnostics.php:13 includes/servers-list.php:77
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/servers-list.php:8
+msgid "Server"
+msgstr "Server"
+
+#: includes/admin-page.php:54 includes/servers-list.php:9
+msgid "Servers"
+msgstr "Servers"
+
+#: includes/admin-page.php:8
+msgid "Overview"
+msgstr "Überblick"
+
+#: includes/wp-cli-commands.php:23 redis-cache.php:149
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: includes/diagnostics.php:48 includes/diagnostics.php:54
+msgid "Drop-in"
+msgstr "Drop-in"
+
+#: includes/admin-page.php:13
+msgid "Status:"
+msgstr "Status:"
+
+#. Author of the plugin/theme
+msgid "Till Krüss"
+msgstr "Till Krüss"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/redis-cache/"
+msgstr "https://wordpress.org/plugins/redis-cache/"
+
+#: redis-cache.php:264
+msgid "Object Cache could not be flushed."
+msgstr "Objekt Cache konnte nicht geleert werden."
+
+#: redis-cache.php:261
+msgid "Object Cache flushed."
+msgstr "Objekt Cache geleert."
+
+#: includes/wp-cli-commands.php:115 redis-cache.php:258
+msgid "Object Cache could not be disabled."
+msgstr "Objekt Cache konnte nicht deaktiviert werden."
+
+#: includes/wp-cli-commands.php:113 redis-cache.php:255
+msgid "Object Cache disabled."
+msgstr "Objekt Cache deaktiviert."
+
+#: includes/wp-cli-commands.php:74 redis-cache.php:252
+msgid "Object Cache could not be enabled."
+msgstr "Objekt Cache konnte nicht aktiviert werden."
+
+#: includes/wp-cli-commands.php:72 redis-cache.php:249
+msgid "Object Cache enabled."
+msgstr "Objekt Cache aktiviert."
+
+#: redis-cache.php:240
+msgid "This plugin requires PHP 5.4 or greater."
+msgstr "Dieses Plugin benötigt PHP 5.4 oder höher."
+
+#: redis-cache.php:224
+msgid "An unknown object cache drop-in was found. To use Redis, <a href=\"%s\">please replace it now</a>."
+msgstr "Ein unbekanntes Objekt Cache Drop-in wurde gefunden. <a href=\"%s\">Klicke hier um es durch Redis zu ersetzen</a>."
+
+#: redis-cache.php:219
+msgid "The Redis object cache drop-in is outdated. Please <a href=\"%s\">update it now</a>."
+msgstr "Die Redis Objekt Cache Drop-in ist veraltet.  <a href=\"%s\">Aktualisieren es jetzt</a>."
+
+#: redis-cache.php:162
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: includes/wp-cli-commands.php:29 redis-cache.php:158
+msgid "Not Connected"
+msgstr "Nicht verbunden"
+
+#: includes/wp-cli-commands.php:26 redis-cache.php:154
+msgid "Connected"
+msgstr "Verbunden"
+
+#: includes/diagnostics.php:15 redis-cache.php:59
+msgid "Redis"
+msgstr "Redis"
+
+#: includes/admin-page.php:49
+msgid "Disable Object Cache"
+msgstr "Deaktivieren Object Cache"
+
+#: includes/admin-page.php:47
+msgid "Enable Object Cache"
+msgstr "Aktiviere Object Cache"
+
+#: includes/admin-page.php:43
+msgid "Flush Cache"
+msgstr "Cache Leeren"
+
+#: includes/admin-page.php:33
+msgid "Max. TTL:"
+msgstr "Max. TTL:"
+
+#: includes/admin-page.php:26
+msgid "Key Prefix:"
+msgstr "Schlüssel-Präfix:"
+
+#: includes/admin-page.php:19
+msgid "Client:"
+msgstr "Client:"
+
+#. #-#-#-#-#  tmp-redis-cache.pot (Redis Object Cache 1.3.5)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/admin-page.php:6 redis-cache.php:58
+msgid "Redis Object Cache"
+msgstr "Redis Object Cache"

@@ -252,13 +252,13 @@ body.itsec-modal-open {
 	background: #efefef;
 	cursor: pointer;
 }
-.itsec-modal-navigation button.itsec-left:before {
+.itsec-modal-navigation button.itsec-left::before {
 	content: '\f341';
 }
-.itsec-modal-navigation button.itsec-right:before {
+.itsec-modal-navigation button.itsec-right::before {
 	content: '\f345';
 }
-.itsec-modal-navigation button.itsec-close-modal:before {
+.itsec-modal-navigation button.itsec-close-modal::before {
 	content: '\f335';
 }
 .itsec-modal-content-footer {
@@ -318,7 +318,7 @@ body.itsec-modal-open {
 	padding: .35em 0;
 }
 .itsec-settings-view-toggle a,
-.itsec-settings-view-toggle a:before {
+.itsec-settings-view-toggle a::before {
 	color: #b4b9be;
 	padding: 0 .25em 0 0;
 }
@@ -641,7 +641,7 @@ body.itsec-modal-open {
 	position: relative;
 }
 
-.itsec-security-check-container:before {
+.itsec-security-check-container::before {
 	font-family: 'Dashicons';
 	font-size: 1.75em;
 	position: absolute;
@@ -650,20 +650,20 @@ body.itsec-modal-open {
 	margin: -9px 0 0 0;
 }
 
-.itsec-security-check-container-action-taken:before,
-.itsec-security-check-container-complete:before,
-.itsec-security-check-container-confirmation:before {
+.itsec-security-check-container-action-taken::before,
+.itsec-security-check-container-complete::before,
+.itsec-security-check-container-confirmation::before {
 	content: "\f147";
 	color: #46b450;
 }
 
-.itsec-security-check-container-incomplete:before,
-.itsec-security-check-container-call-to-action:before {
+.itsec-security-check-container-incomplete::before,
+.itsec-security-check-container-call-to-action::before {
 	content: "\f534";
 	color: #f2dd28;
 }
 
-.itsec-security-check-container-error:before {
+.itsec-security-check-container-error::before {
 	content: "\f534";
 	color: #dc3232;
 }
@@ -688,6 +688,9 @@ body.itsec-modal-open {
  */
 .itsec-two-factor .dashicons {
 	cursor: default;
+}
+.itsec-two-factor .dashicons.not-configured {
+	color: #F56E28;
 }
 .itsec-two-factor .dashicons.dashicons-unlock {
 	color: #dc3232;
@@ -847,4 +850,23 @@ body.security_page_itsec-logs #old-logs-migration-status img {
 }
 body.security_page_itsec-logs #old-logs-migration-status p {
 	line-height: 1.4em;
+}
+#itsec-system-info, #itsec-settings-editor {
+	font-family: monospace;
+	width: 100%;
+	margin: 0;
+	height: 300px;
+	padding: 20px;
+	border-radius: 0;
+	resize: none;
+	font-size: 12px;
+	line-height: 20px;
+	outline: 0;
+}
+
+#itsec-settings-editor:empty {
+	display: none;
+}
+.itsec-module-cards-container .bulkactions:empty {
+	display: none;
 }

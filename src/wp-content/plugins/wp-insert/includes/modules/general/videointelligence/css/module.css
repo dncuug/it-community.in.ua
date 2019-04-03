@@ -317,3 +317,19 @@ p.viError {
 	font-family: Arial;
 	color: #444444;
 }
+
+#wp_insert_vi_customize_adcode_dialog .ui-button {
+    background: #C8161B !important;
+    border: 2px solid #000 !important;
+    color: #fff !important;
+    display: block;
+    font-weight: bold !important;
+    height: 30px;
+    margin: 15px auto 0;
+    text-shadow: 1px 1px 5px #000;
+    width: 80%;
+}
+
+#wp_insert_vi_customize_adcode_dialog .ui-button.ui-state-active {
+	background: #6ddc5f !important;
+}

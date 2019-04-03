@@ -14,7 +14,7 @@ function wp_insert_vi_signup_form_get_content() {
 		echo '</div>';
 	} else {
 		echo '<div class="wp_insert_popup_content_wrapper">';
-			echo '<p> There was an error processing your request. Please try again later. </p>';
+			echo '<p>There was an error processing your request, our team was notified. Try clearing your browser cache, log out and log in again.</p>';
 		echo '</div>';
 	}
 	die();
@@ -175,14 +175,17 @@ function wp_insert_vi_customize_adcode_form_get_content() {
 			$control->add_control(array('type' => 'minicolors', 'label' => 'Native Text color', 'optionName' => 'native_text_color', 'helpText' => '&nbsp;'));		
 			$control->add_control(array('type' => 'select', 'label' => ' Native Text Font Family', 'optionName' => 'font_family', 'helpText' => '&nbsp;', 'options' => wp_insert_vi_get_constant_fonts()));		
 			$control->add_control(array('type' => 'select', 'label' => 'Native Text Font Size', 'optionName' => 'font_size', 'helpText' => '&nbsp;', 'options' => wp_insert_vi_get_constant_font_sizes()));
-			$control->add_control(array('type' => 'textarea', 'label' => 'Optional 1', 'optionName' => 'optional_1', 'helpText' => '&nbsp;'));
-			$control->add_control(array('type' => 'textarea', 'label' => 'Optional 2', 'optionName' => 'optional_2', 'helpText' => '&nbsp;'));
-			$control->add_control(array('type' => 'textarea', 'label' => 'Optional 3', 'optionName' => 'optional_3', 'helpText' => '&nbsp;'));
 			$control->HTML .= '<p class="wp_insert_vi_delay_notice">vi Ad Changes might take some time to take into effect</p>';
 		$control->HTML .= '</div>';
 		$control->HTML .= '<div class="clear"></div>';
 	$control->HTML .= '</div>';
 	$control->create_section(' vi stories: customize your video player ');
+	echo $control->HTML;
+	$control->clear_controls();
+	
+	$control->HTML .= '<p>Enable GDPR Compliance confirmation notice on your site for visitors from EU.<br />If you disable this option make sure you are using a data usage authorization system on your website to remain GDPR complaint.</p>';
+	$control->add_control(array('type' => 'checkbox-button', 'label' => 'Status : Do not Show GDPR Authorization Popup', 'checkedLabel' => 'Status : Show GDPR Authorization Popup', 'uncheckedLabel' => 'Status : Do not Show GDPR Authorization Popup', 'optionName' => 'show_gdpr_authorization'));
+	$control->create_section(' vi stories: GDPR Compliance ');
 	echo $control->HTML;
 	echo '<script type="text/javascript">';
 		echo $control->JS;
@@ -204,9 +207,8 @@ function wp_insert_vi_customize_adcode_form_save_action() {
 	$vicodeSettings['native_text_color'] = ((isset($_POST['wp_insert_vi_code_settings_native_text_color']))?$_POST['wp_insert_vi_code_settings_native_text_color']:'');
 	$vicodeSettings['font_family'] = ((isset($_POST['wp_insert_vi_code_settings_font_family']))?$_POST['wp_insert_vi_code_settings_font_family']:'');
 	$vicodeSettings['font_size'] = ((isset($_POST['wp_insert_vi_code_settings_font_size']))?$_POST['wp_insert_vi_code_settings_font_size']:'');
-	$vicodeSettings['optional_1'] = ((isset($_POST['wp_insert_vi_code_settings_optional_1']))?$_POST['wp_insert_vi_code_settings_optional_1']:'');
-	$vicodeSettings['optional_2'] = ((isset($_POST['wp_insert_vi_code_settings_optional_2']))?$_POST['wp_insert_vi_code_settings_optional_2']:'');
-	$vicodeSettings['optional_3'] = ((isset($_POST['wp_insert_vi_code_settings_optional_3']))?$_POST['wp_insert_vi_code_settings_optional_3']:'');
+	
+	$vicodeSettings['show_gdpr_authorization'] = ((isset($_POST['wp_insert_vi_code_settings_show_gdpr_authorization']))?$_POST['wp_insert_vi_code_settings_show_gdpr_authorization']:'');
 	update_option('wp_insert_vi_code_settings', $vicodeSettings);
 	$viCodeStatus = wp_insert_vi_api_set_vi_code($vicodeSettings);
 	if(is_array($viCodeStatus) && (isset($viCodeStatus['status'])) && ($viCodeStatus['status'] == 'error')) {
@@ -215,7 +217,7 @@ function wp_insert_vi_customize_adcode_form_save_action() {
 			echo '<p class="viError">'.$viCodeStatus['message'].'</p>';
 		} else {
 			echo '###FAIL###';
-			echo '<p class="viError">There was an error processing your request, our team was notified.<br />Please try again later.</p>';
+			echo '<p class="viError">There was an error processing your request, our team was notified. Try clearing your browser cache, log out and log in again.</p>';
 		}
 	} else {
 		echo '###SUCCESS###';
@@ -281,16 +283,6 @@ function wp_insert_vi_customize_adcode_get_settings() {
 					$output .= '<label>Native Text Font Size:</label><b>'.$fontSizeItem['text'].'</b>';
 				}
 			}
-		}
-		
-		if(isset($vicodeSettings['optional_1']) && ($vicodeSettings['optional_1'] != '')) {
-			$output .= '<label>Optional 1:</label><b>'.$vicodeSettings['optional_1'].'</b>';
-		}
-		if(isset($vicodeSettings['optional_2']) && ($vicodeSettings['optional_2'] != '')) {
-			$output .= '<label>Optional 2:</label><b>'.$vicodeSettings['optional_1'].'</b>';
-		}
-		if(isset($vicodeSettings['optional_3']) && ($vicodeSettings['optional_3'] != '')) {
-			$output .= '<label>Optional 3:</label><b>'.$vicodeSettings['optional_1'].'</b>';
 		}
 		$output .= '</p>';
 	}

@@ -222,6 +222,14 @@ function wp_insert_get_ad_status($rules) {
 	if(!wp_validate_boolean($rules['status'])) {
 		return false;
 	}
+
+	if(function_exists('is_amp_endpoint') && is_amp_endpoint()) {
+		return false;
+	}
+	
+	if(function_exists('is_woocommerce') && is_woocommerce()) {
+		return false;
+	}
 	
 	if(isset($rules['rules_exclude_loggedin']) && wp_validate_boolean($rules['rules_exclude_loggedin']) && is_user_logged_in()) {
 		return false;

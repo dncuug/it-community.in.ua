@@ -1,0 +1,4554 @@
+# Translation of Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-05-27 08:49:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release)\n"
+
+#: core/modules/privacy/util.php:131
+msgid "The security logs are retained since they may be required as part of analysis of a site compromise."
+msgstr "保留安全日志，因为它们可能需要作为站点折衷分析的一部分。"
+
+#: core/modules/privacy/util.php:29
+msgid "What automated decision making and/or profiling we do with user data"
+msgstr "什么自动化决策和/或分析我们做的用户数据"
+
+#: core/modules/privacy/util.php:28
+msgid "What third parties we receive data from"
+msgstr "我们从第三方接收数据"
+
+#: core/modules/privacy/util.php:27
+msgid "What data breach procedures we have in place"
+msgstr "什么数据违反程序我们已经到位"
+
+#: core/modules/privacy/util.php:26
+msgid "How we protect your data"
+msgstr "我们如何保护您的数据"
+
+#: core/modules/privacy/util.php:25
+msgid "Additional information"
+msgstr "附加信息"
+
+#: core/modules/privacy/util.php:24
+msgid "Where we send your data"
+msgstr "在那里我们发送您的数据"
+
+#: core/modules/privacy/util.php:23
+msgid "What rights you have over your data"
+msgstr "您对您的数据有什么权利"
+
+#: core/modules/privacy/util.php:22
+msgid "How long we retain your data"
+msgstr "我们保留您的数据多久"
+
+#: core/modules/privacy/util.php:21
+msgid "Who we share your data with"
+msgstr "我们与谁分享您的数据"
+
+#: core/modules/privacy/util.php:18 core/modules/privacy/util.php:89
+msgid "Security Logs"
+msgstr "安全日志"
+
+#: core/modules/privacy/util.php:17
+msgid "Analytics"
+msgstr "分析学"
+
+#: core/modules/privacy/util.php:16
+msgid "Embedded content from other websites"
+msgstr "来自其他网站的嵌入式内容"
+
+#: core/modules/privacy/util.php:15
+msgid "Cookies"
+msgstr "Cookies"
+
+#: core/modules/privacy/util.php:14
+msgid "Contact Forms"
+msgstr "联系人表单"
+
+#: core/modules/privacy/util.php:13
+msgid "Media"
+msgstr "媒体"
+
+#: core/modules/privacy/util.php:12
+msgid "Comments"
+msgstr "评论"
+
+#: core/modules/privacy/util.php:10
+msgid "What personal data we collect and why we collect it"
+msgstr "我们收集的个人数据以及我们收集的个人信息"
+
+#: core/modules/privacy/class-itsec-privacy.php:24
+#: core/modules/privacy/class-itsec-privacy.php:39
+msgid "iThemes Security Plugin"
+msgstr "iThemes Security Plugin"
+
+#: core/modules/file-change/scanner.php:178
+msgid "Scanning files..."
+msgstr "扫描文件中…"
+
+#: core/modules/file-change/scanner.php:174
+msgid "Scanning media files..."
+msgstr "扫描媒体文件中…"
+
+#: core/modules/file-change/scanner.php:171
+msgid "Scanning content files..."
+msgstr "扫描 content 文件中…"
+
+#: core/modules/file-change/scanner.php:168
+msgid "Scanning plugin files..."
+msgstr "扫描插件文件中…"
+
+#: core/modules/file-change/scanner.php:165
+msgid "Scanning theme files..."
+msgstr "扫描主题文件中…"
+
+#: core/modules/file-change/scanner.php:162
+msgid "Scanning includes files..."
+msgstr "扫描 includes 文件中…"
+
+#: core/modules/file-change/scanner.php:159
+msgid "Scanning admin files..."
+msgstr "扫描管理文件中…"
+
+#: core/modules/file-change/scanner.php:105
+msgid "A File Change scan is currently in progress."
+msgstr "文件更改扫描目前正在进行中。"
+
+#: core/modules/file-change/logs.php:71
+msgid "Total Memory"
+msgstr "总内存"
+
+#: core/modules/file-change/logs.php:49
+msgid "Rescheduling"
+msgstr "重新安排中"
+
+#: core/modules/file-change/logs.php:47
+msgid "Scan Failed"
+msgstr "扫描失败"
+
+#. translators: 1. Theme name 2. Theme version
+#: core/modules/file-change/lib/package-theme.php:93
+msgid "%1$s theme %2$s"
+msgstr "%1$s 主题 %2$s"
+
+#. translators: 1. Plugin name 2. Plugin version
+#: core/modules/file-change/lib/package-plugin.php:106
+msgid "%1$s plugin %2$s"
+msgstr "%1$s 插件 %2$s"
+
+#: core/modules/file-change/lib/package-core.php:50
+msgid "WordPress Core %s"
+msgstr "WordPress Core %s"
+
+#: core/admin-pages/page-logs.php:264
+msgid "WP-Cron Scheduled Task"
+msgstr "WP-Cron 计划任务"
+
+#: core/admin-pages/page-logs.php:262
+msgid "WP-CLI Command"
+msgstr "WP-CLI 命令"
+
+#: core/admin-pages/logs-list-table.php:80
+msgid "View Details"
+msgstr "查看详细信息"
+
+#. translators: 1: date and time, 2: time difference
+#: core/admin-pages/logs-list-table.php:44
+msgid "%1$s - %2$s ago"
+msgstr "%1$s - %2$s 前"
+
+#: core/modules/malware/logs.php:35
+msgid "Scan"
+msgstr "扫描"
+
+#: core/modules/malware/logs.php:33
+msgid "Site on Blacklist"
+msgstr "黑名单上的站点"
+
+#: core/modules/malware/logs.php:31
+msgid "Malware Found"
+msgstr "发现恶意软件"
+
+#: core/modules/malware/logs.php:29
+msgid "Malware Found, Site on Blacklist"
+msgstr "发现恶意软件，黑名单上的站点"
+
+#: core/modules/malware/logs.php:25
+msgid "Scan Failed: Site Error"
+msgstr "扫描失败：站点出错"
+
+#: core/modules/malware/logs.php:23 core/modules/malware/logs.php:27
+msgid "Scan Failed: Sucuri Error"
+msgstr "扫描失败：Sucuri 出错"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:166
+msgid "Failed to scan site #%d because it does not exist."
+msgstr "无法扫描站点 #%d，因为它不存在。"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:17
+msgid "Site: %s"
+msgstr "站点：%s"
+
+#: core/modules/ipcheck/logs.php:34
+msgid "Block Expiration"
+msgstr "阻止到期"
+
+#: core/modules/ipcheck/logs.php:17
+msgid "Blocked Host Attempted Login"
+msgstr "已阻止主机尝试登录"
+
+#: core/modules/ipcheck/logs.php:15
+msgid "Blocked Host Attempted Login With Good Credentials"
+msgstr "已阻止主机尝试使用良好证书登录"
+
+#: core/modules/ipcheck/logs.php:13
+msgid "IP Blocked"
+msgstr "IP 已阻止"
+
+#: core/modules/ipcheck/logs.php:10
+msgid "Network Brute Force"
+msgstr "网络暴力攻击"
+
+#: core/modules/file-change/logs.php:79
+msgid "Changed"
+msgstr "已更改"
+
+#: core/modules/file-change/logs.php:78
+msgid "Removed"
+msgstr "已移除"
+
+#: core/modules/file-change/logs.php:66 core/modules/file-change/logs.php:72
+msgctxt "Megabytes of memory used"
+msgid "%s MB"
+msgstr "%s MB"
+
+#: core/modules/file-change/logs.php:20
+msgid "Changes Found"
+msgstr "发现更改"
+
+#: core/modules/file-change/logs.php:18
+msgid "%1$d Added, %2$d Removed, %3$d Changed"
+msgstr "%1$d 已添加，%2$d 已移除，%3$d 已更改"
+
+#: core/modules/file-change/logs.php:15
+msgid "No Changes Found"
+msgstr "未发现更改"
+
+#: core/modules/file-change/logs.php:13 core/modules/malware/logs.php:19
+msgid "Scan Performance"
+msgstr "扫描性能"
+
+#: core/modules/brute-force/logs.php:40 core/modules/ipcheck/logs.php:49
+msgid "Login Source"
+msgstr "登录源"
+
+#: core/modules/brute-force/logs.php:36 core/modules/ipcheck/logs.php:45
+msgid "Login Page"
+msgstr "登录页面"
+
+#: core/modules/brute-force/logs.php:31 core/modules/ipcheck/logs.php:43
+msgid "REST API Authentication"
+msgstr "REST API 认证"
+
+#: core/modules/brute-force/logs.php:29 core/modules/ipcheck/logs.php:41
+msgid "XMLRPC Authentication"
+msgstr "XMLRPC 认证"
+
+#: core/modules/brute-force/logs.php:15
+msgid "Banned Use of \"admin\" Username"
+msgstr "禁止使用 \"admin\" 用户名"
+
+#: core/modules/brute-force/logs.php:13
+msgid "Invalid Login"
+msgstr "无效的登录"
+
+#: core/modules/brute-force/logs.php:10
+msgid "Brute Force"
+msgstr "暴力攻击"
+
+#: core/modules/backup/logs.php:21
+msgid "File Created"
+msgstr "文件已创建"
+
+#: core/modules/backup/logs.php:19
+msgid "Email Send Succeeded"
+msgstr "邮件发送成功"
+
+#: core/modules/backup/logs.php:17
+msgid "Email Send Failed"
+msgstr "邮件发送失败"
+
+#: core/modules/backup/logs.php:15
+msgid "File Created and Emails Sent"
+msgstr "文件已创建和邮件已发送"
+
+#: core/modules/backup/logs.php:13
+msgid "File Created but Email Send Failed"
+msgstr "文件已创建，但邮件发送失败"
+
+#: core/modules/away-mode/logs.php:12
+msgid "Access Blocked"
+msgstr "访问被阻止"
+
+#: core/lockout.php:1193
+msgid "Username Lockout"
+msgstr "用户名锁定"
+
+#: core/lockout.php:1191
+msgid "Username Lockout: <code>%s</code>"
+msgstr "用户名锁定：<code>%s</code>"
+
+#: core/lockout.php:1188
+msgid "Whitelisted Host Triggered Username Lockout"
+msgstr "列入白名单的主机触发用户名锁定"
+
+#: core/lockout.php:1185
+msgid "User Lockout"
+msgstr "用户锁定"
+
+#: core/lockout.php:1183
+msgid "User Lockout: <code>%s</code>"
+msgstr "用户锁定：<code>%s</code>"
+
+#: core/lockout.php:1176
+msgid "Whitelisted Host Triggered User Lockout"
+msgstr "列入白名单的主机触发用户锁定"
+
+#: core/lockout.php:1173
+msgid "Host Lockout"
+msgstr "主机锁定"
+
+#: core/lockout.php:1171
+msgid "Host Lockout: <code>%s</code>"
+msgstr "主机锁定：<code>%s</code>"
+
+#: core/lockout.php:1168
+msgid "Whitelisted Host Triggered Host Lockout"
+msgstr "列入白名单的主机触发主机锁定"
+
+#: core/lockout.php:1166
+msgid "Host Triggered Blacklist"
+msgstr "主机触发黑名单"
+
+#: core/lib/log.php:247
+msgid "Process"
+msgstr "处理"
+
+#: core/lib/log.php:246
+msgid "Debug"
+msgstr "调试"
+
+#: core/lib/log.php:242
+msgid "Fatal Error"
+msgstr "致命错误"
+
+#: core/lib/log.php:240
+msgid "Critical Issue"
+msgstr "严重问题"
+
+#: core/lib/log.php:179
+msgid "Unable to write to the log file. This could indicate that there is no space available, that there is a permissions issue, or that the server is not configured properly."
+msgstr "无法写入日志文件。这可能表明没有空间可用，存在权限问题，或者服务器配置不正确。"
+
+#: core/lib/log.php:136
+msgid "Failed to insert log entry: %s"
+msgstr "无法插入日志条目：%s"
+
+#: core/lib/log-util.php:187
+msgid "A query failure prevented the log data from being accessed: %s"
+msgstr "查询失败阻止了日志数据被访问：%s"
+
+#: core/lib/class-itsec-wp-list-table.php:807
+msgid "Last page"
+msgstr "最后一页"
+
+#: core/lib/class-itsec-wp-list-table.php:797
+msgid "Next page"
+msgstr "下一页"
+
+#: core/lib/class-itsec-wp-list-table.php:774
+msgid "Previous page"
+msgstr "上一页"
+
+#: core/lib/class-itsec-wp-list-table.php:764
+msgid "First page"
+msgstr "第一页"
+
+#: core/lib/class-itsec-wp-list-table.php:727
+#: core/lib/class-itsec-wp-list-table.php:1297
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s 个项目"
+
+#: core/lib/class-itsec-wp-list-table.php:653
+msgid "No pending comments"
+msgstr "无待定的评论"
+
+#: core/lib/class-itsec-wp-list-table.php:640
+msgid "No approved comments"
+msgstr "无批准的评论"
+
+#: core/lib/class-itsec-wp-list-table.php:628
+#: core/lib/class-itsec-wp-list-table.php:640
+#: core/lib/class-itsec-wp-list-table.php:653
+msgid "No comments"
+msgstr "暂无评论"
+
+#: core/lib/class-itsec-wp-list-table.php:623
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] "%s 条待定评论"
+
+#: core/lib/class-itsec-wp-list-table.php:622
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] "%s 条批准评论"
+
+#: core/lib/class-itsec-wp-list-table.php:621
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s 条评论"
+
+#: core/lib/class-itsec-wp-list-table.php:558
+msgid "All dates"
+msgstr "所有日期"
+
+#: core/lib/class-itsec-wp-list-table.php:556
+msgid "Filter by date"
+msgstr "按日期过滤"
+
+#: core/lib/class-itsec-wp-list-table.php:434
+msgid "Select bulk action"
+msgstr "选择批量操作"
+
+#: core/admin-pages/page-logs.php:460
+msgid "The log file can be found at: <code>%s</code>"
+msgstr "日志文件位于：<code>%s</code>"
+
+#: core/admin-pages/page-logs.php:412
+msgid "Show all entries, including ones that were previously hidden."
+msgstr "显示所有条目，包括之前隐藏的条目。"
+
+#: core/admin-pages/page-logs.php:412
+msgid "Show All Entries"
+msgstr "显示所有条目"
+
+#: core/admin-pages/page-logs.php:410
+msgid "Hide existing entries from view without deleting them."
+msgstr "从视图中隐藏现有条目而不是将他们删除。"
+
+#: core/admin-pages/page-logs.php:410
+msgid "Hide Current Entries"
+msgstr "隐藏当前条目"
+
+#: core/admin-pages/page-logs.php:401
+msgid "Show Process entries."
+msgstr "显示处理条目。"
+
+#: core/admin-pages/page-logs.php:396
+msgid "Show Debug entries."
+msgstr "显示调试条目。"
+
+#: core/admin-pages/page-logs.php:393
+msgid "Advanced Entries for Support and Developers"
+msgstr "支持和开发人员的高级条目"
+
+#: core/admin-pages/page-logs.php:388
+msgid "Use colors to indicate the severity of each entry."
+msgstr "使用颜色来指示每个条目的严重程度。"
+
+#: core/admin-pages/page-logs.php:385
+msgid "Colors"
+msgstr "颜色"
+
+#: core/admin-pages/page-logs.php:380
+msgid "Critical Issues"
+msgstr "严重问题"
+
+#: core/admin-pages/page-logs.php:376
+msgid "All Events"
+msgstr "所有事件"
+
+#: core/admin-pages/page-logs.php:372
+msgid "Important Events"
+msgstr "重要事件"
+
+#: core/admin-pages/page-logs.php:368
+msgid "View Mode"
+msgstr "视图模式"
+
+#: core/admin-pages/page-logs.php:363
+msgid "Number of items per page:"
+msgstr "每页的项目数量："
+
+#: core/admin-pages/page-logs.php:362
+msgid "Pagination"
+msgstr "分页"
+
+#: core/admin-pages/page-logs.php:321
+msgid "Too large to display"
+msgstr "过大而不能显示"
+
+#: core/admin-pages/page-logs.php:301
+msgid "Raw Details"
+msgstr "原始详细信息"
+
+#: core/admin-pages/page-logs.php:285 core/modules/privacy/util.php:140
+msgid "Timestamp"
+msgstr "时间戳"
+
+#: core/admin-pages/page-logs.php:228
+msgid "The server did not receive a valid request. The required \"id\" argument is missing. Please try again."
+msgstr "服务器没有收到有效的请求。缺少所需 \"id\" 的参数。请重试。"
+
+#: core/admin-pages/page-logs.php:207
+msgid "Refresh Page"
+msgstr "刷新页面"
+
+#: core/admin-pages/page-logs.php:206
+msgid "Migration complete. Please refresh the page to see all log entries."
+msgstr "迁移完成。请刷新页面以查看所有日志条目。"
+
+#: core/admin-pages/page-logs.php:125
+msgid "Log entries shown."
+msgstr "日志条目已显示。"
+
+#: core/admin-pages/page-logs.php:118
+msgid "Log entries hidden."
+msgstr "日志条目已隐藏。"
+
+#: core/admin-pages/page-logs.php:111
+msgid "Your screen options saved successfully."
+msgstr "此屏选项已成功保存。"
+
+#: core/admin-pages/page-logs.php:71
+msgid "The log entry migration failed. Reload the page to try again."
+msgstr "日志条目迁移失败。重新加载页面以再次尝试。"
+
+#. translators: 1: loading gif image
+#: core/admin-pages/page-logs.php:70
+msgid "%1$s Migrating log entries from an older format. This message will update when the migration is complete."
+msgstr "%1$s 从旧格式迁移日志条目，迁移完成后，此信息将更新。"
+
+#: core/admin-pages/page-logs.php:68
+msgid "Loading..."
+msgstr "正在加载..."
+
+#: core/admin-pages/page-logs.php:67
+msgid "Hide Raw Details"
+msgstr "隐藏原始详细信息"
+
+#: core/admin-pages/page-logs.php:66
+msgid "Show Raw Details"
+msgstr "显示原始详细信息"
+
+#: core/admin-pages/logs-list-table.php:425
+msgid "No events."
+msgstr "没有事件。"
+
+#: core/admin-pages/logs-list-table.php:328
+msgid "Process (%s)"
+msgstr "处理（%s）"
+
+#: core/admin-pages/logs-list-table.php:327
+msgid "Debug (%s)"
+msgstr "调试（%s）"
+
+#: core/admin-pages/logs-list-table.php:326
+msgid "Notices (%s)"
+msgstr "通知（%s）"
+
+#: core/admin-pages/logs-list-table.php:325
+msgid "Actions (%s)"
+msgstr "操作（%s）"
+
+#: core/admin-pages/logs-list-table.php:324
+msgid "Warnings (%s)"
+msgstr "警告（%s）"
+
+#: core/admin-pages/logs-list-table.php:323
+msgid "Errors (%s)"
+msgstr "错误（%s）"
+
+#: core/admin-pages/logs-list-table.php:322
+msgid "Fatal Errors (%s)"
+msgstr "致命错误（%s）"
+
+#: core/admin-pages/logs-list-table.php:321
+msgid "Critical Issues (%s)"
+msgstr "严重问题（%s）"
+
+#: core/admin-pages/logs-list-table.php:320
+msgid "All Events (%s)"
+msgstr "所有事件（%s）"
+
+#: core/admin-pages/logs-list-table.php:319
+msgid "Important Events (%s)"
+msgstr "重要事件（%s）"
+
+#: core/admin-pages/logs-list-table.php:153 core/admin-pages/page-logs.php:277
+msgid "Type"
+msgstr "类型"
+
+#: core/admin-pages/logs-list-table.php:152 core/admin-pages/page-logs.php:273
+msgid "Module"
+msgstr "模块"
+
+#: core/admin-pages/logs-list-table.php:151
+msgid "ID"
+msgstr "ID"
+
+#: core/admin-pages/logs-list-table.php:122
+#: core/lib/class-itsec-wp-list-table.php:494
+#: core/lib/class-itsec-wp-list-table.php:1273
+msgid "Show more details"
+msgstr "显示更多详细信息"
+
+#: core/admin-pages/logs-list-table.php:119
+msgid "Show only entries for this %s"
+msgstr "只显示这 %s 的条目"
+
+#: core/admin-pages/logs-list-table.php:108
+msgid "Show only entries for this day"
+msgstr "只显示这一天的条目"
+
+#: core/lockout.php:1164
+msgid "Whitelisted Host Triggered Blacklist"
+msgstr "列入白名单的主机触发黑名单"
+
+#: core/sidebar-widget-active-lockouts.php:143
+msgid "An unknown error prevented releasing the host lockout with a lockout ID of %d"
+msgstr "未知的错误阻止了释放锁定 ID 为 %d 的主机锁定"
+
+#: core/sidebar-widget-active-lockouts.php:132
+msgid "An unknown error prevented releasing the username lockout with a lockout ID of %d"
+msgstr "未知的错误阻止了释放锁定 ID 为 %d 的用户名锁定"
+
+#: core/sidebar-widget-active-lockouts.php:121
+msgid "An unknown error prevented releasing the user lockout with a lockout ID of %d"
+msgstr "未知的错误阻止了释放锁定 ID 为 %d 的用户锁定"
+
+#. translators: 1. IP Address 2. Expiration as human time diff
+#: core/sidebar-widget-active-lockouts.php:94
+msgctxt "Host lockout"
+msgid "%1$s - Expires in %2$s"
+msgstr "%1$s -  在 %2$s 到期"
+
+#. translators: 1. Username 2. Expiration as human time diff
+#: core/sidebar-widget-active-lockouts.php:79
+msgctxt "Username lockout"
+msgid "%1$s - Expires in %2$s"
+msgstr "%1$s -  在 %2$s 到期"
+
+#: core/sidebar-widget-active-lockouts.php:74
+msgid "Usernames"
+msgstr "用户名"
+
+#: core/sidebar-widget-active-lockouts.php:60
+msgid "Deleted #%d"
+msgstr "已删除 #%d"
+
+#. translators: 1. Username 2. Expiration as human time diff
+#: core/sidebar-widget-active-lockouts.php:64
+msgctxt "User lockout"
+msgid "%1$s - Expires in %2$s"
+msgstr "%1$s - 在 %2$s 到期"
+
+#: core/modules/global/active.php:63
+msgid "The %l define is deprecated. Please use %s instead."
+msgid_plural "The %l defines are deprecated. Please use %s instead."
+msgstr[0] "%l 定义已被弃用。请改用 %s。"
+
+#: core/lib/class-itsec-scheduler-cron.php:16
+msgid "Four Times per Day"
+msgstr "每日四次"
+
+#: core/response.php:285
+msgid "New notifications available in the %1$sNotification Center%2$s."
+msgstr "%1$s通知中心%2$s提供新的通知。"
+
+#: core/notify.php:202
+msgid "For more details, %1$svisit your security logs%2$s"
+msgstr "有关更多详细信息，%1$s请访问您的安全日志%2$s"
+
+#: core/notify.php:121
+msgid "Your Security Digest for %s"
+msgstr "%s 的安全摘要"
+
+#: core/notify.php:111
+msgid "Your Monthly Security Digest for %s"
+msgstr "%s 的每月安全摘要"
+
+#: core/notify.php:110
+msgid "Monthly Security Digest"
+msgstr "每月安全摘要"
+
+#: core/notify.php:94
+msgid "Your Weekly Security Digest for %s"
+msgstr "%s 的每周安全摘要"
+
+#: core/notify.php:93
+msgid "Weekly Security Digest"
+msgstr "每周安全摘要"
+
+#: core/notify.php:54 core/notify.php:120
+msgid "Security Digest"
+msgstr "安全摘要"
+
+#: core/notify.php:50
+msgid "The Security Digest reduces the number of emails sent so you can receive a summary of lockouts and file change detection scans."
+msgstr "安全摘要减少了发送的邮件的数量，因此您可以收到锁定和文件更改检测扫描的摘要。"
+
+#: core/notify.php:48
+msgid "The Security Digest reduces the number of emails sent so you can receive a summary of lockouts, file change detection scans, and privilege escalations."
+msgstr "安全摘要可减少发送的邮件数量，因此您可以收到锁定摘要，文件更改检测扫描和权限提升。"
+
+#: core/notify.php:45
+msgid "During periods of heavy attack, iThemes Security can generate a LOT of email."
+msgstr "在重度攻击期间，iThemes 安全可能生成大量邮件。"
+
+#. translators: 1: user display name, 2: user login
+#: core/modules/notification-center/validator.php:252
+msgid "%1$s (%2$s)"
+msgstr "%1$s（%2$s）"
+
+#. translators: %1$s notification label, %2$l list of unknown tags.
+#: core/modules/notification-center/validator.php:202
+msgid "Unknown tags for %1$s, %2$l."
+msgstr "未知标签 %1$s，%2$l。"
+
+#: core/modules/notification-center/validator.php:143
+msgid "Unknown schedule for %1$s, %2$s."
+msgstr "未知计划 %1$s，%2$s。"
+
+#: core/modules/notification-center/validator.php:89
+msgid "The %1$s email list must be a string with each entry separated by a new line."
+msgstr "%1$s 邮箱地址列表必须是一个字符串，每个条目用新行分隔。"
+
+#: core/modules/notification-center/validator.php:67
+msgid "Unknown contacts for %1$s, %2$l."
+msgstr "未知联系人 %1$s，%2$l。"
+
+#: core/modules/notification-center/validator.php:23
+msgid "Notifications"
+msgstr "通知"
+
+#: core/modules/notification-center/settings-page.php:291
+msgid "The following email recipients are deprecated. Please create new users for these email addresses or remove them."
+msgstr "以下邮件收件人已被弃用。请为这些邮箱地址创建新用户或将其移除。"
+
+#: core/modules/notification-center/settings-page.php:289
+msgid "Deprecated Recipients"
+msgstr "已弃用的收件人"
+
+#: core/modules/notification-center/settings-page.php:269
+msgctxt "role"
+msgid "All %s users"
+msgstr "所有 %s 用户"
+
+#: core/modules/notification-center/settings-page.php:262
+msgid "Select which users should be emailed."
+msgstr "选择应通过邮件发送的用户。"
+
+#: core/modules/notification-center/settings-page.php:261
+msgid "Recipients for this email."
+msgstr "此邮件的收件人。"
+
+#: core/modules/notification-center/settings-page.php:215
+msgid "Specified when sending"
+msgstr "发送时指定"
+
+#: core/modules/notification-center/settings-page.php:208
+msgid "Admin Emails"
+msgstr "管理员邮件"
+
+#: core/modules/notification-center/settings-page.php:201
+msgid "Site Users"
+msgstr "站点用户"
+
+#: core/modules/notification-center/settings-page.php:200
+#: core/modules/notification-center/settings-page.php:207
+#: core/modules/notification-center/settings-page.php:214
+#: core/modules/notification-center/settings-page.php:221
+#: core/modules/notification-center/settings-page.php:258
+msgid "Recipient"
+msgstr "收件人"
+
+#: core/modules/notification-center/settings-page.php:190
+msgid "Last sent on %s"
+msgstr "上次发送时间 %s"
+
+#: core/modules/notification-center/settings-page.php:188
+msgid "Not yet sent."
+msgstr "尚未发送。"
+
+#: core/modules/notification-center/settings-page.php:183
+msgid "Schedule"
+msgstr "计划"
+
+#: core/modules/notification-center/settings-page.php:165
+msgid "This notification supports email tags. Tags are formatted as follows %s."
+msgstr "此通知支持邮件标签。标签格式如下 %s。"
+
+#: core/modules/notification-center/settings-page.php:162
+msgid "You can use HTML in your message. Allowed HTML includes: %l."
+msgstr "您可以在信息中使用 HTML。允许的 HTML 包括：%l。"
+
+#: core/modules/notification-center/settings-page.php:157
+msgid "Message"
+msgstr "邮件内容"
+
+#: core/modules/notification-center/settings-page.php:149
+msgid "Subject"
+msgstr "主题"
+
+#: core/modules/notification-center/settings-page.php:113
+msgid "Error while sending %1$s notification at %2$s: %3$s"
+msgstr "在 %2$s：%3$s 处发送 %1$s 通知时出错"
+
+#: core/modules/notification-center/settings-page.php:109
+msgid "Unknown error encountered while sending."
+msgstr "发送时遇到未知错误。"
+
+#: core/modules/notification-center/settings-page.php:58
+msgid "Manage and configure email notifications sent by iThemes Security related to various settings modules. If errors are encountered while sending notification emails, they will be reported here.."
+msgstr "管理和配置 iThemes 安全发送的与各种设置模块相关的邮件通知。如果在发送通知邮件时遇到错误，他们将在此处报告。"
+
+#: core/modules/notification-center/settings-page.php:16
+msgid "Manage and configure email notifications sent by iThemes Security related to various settings modules."
+msgstr "管理和配置 iThemes 安全发送的与各种设置模块相关的邮件通知。"
+
+#: core/lib/class-itsec-scheduler-cron.php:24
+#: core/modules/notification-center/class-notification-center.php:1048
+msgid "Monthly"
+msgstr "每月一次"
+
+#: core/lib/class-itsec-scheduler-cron.php:20
+#: core/modules/notification-center/class-notification-center.php:1047
+msgid "Weekly"
+msgstr "每周一次"
+
+#: core/modules/notification-center/class-notification-center.php:625
+msgid "Cannot get lock."
+msgstr "无法锁定。"
+
+#: core/modules/notification-center/class-notification-center.php:565
+#: core/modules/notification-center/settings-page.php:15
+msgid "Notification Center"
+msgstr "通知中心"
+
+#: core/modules/hide-backend/settings.php:59
+msgid "Login Now"
+msgstr "立即登录"
+
+#: core/modules/hide-backend/settings.php:53
+msgid "New Login URL"
+msgstr "新的登录网址"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:396
+msgid "The URL to your website."
+msgstr "您站点的网址。"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:395
+msgid "The WordPress Site Title. Can be changed under Settings -> General -> Site Title"
+msgstr "WordPress 站点标题。可以在 设置 -> 常规 -> 站点标题 下进行更改"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:394
+msgid "The new login link."
+msgstr "新的登录链接。"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:392
+msgid "The login address for {{ $site_title }} has changed. The new login address is {{ $login_url }}. You will be unable to use the old login address."
+msgstr "{{ $site_title }} 的登录地址已更改。新的登录地址是 {{ $login_url }}。您将无法使用旧的登录地址。"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:390
+msgid "%1$sHide Backend%2$s will notify the chosen recipients whenever the login URL is changed."
+msgstr "%1$s隐藏后台%2$s 会在更改登录网址时通知选定的收件人。"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:389
+msgid "Hide Backend – New Login URL"
+msgstr "隐藏后台 – 新的登录网址"
+
+#: core/modules/file-change/scanner.php:1046
+msgid "Changed Files"
+msgstr "已更改的文件"
+
+#: core/modules/file-change/scanner.php:1041
+msgid "Removed Files"
+msgstr "已移除的文件"
+
+#: core/modules/file-change/scanner.php:1036
+msgid "Added Files"
+msgstr "已添加的文件"
+
+#: core/modules/file-change/scanner.php:1028
+msgid "Scan Summary"
+msgstr "扫描摘要"
+
+#: core/modules/file-change/scanner.php:1026
+msgid "A file (or files) on your site have been changed. Please review the report below to verify changes are not the result of a compromise."
+msgstr "您站点上的一个文件（或多个文件）已被更改。请查看下面的报告以验证更改不是妥协的结果。"
+
+#: core/modules/file-change/scanner.php:1024
+msgid "File Scan Report for %s"
+msgstr "%s 的文件扫描报告"
+
+#: core/modules/file-change/class-itsec-file-change.php:151
+#: core/modules/file-change/scanner.php:1023
+msgid "File Change Warning"
+msgstr "文件更改警告"
+
+#: core/modules/file-change/class-itsec-file-change.php:150
+msgid "The %1$sFile Change Detection%2$s module will email a file scan report after changes have been detected."
+msgstr "%1$s文件更改检测%2$s 模块将在检测到更改后通过邮件发送文件扫描报告。"
+
+#: core/modules/file-change/class-itsec-file-change.php:149
+#: core/modules/file-change/logs.php:10
+msgid "File Change"
+msgstr "文件更改"
+
+#: core/modules/backup/class-itsec-backup.php:349
+msgid "The %1$sDatabase Backup%2$s module will send a copy of any backups to the email addresses listed below."
+msgstr "%1$s数据库备份%2$s 模块会将任何备份的副本发送到下面列出的邮箱地址。"
+
+#: core/modules/backup/class-itsec-backup.php:280
+msgid "Site Database Backup for %s"
+msgstr "站点数据库备份为 %s"
+
+#: core/lockout.php:1057
+msgid "Various modules send emails to notify you when a user or host is locked out of your website."
+msgstr "当用户或主机被锁定在您的站点之外时，各种模块会发送邮件通知您。"
+
+#: core/lockout.php:1056
+msgid "Site Lockouts"
+msgstr "站点锁定"
+
+#: core/lib/class-itsec-mail.php:379
+msgid "New Notification from iThemes Security"
+msgstr "来自 iThemes 安全的新通知"
+
+#: core/lib/class-itsec-mail.php:178
+msgctxt "Files modified"
+msgid "Modified"
+msgstr "已修改"
+
+#: core/lib/class-itsec-mail.php:177
+msgctxt "Files removed"
+msgid "Removed"
+msgstr "已移除"
+
+#: core/lib/class-itsec-mail.php:176
+msgctxt "Files added"
+msgid "Added"
+msgstr "已添加"
+
+#: core/lib/class-itsec-mail.php:90
+msgid "To unsubscribe from these notifications, please %1$scontact the site administrator%2$s."
+msgstr "要取消订阅这些通知，请 %1$s联系站点管理员%2$s。"
+
+#: core/lib/class-itsec-mail.php:88
+msgid "This email was generated by the iThemes Security plugin on behalf of %s."
+msgstr "此邮件是由 iThemes 安全插件代表 %s 生成。"
+
+#: core/admin-pages/page-settings.php:115
+msgid "Dismiss Notice"
+msgstr "解除通知"
+
+#: core/modules/wordpress-tweaks/settings-page.php:157
+msgid "<strong>Username Only</strong> - Users can only log in using their user's username. This disables logging in using an email address."
+msgstr "<strong>只接受用户名</strong> - 用户只能使用其用户的用户名登录。这会禁止使用邮箱地址登录。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:156
+msgid "<strong>Email Address Only</strong> - Users can only log in using their user's email address. This disables logging in using a username."
+msgstr "<strong>只接受邮箱地址</strong> - 用户只能使用其用户的邮箱地址登录。这会禁止使用用户名登录。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:155
+msgid "<strong>Email Address and Username (Default)</strong> - Allow users to log in using their user's email address or username. This is the default WordPress behavior."
+msgstr "<strong>邮箱地址和用户名（默认）</strong> - 允许用户使用其用户的邮箱地址或用户名登录。这是默认的 WordPress 行为。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:152
+msgid "By default, WordPress allows users to log in using either an email address or username. This setting allows you to restrict logins to only accept email addresses or usernames."
+msgstr "默认情况下，WordPress 允许用户使用邮箱地址或用户名登录。此设置允许您将登录限制为只接受邮箱地址或用户名。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:150
+#: core/modules/wordpress-tweaks/validator.php:23
+msgid "Login with Email Address or Username"
+msgstr "使用邮箱地址或用户名登录"
+
+#: core/modules/wordpress-tweaks/settings-page.php:44
+msgid "Username Only"
+msgstr "只接受用户名"
+
+#: core/modules/wordpress-tweaks/settings-page.php:43
+msgid "Email Address Only"
+msgstr "只接受邮箱地址"
+
+#: core/modules/wordpress-tweaks/settings-page.php:42
+msgid "Email Address and Username (default)"
+msgstr "邮箱地址和用户名（默认）"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:166
+msgid "<strong>ERROR</strong>: Invalid username or incorrect password."
+msgstr "<strong>错误</strong>：无效的用户名或密码不正确。"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:164
+msgid "<strong>ERROR</strong>: Invalid email address or incorrect password."
+msgstr "<strong>错误</strong>：无效的邮箱地址或密码错误。"
+
+#: core/modules/pro/settings-page.php:11
+msgid "Send an email with a Magic Link that bypasses a username lockout."
+msgstr "发送带有魔法链接的邮件，以绕过用户名锁定。"
+
+#: core/modules/pro/settings-page.php:10
+#: core/modules/security-check/scanner.php:16
+#: core/modules/security-check/scanner.php:53
+msgid "Magic Links"
+msgstr "魔法链接"
+
+#: core/lockout.php:447
+msgid "Error."
+msgstr "错误。"
+
+#: core/modules/ssl/validator.php:9
+msgid "Require SSL"
+msgstr "需要 SSL"
+
+#: core/modules/ssl/settings-page.php:88
+msgid "<strong>Advanced</strong> - Choose different settings for front-end and dashboard page requests."
+msgstr "<strong>高级</strong> - 为前端和仪表盘页面请求选择不同的设置。"
+
+#: core/modules/ssl/settings-page.php:87
+msgid "<strong>Enabled</strong> - Redirect all http page requests to https."
+msgstr "<strong>已启用</strong> - 将所有 http 页面请求重定向到 https。"
+
+#: core/modules/ssl/settings-page.php:86
+msgid "<strong>Disabled</strong> - Use the site's default handling of page requests."
+msgstr "<strong>已禁用</strong> - 使用站点对页面请求的默认处理。"
+
+#: core/modules/ssl/settings-page.php:82
+msgid "Redirect All HTTP Page Requests to HTTPS"
+msgstr "将所有 HTTP 页面请求重定向到 HTTPS"
+
+#: core/modules/ssl/settings-page.php:73
+msgid "Your site does not appear to support SSL. Only enable SSL if you know that the site properly supports SSL since enabling it on a site that does not properly support it will block all access to the site."
+msgstr "您的站点似乎不支持 SSL。只有在知道该站点正确支持 SSL 的情况下才启用 SSL，因为在没有适当支持的站点上启用 SSL 将阻止所有访问该站点的访问。"
+
+#: core/modules/ssl/settings-page.php:71
+msgid "Your site might support SSL. If the site is configured with a valid certificate that is not self-signed, it is highly recommended that you select the \"Enabled\" setting below. This redirects all http traffic to your site to the https address, thus requiring everyone to access the site via SSL. In other words, it will force everyone to use a secure connection to the site."
+msgstr "您的站点可能支持 SSL。如果站点配置了非自签名的有效证书，强烈建议您选择下面的 \"启用\" 设置。这会将所有到您站点的 http 流量重定向到 https 地址，因此要求所有人都通过 SSL 访问该站点。换句话说，它会强制每个人都使用一个安全的站点连接。"
+
+#: core/modules/ssl/settings-page.php:69
+msgid "Your site appears to support SSL. It is highly recommended that you select the \"Enabled\" setting below. This redirects all http traffic to your site to the https address, thus requiring everyone to access the site via SSL. In other words, it will force everyone to use a secure connection to the site."
+msgstr "您的站点似乎支持 SSL。强烈建议您选择下面的 \"启用\" 设置。这会将所有到您站点的 http 流量重定向到 https 地址，因此要求所有人都通过 SSL 访问该站点。换句话说，它会强制每个人都使用一个安全的站点连接。"
+
+#: core/modules/ssl/settings-page.php:46
+msgid "Disabled"
+msgstr "已停用"
+
+#: core/modules/ssl/settings-page.php:30
+msgid "SSL is an important feature for every site. It protects user accounts from being compromised, protects the content from modifications by ISPs and attackers, protects potentially-sensitive information submitted to the site from <a href=\"https://en.wikipedia.org/wiki/Packet_analyzer\">network sniffing</a>, could speed up performance of your site (depending on server configuration), and could improve your site's <a href=\"https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html\">search engine rankings</a>."
+msgstr "SSL 是每个站点的重要功能。其可以保护用户账号免受入侵，保护内容免受 ISP 和攻击者的修改，保护提交给站点的潜在敏感信息免受<a href=\"https://en.wikipedia.org/wiki/Packet_analyzer\">网络嗅探</a>，可以加快您站点的性能（取决于服务器配置），并可以提高您站点的<a href=\"https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html\">搜索引擎排名</a>。"
+
+#: core/modules/ssl/class-itsec-ssl.php:195
+msgid "Redirect All HTTP Page Requests to HTTPS - Security > Settings > Secure Socket Layers (SSL) > SSL for Dashboard"
+msgstr "将所有 HTTP 页面请求重定向到 HTTPS - 安全 > 设置 > 安全套接字层（SSL）> 仪表盘使用 SSL"
+
+#: core/modules/malware/settings-page.php:42
+msgid "Malware scanning is temporarily unavailable, please try again later."
+msgstr "恶意软件扫描暂时不可用，请稍后重试。"
+
+#: core/modules/file-writing/settings-page.php:25
+#: core/modules/file-writing/settings-page.php:54
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+#: core/admin-pages/page-settings.php:117
+msgid "Please press Ctrl/Cmd+C to copy."
+msgstr "请按 Ctrl/Cmd+C 进行复制。"
+
+#: core/admin-pages/page-settings.php:116
+msgid "Copied!"
+msgstr "已复制！"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:181
+msgid "The password has not been updated."
+msgstr "密码尚未更新。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:179
+msgid "Your profile has not been updated."
+msgstr "您的个人资料尚未更新。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:177
+msgid "The user changes have not been saved."
+msgstr "用户更改尚未保存。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:175
+msgid "The user has not been created."
+msgstr "用户尚未创建。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:30
+msgid "Due to site rules, a strong password is required for your account. Please choose a new password that rates as <strong>Strong</strong> on the meter."
+msgstr "由于站点规则，您的账号需要使用强密码。请选择一个新的密码，此密码在强度表上的强度是<strong>最强</strong>。"
+
+#: core/modules/security-check/scanner.php:165
+msgid "The updates_optin value is missing."
+msgstr "此 updates_optin 的值缺失。"
+
+#: core/modules/security-check/scanner.php:160
+msgid "The email value is missing."
+msgstr "此邮件内容缺失。"
+
+#: core/modules/global/active.php:47
+msgid "The ITSEC_DISABLE_MODULES define is set. All iThemes Security protections are disabled. Please make the necessary settings changes and remove the define as quickly as possible."
+msgstr "ITSEC_DISABLE_MODULES 定义已设置。所有 iThemes 安全保护功能均被禁用。请尽可能快地进行必要的设置更改并移除定义。"
+
+#: core/modules/database-prefix/settings-page.php:21
+msgid "<span>WARNING: </span><a href=\"%1$s\" data-module-link=\"backup\">Backup your database</a> before using this tool."
+msgstr "<span>警告：使用此工具前 </span><a href=\"%1$s\" data-module-link=\"backup\">备份您的数据库</a>。"
+
+#: core/lockout.php:519
+msgid "Your lockout settings can be configured in <a href=\"%s\" data-module-link=\"global\">Global Settings</a>."
+msgstr "您的锁定设置可以在<a href=\"%s\" data-module-link=\"global\">全局设置</a>中配置。"
+
+#: core/lib/includes/function.login-header.php:81
+msgid "Powered by WordPress"
+msgstr "由 WordPress 提供"
+
+#: core/lib/includes/function.login-header.php:80
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: core/lib/class-itsec-lib-password-requirements.php:236
+msgid "Invalid User"
+msgstr "无效的用户"
+
+#: core/lib/class-itsec-lib-password-requirements.php:212
+msgid "A password change is required for your account."
+msgstr "您的账号需要更改密码。"
+
+#: core/lib/class-itsec-lib-login-interstitial.php:436
+msgid "&larr; Back to %s"
+msgstr "&larr; 返回到 %s"
+
+#: core/lib/class-itsec-lib-login-interstitial.php:435
+msgid "Are you lost?"
+msgstr "您迷路了吗？"
+
+#: core/lib/class-itsec-lib-password-requirements.php:145
+msgid "Update Password"
+msgstr "更新密码"
+
+#: core/lib/class-itsec-lib-password-requirements.php:136
+msgid "Confirm new password"
+msgstr "确认新密码"
+
+#: core/lib/class-itsec-lib-password-requirements.php:132
+msgid "Strength indicator"
+msgstr "强度指示表"
+
+#: core/lib/class-itsec-lib-password-requirements.php:123
+msgid "New Password"
+msgstr "新密码"
+
+#: core/admin-pages/page-settings.php:476
+msgid "Search"
+msgstr "搜索"
+
+#: core/admin-pages/page-settings.php:472
+msgid "Search Modules"
+msgstr "搜索模块"
+
+#: core/lib/class-itsec-lib-config-file.php:413
+msgid "Added by W3 Total Cache"
+msgstr "已由 W3 Total Cache 添加"
+
+#: core/modules/security-check/scanner.php:64
+msgid "Enabled the Vulnerable Site Protection setting in Two-Factor Authentication."
+msgstr "在双重身份认证中启用易受攻击的站点保护设置。"
+
+#: core/modules/security-check/scanner.php:63
+msgid "Enabled the Vulnerable User Protection setting in Two-Factor Authentication."
+msgstr "在双重身份认证中启用易受攻击的用户保护设置。"
+
+#: core/modules/security-check/scanner.php:62
+msgid "Changed the User Type Protection setting in Two-Factor Authentication to \"Privileged Users\"."
+msgstr "将双重身份认证中的用户类型保护设置更改为 \"特权用户\"。"
+
+#: core/modules/security-check/scanner.php:61
+msgid "Changed the Authentication Methods Available to Users setting in Two-Factor Authentication to \"All Methods\"."
+msgstr "将双重身份认证中设置的用户可以使用的身份认证方法更改为 \"所有方法\"。"
+
+#: core/modules/backup/class-itsec-backup.php:129
+msgid "Unable to write the backup file. This may be due to a permissions or disk space issue."
+msgstr "无法写入备份文件。这可能是由于权限或磁盘空间问题。"
+
+#: core/modules/backup/class-itsec-backup.php:123
+msgid "Unable to create the backup directory due to an unknown error."
+msgstr "由于未知的错误，无法创建备份目录。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:113
+msgid "<strong>Default Access</strong> - Access to REST API data is left as default. Information including published posts, user details, and media library entries is available for public access."
+msgstr "<strong>默认访问</strong> - 对 REST API 数据的访问权限保留为默认值。包括发布的文章，用户详细信息和媒体库条目在内的信息可供公众查阅。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:112
+msgid "<strong>Restricted Access</strong> - Restrict access to most REST API data. This means that most requests will require a logged in user or a user with specific privileges, blocking public requests for potentially-private data. We recommend selecting this option."
+msgstr "<strong>限制访问</strong> - 限制对大多数 REST API 数据的访问。这意味着大多数请求都需要已登录用户或具有特定权限的用户，从而阻止公众请求潜在的隐私数据。我们建议选择此选项。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:109
+msgid "The <a href=\"%1$s\">WordPress REST API</a> is part of WordPress and provides developers with new ways to manage WordPress. By default, it could give public access to information that you believe is private on your site. For more details, see our post about the WordPress REST API <a href=\"%1$s\">here</a>."
+msgstr "<a href=\"%1$s\">WordPress REST API</a> 是 WordPress 的一部分，为开发人员提供了管理 WordPress 的新方法。默认情况下，其可以让公众访问您认为在您的站点上是隐私的信息。有关更多详细信息，请参阅我们的博客，其中介绍 WordPress REST API 在<a href=\"%1$s\">此处</a>。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:38
+msgid "Default Access"
+msgstr "默认访问"
+
+#: core/modules/wordpress-tweaks/settings-page.php:37
+msgid "Restricted Access (recommended)"
+msgstr "限制访问（推荐）"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:220
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:235
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:262
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:284
+msgid "You do not have sufficient permission to access this endpoint. Access to REST API requests is restricted by iThemes Security settings."
+msgstr "您没有足够的权限来访问此端点。访问 REST API 请求受到 iThemes 安全设置的限制。"
+
+#: core/modules/security-check/scanner.php:70
+msgid "Changed the REST API setting in WordPress Tweaks to \"Restricted Access\"."
+msgstr "将 WordPress 微调中的 REST API 设置更改为 \"限制访问\"。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:107
+#: core/modules/wordpress-tweaks/validator.php:18
+msgid "REST API"
+msgstr "REST API"
+
+#: core/modules/wordpress-tweaks/settings-page.php:146
+msgid "Enabling this feature helps protect visitors to this site (including logged in users) from phishing attacks launched by a linked site. Details on tabnapping via target=\"_blank\" links can be found in <a href=\"%s\">this article</a>."
+msgstr "启用此功能有助于保护本站点访客（包括已登录用户）免受链接站点发起的网络钓鱼攻击。有关通过 target=\"_blank\" 链接进行反绑架的详细信息，请参阅 <a href=\"%s\">此文档</a>。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:145
+msgid "Alter target=\"_blank\" links to protect against tabnapping"
+msgstr "修改 target=\"_blank\" 链接以防止反绑架"
+
+#: core/modules/wordpress-tweaks/settings-page.php:142
+#: core/modules/wordpress-tweaks/validator.php:22
+msgid "Protect Against Tabnapping"
+msgstr "防止反绑架"
+
+#: core/modules/global/settings-page.php:139
+msgid "The length of time a host or user will be banned from this site after hitting the limit of bad logins. The default setting of 15 minutes is recommended as increasing it could prevent attacking IP addresses from being added to the blacklist."
+msgstr "在达到不良登录限制后，主机或用户将被禁止访问此站点的时间长度。推荐使用 15 分钟的默认设置，因为它可以防止攻击 IP 地址被添加到黑名单。"
+
+#. translators: 1: site URL, 2: email subject
+#: core/lib/class-itsec-mail.php:375
+msgid "[%1$s] %2$s"
+msgstr "[%1$s] %2$s"
+
+#: core/lib/class-itsec-mail.php:218
+msgid "Reason"
+msgstr "原因"
+
+#: core/lib/class-itsec-mail.php:217
+msgid "Lockout in Effect Until"
+msgstr "锁定生效直到"
+
+#: core/lib/class-itsec-mail.php:216
+msgid "Host/User"
+msgstr "主机/用户"
+
+#. translators: 1: Hostname
+#: core/lib/class-itsec-mail.php:207
+msgid "<b>Host:</b> %1$s"
+msgstr "<b>主机：</b>%1$s"
+
+#. translators: 1: Username
+#: core/lib/class-itsec-mail.php:204
+msgid "<b>User:</b> %1$s"
+msgstr "<b>用户：</b>%1$s"
+
+#: core/lockout.php:1133
+msgid "Visit Banned Users Settings"
+msgstr "访问禁止的用户设置"
+
+#: core/lockout.php:1132
+msgid "Release the permanent host ban from Ban Hosts list in the Banned Users section of the settings page."
+msgstr "在设置页面的禁止用户部分，从禁止主机列表中释放永久主机禁止。"
+
+#: core/lockout.php:1128
+msgid "Visit Settings Page"
+msgstr "访问设置页面"
+
+#: core/lockout.php:1127
+msgid "Release lockouts from the Active Lockouts section of the settings page."
+msgstr "从设置页面的活动锁定部分释放锁定。"
+
+#: core/modules/strong-passwords/settings-page.php:41
+msgid "For more information on WordPress roles and capabilities please see <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%1$s</a>."
+msgstr "有关 WordPress 角色和功能的更多信息，请参阅<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%1$s</a>。"
+
+#: core/modules/strong-passwords/class-itsec-strong-passwords.php:172
+msgid "<strong>Error</strong>: Due to site rules, a strong password is required. Please choose a new password that rates as <strong>Strong</strong> on the meter."
+msgstr "<strong>错误</strong>：由于站点规则，需要使用强密码。请选择一个新的密码，此密码在强度表上的强度是<strong>最强</strong>。"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:126
+msgid "Documentation: <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+msgstr "文档：<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:110
+msgid "Infected URL: <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+msgstr "受感染的网址：<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">%2$s</a>"
+
+#: core/modules/ban-users/settings-page.php:33
+msgid "As a getting-started point you can include the blacklist developed by Jim Walker."
+msgstr "作为一个入门点，您可以添加 Jim Walker 开发的黑名单。"
+
+#: core/modules/system-tweaks/settings-page.php:104
+msgid "Disable PHP execution in the themes directory. This blocks requests to PHP files inside theme directories that can be exploited directly."
+msgstr "禁用 themes 目录中的 PHP 执行。这阻止了可以直接利用 themes 目录内的 PHP 文件的请求。"
+
+#: core/modules/system-tweaks/settings-page.php:103
+msgid "Disable PHP in Themes"
+msgstr "禁用 Themes 目录的 PHP"
+
+#: core/modules/backup/class-itsec-backup.php:280
+#: core/modules/backup/class-itsec-backup.php:348
+#: core/modules/backup/class-itsec-backup.php:350
+msgid "Database Backup"
+msgstr "数据库备份"
+
+#: core/modules/backup/class-itsec-backup.php:281
+msgid "Attached is the database backup file for your site."
+msgstr "附件是您的站点的数据库备份文件。"
+
+#: core/modules/backup/class-itsec-backup.php:284
+msgid "Website"
+msgstr "站点"
+
+#: core/modules/system-tweaks/config-generators.php:91
+#: core/modules/system-tweaks/config-generators.php:215
+msgid "Disable PHP in Plugins - Security > Settings > System Tweaks > PHP in Plugins"
+msgstr "禁用 Plugins 目录的 PHP  - 安全 > 设置 > 系统微调 > Plugins 目录的 PHP"
+
+#: core/modules/system-tweaks/config-generators.php:103
+#: core/modules/system-tweaks/config-generators.php:228
+msgid "Disable PHP in Themes - Security > Settings > System Tweaks > PHP in Themes"
+msgstr "禁用 Themes 目录的 PHP - 安全 > 设置 > 系统微调 > Themes 目录的 PHP"
+
+#: core/modules/system-tweaks/settings-page.php:48
+msgid "Filter out hits with the trace, delete, or track request methods. This should not be enabled if you use the <a href=\"%s\">WordPress REST API</a>."
+msgstr "使用追溯，删除或跟踪请求方法筛选出匹配结果。如果您使用<a href=\"%s\">WordPress REST API</a>，则不应启用此功能。"
+
+#: core/modules/system-tweaks/settings-page.php:84
+#: core/modules/system-tweaks/validator.php:16
+msgid "PHP in Uploads"
+msgstr "Uploads 目录的 PHP"
+
+#: core/modules/system-tweaks/settings-page.php:88
+msgid "Disable PHP execution in the uploads directory. This blocks requests to maliciously uploaded PHP files in the uploads directory."
+msgstr "禁用 uploads 目录中的 PHP 执行。这阻止了可以直接利用 uploads 目录内的 PHP 文件的请求。"
+
+#: core/modules/system-tweaks/settings-page.php:92
+#: core/modules/system-tweaks/validator.php:17
+msgid "PHP in Plugins"
+msgstr "Plugins 目录的 PHP"
+
+#: core/modules/system-tweaks/settings-page.php:95
+msgid "Disable PHP in Plugins"
+msgstr "禁用 Plugins 目录的 PHP"
+
+#: core/modules/system-tweaks/settings-page.php:96
+msgid "Disable PHP execution in the plugins directory. This blocks requests to PHP files inside plugin directories that can be exploited directly."
+msgstr "禁用 plugins 目录中的 PHP 执行。这阻止了可以直接利用 plugins 目录内的 PHP 文件的请求。"
+
+#: core/modules/system-tweaks/settings-page.php:100
+#: core/modules/system-tweaks/validator.php:18
+msgid "PHP in Themes"
+msgstr "Themes 目录的 PHP"
+
+#: core/lib/class-itsec-mail.php:162 core/sidebar-widget-active-lockouts.php:89
+msgid "Hosts"
+msgstr "主机"
+
+#: core/lib/class-itsec-mail.php:161 core/sidebar-widget-active-lockouts.php:51
+msgid "Users"
+msgstr "用户"
+
+#: core/lib/class-itsec-mail.php:73
+msgid "Learn simple WordPress security tips — including 3 kinds of security your site needs and 4 best security practices for keeping your WordPress site safe with our <a href=\"%s\">free guide</a>."
+msgstr "学习简单的 WordPress 安全提示 — 包括您站点需要的 3 种安全性以及 4 种最佳安全实践，以便使用我们的<a href=\"%s\">免费指南</a>保护您的 WordPress 站点的安全。"
+
+#: core/lib/class-itsec-mail.php:72
+msgid "Free WordPress Security Guide"
+msgstr "免费的 WordPress 安全指南"
+
+#: core/lib/class-itsec-mail.php:71
+msgid "To unsubscribe from these updates, visit the %1$sSettings page%2$s in the iThemes Security plugin menu."
+msgstr "要取消订阅这些更新，请访问 iThemes 安全插件菜单中的 %1$s设置页面%2$s。"
+
+#: core/lib/class-itsec-mail.php:71
+msgid "This email was generated by the iThemes Security plugin."
+msgstr "此邮件是由 iThemes 安全插件生成。"
+
+#: core/lib/class-itsec-mail.php:69
+msgid "Pro customers can contact <a href=\"%s\">iThemes Helpdesk</a> for help. Our support team answers questions Monday – Friday, 8am – 5pm (CST)."
+msgstr "专业版客户可以联系 <a href=\"%s\">iThemes 服务中心</a> 寻求帮助。我们的支持团队在星期一至星期五上午 8 点至下午 5 点（CST）解答问题。"
+
+#: core/lib/class-itsec-mail.php:66
+msgid "Read iThemes Security documentation and Frequently Asked Questions on <a href=\"%s\">the Codex</a>."
+msgstr "阅读 iThemes 安全文档和关于 <a href=\"%s\">Codex</a> 的常见问题解答。"
+
+#: core/lib/class-itsec-mail.php:65
+msgid "Documentation"
+msgstr "文档"
+
+#: core/lib/class-itsec-mail.php:64
+msgid "Help & Support"
+msgstr "帮助 & 支持"
+
+#: core/lib/class-itsec-mail.php:63
+msgid "Make the most of iThemes Security features with our <a href=\"%s\">free iThemes Security tutorials</a>."
+msgstr "使用我们的<a href=\"%s\">免费 iThemes 安全教程</a>充分利用 iThemes 安全功能。"
+
+#: core/lib/class-itsec-mail.php:62
+msgid "Tutorials"
+msgstr "教程"
+
+#: core/lib/class-itsec-mail.php:61
+msgid "Read the latest in WordPress Security news, tips, and updates on <a href=\"%s\">iThemes Blog</a>."
+msgstr "阅读 <a href=\"%s\">iThemes 博客</a>上的最新 WordPress 安全新闻，提示和更新。"
+
+#: core/lib/class-itsec-mail.php:60
+msgid "Articles"
+msgstr "资讯"
+
+#: core/lib/class-itsec-mail.php:59
+msgid "Security Resources"
+msgstr "安全资源"
+
+#: core/lib/class-itsec-mail.php:46
+msgid "Why go Pro? <a href=\"%s\">Check out the Free/Pro comparison chart.</a>"
+msgstr "为什么要购买专业版？<a href=\"%s\">查看免费版/专业版比较图表。</a>"
+
+#: core/lib/class-itsec-mail.php:44
+msgid "Want two-factor authentication, scheduled malware scanning, ticketed support and more?"
+msgstr "需要双重身份认证，恶意软件扫描计划，服务单支持等等吗？"
+
+#: core/lib/class-itsec-mail.php:332
+msgid "Debug info (source page): %s"
+msgstr "调试信息（源页面）：%s"
+
+#: core/notify.php:209
+msgid "Run a Security Check ✓"
+msgstr "运行安全检查 ✓"
+
+#: core/notify.php:208
+msgid "Ensure your site is using recommended settings and features with a security check."
+msgstr "确保您的站点使用建议的设置和功能并进行安全检查。"
+
+#: core/notify.php:207
+msgid "Is your site as secure as it could be?"
+msgstr "您的站点是否安全？"
+
+#: core/notify.php:186
+msgid "Messages"
+msgstr "信息"
+
+#: core/notify.php:160
+msgid "File changes detected on the site."
+msgstr "在站点上检测到文件更改."
+
+#: core/notify.php:159
+msgid "File Changes"
+msgstr "文件更改"
+
+#: core/notify.php:155
+msgid "No lockouts since the last email check."
+msgstr "自上次邮件检查后未锁定。"
+
+#: core/notify.php:129
+msgid "The following is a summary of security related activity on your site: %s"
+msgstr "以下是您站点上与安全相关的活动摘要：%s"
+
+#: core/notify.php:84
+msgid "Your Daily Security Digest for %s"
+msgstr "%s 的每日安全摘要"
+
+#: core/modules/pro/settings-page.php:158
+msgid "Protect your site when outdated software is not updated quickly enough."
+msgstr "当过时的软件更新不够快时，保护您的站点。"
+
+#: core/modules/pro/settings-page.php:157
+msgid "Version Management"
+msgstr "版本管理"
+
+#: core/modules/pro/settings-page.php:126
+msgid "Every user on your site affects overall security. See how your users might be affecting your security and take action when needed."
+msgstr "您站点上的每个用户都会影响整体安全。了解您的用户如何影响您的安全并在需要时采取相应措施。"
+
+#: core/modules/pro/settings-page.php:125
+msgid "User Security Check"
+msgstr "用户安全检查"
+
+#: core/modules/security-check/settings-page.php:57
+msgid "When the button below is clicked the following modules will be enabled and configured:"
+msgstr "当点击下面的按钮时，以下模块将被启用和配置："
+
+#: core/modules/security-check/settings-page.php:56
+msgid "Some features and settings are recommended for every site to run. This tool will ensure that your site is using these recommendations."
+msgstr "建议每个站点运行一些功能和设置。此工具将确保您的站点使用这些建议。"
+
+#: core/modules/security-check/scanner.php:112
+msgid "Activating Network Brute Force Protection..."
+msgstr "正在激活网络暴力攻击保护..."
+
+#: core/modules/security-check/settings-page.php:21
+msgid "Run Secure Site Again"
+msgstr "再次运行保护站点"
+
+#: core/modules/security-check/settings-page.php:20
+msgid "Securing Site..."
+msgstr "正在保护站点..."
+
+#: core/modules/security-check/settings-page.php:10
+msgid "Ensure that your site is using the recommended features and settings."
+msgstr "确保您的站点正在使用推荐的功能和设置。"
+
+#: core/modules/security-check/scanner.php:183
+msgid "Your site is now using Network Brute Force Protection."
+msgstr "您的站点现在使用网络暴力攻击保护。"
+
+#. Translators: 1: feature name
+#: core/modules/security-check/scanner.php:150
+msgid "Enabled %1$s."
+msgstr "已启用 %1$s。"
+
+#. Translators: 1: feature name
+#: core/modules/security-check/scanner.php:144
+msgid "%1$s is enabled as recommended."
+msgstr "%1$s 已启用（推荐）。"
+
+#: core/modules/security-check/scanner.php:109
+msgid "Activate Network Brute Force Protection"
+msgstr "激活网络暴力攻击保护"
+
+#: core/modules/security-check/scanner.php:101
+msgid "Receive email updates about WordPress Security from iThemes: %1$s"
+msgstr "从 iThemes 接收关于 WordPress 安全的邮件更新：%1$s"
+
+#: core/modules/security-check/scanner.php:96
+msgid "Email Address: %1$s"
+msgstr "邮箱地址：%1$s"
+
+#: core/modules/security-check/scanner.php:94
+msgid "With Network Brute Force Protection, your site is protected against attackers found by other sites running iThemes Security. If your site identifies a new attacker, it automatically notifies the network so that other sites are protected as well. To join this site to the network and enable the protection, click the button below."
+msgstr "借助网络暴力攻击保护，您的站点可以抵御运行 iThemes 安全的其他站点发现的攻击者，如果您的站点识别出新的攻击者，其会自动通知网络，以便其他站点也受到保护，要将此站点加入网络并启用保护，请点击下面的按钮。"
+
+#: core/modules/security-check/scanner.php:72
+msgid "Enabled the Write to Files setting in Global Settings."
+msgstr "在全局设置中启用写入文件设置。"
+
+#: core/modules/security-check/scanner.php:69
+msgid "Changed the Multiple Authentication Attempts per XML-RPC Request setting in WordPress Tweaks to \"Block\"."
+msgstr "将 WordPress 微调中的每个 XML-RPC 请求设置的多重认证尝试更改为 \"阻止\"。"
+
+#: core/modules/security-check/scanner.php:68
+msgid "Disabled the File Editor in WordPress Tweaks."
+msgstr "在 WordPress 微调中已禁用文件编辑器。"
+
+#: core/modules/security-check/scanner.php:55
+msgid "Enabled the Email Notifications setting in Malware Scan Scheduling."
+msgstr "在恶意软件扫描计划中已启用 \"邮件通知\" 设置。"
+
+#: core/modules/security-check/scanner.php:49
+msgid "Enabled the Enable Ban Lists setting in Banned Users."
+msgstr "在禁止的用户中已启用 \"启用禁止列表\" 设置。"
+
+#: core/modules/file-permissions/settings-page.php:109
+msgid "Reload File Permissions Details"
+msgstr "重新加载文件权限的详细信息"
+
+#: core/modules/file-permissions/settings-page.php:98
+msgid "OK"
+msgstr "确定"
+
+#: core/modules/file-permissions/settings-page.php:20
+msgid "Load File Permissions Details"
+msgstr "加载文件权限详细信息"
+
+#: core/modules/file-permissions/settings-page.php:19
+msgid "Click the button to load the current file permissions."
+msgstr "点击按钮加载当前的文件权限。"
+
+#: core/modules/file-permissions/settings-page.php:7
+msgid "Lists file and directory permissions of key areas of the site."
+msgstr "列出站点关键区域的文件和目录权限。"
+
+#: core/modules/file-permissions/settings-page.php:6
+msgid "File Permissions"
+msgstr "文件权限"
+
+#. translators: 1: New directory name
+#: core/modules/content-directory/settings-page.php:104
+msgid "The content directory was successfully changed to <code>%1$s</code>."
+msgstr "此 content 目录已成功更改为 <code>%1$s</code>。"
+
+#: core/sidebar-widget-active-lockouts.php:152
+#: core/sidebar-widget-temp-whitelist.php:114
+msgid "No lockouts were selected for removal."
+msgstr "未能移除选定的锁定。"
+
+#: core/sidebar-widget-active-lockouts.php:150
+#: core/sidebar-widget-temp-whitelist.php:112
+msgid "Successfully removed the selected lockout."
+msgid_plural "Successfully remove the selected lockouts."
+msgstr[0] "已成功移除选定的锁定。"
+
+#: core/sidebar-widget-temp-whitelist.php:105
+msgid "An unknown error prevented releasing the lockout the host with a lockout ID of %d"
+msgstr "未知的错误阻止了释放锁定 ID 为 %d 的锁定主机"
+
+#: core/sidebar-widget-temp-whitelist.php:94
+msgid "An unknown error prevented releasing the lockout the user with a lockout ID of %d"
+msgstr "未知的错误阻止了释放锁定 ID 为 %d 的锁定用户"
+
+#: core/sidebar-widget-active-lockouts.php:104
+#: core/sidebar-widget-temp-whitelist.php:77
+msgid "Release Selected Lockouts"
+msgstr "释放选定的锁定"
+
+#: core/sidebar-widget-temp-whitelist.php:67
+msgctxt "HOST - Expires in TIME"
+msgid "%1$s - Expires in %2$s"
+msgstr "%1$s - 在 %2$s 到期"
+
+#: core/sidebar-widget-temp-whitelist.php:52
+msgctxt "USER - Expires in TIME"
+msgid "%1$s - Expires in %2$s"
+msgstr "%1$s - 在 %2$s 到期"
+
+#: core/sidebar-widget-active-lockouts.php:46
+#: core/sidebar-widget-temp-whitelist.php:42
+msgid "There are no active lockouts at this time."
+msgstr "目前没有活动锁定。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:7
+msgid "Advanced settings that improve security by changing default WordPress behavior."
+msgstr "通过更改默认的 WordPress 行为来提高安全性的高级设置。"
+
+#: core/modules/system-tweaks/settings-page.php:7
+msgid "Advanced settings that improve security by changing the server config for this site."
+msgstr "通过更改此站点的服务器配置来提高安全性的高级设置。"
+
+#: core/modules/security-check/scanner.php:59
+#: core/modules/strong-passwords/settings-page.php:9
+msgid "Strong Password Enforcement"
+msgstr "强制强密码"
+
+#: core/modules/ssl/settings-page.php:10
+msgid "Configure use of SSL to ensure that communications between browsers and the server are secure."
+msgstr "配置 SSL 的使用以确保浏览器和服务器之间的通信是安全的。"
+
+#: core/modules/ssl/settings-page.php:9
+msgid "SSL"
+msgstr "SSL"
+
+#: core/modules/ssl/class-itsec-ssl-admin.php:33
+msgid "Enable SSL:"
+msgstr "启用 SSL："
+
+#: core/modules/salts/validator.php:55
+msgid "The WordPress salts were successfully regenerated."
+msgstr "WordPress salts 已成功重新生成。"
+
+#: core/modules/salts/validator.php:35
+msgid "You must check the Change WordPress Salts checkbox in order to change the WordPress salts."
+msgstr "您必须勾选更改 WordPress Salts 复选框才能更改 WordPress salts。"
+
+#: core/modules/salts/validator.php:16
+msgid "Last Generated"
+msgstr "上次生成"
+
+#: core/modules/salts/utilities.php:50
+msgid "Unable to update the <code>wp-config.php</code> file in order to update the salts. You will need to manually update the file. Error details as follows: %1$s (%2$s)"
+msgstr "无法更新 <code>wp-config.php</code> 文件以更新 salts。您将需要手动更新文件。错误的详细信息如下：%1$s（%2$s）"
+
+#: core/modules/salts/utilities.php:16
+msgid "Unable to read the <code>wp-config.php</code> file in order to update the salts. You will need to manually update the file. Error details as follows: %1$s (%2$s)"
+msgstr "无法读取 <code>wp-config.php</code> 文件以更新 salts。您将需要手动更新文件。错误的详细信息如下：%1$s（%2$s）"
+
+#: core/modules/salts/settings-page.php:33
+msgid "Check this box and then save settings to change your WordPress Salts."
+msgstr "勾选此框，然后保存设置以更改您的 WordPress Salts。"
+
+#: core/modules/salts/settings-page.php:7
+msgid "Update the secret keys WordPress uses to increase the security of your site."
+msgstr "更新 WordPress 用来加强站点安全性的隐私密钥。"
+
+#: core/modules/pro/settings-page.php:94
+msgid "Export your settings as a backup or to import on other sites for quicker setup."
+msgstr "将您的设置导出为备份或导入其他站点以加快设置。"
+
+#: core/modules/pro/settings-page.php:93
+msgid "Settings Import and Export"
+msgstr "设置导入和导出"
+
+#: core/modules/pro/settings-page.php:142
+msgid "Log user actions such as login, saving content and others."
+msgstr "记录用户操作，如登录，保存内容等。"
+
+#: core/modules/pro/settings-page.php:141
+#: core/modules/security-check/scanner.php:21
+#: core/modules/security-check/scanner.php:66
+msgid "User Logging"
+msgstr "用户记录"
+
+#: core/modules/pro/settings-page.php:110
+msgid "Two-Factor Authentication greatly increases the security of your WordPress user account by requiring additional information beyond your username and password in order to log in."
+msgstr "双重身份认证通过要求登录用户名和密码之外的其他信息来大大提高 WordPress 用户账号的安全性。"
+
+#: core/modules/pro/settings-page.php:109
+#: core/modules/security-check/scanner.php:20
+#: core/modules/security-check/scanner.php:60
+msgid "Two-Factor Authentication"
+msgstr "双重身份认证"
+
+#: core/modules/pro/settings-page.php:75
+msgid "Protect your site from bots by verifying that the person submitting comments or logging in is indeed human."
+msgstr "通过验证提交评论或登录的人确实是人为的，保护您的站点免受机器人攻击。"
+
+#: core/modules/pro/settings-page.php:74
+msgid "reCAPTCHA"
+msgstr "验证码"
+
+#: core/modules/pro/settings-page.php:43
+msgid "Strengthen the passwords on the site with automated password expiration."
+msgstr "使用自动密码过期加强站点上的密码。"
+
+#: core/modules/pro/settings-page.php:42
+msgid "Password Expiration"
+msgstr "密码过期"
+
+#: core/modules/pro/settings-page.php:59
+msgid "Allow administrators to temporarily grant extra access to a user of the site for a specified period of time."
+msgstr "允许管理员在指定的时间段内临时授予对站点用户的额外访问权限。"
+
+#: core/modules/pro/settings-page.php:58
+msgid "Privilege Escalation"
+msgstr "权限提升"
+
+#: core/modules/pro/settings-page.php:27
+msgid "Protect your site with automated malware scans. When this feature is enabled, the site will be automatically scanned each day. If a problem is found, an email is sent to select users."
+msgstr "使用自动恶意软件扫描保护您的站点。启用此功能后，该站点将每天自动扫描。如果发现问题，则会发送邮件到选定的用户。"
+
+#: core/modules/pro/settings-page.php:26
+#: core/modules/security-check/scanner.php:17
+#: core/modules/security-check/scanner.php:54
+msgid "Malware Scan Scheduling"
+msgstr "恶意软件扫描计划"
+
+#: core/modules/multisite-tweaks/settings-page.php:7
+msgid "Advanced settings that improve security by changing default WordPress Multisite behavior."
+msgstr "通过更改默认的 WordPress 多站点行为来提高安全性的高级设置。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:252
+msgid "The scan failed due to an unexpected technical error. The response from the wp_remote_get function contains an empty body entry. Since the body entry contains the response for the request to Sucuri's servers, the response cannot be processed. This could indicate a plugin/theme compatibility issue or a problem in WordPress."
+msgstr "由于意外的技术错误，扫描失败。来自 wp_remote_get 函数的响应包含一个空的正文条目。由于正文条目包含对 Sucuri 服务器的请求响应，因此无法处理响应。这可能表明插件/主题兼容性问题或 WordPress 的问题。"
+
+#: core/modules/ipcheck/validator.php:20
+msgid "API Secret"
+msgstr "API 隐私密钥"
+
+#: core/modules/ipcheck/utilities.php:103
+msgid "An unknown error prevented the API key secrete request from succeeding. The request for an API key secret returned an empty key secret. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 隐私密钥的请求成功。对 API 隐私密钥的请求返回了一个空的隐私密钥。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/utilities.php:97
+msgid "An unknown error prevented the API key secret request from succeeding. The request for an API key secret returned an unrecognized response. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 隐私密钥请求的成功。对 API 隐私密钥的请求返回了无法识别的响应。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/utilities.php:95
+msgid "There was an error returned from the Network Brute Force Protection API: %1$s"
+msgstr "从网络暴力攻击保护 API 返回错误：%1$s"
+
+#: core/modules/ipcheck/utilities.php:87
+msgid "An unknown error prevented the API key secret request from succeeding. This problem could be due to a server configuration or plugin compatibility issue. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 隐私密钥请求的成功。这个问题可能是由于服务器配置或插件兼容性问题。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/utilities.php:69
+msgid "An unknown error prevented the API key secret request from succeeding. The request for an API key submitted an empty key. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 隐私密钥请求的成功。对 API 密钥的请求提交了一个空密钥。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/utilities.php:50
+msgid "An unknown error prevented the API key request from succeeding. The request for an API key returned an empty key. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 密钥请求的成功。对 API 密钥的请求返回了一个空密钥。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/utilities.php:44
+msgid "An unknown error prevented the API key request from succeeding. The request for an API key returned an unrecognized response. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 密钥请求的成功。对 API 密钥的请求返回了无法识别的响应。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/utilities.php:38
+msgid "An unknown error prevented the API key request from succeeding. This problem could be due to a server configuration or plugin compatibility issue. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 密钥请求的成功。这个问题可能是由于服务器配置或插件兼容性问题。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/utilities.php:20
+msgid "The supplied email address (%s) is invalid. A valid email address is required in order to sign up for the Network Bruteforce Protection by iThemes."
+msgstr "提供的邮箱地址 (%s) 无效。需要有效的邮箱地址才能注册 iThemes 的网络暴力攻击保护。"
+
+#: core/modules/ipcheck/settings-page.php:93
+msgid "Automatically ban IPs reported as a problem by the network."
+msgstr "自动禁止向网络报告为问题的 IP。"
+
+#: core/modules/ipcheck/settings-page.php:90
+#: core/modules/ipcheck/validator.php:21
+msgid "Ban Reported IPs"
+msgstr "禁止报告的 IP"
+
+#: core/modules/ipcheck/settings-page.php:82
+#: core/modules/ipcheck/validator.php:19
+msgid "API Key"
+msgstr "API 密钥"
+
+#: core/modules/ipcheck/settings-page.php:72
+#: core/modules/ipcheck/validator.php:17
+msgid "Receive Email Updates"
+msgstr "接收邮件更新"
+
+#: core/modules/ipcheck/settings-page.php:63
+msgid "To get started with iThemes Network Brute Force Protection, please supply your email address and save the settings. This will provide this site with an API key and starts the site protection."
+msgstr "要开始使用 iThemes 网络暴力攻击保护，请提供您的邮箱地址并保存设置。这将为该站点提供一个 API 密钥并启动站点保护。"
+
+#: core/modules/ipcheck/settings-page.php:39
+msgid "An unknown error prevented the API key from being reset properly. An unrecognized response was received. Please wait a few minutes and try again."
+msgstr "未知错误阻止了 API 密钥被正确重置。收到一个无法识别的响应。请稍等几分钟，然后重试。"
+
+#: core/modules/ipcheck/settings-page.php:20
+msgid "Resetting..."
+msgstr "正在重置..."
+
+#: core/modules/ipcheck/settings-page.php:10
+msgid "Join a network of sites that reports and protects against bad actors on the internet."
+msgstr "加入站点的网络报告并防止互联网上的不良行为。"
+
+#: core/modules/ipcheck/settings-page.php:9
+#: core/modules/security-check/scanner.php:18
+#: core/modules/security-check/scanner.php:88
+msgid "Network Brute Force Protection"
+msgstr "网络暴力攻击保护"
+
+#: core/modules/hide-backend/validator.php:57
+msgid "The Hide Backend feature is now disabled. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Notification Center."
+msgstr "隐藏后台功能现在已被禁用。您的新登录网址是 <strong><code>%1$s</code></strong>。提醒也已发送到 iThemes 安全的通知中心设置的通知邮箱地址。"
+
+#: core/modules/hide-backend/validator.php:54
+msgid "The Hide Backend feature is now active. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Notification Center."
+msgstr "隐藏后台功能现在处于活动状态。您的新登录网址是 <strong><code>%1$s</code></strong>。提醒也已发送到 iThemes 安全的通知中心设置的通知邮箱地址。"
+
+#: core/modules/hide-backend/validator.php:51
+msgid "The Hide Backend feature is now active. Your new login URL is <strong><code>%1$s</code></strong>. Please note this may be different than what you sent as the URL was sanitized to meet various requirements. A reminder has also been sent to the notification email addresses set in iThemes Security's Notification Center."
+msgstr "隐藏后台功能现在处于活动状态. 您的新登录网址是 <strong><code>%1$s</code></strong>. 请注意, 这可能与您发送的网址有所不同, 因为网址已经过清理以符合各种要求. 提醒也已发送到 iThemes 安全的通知中心设置的通知邮箱地址."
+
+#: core/modules/hide-backend/validator.php:43
+msgid "The Login Slug cannot be \"%1$s\" as WordPress uses that slug."
+msgstr "登录别名不能使用\"%1$s\"，因为 WordPress 使用了此别名。"
+
+#: core/modules/hide-backend/settings-page.php:82
+msgid "Login URL: %s"
+msgstr "登录网址：%s"
+
+#: core/modules/hide-backend/settings-page.php:54
+msgid "You must change <a href=\"%s\">WordPress permalinks</a> to a setting other than \"Plain\" in order to use this feature."
+msgstr "您必须将 <a href=\"%s\">WordPress 固定链接</a>更改为\"普通\"以外的设置才能使用此功能。"
+
+#: core/modules/hide-backend/settings-page.php:10
+msgid "Hide the login page by changing its name and preventing access to wp-login.php and wp-admin."
+msgstr "通过更改登录页面的名称和阻止访问 wp-login.php 和 wp-admin 来隐藏登录页面。"
+
+#: core/modules/global/validator.php:40
+msgid "Blacklist Lockout Period"
+msgstr "黑名单锁定周期"
+
+#: core/modules/global/settings-page.php:242
+msgid "Each error message in iThemes Security has an associated error code that can help diagnose an issue. Changing this setting to \"Yes\" causes these codes to display. This setting should be left set to \"No\" unless iThemes Security support requests that you change it."
+msgstr "在 iThemes 安全中的每个错误信息都有一个关联的错误代码，可以帮助诊断问题。将此设置更改为 \"是\" 会显示这些代码。除非 iThemes 安全支持要求您更改该设置，否则应将该设置设置为 \"否\"。"
+
+#: core/modules/global/settings-page.php:239
+#: core/modules/global/validator.php:33
+msgid "Show Error Codes"
+msgstr "显示错误代码"
+
+#: core/modules/global/settings-page.php:218
+msgid "The path on your server where the nginx config file is located."
+msgstr "您的服务器上 nginx 配置文件所在的路径。"
+
+#: core/modules/global/settings-page.php:202
+msgid "Turning this feature on will enable compatibility with <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">InfiniteWP</a>. Do not turn it on unless you use the InfiniteWP service."
+msgstr "打开此功能将启用与 <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">InfiniteWP</a> 的兼容性。除非您使用 InfiniteWP 服务，否则请勿打开。"
+
+#: core/modules/global/settings-page.php:193
+msgid "Restore Default Log File Path"
+msgstr "恢复默认日志文件的路径"
+
+#: core/modules/global/settings-page.php:83
+msgid "Whether or not iThemes Security should be allowed to write to wp-config.php and .htaccess automatically. If disabled you will need to manually place configuration options in those files."
+msgstr "是否允许 iThemes 安全自动写入 wp-config.php 和 .htaccess。如果禁用，则需要手动在这些文件中放置配置选项。"
+
+#: core/modules/global/settings-page.php:82
+msgid "Allow iThemes Security to write to wp-config.php and .htaccess."
+msgstr "允许 iThemes 安全写入 wp-config.php 和 .htaccess。"
+
+#: core/modules/global/settings-page.php:72
+msgid "No (default)"
+msgstr "否（默认）"
+
+#: core/modules/global/settings-page.php:61
+msgid "The following settings modify the behavior of many of the features offered by iThemes Security."
+msgstr "以下设置修改了 iThemes 安全提供的许多功能的行为。"
+
+#: core/modules/global/settings-page.php:10
+msgid "Configure basic settings that control how iThemes Security functions."
+msgstr "配置控制 iThemes 安全功能的基本设置。"
+
+#: core/modules/file-writing/settings-page.php:52
+msgid "The following rules need to be written to your <code>wp-config.php</code> file. Please make sure to keep the comments in place."
+msgstr "以下规则需要写入您的 <code>wp-config.php</code> 文件。请务必保留注释内容。"
+
+#: core/modules/file-writing/settings-page.php:50
+msgid "There is nothing that needs to be written to your <code>wp-config.php</code> file."
+msgstr "没有什么需要写入您的 <code>wp-config.php</code> 文件。"
+
+#: core/modules/file-writing/settings-page.php:36
+msgid "If you need to manually add the <code>wp-config.php</code> rules generated by iThemes Security to your server, you can find them here."
+msgstr "如果您需要手动将由 iThemes 安全生成的 <code>wp-config.php</code> 规则添加到您的服务器，则可以在此处找到它们。"
+
+#: core/modules/file-writing/settings-page.php:23
+msgid "The following rules need to be written to your server's config file. Please make sure to keep the comments in place."
+msgstr "以下规则需要写入您的服务器的配置文件。请务必保留注释内容。"
+
+#: core/modules/file-writing/settings-page.php:21
+msgid "There are no rules that need to be written."
+msgstr "没有规则需要写入。"
+
+#: core/modules/file-writing/settings-page.php:7
+msgid "If you need to manually add the server config rules generated by iThemes Security to your server, you can find them here."
+msgstr "如果您需要手动将由 iThemes 安全生成的服务器配置规则添加到您的服务器，则可以在此处找到它们。"
+
+#: core/modules/file-writing/settings-page.php:6
+msgid "Server Config Rules"
+msgstr "服务器配置规则"
+
+#: core/modules/file-change/admin.php:29
+msgid "A scan is already in progress. Please check the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">logs page</a> at a later time for the results of the scan."
+msgstr "扫描已在进行中。请稍后查看<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">日志页面</a>以获取扫描结果。"
+
+#: core/modules/file-change/settings-page.php:10
+msgid "Monitor the site for unexpected file changes."
+msgstr "监视站点是否有意外的文件更改。"
+
+#: core/modules/database-prefix/utility.php:83
+msgid "Could not rename table %1$s. You may have to rename the table manually."
+msgstr "无法重命名数据表 %1$s。您可能需要手动重命名数据表。"
+
+#. translators: 1: New database table prefix
+#: core/modules/database-prefix/settings-page.php:77
+msgid "The database table prefix was successfully changed to <code>%1$s</code>."
+msgstr "数据库数据表前缀已成功更改为 <code>%1$s</code>。"
+
+#: core/modules/database-prefix/settings-page.php:55
+msgid "Select \"Yes\" and save the settings to change the database table prefix."
+msgstr "选择\"是\"并保存设置以更改数据库数据表前缀。"
+
+#: core/modules/database-prefix/settings-page.php:51
+msgid "Change Prefix"
+msgstr "更改前缀"
+
+#. translators: 1: WordPress database table prefix
+#: core/modules/database-prefix/settings-page.php:46
+msgid "Your current database table prefix is <code>%1$s</code>."
+msgstr "您当前的数据库数据表前缀是 <code>%1$s</code>。"
+
+#: core/modules/database-prefix/settings-page.php:43
+msgid "Your database is using the default table prefix <code>wp_</code>. You should change this."
+msgstr "您的数据库正在使用默认数据表前缀 <code>wp_</code>。您应该更改这一点。"
+
+#: core/modules/database-prefix/settings-page.php:19
+msgid "By default, WordPress assigns the prefix <code>wp_</code> to all tables in the database where your content, users, and objects exist. For potential attackers, this means it is easier to write scripts that can target WordPress databases as all the important table names for 95% of sites are already known. Changing the <code>wp_</code> prefix makes it more difficult for tools that are trying to take advantage of vulnerabilities in other places to affect the database of your site. <strong>Before using this tool, we strongly recommend creating a backup of your database.</strong>"
+msgstr "默认情况下, WordPress 会将前缀 <code>wp_</code> 分配给您的内容，用户和对象所在数据库中的所有数据表。对于潜在的攻击者来说，这意味着编写可以定位 WordPress 数据库的脚本更容易，因为 95% 的站点的所有重要数据表名都是已知的。更改 <code>wp_</code> 前缀使尝试利用其他地方的漏洞影响您的站点数据库的工具变得更加困难。<strong>在使用此工具之前，我们强烈建议您创建数据库的备份。</strong>"
+
+#: core/modules/database-prefix/settings-page.php:10
+msgid "Change the database table prefix that WordPress uses."
+msgstr "更改 WordPress 使用的数据库数据表前缀。"
+
+#: core/modules/database-prefix/settings-page.php:9
+msgid "Change Database Table Prefix"
+msgstr "更改数据库数据表前缀"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:19
+msgid "+ more Pro-only features"
+msgstr "+ 更多只有专业版的功能"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:18
+msgid "Private, ticketed support"
+msgstr "隐私，服务单支持"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:17
+msgid "Google reCAPTCHA integration"
+msgstr "Google 验证码集成"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:16
+msgid "Scheduled malware scanning"
+msgstr "恶意软件扫描计划"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:15
+msgid "Two-factor authentication"
+msgstr "双重身份认证"
+
+#: core/modules/core/sidebar-widget-pro-upsell.php:13
+msgid "Add an extra layer of protection to your WordPress site with <a href=\"%s\">iThemes Security Pro</a>, including:"
+msgstr "使用<a href=\"%s\">iThemes 安全专业版</a>为您的 WordPress 站点添加额外的保护层，其中包括："
+
+#. translators: 1: Specific error details
+#: core/modules/content-directory/utility.php:93
+msgid "Unable to update the <code>wp-config.php</code> file. No directory or config file changes have been made. The error that prevented the file from updating is as follows: %1$s"
+msgstr "无法更新 <code>wp-config.php</code> 文件。目录或配置文件的更改未能完成。阻止文件更新的错误如下：%1$s"
+
+#: core/modules/content-directory/utility.php:27
+msgid "The new directory name cannot be the same as the current directory name. Please supply a new directory name."
+msgstr "新的目录名称不能与当前目录名称相同。请提供一个新的目录名称。"
+
+#: core/modules/content-directory/utility.php:8
+msgid "The content directory cannot be changed to a blank directory name."
+msgstr "此 content 目录不能更改为空白目录名称。"
+
+#: core/modules/content-directory/settings-page.php:113
+msgid "Unable to change the content directory back to <code>wp-content</code>. If the above error cannot be fixed, you may need to manually change the content directory. Instructions on how to change the content directory manually can be found <a href=\"https://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder\">here</a>."
+msgstr "无法将 content 目录更改回 <code>wp-content</code>。如果上述错误无法解决，您可能需要手动更改 content 目录，有关如何手动更改 content 目录的说明，请参阅 <a href=\"https://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder\">此处</a>。"
+
+#: core/modules/content-directory/settings-page.php:100
+msgid "Unable to change the content directory. If the above error cannot be fixed, you may need to manually change the content directory. Instructions on how to change the content directory manually can be found <a href=\"https://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder\">here</a>."
+msgstr "无法更改 content 目录。如果上述错误无法解决，您可能需要手动更改 content 目录。有关如何手动更改 content 目录的说明，请参阅 <a href=\"https://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder\">此处</a>。"
+
+#: core/modules/content-directory/settings-page.php:81
+msgid "Supply a new directory name and save the settings to change the location of the <code>wp-content</code> directory. You may need to log in again after performing this operation."
+msgstr "提供新的目录名称并保存设置以更改 <code>wp-content</code> 目录的位置。执行此操作后，您可能需要重新登录。"
+
+#: core/modules/content-directory/settings-page.php:77
+msgid "New Directory Name"
+msgstr "新目录名称"
+
+#: core/modules/content-directory/settings-page.php:64
+msgid "Select \"Yes\" and save the settings to undo the content directory change."
+msgstr "选择 \"是\" 并保存设置以撤消 content 目录更改。"
+
+#: core/modules/content-directory/settings-page.php:49
+#: core/modules/database-prefix/settings-page.php:38
+#: core/modules/hide-backend/settings-page.php:62
+#: core/modules/salts/settings-page.php:39 core/modules/salts/utilities.php:6
+#: core/modules/salts/validator.php:37
+msgid "The \"Write to Files\" setting is disabled in Global Settings. In order to use this feature, you must enable the \"Write to Files\" setting."
+msgstr "\"全局设置\" 中的 \"写入文件\" 设置已禁用。为了使用此功能，您必须启用 \"写入文件\" 设置。"
+
+#: core/modules/content-directory/settings-page.php:46
+msgid "The content directory was changed by something other than iThemes Security. No further actions are available on this page."
+msgstr "此 content 目录被 iThemes 安全以外的其他工具更改。此页面上没有进一步的操作。"
+
+#: core/modules/content-directory/settings-page.php:19
+msgid "Change the location of the <code>wp-content</code> directory so that it uses a different name."
+msgstr "更改 <code>wp-content</code> 目录的位置以便使用不同的名称。"
+
+#: core/modules/content-directory/settings-page.php:10
+msgid "Advanced feature to rename the wp-content directory to a different name."
+msgstr "通过将 wp-content 目录重命名为不同名称的高级功能。"
+
+#: core/modules/brute-force/settings-page.php:7
+msgid "Protect your site against attackers that try to randomly guess login details to your site."
+msgstr "保护您的站点免受尝试随机猜测您站点的登录详细信息的攻击者。"
+
+#. translators: 1: input name, 2: invalid host list
+#: core/modules/ban-users/validator.php:39
+msgid "The following IP in %1$s is whitelisted and cannot be banned: %2$l"
+msgid_plural "The following IPs in %1$s are whitelisted and cannot be banned: %2$l"
+msgstr[0] "以下的 IP 在 %1$s 是被列入白名单，并且不能被禁止：%2$l"
+
+#. translators: 1: input name, 2: invalid host
+#: core/modules/ban-users/validator.php:25
+msgid "The following host in %1$s matches your current IP and cannot be banned: %2$s"
+msgstr "以下的主机在 %1$s 匹配您的当前 IP，不能被禁止：%2$s"
+
+#: core/modules/ban-users/settings-page.php:40
+msgid "Enable Ban Lists"
+msgstr "启用禁止列表"
+
+#: core/modules/ban-users/settings-page.php:37
+#: core/modules/ban-users/validator.php:10
+msgid "Ban Lists"
+msgstr "禁止列表"
+
+#: core/modules/ban-users/settings-page.php:10
+msgid "Block specific IP addresses and user agents from accessing the site."
+msgstr "阻止访问该站点指定的 IP 地址和用户代理。"
+
+#: core/modules/backup/validator.php:28
+msgid "Last Run"
+msgstr "上次运行"
+
+#: core/modules/backup/settings-page.php:81
+msgid "Press the button below to create a database backup using the saved settings."
+msgstr "按下面的按钮，使用保存的设置创建数据库备份。"
+
+#: core/modules/backup/settings-page.php:53
+msgid "The backup request returned an unexpected response. It returned a response of type <code>%1$s</code>."
+msgstr "备份请求返回了意外的响应。其返回了一个类型为 <code>%1$s</code> 的响应。"
+
+#: core/modules/backup/settings-page.php:23
+msgid "Creating Backup..."
+msgstr "正在创建备份..."
+
+#: core/modules/backup/settings-page.php:10
+msgid "Create backups of your site's database. The backups can be created manually and on a schedule."
+msgstr "创建您的站点数据库的备份。备份可以手动创建和按计划进行。"
+
+#: core/modules/backup/class-itsec-backup.php:79
+msgid "Unable to create a backup at this time since a backup is currently being created. If you wish to create an additional backup, please wait a few minutes before trying again."
+msgstr "由于当前正在创建备份，因此无法在此时创建备份。如果您希望创建额外的备份，请等待几分钟再重试。"
+
+#: core/modules/backup/class-itsec-backup.php:94
+msgid "Backup complete. The backup was saved locally."
+msgstr "备份完成。备份已保存在本地。"
+
+#: core/modules/backup/class-itsec-backup.php:92
+msgid "Backup complete. The backup was sent to the selected email recipients."
+msgstr "备份完成。备份已发送到选定的邮件收件人。"
+
+#: core/modules/backup/class-itsec-backup.php:90
+msgid "Backup complete. The backup was sent to the selected email recipients and was saved locally."
+msgstr "备份完成。备份已发送至选定的邮件收件人并保存在本地。"
+
+#. translators: 1: "Start Time", 2: "End Time"
+#: core/modules/away-mode/validator.php:128
+msgid "The %1$s and %2$s settings restrict the current time and would result in locking you out immediately. Please select a %1$s and %2$s that does not restrict the current time."
+msgstr "%1$s 和 %2$s 设置会限制当前时间，并会导致您立即将其锁定。请选择不限制当前时间的 %1$s 和 %2$s。"
+
+#. translators: 1: "Start Time", 2: "End Time"
+#: core/modules/away-mode/validator.php:124
+msgid "The %1$s and %2$s cannot be the same."
+msgstr "%1$s 和 %2$s 不能相同。"
+
+#. translators: 1: "Start Date", 2: "Start Time"
+#: core/modules/away-mode/validator.php:118
+msgid "The selected restriction date and time has already started and would result in locking you out immediately. Please select a %1$s and %2$s that has not already started."
+msgstr "选定的限制日期和时间已经开始，并会导致您立即锁定。请选择尚未开始的 %1$s 和 %2$s。"
+
+#. translators: 1: "End Date", 2: "End Time"
+#: core/modules/away-mode/validator.php:114
+msgid "The selected restriction date and time has already ended. Please select an %1$s and %2$s that has not already ended."
+msgstr "选定的限制日期和时间已经结束。请选择尚未结束的 %1$s 和 %2$s。"
+
+#. translators: 1: "Start Date", 2: "Start Time", 3: "End Date", 4: "End Time"
+#: core/modules/away-mode/validator.php:110
+msgid "The %1$s and %2$s must be before the %3$s and %4$s."
+msgstr "%1$s 和 %2$s 必须位于 %3$s 和 %4$s 之前。"
+
+#. translators: 1: date input name, 2: time input name, 3: submitted date time
+#: core/modules/away-mode/validator.php:78
+msgid "The %1$s and %2$s values resulted in a date and time of <code>%3$s</code>, which was unable to be processed properly. This could be an issue with PHP or a server configuration issue."
+msgstr "%1$s 和 %2$s 值导致 <code>%3$s</code> 的日期和时间无法正确处理。这可能是 PHP 或服务器配置问题的问题。"
+
+#: core/modules/away-mode/validator.php:31
+msgid "End Timestamp"
+msgstr "结束时间戳"
+
+#: core/modules/away-mode/validator.php:30
+msgid "Start Timestamp"
+msgstr "开始时间戳"
+
+#: core/modules/away-mode/validator.php:28
+msgid "Override End"
+msgstr "覆盖结束"
+
+#: core/modules/away-mode/validator.php:27
+msgid "Override Type"
+msgstr "覆盖类型"
+
+#. translators: 1: start timestamp, 2: end timestamp
+#: core/modules/away-mode/utilities.php:94
+msgid "The supplied data is invalid. The supplied start (%1$s) is after the supplied end (%2$s)."
+msgstr "提供的数据无效。提供的开始（%1$s）在提供的结束（%2$s）之后。"
+
+#: core/modules/away-mode/settings-page.php:167
+msgid "Time when the admin dashboard should become available again."
+msgstr "管理面板仪表盘再次可用的时间。"
+
+#: core/modules/away-mode/settings-page.php:156
+msgid "Date when the admin dashboard should become available again."
+msgstr "管理面板仪表盘再次可用的日期。"
+
+#: core/modules/away-mode/settings-page.php:148
+msgid "Time when the admin dashboard should become unavailable."
+msgstr "管理面板仪表盘变得不可用的时间。"
+
+#: core/modules/away-mode/settings-page.php:136
+msgid "Date when the admin dashboard should become unavailable."
+msgstr "管理面板仪表盘变得不可用的日期。"
+
+#. translators: 1: date, 2: time
+#: core/modules/away-mode/settings-page.php:113
+msgctxt "Date and time format"
+msgid "%1$s \\a\\t %2$s"
+msgstr "%1$s a\\ %2$s"
+
+#: core/modules/away-mode/settings-page.php:10
+msgid "Disable access to the WordPress Dashboard on a schedule."
+msgstr "按计划禁止访问 WordPress 仪表盘。"
+
+#: core/modules/away-mode/sync-verbs/itsec-override-away-mode.php:62
+msgid "iThemes Security received a request to modify the override behavior of the Away Mode module. However, the request is invalid as the required \"intention\" argument is set to an unrecognized value: \"\"."
+msgstr "iThemes 安全收到了修改离开模式模块覆盖行为的请求。但是，该请求无效，因为所需 \"intention\" 的参数被设置为无法识别的值：\"\"."
+
+#: core/modules/away-mode/sync-verbs/itsec-override-away-mode.php:58
+msgid "iThemes Security received a request to modify the override behavior of the Away Mode module. However, the request is invalid as the required \"intention\" argument is missing."
+msgstr "iThemes 安全收到了修改离开模式模块覆盖行为的请求。但是，由于缺少所需 \"intention\" 的参数，该请求无效。"
+
+#: core/modules/away-mode/sync-verbs/itsec-override-away-mode.php:33
+msgid "iThemes Security received a request to modify the override behavior of the Away Mode module. However, the request is invalid as the module is configured for a one-time lockout that occurred in the past. Allowing an activate override would result in an unending Away Mode lockout."
+msgstr "iThemes 安全收到了修改离开模式模块覆盖行为的请求。但是，由于模块配置为发生在过去的一次性锁定，因此请求无效。允许激活覆盖会导致无休止的离开模式锁定。"
+
+#: core/modules/admin-user/validator.php:49
+msgid "The user was unable to be successfully updated. This could be due to a plugin or server configuration conflict."
+msgstr "用户无法成功更新。这可能是由于插件或服务器配置冲突。"
+
+#: core/modules/admin-user/validator.php:43
+msgid "The user was successfully updated."
+msgstr "用户已成功更新。"
+
+#: core/modules/admin-user/settings-page.php:27
+msgid "<span>Warning:</span> The changes made by this tool could cause compatibility issues with some plugins, themes, or customizations. Ensure that you <a href=\"%s\">create a database backup</a> before using this tool."
+msgstr "<span>警告：</span>此工具所做的更改可能会导致一些插件，主题或自定义项的兼容性问题。确保您在使用此工具之前<a href=\"%s\">创建数据库备份</a>。"
+
+#: core/modules/admin-user/settings-page.php:10
+msgid "An advanced tool that removes users with a username of \"admin\" or a user ID of \"1\"."
+msgstr "一种高级工具，可以移除用户名为 \"admin\" 或用户 ID 为 \"1\" 的用户。"
+
+#: core/modules/404-detection/settings-page.php:7
+msgid "Automatically block users snooping around for pages to exploit."
+msgstr "自动阻止用户窥探页面以进行利用。"
+
+#. translators: 1: sanitize type, 2: input name
+#: core/lib/validator.php:393
+msgid "An invalid sanitize type of \"%1$s\" was received for the %2$s input."
+msgstr "已收到 %2$s 输入的无效清理类型 \"%1$s\"。"
+
+#: core/lib/validator.php:388
+msgid "The following extension in %1$s is invalid: %2$l"
+msgid_plural "The following extensions in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 的以下扩展名无效：%2$l"
+
+#: core/lib/validator.php:368
+msgid "The following IP in %1$s is invalid: %2$l"
+msgid_plural "The following IPs in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 的以下 IP 无效：%2$l"
+
+#: core/lib/validator.php:336
+#: core/modules/notification-center/validator.php:107
+msgid "The following email in %1$s is invalid: %2$l"
+msgid_plural "The following emails in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 的以下邮箱地址无效：%2$l"
+
+#: core/lib/validator.php:305
+msgid "The valid value for %1$s is: %2$l."
+msgid_plural "The valid values for %1$s are: %2$l."
+msgstr[0] "%1$s 的有效值为：%2$l。"
+
+#: core/lib/validator.php:281 core/lib/validator.php:302
+msgid "The following entry in %1$s is invalid: %2$l"
+msgid_plural "The following entries in %1$s are invalid: %2$l"
+msgstr[0] "%1$s 的以下条目无效：%2$l"
+
+#: core/lib/validator.php:257 core/lib/validator.php:312
+#: core/lib/validator.php:318 core/lib/validator.php:343
+#: core/lib/validator.php:375
+msgid "The %1$s value must be a string with each entry separated by a new line."
+msgstr "%1$s 值必须是一个字符串，每个条目用新行分隔。"
+
+#: core/lib/validator.php:249
+msgid "The file path supplied in %1$s is not writable. Please supply a file path that can be written to."
+msgstr "%1$s 提供的文件路径不可写。请提供可以写入的文件路径。"
+
+#: core/lib/validator.php:246
+msgid "The file path supplied in %1$s was successfully created, but it cannot be updated. Please supply a file path that can be written to."
+msgstr "%1$s 提供的文件路径已成功创建，但无法更新。请提供可以写入的文件路径。"
+
+#: core/lib/validator.php:244
+msgid "The file path supplied in %1$s could not be created. Please supply a file path that can be written to."
+msgstr "无法创建 %1$s 提供的文件路径。请提供可以写入的文件路径。"
+
+#: core/lib/validator.php:239
+msgctxt "%1$s is the input name. %2$s is the error message."
+msgid "The file path supplied in %1$s cannot be used as the parent directory cannot be created. %2$s"
+msgstr "%1$s 提供的文件路径无法使用，因为无法创建父级目录。%2$s"
+
+#: core/lib/validator.php:234
+msgid "The file path supplied in %1$s cannot be used as it already exists but is not a file. Please supply a valid file path."
+msgstr "%1$s 提供的文件路径无法使用，因为已经存在，但不是文件。请提供有效的文件路径。"
+
+#: core/lib/validator.php:220
+msgid "The directory supplied in %1$s is not writable. Please select a directory that can be written to."
+msgstr "%1$s 提供的目录不可写。请选择一个可以写入的目录。"
+
+#: core/lib/validator.php:215
+msgctxt "%1$s is the input name. %2$s is the error message."
+msgid "The directory supplied in %1$s cannot be used as a valid directory. %2$s"
+msgstr "%1$s 提供的目录不能用作有效的目录。%2$s"
+
+#: core/lib/validator.php:205 core/lib/validator.php:229
+msgid "The %1$s value must be a string."
+msgstr "此 %1$s 值必须是一个字符串。"
+
+#: core/lib/validator.php:201
+msgid "The %1$s value must be a valid date in the format of YYYY-MM-DD."
+msgstr "此 %1$s 值必须是格式为：YYYY-MM-DD 的有效日期。"
+
+#: core/lib/validator.php:198
+msgid "The %1$s value must be a valid date."
+msgstr "此 %1$s 值必须是有效的日期。"
+
+#: core/lib/validator.php:185
+msgid "The %1$s value is not a valid username."
+msgstr "此 %1$s 值不是有效的用户名。"
+
+#: core/lib/validator.php:179
+msgid "The %1$s value must be a valid email address."
+msgstr "此 %1$s 值必须是有效的邮箱地址。"
+
+#: core/lib/validator.php:173
+msgid "The %1$s value must be a positive integer."
+msgstr "此 %1$s 值必须是正整数。"
+
+#: core/lib/validator.php:166
+msgid "The %1$s value must be an integer."
+msgstr "此 %1$s 值必须是整数。"
+
+#: core/lib/validator.php:135 core/lib/validator.php:143
+msgid "The %1$s value cannot be empty."
+msgstr "此 %1$s 值不能为空。"
+
+#: core/lib/validator.php:119
+msgid "A validation check for %1$s failed. The %2$s value is missing. This could be due to a problem with the iThemes Security installation or an invalid modification. Please reinstall iThemes Security and try again."
+msgstr "对 %1$s 的验证检查失败。%2$s 值缺失。这可能是由于 iThemes 安全安装出现问题或修改无效造成的。请重新安装 iThemes 安全并重试。"
+
+#: core/lib/validator.php:85
+msgid "A validation function for %1$s received data that does not match the expected data type for the %2$s entry. A data type of %3$s was expected, but a data type of %4$s was received."
+msgstr "%1$s 的验证函数收到的数据与 %2$s 条目的预期数据类型不匹配。预计会有 %3$s 的数据类型，却接收到 %4$s 的数据类型。"
+
+#: core/lib/validator.php:63
+msgid "A validation function for %1$s received data that has an entry for %2$s when no such entry exists."
+msgstr "当不存在这样的条目时，%1$s 的验证函数接收到具有 %2$s 条目的数据，"
+
+#: core/lib/validator.php:56
+msgid "A validation function for %1$s received data that did not have the required entry for %2$s."
+msgstr "%1$s 的验证函数收到的数据没有 %2$s 所需的条目。"
+
+#: core/lib/settings.php:56
+msgid "The data validator for %1$s is missing. Data for the module cannot be saved without the validator. This error could indicate a bad install of iThemes Security. Please remove the plugin and reinstall it. If this message persists, please contact support and send them this error message."
+msgstr "%1$s 的数据验证程序缺失。如果没有验证器，模块的数据将无法保存。这个错误可能表明 iThemes 安全安装不当。请移除插件并重新安装。如果此信息仍然存在，请联系支持人员并向他们发送此错误消息。"
+
+#: core/lib/class-itsec-lib-directory.php:259
+msgid "The directory %s could not be protected from file listing as the directory does not exist."
+msgstr "无法保护目录 %s，因为文件列表不存在此目录。"
+
+#: core/lib/class-itsec-lib-directory.php:237
+msgid "This is a test file generated by iThemes Security. It can be removed."
+msgstr "这是由 iThemes 安全生成的测试文件。可以将其移除。"
+
+#: core/lib/class-itsec-lib-config-file.php:454
+msgid "The \"Write to Files\" setting is disabled. Manual configuration for the <code>%s</code> file can be found on the Security > Settings page in the Advanced section."
+msgstr "\"写入文件\" 设置被禁用。<code>%s</code> 文件的手动配置可在 安全 > 设置 页面中的高级部分找到。"
+
+#. translators: 1: variable type
+#: core/response.php:380
+msgid "Unknown error type received: %1$s."
+msgstr "收到未知的错误类型：%1$s。"
+
+#. translators: 1: error message, 2: error code
+#: core/response.php:359
+msgid "%1$s <span class=\"itsec-error-code\">(%2$s)</span>"
+msgstr "%1$s<span class=\"itsec-error-code\">（%2$s）</span>"
+
+#: core/modules.php:458 core/modules.php:491
+msgid "The %s module is a Core module and cannot be activated or deactivated."
+msgstr "%s 模块是核心模块，无法进行启用或停用。"
+
+#: core/modules.php:268
+msgid "Unable to find a valid settings object for %s. Setting was unable to be saved."
+msgstr "无法找到 %s 的有效设置对象。设置无法保存。"
+
+#: core/modules.php:242
+msgid "Unable to find a valid settings object for %s. Settings were unable to be saved."
+msgstr "无法找到 %s 的有效设置对象。设置无法保存。"
+
+#: core/modules.php:54
+msgid "An attempt to register the %1$s module failed since the supplied path (%2$s) is invalid. This could indicate an invalid modification or incomplete installation of the iThemes Security plugin. Please reinstall the plugin and try again."
+msgstr "由于提供的路径（%2$s）无效，因此尝试注册 %1$s 模块失败。这可能表明 iThemes 安全插件有无效修改或安装不完整。请重新安装插件并重试。"
+
+#: core/lockout.php:533
+msgid "<strong>Is this computer white-listed:</strong> %s"
+msgstr "<strong>此计算机是否被列入白名单：</strong>%s"
+
+#: core/lockout.php:531
+msgid "<strong>User lockout message:</strong> %s"
+msgstr "<strong>用户锁定信息：</strong>%s"
+
+#: core/lockout.php:529
+msgid "<strong>Host lockout message:</strong> %s"
+msgstr "<strong>主机锁定信息：</strong>%s"
+
+#: core/lockout.php:527
+msgid "<strong>How long lockouts will be remembered for ban:</strong> %s"
+msgstr "<strong>锁定多长时间将被记住为禁止：</strong>%s"
+
+#: core/lockout.php:525
+msgid "<strong>Number of lockouts before permanent ban:</strong> %s"
+msgstr "<strong>永久禁止之前的锁定次数：</strong>%s"
+
+#: core/lockout.php:523
+msgid "<strong>Permanently ban:</strong> %s"
+msgstr "<strong>永久禁止：</strong>%s"
+
+#: core/sync-verbs/itsec-set-temp-whitelist.php:38
+msgid "The direction argument must be either \"add\", \"clear\", or \"remove\"."
+msgstr "参数 direction 的值必须是 \"add\"，\"clear\"，或 \"remove\"。"
+
+#: core/sync-verbs/itsec-set-temp-whitelist.php:26
+msgid "An empty ip argument was submitted."
+msgstr "提交了一个空的 ip 参数。"
+
+#: core/sync-verbs/itsec-set-temp-whitelist.php:19
+msgid "The ip argument is missing."
+msgstr "此 ip 参数丢失。"
+
+#: core/admin-pages/page-settings.php:595
+msgid "Cancel"
+msgstr "取消"
+
+#: core/admin-pages/page-settings.php:577
+msgid "Configure previous iThemes Security setting"
+msgstr "配置上一个 iThemes 安全设置"
+
+#: core/admin-pages/page-settings.php:576
+msgid "Configure next iThemes Security setting"
+msgstr "配置下一个 iThemes 安全设置"
+
+#: core/admin-pages/page-settings.php:397
+msgctxt "List advanced modules"
+msgid "Advanced"
+msgstr "高级"
+
+#: core/admin-pages/page-settings.php:393
+msgctxt "List recommended modules"
+msgid "Recommended"
+msgstr "推荐"
+
+#: core/admin-pages/page-settings.php:389
+msgctxt "List all modules"
+msgid "All"
+msgstr "所有"
+
+#: core/admin-pages/page-settings.php:355
+msgid "The requested widget (%s) does not exist. Settings for it cannot be rendered."
+msgstr "请求的小工具（%s）不存在。其设置将无法呈现。"
+
+#: core/admin-pages/page-settings.php:322
+msgid "The requested module (%s) does not exist. Settings for it cannot be rendered."
+msgstr "请求的模块（%s）不存在。其设置将无法呈现。"
+
+#: core/admin-pages/page-settings.php:207
+msgid "The server did not receive a valid request. An unknown \"method\" argument was supplied. Please try again."
+msgstr "服务器没有收到有效的请求。提供了一个未知 \"方法\" 的参数。请重试。"
+
+#: core/admin-pages/page-settings.php:201
+msgid "The server did not receive a valid request. The required \"data\" argument for the widget is missing. Please try again."
+msgstr "服务器没有收到有效的请求。缺少小工具所需 \"数据\" 的参数。请重试。"
+
+#: core/admin-pages/page-settings.php:191
+msgid "The server did not receive a valid request. The required \"data\" argument for the module is missing. Please try again."
+msgstr "服务器没有收到有效的请求。缺少模块所需 \"数据\" 的参数。请重试。"
+
+#: core/admin-pages/page-settings.php:157
+msgid "The server did not receive a valid request. The required \"module\" argument is missing. Please try again."
+msgstr "服务器没有收到有效的请求。缺少所需 \"模块\" 的参数。请重试。"
+
+#: core/admin-pages/page-settings.php:152
+msgid "The server did not receive a valid request. The required \"method\" argument is missing. Please try again."
+msgstr "服务器没有收到有效的请求。缺少所需 \"方法\" 的参数。请重试。"
+
+#: core/admin-pages/page-logs.php:226 core/admin-pages/page-settings.php:150
+msgid "A permissions security check failed, preventing the request from completing as expected. The currently logged in user does not have sufficient permissions to make this request. Please try reloading the page and trying again."
+msgstr "权限安全检查失败，阻止请求按预期完成。当前登录的用户没有足够的权限来提出此请求。请尝试重新加载页面并重试。"
+
+#: core/admin-pages/page-logs.php:224 core/admin-pages/page-settings.php:148
+msgid "A nonce security check failed, preventing the request from completing as expected. Please try reloading the page and trying again."
+msgstr "现时安全检查失败，阻止请求按预期完成。请尝试重新加载页面并重试。"
+
+#: core/admin-pages/page-settings.php:113
+msgid "Disable"
+msgstr "停用"
+
+#: core/admin-pages/page-settings.php:112
+msgid "Enable"
+msgstr "启用"
+
+#: core/admin-pages/page-settings.php:109
+msgid "Learn More"
+msgstr "了解更多"
+
+#: core/admin-pages/page-settings.php:108
+msgid "Hide Settings"
+msgstr "隐藏设置"
+
+#: core/admin-pages/page-settings.php:107
+msgid "Configure Settings"
+msgstr "配置设置"
+
+#: core/admin-pages/page-settings.php:106
+msgid "Close"
+msgstr "关闭"
+
+#: core/admin-pages/page-settings.php:105
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: core/admin-pages/page-logs.php:507 core/admin-pages/page-settings.php:508
+msgid "iThemes Security requires Javascript in order for the settings to be modified. Please enable Javascript to configure the settings."
+msgstr "iThemes 安全需要 JavaScript 才能修改设置。请启用 Javascript 来配置设置。"
+
+#: core/admin-pages/page-logs.php:438 core/admin-pages/page-settings.php:448
+#: core/lib/class-itsec-mail.php:67
+msgid "Support"
+msgstr "支持"
+
+#: core/admin-pages/page-logs.php:437
+msgid "Manage Settings"
+msgstr "管理设置"
+
+#: core/admin-pages/page-logs.php:540
+msgid "The requested widget (%s) does not exist. Logs for it cannot be rendered."
+msgstr "请求的小工具（%s）不存在。日志无法呈现。"
+
+#: core/admin-pages/page-logs.php:177 core/admin-pages/page-settings.php:296
+msgid "The settings could not be saved. Due to an unknown error. Please try refreshing the page and trying again."
+msgstr "设置无法保存。由于未知的错误。请尝试刷新页面并重试。"
+
+#: core/admin-pages/page-logs.php:175 core/admin-pages/page-settings.php:294
+msgid "The settings could not be saved. Please correct the error above and try again."
+msgid_plural "The settings could not be saved. Please correct the errors above and try again."
+msgstr[0] "设置无法保存。请更正上述错误并重试。"
+
+#: core/admin-pages/page-logs.php:168 core/admin-pages/page-settings.php:287
+msgid "The settings saved successfully."
+msgstr "此设置已保存成功。"
+
+#: core/admin-pages/page-logs.php:153 core/admin-pages/page-settings.php:272
+msgid "The supplied module (%s) is not recognized. The module settings could not be saved."
+msgstr "提供的模块（%s）不被识别。模块设置无法保存。"
+
+#: core/admin-pages/page-logs.php:86 core/lib.php:1087
+msgid "A parser error prevented the request from completing as expected. The site sent a response that jQuery could not process. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "解析器错误阻止了请求按预期完成。该站点发送了一个 jQuery 无法处理的响应。这可能是由于插件/主题冲突或服务器配置问题。"
+
+#: core/admin-pages/page-logs.php:84 core/lib.php:1086
+msgid "A timeout error prevented the request from completing as expected. The site took too long to respond. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "超时错误阻止了请求按预期完成。该站点花了很长时间回应。这可能是由于插件/主题冲突或服务器配置问题。"
+
+#: core/admin-pages/page-logs.php:82 core/lib.php:1085
+msgid "An unknown error prevented the request from completing as expected. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "未知的错误阻止了请求按预期完成。这可能是由于插件/主题冲突或服务器配置问题。"
+
+#: core/admin-pages/page-logs.php:80 core/lib.php:1084
+msgid "A \"internal server\" error prevented the request from completing as expected. The server returned a 500 status code, indicating that the server was unable to complete the request due to a fatal PHP error or a server problem. This could be due to a plugin/theme conflict, a server configuration issue, a temporary hosting issue, or invalid custom PHP modifications. Please check your server's error logs for details about the source of the error and contact your hosting company for assistance if required."
+msgstr "\"内部服务器\" 错误阻止了请求按预期完成。服务器返回了 500 状态码，表明服务器由于致命的 PHP 错误或服务器问题而无法完成请求。这可能是由于插件/主题冲突，服务器配置问题，临时主机问题或无效的自定义 PHP 修改。请检查您的服务器的错误日志，以获取有关错误来源的详细信息，并在需要时联系您的主机公司寻求帮助。"
+
+#: core/admin-pages/page-logs.php:78 core/lib.php:1083
+msgid "A \"not found\" error prevented the request from completing as expected. The server returned a 404 status code, indicating that the server was unable to find the requested admin-ajax.php file. This could be due to a plugin/theme conflict, a server configuration issue, or an incomplete WordPress installation. Please try refreshing the page and trying again. If the request continues to fail, you may have to alter plugin settings, alter server configurations, or reinstall WordPress."
+msgstr "\"未找到\" 错误阻止了请求按预期完成。服务器返回了 404 状态码，表明服务器无法找到请求的 admin-ajax.php 文件。这可能是由于插件/主题冲突，服务器配置问题或不完整的WordPress 安装。请尝试刷新页面并重试。如果请求继续失败，则可能需要更改插件设置，更改服务器配置或重新安装 WordPress。"
+
+#: core/admin-pages/page-logs.php:76 core/lib.php:1082
+msgid "A \"request forbidden\" error prevented the request from completing as expected. The server returned a 403 status code, indicating that the server configuration is prohibiting this request. This could be due to a plugin/theme conflict or a server configuration issue. Please try refreshing the page and trying again. If the request continues to fail, you may have to alter plugin settings or server configuration that could account for this AJAX request being blocked."
+msgstr "\"请求禁止\" 错误阻止了请求按预期完成。服务器返回了 403 状态码，表明服务器配置正在禁止此请求。这可能是由于插件/主题冲突或服务器配置问题。请尝试刷新页面并重试。如果请求继续失败，则可能需要更改可能导致此 AJAX 请求被阻止的插件设置或服务器配置。"
+
+#: core/admin-pages/page-logs.php:74 core/lib.php:1081
+msgid "An \"invalid format\" error prevented the request from completing as expected. The format of data returned could not be recognized. This could be due to a plugin/theme conflict or a server configuration issue."
+msgstr "\"无效格式\" 错误阻止了请求按预期完成。返回的数据格式无法识别。这可能是由于插件/主题冲突或服务器配置问题。"
+
+#. translators: 1: module name
+#: core/admin-pages/page-settings.php:120
+msgid "Settings saved successfully for %1$s."
+msgstr "%1$s 设置已保存成功。"
+
+#: core/admin-pages/init.php:43
+msgid "iThemes Security Logs"
+msgstr "iThemes 安全日志"
+
+#: core/admin-pages/init.php:38
+msgid "iThemes Security Settings"
+msgstr "iThemes 安全设置"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:202
+msgid "This has been disabled."
+msgstr "这已被禁用。"
+
+#: core/modules/hide-backend/settings-page.php:105
+#: core/modules/hide-backend/validator.php:30
+msgid "Redirection Slug"
+msgstr "重定向别名"
+
+#: core/modules/hide-backend/settings-page.php:98
+#: core/modules/hide-backend/validator.php:29
+msgid "Enable Redirection"
+msgstr "启用重定向"
+
+#: core/modules/hide-backend/settings-page.php:101
+msgid "Redirect users to a custom location on your site, instead of throwing a 403 (forbidden) error."
+msgstr "将用户重定向到您站点上的自定义位置，而不是抛出 403（禁止）错误。"
+
+#: core/modules/hide-backend/settings-page.php:110
+msgid "The slug to redirect users to when they attempt to access wp-admin while not logged in."
+msgstr "当用户尝试访问 wp-admin 而未登录时，将此别名重定向给用户。"
+
+#: core/modules/hide-backend/settings-page.php:109
+msgid "Redirect Location: %s"
+msgstr "重定向位置：%s"
+
+#. Description of the plugin/theme
+msgid "Take the guesswork out of WordPress security. iThemes Security offers 30+ ways to lock down WordPress in an easy-to-use WordPress security plugin."
+msgstr "排除 WordPress 安全的臆测。iThemes 安全提供 30+ 方法锁定 WordPress 的一个易用的 WordPress 安全插件。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:272
+msgid "The scan failed due to an unexpected technical error. The response from the wp_remote_get function is missing some critical information that is needed in order to properly process the response from Sucuri's servers. This could indicate a plugin/theme compatibility issue or a problem in WordPress."
+msgstr "由于意外的技术错误，扫描失败。来自 wp_remote_get 函数的响应缺少一些必要的重要信息，以便正确处理来自 Sucuri 服务器的响应。这可能表明插件/主题兼容性问题或 WordPress 的问题。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:248
+msgid "The scan failed due to an unexpected technical error. The response from the wp_remote_get function does not contain a body entry. Since the body entry contains the response for the request to Sucuri's servers, the response cannot be processed. This could indicate a plugin/theme compatibility issue or a problem in WordPress."
+msgstr "由于意外的技术错误，扫描失败。来自 wp_remote_get 函数的响应不包含正文条目。由于正文条目包含对 Sucuri 服务器的请求响应，因此无法处理响应。这可能表明插件/主题兼容性问题或 WordPress 的问题。"
+
+#: core/modules/ban-users/settings-page.php:58
+msgid "Note: You cannot ban yourself."
+msgstr "注意：您不能禁止您自己。"
+
+#: core/modules/ban-users/settings-page.php:50
+msgid "You may ban users by individual IP address or IP address range using wildcards or CIDR notation."
+msgstr "您可以通过使用通配符或 CIDR 符号的单个 IP 地址或 IP 地址范围来禁止用户。"
+
+#: core/modules/ban-users/settings-page.php:47
+msgid "Use the guidelines below to enter hosts that will not be allowed access to your site."
+msgstr "使用下面的准则输入不允许访问您的站点的主机。"
+
+#: core/modules/ban-users/settings-page.php:54
+#: core/modules/global/settings-page.php:154
+msgid "Wildcards are also supported with some limitations. If using wildcards (*), you must start with the right-most chunk in the IP address. For example ###.###.###.* and ###.###.*.* are permitted but ###.###.*.### is not. Wildcards are only for convenient entering of IP addresses, and will be automatically converted to their appropriate CIDR notation format on save."
+msgstr ""
+"通配符的支持也受一些限制。如果使用通配符（*），则必须从 IP 地址中最右侧的区块开始。例如 ###.###.###.* 和 ###.###.*.* 是允许的，但 ###.###.*.### 是不允许的。\n"
+"通配符只用于方便输入 IP 地址，并且在保存时将自动转换为适当的 CIDR 符号格式。"
+
+#: core/modules/ban-users/settings-page.php:53
+#: core/modules/global/settings-page.php:153
+msgid "CIDR notation is allowed to specify a range of IP addresses (###.###.###.###/## or ####:####:####:####:####:####:####:####/###)."
+msgstr "CIDR 符号被允许指定一个 IP 地址范围（###.###.###.###/## 或 ####:####:####:####:####:####:####:####/###）。"
+
+#: core/modules/ban-users/settings-page.php:52
+#: core/modules/global/settings-page.php:152
+msgid "Individual IP addresses must be in IPv4 or IPv6 standard format (###.###.###.### or ####:####:####:####:####:####:####:####)."
+msgstr "单个 IP 地址必须采用 IPv4 或 IPv6 标准格式（###.###.###.### 或 ####:####:####:####:####:####:####:####）。"
+
+#: core/modules/global/settings-page.php:150
+msgid "You may white list users by individual IP address or IP address range using wildcards or CIDR notation."
+msgstr "您可以使用通配符或 CIDR 符号通过单个 IP 地址或 IP 地址范围列出白名单用户。"
+
+#: core/admin-pages/page-logs.php:266
+#: core/modules/file-change/lib/package-unknown.php:40
+msgid "Unknown"
+msgstr "未知"
+
+#: core/show-multiple-version-notice.php:5
+msgid "Multiple versions of iThemes Security are active. Please disable all extra versions of iThemes Security."
+msgstr "由于 iThemes 安全的多个版本都处于活动状态。请停用 iThemes 安全的所有额外版本。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:261
+msgid "The scan did not complete successfully. The Sucuri server should send its response in JSON encoding. The data received from the Sucuri server could not be decoded. In addition, a content type of <code>%s</code> was received when a content type of <code>application/json</code> was expected. This could indicate a temporary issue with the Sucuri servers."
+msgstr "扫描未成功完成。Sucuri 服务器应该发送其 JSON 编码的响应。从 Sucuri 服务器收到的数据无法解码。另外，当期望 <code>application/json</code> 的内容类型时，但接收到 <code>%s</code> 的内容类型。这可能表明 Sucuri 服务器存在暂时性问题。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:259
+msgid "The scan did not complete successfully. The Sucuri server should send its response in JSON encoding. The response indicates that the encoding is JSON, but the data could not be decoded. This problem could be due to a temporary Sucuri server issue or a compatibility issue on your server. If the problem continues, please contact iThemes Security support."
+msgstr "扫描未成功完成。Sucuri 服务器应该发送其 JSON 编码的响应。响应表明编码为 JSON，但数据无法解码。此问题可能是由于服务器上存在暂时的 Sucuri 服务器问题或兼容性问题。如果问题仍然存在，请联系 iThemes 安全支持。"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:44
+msgid "If you contact support about this error, please provide the following debug details:"
+msgstr "如果您联系有关此错误的支持，请提供以下调试详细信息："
+
+#. Author of the plugin/theme
+msgid "iThemes"
+msgstr "iThemes"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:328
+msgid "XML-RPC services are disabled on this site."
+msgstr "XML-RPC 服务在此站点上被禁用。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:96
+#: core/modules/wordpress-tweaks/validator.php:17
+msgid "Multiple Authentication Attempts per XML-RPC Request"
+msgstr "每个 XML-RPC 请求进行多次认证尝试"
+
+#: core/modules/wordpress-tweaks/settings-page.php:102
+msgid "<strong>Allow</strong> - Allows XML-RPC requests that contain multiple login attempts. Only use this setting if a service requires it."
+msgstr "<strong>允许</strong> - 允许包含多次登录尝试的 XML-RPC 请求。只有服务需要时才使用此设置。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:101
+msgid "<strong>Block</strong> - Blocks XML-RPC requests that contain multiple login attempts. This setting is highly recommended."
+msgstr "<strong>阻止</strong> - 阻止包含多次登录尝试的 XML-RPC 请求。强烈建议使用此设置。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:32
+msgid "Block (recommended)"
+msgstr "阻止（推荐）"
+
+#: core/modules/wordpress-tweaks/settings-page.php:98
+msgid "WordPress' XML-RPC feature allows hundreds of username and password guesses per request. Use the recommended \"Block\" setting below to prevent attackers from exploiting this feature."
+msgstr "WordPress 的 XML-RPC 功能允许数百个用户名和密码猜测每个请求。使用下面推荐的 \"阻止\" 设置来防止攻击者利用此功能。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:91
+msgid "<strong>Enable XML-RPC</strong> - XML-RPC is fully enabled and will function as normal. Use this setting only if the site must have unrestricted use of XML-RPC."
+msgstr "<strong>启用 XML-RPC</strong> - XML-RPC 已完全启用，并将正常运行。只有当站点必须不受限制地使用 XML-RPC 时才使用此设置。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:90
+msgid "<strong>Disable Pingbacks</strong> - Only disable pingbacks. Other XML-RPC features will work as normal. Select this setting if you require features such as Jetpack or the WordPress Mobile app."
+msgstr "<strong>禁用 Pingbacks</strong> - 只禁用 pingbacks。其他 XML-RPC 功能将正常工作。如果您需要 Jetpack 或 WordPress 移动应用等功能，请选择此设置。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:89
+msgid "<strong>Disable XML-RPC</strong> - XML-RPC is disabled on the site. This setting is highly recommended if Jetpack, the WordPress mobile app, pingbacks, and other services that use XML-RPC are not used."
+msgstr "<strong>禁用 XML-RPC</strong> - 在站点上禁用 XML-RPC。如果未使用 Jetpack，WordPress 移动应用，pingbacks 和其他使用 XML-RPC 的服务，则强烈建议使用此设置。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:27
+msgid "Disable Pingbacks"
+msgstr "禁用 Pingbacks"
+
+#: core/modules/wordpress-tweaks/settings-page.php:26
+msgid "Disable XML-RPC (recommended)"
+msgstr "禁用 XML-RPC（推荐）"
+
+#: core/modules/wordpress-tweaks/settings-page.php:86
+msgid "WordPress' XML-RPC feature allows external services to access and modify content on the site. Common example of services that make use of XML-RPC are <a href=\"%1$s\">the Jetpack plugin</a>, <a href=\"%2$s\">the WordPress mobile app</a>, and <a href=\"%3$s\">pingbacks</a>. If the site does not use a service that requires XML-RPC, select the \"Disable XML-RPC\" setting as disabling XML-RPC prevents attackers from using the feature to attack the site."
+msgstr "WordPress XML-RPC 功能允许外部服务访问和修改站点上的内容。使用 XML-RPC 的常见服务示例包括 <a href=\"%1$s\">Jetpack 插件</a>，<a href=\"%2$s\">WordPress 移动应用</a>，和 <a href=\"%3$s\">pingbacks</a>。如果站点未使用需要 XML-RPC 的服务，请选择 \"禁用 XML-RPC\" 设置，因为禁用 XML-RPC 可防止攻击者使用该功能攻击站点。"
+
+#. Author URI of the plugin/theme
+msgid "https://ithemes.com"
+msgstr "https://ithemes.com"
+
+#. Plugin URI of the plugin/theme
+msgid "https://ithemes.com/security"
+msgstr "https://ithemes.com/security"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:389
+msgid "A Nickname is required. Please choose a nickname or fill out your first and last name."
+msgstr "昵称是必需的。请选择一个昵称或填写您的姓氏和名字。"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:371
+msgid "Your Nickname must be different than your login name. Please choose a different Nickname."
+msgstr "您的昵称必须与您的登录名不同。请选择一个不同的昵称。"
+
+#: core/modules/multisite-tweaks/settings-page.php:6
+msgid "Multisite Tweaks"
+msgstr "多站点微调"
+
+#: core/modules/multisite-tweaks/settings-page.php:25
+#: core/modules/system-tweaks/settings-page.php:25
+#: core/modules/wordpress-tweaks/settings-page.php:49
+msgid "Remember, some of these settings might conflict with other plugins or themes, so test your site after enabling each setting."
+msgstr "请记住，其中一些设置可能会与其他插件或主题相冲突，因此在启用每个设置后测试您的站点。"
+
+#: core/modules/multisite-tweaks/settings-page.php:24
+#: core/modules/system-tweaks/settings-page.php:24
+#: core/modules/wordpress-tweaks/settings-page.php:48
+msgid "Note: These settings are listed as advanced because they block common forms of attacks but they can also block legitimate plugins and themes that rely on the same techniques. When activating the settings below, we recommend enabling them one by one to test that everything on your site is still working as expected."
+msgstr "注意：这些设置被列为高级，因为它们阻止常见的攻击形式，但也可以阻止依赖相同技术的合法插件和主题。在启用下面的设置时，我们建议您逐一启用它们，以测试您站点上的所有内容仍按预期工作。"
+
+#: core/modules/multisite-tweaks/settings-page.php:16
+#: core/modules/system-tweaks/settings-page.php:16
+#: core/modules/wordpress-tweaks/settings-page.php:16
+msgid "These are advanced settings that may be utilized to further strengthen the security of your WordPress site."
+msgstr "这些高级设置可用于进一步加强 WordPress 站点的安全性。"
+
+#: core/modules/multisite-tweaks/settings-page.php:44
+#: core/modules/multisite-tweaks/validator.php:11
+msgid "Core Update Notifications"
+msgstr "核心更新通知"
+
+#: core/modules/multisite-tweaks/settings-page.php:36
+#: core/modules/multisite-tweaks/validator.php:10
+msgid "Plugin Update Notifications"
+msgstr "插件更新通知"
+
+#: core/modules/multisite-tweaks/settings-page.php:28
+#: core/modules/multisite-tweaks/validator.php:9
+msgid "Theme Update Notifications"
+msgstr "主题更新通知"
+
+#: core/modules/wordpress-tweaks/settings-page.php:134
+#: core/modules/wordpress-tweaks/validator.php:21
+msgid "Disable Extra User Archives"
+msgstr "禁用额外用户归档"
+
+#: core/modules/wordpress-tweaks/settings-page.php:126
+#: core/modules/wordpress-tweaks/validator.php:20
+msgid "Force Unique Nickname"
+msgstr "强制唯一的昵称"
+
+#: core/modules/wordpress-tweaks/settings-page.php:118
+#: core/modules/wordpress-tweaks/validator.php:19
+msgid "Login Error Messages"
+msgstr "登录错误信息"
+
+#: core/modules/wordpress-tweaks/settings-page.php:84
+#: core/modules/wordpress-tweaks/validator.php:15
+#: core/modules/wordpress-tweaks/validator.php:16
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: core/modules/wordpress-tweaks/settings-page.php:76
+#: core/modules/wordpress-tweaks/validator.php:14
+msgid "File Editor"
+msgstr "文件编辑器"
+
+#: core/modules/wordpress-tweaks/settings-page.php:68
+#: core/modules/wordpress-tweaks/validator.php:13
+msgid "Comment Spam"
+msgstr "垃圾评论"
+
+#: core/modules/wordpress-tweaks/settings-page.php:60
+#: core/modules/wordpress-tweaks/validator.php:12
+msgid "EditURI Header"
+msgstr "EditURI Header"
+
+#: core/modules/wordpress-tweaks/settings-page.php:52
+#: core/modules/wordpress-tweaks/validator.php:11
+msgid "Windows Live Writer Header"
+msgstr "Windows Live Writer Header"
+
+#: core/modules/system-tweaks/settings-page.php:76
+#: core/modules/system-tweaks/validator.php:15
+msgid "File Writing Permissions"
+msgstr "文件写入权限"
+
+#: core/modules/system-tweaks/settings-page.php:68
+#: core/modules/system-tweaks/validator.php:14
+msgid "Long URL Strings"
+msgstr "长网址字符串"
+
+#: core/modules/system-tweaks/settings-page.php:60
+#: core/modules/system-tweaks/validator.php:13
+msgid "Non-English Characters"
+msgstr "非英文字符"
+
+#: core/modules/system-tweaks/settings-page.php:52
+#: core/modules/system-tweaks/validator.php:12
+msgid "Suspicious Query Strings"
+msgstr "可疑查询字符串"
+
+#: core/modules/system-tweaks/settings-page.php:44
+#: core/modules/system-tweaks/validator.php:11
+msgid "Request Methods"
+msgstr "请求方法"
+
+#: core/modules/system-tweaks/settings-page.php:36
+#: core/modules/system-tweaks/validator.php:10
+msgid "Directory Browsing"
+msgstr "目录浏览"
+
+#: core/modules/file-change/lib/package-system.php:40
+#: core/modules/system-tweaks/settings-page.php:28
+#: core/modules/system-tweaks/validator.php:9
+msgid "System Files"
+msgstr "系统文件"
+
+#: core/modules/wordpress-tweaks/config-generators.php:8
+msgid "Disable File Editor - Security > Settings > WordPress Tweaks > File Editor"
+msgstr "禁用文件编辑器 - 安全 > 设置 > WordPress 微调 > 文件编辑器"
+
+#: core/modules/wordpress-tweaks/config-generators.php:51
+#: core/modules/wordpress-tweaks/config-generators.php:104
+msgid "Reduce Comment Spam - Security > Settings > WordPress Tweaks > Comment Spam"
+msgstr "减少垃圾评论 - 安全 > 设置 > WordPress 微调 > 垃圾评论"
+
+#: core/modules/system-tweaks/config-generators.php:142
+#: core/modules/system-tweaks/config-generators.php:271
+msgid "Filter Non-English Characters - Security > Settings > System Tweaks > Non-English Characters"
+msgstr "过滤非英文字符 - 安全 > 设置 > 系统微调 > 非英文字符"
+
+#: core/modules/system-tweaks/config-generators.php:117
+#: core/modules/system-tweaks/config-generators.php:243
+msgid "Filter Suspicious Query Strings in the URL - Security > Settings > System Tweaks > Suspicious Query Strings"
+msgstr "过滤网址的可疑查询字符串 - 安全 > 设置 > 系统微调 > 可疑查询字符串"
+
+#: core/modules/system-tweaks/config-generators.php:110
+#: core/modules/system-tweaks/config-generators.php:236
+msgid "Filter Request Methods - Security > Settings > System Tweaks > Request Methods"
+msgstr "筛选请求方法 - 安全 > 设置 > 系统微调 > 请求方法"
+
+#: core/modules/system-tweaks/config-generators.php:79
+#: core/modules/system-tweaks/config-generators.php:202
+msgid "Disable PHP in Uploads - Security > Settings > System Tweaks > PHP in Uploads"
+msgstr "禁用 Uploads 目录的 PHP - 安全 > 设置 > 系统微调 > Uploads 目录的 PHP"
+
+#: core/modules/system-tweaks/config-generators.php:49
+msgid "Disable Directory Browsing - Security > Settings > System Tweaks > Directory Browsing"
+msgstr "禁用目录浏览 - 安全 > 设置 > 系统微调 > 目录浏览"
+
+#: core/modules/wordpress-tweaks/config-generators.php:26
+#: core/modules/wordpress-tweaks/config-generators.php:96
+msgid "Disable XML-RPC - Security > Settings > WordPress Tweaks > XML-RPC"
+msgstr "禁用 XML-RPC - 安全 > 设置 > WordPress 微调 > XML-RPC"
+
+#: core/modules/system-tweaks/config-generators.php:23
+#: core/modules/system-tweaks/config-generators.php:58
+#: core/modules/system-tweaks/config-generators.php:175
+msgid "Protect System Files - Security > Settings > System Tweaks > System Files"
+msgstr "保护系统文件 - 安全 > 设置 > 系统微调 > 系统文件"
+
+#: core/modules/wordpress-tweaks/settings-page.php:56
+msgid "This is not needed if you do not use Windows Live Writer or other blogging clients that rely on this file."
+msgstr "如果您不使用 Windows Live Writer 或其他依赖此文件的博客客户端，则不需要此功能。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:55
+msgid "Remove the Windows Live Writer header."
+msgstr "移除 Windows Live Writer header。"
+
+#: core/modules/system-tweaks/settings-page.php:87
+msgid "Disable PHP in Uploads"
+msgstr "禁用 Uploads 目录的 PHP"
+
+#: core/modules/multisite-tweaks/settings-page.php:32
+msgid "Hides theme update notifications from users who cannot update themes. Please note that this only makes a difference in multi-site installations."
+msgstr "隐藏无法更新主题的用户的主题更新通知。请注意，这只会影响多站点安装。"
+
+#: core/modules/multisite-tweaks/settings-page.php:31
+msgid "Hide Theme Update Notifications"
+msgstr "隐藏主题更新通知"
+
+#: core/modules/multisite-tweaks/settings-page.php:40
+msgid "Hides plugin update notifications from users who cannot update plugins. Please note that this only makes a difference in multi-site installations."
+msgstr "隐藏无法更新插件的用户的插件更新通知。请注意，这只会影响多站点安装。"
+
+#: core/modules/multisite-tweaks/settings-page.php:39
+msgid "Hide Plugin Update Notifications"
+msgstr "隐藏插件更新通知"
+
+#: core/modules/wordpress-tweaks/settings-page.php:80
+msgid "Disables the file editor for plugins and themes requiring users to have access to the file system to modify files. Once activated you will need to manually edit theme and other files using a tool other than WordPress."
+msgstr "禁用插件和主题的文件编辑器，要求用户访问文件系统以修改文件。一旦激活，您将需要使用除 WordPress 以外的工具手动编辑主题和其他文件。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:79
+msgid "Disable File Editor"
+msgstr "禁用文件编辑器"
+
+#: core/modules/wordpress-tweaks/settings-page.php:64
+msgid "Removes the RSD (Really Simple Discovery) header. If you don't integrate your blog with external XML-RPC services such as Flickr then the \"RSD\" function is pretty much useless to you."
+msgstr "移除 RSD（Really Simple Discovery）header。如果您没有将您的博客与 Flickr 等外部 XML-RPC 服务集成在一起，那么 \"RSD\" 功能对您来说几乎是无用的。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:63
+msgid "Remove the RSD (Really Simple Discovery) header."
+msgstr "移除 RSD（Really Simple Discovery）header。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:28
+msgid "Enable XML-RPC"
+msgstr "启用 XML-RPC"
+
+#: core/modules/multisite-tweaks/settings-page.php:48
+msgid "Hides core update notifications from users who cannot update core. Please note that this only makes a difference in multi-site installations."
+msgstr "隐藏无法更新核心的用户的核心更新通知。请注意，这只会影响多站点安装。"
+
+#: core/modules/multisite-tweaks/settings-page.php:47
+msgid "Hide Core Update Notifications"
+msgstr "隐藏核心更新通知"
+
+#: core/modules/wordpress-tweaks/settings-page.php:72
+msgid "This option will cut down on comment spam by denying comments from bots with no referrer or without a user-agent identified."
+msgstr "此选项将减少垃圾评论，拒绝没有推荐或没有用户代理识别的机器人的评论。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:71
+msgid "Reduce Comment Spam"
+msgstr "减少垃圾评论"
+
+#: core/modules/wordpress-tweaks/settings-page.php:122
+msgid "Prevents error messages from being displayed to a user upon a failed login attempt."
+msgstr "防止登录尝试失败时向用户显示错误信息。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:121
+msgid "Disable login error messages"
+msgstr "禁用登录错误信息"
+
+#: core/modules/wordpress-tweaks/settings-page.php:130
+msgid "This forces users to choose a unique nickname when updating their profile or creating a new account which prevents bots and attackers from easily harvesting user's login usernames from the code on author pages. Note this does not automatically update existing users as it will affect author feed urls if used."
+msgstr "这会强制用户在更新个人资料或创建新账号时选择唯一的昵称，以防止机器人和攻击者轻易从作者页面上的代码中获取用户的登录用户名。请注意，这不会自动更新现有用户，因为它会影响作者供稿网址（如果使用的话）。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:129
+msgid "Force users to choose a unique nickname"
+msgstr "强制用户选择一个唯一的昵称"
+
+#: core/modules/wordpress-tweaks/settings-page.php:138
+msgid "This makes it harder for bots to determine usernames by disabling post archives for users that don't post to your site."
+msgstr "为不发布到您的站点的用户禁用文章归档，这使得机器人更难确定用户名。"
+
+#: core/modules/wordpress-tweaks/settings-page.php:137
+msgid "Disables a user's author page if their post count is 0."
+msgstr "如果他们的发布文章数量为 0，则禁用用户的作者页面。"
+
+#: core/modules/system-tweaks/settings-page.php:80
+msgid "Prevents scripts and users from being able to write to the wp-config.php file and .htaccess file. Note that in the case of this and many plugins this can be overcome however it still does make the files more secure. Turning this on will set the UNIX file permissions to 0444 on these files and turning it off will set the permissions to 0664."
+msgstr "防止脚本和用户能够写入 wp-config.php 文件和 .htaccess 文件。请注意，在这个和许多插件的情况下，这可以克服的，但它仍然确保文件更安全。打开 \"开启\" 将在这些文件上设置 UNIX 文件权限为 0444，并将其设置为 \"关闭\" 将权限设置为 0664。"
+
+#: core/modules/system-tweaks/settings-page.php:79
+msgid "Remove File Writing Permissions"
+msgstr "移除文件写入权限"
+
+#: core/modules/system-tweaks/settings-page.php:56
+msgid "These are very often signs of someone trying to gain access to your site but some plugins and themes can also be blocked."
+msgstr "这些通常是有人尝试访问您的站点的迹象，但也可以阻止一些插件和主题。"
+
+#: core/modules/system-tweaks/settings-page.php:55
+msgid "Filter Suspicious Query Strings in the URL"
+msgstr "过滤网址的可疑查询字符串"
+
+#: core/modules/system-tweaks/settings-page.php:47
+msgid "Filter Request Methods"
+msgstr "筛选请求方法"
+
+#: core/modules/system-tweaks/settings-page.php:32
+msgid "Prevent public access to readme.html, readme.txt, wp-config.php, install.php, wp-includes, and .htaccess. These files can give away important information on your site and serve no purpose to the public once WordPress has been successfully installed."
+msgstr "阻止公众访问 readme.html，readme.txt，wp-config.php，install.php，wp-includes，和 .htaccess。这些文件可以把您站点上的重要信息泄露出去，一旦 WordPress 成功安装了，就不会对公众有任何意义了。"
+
+#: core/modules/system-tweaks/settings-page.php:31
+msgid "Protect System Files"
+msgstr "保护系统文件"
+
+#: core/modules/system-tweaks/settings-page.php:64
+msgid "Filter out non-english characters from the query string. This should not be used on non-english sites and only works when \"Filter Suspicious Query String\" has been selected."
+msgstr "从查询字符串中过滤掉非英文字符。这不应该在非英语站点上使用，并且只有在 \"过滤可疑查询字符串\" 被选定时才能使用。"
+
+#: core/modules/system-tweaks/settings-page.php:63
+msgid "Filter Non-English Characters"
+msgstr "过滤非英文字符"
+
+#: core/modules/system-tweaks/settings-page.php:72
+msgid "Limits the number of characters that can be sent in the URL. Hackers often take advantage of long URLs to try to inject information into your database."
+msgstr "限制可以在网址中发送的字符数。黑客通常利用长网址来尝试将信息注入到您的数据库。"
+
+#: core/modules/system-tweaks/settings-page.php:71
+msgid "Filter Long URL Strings"
+msgstr "过滤长网址字符串"
+
+#: core/modules/system-tweaks/settings-page.php:40
+msgid "Prevents users from seeing a list of files in a directory when no index file is present."
+msgstr "当没有索引文件存在时，防止用户看到目录中的文件列表。"
+
+#: core/modules/system-tweaks/settings-page.php:39
+msgid "Disable Directory Browsing"
+msgstr "禁用目录浏览"
+
+#: core/modules/security-check/scanner.php:22
+#: core/modules/security-check/scanner.php:67
+#: core/modules/wordpress-tweaks/settings-page.php:6
+msgid "WordPress Tweaks"
+msgstr "WordPress 微调"
+
+#: core/modules/system-tweaks/settings-page.php:6
+msgid "System Tweaks"
+msgstr "系统微调"
+
+#: core/modules/strong-passwords/settings-page.php:42
+msgid "Warning: If your site invites public registrations setting the role too low may annoy your members."
+msgstr "警告：如果您的站点邀请公众注册，设置的角色太低可能会惹怒您的会员。"
+
+#: core/modules/strong-passwords/settings-page.php:40
+msgid "Minimum role at which a user must choose a strong password."
+msgstr "用户必须选择强密码的最低角色。"
+
+#: core/modules/strong-passwords/settings-page.php:10
+#: core/modules/strong-passwords/settings-page.php:19
+msgid "Force users to use strong passwords as rated by the WordPress password meter."
+msgstr "强制用户使用 WordPress 密码强度表所评定的强密码。"
+
+#: core/modules/strong-passwords/settings-page.php:36
+#: core/modules/strong-passwords/validator.php:9
+msgid "Select Role for Strong Passwords"
+msgstr "为强密码选择角色"
+
+#: core/modules/security-check/scanner.php:19
+msgid "Strong Passwords"
+msgstr "强密码"
+
+#: core/modules/ssl/class-itsec-ssl.php:197
+msgid "Force SSL for Dashboard - Security > Settings > Secure Socket Layers (SSL) > SSL for Dashboard"
+msgstr "仪表盘强制使用 SSL  - 安全 > 设置 > 安全套接字层（SSL）> 仪表盘使用 SSL"
+
+#: core/modules/ssl/settings-page.php:77
+msgid "Note: After enabling this feature, you will be logged out and you will have to log back in. This is to prevent possible cookie conflicts that could make it more difficult to get in otherwise."
+msgstr "注意：启用此功能后，您将被注销，并且必须重新登录。这是为了防止可能的 Cookie 冲突，否则可能导致更难以进入。"
+
+#: core/modules/ssl/settings-page.php:104
+msgid "Forces all dashboard access to be served only over an SSL connection."
+msgstr "强制所有仪表盘访问只能通过 SSL 连接进行服务。"
+
+#: core/modules/ssl/settings-page.php:103
+msgid "Force SSL for Dashboard"
+msgstr "仪表盘强制使用 SSL"
+
+#: core/modules/ssl/settings-page.php:96
+msgid "Enables secure SSL connection for the front-end (public parts of your site). Turning this off will disable front-end SSL control, turning this on \"Per Content\" will place a checkbox on the edit page for all posts and pages (near the publish settings) allowing you to turn on SSL for selected pages or posts. Selecting \"Whole Site\" will force the whole site to use SSL."
+msgstr "为前端（您的站点的公共部分）启用安全 SSL 连接。关闭此功能将禁用前端 SSL 控制功能，打开此功能后，\"每项内容\" 会为所有文章和页面（发布设置附近）的编辑页面设置一个复选框，以允许您为选定的页面或文章启用 SSL。选择 \"整个站点\" 将强制整个站点使用 SSL。"
+
+#: core/modules/ssl/settings-page.php:58
+msgid "Whole Site"
+msgstr "整个站点"
+
+#: core/modules/ssl/settings-page.php:57
+msgid "Per Content"
+msgstr "每项内容"
+
+#: core/modules/ssl/settings-page.php:100 core/modules/ssl/validator.php:12
+msgid "SSL for Dashboard"
+msgstr "仪表盘使用 SSL"
+
+#: core/modules/ssl/settings-page.php:93 core/modules/ssl/validator.php:10
+#: core/modules/ssl/validator.php:11
+msgid "Front End SSL Mode"
+msgstr "前端 SSL 模式"
+
+#: core/modules/ssl/settings-page.php:19
+msgid "Are you sure you want to enable SSL? If your server does not support SSL you will be locked out of your WordPress Dashboard."
+msgstr "您确定要启用 SSL 吗？如果您的服务器不支持 SSL，您将被锁定在您的 WordPress 仪表盘之外。"
+
+#: core/modules/salts/settings-page.php:29 core/modules/salts/validator.php:15
+msgid "Change WordPress Salts"
+msgstr "更改 WordPress Salts"
+
+#: core/modules/salts/settings-page.php:6
+msgid "WordPress Salts"
+msgstr "WordPress Salts"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:269
+msgid "An unknown error prevented the scan from completing successfully. The Sucuri server responded with a <code>%s</code> error code."
+msgstr "未知错误阻止了扫描成功完成。Sucuri服务器使用 <code>%s</code> 错误代码进行响应。"
+
+#: core/modules/malware/class-itsec-malware-scanner.php:265
+msgid "The scan did not complete successfully. Sucuri sent the following error: %s"
+msgstr "扫描未成功完成。Sucuri 发送了以下错误：%s"
+
+#. translators: Scan result listing. %1$s is the status. %2$s is the
+#. description. %3$s is the details link.
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:192
+msgctxt "scan status, scan description, scan details link"
+msgid "%1$s %2$s %3$s"
+msgstr "%1$s %2$s %3$s"
+
+#: core/admin-pages/page-settings.php:111
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:189
+#: core/modules/malware/settings-page.php:18
+msgid "Show Details"
+msgstr "显示详细信息"
+
+#. translators: Scan result listing. %1$s is the status. %2$s is the
+#. description.
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:187
+msgctxt "scan status, scan description"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:139
+msgid "Payload:<pre>%s</pre>"
+msgstr "有效负载：<pre>%s</pre>"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:124
+msgid "Type: %1$s"
+msgstr "类型：%1$s"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:120
+msgid "*Known Spam detected"
+msgstr "*已知垃圾评论检测"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:101
+msgid "Malware found on URL"
+msgstr "在此网址发现恶意软件"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:99
+msgid "Security warning in the URL"
+msgstr "此网址的安全警告"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:83
+msgid "Malware"
+msgstr "恶意软件"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:55
+msgid "Blacklist"
+msgstr "黑名单"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:38
+msgid "Error Code: <code>%s</code>"
+msgstr "错误代码：<code>%s</code>"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:37
+msgid "Error Message: %s"
+msgstr "错误信息：%s"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:35
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:159
+msgid "The scan failed to properly scan the site."
+msgstr "扫描未能正确扫描该站点。"
+
+#: core/modules/malware/logs.php:52
+msgid "Results"
+msgstr "结果"
+
+#: core/lib/log.php:241
+msgid "Action"
+msgstr "操作"
+
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:176
+#: core/modules/malware/logs.php:21
+msgid "Clean"
+msgstr "清理"
+
+#: core/lib/log.php:244
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:178
+msgid "Warning"
+msgstr "警告"
+
+#: core/modules/file-change/scanner.php:1031
+msgid "Scan Details"
+msgstr "扫描详细信息"
+
+#: core/modules/malware/settings-page.php:58
+msgid "The malware scanner requires Javascript in order to function. If Javascript is disabled in your browser, please enable it. If Javascript is not disabled, a script from another plugin, the theme, or a broken WordPress file is preventing the malware scanner's script from executing properly. Please try disabling other plugins to see if that resolves the issue."
+msgstr "恶意软件扫描器需要使用 Javascript 才能运行。如果您的浏览器禁用 Javascript，请将其启用。如果 Javascript 没有被禁用，另一个插件的脚本，主题或破损的 WordPress 文件正在阻止恶意软件扫描器的脚本正常执行。请尝试禁用其他插件，看看是否可以解决问题。"
+
+#: core/modules/malware/settings-page.php:55
+msgid "Scan Homepage for Malware"
+msgstr "扫描首页以查找恶意软件"
+
+#: core/modules/malware/settings-page.php:53
+msgid "Results of previous malware scans can be found on the <a href=\"%s\">logs page</a>."
+msgstr "之前的恶意软件扫描结果可以在 <a href=\"%s\">日志页面</a> 中找到。"
+
+#: core/modules/malware/settings-page.php:52
+msgid "This malware scan is powered by <a href=\"%s\">Sucuri SiteCheck</a>. It checks for known malware, blacklisting status, website errors and out-of-date software. Although the Sucuri team does its best to provide thorough results, 100%% accuracy is not realistic and is not guaranteed."
+msgstr "此恶意软件扫描由 <a href=\"%s\">Sucuri SiteCheck</a> 提供支持。它会检查已知的恶意软件，黑名单状态，站点错误和过时的软件。尽管 Sucuri 团队尽力提供全面的结果，但 100% 的准确性并不现实，不能保证。"
+
+#: core/modules/malware/settings-page.php:35
+msgid "An error prevented the scan from completing as expected. The currently logged in user does not have sufficient permissions to run this scan. You may need to log out of the site and log back in."
+msgstr "错误导致扫描无法按预期完成。当前登录的用户没有足够的权限来运行此扫描。您可能需要退出该站点并重新登录。"
+
+#: core/admin-pages/page-settings.php:110
+#: core/modules/malware/settings-page.php:19
+msgid "Hide Details"
+msgstr "隐藏详细信息"
+
+#: core/modules/malware/logs.php:16 core/modules/malware/settings-page.php:9
+msgid "Malware Scan"
+msgstr "恶意软件扫描"
+
+#: core/modules/ipcheck/settings-page.php:85
+msgid "Reset API Key"
+msgstr "重置 API 密钥"
+
+#: core/modules/ipcheck/settings-page.php:75
+msgid "Receive email updates about WordPress Security from iThemes."
+msgstr "从 iThemes 接收关于 WordPress 安全的邮件更新。"
+
+#: core/modules/hide-backend/class-itsec-hide-backend.php:391
+msgid "WordPress Login Address Changed"
+msgstr "WordPress 登录地址已更改"
+
+#: core/modules/hide-backend/settings-page.php:43
+msgid "Hides the login page (wp-login.php, wp-admin, admin and login) making it harder to find by automated attacks and making it easier for users unfamiliar with the WordPress platform."
+msgstr "隐藏登录页面（wp-login.php, wp-admin, admin 和 login）使其更难通过自动化攻击找到，并使不熟悉 WordPress 平台的用户更容易。"
+
+#: core/modules/hide-backend/settings-page.php:114
+#: core/modules/hide-backend/validator.php:31
+msgid "Custom Login Action"
+msgstr "自定义登录操作"
+
+#: core/modules/hide-backend/settings-page.php:89
+#: core/modules/hide-backend/validator.php:25
+msgid "Register Slug"
+msgstr "注册别名"
+
+#: core/modules/hide-backend/settings-page.php:78
+#: core/modules/hide-backend/validator.php:28
+msgid "Login Slug"
+msgstr "登录别名"
+
+#: core/modules/hide-backend/settings-page.php:9
+#: core/modules/hide-backend/settings-page.php:68
+#: core/modules/hide-backend/validator.php:9
+msgid "Hide Backend"
+msgstr "隐藏后台"
+
+#: core/modules/hide-backend/settings-page.php:93
+msgid "Registration URL: %s"
+msgstr "注册网址：%s"
+
+#: core/modules/hide-backend/settings-page.php:118
+msgid "WordPress uses the \"action\" variable to handle many login and logout functions. By default this plugin can handle the normal ones but some plugins and themes may utilize a custom action (such as logging out of a private post). If you need a custom action please enter it here."
+msgstr "WordPress 使用 \"action\" 变量来处理许多登录和注销功能。默认情况下，此插件可以处理普通的插件，但是一些插件和主题可能会使用自定义操作（例如 注销个人文章）。如果您需要自定义操作，请在此处输入。"
+
+#: core/modules/hide-backend/settings-page.php:84
+msgid "Note: The output is limited to alphanumeric characters, underscore (_) and dash (-). Special characters such as \".\" and \"/\" are not allowed and will be converted in the same manner as a post title. Please review your selection before logging out."
+msgstr "注意：输出只限于字母数字字符，下划线（_）和 连接线（-）。特殊字符, 如 \".\" 和 \"/\" 是不允许的，并将以与文章标题相同的方式转换。请在退出之前查看您的选择。"
+
+#: core/modules/hide-backend/settings-page.php:83
+msgid "The login url slug cannot be \"login,\" \"admin,\" \"dashboard,\" or \"wp-login.php\" as these are use by default in WordPress."
+msgstr "登录网址别名不能是 \"login\"，\"admin\"，\"dashboard\" 或 \"wp-login.php\"，因为这些默认情况下在 WordPress 中使用。"
+
+#: core/modules/hide-backend/settings-page.php:71
+msgid "Enable the hide backend feature."
+msgstr "启用隐藏后台功能。"
+
+#: core/modules/404-detection/class-itsec-four-oh-four.php:58
+msgid "too many attempts to access a file that does not exist"
+msgstr "尝试访问不存在的文件太多"
+
+#: core/modules/404-detection/settings-page.php:55
+msgid "File types listed here will be recorded as 404 errors but will not lead to lockouts."
+msgstr "此处列出的文件类型将被记录为 404 错误，但不会导致锁定。"
+
+#: core/modules/404-detection/settings-page.php:16
+msgid "404 detection looks at a user who is hitting a large number of non-existent pages and getting a large number of 404 errors. 404 detection assumes that a user who hits a lot of 404 errors in a short period of time is scanning for something (presumably a vulnerability) and locks them out accordingly. This also gives the added benefit of helping you find hidden problems causing 404 errors on unseen parts of your site. All errors will be logged in the \"View Logs\" page. You can set thresholds for this feature below."
+msgstr "404 检测会查看正在访问大量不存在的页面并获取大量 404 错误的用户。404 检测假定在短时间内遇到大量 404 错误的用户正在扫描某些内容（可能是漏洞）并相应地将其锁定。这也带来了额外的好处，可以帮助您找到隐藏的问题，导致您的站点上看不见的部分发生 404 错误。所有错误都将记录在 \"查看日志\" 页面。您可以在下面为此功能设置阈值。"
+
+#: core/modules/404-detection/settings-page.php:52
+msgid "Ignored File Types"
+msgstr "忽略的文件类型"
+
+#: core/modules/404-detection/settings-page.php:45
+#: core/modules/404-detection/validator.php:12
+#: core/modules/404-detection/validator.php:13
+msgid "404 File/Folder White List"
+msgstr "404 文件/文件夹白名单"
+
+#: core/modules/404-detection/settings-page.php:37
+#: core/modules/404-detection/validator.php:10
+msgid "Error Threshold"
+msgstr "错误阈值"
+
+#: core/modules/404-detection/settings-page.php:29
+#: core/modules/404-detection/validator.php:9
+msgid "Minutes to Remember 404 Error (Check Period)"
+msgstr "记住 404 错误的分钟数（检查周期）"
+
+#: core/modules/404-detection/settings-page.php:48
+msgid "Use the white list above to prevent recording common 404 errors. If you know a common file on your site is missing and you do not want it to count towards a lockout record it here. You must list the full path beginning with the \"/\"."
+msgstr "使用上面的白名单来防止记录常见的 404 错误。如果您知道您站点上的共同文件丢失，您不希望将其计入此处的锁定记录。您必须列出以 \"/\" 开头的完整路径。"
+
+#: core/modules/404-detection/settings-page.php:41
+msgid "The numbers of errors (within the check period time frame) that will trigger a lockout. Set to zero (0) to record 404 errors without locking out users. This can be useful for troubleshooting content or other errors. The default is 20."
+msgstr "将在触发锁定的错误数量（在检查周期时间范围内）。设置为零（0）以记录 404 错误而不锁定用户。这对解决内容或其他错误很有用。默认值为 20。"
+
+#: core/modules/404-detection/settings-page.php:40
+msgid "Errors"
+msgstr "个 （错误）"
+
+#: core/modules/404-detection/settings-page.php:33
+msgid "The number of minutes in which 404 errors should be remembered and counted towards lockouts."
+msgstr "404 错误应被记住并计入锁定的分钟数。"
+
+#: core/modules/404-detection/logs.php:10
+#: core/modules/404-detection/settings-page.php:6
+msgid "404 Detection"
+msgstr "404 检测"
+
+#: core/modules/file-change/logs.php:77
+msgid "Added"
+msgstr "已增加"
+
+#: core/modules/file-change/scanner.php:1033
+msgid "File Hash"
+msgstr "文件校验码"
+
+#: core/modules/file-change/scanner.php:1033
+msgid "Modified"
+msgstr "已修改"
+
+#: core/modules/file-change/logs.php:65
+msgid "Memory Used"
+msgstr "内存占用"
+
+#: core/modules/backup/class-itsec-backup.php:287
+msgid "Date"
+msgstr "日期"
+
+#: core/modules/file-change/scanner.php:1033
+msgid "File"
+msgstr "文件"
+
+#: core/modules/file-change/settings-page.php:121
+msgid "File types listed here will not be checked for changes. While it is possible to change files such as images it is quite rare and nearly all known WordPress attacks exploit php, js and other text files."
+msgstr "此处列出的文件类型将不会被检查更改。虽然可以更改图片等文件，但这种情况非常罕见，几乎所有已知的 WordPress 攻击都是利用 php，js 和其他文本文件。"
+
+#: core/modules/file-change/settings-page.php:129
+msgid "Disabling this feature will prevent the file change warning from displaying to the site administrator in the WordPress Dashboard. Note that disabling both the error message and the email notification will result in no notifications of file changes. The only way you will be able to tell is by manually checking the log files."
+msgstr "禁用此功能将防止文件更改警告显示给 WordPress 仪表盘中的站点管理员。请注意，禁用错误信息和邮件通知都不会导致文件更改的通知。您唯一能辨别的方法就是手动检查日志文件。"
+
+#: core/modules/file-change/settings-page.php:128
+msgid "Display file change admin warning"
+msgstr "显示文件更改管理员警告"
+
+#: core/modules/file-change/settings-page.php:109
+msgid "Exclude files or folders by clicking the red minus next to the file or folder name."
+msgstr "通过单击文件或文件夹名称旁边的红色减号排除文件或文件夹。"
+
+#: core/modules/file-change/settings-page.php:65
+msgid "Even the best security solutions can fail. How do you know if someone gets into your site? You will know because they will change something. File Change detection will tell you what files have changed in your WordPress installation alerting you to changes not made by yourself. Unlike other solutions, this plugin will look only at your installation and compare files to the last check instead of comparing them with a remote installation thereby taking into account whether or not you modify the files yourself."
+msgstr "即使是最好的安全解决方案也会失败。您怎么知道有人进入您的站点呢？您会知道，因为他们会更改一些东西。文件更改检测将告诉您哪些文件已在您的 WordPress 安装中发生了更改，提醒您这些不是您自己进行的更改。与其他解决方案不同的是，此插件只查看您的安装，并将文件与上次检查进行比较，而不是将其与远程安装进行比较，从而考虑您是否自己修改文件。"
+
+#: core/modules/file-change/settings-page.php:125
+#: core/modules/file-change/validator.php:18
+msgid "Display File Change Admin Warning"
+msgstr "显示文件更改管理员警告"
+
+#: core/modules/file-change/settings-page.php:117
+#: core/modules/file-change/validator.php:17
+msgid "Ignore File Types"
+msgstr "忽略文件类型"
+
+#: core/modules/file-change/settings-page.php:107
+#: core/modules/file-change/validator.php:16
+msgid "Files and Folders List"
+msgstr "文件和文件夹列表"
+
+#: core/modules/file-change/settings-page.php:9
+#: core/modules/security-check/scanner.php:15
+msgid "File Change Detection"
+msgstr "文件更改检测"
+
+#: core/modules/file-change/settings-page.php:100
+msgid "Press the button below to scan your site's files for changes. Note that if changes are found this will take you to the logs page for details."
+msgstr "按下面的按钮来扫描您的站点的文件更改。请注意，如果发现更改，则会将您带到日志页面以获取详细信息。"
+
+#: core/admin-pages/page-settings.php:447
+msgid "View Logs"
+msgstr "查看日志"
+
+#: core/modules/file-change/admin.php:28
+msgid "An unknown error occured. Please try again later"
+msgstr "出现未知错误。请稍后再试"
+
+#: core/modules/file-change/admin.php:26
+msgid "No changes were detected."
+msgstr "没有检测到更改。"
+
+#: core/modules/file-change/admin.php:25
+#: core/modules/file-change/scanner.php:195
+#: core/modules/malware/settings-page.php:17
+msgid "Scanning..."
+msgstr "正在扫描..."
+
+#: core/modules/file-change/admin.php:24
+#: core/modules/file-change/settings-page.php:94
+msgid "Scan Files Now"
+msgstr "立即扫描文件"
+
+#. translators: 1: Specific error details
+#: core/modules/database-prefix/utility.php:64
+msgid "Unable to update the <code>wp-config.php</code> file in order to update the Database Prefix. Error details as follows: %1$s"
+msgstr "无法更新 <code>wp-config.php</code> 文件以更新数据库前缀。错误详细信息如下：%1$s"
+
+#. translators: 1: Specific error details
+#: core/modules/database-prefix/utility.php:52
+msgid "Unable to read the <code>wp-config.php</code> file in order to update the Database Prefix. Error details as follows: %1$s"
+msgstr "无法读取 <code>wp-config.php</code> 文件以更新数据库前缀。错误详细信息如下：%1$s"
+
+#: core/modules/database-prefix/utility.php:127
+msgid "Could not update prefix references in usermeta table."
+msgstr "无法更新用户元数据表中的前缀引用。"
+
+#: core/modules/database-prefix/utility.php:110
+msgid "Could not update prefix references in options table."
+msgstr "无法更新选项数据表中的前缀引用。"
+
+#: core/modules/database-prefix/settings-page.php:20
+msgid "Note: The use of this tool requires quite a bit of system memory which may be more than some hosts can handle. If you back your database up you can't do any permanent damage but without a proper backup you risk breaking your site and having to perform a rather difficult fix."
+msgstr "注意：使用此工具需要相当多的系统内存，这可能超出了一些主机的处理能力。如果您将数据库备份起来，您不能做任何永久性的损坏，但是没有适当的备份您就有可能破坏您的站点并且不得不执行一个相当困难的修复。"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:23
+msgid "Try iThemes Sync for Free"
+msgstr "免费试用 iThemes Sync"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:21
+msgid "Integrated with iThemes Security, so you can release lockouts and turn Away Mode on or off right from your Sync dashboard or your phone."
+msgstr "与 iThemes 安全集成，您可以从 Sync 控制台或手机上释放锁定并打开或关闭离开模式。"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:20
+msgid "Manage updates remotely for up to 10 WordPress sites today for free!"
+msgstr "现在免费管理最多 10 个 WordPress 站点的更新！"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:39
+msgid "Subscribe"
+msgstr "订阅"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:37
+#: core/modules/ipcheck/settings-page.php:66
+#: core/modules/ipcheck/validator.php:13
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:158
+msgid "Email Address"
+msgstr "电邮地址"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:31
+msgid "Get tips for securing your site + the latest WordPress security updates, news and releases from iThemes."
+msgstr "获取保护您的站点的技巧 + 最新的 WordPress 安全更新，iThemes 新闻和最新版本的发布。"
+
+#: core/lib/class-itsec-mail.php:45
+#: core/modules/core/sidebar-widget-pro-upsell.php:6
+#: core/modules/core/sidebar-widget-pro-upsell.php:21
+#: core/modules/core/sidebar-widget-support.php:16
+msgid "Get iThemes Security Pro"
+msgstr "获取 iThemes 安全专业版"
+
+#: core/modules/core/sidebar-widget-support.php:15
+msgid "Get added peace of mind with professional support from our expert team and pro features with iThemes Security Pro."
+msgstr "通过专家团队的专业支持和 iThemes 安全专业版的专业功能，让您更加安心。"
+
+#: core/modules/core/sidebar-widget-support.php:14
+msgid "Get Free Support"
+msgstr "获取免费支持"
+
+#: core/modules/core/sidebar-widget-support.php:13
+msgid "Since you are using the free version of iThemes Security from WordPress.org, you can get free support from the WordPress community."
+msgstr "由于您使用 WordPress.org 的免费版iThemes 安全，您可以从 WordPress 社区获得免费支持。"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:16
+msgid "Get BackupBuddy"
+msgstr "获取 BackupBuddy"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:15
+msgid "BACKUPPROTECT"
+msgstr "备份保护"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:15
+msgid "25% off BackupBuddy with coupon code"
+msgstr "想要获得 BackupBuddy 的 25% 折扣，需要使用优惠码"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:14
+msgid "BackupBuddy is the complete backup, restore and migration solution for your WordPress site. Schedule automated backups, store your backups safely off-site and restore your site quickly & easily."
+msgstr "BackupBuddy 是您的 WordPress 站点的完整备份，恢复和迁移的解决方案。计划自动备份，安全地将备份存储在异地并快速轻松地恢复您的站点。"
+
+#: core/modules/core/class-itsec-core-admin.php:33
+msgid "Get Support"
+msgstr "获取支持"
+
+#: core/modules/core/sidebar-widget-support.php:6
+msgid "Need Help Securing Your Site?"
+msgstr "需要帮助保护您的站点吗？"
+
+#: core/modules/core/sidebar-widget-sync-cross-promo.php:6
+msgid "Manage Your Sites Remotely"
+msgstr "远程管理您的站点"
+
+#: core/modules/core/sidebar-widget-backupbuddy-cross-promo.php:6
+msgid "Complete Your Security Strategy With BackupBuddy"
+msgstr "使用 BackupBuddy 完成您的安全策略"
+
+#: core/modules/core/sidebar-widget-mail-list-signup.php:6
+msgid "Download Our WordPress Security Pocket Guide"
+msgstr "下载我们的 WordPress 安全袖珍指南"
+
+#. translators: 1: Old directory path, 2: New directory path, 3: Specific error
+#. details
+#: core/modules/content-directory/utility.php:96
+msgid "CRITICAL ERROR: The <code>%1$s</code> directory was successfully renamed to the new name (<code>%2$s</code>). However, an error occurred when updating the <code>wp-config.php</code> file to configure WordPress to use the new content directory. iThemes Security attempted to rename the directory back to its original name, but an unknown error prevented the rename from working as expected. In order for your site to function properly, you will either need to manually rename the <code>%2$s</code> directory back to <code>%1$s</code> or manually update the <code>wp-config.php</code> file with the necessary modifications. The error that prevented the file from updating is as follows: %3$s"
+msgstr "严重错误：<code>%1$s</code> 目录已成功重命名为新名称（<code>%2$s</code>）。但是，更新 <code>wp-config.php</code> 文件以将 WordPress 配置为使用新 content 目录时发生错误。iThemes 安全尝试将目录重命名为其原始名称，但未知错误阻止重命名按预期工作。为了让您的站点正常运行，您需要手动将 <code>%2$s</code> 目录重新命名为 <code>%1$s</code> 或手动更新 <code>wp-config.php</code> 文件进行必要的修改。阻止文件更新的错误如下：%3$s"
+
+#. translators: 1: Directory path, 2: Directory permissions
+#: core/modules/content-directory/utility.php:60
+msgid "Unable to set the permissions of the new Directory Name (<code>%1$s</code>) to match the permissions of the old Directory Name. You may have to manually change the permissions of the directory to <code>%2$s</code> in order for your site to function properly."
+msgstr "无法设置新目录名称（<code>%1$s</code>）的权限以匹配旧目录名称的权限。您可能必须手动将目录的权限更改为 <code>%2$s</code>，以使您的站点正常运行。"
+
+#. translators: 1: Old directory path, 2: New directory path
+#: core/modules/content-directory/utility.php:43
+msgid "Unable to rename the <code>%1$s</code> directory to <code>%2$s</code>. This could indicate a file permission issue or that your server does not support the supplied name as a valid directory name. No config file or directory changes have been made."
+msgstr "无法将 <code>%1$s</code> 目录重命名为 <code>%2$s</code>. 这可能表明文件权限问题, 或者您的服务器不支持提供的名称作为有效的目录名称. 配置文件或目录更改未能完成."
+
+#: core/modules/content-directory/utility.php:31
+msgid "A file or directory already exists at <code>%s</code>. No Directory Name changes have been made. Please choose a new Directory Name or remove the existing file or directory and try again."
+msgstr "文件或目录已存在于 <code>%s</code>。目录名称更改未能完成。请选择一个新的目录名称或移除现有的文件或目录，然后重试。"
+
+#: core/modules/content-directory/utility.php:12
+msgid "The new directory name cannot be an absolute path. Please supply a path that is relative to <code>ABSPATH</code> (<code>%s</code>)."
+msgstr "新的目录名称不能是绝对路径。请提供一个与 <code>ABSPATH</code>（<code>%s</code>）相关的路径。"
+
+#: core/modules/content-directory/settings-page.php:73
+msgid "<span>WARNING:</span> Changing the name of the Content Directory on a site that already has images and other content referencing it <strong>will break your site</strong>. For this reason, we highly recommend only changing the Content Directory on a fresh WordPress install."
+msgstr "<span>警告：</span>在已经有图片和其他内容引用的站点上更改 Content 目录的名称将<strong>会破坏您的站点</strong>。出于这个原因，我们强烈建议只在新的 WordPress 安装上更改 Content 目录。"
+
+#: core/modules/content-directory/settings-page.php:72
+msgid "<span>IMPORTANT:</span> Ensure that you <a href=\"%s\">create a database backup</a> before changing the Content Directory."
+msgstr "<span>重要提示：</span>在更改 Content 目录之前，请确保您<a href=\"%s\">创建数据库备份</a>。"
+
+#: core/modules/content-directory/settings-page.php:71
+msgid "<span>IMPORTANT:</span> Deactivating or uninstalling this plugin will not revert the changes made by this feature."
+msgstr "<span>重要提示：</span>停用或卸载该插件将无法恢复这个功能所做的更改。"
+
+#: core/modules/content-directory/settings-page.php:70
+msgid "This tool provides an undo feature after changing the Content Directory. Since not all plugins, themes, or site contents function properly with a renamed Content Directory, please verify that the site is functioning correctly after the change. If any issues are encountered, the undo feature should be used to undo the change. Please note that the undo feature is only available when the changes added to the <code>wp-config.php</code> file for this feature are unmodified."
+msgstr "此工具在更改 Content 目录后提供撤消功能。由于并非所有插件，主题或站点内容都可以通过重命名的 Content 目录正常运行，请确认该站点在更改后正常运行。如果遇到任何问题，应使用撤消功能撤消更改。请注意，撤消功能只有在添加到 <code>wp-config.php</code> 文件中的更改未被修改时才可用。"
+
+#: core/modules/content-directory/settings-page.php:69
+msgid "By default, WordPress stores files for plugins, themes, and uploads in a directory called <code>wp-content</code>. Some older and less intelligent bots hard coded this directory in order to look for vulnerable files. Modern bots are intelligent enough to locate this folder programmatically, thus changing the Content Directory is no longer a recommended security step."
+msgstr "默认情况下，WordPress 将插件，主题和上传文件存储在名为 <code>wp-content</code>的目录中。一些较老的智能机器人对这个目录进行硬编码，以便查找易受攻击的文件。当前机器人足够智能以编程方式查找此文件夹，因此更改 Content 目录不再是推荐的安全措施。"
+
+#: core/modules/content-directory/settings-page.php:61
+msgid "Undo Content Directory Change"
+msgstr "撤消 Content 目录更改"
+
+#: core/modules/content-directory/settings-page.php:57
+msgid "<span>WARNING:</span> Undoing the Content Directory change when images and other content were added after the change <strong>will break your site</strong>. Only undo the Content Directory change if absolutely necessary."
+msgstr "<span>警告：</span>在更改后添加图片和其他内容<strong>会破坏您的站点</strong>时，撤消 Content 目录更改。如果绝对必要，只需撤消 Content 目录更改。"
+
+#: core/modules/content-directory/settings-page.php:56
+msgid "<span>IMPORTANT:</span> Ensure that you <a href=\"%s\" data-module-link=\"backup\">create a database backup</a> before undoing the Content Directory change."
+msgstr "<span>重要提示：</span>确保您在撤消 Content 目录更改之前<a href=\"%s\" data-module-link=\"backup\">创建数据库备份</a>。"
+
+#: core/modules/content-directory/settings-page.php:28
+msgid "The <code>wp-content</code> directory is available at <code>%s</code>."
+msgstr "<code>wp-content</code> 目录在 <code>%s</code> 处可用。"
+
+#. translators: 1: New directory name
+#: core/modules/content-directory/settings-page.php:117
+msgid "The content directory was successfully changed back to <code>%1$s</code>."
+msgstr "此 content 目录已成功更改回 <code>%1$s</code>。"
+
+#: core/modules/content-directory/settings-page.php:9
+msgid "Change Content Directory"
+msgstr "更改 Content 目录"
+
+#: core/modules/content-directory/utility.php:118
+msgid "Do not remove. Removing this line could break your site. Added by Security > Settings > Change Content Directory."
+msgstr "不要移除。移除此行可能会破坏您的站点。是通过 安全 > 设置 > 更改 Content 目录 进行添加的。"
+
+#: core/modules/brute-force/class-itsec-brute-force.php:98
+msgid "user tried to login as \"admin.\""
+msgstr "用户尝试登录为 \"admin\"。"
+
+#: core/modules/brute-force/class-itsec-brute-force.php:90
+msgid "too many bad login attempts"
+msgstr "太多不良的登录尝试"
+
+#: core/modules/wordpress-tweaks/class-itsec-wordpress-tweaks.php:160
+msgid "Username"
+msgstr "用户名"
+
+#: core/modules/brute-force/settings-page.php:42
+msgid "The number of login attempts a user has before their username is locked out of the system. Note that this is different from hosts in case an attacker is using multiple computers. In addition, if they are using your login name you could be locked out yourself. Set to 0 to log bad login attempts per user without ever locking the user out (this is not recommended)."
+msgstr "用户在其用户名被锁定在系统之外之前的登录尝试次数。请注意，这与攻击者使用多台计算机的情况下的主机不同。另外，如果他们使用您的登录名，您可能会被锁定。设置为 0 可以记录每个用户的不良登录尝试，而不会锁定用户（不建议这样做）。"
+
+#: core/modules/brute-force/settings-page.php:34
+msgid "The number of login attempts a user has before their host or computer is locked out of the system. Set to 0 to record bad login attempts without locking out the host."
+msgstr "用户在其主机或计算机被锁定在系统之外之前的登录尝试次数。设置为 0 可记录不良登录尝试而不是锁定主机。"
+
+#: core/modules/brute-force/settings-page.php:33
+#: core/modules/brute-force/settings-page.php:41
+msgid "Attempts"
+msgstr "次（尝试）"
+
+#: core/modules/brute-force/settings-page.php:50
+msgid "The number of minutes in which bad logins should be remembered."
+msgstr "应该记住不良登录的分钟数。"
+
+#: core/modules/brute-force/settings-page.php:57
+msgid "Immediately ban a host that attempts to login using the \"admin\" username."
+msgstr "立即禁止尝试使用 \"admin\" 用户名登录的主机。"
+
+#: core/modules/ipcheck/settings-page.php:59
+msgid "Local brute force protection looks only at attempts to access your site and bans users per the lockout rules specified locally. Network brute force protection takes this a step further by banning users who have tried to break into other sites from breaking into yours. The network protection will automatically report the IP addresses of failed login attempts to iThemes and will block them for a length of time necessary to protect your site based on the number of other sites that have seen a similar attack."
+msgstr "本地暴力攻击保护只针对尝试访问您的站点并根据本地指定的锁定规则禁止用户访问。网络暴力攻击保护更进一步，禁止尝试闯入其他站点的用户闯入您的站点。网络暴力攻击保护会自动向 iThemes 报告失败登录尝试的 IP 地址，并根据其他类似攻击站点的数量来阻止它们一段时间以保护您的站点。"
+
+#: core/modules/ipcheck/settings-page.php:57
+msgid "Network vs Local Brute Force Protection"
+msgstr "网络对本地暴力攻击保护"
+
+#: core/modules/brute-force/settings-page.php:16
+#: core/modules/ipcheck/settings-page.php:47
+msgid "If one had unlimited time and wanted to try an unlimited number of password combinations to get into your site they eventually would, right? This method of attack, known as a brute force attack, is something that WordPress is acutely susceptible to as, by default, the system doesn't care how many attempts a user makes to login. It will always let you try again. Enabling login limits will ban the host user from attempting to login again after the specified bad login threshold has been reached."
+msgstr "如果一个人有无限的时间，并想尝试无限数量的密码组合进入您的站点，他们最终会这样做，对吧？这种攻击方式被称为暴力攻击，是 WordPress 非常敏感的事情，因为默认情况下，系统并不关心用户进行多少次尝试登录。其会一直让您再试一次。启用登录限制将禁止主机用户在达到指定的错误登录阈值后的再次尝试登录。"
+
+#: core/modules/brute-force/settings-page.php:54
+#: core/modules/brute-force/validator.php:13
+msgid "Automatically ban \"admin\" user"
+msgstr "自动禁止 \"admin\" 用户"
+
+#: core/modules/brute-force/settings-page.php:46
+#: core/modules/brute-force/validator.php:11
+msgid "Minutes to Remember Bad Login (check period)"
+msgstr "记住不良登录的分钟数（检查周期）"
+
+#: core/modules/brute-force/settings-page.php:38
+#: core/modules/brute-force/validator.php:10
+msgid "Max Login Attempts Per User"
+msgstr "每个用户的最大登录尝试次数"
+
+#: core/modules/brute-force/settings-page.php:30
+#: core/modules/brute-force/validator.php:9
+msgid "Max Login Attempts Per Host"
+msgstr "每个主机的最大登录尝试次数"
+
+#: core/modules/brute-force/settings-page.php:6
+#: core/modules/security-check/scanner.php:14
+#: core/modules/security-check/scanner.php:52
+msgid "Local Brute Force Protection"
+msgstr "本地暴力攻击保护"
+
+#: core/modules/ban-users/settings-page.php:19
+msgid "This feature allows you to completely ban hosts and user agents from your site without having to manage any configuration of your server. Any IP addresses or user agents found in the lists below will not be allowed any access to your site."
+msgstr "此功能允许您完全禁止您的站点中的主机和用户代理，而无需管理您的服务器的任何配置。在下面的列表中找到的任何 IP 地址或用户代理将不会被允许访问您的站点。"
+
+#: core/modules/ban-users/settings-page.php:64
+#: core/modules/ban-users/validator.php:43
+msgid "Ban User Agents"
+msgstr "禁止用户代理"
+
+#: core/modules/ban-users/settings-page.php:44
+#: core/modules/ban-users/validator.php:12
+#: core/modules/ban-users/validator.php:25
+#: core/modules/ban-users/validator.php:39
+msgid "Ban Hosts"
+msgstr "禁止主机"
+
+#: core/modules/ban-users/settings-page.php:29
+#: core/modules/ban-users/validator.php:9
+msgid "Default Blacklist"
+msgstr "默认黑名单"
+
+#: core/modules/ban-users/config-generators.php:168
+msgid "Ban User Agents - Security > Settings > Banned Users"
+msgstr "禁止用户代理 - 安全 > 设置 > 禁止的用户"
+
+#: core/modules/ban-users/config-generators.php:84
+#: core/modules/ban-users/config-generators.php:103
+#: core/modules/ban-users/config-generators.php:115
+msgid "Ban Hosts - Security > Settings > Banned Users"
+msgstr "禁止主机 - 安全 > 设置 > 禁止的用户"
+
+#: core/modules/ban-users/config-generators.php:18
+msgid "Enable HackRepair.com's blacklist feature - Security > Settings > Banned Users > Default Blacklist"
+msgstr "启用 HackRepair.com 的黑名单功能 - 安全 > 设置 > 禁止的用户 > 默认的黑名单"
+
+#: core/modules/ban-users/settings-page.php:32
+msgid "Enable HackRepair.com's blacklist feature"
+msgstr "启用 HackRepair.com 的黑名单功能"
+
+#: core/modules/ban-users/settings-page.php:69
+msgid "Enter only 1 user agent per line."
+msgstr "每行只输入 1 个用户代理。"
+
+#: core/modules/ban-users/settings-page.php:67
+msgid "Use the guidelines below to enter user agents that will not be allowed access to your site."
+msgstr "使用下面的准则输入不允许访问您的站点的用户代理。"
+
+#: core/modules/ban-users/settings-page.php:9
+#: core/modules/security-check/scanner.php:12
+#: core/modules/security-check/scanner.php:48
+msgid "Banned Users"
+msgstr "禁止的用户"
+
+#: core/admin-pages/page-settings.php:114 core/lib/log.php:243
+#: core/modules/malware/class-itsec-malware-scan-results-template.php:180
+msgid "Error"
+msgstr "错误"
+
+#: core/modules/backup/settings-page.php:127
+msgid "You may need to turn this off if you are having problems with backups."
+msgstr "如果您遇到备份问题，您可能需要关闭此功能。"
+
+#: core/modules/backup/settings-page.php:126
+msgid "Zip Database Backups"
+msgstr "Zip 数据库备份"
+
+#: core/modules/backup/settings-page.php:119
+msgid "Limit the number of backups stored locally (on this server). Any older backups beyond this number will be removed. Setting to \"0\" will retain all backups."
+msgstr "限制本地存储的备份数量（在此服务器上）。除此数字之外的任何较旧的备份都将被删除。设置为 \"0\" 将保留所有备份。"
+
+#: core/modules/backup/settings-page.php:100
+msgid "Select what we should do with your backup file. You can have it emailed to you, saved locally or both."
+msgstr "选择我们应该如何处理备份文件。您可以通过邮件发送给您，保存在本地或两者。"
+
+#: core/modules/backup/settings-page.php:99
+msgid "Backup Save Method"
+msgstr "备份保存方法"
+
+#: core/modules/backup/settings-page.php:74
+msgid "Save Locally Only"
+msgstr "只保存本地"
+
+#: core/modules/backup/settings-page.php:73
+msgid "Email Only"
+msgstr "只发送邮件"
+
+#: core/modules/backup/settings-page.php:72
+msgid "Save Locally and Email"
+msgstr "保存本地和发送邮件"
+
+#: core/modules/backup/settings-page.php:107
+msgid "The path on your machine where backup files should be stored."
+msgstr "备份文件应存储在计算机上的路径。"
+
+#: core/modules/backup/settings-page.php:150
+msgid "The number of days between database backups."
+msgstr "进行数据库备份间隔的天数。"
+
+#: core/modules/backup/settings-page.php:135
+msgid "Some plugins can create log files in your database. While these logs might be handy for some functions, they can also take up a lot of space and, in some cases, even make backing up your database almost impossible. Select log tables above to exclude their data from the backup. Note: The table itself will be backed up, but not the data in the table."
+msgstr "一些插件可以在数据库中创建日志文件。虽然这些日志可能对某些功能来说很方便，但它们也可能占用大量空间，并且在某些情况下，甚至使备份数据库几乎不可能。选择上面的日志的数据表以从备份中排除其数据。注意：数据表本身将被备份，但不是数据表中的数据。"
+
+#: core/modules/backup/settings-page.php:133
+msgid "Tables with data that does not need to be backed up"
+msgstr "不需要进行备份的数据表的数据"
+
+#: core/modules/backup/settings-page.php:142
+msgid "Enable Scheduled Database Backups"
+msgstr "启用计划数据库备份"
+
+#: core/modules/backup/settings-page.php:91
+msgid "Checking this box will have the backup script backup all tables in your database, even if they are not part of this WordPress site."
+msgstr "勾选此框将使备份脚本备份数据库中的所有数据表，即使它们不属于此 WordPress 站点的一部分。"
+
+#: core/modules/backup/settings-page.php:82
+msgid "Create a Database Backup"
+msgstr "创建数据库备份"
+
+#: core/modules/backup/settings-page.php:131
+#: core/modules/backup/validator.php:25
+msgid "Exclude Tables"
+msgstr "排除的数据表"
+
+#: core/modules/backup/settings-page.php:123
+#: core/modules/backup/validator.php:24
+msgid "Compress Backup Files"
+msgstr "压缩备份文件"
+
+#: core/modules/backup/settings-page.php:115
+#: core/modules/backup/validator.php:23
+msgid "Backups to Retain"
+msgstr "备份保留"
+
+#: core/modules/backup/settings-page.php:104
+#: core/modules/backup/validator.php:22
+msgid "Backup Location"
+msgstr "备份位置"
+
+#: core/modules/backup/settings-page.php:95
+#: core/modules/backup/validator.php:20 core/modules/backup/validator.php:21
+msgid "Backup Method"
+msgstr "备份方法"
+
+#: core/modules/backup/settings-page.php:88
+#: core/modules/backup/validator.php:19
+msgid "Backup Full Database"
+msgstr "备份完整数据库"
+
+#: core/modules/backup/settings-page.php:146
+#: core/modules/backup/validator.php:27
+msgid "Backup Interval"
+msgstr "备份间隔"
+
+#: core/modules/backup/settings-page.php:139
+#: core/modules/backup/validator.php:26
+msgid "Schedule Database Backups"
+msgstr "计划数据库备份"
+
+#: core/modules/backup/logs.php:10 core/modules/backup/settings-page.php:9
+#: core/modules/security-check/scanner.php:13
+#: core/modules/security-check/scanner.php:51
+msgid "Database Backups"
+msgstr "数据库备份"
+
+#: core/admin-pages/logs-list-table.php:154 core/admin-pages/page-logs.php:281
+msgid "Description"
+msgstr "描述"
+
+#: core/modules/backup/settings-page.php:22
+msgid "Excluded Tables"
+msgstr "要排除的数据表"
+
+#: core/modules/backup/settings-page.php:21
+msgid "Tables for Backup"
+msgstr "要备份的数据表"
+
+#: core/modules/backup/settings-page.php:62
+msgid "One of the best ways to protect yourself from an attack is to have access to a database backup of your site. If something goes wrong, you can get your site back by restoring the database from a backup and replacing the files with fresh ones. Use the button below to create a backup of your database for this purpose. You can also schedule automated backups and download or delete previous backups."
+msgstr "保护自己免受攻击的最佳方法之一是有权访问您站点的数据库备份。如果出现问题，您可以通过从备份中恢复数据库并用新文件替换文件来恢复站点。使用下面的按钮为此目的创建数据库的备份。您还可以计划自动备份并下载或删除以前的备份。"
+
+#: core/modules/away-mode/settings-page.php:121
+msgid "If this is incorrect, please update it on the <a href=\"%s\">WordPress General Settings page</a> by selecting the appropriate time zone. Failure to set the correct timezone may result in unintended lockouts."
+msgstr "如果这不正确，请通过选择适当的时区在 <a href=\"%s\">WordPress 常规设置页面</a> 上进行更新。未能设置正确的时区可能会导致无意的锁定。"
+
+#: core/modules/away-mode/settings-page.php:119
+msgid "Please note that according to your <a href=\"%s\">WordPress Timezone settings</a> your current time is:"
+msgstr "请注意，根据您的 <a href=\"%s\">WordPress 时区设置</a>，您当前的时间是："
+
+#: core/modules/away-mode/settings-page.php:26
+msgid "As most sites are only updated at certain times of the day it is not always necessary to provide access to the WordPress dashboard 24 hours a day, 7 days a week. The options below will allow you to disable access to the WordPress Dashboard for the specified period. In addition to limiting exposure to attackers this could also be useful to disable site access based on a schedule for classroom or other reasons."
+msgstr "由于大多数站点只在每天的指定时间进行更新，因此并非总是需要每星期 7 天，每天 24 小时访问 WordPress 仪表盘。以下选项将允许您禁止在指定时间段内访问 WordPress 仪表盘。除了限制暴露给攻击者，还可以根据教室或其他原因禁用站点访问。"
+
+#: core/modules/away-mode/settings-page.php:160
+#: core/modules/away-mode/validator.php:31
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:114
+#: core/modules/away-mode/validator.php:124
+#: core/modules/away-mode/validator.php:128
+msgid "End Time"
+msgstr "结束时间"
+
+#: core/modules/away-mode/settings-page.php:152
+#: core/modules/away-mode/validator.php:31
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:114
+msgid "End Date"
+msgstr "结束日期"
+
+#: core/modules/away-mode/settings-page.php:140
+#: core/modules/away-mode/validator.php:30
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:118
+#: core/modules/away-mode/validator.php:124
+#: core/modules/away-mode/validator.php:128
+msgid "Start Time"
+msgstr "开始时间"
+
+#: core/modules/away-mode/settings-page.php:132
+#: core/modules/away-mode/validator.php:30
+#: core/modules/away-mode/validator.php:110
+#: core/modules/away-mode/validator.php:118
+msgid "Start Date"
+msgstr "开始日期"
+
+#: core/modules/away-mode/settings-page.php:124
+#: core/modules/away-mode/validator.php:25
+msgid "Type of Restriction"
+msgstr "限制类型"
+
+#: core/modules/away-mode/settings-page.php:128
+msgid "Select the type of restriction you would like to enable."
+msgstr "选择您想要启用的限制类型。"
+
+#: core/modules/away-mode/validator.php:11
+msgid "One Time"
+msgstr "一次性"
+
+#: core/modules/away-mode/validator.php:10
+#: core/modules/notification-center/class-notification-center.php:1046
+msgid "Daily"
+msgstr "每日"
+
+#: core/modules/away-mode/logs.php:9 core/modules/away-mode/settings-page.php:9
+msgid "Away Mode"
+msgstr "离开模式"
+
+#: core/modules/admin-user/settings-page.php:45
+msgid "Change the ID of the user with ID 1."
+msgstr "更改 ID 为 1 的用户的 ID。"
+
+#: core/modules/admin-user/settings-page.php:42
+#: core/modules/admin-user/validator.php:22
+msgid "Change User ID 1"
+msgstr "更改用户 ID 1"
+
+#: core/modules/admin-user/settings-page.php:36
+msgid "Enter a new username to replace \"admin.\" Please note that if you are logged in as admin you will have to log in again."
+msgstr "输入新的用户名替换 \"admin\"。请注意，如果您以管理员身份登录，则必须重新登录。"
+
+#: core/modules/admin-user/settings-page.php:32
+#: core/modules/admin-user/validator.php:15
+msgid "New Admin Username"
+msgstr "管理员新的用户名"
+
+#: core/lib/log.php:245
+msgid "Notice"
+msgstr "通知"
+
+#: core/modules/file-permissions/settings-page.php:95
+msgid "WARNING"
+msgstr "警告"
+
+#: core/modules/admin-user/settings-page.php:19
+msgid "This feature will improve the security of your WordPress installation by removing common user attributes that can be used to target your site."
+msgstr "此功能将通过移除可用于定位您的站点的常用用户属性来提高 WordPress 安装的安全性。"
+
+#: core/admin-pages/init.php:39 core/core.php:433
+#: core/modules/security-check/settings-page.php:9
+msgid "Security Check"
+msgstr "安全检查"
+
+#: core/modules/admin-user/settings-page.php:9
+msgid "Admin User"
+msgstr "管理员用户"
+
+#: core/lib/class-itsec-wp-list-table.php:1027
+msgid "Select All"
+msgstr "选择所有"
+
+#: core/lib/class-itsec-wp-list-table.php:790
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "第 %1$s 页，共 %2$s 页"
+
+#: core/lib/class-itsec-wp-list-table.php:781
+#: core/lib/class-itsec-wp-list-table.php:784
+msgid "Current Page"
+msgstr "当前页"
+
+#: core/lib/class-itsec-wp-list-table.php:152
+msgid "Excerpt View"
+msgstr "摘要视图"
+
+#: core/lib/class-itsec-wp-list-table.php:151
+msgid "List View"
+msgstr "列表视图"
+
+#. translators: 1: month name, 2: 4-digit year
+#: core/lib/class-itsec-wp-list-table.php:571
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: core/admin-pages/page-logs.php:406
+#: core/lib/class-itsec-wp-list-table.php:446
+msgid "Apply"
+msgstr "应用"
+
+#: core/lib/class-itsec-wp-list-table.php:436
+msgid "Bulk Actions"
+msgstr "批量操作"
+
+#: core/lib/class-itsec-wp-list-table.php:312
+msgid "No items found."
+msgstr "未找到项目。"
+
+#: core/lib/class-itsec-lib-utility.php:159
+msgid "Unable to strip comments from the source code as the token_get_all() function returned an unrecognized value (type: %s)"
+msgstr "由于 token_get_all() 函数返回无法识别的值，因此无法从源代码中去除注释内容（类型：%s）"
+
+#: core/lib/class-itsec-lib-utility.php:152
+msgid "Unable to strip comments from the source code as the token_get_all() function is disabled. This is a system configuration issue."
+msgstr "由于 token_get_all() 函数被禁用，无法从源代码中去除注释内容。这是一个系统配置问题。"
+
+#: core/lib/class-itsec-lib-file.php:353
+msgid "Permissions for the file %s could not be read as the fileperms() function is disabled. This is a system configuration issue."
+msgstr "由于 fileperms() 函数已被禁用，因此无法读取文件 %s 的权限。这是一个系统配置问题。"
+
+#: core/lib/class-itsec-lib-file.php:349
+msgid "Permissions for the file %s could not be read as the file could not be found."
+msgstr "无法找到文件 %s 的权限，因为无法找到该文件。"
+
+#: core/lib/class-itsec-lib-file.php:303
+msgid "The file %s could not have its permissions updated as the chmod() function is disabled. This is a system configuration issue."
+msgstr "由于 chmod() 函数被禁用，文件 %s 不能更新其权限。这是一个系统配置问题。"
+
+#: core/lib/class-itsec-lib-file.php:299
+msgid "The file %1$s could not have its permissions updated as non-integer permissions were sent: (%2$s) %3$s"
+msgstr "文件 %1$s 在发送非整数权限时不能更新其权限：（%2$s）%3$s"
+
+#: core/lib/class-itsec-lib-file.php:264
+msgid "The file %s could not be removed as the unlink() function is disabled. This is a system configuration issue."
+msgstr "由于禁用了 unlink() 函数，文件 %s 无法移除。这是一个系统配置问题。"
+
+#: core/lib/class-itsec-lib-file.php:235
+msgid "%s could not be written. This could be due to a permissions issue. Ensure that PHP runs as a user that has permission to write to this location."
+msgstr "无法写入 %s。这可能是由于权限问题。确保 PHP 以有权写入此位置的用户身份运行。"
+
+#: core/lib/class-itsec-lib-file.php:130
+msgid "%s could not be written as a file. The requested path already exists as a directory. The directory must be removed or a new file name must be chosen before the file can be written."
+msgstr "%s 不能写为文件。请求的路径已经作为目录存在。在写入文件之前，必须移除此目录或选择新的文件名。"
+
+#: core/lib/class-itsec-lib-file.php:125
+msgid "%s could not be written. Both the fopen/fwrite/flock and file_put_contents functions are disabled on the server. This is a server configuration issue that must be resolved before iThemes Security can write files."
+msgstr "无法写入 %s。服务器上禁用了 fopen/fwrite/flock 和 file_put_contents 函数。这是 iThemes 安全可以写入文件之前必须解决的服务器配置问题。"
+
+#: core/lib/class-itsec-lib-file.php:43
+msgid "%s could not be read. Both the fopen/feof/fread/flock and file_get_contents functions are disabled on the server."
+msgstr "无法读取 %s。在服务器上禁用 fopen/feof/fread/flock 和 file_get_contents 函数。"
+
+#: core/lib/class-itsec-lib-file.php:29
+msgid "%s could not be read. It does not appear to be a file."
+msgstr "无法读取 %s。其似乎不是一个文件。"
+
+#: core/lib/class-itsec-lib-directory.php:285
+msgid "Permissions for the directory %s could not be read as the fileperms() function is disabled. This is a system configuration issue."
+msgstr "由于 fileperms() 函数被禁用，因此无法读取目录 %s 的权限。这是一个系统配置问题。"
+
+#: core/lib/class-itsec-lib-directory.php:281
+msgid "Permissions for the directory %s could not be read as the directory could not be found."
+msgstr "无法找到目录 %s 的权限，因为无法找到该目录。"
+
+#: core/lib/class-itsec-lib-directory.php:209
+#: core/lib/class-itsec-lib-file.php:284
+msgid "Unable to remove %s due to an unknown error."
+msgstr "由于未知错误，无法移除 %s。"
+
+#: core/lib/class-itsec-lib-directory.php:190
+msgid "Unable to remove %1$s due to the following error: %2$s"
+msgstr "无法移除 %1$s，由于以下错误：%2$s"
+
+#: core/lib/class-itsec-lib-directory.php:183
+msgid "The directory %s could not be removed as the rmdir() function is disabled. This is a system configuration issue."
+msgstr "由于 rmdir() 函数已被禁用，因此不能移除目录 %s。这是一个系统配置问题。"
+
+#: core/lib/class-itsec-lib-directory.php:166
+msgid "The directory %s could not be created due to an unknown error. This could be due to a permissions issue."
+msgstr "由于未知错误，无法创建目录 %s。这可能是由于权限问题。"
+
+#: core/lib/class-itsec-lib-directory.php:146
+msgid "The directory %s could not be created as an existing parent directory could not be found."
+msgstr "无法创建目录 %s，因为找不到现有的父级目录。"
+
+#: core/lib/class-itsec-lib-directory.php:135
+msgid "The directory %s could not be created as the mkdir() function is disabled. This is a system configuration issue."
+msgstr "由于禁用了 mkdir() 函数，因此无法创建目录 %s，这是一个系统配置问题。"
+
+#: core/lib/class-itsec-lib-directory.php:131
+msgid "The directory %s could not be created as a file with that name already exists."
+msgstr "目录 %s 无法创建，因为具有该名称的文件已存在。"
+
+#: core/lib/class-itsec-lib-directory.php:89
+#: core/lib/class-itsec-lib-file.php:101
+msgid "%s could not be read due to an unknown error."
+msgstr "由于未知错误，%s 无法读取。"
+
+#: core/lib/class-itsec-lib-directory.php:38
+msgid "%s could not be read. Both the opendir/readdir/closedir and glob functions are disabled on the server."
+msgstr "无法读取 %s。在服务器上禁用了 opendir/readdir/closedir 和 glob 函数。"
+
+#: core/lib/class-itsec-lib-config-file.php:560
+#: core/lib/class-itsec-lib-config-file.php:563
+msgid "Do not modify or remove this line"
+msgstr "不要修改或移除此行"
+
+#: core/lib/class-itsec-lib-config-file.php:302
+msgid "Unable to read %1$s due to the following error: %2$s"
+msgstr "无法读取 %1$s，由于以下错误：%2$s"
+
+#: core/lib/class-itsec-lib-config-file.php:258
+#: core/lib/class-itsec-lib-config-file.php:279
+msgid "Updates to <code>wp-config.php</code> are disabled via a filter."
+msgstr "通过过滤器禁用对 <code>wp-config.php</code> 的更新."
+
+#: core/lib/class-itsec-lib-config-file.php:66
+#: core/lib/class-itsec-lib-config-file.php:182
+msgid "iThemes Security preserved the following settings as removing them could prevent the site from functioning correctly."
+msgstr "iThemes 安全保留了以下设置，因为移除它们可能会阻止站点正常运行。"
+
+#: core/modules/notification-center/settings-page.php:141
+#: core/modules/ssl/settings-page.php:47
+msgid "Enabled"
+msgstr "已启用"
+
+#: core/modules/content-directory/settings-page.php:38
+#: core/modules/database-prefix/settings-page.php:31
+#: core/modules/security-check/scanner.php:102
+msgid "No"
+msgstr "否"
+
+#: core/modules/ssl/settings-page.php:56
+msgid "Off"
+msgstr "关闭"
+
+#: core/modules/content-directory/settings-page.php:37
+#: core/modules/database-prefix/settings-page.php:30
+#: core/modules/global/settings-page.php:73
+#: core/modules/security-check/scanner.php:102
+msgid "Yes"
+msgstr "是"
+
+#: core/modules/file-change/scanner.php:226
+msgid "Complete!"
+msgstr "完成！"
+
+#: core/modules/file-permissions/settings-page.php:115
+#: core/modules/file-permissions/settings-page.php:124
+msgid "Value"
+msgstr "值"
+
+#: core/modules/file-permissions/settings-page.php:117
+#: core/modules/file-permissions/settings-page.php:126
+msgid "Status"
+msgstr "状态"
+
+#: core/modules/file-permissions/settings-page.php:116
+#: core/modules/file-permissions/settings-page.php:125
+msgid "Result"
+msgstr "结果"
+
+#: core/modules/file-permissions/settings-page.php:114
+#: core/modules/file-permissions/settings-page.php:123
+msgid "Suggestion"
+msgstr "建议"
+
+#: core/modules/file-permissions/settings-page.php:113
+#: core/modules/file-permissions/settings-page.php:122
+msgid "Relative Path"
+msgstr "相对路径"
+
+#: core/notify.php:56 core/notify.php:83
+msgid "Daily Security Digest"
+msgstr "每日安全摘要"
+
+#: core/admin-pages/page-logs.php:459
+msgid "To view logs within the plugin you must enable database logging in the Global Settings. File logging is not available for access within the plugin itself."
+msgstr "要查看插件内的日志，您必须在全局设置中启用数据库日志记录。文件日志记录不可用于插件本身的访问。"
+
+#: core/admin-pages/page-logs.php:297
+msgid "URL"
+msgstr "网址"
+
+#: core/admin-pages/logs-list-table.php:157 core/admin-pages/page-logs.php:293
+#: core/sidebar-widget-temp-whitelist.php:48
+msgid "User"
+msgstr "用户"
+
+#: core/admin-pages/logs-list-table.php:156 core/admin-pages/page-logs.php:289
+#: core/sidebar-widget-temp-whitelist.php:63
+msgid "Host"
+msgstr "主机"
+
+#: core/admin-pages/logs-list-table.php:155
+msgid "Time"
+msgstr "时间"
+
+#: core/admin-pages/logs-list-table.php:158 core/modules/backup/logs.php:23
+msgid "Details"
+msgstr "详细信息"
+
+#: core/lockout.php:1058 core/lockout.php:1123
+msgid "Site Lockout Notification"
+msgstr "站点锁定通知"
+
+#: core/lockout.php:1106
+msgid "Permanently"
+msgstr "永久"
+
+#: core/lockout.php:523 core/lockout.php:533
+msgid "no"
+msgstr "否"
+
+#: core/lockout.php:523 core/lockout.php:533
+msgid "yes"
+msgstr "是"
+
+#: core/lockout.php:521
+msgid "Your current settings are configured as follows:"
+msgstr "您当前的设置配置如下："
+
+#: core/lockout.php:517
+msgid "About Lockouts"
+msgstr "关于锁定"
+
+#: core/lockout.php:439 core/modules/global/settings.php:11
+msgid "You have been locked out due to too many invalid login attempts."
+msgstr "由于登录尝试次数过多，您已被锁定。"
+
+#: core/lockout.php:1161
+msgid "Lockout"
+msgstr "锁定"
+
+#: core/sidebar-widget-active-lockouts.php:6
+#: core/sidebar-widget-temp-whitelist.php:6
+msgid "Active Lockouts"
+msgstr "活动锁定"
+
+#: core/modules/wordpress-tweaks/settings-page.php:33
+msgid "Allow"
+msgstr "允许"
+
+#: core/modules/global/settings-page.php:98
+msgid "The message to display to a user when their account has been locked out."
+msgstr "在账号被锁定时显示给用户的信息。"
+
+#: core/modules/global/settings-page.php:228
+msgid "If you're not using a proxy service such as Varnish, Cloudflare or others turning this on may result in more accurate IP detection."
+msgstr "如果您没有使用如 Varnish，Cloudflare 或其他的代理服务，则可能会导致更准确的 IP 检测。"
+
+#: core/modules/global/settings-page.php:227
+msgid "Disable Proxy IP Detection"
+msgstr "禁用代理 IP 检测"
+
+#: core/modules/notification-center/settings-page.php:224
+msgid "The email address(es) this notification will be sent to. One address per line."
+msgstr "此通知将发送至的邮箱地址。每行一个地址。"
+
+#: core/modules/global/settings-page.php:168
+msgid "iThemes Security can log events in multiple ways, each with advantages and disadvantages. Database Only puts all events in the database with your posts and other WordPress data. This makes it easy to retrieve and process but can be slower if the database table gets very large. File Only is very fast but the plugin does not process the logs itself as that would take far more resources. For most users or smaller sites Database Only should be fine. If you have a very large site or a log processing software then File Only might be a better option."
+msgstr "iThemes 安全可以以多种方式记录事件，每种方式都有优点和缺点。\"仅数据库\" 将所有事件放在数据库，包括您的文章和其他 WordPress 数据。这使得检索和处理变得很容易，但如果数据库数据表变得非常大，可能会变慢。\"仅文件\" 速度非常快，但此插件不会处理日志本身，因为这会占用更多的资源。对于大多数用户或较小的站点，\"仅数据库\" 应该没问题。如果您有一个非常大的站点或日志处理软件，则 \"仅文件\" 可能是更好的选择。"
+
+#: core/modules/global/settings-page.php:167
+msgid "How should event logs be kept"
+msgstr "事件日志应该如何保存"
+
+#: core/modules/global/validator.php:65
+msgid "Both"
+msgstr "两者"
+
+#: core/modules/global/validator.php:64
+msgid "File Only"
+msgstr "仅文件"
+
+#: core/modules/global/validator.php:63
+msgid "Database Only"
+msgstr "仅数据库"
+
+#: core/modules/backup/settings-page.php:110
+msgid "Restore Default Location"
+msgstr "恢复的默认位置"
+
+#: core/modules/backup/settings-page.php:108
+#: core/modules/global/settings-page.php:192
+#: core/modules/global/settings-page.php:219
+msgid "This path must be writable by your website. For added security, it is recommended you do not include it in your website root folder."
+msgstr "此路径必须由您的站点写入。为了增加安全性，建议您不要将其包含在您的站点的根文件夹。"
+
+#: core/modules/global/settings-page.php:191
+msgid "The path on your server where log files should be stored."
+msgstr "应该存储日志文件的服务器上的路径。"
+
+#: core/modules/global/settings-page.php:160
+msgid "This white list will prevent any IP listed from triggering an automatic lockout. You can still block the IP address manually in the banned users settings."
+msgstr "此白名单将阻止列出的任何 IP 触发自动锁定。您仍然可以在禁止的用户设置中手动阻止 IP 地址。"
+
+#: core/modules/ban-users/settings-page.php:57
+#: core/modules/global/settings-page.php:157
+msgid "Enter only 1 IP address or 1 IP address range per line."
+msgstr "每行只输入 1 个 IP 地址或 1 个 IP 地址范围。"
+
+#: core/modules/ban-users/settings-page.php:60
+#: core/modules/global/settings-page.php:159
+msgid "Lookup IP Address."
+msgstr "查找 IP 地址。"
+
+#: core/modules/global/settings-page.php:147
+msgid "Use the guidelines below to enter hosts that will not be locked out from your site. This will keep you from locking yourself out of any features if you should trigger a lockout. Please note this does not override away mode and will only prevent a temporary ban. Should a permanent ban be triggered you will still be added to the \"Ban Users\" list unless the IP address is also white listed in that section."
+msgstr "使用下面的准则输入不会被锁定在您站点的主机。如果您要触发一个锁定，这将阻止您把自己锁定在任何功能之外。请注意，这不会覆盖离开模式，只会阻止临时禁止。如果永久禁止被触发，您仍然会被添加到 \"禁止的用户\" 列表，除非该部分的 IP 地址也是处在白名单。"
+
+#: core/modules/global/settings-page.php:146
+msgid "Add my current IP to the White List"
+msgstr "将我的当前 IP 添加到白名单"
+
+#: core/modules/404-detection/settings-page.php:32
+#: core/modules/brute-force/settings-page.php:49
+#: core/modules/global/settings-page.php:138
+msgid "Minutes"
+msgstr "分钟"
+
+#: core/modules/global/settings-page.php:90
+msgid "The message to display when a computer (host) has been locked out."
+msgstr "计算机（主机）被锁定时显示的信息。"
+
+#: core/modules/global/settings.php:10
+msgid "error"
+msgstr "错误"
+
+#: core/modules/global/settings-page.php:201
+msgid "Enable InfiniteWP Compatibility"
+msgstr "启用 InfiniteWP 的兼容性"
+
+#: core/modules/global/settings-page.php:235
+msgid "Hide security menu in admin bar."
+msgstr "在管理面板侧边栏中隐藏安全菜单。"
+
+#: core/modules/global/settings-page.php:91
+#: core/modules/global/settings-page.php:99
+#: core/modules/global/settings-page.php:107
+msgid "You can use HTML in your message. Allowed tags include: a, br, em, strong, h1, h2, h3, h4, h5, h6, div."
+msgstr "您可以在信息中使用 HTML。允许的标签包括：a，br，em，strong，h1，h2，h3，h4，h5，h6，div。"
+
+#: core/modules/global/settings-page.php:106
+msgid "The message to display to a user when their IP has been flagged as bad by the iThemes network."
+msgstr "当他们的 IP 被 iThemes 网络标记为不良时向用户显示的信息。"
+
+#: core/lockout.php:431 core/modules/global/settings.php:12
+msgid "Your IP address has been flagged as a threat by the iThemes Security network."
+msgstr "您的 IP 地址已被 iThemes 安全网络标记为威胁。"
+
+#: core/modules/global/settings-page.php:131
+msgid "How many days should a lockout be remembered to meet the blacklist count above."
+msgstr "需要锁定多少天，才能满足上述黑名单。"
+
+#: core/modules/backup/settings-page.php:149
+#: core/modules/global/settings-page.php:130
+#: core/modules/global/settings-page.php:175
+#: core/modules/global/settings-page.php:183
+msgid "Days"
+msgstr "天"
+
+#: core/modules/global/settings-page.php:123
+msgid "The number of lockouts per IP before the host is banned permanently from this site."
+msgstr "在此站点永久禁止主机之前，每个 IP 的锁定次数。"
+
+#: core/modules/global/settings-page.php:122 core/notify.php:146
+msgid "Lockouts"
+msgstr "锁定"
+
+#: core/modules/global/settings-page.php:115
+msgid "If this box is checked the IP address of the offending computer will be added to the \"Ban Users\" blacklist after reaching the number of lockouts listed below."
+msgstr "如果勾选此框，则在达到下面列出的锁定次数后，违规计算机的 IP 地址将被添加到 \"禁止的用户\" 黑名单。"
+
+#: core/modules/global/settings-page.php:114
+msgid "Enable Blacklist Repeat Offender"
+msgstr "启用黑名单惯犯"
+
+#: core/modules/global/settings-page.php:210
+msgid "Allow iThemes to track plugin usage via anonymous data."
+msgstr "允许 iThemes 通过匿名数据跟踪插件使用情况。"
+
+#: core/admin-pages/page-logs.php:129
+msgid "Security error!"
+msgstr "安全出错！"
+
+#: core/modules/global/settings-page.php:232
+#: core/modules/global/validator.php:32
+msgid "Hide Security Menu in Admin Bar"
+msgstr "在管理面板侧边栏中隐藏安全菜单"
+
+#: core/modules/global/settings-page.php:224
+#: core/modules/global/validator.php:31
+msgid "Override Proxy Detection"
+msgstr "覆盖代理检测"
+
+#: core/modules/global/settings-page.php:215
+#: core/modules/global/validator.php:16
+msgid "NGINX Conf File"
+msgstr "NGINX 配置文件"
+
+#: core/modules/global/settings-page.php:207
+#: core/modules/global/validator.php:30
+msgid "Allow Data Tracking"
+msgstr "允许数据跟踪"
+
+#: core/modules/global/settings-page.php:198
+#: core/modules/global/validator.php:10
+msgid "Add InfiniteWP Compatibility"
+msgstr "添加 InfiniteWP 的兼容性"
+
+#: core/modules/global/settings-page.php:188
+#: core/modules/global/validator.php:51
+msgid "Path to Log Files"
+msgstr "日志文件的路径"
+
+#: core/modules/global/settings-page.php:172
+#: core/modules/global/validator.php:42
+msgid "Days to Keep Database Logs"
+msgstr "保留数据库日志的天数"
+
+#: core/modules/global/settings-page.php:164
+#: core/modules/global/validator.php:48
+msgid "Log Type"
+msgstr "日志类型"
+
+#: core/modules/global/settings-page.php:143
+#: core/modules/global/validator.php:45
+msgid "Lockout White List"
+msgstr "锁定白名单"
+
+#: core/modules/global/settings-page.php:135
+#: core/modules/global/validator.php:41
+msgid "Lockout Period"
+msgstr "锁定周期"
+
+#: core/modules/global/settings-page.php:127
+msgid "Blacklist Lookback Period"
+msgstr "黑名单回溯周期"
+
+#: core/modules/global/settings-page.php:119
+#: core/modules/global/validator.php:39
+msgid "Blacklist Threshold"
+msgstr "黑名单阈值"
+
+#: core/modules/global/settings-page.php:111
+#: core/modules/global/validator.php:29
+msgid "Blacklist Repeat Offender"
+msgstr "黑名单惯犯"
+
+#: core/modules/global/settings-page.php:103
+#: core/modules/global/validator.php:37
+msgid "Community Lockout Message"
+msgstr "社区锁定信息"
+
+#: core/modules/global/settings-page.php:95
+#: core/modules/global/validator.php:36
+msgid "User Lockout Message"
+msgstr "用户锁定信息"
+
+#: core/modules/global/settings-page.php:87
+#: core/modules/global/validator.php:35
+msgid "Host Lockout Message"
+msgstr "主机锁定信息"
+
+#: core/modules/global/settings-page.php:79
+#: core/modules/global/validator.php:28
+msgid "Write to Files"
+msgstr "写入文件"
+
+#: core/modules/global/settings-page.php:9
+msgid "Global Settings"
+msgstr "全局设置"
+
+#: core/files.php:69
+msgid "You must restart your NGINX server for the changes to take effect."
+msgstr "您必须重新启动您的 NGINX 服务器才能使更改生效。"
+
+#: core/files.php:127
+msgid "Quick ban IP. Will be updated on next formal rules save."
+msgstr "快速禁止 IP。将在下一次正式规则保存更新。"
+
+#: core/modules/file-writing/settings-page.php:35
+msgid "wp-config.php Rules"
+msgstr "wp-config.php 规则"
+
+#: core/modules/global/active.php:32
+msgid "Get Free API Key"
+msgstr "获取免费 API 密钥"
+
+#: core/modules/global/active.php:31
+msgid "New! Take your site security to the next level by activating iThemes Brute Force Network Protection."
+msgstr "新功能！通过激活 iThemes 暴力攻击网络保护，将您的站点安全性提升到一个新的水平。"
+
+#: core/admin-pages/init.php:37 core/core.php:415
+msgid "Security"
+msgstr "安全"
+
+#: core/modules/backup/settings-page.php:118
+msgid "Backups"
+msgstr "份（备份）"
+
+#: core/admin-pages/init.php:46
+msgid "Go Pro"
+msgstr "获取专业版"
+
+#: core/admin-pages/page-settings.php:553 core/lib/class-itsec-mail.php:68
+msgid "Pro"
+msgstr "专业版"
+
+#: core/admin-pages/init.php:43 core/core.php:442
+msgid "Logs"
+msgstr "日志"
+
+#: core/modules/ssl/settings-page.php:48
+msgid "Advanced"
+msgstr "高级"
+
+#: core/admin-pages/init.php:37 core/admin-pages/init.php:38 core/core.php:367
+#: core/core.php:424
+msgid "Settings"
+msgstr "设置"
+
+#. #-#-#-#-#  better-wp-security-code.pot (iThemes Security 7.0.1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: core/admin-pages/page-logs.php:436 core/admin-pages/page-settings.php:446
+msgid "iThemes Security"
+msgstr "iThemes Security"

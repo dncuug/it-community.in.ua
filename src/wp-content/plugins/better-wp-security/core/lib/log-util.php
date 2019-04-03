@@ -42,6 +42,22 @@ final class ITSEC_Log_Util {
 		global $wpdb;
 
 
+		$valid_columns = array(
+			'id',
+			'parent_id',
+			'module',
+			'type',
+			'code',
+			'timestamp',
+			'init_timestamp',
+			'remote_ip',
+			'user_id',
+			'url',
+			'memory_current',
+			'memory_peak',
+		);
+
+
 		$get_count = false;
 		$min_timestamp = false;
 
@@ -61,26 +77,28 @@ final class ITSEC_Log_Util {
 		$limit = max( 0, min( 100, intval( $limit ) ) );
 		$page = max( 1, intval( $page ) );
 
+		if ( is_array( $sort_by_column ) ) {
+			$regex_valid_columns = '(?:' . implode( '|', $valid_columns ) . ')';
+
+			foreach ( $sort_by_column as $index => $sort_by ) {
+				if ( in_array( $sort_by, $valid_columns ) ) {
+					$sort_by_column[$index] = "$sort_by DESC";
+				} else if ( ! preg_match( "/^$regex_valid_columns\s+(?:DESC|ASC)$/i", $sort_by ) ) {
+					unset( $sort_by_column[$index] );
+				}
+			}
+
+			if ( empty( $sort_by_column ) ) {
+				$sort_by_column = 'timestamp';
+			}
+		} else if ( ! in_array( $sort_by_column, $valid_columns ) ) {
+			$sort_by_column = 'timestamp';
+		}
+
 		$sort_direction = strtoupper( $sort_direction );
 		if ( ! in_array( $sort_direction, array( 'DESC', 'ASC' ) ) ) {
 			$sort_direction = 'DESC';
 		}
-
-
-		$valid_columns = array(
-			'id',
-			'parent_id',
-			'module',
-			'type',
-			'code',
-			'timestamp',
-			'init_timestamp',
-			'remote_ip',
-			'user_id',
-			'url',
-			'memory_current',
-			'memory_peak',
-		);
 
 		if ( false === $columns ) {
 			$columns = $valid_columns;

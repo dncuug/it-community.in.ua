@@ -6,6 +6,7 @@ function wp_insert_vi_api_get_settings() {
 			$response = wp_remote_get('https://dashboard-api.vidint.net/v1/api/widget/settings', array('timeout' => 15));
 			if(!is_wp_error($response) && (200 == wp_remote_retrieve_response_code($response))) {
 				$responseBody = json_decode($response['body']);
+				//echo '<pre>'; print_r($responseBody->data); echo '</pre>';
 				if((json_last_error() == JSON_ERROR_NONE) && ($responseBody->status == 'ok')) {
 					$viSettings = array(
 						'signupURL'	=> $responseBody->data->signupURL, 
@@ -17,7 +18,11 @@ function wp_insert_vi_api_get_settings() {
 						'revenueAPI' => $responseBody->data->revenueAPI,
 						'adsTxtAPI' => $responseBody->data->adsTxtAPI,
 						'languages' => $responseBody->data->languages,
-						'jsTagAPI' => $responseBody->data->jsTagAPI, 
+						'jsTagAPI' => $responseBody->data->jsTagAPI,
+						'vendorListURL' => $responseBody->data->vendorListURL,
+						'vendorListVersion' => $responseBody->data->vendorListVersion,
+						'consentPopupContent' => $responseBody->data->consentPopupContent,
+						'purposes' => $responseBody->data->purposes,
 					);
 					delete_transient('wp_insert_vi_api_settings');
 					set_transient('wp_insert_vi_api_settings', $viSettings, WEEK_IN_SECONDS);	
@@ -30,6 +35,10 @@ function wp_insert_vi_api_get_settings() {
 		}
 	}
 	return $viSettings;
+}
+
+function wp_insert_vi_api_reset_settings() {
+	delete_transient('wp_insert_vi_api_settings');
 }
 
 function wp_insert_vi_api_get_signupurl() {
@@ -70,6 +79,22 @@ function wp_insert_vi_api_get_languages() {
 		} else {
 			return false;
 		}
+	}
+	return false;
+}
+
+function wp_insert_vi_api_get_consent_popup_content() {
+	$viSettings = wp_insert_vi_api_get_settings();
+	if(($viSettings != false) && is_array($viSettings)) {
+		return $viSettings['consentPopupContent'];
+	}
+	return false;
+}
+
+function wp_insert_vi_api_get_consent_purposes() {
+	$viSettings = wp_insert_vi_api_get_settings();
+	if(($viSettings != false) && is_array($viSettings)) {
+		return $viSettings['purposes'];
 	}
 	return false;
 }
@@ -314,16 +339,6 @@ function wp_insert_vi_api_set_vi_code($args = null) {
 		if(isset($args['native_bg_color']) && ($args['native_bg_color'] != '') && ($args['native_bg_color'] != 'undefined')) {
 			$selectedArgs['backgroundColor'] = $args['native_bg_color'];
 		}
-		
-		if(isset($args['optional_1']) && ($args['optional_1'] != '') && ($args['optional_1'] != 'undefined')) {
-			$selectedArgs['vioptional1'] = $args['optional_1'];
-		}
-		if(isset($args['optional_2']) && ($args['optional_2'] != '') && ($args['optional_2'] != 'undefined')) {
-			$selectedArgs['vioptional2'] = $args['optional_2'];
-		}
-		if(isset($args['optional_3']) && ($args['optional_3'] != '') && ($args['optional_3'] != 'undefined')) {
-			$selectedArgs['vioptional3'] = $args['optional_3'];
-		}
 	}
 	
 	$viSettings = wp_insert_vi_api_get_settings();
@@ -417,5 +432,56 @@ function wp_insert_vi_api_get_vi_code($settingsKey = '') {
 		}		
 	}
 	return '<script type="text/javascript">'.$jsTag.'</script>';
+}
+
+function wp_insert_vi_api_is_eu() {
+	$userIp = $_SERVER["REMOTE_ADDR"];
+	//$userIp = '185.216.33.82';
+	$isEU = get_transient('wp_insert_vi_api_is_eu_'.$userIp);
+	if($isEU === false) {
+		try{
+			$response = wp_remote_get(
+				'http://gdpr-check.net/gdpr/is-eu?ip='.$userIp,
+				array('timeout' => 15)
+			);
+			if(!is_wp_error($response)) {
+				if(200 == wp_remote_retrieve_response_code($response)) {
+					$responseBody = json_decode($response['body']);
+					if((json_last_error() == JSON_ERROR_NONE)) {
+						if((isset($responseBody->is_eu)) && ($responseBody->is_eu == '1')) {
+							delete_transient('wp_insert_vi_api_is_eu_'.$userIp);
+							set_transient('wp_insert_vi_api_is_eu_'.$userIp, '1', WEEK_IN_SECONDS);
+							return true;
+						} else {
+							delete_transient('wp_insert_vi_api_is_eu_'.$userIp);
+							set_transient('wp_insert_vi_api_is_eu_'.$userIp, '0', WEEK_IN_SECONDS);
+							return false;
+						}
+					} else {
+						return false;
+					}
+				} else {
+					return false;
+				}
+			}
+		} catch(Exception $ex) {
+			return false;
+		}
+	} else {
+		if($isEU == '1') {
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
+}
+
+function wp_insert_vi_api_get_vendor_list_version() {
+	$viSettings = wp_insert_vi_api_get_settings();
+	if(($viSettings != false) && is_array($viSettings)) {
+		return $viSettings['vendorListVersion'];
+	}
+	return false;
 }
 ?>

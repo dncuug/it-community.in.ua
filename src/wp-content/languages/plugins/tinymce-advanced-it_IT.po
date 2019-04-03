@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - TinyMCE Advanced - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-09-09 13:06:35+0000\n"
+"PO-Revision-Date: 2018-03-25 16:36:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,9 +67,21 @@ msgstr "Crea Menu per Classi CSS"
 msgid "Font sizes"
 msgstr "Dimensione carattere"
 
+#: tadv_admin.php:327
+msgid "Open the TinyMCE link dialog when using the link button on the toolbar or the link menu item."
+msgstr "Apri il link TinyMCE quando usi il pulsante nella barra degli strumenti o il pulsante nel menù."
+
+#: tadv_admin.php:325
+msgid "Alternative link dialog"
+msgstr "Link di dialogo alternativo"
+
 #: tadv_admin.php:320
 msgid "Replace the browser context (right-click) menu."
 msgstr "Sostituisci il menu contestuale (pulsante destro) del browser."
+
+#: tadv_admin.php:313
+msgid "Enable more list options: upper or lower case letters for ordered lists, disk or square for unordered lists, etc."
+msgstr "Abilita più opzioni: maiuscolo o minuscolo per liste ordinate, dischi o quadrati per liste non ordinate, ecc."
 
 #: tadv_admin.php:308
 msgid "Options"

@@ -111,9 +111,7 @@ function wp_insert_inpostads_form_accordion_tabs_positioning($control, $identifi
 /* Begin In-Post Ads Ad Insertion */
 add_filter('the_content', 'wp_insert_inpostads_the_content', 100);
 function wp_insert_inpostads_the_content($content) {
-	if(function_exists('is_amp_endpoint') && is_amp_endpoint()) {
-		return $content;
-	} else if(!is_feed() && is_main_query()) { 
+	if(!is_feed() && is_main_query()) { 
 		$inpostads = get_option('wp_insert_inpostads');
 		if(isset($inpostads) && is_array($inpostads)) {
 			$paragraphCount = wp_insert_inpostads_get_paragraph_count($content);

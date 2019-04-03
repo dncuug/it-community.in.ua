@@ -239,7 +239,7 @@ final class ITSEC_Log {
 		return array(
 			'critical-issue' => esc_html__( 'Critical Issue', 'better-wp-security' ),
 			'action'         => esc_html__( 'Action', 'better-wp-security' ),
-			'fatal-error'    => esc_html__( 'Fatal Error', 'better-wp-security' ),
+			'fatal'          => esc_html__( 'Fatal Error', 'better-wp-security' ),
 			'error'          => esc_html__( 'Error', 'better-wp-security' ),
 			'warning'        => esc_html__( 'Warning', 'better-wp-security' ),
 			'notice'         => esc_html__( 'Notice', 'better-wp-security' ),
@@ -268,6 +268,11 @@ final class ITSEC_Log {
 	}
 
 	public static function rotate_log_files() {
+
+		if ( $days_to_keep = ITSEC_Modules::get_setting( 'global', 'file_log_rotation' ) ) {
+			self::delete_old_logs( $days_to_keep );
+		}
+
 		$log = self::get_log_file_path();
 		$max_file_size = 10 * 1024 * 1024; // 10MiB
 
@@ -313,6 +318,146 @@ final class ITSEC_Log {
 		foreach ( $files_to_delete as $file ) {
 			unlink( $file );
 		}
+	}
+
+	private static function delete_old_logs( $days_to_keep ) {
+
+		$log = self::get_log_file_path();
+
+		if ( ! file_exists( $log ) ) {
+			return;
+		}
+
+		$seconds = $days_to_keep * DAY_IN_SECONDS;
+
+		$files = glob( "$log.*" );
+
+		foreach ( $files as $file ) {
+			if ( ! $time = self::get_latest_write_for_file( $file ) ) {
+				continue;
+			}
+
+			if ( $time + $seconds > ITSEC_Core::get_current_time_gmt() ) {
+				continue;
+			}
+
+			unlink( $file );
+		}
+	}
+
+	private static function get_latest_write_for_file( $file ) {
+
+		$line = self::tail( $file );
+
+		if ( ! $line ) {
+			return false;
+		}
+
+		return self::get_date( $line );
+	}
+
+	private static function get_date( $line ) {
+		if ( ! $parsed = self::parse_csv_line( $line ) ) {
+			return false;
+		}
+
+		if ( ! isset( $parsed[5] ) ) {
+			return false;
+		}
+
+		return strtotime( $parsed[5] );
+	}
+
+	private static function parse_csv_line( $line ) {
+
+		if ( function_exists( 'str_getcsv' ) ) {
+			return str_getcsv( $line );
+		}
+
+		require_once( ITSEC_Core::get_core_dir() . '/lib/class-itsec-lib-file.php' );
+
+		if ( ! function_exists( 'wp_tempnam' ) ) {
+			require_once( ABSPATH . 'wp-admin/includes/file.php' );
+		}
+
+		$temp = wp_tempnam();
+
+		$success = ITSEC_Lib_File::write( $temp, $line );
+
+		if ( true !== $success ) {
+			return false;
+		}
+
+		if ( ! $fh = fopen( $temp, 'rb' ) ) {
+			return false;
+		}
+
+		$parsed = fgetcsv( $fh );
+
+		if ( ! is_array( $parsed ) ) {
+			return false;
+		}
+
+		return $parsed;
+	}
+
+	/**
+	 * Get the last n lines of a file.
+	 *
+	 * @link https://www.geekality.net/2011/05/28/php-tail-tackling-large-files/
+	 *
+	 * @param string $filename
+	 * @param int    $lines
+	 * @param int    $buffer
+	 *
+	 * @return bool|string
+	 */
+	private static function tail( $filename, $lines = 1, $buffer = 4096 ) {
+		// Open the file
+		$f = fopen( $filename, "rb" );
+
+		// Jump to last character
+		fseek( $f, - 1, SEEK_END );
+
+		// Read it and adjust line number if necessary
+		// (Otherwise the result would be wrong if file doesn't end with a blank line)
+		if ( fread( $f, 1 ) !== "\n" ) {
+			-- $lines;
+		}
+
+		// Start reading
+		$output = '';
+		$chunk  = '';
+
+		// While we would like more
+		while ( ftell( $f ) > 0 && $lines >= 0 ) {
+			// Figure out how far back we should jump
+			$seek = min( ftell( $f ), $buffer );
+
+			// Do the jump (backwards, relative to where we are)
+			fseek( $f, - $seek, SEEK_CUR );
+
+			// Read a chunk and prepend it to our output
+			$output = ( $chunk = fread( $f, $seek ) ) . $output;
+
+			// Jump back to where we started reading
+			fseek( $f, - mb_strlen( $chunk, '8bit' ), SEEK_CUR );
+
+			// Decrease our line counter
+			$lines -= substr_count( $chunk, "\n" );
+		}
+
+		// While we have too many lines
+		// (Because of buffer size we might have read too many)
+		while ( $lines ++ < 0 ) {
+			// Find first newline and remove all text before that
+			$output = substr( $output, strpos( $output, "\n" ) + 1 );
+		}
+
+		// Close file and return
+		fclose( $f );
+
+		return $output;
 	}
 }
 

@@ -104,6 +104,7 @@ if ( ! class_exists( 'ITSEC_Lib_Directory' ) ) {
 				return true;
 			}
 
+			// phpcs:ignore -- Have Tide ignore the following line. We use arguments that don't exist in early versions, but these versions ignore the arguments.
 			@clearstatcache( true, $dir );
 
 			return @is_dir( $dir );
@@ -198,6 +199,7 @@ if ( ! class_exists( 'ITSEC_Lib_Directory' ) ) {
 			}
 
 			$result = rmdir( $dir );
+			// phpcs:ignore -- Have Tide ignore the following line. We use arguments that don't exist in early versions, but these versions ignore the arguments.
 			@clearstatcache( true, $dir );
 
 			if ( $result ) {
@@ -285,6 +287,7 @@ if ( ! class_exists( 'ITSEC_Lib_Directory' ) ) {
 
 
 			$dir = rtrim( $dir, '/' );
+			// phpcs:ignore -- Have Tide ignore the following line. We use arguments that don't exist in early versions, but these versions ignore the arguments.
 			@clearstatcache( true, $dir );
 
 			return fileperms( $dir ) & 0777;

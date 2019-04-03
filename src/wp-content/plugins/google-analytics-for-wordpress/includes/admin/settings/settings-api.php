@@ -904,7 +904,7 @@ function monsterinsights_notice_callback( $args ) {
 function monsterinsights_upgrade_notice_callback( $args ) {
 	$html =   '<div class="monsterinsights-upsell-box"><h2>' . esc_html( $args['name' ] ) . '</h2>'
 			. '<p class="monsterinsights-upsell-lite-text">' . $args['desc'] . '</p>'
-			. '<p class="monsterinsights-upsell-button-par"><a href="https://www.monsterinsights.com/lite/" class="monsterinsights-upsell-box-button button button-primary">' . __( 'Click here to Upgrade', 'google-analytics-for-wordpress' ) . '</a></p>'
+			. '<p class="monsterinsights-upsell-button-par"><a href="'. monsterinsights_get_upgrade_link( 'settings-page', 'settings-page-upgrade-cta' ) .'" class="monsterinsights-upsell-box-button button button-primary">' . __( 'Click here to Upgrade', 'google-analytics-for-wordpress' ) . '</a></p>'
 			. '</div>';
 	return apply_filters( 'monsterinsights_after_setting_output', $html, $args ); 
 }
@@ -983,8 +983,13 @@ function monsterinsights_render_field( $args ) {
 			$output .= '<th scope="row">';
 				$output .='<label for="monsterinsights_settings[' . monsterinsights_sanitize_key( $args['id'] ) . ']">' . esc_html( $args["name"] ) . '</label>';
 			$output .= '</th>';
+		} 
+
+		if ( empty( $args['no_label'] ) ) {
+			$output .= '<td>';
+		} else {
+			$output .= '<td colspan="2">';
 		}
-		$output .= '<td>';
 			$render  = ! empty( $args['type'] ) && function_exists( 'monsterinsights_' . $args['type'] . '_callback' ) ? 'monsterinsights_' . $args['type'] . '_callback' : 'monsterinsights_missing_callback';
 			$output .= call_user_func( $render, $args );
 		$output .= '</td>';

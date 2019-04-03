@@ -34,10 +34,11 @@ class ITSEC_Job {
 	 *
 	 * The original event will not fire while a reschedule is pending.
 	 *
-	 * @param int $seconds
+	 * @param int   $seconds
+	 * @param array $data Additional data to attach to the rescheduled event.
 	 */
-	public function reschedule_in( $seconds ) {
-		$data = $this->get_data();
+	public function reschedule_in( $seconds, $data = array() ) {
+		$data = array_merge( $this->data, $data );
 
 		if ( isset( $data['retry_count'] ) ) {
 			$data['retry_count'] ++;

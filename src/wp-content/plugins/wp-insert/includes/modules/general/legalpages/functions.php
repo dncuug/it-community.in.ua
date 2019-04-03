@@ -11,6 +11,16 @@ function wp_insert_legalpages_privacy_policy_form_get_content() {
 		}
 		$control = new smartlogixControls(array('optionIdentifier' => 'wp_insert_legalpages[privacy_policy]', 'values' => $legalPages['privacy_policy']));
 		echo '<div id="wp_insert_legalpages_privacy_policy_accordion">';
+			echo '<h3>Disclaimer</h3>';
+			echo '<div>';
+				echo '<p><b>By using this feature, you agree to this disclaimer.</b></p>';
+				echo '<p>These templates are provided to you to understand your obligations better, but they are NOT meant to constitute client-attorney relationship or personalized legal advice.</p>';
+				echo '<p>The developer is not eligible for any claim or action based on any information or functionality provided by this plugin.</p>';
+				echo '<p>We expressly disclaim all liability in respect of usage of this plugin or its features.</p>';
+				echo '<p>This plugin gives you general information and tools, but is NOT meant to serve as complete compliance package.</p>';
+				echo '<p>As each business and situation is unique, you might need to modify, add or delete information in these templates.</p>';
+				echo '<p>This information is provided just to get you started.</p>';
+			echo '</div>';
 			echo '<h3>Content</h3>';
 			echo '<div style="max-height: 320px;">'; 
 				$control->add_control(array('type' => 'textarea-wysiwyg', 'style' => 'height: 220px;', 'optionName' => 'content'));
@@ -82,6 +92,16 @@ function wp_insert_legalpages_terms_conditions_form_get_content() {
 		}
 		$control = new smartlogixControls(array('optionIdentifier' => 'wp_insert_legalpages[terms_conditions]', 'values' => $legalPages['terms_conditions']));
 		echo '<div id="wp_insert_legalpages_terms_conditions_accordion">';
+			echo '<h3>Disclaimer</h3>';
+			echo '<div>';
+				echo '<p><b>By using this feature, you agree to this disclaimer.</b></p>';
+				echo '<p>These templates are provided to you to understand your obligations better, but they are NOT meant to constitute client-attorney relationship or personalized legal advice.</p>';
+				echo '<p>The developer is not eligible for any claim or action based on any information or functionality provided by this plugin.</p>';
+				echo '<p>We expressly disclaim all liability in respect of usage of this plugin or its features.</p>';
+				echo '<p>This plugin gives you general information and tools, but is NOT meant to serve as complete compliance package.</p>';
+				echo '<p>As each business and situation is unique, you might need to modify, add or delete information in these templates.</p>';
+				echo '<p>This information is provided just to get you started.</p>';
+			echo '</div>';
 			echo '<h3>Content</h3>';
 			echo '<div style="max-height: 320px;">'; 
 				$control->add_control(array('type' => 'textarea-wysiwyg', 'style' => 'height: 220px;', 'optionName' => 'content'));
@@ -153,6 +173,16 @@ function wp_insert_legalpages_disclaimer_form_get_content() {
 		}
 		$control = new smartlogixControls(array('optionIdentifier' => 'wp_insert_legalpages[disclaimer]', 'values' => $legalPages['disclaimer']));
 		echo '<div id="wp_insert_legalpages_disclaimer_accordion">';
+			echo '<h3>Disclaimer</h3>';
+			echo '<div>';
+				echo '<p><b>By using this feature, you agree to this disclaimer.</b></p>';
+				echo '<p>These templates are provided to you to understand your obligations better, but they are NOT meant to constitute client-attorney relationship or personalized legal advice.</p>';
+				echo '<p>The developer is not eligible for any claim or action based on any information or functionality provided by this plugin.</p>';
+				echo '<p>We expressly disclaim all liability in respect of usage of this plugin or its features.</p>';
+				echo '<p>This plugin gives you general information and tools, but is NOT meant to serve as complete compliance package.</p>';
+				echo '<p>As each business and situation is unique, you might need to modify, add or delete information in these templates.</p>';
+				echo '<p>This information is provided just to get you started.</p>';
+			echo '</div>';
 			echo '<h3>Content</h3>';
 			echo '<div style="max-height: 320px;">'; 
 				$control->add_control(array('type' => 'textarea-wysiwyg', 'style' => 'height: 220px;', 'optionName' => 'content'));
@@ -224,6 +254,16 @@ function wp_insert_legalpages_copyright_form_get_content() {
 		}
 		$control = new smartlogixControls(array('optionIdentifier' => 'wp_insert_legalpages[copyright]', 'values' => $legalPages['copyright']));
 		echo '<div id="wp_insert_legalpages_copyright_accordion">';
+			echo '<h3>Disclaimer</h3>';
+			echo '<div>';
+				echo '<p><b>By using this feature, you agree to this disclaimer.</b></p>';
+				echo '<p>These templates are provided to you to understand your obligations better, but they are NOT meant to constitute client-attorney relationship or personalized legal advice.</p>';
+				echo '<p>The developer is not eligible for any claim or action based on any information or functionality provided by this plugin.</p>';
+				echo '<p>We expressly disclaim all liability in respect of usage of this plugin or its features.</p>';
+				echo '<p>This plugin gives you general information and tools, but is NOT meant to serve as complete compliance package.</p>';
+				echo '<p>As each business and situation is unique, you might need to modify, add or delete information in these templates.</p>';
+				echo '<p>This information is provided just to get you started.</p>';
+			echo '</div>';
 			echo '<h3>Content</h3>';
 			echo '<div style="max-height: 320px;">'; 
 				$control->add_control(array('type' => 'textarea-wysiwyg', 'style' => 'height: 220px;', 'optionName' => 'content'));

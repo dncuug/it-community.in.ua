@@ -1,7 +1,7 @@
 <?php
 
 final class ITSEC_Global_Settings_Page extends ITSEC_Module_Settings_Page {
-	private $version = 1;
+	private $version = 2;
 
 
 	public function __construct() {
@@ -69,6 +69,11 @@ final class ITSEC_Global_Settings_Page extends ITSEC_Module_Settings_Page {
 		$log_types = $validator->get_valid_log_types();
 
 		$show_error_codes_options = array(
+			false => __( 'No (default)' ),
+			true  => __( 'Yes' ),
+		);
+
+		$enable_grade_report_options = array(
 			false => __( 'No (default)' ),
 			true  => __( 'Yes' ),
 		);
@@ -173,7 +178,15 @@ final class ITSEC_Global_Settings_Page extends ITSEC_Module_Settings_Page {
 			<td>
 				<?php $form->add_text( 'log_rotation', array( 'class' => 'small-text' ) ); ?>
 				<label for="itsec-global-log_rotation"><?php _e( 'Days', 'better-wp-security' ); ?></label>
-				<p class="description"><?php _e( 'The number of days database logs should be kept. File logs will be kept indefinitely but will be rotated once the file hits 10MB.', 'better-wp-security' ); ?></p>
+				<p class="description"><?php _e( 'The number of days database logs should be kept.', 'better-wp-security' ); ?></p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="itsec-global-file_log_rotation"><?php _e( 'Days to Keep File Logs', 'better-wp-security' ); ?></label></th>
+			<td>
+				<?php $form->add_text( 'file_log_rotation', array( 'class' => 'small-text' ) ); ?>
+				<label for="itsec-global-log_rotation"><?php _e( 'Days', 'better-wp-security' ); ?></label>
+				<p class="description"><?php _e( 'The number of days file logs should be kept. File logs will additionally be rotated once the file hits 10MB. Set to 0 to only use log rotation.', 'better-wp-security' ); ?></p>
 			</td>
 		</tr>
 		<tr>
@@ -234,6 +247,15 @@ final class ITSEC_Global_Settings_Page extends ITSEC_Module_Settings_Page {
 				<p class="description"><?php _e( 'Each error message in iThemes Security has an associated error code that can help diagnose an issue. Changing this setting to "Yes" causes these codes to display. This setting should be left set to "No" unless iThemes Security support requests that you change it.', 'better-wp-security' ); ?></p>
 			</td>
 		</tr>
+		<?php if ( ITSEC_Core::is_pro() ) : ?>
+			<tr>
+				<th scope="row"><label for="itsec-global-enable_grade_report"><?php _e( 'Enable Grade Report', 'better-wp-security' ); ?></label></th>
+				<td>
+					<?php $form->add_select( 'enable_grade_report', $enable_grade_report_options ); ?>
+					<p class="description"><?php _e( 'The Grade Report feature can help you identify vulnerabilities on the site. Visit the Notification Center to select which users receive emails from this feature.', 'better-wp-security' ); ?></p>
+				</td>
+			</tr>
+		<?php endif; ?>
 	</table>
 <?php
 

@@ -1,3 +1,6 @@
+rubiconproject.com,15476,RESELLER,0bfd66d529a55807
+smartadserver.com,2776,RESELLER
+google.com,pub-9437162291368173,DIRECT,f08c47fec0942fa0
 vi.ai, 225216805684543, DIRECT # 41b5eef6
 spotxchange.com, 74964, RESELLER, 7842df1d2fe2db34 # 41b5eef6
 spotx.tv, 74964, RESELLER, 7842df1d2fe2db34 # 41b5eef6
@@ -9,6 +12,6 @@ freewheel.tv, 440657, RESELLER # 41b5eef6
 freewheel.tv, 440673, RESELLER # 41b5eef6
 freewheel.tv, 364193, RESELLER # 41b5eef6
 freewheel.tv, 369249, RESELLER # 41b5eef6
-rubiconproject.com, 15476, RESELLER, 0bfd66d529a55807
-smartadserver.com,2776,RESELLER
-google.com, pub-9437162291368173, DIRECT, f08c47fec0942fa0
+rubiconproject.com, 15476, RESELLER, 0bfd66d529a55807 # 41b5eef6
+smartadserver.com, 2776, RESELLER # 41b5eef6
+pubmatic.com, 156830, RESELLER # 41b5eef6

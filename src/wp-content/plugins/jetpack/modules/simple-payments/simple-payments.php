@@ -27,7 +27,7 @@ class Jetpack_Simple_Payments {
 		return self::$instance;
 	}
 
-	private function register_scripts() {
+	private function register_scripts_and_styles() {
 		/**
 		 * Paypal heavily discourages putting that script in your own server:
 		 * @see https://developer.paypal.com/docs/integration/direct/express-checkout/integration-jsv4/add-paypal-button/
@@ -35,10 +35,13 @@ class Jetpack_Simple_Payments {
 		wp_register_script( 'paypal-checkout-js', 'https://www.paypalobjects.com/api/checkout.js', array(), null, true );
 		wp_register_script( 'paypal-express-checkout', plugins_url( '/paypal-express-checkout.js', __FILE__ ),
 			array( 'jquery', 'paypal-checkout-js' ), self::$version );
+		wp_register_style( 'jetpack-simple-payments', plugins_url( '/simple-payments.css', __FILE__ ), array( 'dashicons' ) );
 	}
+
 	private function register_init_hook() {
 		add_action( 'init', array( $this, 'init_hook_action' ) );
 	}
+
 	private function register_shortcode() {
 		add_shortcode( self::$shortcode, array( $this, 'parse_shortcode' ) );
 	}
@@ -46,7 +49,7 @@ class Jetpack_Simple_Payments {
 	public function init_hook_action() {
 		add_filter( 'rest_api_allowed_post_types', array( $this, 'allow_rest_api_types' ) );
 		add_filter( 'jetpack_sync_post_meta_whitelist', array( $this, 'allow_sync_post_meta' ) );
-		$this->register_scripts();
+		$this->register_scripts_and_styles();
 		$this->register_shortcode();
 		$this->setup_cpts();
 
@@ -67,6 +70,33 @@ class Jetpack_Simple_Payments {
 		}
 
 		return Jetpack_Options::get_option( 'id' );
+	}
+
+	/**
+	 * Used to check whether Simple Payments are enabled for given site.
+	 *
+	 * @return bool True if Simple Payments are enabled, false otherwise.
+	 */
+	function is_enabled_jetpack_simple_payments() {
+		/**
+		 * Can be used by plugin authors to disable the conflicting output of Simple Payments.
+		 *
+		 * @since 6.3.0
+		 *
+		 * @param bool True if Simple Payments should be disabled, false otherwise.
+		 */
+		if ( apply_filters( 'jetpack_disable_simple_payments', false ) ) {
+			return false;
+		}
+
+		// For WPCOM sites
+		if ( defined( 'IS_WPCOM' ) && IS_WPCOM && function_exists( 'has_blog_sticker' ) ) {
+			$site_id = $this->get_blog_id();
+			return has_blog_sticker( 'premium-plan', $site_id ) || has_blog_sticker( 'business-plan', $site_id );
+		}
+
+		// For all Jetpack sites
+		return Jetpack::is_active() && Jetpack::active_plan_supports( 'simple-payments');
 	}
 
 	function parse_shortcode( $attrs, $content = false ) {
@@ -100,11 +130,17 @@ class Jetpack_Simple_Payments {
 		);
 
 		$data['id'] = $attrs['id'];
+
+		if( ! wp_style_is( 'jetpack-simple-payments', 'enqueue' ) ) {
+			wp_enqueue_style( 'jetpack-simple-payments' );
+		}
+
+		if ( ! $this->is_enabled_jetpack_simple_payments() ) {
+			return $this->output_admin_warning( $data );
+		}
+
 		if ( ! wp_script_is( 'paypal-express-checkout', 'enqueued' ) ) {
 			wp_enqueue_script( 'paypal-express-checkout' );
-		}
-		if ( ! wp_style_is( 'simple-payments', 'enqueued' ) ) {
-			wp_enqueue_style( 'simple-payments', plugins_url( 'simple-payments.css', __FILE__ ), array( 'dashicons' ) );
 		}
 
 		wp_add_inline_script( 'paypal-express-checkout', sprintf(
@@ -116,6 +152,38 @@ class Jetpack_Simple_Payments {
 		) );
 
 		return $this->output_shortcode( $data );
+	}
+
+	function output_admin_warning( $data ) {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+		$css_prefix = self::$css_classname_prefix;
+
+		$support_url = ( defined( 'IS_WPCOM' ) && IS_WPCOM )
+			? 'https://support.wordpress.com/simple-payments/'
+			: 'https://jetpack.com/support/simple-payment-button/';
+
+		$warning = sprintf(
+			wp_kses(
+				__( 'Your plan doesn\'t include Simple Payments. <a href="%s" rel="noopener noreferrer" target="_blank">Learn more and upgrade</a>.', 'jetpack' ),
+				array( 'a' => array( 'href' => array(), 'rel' => array(), 'target' => array() ) )
+			),
+			esc_url( $support_url )
+		);
+
+		return "
+<div class='{$data['class']} ${css_prefix}-wrapper'>
+	<div class='${css_prefix}-product'>
+		<div class='${css_prefix}-details'>
+			<div class='${css_prefix}-purchase-message show error' id='{$data['dom_id']}-message-container'>
+				<p>${warning}</p>
+				<p>" . esc_html__( '(Only administrators will see this message.)', 'jetpack' ) . "</p>
+			</div>
+		</div>
+	</div>
+</div>
+		";
 	}
 
 	function output_shortcode( $data ) {
@@ -213,7 +281,7 @@ class Jetpack_Simple_Payments {
 			'read_private_posts'    => 'read_private_posts',
 		);
 		$order_args = array(
-			'label'                 => esc_html__( 'Order', 'jetpack' ),
+			'label'                 => esc_html_x( 'Order', 'noun: a quantity of goods or items purchased or sold', 'jetpack' ),
 			'description'           => esc_html__( 'Simple Payments orders', 'jetpack' ),
 			'supports'              => array( 'custom-fields', 'excerpt' ),
 			'hierarchical'          => false,

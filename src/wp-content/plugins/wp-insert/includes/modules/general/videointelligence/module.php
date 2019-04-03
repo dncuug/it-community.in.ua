@@ -2,6 +2,7 @@
 require_once(dirname(__FILE__).'/functions.php');
 require_once(dirname(__FILE__).'/api/vi.php');
 require_once(dirname(__FILE__).'/vi-constants.php');
+require_once(dirname(__FILE__).'/gdpr.php');
 
 /* Begin Add Assets */
 add_action('wp_insert_modules_css', 'wp_insert_module_vi_css', 0);
@@ -103,7 +104,7 @@ function wp_insert_vi_get_chart() {
 		echo '</div>';
 		echo '<div class="clear"></div>';
 	} else {
-		echo '<p class="viError">There was an error processing your request, our team was notified.<br />Please try again later.</p>';
+		echo '<p class="viError">There was an error processing your request, our team was notified. Try clearing your browser cache, log out and log in again.</p>';
 		echo '<div id="wp_insert_vi_earnings_wrapper">';
 			echo '<div id="wp_insert_vi_earnings">';
 				echo '<span id="wp_insert_vi_earnings_label">Total Earnings</span>';

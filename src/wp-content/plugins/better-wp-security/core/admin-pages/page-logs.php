@@ -37,6 +37,8 @@ final class ITSEC_Logs_Page {
 	}
 
 	public function add_scripts() {
+		ITSEC_Lib::enqueue_util();
+
 		foreach ( $this->modules as $id => $module ) {
 			$module->enqueue_scripts_and_styles();
 		}
@@ -272,34 +274,42 @@ final class ITSEC_Logs_Page {
 					'module'      => array(
 						'header'  => esc_html__( 'Module', 'better-wp-security' ),
 						'content' => esc_html( $entry['module'] ),
+						'order'   => 0,
 					),
 					'type'        => array(
 						'header'  => esc_html__( 'Type', 'better-wp-security' ),
 						'content' => $type,
+						'order'   => 10,
 					),
 					'description' => array(
 						'header'  => esc_html__( 'Description', 'better-wp-security' ),
 						'content' => esc_html( $code ),
+						'order'   => 20,
 					),
 					'timestamp'   => array(
 						'header'  => esc_html__( 'Timestamp', 'better-wp-security' ),
 						'content' => esc_html( $datetime ),
+						'order'   => 30,
 					),
 					'host'        => array(
 						'header'  => esc_html__( 'Host', 'better-wp-security' ),
 						'content' => '<code>' . esc_html( $entry['remote_ip'] ) . '</code>',
+						'order'   => 40,
 					),
 					'user'        => array(
 						'header'  => esc_html__( 'User', 'better-wp-security' ),
 						'content' => esc_html( $username ),
+						'order'   => 50,
 					),
 					'url'         => array(
 						'header'  => esc_html__( 'URL', 'better-wp-security' ),
 						'content' => '<code>' . $url . '</code>',
+						'order'   => 60,
 					),
 					'raw-details'    => array(
 						'header'  => esc_html__( 'Raw Details', 'better-wp-security' ),
 						'content' => true,
+						'order'   => PHP_INT_MAX,
 					),
 				);
 
@@ -327,6 +337,17 @@ final class ITSEC_Logs_Page {
 
 					$details['raw-details']['content'] = '<p><a class="itsec-log-raw-details-toggle" href="#">' . $this->translations['show_raw_details'] . '</a></p><div class="itsec-log-raw-details">' . $details['raw-details']['content'] . '</div>';
 				}
+
+				$i = 1;
+
+				foreach ( $details as $column => $detail ) {
+					if ( ! isset( $detail['order'] ) ) {
+						$details[ $column ]['order'] = PHP_INT_MAX - 10 * $i;
+						$i ++;
+					}
+				}
+
+				$details = wp_list_sort( $details, 'order', 'ASC', true );
 			}
 
 			ob_start();
@@ -466,6 +487,7 @@ final class ITSEC_Logs_Page {
 								$list->prepare_items();
 								$list->views();
 								$form->start_form( array( 'method' => 'GET' ) );
+								$form->add_hidden( 'page', 'itsec-logs' );
 								$list->display();
 								$form->end_form();
 							?>

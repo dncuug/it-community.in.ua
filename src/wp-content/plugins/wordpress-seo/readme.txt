@@ -5,8 +5,8 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: SEO, XML sitemap, Google Search Console, Content analysis, Readability
 Requires at least: 4.8
-Tested up to: 4.9.5
-Stable tag: 7.3
+Tested up to: 4.9.8
+Stable tag: 8.1
 Requires PHP: 5.2.4
 
 Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.
@@ -15,7 +15,7 @@ Improve your WordPress SEO: Write better content and have a fully optimized Word
 
 ### Yoast SEO: the #1 WordPress SEO plugin
 
-Need an SEO plugin that helps you reach for the stars? Yoast SEO is the original WordPress SEO plugin since 2008. It is the favorite tool of millions of users, ranging from the bakery around the corner to some of the most popular sites on the planet. With Yoast SEO, you get a solid toolset that helps you aim for that number one spot in the search results. Yoast: SEO for everyone.
+Need some help with your search engine optimization? Need an SEO plugin that helps you reach for the stars? Yoast SEO is the original WordPress SEO plugin since 2008. It is the favorite tool of millions of users, ranging from the bakery around the corner to some of the most popular sites on the planet. With Yoast SEO, you get a solid toolset that helps you aim for that number one spot in the search results. Yoast: SEO for everyone.
 
 Yoast SEO does everything in its power to please both visitors and search engine spiders. How? Below you’ll find a small sampling of the powers of Yoast SEO:
 
@@ -62,7 +62,7 @@ Bug reports for Yoast SEO are [welcomed on GitHub](https://github.com/Yoast/word
 
 ### Further Reading
 
-For more info, check out the following articles:
+For more info on search engine optimization, check out the following:
 
 * The [Yoast SEO Plugin](https://yoa.st/1v8) official homepage.
 * The [Yoast SEO Knowledgebase](https://yoa.st/1va).
@@ -106,55 +106,48 @@ You'll find answers to many of your questions on [kb.yoast.com](https://yoa.st/1
 
 == Changelog ==
 
-= 7.3.0 =
-Release Date: April 17th, 2018
+= 8.1.0 =
+Release Date: August 28th, 2018
 
 Enhancements:
-* Removes the `intl` polyfill and shows a message on browsers that don't support this feature.
-* Adds Baidu Webmaster Tools verification support.
-* Adds import functionality for [Premium SEO Pack](https://wordpress.org/plugins/premium-seo-pack/).
-* Adds import functionality for [Smartcrawl SEO](https://wordpress.org/plugins/smartcrawl-seo/).
-* Adds import functionality for [Squirrly SEO](https://wordpress.org/plugins/squirrly-seo/).
-* Adds import functionality for [Platinum SEO Pack](https://wordpress.org/plugins/platinum-seo-pack/).
-* Adds import functionality for [SEO Framework](https://wordpress.org/plugins/autodescription/).
-* Adds import functionality for [Greg's High Performance SEO](https://wordpress.org/plugins/gregs-high-performance-seo/).
-* Adds import functionality for [WP Meta SEO](https://wordpress.org/plugins/wp-meta-seo/).
-* Improves the social data import for the wpSEO.de plugin.
-* Removes the debug data from the admin pages, which were only showing when WordPress is in DEBUG mode.
-* Applies Select2 to all select boxes on breadcrumbs page.
-* Attempts to reset `opcode` cache during the upgrade routine.
-* Changes the wording for the Ryte indexability check on the features tab.
+
+* Adds the Snippet Preview Editor to the sidebar.
+* Introduces the Primary Category picker to Gutenberg.
+* Introduces a loading indicator in the analysis that is shown until we're ready to analyze the content.
+* Optimizes the content analysis calculations. This fixes the issue where the UI could freeze when you have a long post.
+* Changes the "Check Inlinks (OSE)" menu item in the Yoast Admin bar "Analyze this page" dropdown from the Moz OpenSite Explorer (OSE) to Google Search Console, as the former service is being disabled on August 30th 2018.
 
 Bugfixes:
-* Prevents hard casting to array in the `WPSEO_Link_Columns::add_post_columns` method signature.
-* Fixes a bug where an error is thrown when MySQL has the `sql-mode` set to `ANSI_QUOTES`.
-* Fixes a bug where the pagination overlaps the cornerstone information message, on post overview pages in combination with low resolutions.
-* Fixed a bug where the keyword filter doesn't work on the post overview page.
-* Removes HTML entities from the HTML comment that appears for admins when there's no meta description on a post or page.
-* Changes JSON+LD organization output to always point to `#organization` on the homepage instead of the current page.
-* Fixes a bug where non-public taxonomies were shown in the breadcrumbs.
+
+* Fixes a bug where the analysis scores would change multiple times due to a delay in the loading of the actual scores. We now show loading indicators until the actual scores have been calculated.
+* Fixes a bug where the parent title snippet variable wasn't properly being replaced with the actual parent title in Gutenberg.
+* Fixes a plugin compatibility bug where the SEO score in the admin bar could not be retrieved.
+* Fixes a bug where the editor would not be usable when deferred or async loading of JavaScript is being forced.
+* Fixes a bug where the analysis for previously used keywords would only be triggered if the keyword was changed, resulting in an incorrect SEO score.
+
+= 8.0.0 =
+Release Date: August 14th, 2018
+
+Enhancements:
+
+* Implements the Yoast sidebar for Gutenberg: added the Readability, Focus Keyword and Cornerstone content tabs to the sidebar.
+* Revamps the Yoast metabox to use the same vertical design as the new sidebar.
+* Implements the same tabbed layout in the plugin's network settings screen that is also used in the plugin's site settings screens.
+* Implements a plugin-specific network settings API and use it in the network settings screen.
+* Introduces a network admin-specific admin bar menu.
+* Adds notifications to the Notification Center in regards to Gutenberg compatibility. If Gutenberg is older than the minimum supported version by Yoast SEO, a 'problem' notification is added. If Gutenberg is only slightly outdated, a 'normal' notification is added.
+* Implements the automatic detection of the keyword for terms based on the term's title.
+
+Bugfixes:
+
+* Fixes a bug where `/sitemap.xml` would not correctly redirect to `/sitemap_index.xml` in some environments.
+* Fixes a bug where sitemap cache transients would not be correctly cleared.
+* Fixes a bug where markers were wrongfully displayed in Gutenberg.
+* Fixes a bug where SEO titles were incorrectly evaluated as being of a good length when they were actually slightly too long.
 
 Other:
-* Minor internationalization improvements.
-* Security hardening.
 
-= 7.2.0 =
-Release Date: April 3rd, 2018
-
-Enhancements:
-* Updates all Help Center videos with new recordings.
-* Adds functionality to import noindex, nofollow and OpenGraph tags from All in One SEO Pack.
-* Improves consistency of capitalization in settings and tabs.
-* Improves the traffic light icon accessibility.
-* Changes the words 'post type' into 'content type' throughout the plugin.
-
-Bugfixes:
-* Fixes a bug where the Facebook app-id could no longer be set in the Social settings.
-* Fixes a bug where existing Yoast SEO data could be overwritten when importing data from All in One SEO Pack.
-* Fixes a bug where the Ryte notification is not removed when disabling the Ryte feature.
-* Fixes a bug where setting a page to `noindex` through the `wpseo_robots` filter did not properly remove the `canonical` element.
-* Fixes a bug where attachments connected to password-protected parents are included in the sitemaps. Props [Scott Carter](https://gobarrelroll.com).
-* Fixes alignment of the `Go Premium` notice.
+* Moves the network's Restore Site functionality into its own tab.
 
 = Earlier versions =
 
