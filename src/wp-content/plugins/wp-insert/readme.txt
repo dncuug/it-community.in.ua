@@ -3,8 +3,8 @@ Contributors: Namith Jawahar
 Tags: google adsense, adsense, google ads, google analytics, privacy policy, best adsense plugin, ad management, ad rotation, tracking codes
 Donate link: http://wpinsert.smartlogix.co.in/support/
 Requires at least: 4.1.0
-Tested up to: 4.9.6
-Stable tag: 2.4.2
+Tested up to: 5.0
+Stable tag: 2.4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,7 @@ Wp-Insert is the most powerful yet easiest to use wordpress ad management / ad i
 = Features =  
      
 * Adsense Optimized
+* Gutenberg Support
 * Builtin support for Google Page-Level Ads
 * Builtin support for Google Adsnese Auto Ads
 * Unlimited Adblocks (No restrictions placed on you)
@@ -28,6 +29,7 @@ Wp-Insert is the most powerful yet easiest to use wordpress ad management / ad i
 * Insert Ads into post content using shortcodes is required
 * GUI Driven Rules based System to control when and where to display Ads
 * Use the GUI to easily exclude ads from any specific post, pages, archives etc
+* Manually override auto positioning on a per post basis
 * Hide ads for Loggedin users
 * Hide ads for Mobile users
 * Builtin support for AMP plugin by Automattic

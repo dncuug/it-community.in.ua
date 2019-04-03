@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-30 13:30:15+0000\n"
+"PO-Revision-Date: 2019-03-02 18:00:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3897,10 +3897,6 @@ msgstr "Devi inserire l'ID del sito per disconnettere un sub-sito"
 msgid "Site ID must be provided to register a sub-site."
 msgstr "Devi inserire l'ID del sito per registrare un sub-sito"
 
-#: class.jetpack-network-sites-list-table.php:60
-msgid "View"
-msgstr "Vedi"
-
 #: class.jetpack-jitm.php:99
 msgid "New free service: Show Canada Post shipping rates on your store!"
 msgstr "New free service: Show Canada Post shipping rates on your store!"
@@ -3924,6 +3920,10 @@ msgid_plural "Cleaned up a total of %d videos."
 msgstr[0] "Cleaned up %d video."
 msgstr[1] "Cleaned up a total of %d videos."
 
+#: class.jetpack-network-sites-list-table.php:60
+msgid "View"
+msgstr "Visualizzare"
+
 #: class.frame-nonce-preview.php:113
 msgid "Sorry, you are not allowed to preview drafts."
 msgstr "Non hai i permessi per vedere l'anteprima delle bozze."
@@ -3936,10 +3936,6 @@ msgstr "Usa il Markdown per i post"
 msgid "Track each scroll load (7 posts by default) as a page view in Google Analytics"
 msgstr "Traccia ogni scaricamento di scroll (7 post di default) come un'unica page view su Google Analytics"
 
-#: _inc/jetpack-strings.php:580
-msgid "Currently in {{a}}Development Mode{{/a}} (some features are disabled) because: {{reasons/}}"
-msgstr "Al momento in {{a}}Modalità Sviluppo{{/a}} (alcune funzionalità sono disabilitate) perché: {{reasons/}}"
-
 #: _inc/jetpack-strings.php:577
 msgid "{{li}}The jetpack_development_mode filter is active{{/li}}"
 msgstr "{li}}Il filtro jetpack_development_mode è attivo{{/li}}"
@@ -3951,6 +3947,10 @@ msgstr "{{li}}La costante JETPACK_DEV_DEBUG è definita{{/li}}"
 #: _inc/jetpack-strings.php:579
 msgid "{{li}}Your site URL lacks a dot (e.g. http://localhost){{/li}}"
 msgstr "{{li}}All'URL del tuo sito manca un punto (es. http://localhost){{/li}}"
+
+#: _inc/jetpack-strings.php:580
+msgid "Currently in {{a}}Development Mode{{/a}} (some features are disabled) because: {{reasons/}}"
+msgstr "Attualmente in {{a}}Modalità di sviluppo{{/a}} (alcune funzioni sono disabilitate) perché: {{reasons/}}"
 
 #: modules/widgets/twitter-timeline.php:363
 msgid "# of Tweets Shown (1 to 20):"
@@ -6544,10 +6544,6 @@ msgstr "Impostazioni per %(slug)s attive."
 msgid "To automatically back up your entire site, please {{a}}install and activate{{/a}} VaultPress."
 msgstr "Per fare il backup automatico di tutto il tuo sito {{a}}installa e attiva{{/a}} VaultPress."
 
-#: _inc/jetpack-strings.php:64
-msgid "To automatically back up your entire site, please {{a}}upgrade your account{{/a}}."
-msgstr "Per fare il backup automatico di tutto il tuo sito {{a}}aggiorna il tuo account{{/a}}."
-
 #: _inc/jetpack-strings.php:50 _inc/jetpack-strings.php:66
 #: _inc/jetpack-strings.php:85 _inc/jetpack-strings.php:115
 #: _inc/jetpack-strings.php:264 _inc/jetpack-strings.php:268
@@ -6559,6 +6555,10 @@ msgstr "Non disponibile in Dev Mode."
 #: _inc/jetpack-strings.php:112
 msgid "Loading…"
 msgstr "Caricando..."
+
+#: _inc/jetpack-strings.php:64
+msgid "To automatically back up your entire site, please {{a}}upgrade your account{{/a}}."
+msgstr "Per effettuare il backup automatico dell’intero sito, {{a}}aggiorna il tuo account{{/a}}."
 
 #: _inc/jetpack-strings.php:11 _inc/jetpack-strings.php:647
 #: _inc/jetpack-strings.php:653
@@ -6734,11 +6734,6 @@ msgstr "Nello shortcode untappd-menu non è fornito nessun ID per la collocazion
 msgid "View Advanced Debug Results"
 msgstr "Visualizza i risultati del debug avanzato"
 
-#: class.jetpack-connection-banner.php:174
-#: class.jetpack-connection-banner.php:592 class.jetpack.php:3948
-msgid "Dismiss this notice"
-msgstr "Non mostrare questo messaggio"
-
 #: modules/sharedaddy/sharing-sources.php:1685
 msgid "Telegram"
 msgstr "Telegram"
@@ -6895,6 +6890,11 @@ msgstr "Questo utente è collegato e pronto a volare con Jetpack"
 #: modules/sso.php:501
 msgid "You can now save time spent logging in by connecting your WordPress.com account to %s."
 msgstr "Ora puoi risparmiare il tempo del collegamento connettendo il tuo account WordPress.com a %s."
+
+#: class.jetpack-connection-banner.php:174
+#: class.jetpack-connection-banner.php:592 class.jetpack.php:3948
+msgid "Dismiss this notice"
+msgstr "Ignora questo avviso"
 
 #: class.jetpack-network-sites-list-table.php:83
 msgid "Jetpack is not active on this site."
@@ -7186,11 +7186,11 @@ msgstr "Ritratto"
 #: modules/related-posts/class.related-posts-customize.php:217
 #: modules/widgets/googleplus-badge.php:258
 msgid "Layout"
-msgstr "Disposizione"
+msgstr "Layout"
 
 #: modules/widgets/googleplus-badge.php:251
 msgid "Width"
-msgstr "Larghezza:"
+msgstr "Larghezza"
 
 #: modules/widgets/googleplus-badge.php:226
 msgid "Type of Widget"
@@ -7416,10 +7416,6 @@ msgstr "Per saperne di più"
 msgid "Network Settings"
 msgstr "Impostazioni di Rete"
 
-#: views/admin/network-admin-footer.php:22
-msgid "Privacy Policy"
-msgstr "Informativa sulla privacy"
-
 #: views/admin/network-settings.php:36
 msgid "Protect whitelist"
 msgstr "Proteggi la lista bianca"
@@ -7458,6 +7454,10 @@ msgstr "Una compagnia aerea di proprietà di <span>Automattic</span>"
 #. Author URI of the plugin/theme
 msgid "https://jetpack.com"
 msgstr "https://jetpack.com"
+
+#: views/admin/network-admin-footer.php:22
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
 
 #: modules/module-extras.php:62
 msgid "%s (Jetpack)"
@@ -7743,10 +7743,6 @@ msgstr "I miei Cinguettii"
 #: modules/widgets/twitter-timeline.php:420
 msgid "No Borders"
 msgstr "Senza bordi"
-
-#: modules/widgets/twitter-timeline.php:410
-msgid "No Footer"
-msgstr "Senza piè di pagina"
 
 #: modules/widgets/twitter-timeline.php:400
 msgid "No Header"
@@ -8075,6 +8071,10 @@ msgctxt "Noun, as in: \"This post has one taxonomy.\""
 msgid "Taxonomy"
 msgstr "Tassonomia"
 
+#: modules/widgets/twitter-timeline.php:410
+msgid "No Footer"
+msgstr "Senza footer"
+
 #. Translators: Stats dashboard widget postviews list: "$post_title $views
 #. Views".
 #: modules/stats.php:1457
@@ -8311,10 +8311,6 @@ msgstr "Utenti registrati"
 msgid "Remove logo"
 msgstr "Rimuovi logo"
 
-#: modules/widget-visibility/widget-conditions.php:100
-msgid "Search results"
-msgstr "Risultati di ricerca"
-
 #: _inc/lib/class.core-rest-api-endpoints.php:1949 modules/stats.php:919
 msgid "Select the roles that will be able to view stats reports."
 msgstr "Seleziona i ruoli che potranno visualizzare i prospetti statistici."
@@ -8531,10 +8527,6 @@ msgstr "Queste impostazioni modificano le email inviate a chi segue il tuo blog.
 msgid "Notify me of follow-up comments by email."
 msgstr "Avvertimi via email in caso di risposte al mio commento."
 
-#: modules/subscriptions.php:657
-msgid "Notify me of new posts by email."
-msgstr "Avvertimi via email alla pubblicazione di un nuovo articolo"
-
 #: modules/subscriptions.php:799
 msgid "Add an email signup form to allow people to subscribe to your blog."
 msgstr "Aggiungi un modulo di registrazione tramite email per chi vuole iscriversi al tuo blog"
@@ -8617,6 +8609,14 @@ msgstr "Disconnesso"
 #: modules/videopress/class.videopress-player.php:344
 msgid "You do not have sufficient <a rel=\"nofollow\" href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">freedom levels</a> to view this video. Support free software and upgrade."
 msgstr "Non hai un sufficiente <a rel=\"nofollow\" href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">livello di libertà</a> per visualizzare questo video. Sostieni il software libero e passa alla versione successiva."
+
+#: modules/subscriptions.php:657
+msgid "Notify me of new posts by email."
+msgstr "Avvertimi via email alla pubblicazione di un nuovo articolo."
+
+#: modules/widget-visibility/widget-conditions.php:100
+msgid "Search results"
+msgstr "Risultati della ricerca"
 
 #: modules/sharedaddy/sharing-sources.php:95
 msgid " (Opens in new window)"
@@ -9314,13 +9314,13 @@ msgstr "Condiviso"
 msgid "Something which should never happen, happened. Sorry about that. If you try again, maybe it will work."
 msgstr "E' successo qualcosa che non sarebbe mai dovuto succedere. Siamo spiacenti. Prova ancora, dovrebbe funzionare."
 
-#: modules/protect.php:176
-msgid "Thanks for activating Protect! To start protecting your site, please network activate Jetpack on your Multisite installation and activate Protect on your primary site. Due to the way logins are handled on WordPress Multisite, Jetpack must be network-enabled in order for Protect to work properly. <a href=\"%s\" target=\"_blank\">Learn More</a>"
-msgstr "Grazie per avere attivato Protect! Per avviare la protezione del sito, devi attivare Jetpack a livello di rete sull'installazione multisito, quindi devi impostare la protezione sul sito principale. La modalità di gestione degli accessi su WordPress multisito richiede l'attivazione di Jetpack a livello di rete. Diversamente Protect non funziona correttamente. <a href=\"%s\" target=\"_blank\">Per saperne di più</a>"
-
 #: modules/publicize/publicize-jetpack.php:301
 msgid "That connection has been removed."
 msgstr "Quella connessione è stata rimossa."
+
+#: modules/protect.php:176
+msgid "Thanks for activating Protect! To start protecting your site, please network activate Jetpack on your Multisite installation and activate Protect on your primary site. Due to the way logins are handled on WordPress Multisite, Jetpack must be network-enabled in order for Protect to work properly. <a href=\"%s\" target=\"_blank\">Learn More</a>"
+msgstr "Grazie per avere attivato Protect! Per avviare la protezione del sito, devi attivare Jetpack a livello di rete sull'installazione multisito, quindi devi impostare la protezione sul sito principale. La modalità di gestione degli accessi su WordPress multisito richiede l'attivazione di Jetpack a livello di rete. Diversamente Protect non funziona correttamente. <a href=\"%s\" target=\"_blank\">Per saperne di più</a>"
 
 #: _inc/jetpack-strings.php:695 _inc/jetpack-strings.php:701
 #: _inc/jetpack-strings.php:710 modules/masterbar/masterbar.php:873
@@ -9474,7 +9474,7 @@ msgstr "Attivando Carousel, ogni galleria standard di WordPress che hai inserito
 
 #: modules/monitor.php:55
 msgid "Nobody likes downtime, and that's why Downtime Monitor is on the job, keeping tabs on your site by checking it every five minutes. As soon as any downtime is detected, you will receive an email notification alerting you to the issue. That way you can act quickly, to get your site back online again!"
-msgstr "A nessuno piacciono i tempi di inattivitàed è per questo che Jetpack Monitor è al lavoro e gestisce le schede sul tuo sito controllandolo ogni cinque minuti. Non appena verranno rilevati tempi di inattività, riceverai una notifica e-mail che ti segnalerà il problema. In questo modo potrai agire rapidamente per rimettere online il sito."
+msgstr "A nessuno piacciono i tempi di inattività ed è per questo che Jetpack Monitor è al lavoro e gestisce le schede sul tuo sito controllandolo ogni cinque minuti. Non appena verranno rilevati tempi di inattività, riceverai una notifica e-mail che ti segnalerà il problema. In questo modo potrai agire rapidamente per rimettere online il sito."
 
 #: modules/module-headings.php:39
 msgctxt "Jumpstart Description"
@@ -11207,10 +11207,6 @@ msgstr "Visualizza tag di progetto"
 msgid "View Project Type"
 msgstr "Visualizza tipo di progetto"
 
-#: modules/custom-post-types/testimonial.php:303
-msgid "View Testimonial"
-msgstr "Visualizza la Testimoninza"
-
 #: modules/custom-css/custom-css.php:634
 msgid ""
 "Welcome to Custom CSS!\n"
@@ -11282,6 +11278,10 @@ msgid ""
 msgstr ""
 "Sei agli inizi con il CSS? Vai al <a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">tutorial per principianti</a>. Domande?\n"
 "\t\tChiedi nel <a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">forum di Temi e Modelli</a>."
+
+#: modules/custom-post-types/testimonial.php:303
+msgid "View Testimonial"
+msgstr "Visualizza la Testimonianza"
 
 #: modules/contact-form/grunion-form-view.php:169
 msgctxt "%1$s = \"Click here\" in an HTML link"
@@ -12013,11 +12013,6 @@ msgstr "Ora: "
 msgid "Transparent"
 msgstr "Trasparente"
 
-#: modules/contact-form/admin.php:390 modules/contact-form/admin.php:392
-#: modules/contact-form/admin.php:764
-msgid "Trash"
-msgstr "Cestina"
-
 #: _inc/jetpack-strings.php:384 _inc/lib/class.core-rest-api-endpoints.php:1831
 #: modules/after-the-deadline/config-options.php:93
 msgid "Use automatically detected language to proofread posts and pages"
@@ -12049,12 +12044,6 @@ msgstr "Scrivi un Commento..."
 #: modules/contact-form/grunion-form-view.php:183
 msgid "Yep. You can enter multiple email addresses in the Email address field, and separate them with commas. A notification email will then be sent to each email address."
 msgstr "Certamente. Puoi inserire più di un indirizzo e-mail nel campo Indirizzo E-mail, separandoli con una virgola. In questo modo verrà inviata una mail di notifica ad ogni indirizzo e-mail."
-
-#: modules/contact-form/grunion-contact-form.php:2894
-#: modules/contact-form/grunion-editor-view.php:152
-#: modules/minileven/minileven.php:278
-msgid "Yes"
-msgstr "Si"
 
 #: modules/contact-form/admin.php:192 modules/contact-form/admin.php:622
 msgid "You are not allowed to manage this item."
@@ -12167,6 +12156,17 @@ msgstr "Pubblica un commento"
 #: modules/contact-form/grunion-form-view.php:194
 msgid "Checkbox"
 msgstr "Casella di controllo"
+
+#: modules/contact-form/grunion-contact-form.php:2894
+#: modules/contact-form/grunion-editor-view.php:152
+#: modules/minileven/minileven.php:278
+msgid "Yes"
+msgstr "Sì"
+
+#: modules/contact-form/admin.php:390 modules/contact-form/admin.php:392
+#: modules/contact-form/admin.php:764
+msgid "Trash"
+msgstr "Elimina"
 
 #: class.jetpack.php:4391
 msgctxt "%1$s = deactivation URL, %2$s = \"Deactivate {list of Jetpack module/feature names}"

@@ -100,7 +100,7 @@ class ITSEC_File_Change_Scanner {
 
 		$scheduler = $scheduler ? $scheduler : ITSEC_Core::get_scheduler();
 
-		if ( self::is_running( $scheduler ) ) {
+		if ( self::is_running( $scheduler, $user_initiated ) ) {
 			return new WP_Error( 'itsec-file-change-scan-already-running', __( 'A File Change scan is currently in progress.', 'better-wp-security' ) );
 		}
 
@@ -124,18 +124,65 @@ class ITSEC_File_Change_Scanner {
 	 * Check if a scan is running.
 	 *
 	 * @param ITSEC_Scheduler
+	 * @param bool $user_initiated Whether the user initiated run is running for the scheduled loop scan.
 	 *
 	 * @return bool
 	 */
-	public static function is_running( $scheduler = null ) {
+	public static function is_running( $scheduler = null, $user_initiated = null ) {
+
+		$storage   = ITSEC_File_Change::make_progress_storage();
+		$id 			 = $storage->get( 'id' );
 
 		$scheduler = $scheduler ? $scheduler : ITSEC_Core::get_scheduler();
+		$scheduled = self::is_scheduled( $scheduler, $user_initiated );
 
-		if ( $scheduler->is_single_scheduled( 'file-change-fast', null ) ) {
-			return true;
+		if ( null === $user_initiated ) {
+			if ( ! $storage->is_empty() ) {
+				return true;
+			}
+
+			return $scheduled === 'user';
 		}
 
-		return ! ITSEC_File_Change::make_progress_storage()->is_empty();
+		if ( true === $user_initiated ) {
+			return 'user' === $scheduled || $id === 'file-change-fast';
+		}
+
+		if ( false === $user_initiated ) {
+			return 'scheduled' === $scheduled || $id === 'file-change';
+		}
+
+		return false;
+	}
+
+	/**
+	 * Is there a scan scheduled.
+	 *
+	 * @param ITSEC_Scheduler $scheduler The scheduler to use.
+	 * @param bool $user_initiated 			 Whether the user initiated scan is running or the scheduled loop scan. 
+	 * 																	 Null to check either.
+	 * 
+	 * @return bool Is it scheduled.
+	 */
+	private static function is_scheduled( $scheduler, $user_initiated = null ) {
+
+		if ( true === $user_initiated ) {
+			return $scheduler->is_single_scheduled( 'file-change-fast', null ) ? 'user' : false;
+		}
+
+		if ( false === $user_initiated ) {
+			return $scheduler->is_single_scheduled( 'file-change', null ) ? 'scheduled' : false;
+		}
+
+		if ( $scheduler->is_single_scheduled( 'file-change-fast', null ) ) {
+			return 'user';
+		}
+
+		if ( $scheduler->is_single_scheduled( 'file-change', null ) ) {
+			return 'scheduled';
+		}
+
+		return false;
 	}
 
 	/**
@@ -242,7 +289,7 @@ class ITSEC_File_Change_Scanner {
 	 */
 	public static function recover() {
 
-		if ( ! ITSEC_Lib::get_lock( 'file-change-recover' ) ) {
+		if ( ! ITSEC_Lib::get_lock( 'file-change' ) ) {
 			ITSEC_Log::add_debug( 'file_change', 'skipping-recovery::no-lock' );
 
 			return false;
@@ -251,6 +298,7 @@ class ITSEC_File_Change_Scanner {
 		$storage = ITSEC_File_Change::make_progress_storage();
 
 		if ( $storage->is_empty() ) {
+			ITSEC_Lib::release_lock( 'file-change' );
 			ITSEC_Log::add_debug( 'file_change', 'skipping-recovery::empty-storage', array(
 				'backtrace' => debug_backtrace()
 			) );
@@ -277,7 +325,7 @@ class ITSEC_File_Change_Scanner {
 
 			self::abort();
 
-			ITSEC_Lib::release_lock( 'file-change-recover' );
+			ITSEC_Lib::release_lock( 'file-change' );
 
 			return false;
 		}
@@ -291,7 +339,7 @@ class ITSEC_File_Change_Scanner {
 
 			self::abort();
 
-			ITSEC_Lib::release_lock( 'file-change-recover' );
+			ITSEC_Lib::release_lock( 'file-change' );
 
 			return false;
 		}
@@ -303,7 +351,7 @@ class ITSEC_File_Change_Scanner {
 
 			self::abort();
 
-			ITSEC_Lib::release_lock( 'file-change-recover' );
+			ITSEC_Lib::release_lock( 'file-change' );
 
 			return false;
 		}
@@ -311,7 +359,7 @@ class ITSEC_File_Change_Scanner {
 		$job->reschedule_in( 30 );
 
 		ITSEC_Log::add_debug( 'file_change', 'recovery-scheduled', compact( 'job' ) );
-		ITSEC_Lib::release_lock( 'file-change-recover' );
+		ITSEC_Lib::release_lock( 'file-change' );
 
 		return true;
 	}
@@ -370,7 +418,15 @@ class ITSEC_File_Change_Scanner {
 			return;
 		}
 
+		if ( ! ITSEC_Lib::get_lock( 'file-change', 5 * MINUTE_IN_SECONDS ) ) {
+			ITSEC_Log::add_debug( 'file_change', 'rescheduling::no-lock', array( 'job' => $data, 'id' => $job->get_id() ) );
+			$job->reschedule_in( 2 * MINUTE_IN_SECONDS );
+
+			return;
+		}
+
 		if ( ! $this->allow_to_run( $job ) ) {
+			ITSEC_Lib::release_lock( 'file-change' );
 			ITSEC_Log::add_debug( 'file_change', 'rescheduling', array( 'job' => $data, 'id' => $job->get_id() ) );
 			$job->reschedule_in( 10 * MINUTE_IN_SECONDS );
 
@@ -417,6 +473,8 @@ class ITSEC_File_Change_Scanner {
 		}
 
 		if ( $this->get_storage()->is_empty() ) {
+			ITSEC_Lib::release_lock( 'file-change' );
+
 			return;
 		}
 
@@ -430,6 +488,8 @@ class ITSEC_File_Change_Scanner {
 			$this->get_storage()->set( 'memory', $memory_used );
 			$this->get_storage()->set( 'memory_peak', $check_memory );
 		}
+
+		ITSEC_Lib::release_lock( 'file-change' );
 	}
 
 	/**

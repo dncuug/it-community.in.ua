@@ -58,49 +58,83 @@
 abstract class WPSEO_Option {
 
 	/**
-	 * @var  string  Option name - MUST be set in concrete class and set to public.
+	 * Prefix for override option keys that allow or disallow the option key of the same name.
+	 *
+	 * @var string
+	 */
+	const ALLOW_KEY_PREFIX = 'allow_';
+
+	/**
+	 * Option name - MUST be set in concrete class and set to public.
+	 *
+	 * @var string
 	 */
 	protected $option_name;
 
 	/**
-	 * @var  string  Option group name for use in settings forms
-	 *               - will be set automagically if not set in concrete class
-	 *               (i.e. if it confirm to the normal pattern 'yoast' . $option_name . 'options',
-	 *               only set in conrete class if it doesn't)
+	 * Option group name for use in settings forms.
+	 *
+	 * Will be set automagically if not set in concrete class (i.e.
+	 * if it confirm to the normal pattern 'yoast' . $option_name . 'options',
+	 * only set in conrete class if it doesn't).
+	 *
+	 * @var string
 	 */
 	public $group_name;
 
 	/**
-	 * @var  bool  Whether to include the option in the return for WPSEO_Options::get_all().
-	 *             Also determines which options are copied over for ms_(re)set_blog().
+	 * Whether to include the option in the return for WPSEO_Options::get_all().
+	 *
+	 * Also determines which options are copied over for ms_(re)set_blog().
+	 *
+	 * @var bool
 	 */
 	public $include_in_all = true;
 
 	/**
-	 * @var  bool  Whether this option is only for when the install is multisite.
+	 * Whether this option is only for when the install is multisite.
+	 *
+	 * @var bool
 	 */
 	public $multisite_only = false;
 
 	/**
-	 * @var  array  Array of defaults for the option - MUST be set in concrete class.
-	 *              Shouldn't be requested directly, use $this->get_defaults();
+	 * Array of defaults for the option - MUST be set in concrete class.
+	 *
+	 * Shouldn't be requested directly, use $this->get_defaults();
+	 *
+	 * @var array
 	 */
 	protected $defaults;
 
 	/**
-	 * @var  array  Array of variable option name patterns for the option - if any -
-	 *              Set this when the option contains array keys which vary based on post_type
-	 *              or taxonomy.
+	 * Array of variable option name patterns for the option - if any -.
+	 *
+	 * Set this when the option contains array keys which vary based on post_type
+	 * or taxonomy.
+	 *
+	 * @var array
 	 */
 	protected $variable_array_key_patterns;
 
 	/**
-	 * @var array  Array of sub-options which should not be overloaded with multi-site defaults.
+	 * Array of sub-options which should not be overloaded with multi-site defaults.
+	 *
+	 * @var array
 	 */
 	public $ms_exclude = array();
 
 	/**
-	 * @var  object  Instance of this class.
+	 * Name for an option higher in the hierarchy to override setting access.
+	 *
+	 * @var string
+	 */
+	protected $override_option_name;
+
+	/**
+	 * Instance of this class.
+	 *
+	 * @var object
 	 */
 	protected static $instance;
 
@@ -439,15 +473,18 @@ abstract class WPSEO_Option {
 			return $clean;
 		}
 
-
 		$option_value = array_map( array( 'WPSEO_Utils', 'trim_recursive' ), $option_value );
-		if ( $this->multisite_only !== true ) {
-			$old = get_option( $this->option_name );
+
+		$old = $this->get_original_option();
+		if ( ! is_array( $old ) ) {
+			$old = array();
 		}
-		else {
-			$old = get_site_option( $this->option_name );
-		}
+		$old = array_merge( $clean, $old );
+
 		$clean = $this->validate_option( $option_value, $clean, $old );
+
+		// Prevent updates to variables that are disabled via the override option.
+		$clean = $this->prevent_disabled_options_update( $clean, $old );
 
 		/* Retain the values for variable array keys even when the post type/taxonomy is not yet registered. */
 		if ( isset( $this->variable_array_key_patterns ) ) {
@@ -457,6 +494,24 @@ abstract class WPSEO_Option {
 		$this->remove_default_filters();
 
 		return $clean;
+	}
+
+	/**
+	 * Checks whether a specific option key is disabled.
+	 *
+	 * This is determined by whether an override option is available with a key that equals the given key prefixed
+	 * with 'allow_'.
+	 *
+	 * @param string $key Option key.
+	 * @return bool True if option key is disabled, false otherwise.
+	 */
+	public function is_disabled( $key ) {
+		$override_option = $this->get_override_option();
+		if ( empty( $override_option ) ) {
+			return false;
+		}
+
+		return isset( $override_option[ self::ALLOW_KEY_PREFIX . $key ] ) && ! $override_option[ self::ALLOW_KEY_PREFIX . $key ];
 	}
 
 	/**
@@ -645,6 +700,52 @@ abstract class WPSEO_Option {
 		$filtered = array_merge( $defaults, $options );
 
 		return $filtered;
+	}
+
+	/**
+	 * Sets updated values for variables that are disabled via the override option back to their previous values.
+	 *
+	 * @param array $updated Updated option value.
+	 * @param array $old     Old option value.
+	 *
+	 * @return array Updated option value, with all disabled variables set to their old values.
+	 */
+	protected function prevent_disabled_options_update( $updated, $old ) {
+		$override_option = $this->get_override_option();
+		if ( empty( $override_option ) ) {
+			return $updated;
+		}
+
+		/*
+		 * This loop could as well call `is_disabled( $key )` for each iteration,
+		 * however this would be worse performance-wise.
+		 */
+		foreach ( $old as $key => $value ) {
+			if ( isset( $override_option[ self::ALLOW_KEY_PREFIX . $key ] ) && ! $override_option[ self::ALLOW_KEY_PREFIX . $key ] ) {
+				$updated[ $key ] = $old[ $key ];
+			}
+		}
+
+		return $updated;
+	}
+
+	/**
+	 * Retrieves the value of the override option, if available.
+	 *
+	 * An override option contains values that may determine access to certain sub-variables
+	 * of this option.
+	 *
+	 * Only regular options in multisite can have override options, which in that case
+	 * would be network options.
+	 *
+	 * @return array Override option value, or empty array if unavailable.
+	 */
+	protected function get_override_option() {
+		if ( empty( $this->override_option_name ) || $this->multisite_only === true || ! is_multisite() ) {
+			return array();
+		}
+
+		return get_site_option( $this->override_option_name, array() );
 	}
 
 	/**

@@ -1,0 +1,120 @@
+# Translation of Plugins - Simple Local Avatars - Stable (latest release) in Greek
+# This file is distributed under the same license as the Plugins - Simple Local Avatars - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-10-29 09:11:34+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: el_GR\n"
+"Project-Id-Version: Plugins - Simple Local Avatars - Stable (latest release)\n"
+
+#: simple-local-avatars.php:166
+msgid "Only allow local avatars (still uses Gravatar for default avatars)"
+msgstr "Eπιτρέπονται μόνο τοπικά avatars (εξακολουθεί να χρησιμοποιεί Gravatar για avatars εξ ορισμού)"
+
+#: simple-local-avatars.php:177
+msgid "Only allow users with file upload capabilities to upload local avatars (Authors and above)"
+msgstr "Να επιτρέπεται μόνο στους χρήστες με δυνατότητες upload αρχείων για να ανεβάζουν τοπικά avatars (συντάκτες και παραπάνω)"
+
+#. Description of the plugin/theme
+msgid "Adds an avatar upload field to user profiles. Generates requested sizes on demand, just like Gravatar! Simple and lightweight."
+msgstr "Προσθέτει ένα πεδίο μεταφόρτωσης avatar σε προφίλ χρηστών. Δημιουργεί τα κατάλληλα μεγέθη τους όπως ακριβώς το Gravatar! Απλό και ελαφρύ."
+
+#: simple-local-avatars.php:250
+msgid "Avatar"
+msgstr "Άβαταρ"
+
+#: simple-local-avatars.php:202
+msgid "Choose an Avatar"
+msgstr "Επιλέξτε ένα Avatar"
+
+#: simple-local-avatars.php:281
+msgid "Choose an image from your computer:"
+msgstr "Επιλέξτε εικόνα από τον υπολογιστή σας:"
+
+#: simple-local-avatars.php:287
+msgid "Choose from Media Library"
+msgstr "Επιλογή από βιβλιοθήκη πολυμέσων"
+
+#: simple-local-avatars.php:288
+msgid "Delete local avatar"
+msgstr "Διαγραφή τοπικού avatar"
+
+#: simple-local-avatars.php:365
+msgid "For security reasons, the extension \".php\" cannot be in your file name."
+msgstr "Για λόγους ασφαλείας, η επέκταση \". php\" δεν μπορεί να είναι στο όνομα του αρχείου σας."
+
+#: simple-local-avatars.php:27
+msgid "G &#8212; Suitable for all audiences"
+msgstr "G — Κατάλληλο για όλους"
+
+#: simple-local-avatars.php:313
+msgid "If the local avatar is inappropriate for this site, Gravatar will be attempted."
+msgstr "Αν το τοπικό Avatar είναι ακατάλληλο για αυτό τον ιστότοπο, θα γίνει προσπάθεια λήψης του Gravatar."
+
+#. Author of the plugin/theme
+msgid "Jake Goldman, 10up"
+msgstr "Jake Goldman, 10up"
+
+#: simple-local-avatars.php:160
+msgid "Local Avatars Only"
+msgstr "Local Avatars Only"
+
+#: simple-local-avatars.php:171
+msgid "Local Upload Permissions"
+msgstr "Δικαιώματα τοπικής μεταφόρτωσης"
+
+#: simple-local-avatars.php:293
+msgid "No local avatar is set. Set up your avatar at Gravatar.com."
+msgstr "Δεν έχει οριστεί τοπικό avatar. Ρυθμίστε το avatar σας στο gravatar.com."
+
+#: simple-local-avatars.php:28
+msgid "PG &#8212; Possibly offensive, usually for audiences 13 and above"
+msgstr "PG — Πιθανόν ακατάλληλο, συνήθως μόνο για άνω των 13"
+
+#: simple-local-avatars.php:29
+msgid "R &#8212; Intended for adult audiences above 17"
+msgstr "R — Κατάλληλο για ηλικίες άνω των 17"
+
+#: simple-local-avatars.php:301 simple-local-avatars.php:304
+msgid "Rating"
+msgstr "Βαθμολογία"
+
+#: simple-local-avatars.php:203
+msgid "Set as avatar"
+msgstr "Ορισμός ως avatar"
+
+#. Plugin Name of the plugin/theme
+msgid "Simple Local Avatars"
+msgstr "Simple Local Avatars"
+
+#: simple-local-avatars.php:391
+msgid "There was an error uploading the avatar:"
+msgstr "Παρουσιάστηκε σφάλμα κατά την μεταφόρτωση του avatar:"
+
+#: simple-local-avatars.php:254
+msgid "Upload Avatar"
+msgstr "Ανεβάστε avatar"
+
+#: simple-local-avatars.php:30
+msgid "X &#8212; Even more mature than above"
+msgstr "X — Ακόμα λιγότερο κατάλληλο από το παραπάνω"
+
+#: simple-local-avatars.php:295
+msgid "You do not have media management permissions. To change your local avatar, contact the blog administrator."
+msgstr "Δεν έχετε δικαιώματα διαχείρισης πολυμέσων. Για να αλλάξετε το τοπικό avatar,επικοινωνήστε με το διαχειριστή του ιστολογίου."
+
+#: simple-local-avatars.php:427
+msgid "You do not have permission to edit this user."
+msgstr "Δεν έχετε δικαίωμα επεξεργασίας αυτού του χρήστη."
+
+#. Author URI of the plugin/theme
+msgid "https://10up.com"
+msgstr "https://10up.com"
+
+#. Plugin URI of the plugin/theme
+msgid "https://10up.com/plugins/simple-local-avatars-wordpress/"
+msgstr "https://10up.com/plugins/simple-local-avatars-wordpress/"

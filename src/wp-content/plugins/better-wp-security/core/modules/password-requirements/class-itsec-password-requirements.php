@@ -327,7 +327,7 @@ class ITSEC_Password_Requirements {
 			if ( ! ITSEC_Lib_Password_Requirements::is_requirement_enabled( $code ) ) {
 				continue;
 			}
-			
+
 			$settings = ITSEC_Lib_Password_Requirements::get_requirement_settings( $code );
 
 			if ( $requirement['flag_check'] && call_user_func( $requirement['flag_check'], $user, $settings ) ) {
@@ -404,6 +404,8 @@ class ITSEC_Password_Requirements {
 	 * @param WP_User $user
 	 */
 	public function render_interstitial( $user ) {
+		wp_enqueue_script( 'user-profile' );
+
 		do_action( 'itsec_password_requirements_change_form', $user );
 		?>
 

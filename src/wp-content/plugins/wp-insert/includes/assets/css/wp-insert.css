@@ -33,16 +33,42 @@
 
 .wp-insert .plugin-card .plugin-card-top {
 	background: #ffffff;
+	border-bottom: 1px solid #dedede;
+}
+
+.wp-insert .plugin-card .plugin-card-bottom {
+	border-top: none;
+}
+
+.wp-insert .plugin-card-bottom .wp_insert_ad_unit_title {
+	color: #656565;
+	font-weight: 600;
+}
+
+.wp-insert .plugin-card-bottom .wp_insert_ad_unit_title:hover {
+	color: #0085BA;
 }
 
 .wp-insert .plugin-card-bottom .wp_insert_delete_icon {
-	color: #b20a0a;
+	/*color: #b20a0a;*/
+	color: #656565;
 	cursor: pointer;
 	float: right;
 }
 
 .wp-insert .plugin-card-bottom .wp_insert_delete_icon:hover {
-	color: #FC0505;
+	color: #D81F1F;
+}
+
+.wp-insert .plugin-card-bottom .wp_insert_duplicate_icon {
+    float: right;
+    cursor: pointer;
+    color: #656565;
+    margin: 0 3px;
+}
+
+.wp-insert .plugin-card-bottom .wp_insert_duplicate_icon:hover {
+    color: #0085BA;
 }
 
 .wp-insert .plugin-card-bottom p {

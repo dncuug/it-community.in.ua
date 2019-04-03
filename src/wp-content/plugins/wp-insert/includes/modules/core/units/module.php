@@ -52,8 +52,9 @@ function wp_insert_get_plugin_card($title, $description, $type, $preTitle) {
 					}
 					/* End Workaround for migrating old users to new system (can be removed in a later version) */
 					echo '<p>';
-						echo '<a id="wp_insert_'.$type.'_ad_'.$key.'" href="javascript:;" data-pre-title="'.$preTitle.'" onclick="wp_insert_ads_click_handler(\''.$type.'\', \''.$key.'\', \''.$value['title'].'\', false)">'.$preTitle.' : '.$title.'</a>';
-						echo '<span class="dashicons dashicons-dismiss wp_insert_delete_icon" onclick="wp_insert_ad_delete_handler(\''.$type.'\', \''.$key.'\')"></span>';
+						echo '<a class="wp_insert_ad_unit_title" title="Edit Ad Unit" id="wp_insert_'.$type.'_ad_'.$key.'" href="javascript:;" data-pre-title="'.$preTitle.'" onclick="wp_insert_ads_click_handler(\''.$type.'\', \''.$key.'\', \''.$title.'\', false)">'.$preTitle.' : '.$title.'</a>';
+						echo '<span class="dashicons dashicons-no wp_insert_delete_icon" title="Delete Ad Unit" onclick="wp_insert_ad_delete_handler(\''.$type.'\', \''.$key.'\')"></span>';
+						echo '<span class="dashicons dashicons-format-gallery wp_insert_duplicate_icon" title="Duplicate Ad Unit" onclick="wp_insert_ads_click_handler(\''.$type.'\', \'###DUPLICATE###'.$key.'\', \''.$title.' Duplicate\', true)"></span>';						
 					echo '</p>';
 				}
 			}				
@@ -68,13 +69,20 @@ function wp_insert_get_ad_form($script = '') {
 	check_ajax_referer('wp-insert', 'wp_insert_nonce');
 	if(isset($_POST['wp_insert_identifier']) && isset($_POST['wp_insert_type'])) {
 		$type = $_POST['wp_insert_type'];
-		$identifier = substr(str_shuffle(str_repeat("abcdefghijklmnopqrstuvwxyz", 5)), 0, 5).uniqid();
-		if($_POST['wp_insert_identifier'] != 'new') {
-			$identifier = $_POST['wp_insert_identifier'];
-		}
 		$data = get_option('wp_insert_'.$type);
+		
+		$identifier = substr(str_shuffle(str_repeat("abcdefghijklmnopqrstuvwxyz", 5)), 0, 5).uniqid();
+		$dataIdentifier = $identifier;
+		if(strpos($_POST['wp_insert_identifier'], '###DUPLICATE###') !== false) {
+			$dataIdentifier = str_replace('###DUPLICATE###', '', $_POST['wp_insert_identifier']);
+			$data[$dataIdentifier]['title'] = $data[$dataIdentifier]['title'].' (Duplicate)';
+		} else if($_POST['wp_insert_identifier'] != 'new') {
+			$identifier = $_POST['wp_insert_identifier'];
+			$dataIdentifier = $identifier;
+		}
+		
 		echo '<div class="wp_insert_popup_content_wrapper">';
-			$control = new smartlogixControls(array('optionIdentifier' => 'wp_insert_'.$type.'['.$identifier.']', 'values' => $data[$identifier]));
+			$control = new smartlogixControls(array('optionIdentifier' => 'wp_insert_'.$type.'['.$identifier.']', 'values' => $data[$dataIdentifier]));
 			$control->add_control(array('type' => 'ipCheckbox', 'className' => 'wp_insert_'.$type.'_status', 'optionName' => 'status'));
 			$control->add_control(array('type' => 'hidden', 'className' => 'wp_insert_'.$type.'_identifier', 'optionName' => 'identifier', 'value' => $identifier));
 			echo $control->HTML;

@@ -56,7 +56,11 @@ final class ITSEC_File_Change_Logs {
 				$entry['description'] = esc_html__( 'Scan Failed', 'better-wp-security' );
 			}
 		} elseif ( 'rescheduling' === $code ) {
-			$entry['description'] = esc_html__( 'Rescheduling', 'better-wp-security' );
+			if ( isset( $code_data[0] ) && 'no-lock' === $code_data[0] ) {
+				$entry['description'] = esc_html__( 'Rescheduling: No Lock', 'better-wp-security' );
+			} else {
+				$entry['description'] = esc_html__( 'Rescheduling', 'better-wp-security' );
+			}
 		}
 
 		$entry['remote_ip'] = '';

@@ -24,7 +24,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 		 *
 		 * @access private
 		 */
-		private $plugin_build = 4106;
+		private $plugin_build = 4113;
 
 		/**
 		 * Used to distinguish between a user modifying settings and the API modifying settings (such as from Sync
@@ -51,7 +51,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 			$is_iwp_call,
 			$request_type,
 			$wp_upload_dir,
-			$storage_dir;
+			$login_interstitial;
 
 
 		/**
@@ -122,6 +122,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 			require( $this->plugin_dir . 'core/lib/class-itsec-lib-password-requirements.php' );
 			require( $this->plugin_dir . 'core/lib/class-itsec-lib-login-interstitial.php' );
 			require( $this->plugin_dir . 'core/lib/class-itsec-lib-distributed-storage.php' );
+			require( $this->plugin_dir . 'core/lib/class-itsec-lib-remote-messages.php' );
 
 			require( $this->plugin_dir . 'core/lib/class-itsec-scheduler.php' );
 			require( $this->plugin_dir . 'core/lib/class-itsec-job.php' );
@@ -163,14 +164,16 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 				add_action( 'admin_bar_menu', array( $this, 'modify_admin_bar' ), 99 );
 			}
 
-			$login_interstitial = new ITSEC_Lib_Login_Interstitial();
-			$login_interstitial->run();
+			$this->login_interstitial = new ITSEC_Lib_Login_Interstitial();
+			$this->login_interstitial->run();
 
 			if ( defined( 'ITSEC_USE_CRON' ) && ITSEC_USE_CRON !== ITSEC_Lib::use_cron() ) {
 				ITSEC_Modules::set_setting( 'global', 'use_cron', ITSEC_USE_CRON );
 			}
 
 			do_action( 'itsec_initialized' );
+
+			ITSEC_Lib_Remote_Messages::init();
 		}
 
 		private function setup_scheduler() {
@@ -257,6 +260,15 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 			}
 
 			return $self->scheduler;
+		}
+
+		/**
+		 * Get the login interstitial library instance.
+		 *
+		 * @return ITSEC_Lib_Login_Interstitial
+		 */
+		public static function get_login_interstitial() {
+			return self::get_instance()->login_interstitial;
 		}
 
 		/**
@@ -751,26 +763,56 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 		 * Retrieve and/or create a directory for ITSEC to store data.
 		 *
 		 * @param string $dir Optionally specify an additional sub-directory.
+		 * @param bool   $public Whether to get the public version of the directory.
 		 *
 		 * @return string
 		 */
-		public static function get_storage_dir( $dir = '' ) {
-			$self = self::get_instance();
+		public static function get_storage_dir( $dir = '', $public = false ) {
 
 			require_once( self::get_core_dir() . '/lib/class-itsec-lib-directory.php' );
 
-			if ( ! isset( $self->storage_dir ) ) {
-				$wp_upload_dir = self::get_wp_upload_dir();
+			$wp_upload_dir = self::get_wp_upload_dir();
 
-				$self->storage_dir = $wp_upload_dir['basedir'] . '/ithemes-security/';
+			$storage_dir = $wp_upload_dir['basedir'];
+
+			if ( $public ) {
+				$storage_dir .= '/ithemes-security-public/';
+			} else {
+				$storage_dir .= '/ithemes-security/';
 			}
 
-			$dir = $self->storage_dir . $dir;
+			$dir = $storage_dir . $dir;
 			$dir = rtrim( $dir, '/' );
 
 			ITSEC_Lib_Directory::create( $dir );
 
 			return $dir;
+		}
+
+		/**
+		 * Get the URL to the directory that ITSEC stores data in.
+		 *
+		 * @param string $dir
+		 * @param bool   $public Whether to get the public version of the directory.
+		 *
+		 * @return string
+		 */
+		public static function get_storage_url( $dir = '', $public = false ) {
+
+			self::get_storage_dir( $dir );
+
+			$upload_dir = self::get_wp_upload_dir();
+			$base       = untrailingslashit( $upload_dir['baseurl'] );
+
+			$url = $base;
+
+			if ( $public ) {
+				$url .= '/ithemes-security-public/';
+			} else {
+				$url .= '/ithemes-security/';
+			}
+
+			return $url . $dir;
 		}
 
 		public static function doing_data_upgrade() {

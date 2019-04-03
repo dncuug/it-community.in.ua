@@ -9,6 +9,10 @@
 final class ITSEC_Setup {
 	public static function handle_activation() {
 		self::setup_plugin_data();
+
+		if ( ! ITSEC_Modules::get_setting( 'global', 'initial_build' ) ) {
+			ITSEC_Modules::set_setting( 'global', 'initial_build', ITSEC_Core::get_plugin_build() );
+		}
 	}
 
 	public static function handle_deactivation() {
@@ -42,6 +46,10 @@ final class ITSEC_Setup {
 	}
 
 	public static function handle_upgrade( $build = false ) {
+		if ( ! ITSEC_Modules::get_setting( 'global', 'initial_build' ) ) {
+			ITSEC_Modules::set_setting( 'global', 'initial_build', ITSEC_Core::get_plugin_build() - 1 );
+		}
+
 		self::setup_plugin_data( $build );
 	}
 

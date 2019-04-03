@@ -18,7 +18,7 @@ add_filter('wp_insert_shortcodeads_form_accordion_tabs', 'wp_insert_shortcodeads
 function wp_insert_shortcodeads_form_accordion_tabs_shortcode($control, $identifier, $location) {
 	echo '<h3>Shortcode</h3>';
 	echo '<div>';
-		$control->set_HTML('<p class="codeSnippet"><code>[wpshortcodead id="'.$identifier.'"]</code></p>');
+		$control->set_HTML('<p class="codeSnippet"><code>[wpinsertshortcodead id="'.$identifier.'"]</code></p>');
 		$control->create_section('Code to add to your post/page content');
 		echo $control->HTML;
 		$control->clear_controls();
@@ -34,8 +34,9 @@ add_filter('wp_insert_shortcodeads_form_accordion_tabs', 'wp_insert_form_accordi
 
 /* Begin Shortcode Ad Insertion */
 add_shortcode('wpshortcodead', 'wp_insert_shortcodeads_shortcode');
+add_shortcode('wpinsertshortcodead', 'wp_insert_shortcodeads_shortcode');
 function wp_insert_shortcodeads_shortcode($atts) {
-	$atts = shortcode_atts(array('id' => ''), $atts, 'wpshortcodead');
+	$atts = shortcode_atts(array('id' => ''), $atts, 'wpinsertshortcodead');
 	if(isset($atts['id']) && ($atts['id'] != '')) {
 		$shortcodeads = get_option('wp_insert_shortcodeads');
 		if(isset($shortcodeads[$atts['id']]) && is_array($shortcodeads[$atts['id']]) && wp_insert_get_ad_status($shortcodeads[$atts['id']])) {

@@ -29,14 +29,14 @@ class ITSEC_Four_Oh_Four {
 
 		$uri = explode( '?', $_SERVER['REQUEST_URI'] );
 
-		if ( in_array( '/' . ITSEC_Lib::get_request_path(), $this->settings['white_list'], true ) ) {
-			return; // white listed page.
-		}
-
-		ITSEC_Log::add_notice( 'four_oh_four', 'found_404', array( 'SERVER' => $_SERVER ) );
-
-		if ( ! in_array( '.' . pathinfo( $uri[0], PATHINFO_EXTENSION ), $this->settings['types'], true ) ) {
+		if (
+			! in_array( '/' . ITSEC_Lib::get_request_path(), $this->settings['white_list'], true ) &&
+			! in_array( '.' . pathinfo( $uri[0], PATHINFO_EXTENSION ), $this->settings['types'], true )
+		) {
+			ITSEC_Log::add_notice( 'four_oh_four', 'found_404', array( 'SERVER' => $_SERVER ) );
 			$itsec_lockout->do_lockout( 'four_oh_four' );
+		} else {
+			do_action( 'itsec_four_oh_four_whitelisted', $uri );
 		}
 	}
 

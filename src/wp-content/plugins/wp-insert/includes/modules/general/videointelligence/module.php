@@ -45,13 +45,14 @@ function wp_insert_vi_plugin_card_content($isLoggedin = false, $isAjaxRequest = 
 					echo '<li>The video player is customizable to match your site</li>';
 				echo '</ul>';
 				echo '<p>You\'ll see video content that is matched to your sites keywords straight away. A few days after activation you’ll begin to receive revenue from advertising served before this video content.</p>';
+				echo '<p><b>This Panel will be withdrawn from the next version.<br />Existing users will be able to continue using vi ads.</b></p>';
 				//echo '<p>Watch a <a href="http://demo.vi.ai/ViewsterBlog_Nintendo.html" target="_blank">demo</a> of how <b>vi stories</b> works.</p>';				
 			echo '</div>';
 		echo '</div>';
 		echo '<div class="plugin-card-bottom" '.(($isAjaxRequest)?'style="opacity: 0;"':'').'>';
-			echo '<span>By clicking Sign Up button you agree to send current domain, email and affiliate ID to video intelligence.</span>';
+			//echo '<span>By clicking Sign Up button you agree to send current domain, email and affiliate ID to video intelligence.</span>';
 			echo '<a id="wp_insert_vi_login" href="javascript:;" class="button button-secondary">Log In</a>';
-			echo '<a id="wp_insert_vi_signup" href="javascript:;" class="button button-primary">Sign Up</a>';
+			//echo '<a id="wp_insert_vi_signup" href="javascript:;" class="button button-primary">Sign Up</a>';
 		echo '</div>';
 	} else {
 		$dashboardURL = wp_insert_vi_api_get_dashboardurl();
@@ -60,7 +61,7 @@ function wp_insert_vi_plugin_card_content($isLoggedin = false, $isAjaxRequest = 
 				echo '<h4>Video content and video advertising – powered by video intelligence</h4>';
 			echo '</div>';
 			echo '<div class="plugin-card-top-content" '.(($isAjaxRequest)?'style="opacity: 0;"':'').'>';
-				echo '<p>Below you can see your current revenues.<br />Don’t see anything? Consult the <a target="_blank" href="https://www.vi.ai/frequently-asked-questions-vi-stories-for-wordpress/?utm_source=WordPress&utm_medium=Plugin%20FAQ&utm_campaign=WP%20Insert">FAQs</a>.</p>';
+				echo '<p>Below you can see your current revenues.<br />Don’t see anything? Consult the <a target="_blank" href="https://www.vi.ai/frequently-asked-questions-vi-stories-for-wordpress/?utm_source=WordPress&utm_medium=Plugin%20FAQ&utm_campaign=WP%20Insert">FAQs</a>.<br /><b>This Panel will be withdrawn from the next version.<br />Existing users will be able to continue using vi ads.</b></p>';
 				echo '<div id="wp_insert_vi_earnings_wrapper">';
 					echo '<div class="wp_insert_ajaxloader"></div>';
 				echo '</div>';
@@ -82,7 +83,7 @@ function wp_insert_vi_get_chart() {
 		echo '###SUCCESS###';
 		echo '<div id="wp_insert_vi_earnings">';
 			echo '<span id="wp_insert_vi_earnings_label">Total Earnings</span>';
-			echo '<span id="wp_insert_vi_earnings_value">$'.$revenueData['netRevenue'].'</span>';
+			echo '<span id="wp_insert_vi_earnings_value">USD '.$revenueData['netRevenue'].'</span>';
 		echo '</div>';
 		echo '<div id="wp_insert_vi_chart_wrapper">';
 			echo '<canvas id="wp_insert_vi_chart" width="348" height="139"></canvas>';
@@ -108,10 +109,10 @@ function wp_insert_vi_get_chart() {
 		echo '<div id="wp_insert_vi_earnings_wrapper">';
 			echo '<div id="wp_insert_vi_earnings">';
 				echo '<span id="wp_insert_vi_earnings_label">Total Earnings</span>';
-				echo '<span id="wp_insert_vi_earnings_value"><img src="'.WP_INSERT_URL.'includes/assets/images/vi-no-data.jpg?'.WP_INSERT_VERSION.'"></span>';
+				echo '<span id="wp_insert_vi_earnings_value"><img src="'.WP_INSERT_URL.'includes/assets/images/no-data.jpg?'.WP_INSERT_VERSION.'"></span>';
 			echo '</div>';
 			echo '<div id="wp_insert_vi_chart_wrapper">';
-				echo '<img width="348" height="139" src="'.WP_INSERT_URL.'includes/assets/images/vi-empty-graph.jpg?'.WP_INSERT_VERSION.'">';
+				echo '<img width="348" height="139" src="'.WP_INSERT_URL.'includes/assets/images/empty-graph.jpg?'.WP_INSERT_VERSION.'">';
 			echo '</div>';
 			echo '<div class="clear"></div>';
 		echo '</div>';

@@ -230,7 +230,7 @@ if ( ! class_exists( 'ITSEC_File_Change_Setup' ) ) {
 
 				if ( $file_list_option && ! empty( $file_list_option['files'] ) ) {
 					$files = end( $file_list_option['files'] );
-					$home = $file_list_option['home'];
+					$home  = $file_list_option['home'];
 
 					if ( $home !== get_home_path() ) {
 						$new_home = get_home_path();
@@ -290,6 +290,32 @@ if ( ! class_exists( 'ITSEC_File_Change_Setup' ) ) {
 				ITSEC_Core::get_scheduler()->unschedule_single( 'file-change-fast', null );
 				ITSEC_File_Change_Scanner::schedule_start( false );
 				delete_site_option( 'itsec_file_change_scan_progress' );
+			}
+
+			if ( $itsec_old_version < 4107 ) {
+				$options = array(
+					'itsec_file_list',
+					'itsec_local_file_list',
+					'itsec_local_file_list_0',
+					'itsec_local_file_list_1',
+					'itsec_local_file_list_2',
+					'itsec_local_file_list_3',
+					'itsec_local_file_list_4',
+					'itsec_local_file_list_5',
+					'itsec_local_file_list_6',
+				);
+
+				foreach ( $options as $option ) {
+					delete_site_option( $option );
+				}
+
+				require_once( dirname( __FILE__ ) . '/class-itsec-file-change.php' );
+				require_once( dirname( __FILE__ ) . '/scanner.php' );
+
+				ITSEC_Core::get_scheduler()->unschedule_single( 'file-change', null );
+				ITSEC_Core::get_scheduler()->unschedule_single( 'file-change-fast', null );
+				ITSEC_File_Change::make_progress_storage()->clear();
+				ITSEC_File_Change_Scanner::schedule_start( false );
 			}
 		}
 

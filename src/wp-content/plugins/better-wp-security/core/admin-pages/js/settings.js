@@ -665,6 +665,8 @@ var itsecSettingsPage = {
 				itsecSettingsPage.isModuleActive( module );
 			}, 1000 );
 
+			itsecSettingsPage.showErrors( results.errors, results.module, 'closed', 'error' );
+
 			return;
 		}
 

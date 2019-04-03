@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-28 13:07:48+0000\n"
+"PO-Revision-Date: 2018-09-14 13:58:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2721,6 +2721,10 @@ msgstr "Ontdek Jetpack Professional"
 msgid "Unlimited Premium Themes"
 msgstr "Onbeperkte premium thema's"
 
+#: _inc/jetpack-strings.php:156
+msgid "Exclusive hand-crafted designs you will love with dedicated support directly from the theme authors."
+msgstr "Exclusieve handgemaakte ontwerpen die je ontzettend zult waarderen, inclusief ondersteuning door de auteurs van de thema's."
+
 #: _inc/jetpack-strings.php:87
 msgid "Image Performance"
 msgstr "Afbeeldingsprestatie"
@@ -4607,6 +4611,10 @@ msgstr "Upload nu video's"
 msgid "Video Hosting"
 msgstr "Videohosting"
 
+#: _inc/jetpack-strings.php:202
+msgid "We support all Jetpack users, regardless of plan. But customers on a paid subscription enjoy priority support so that security issues are identified and fixed for you as soon as possible."
+msgstr "We ondersteunen alle Jetpack-gebruikers, ongeacht het abonnement dat ze hebben. Klanten met een betaald abonnement kunnen echter profiteren van ondersteuning met prioriteit, zodat beveiligingsproblemen zo snel mogelijk worden opgemerkt en verholpen. "
+
 #: _inc/jetpack-strings.php:314
 msgid "By activating ads, you agree to the Automattic Ads {{link}}Terms of Service{{/link}}."
 msgstr "Door advertenties te activeren, ga je akkoord met de {{link}}Servicevoorwaarden{{/link}} van Automattic Ads."
@@ -6185,6 +6193,10 @@ msgstr "Welkom bij Jetpack"
 msgid "Would you tell us why? Just {{a}}answering two simple questions{{/a}} would help us improve Jetpack."
 msgstr "Kan je uitleggen waarom? Door {{a}}twee eenvoudige vragen te beantwoorden{{/a}} draag je bij aan de verbetering van Jetpack."
 
+#: class.jetpack-connection-banner.php:985
+msgid "Connect to, or create, a WordPress.com account to start using Jetpack, and activate our powerful security, traffic and customization services."
+msgstr "Verbind met een WordPress.com-account of maak een nieuw account aan om Jetpack te gebruiken. Hiermee worden krachtige beveiligings-, bezoekers- en aanpasfuncties ingeschakeld."
+
 #: _inc/jetpack-strings.php:542
 msgctxt "Header. Noun: Protect is a module of Jetpack."
 msgid "Protect"
@@ -7461,6 +7473,13 @@ msgstr "Sta individuele sitebeheerders toe hun eigen verbindingen (verbind en ve
 msgid "Bring the power of the WordPress.com cloud to your self-hosted WordPress. Jetpack enables you to connect your blog to a WordPress.com account to use the powerful features normally only available to WordPress.com users."
 msgstr "Breng de mogelijkheden van de WordPress.com-cloud naar het zelfgehoste WordPress. Jetpack maakt het mogelijk je blog te verbinden met een WordPress.com-account om de uitgebreide mogelijkheden te gebruiken die normaal alleen beschikbaar zijn voor WordPress.com-gebruikers."
 
+#. #-#-#-#-#  jetpack-code.pot (Jetpack by WordPress.com 6.4.1)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  jetpack-code.pot (Jetpack by WordPress.com 6.4.1)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://jetpack.com"
+msgstr "https://jetpack.com"
+
 #: modules/module-extras.php:62
 msgid "%s (Jetpack)"
 msgstr "%s (Jetpack)"
@@ -8618,6 +8637,10 @@ msgstr "Gelukt! Er is zojuist een e-mail naar je verzonden om je abonnement te b
 msgid "Loading&hellip;"
 msgstr "Laden..."
 
+#: modules/videopress/class.videopress-player.php:344
+msgid "You do not have sufficient <a rel=\"nofollow\" href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">freedom levels</a> to view this video. Support free software and upgrade."
+msgstr "Je hebt niet voldoende <a rel=\"nofollow\" href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">vrijheidsniveaus</a> om deze video te bekijken. Support gratis software en upgrade."
+
 #: modules/sharedaddy/sharing.php:225
 msgid "Add a new service"
 msgstr "Voeg een nieuwe service toe"
@@ -9077,6 +9100,10 @@ msgstr "Press This"
 msgid "Click to share on LinkedIn"
 msgstr "Klik om op LinkedIn te delen"
 
+#: modules/sharedaddy/sharing.php:186
+msgid "This plugin will work without it, but multibyte support is used <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">if available</a>. You may see minor problems with Tweets and other sharing services."
+msgstr "Deze plugin kan ook zonder, maar multibyte support heeft de voorkeur <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">indien beschikbaar</a>. Je kunt kleine storingen tegengekomen bij Twitter en andere sharing services."
+
 #: modules/protect/config-ui.php:15
 msgid "An API key is needed for Protect."
 msgstr "Er is een API-sleutel nodig voor Protect."
@@ -9469,6 +9496,10 @@ msgid ""
 msgstr ""
 "Als Carousel actief is, zullen eventuele standaard WordPress-galerijen of enkele afbeeldingen die je in de berichten\n"
 "\t\tof pagina's hebt opgenomen een fotoblader-ervaring in volledig scherm starten met reacties- en EXIF-metadata."
+
+#: modules/monitor.php:55
+msgid "Nobody likes downtime, and that's why Downtime Monitor is on the job, keeping tabs on your site by checking it every five minutes. As soon as any downtime is detected, you will receive an email notification alerting you to the issue. That way you can act quickly, to get your site back online again!"
+msgstr "Niemand wil dat zijn website down is. Downtime Monitor monitort elke vijf minuten de status van de website. Zodra er downtime wordt gedetecteerd, ontvang je hierover automatisch bericht per e-mail. Je kunt dan meteen actie ondernemen om de site weer online te krijgen."
 
 #: modules/module-headings.php:54
 msgctxt "Module Description"

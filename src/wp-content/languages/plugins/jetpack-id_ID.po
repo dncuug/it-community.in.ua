@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-08 19:21:24+0000\n"
+"PO-Revision-Date: 2019-02-19 01:04:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -323,6 +323,10 @@ msgstr "lain kali"
 msgid "Hassle-free design, marketing, and security — all in one place."
 msgstr "Desain, pemasaran, dan keamanan yang mudah — semua dalam satu tempat."
 
+#: class.jetpack-connection-banner.php:885
+msgid "Publish: Post on the go from any device using the WordPress apps for iOS, Android, Windows, Linux, and macOS."
+msgstr "Publikasi: Pos dari mana saja melalui perangkat menggunakan aplikasi WordPress untuk iOS, Android, Windows, Linux, dan macOS."
+
 #: class.jetpack-connection-banner.php:852
 msgid "The ideal way to experience WordPress"
 msgstr "Cara yang ideal untuk merasakan WordPress"
@@ -468,19 +472,19 @@ msgstr "Bilah peralatan WordPress.com menggantikan bilah peralatan admin WordPre
 
 #: _inc/jetpack-strings.php:408
 msgid "Portfolios shortcode: [portfolio]"
-msgstr "Kode singkat portofolio: [portfolio]"
+msgstr "Shortcode portofolio: [portfolio]"
 
 #: _inc/jetpack-strings.php:406
 msgid "Use {{portfolioLink}}portfolios{{/portfolioLink}} on your site to showcase your best work. If your theme doesn’t support Jetpack Portfolios, you can still use a simple shortcode to display them on your site."
-msgstr "Gunakan {{portfolioLink}}portofolio{{/portfolioLink}} di situs untuk memajang karya terbaik Anda. Jika tema Anda tidak mendukung Jetpack Portfolios, Anda masih bisa menggunakan kode singkat yang simpel untuk menampilkannya di situs."
+msgstr "Gunakan {{portfolioLink}}portofolio{{/portfolioLink}} di situs untuk memajang karya terbaik Anda. Jika tema Anda tidak mendukung Jetpack Portfolios, Anda masih bisa menggunakan Shortcode yang simpel untuk menampilkannya di situs."
 
 #: _inc/jetpack-strings.php:405
 msgid "Testimonials shortcode: [testimonials]"
-msgstr "Kode singkat testimoni: [testimonials]"
+msgstr "Shortcode testimoni: [testimonials]"
 
 #: _inc/jetpack-strings.php:403
 msgid "Add {{testimonialLink}}testimonials{{/testimonialLink}} to your website to attract new customers. If your theme doesn’t support Jetpack Testimonials, you can still use a simple shortcode to display them on your site."
-msgstr "Tambahkan {{testimonialLink}}testimoni{{/testimonialLink}} ke situs web Anda untuk menarik pelanggan baru. Jika tema Anda tidak mendukung Jetpack Testimonials, Anda masih bisa menggunakan kode singkat yang simpel untuk menampilkannya di situs."
+msgstr "Tambahkan {{testimonialLink}}testimoni{{/testimonialLink}} ke situs web Anda untuk menarik pelanggan baru. Jika tema Anda tidak mendukung Jetpack Testimonials, Anda masih bisa menggunakan shortcode yang simpel untuk menampilkannya di situs."
 
 #: _inc/jetpack-strings.php:368
 msgid "Search engines can't access your site at the moment. If you'd like to make your site accessible, check your {{a}}Reading settings{{/a}} and switch \"Search Engine Visibility\" on."
@@ -729,6 +733,10 @@ msgstr "Parameter embed_url harus berupa URL yang valid."
 #: json-endpoints/class.wpcom-json-api-render-embed-endpoint.php:36
 msgid "Your token must have permission to post on this blog."
 msgstr "Token Anda harus memiliki izin untuk membuat pos di blog ini."
+
+#: functions.global.php:121
+msgid "By clicking the <strong>Set up Jetpack</strong> button, you agree to our <a href=\"%s\" target=\"_blank\">Terms of Service</a> and to <a href=\"%s\" target=\"_blank\">share details</a> with WordPress.com."
+msgstr "Dengan mengeklik tombol <strong>Siapkan Jetpack</strong>, Anda menyetujui <a href=\"%s\" target=\"_blank\">Ketentuan Layanan</a> kami dan bersedia <a href=\"%s\" target=\"_blank\">membagikan detail</a> kepada WordPress.com."
 
 #: class.jetpack.php:4150
 msgid "Could not activate %s"
@@ -2070,6 +2078,17 @@ msgstr "Widget yang diminta tidak ditemukan."
 msgid "{{a}}View details{{/a}}"
 msgstr "{{a}}Lihat detail{{/a}}"
 
+#. translators: this references a page with contact details and possibly a
+#. form.
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1131
+msgctxt "Contact page for your website."
+msgid "Contact us"
+msgstr "Hubungi kami"
+
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1063
+msgid "Welcome to %s."
+msgstr "Selamt datang di %s."
+
 #: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1021
 msgid "The onboarding token couldn't be deleted."
 msgstr "Token yang disertakan tidak bisa dihapus."
@@ -2124,9 +2143,17 @@ msgstr "Data penyertaan tidak valid."
 msgid "With Jetpack Professional, you can create the perfect site with one of over 300 professionally-designed WordPress themes, including more than 200 premium themes. Customize your content with a variety of widgets, or add unlimited videos to your posts and pages -- displayed free of ads or watermarks."
 msgstr "Dengan Jetpack Professional, Anda bisa membuat situs yang sempurna dengan salah satu dari 300 lebih tema WordPress dengan desain profesional, yang mencakup lebih dari 100 tema premium. Sesuaikan konten Anda dengan berbagai widget, atau tambahkan video tanpa batas ke pos dan halaman Anda, yang ditampilkan tanpa iklan atau watermark."
 
+#: _inc/jetpack-strings.php:709
+msgid "Thanks for choosing Jetpack Professional. Jetpack is now backing up your content in real-time, indexing your content for search, scanning for security threats, and granting access to premium themes."
+msgstr "Terima kasih telah memilih Jetpack Professional. Jetpack sedang mencadangkan konten Anda secara real-time, mengindeks konten Anda untuk pencarian, memindai ancaman keamanan, dan memberikan akses ke tema premium."
+
 #: _inc/jetpack-strings.php:714 _inc/jetpack-strings.php:723
 msgid "Growing your following is easy with your Professional plan, thanks to content sharing and scheduling, SEO tools, and built-in subscription options. You can monetize your site with a simple payment button and in-line ads, and monitor the success of your efforts by integrating with Google Analytics."
 msgstr "Menumbuhkan pengikut adalah hal yang mudah dengan paket Professional, berkat berbagi dan penjadwalan konten, alat SEO, dan pilihan langganan bawaan. Anda bisa memonetisasi situs dengan tombol pembayaran simpel dan iklan dalam baris, serta memantau keberhasilan upaya Anda dengan integrasi ke Google Analytics."
+
+#: _inc/jetpack-strings.php:693
+msgid "Your Jetpack plan gives you everything you need to keep your hard work safe, including on-demand backups and malware scans with one-click restores and issue resolution. Your site will be fully protected against spam, malicious code, and brute force login attempts."
+msgstr "Paket Jetpack menyediakan semua yang Anda butuhkan untuk mengamankan hasil kerja keras Anda, yang meliputi pencadangan dan pemindaian malware sesuai permintaan dengan pemulihan satu klik dan resolusi masalah. Situs Anda akan sepenuhnya terlindungi dari spam, kode berbahaya, dan upaya login paksa."
 
 #: _inc/jetpack-strings.php:715
 msgid "Start exploring Jetpack Professional now to see all the benefits of your new plan."
@@ -2619,6 +2646,10 @@ msgstr "Bintang"
 #: _inc/jetpack-strings.php:548
 msgid "Jupiter"
 msgstr "Jupiter"
+
+#: _inc/jetpack-strings.php:486
+msgid "By clicking the button below, you agree to our {{tosLink}}Terms of Service{{/tosLink}} and to {{shareDetailsLink}}share details{{/shareDetailsLink}} with WordPress.com."
+msgstr "Dengan mengeklik tombol di bawah, Anda menyetujui {{tosLink}}Ketentuan Layanan{{/tosLink}} kami dan bersedia {{shareDetailsLink}}membagikan detail{{/shareDetailsLink}} kepada WordPress.com."
 
 #: _inc/jetpack-strings.php:316
 msgid "Display ads below posts on"
@@ -3396,6 +3427,10 @@ msgstr "Gunakan kutipan sebagai ganti pos lengkap pada halaman depan dan halaman
 #: _inc/jetpack-strings.php:447
 msgid "Show featured images"
 msgstr "Tampilkan gambar unggulan"
+
+#: _inc/jetpack-strings.php:562
+msgid "Brute force attack protection and downtime monitoring"
+msgstr "Perlindungan terhadap peretasan kata sandi dan pemantauan masa tidak aktif"
 
 #: _inc/jetpack-strings.php:410
 msgctxt "Settings header"
@@ -4687,11 +4722,6 @@ msgctxt "A header for the video sharing options area"
 msgid "Share"
 msgstr "Bagikan"
 
-#: modules/videopress/class.videopress-edit-attachment.php:211
-msgctxt "A header for the shortcode display"
-msgid "Shortcode"
-msgstr "Kode Singkat"
-
 #: modules/videopress/class.videopress-edit-attachment.php:199
 msgid "Title will appear on the first frame of your video"
 msgstr "Judul akan ditampilkan di frame pertama pada video Anda"
@@ -4746,6 +4776,11 @@ msgstr "Diperlukan post_id yang valid."
 msgctxt "A header for the video rating area"
 msgid "Rating"
 msgstr "Peringkat"
+
+#: modules/videopress/class.videopress-edit-attachment.php:211
+msgctxt "A header for the shortcode display"
+msgid "Shortcode"
+msgstr "Shortcode"
 
 #: modules/module-info.php:584
 msgid "Better results on search engines and social media."
@@ -5929,6 +5964,10 @@ msgstr "Pelanggan"
 msgid "{{link}}Configure your %(module_slug)s Settings {{/link}}"
 msgstr "{{link}}Konfigurasikan %(module_slug)s Pengaturan {{/link}}"
 
+#: _inc/jetpack-strings.php:143
+msgid "Show a \"follow comments\" option in the comment form"
+msgstr "Menampilkan pilihan \"ikuti komentar\" dalam formulir komentar"
+
 #: _inc/jetpack-strings.php:289
 msgid "Whitelisted IP addresses"
 msgstr "Alamat IP dalam daftar putih"
@@ -5998,6 +6037,14 @@ msgstr "Fitur Jetpack yang disarankan meliputi:"
 msgid "Features can be activated or deactivated at any time."
 msgstr "Fitur yang bida diaktifkan atau dinonaktifkan kapan saja."
 
+#: _inc/jetpack-strings.php:448
+msgid "Show an ad for the WordPress mobile apps in the footer of the mobile theme"
+msgstr "Menampilkan iklan untuk aplikasi seluler WordPress di footer tema seluler"
+
+#: _inc/jetpack-strings.php:602
+msgid "Activate recommended features"
+msgstr "Aktifkan fitur yang disarankan"
+
 #: _inc/jetpack-strings.php:573
 msgid "You are currently running a development version of Jetpack."
 msgstr "Saat ini Anda menjalankan Jetpack versi pengembangan."
@@ -6040,6 +6087,10 @@ msgstr "Apa yang ingin Anda lihat di Dasbor Jetpack?"
 msgid "Would you tell us why? Just {{a}}answering two simple questions{{/a}} would help us improve Jetpack."
 msgstr "Maukah Anda menceritakan alasannya? Hanya dengan {{a}}menjawab dua pertanyaan sederhana,{{/a}} Anda membantu kami meningkatkan Jetpack."
 
+#: class.jetpack-connection-banner.php:985
+msgid "Connect to, or create, a WordPress.com account to start using Jetpack, and activate our powerful security, traffic and customization services."
+msgstr "Sambungkan atau buat akun WordPress.com untuk mulai menggunakan Jetpack, dan aktifkan layanan keamanan, lalu lintas, dan kustomisasi kami yang luar biasa."
+
 #: _inc/jetpack-strings.php:542
 msgctxt "Header. Noun: Protect is a module of Jetpack."
 msgid "Protect"
@@ -6053,6 +6104,11 @@ msgstr "Pantau"
 #: _inc/jetpack-strings.php:546
 msgid "Join the millions of users who rely on Jetpack to enhance and secure their sites. We're passionate about WordPress and here to make your life easier."
 msgstr "Bergabunglah dengan jutaan pengguna yang mengandalkan Jetpack untuk meningkatkan dan mengamankan situs mereka. Kami bersungguh-sungguh dengan WordPress dan ini akan membuat hidup Anda lebih mudah."
+
+#: _inc/jetpack-strings.php:492
+msgctxt "Navigation item."
+msgid "Reset Options (dev only)"
+msgstr "Reset Pilihan (khusus pengembang)"
 
 #: _inc/jetpack-strings.php:246
 msgid "ACTIVE"
@@ -6266,6 +6322,22 @@ msgstr "Tidak ada ancaman, Anda aman dan siap melanjutkan!"
 msgid "Plugin Updates"
 msgstr "Pembaruan Plugin"
 
+#: _inc/jetpack-strings.php:104
+msgid "{{a}}Activate Protect{{/a}} to keep your site protected from malicious sign in attempts."
+msgstr "{{a}}Aktifkan Perlindungan{{/a}} untuk memastikan situs Anda terlindung dari upaya masuk berbahaya."
+
+#: _inc/jetpack-strings.php:82
+msgid "Downtime monitoring"
+msgstr "Pemantauan waktu tidak aktif"
+
+#: _inc/jetpack-strings.php:97
+msgid "{{a}}Turn on plugin autoupdates{{/a}}"
+msgstr "{{a}}Aktifkan pembaruan plugin otomatis{{/a}}"
+
+#: _inc/jetpack-strings.php:91
+msgid "{{a}}Activate{{/a}} to enhance the performance and speed of your images."
+msgstr "{{a}}Aktifkan{{/a}} untuk meningkatkan kinerja dan kecepatan gambar Anda."
+
 #: _inc/jetpack-strings.php:55
 msgid "For state-of-the-art spam defense, please {{a}}activate Akismet{{/a}}."
 msgstr "Untuk pertahanan terhadap spam paling canggih, {{a}}aktifkan Akismet{{/a}}."
@@ -6386,6 +6458,14 @@ msgstr "Fitur yang disarankan gagal diaktifkan. %(error)s"
 #: _inc/jetpack-strings.php:64
 msgid "To automatically back up your entire site, please {{a}}upgrade your account{{/a}}."
 msgstr "Untuk mencadangkan seluruh situs secara otomatis, silakan {{a}}upgrade akun Anda{{/a}}."
+
+#: _inc/jetpack-strings.php:56
+msgid "Invalid key"
+msgstr "Kunci tidak valid"
+
+#: _inc/jetpack-strings.php:86
+msgid "{{a}}Activate Monitor{{/a}} to receive email notifications if your site goes down."
+msgstr "{{a}}Aktifkan Monitor{{/a}} untuk menerima email pemberitahuan jika situs Anda tidak aktif."
 
 #: _inc/jetpack-strings.php:11 _inc/jetpack-strings.php:647
 #: _inc/jetpack-strings.php:653
@@ -7891,6 +7971,10 @@ msgstr "Nama Pengguna Twitter:"
 msgid "You need to enter your numeric user ID for the <a href=\"%1$s\">Goodreads Widget</a> to work correctly. <a href=\"%2$s\" target=\"_blank\">Full instructions</a>."
 msgstr "Anda harus memasukkan ID pengguna numerik Anda untuk <a href=\"%1$s\">Widget Goodreads</a> agar dapat berfungsi dengan benar. <a href=\"%2$s\" target=\"_blank\">Petunjuk lengkap</a>."
 
+#: modules/widgets/contact-info.php:25
+msgid "Display a map with your location, hours, and contact information."
+msgstr "Tampilkan peta dengan lokasi, jam layanan, dan informasi kontak Anda."
+
 #. Translators: Stats dashboard widget postviews list: "$post_title $views
 #. Views".
 #: modules/stats.php:1457
@@ -8891,6 +8975,10 @@ msgctxt "share to"
 msgid "Twitter"
 msgstr "Twitter"
 
+#: modules/sharedaddy/sharing.php:186
+msgid "This plugin will work without it, but multibyte support is used <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">if available</a>. You may see minor problems with Tweets and other sharing services."
+msgstr "Plugin ini dapat berfungsi tanpanya, tetapi dukungan multibyte digunakan <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">bila tersedia</a>. Anda mungkin melihat masalah kecil pada Tweet dan layanan berbagi lainnya."
+
 #: modules/protect/math-fallback.php:53
 msgid "<strong>You failed to correctly answer the math problem.</strong>  This is used to combat spam when the Protect API is unavailable.  Please use your browser's back button to return to the login form, press the \"refresh\" button to generate a new math problem, and try to log in again."
 msgstr "<strong>Anda tidak berhasil menjawab dengan benar soal matematika tersebut.</strong> Ini digunakan untuk menumpas spam saat Protect API tidak tersedia. Harap gunakan tombol kembali pada browser Anda untuk kembali ke formulir masuk, dan tekan tombol \"refresh\" untuk membuat soal matematika baru, dan coba untuk masuk lagi."
@@ -9276,6 +9364,18 @@ msgstr "Blog utama Anda tidak terhubung ke WordPress.com. Harap hubungkan untuk 
 msgid "WordPress.com"
 msgstr "WordPress.com"
 
+#: modules/monitor.php:55
+msgid "Nobody likes downtime, and that's why Downtime Monitor is on the job, keeping tabs on your site by checking it every five minutes. As soon as any downtime is detected, you will receive an email notification alerting you to the issue. That way you can act quickly, to get your site back online again!"
+msgstr "Tak seorang pun suka saat situs tidak aktif, dan itulah sebabnya Monitor Masa Tidak Aktif digunakan, yaitu untuk memantau situs Anda dengan memeriksa setiap lima menit. Begitu terdeteksi kemacetan, Anda akan menerima email pemberitahuan yang mengingatkan Anda mengenai masalah ini. Dengan demikian Anda bisa bertindak cepat, untuk membuat situs Anda kembali online!"
+
+#: modules/module-info.php:308
+msgid ""
+"With Carousel active, any standard WordPress galleries or single images you have embedded in posts or pages will\n"
+"\t\tlaunch a full-screen photo browsing experience with comments and EXIF metadata."
+msgstr ""
+"Dengan mengaktifkan Carousel, galeri WordPress standar atau gambar tunggal yang Anda sematkan di pos atau halaman akan\n"
+"\t\tmeluncurkan pengalaman penelusuran foto layar penuh dengan komentar dan metadata EXIF."
+
 #: modules/module-headings.php:39
 msgctxt "Jumpstart Description"
 msgid "Adds a button to your post and page editors, allowing you to build simple forms to help visitors stay in touch."
@@ -9573,6 +9673,36 @@ msgstr "Memungkinkan pengunjung membagikan konten Anda."
 msgctxt "Jumpstart Description"
 msgid "Twitter, Facebook and Google+ buttons at the bottom of each post, making it easy for visitors to share your content."
 msgstr "Tombol Twitter, Facebook, dan LinkedIn di bawah setiap postingan, sehingga mempermudah pengunjung berbagi konten Anda."
+
+#: modules/module-headings.php:202
+msgctxt "Module Description"
+msgid "Allow users to subscribe to your posts and comments and receive notifications via email"
+msgstr "Izinkan pengguna berlangganan pos Anda, memberikan komentar, dan menerima pemberitahuan melalui email"
+
+#: modules/module-headings.php:218
+msgctxt "Module Name"
+msgid "Site verification"
+msgstr "Verifikasi situs"
+
+#: modules/module-headings.php:102
+msgctxt "Module Description"
+msgid "Write posts or pages in plain-text Markdown syntax"
+msgstr "Tulis pos atau halaman dalam sintaks Markdown teks biasa"
+
+#: modules/module-headings.php:43
+msgctxt "Module Name"
+msgid "Custom content types"
+msgstr "Jenis konten kustom"
+
+#: modules/module-headings.php:133
+msgctxt "Module Name"
+msgid "Post by email"
+msgstr "Kirim pos melalui email"
+
+#: modules/module-headings.php:153
+msgctxt "Module Name"
+msgid "Related posts"
+msgstr "Pos terkait"
 
 #. translators: Date and time
 #. translators: 1: date, 2: time
@@ -10064,6 +10194,12 @@ msgstr "https://wordpress.org/"
 #: modules/custom-post-types/testimonial.php:496
 msgid "Testimonial Archive Featured Image"
 msgstr "Gambar Andalan Arsip Testimoni"
+
+#: modules/infinite-scroll/infinity.php:412
+msgid "Shows %s post on each load."
+msgid_plural "Shows %s posts on each load."
+msgstr[0] "Menampilkan %s pos di setiap pemuatan."
+msgstr[1] "Menampilkan %s pos di setiap pemuatan."
 
 #: modules/custom-post-types/nova.php:328
 #: modules/custom-post-types/nova.php:333
@@ -11034,6 +11170,20 @@ msgstr ""
 "\n"
 "Salam sukacita,\n"
 "Tim WordPress.com"
+
+#: modules/custom-css/custom-css.php:1081
+msgid "The default content width for the %s theme is %d pixel."
+msgid_plural "The default content width for the %s theme is %d pixels."
+msgstr[0] "Lebar konten asal untuk tema %s adalah %d piksel."
+msgstr[1] "Lebar konten asal untuk tema %s adalah %d piksel."
+
+#: modules/custom-css/custom-css.php:1007
+msgid ""
+"New to CSS? Start with a <a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">beginner tutorial</a>. Questions?\n"
+"\t\tAsk in the <a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">Themes and Templates forum</a>."
+msgstr ""
+"Baru mengenal CSS? Mulai dengan <a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">tutorial pemula</a>. Pertanyaan?\n"
+"\t\tTanyakan di <a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">Forum Tema dan Templat</a>."
 
 #: modules/contact-form/grunion-form-view.php:169
 msgctxt "%1$s = \"Click here\" in an HTML link"
@@ -12931,3 +13081,16 @@ msgstr "nilai"
 #: _inc/jetpack-strings.php:493
 msgid "Test your site’s compatibility with Jetpack."
 msgstr "Uji kompatibilitas situs Anda dengan Jetpack."
+
+#. translators: %s is a username
+#: class.jetpack-cli.php:216
+msgid "User %s could not be disconnected. Are you sure they're connected currently?"
+msgstr "Pengguna %s tidak dapat diputus sambungannya. Apakah Anda yakin saat ini pengguna tersambung?"
+
+#: class.jetpack-cli.php:213
+msgid "User has been successfully disconnected."
+msgstr "Pengguna berhasil diputus sambungannya."
+
+#: class.jetpack-cli.php:206
+msgid "Jetpack has been successfully disconnected for %s."
+msgstr "Jetpack berhasil diputus sambungannya dari %s."

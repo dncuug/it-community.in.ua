@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-24 13:04:08+0000\n"
+"PO-Revision-Date: 2019-01-15 13:23:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -323,6 +323,10 @@ msgstr "現在不要"
 msgid "Hassle-free design, marketing, and security — all in one place."
 msgstr "簡易設計、行銷及安全性等功能一應俱全。"
 
+#: class.jetpack-connection-banner.php:885
+msgid "Publish: Post on the go from any device using the WordPress apps for iOS, Android, Windows, Linux, and macOS."
+msgstr "發佈：使用 iOS、Android、Windows、Linux 和 macOS 版本的 WordPress 應用程式，隨時隨地透過任何裝置發佈文章。"
+
 #: class.jetpack-connection-banner.php:852
 msgid "The ideal way to experience WordPress"
 msgstr "體驗 WordPress 的理想方式"
@@ -466,21 +470,21 @@ msgstr "為你文章和頁面中的圖片建立全螢幕隨選區投影片。隨
 msgid "The WordPress.com toolbar replaces the default WordPress admin toolbar and streamlines your WordPress experience. It offers one-click access to manage all your sites, update your WordPress.com profile, view notifications, and catch up on the sites you follow in the Reader."
 msgstr "WordPress.com 工具列會取代預設 WordPress 管理員工具列，以簡化你的 WordPress 操作流程。提供一鍵存取功能，讓你輕鬆管理你所有的網站、更新 WordPress.com 個人檔案、檢視通知，並在閱讀器中掌握你追蹤網站的最新動態。"
 
-#: _inc/jetpack-strings.php:408
-msgid "Portfolios shortcode: [portfolio]"
-msgstr "作品集簡碼：[作品集]"
-
 #: _inc/jetpack-strings.php:406
 msgid "Use {{portfolioLink}}portfolios{{/portfolioLink}} on your site to showcase your best work. If your theme doesn’t support Jetpack Portfolios, you can still use a simple shortcode to display them on your site."
 msgstr "在你的網站上使用{{portfolioLink}}作品集{{/portfolioLink}}來展示你的佳作。如果你的佈景主題不支援 Jetpack 個人作品集，你仍然可以使用簡單的簡碼在網站上展示你的作品。"
 
-#: _inc/jetpack-strings.php:405
-msgid "Testimonials shortcode: [testimonials]"
-msgstr "證言簡碼：[證言]"
+#: _inc/jetpack-strings.php:408
+msgid "Portfolios shortcode: [portfolio]"
+msgstr "作品集簡碼：[portfolio]"
 
 #: _inc/jetpack-strings.php:403
 msgid "Add {{testimonialLink}}testimonials{{/testimonialLink}} to your website to attract new customers. If your theme doesn’t support Jetpack Testimonials, you can still use a simple shortcode to display them on your site."
 msgstr "在你的網站中加入{{testimonialLink}}證言{{/testimonialLink}}來吸引新的顧客。如果你的佈景主題不支援 Jetpack 證言，你仍然可以使用簡單的簡碼在網站上顯示證言。"
+
+#: _inc/jetpack-strings.php:405
+msgid "Testimonials shortcode: [testimonials]"
+msgstr "證言簡碼：[testimonials]"
 
 #: _inc/jetpack-strings.php:368
 msgid "Search engines can't access your site at the moment. If you'd like to make your site accessible, check your {{a}}Reading settings{{/a}} and switch \"Search Engine Visibility\" on."
@@ -729,6 +733,10 @@ msgstr "embed_url 參數必須是有效的 URL。"
 #: json-endpoints/class.wpcom-json-api-render-embed-endpoint.php:36
 msgid "Your token must have permission to post on this blog."
 msgstr "你的權杖必須擁有在這個網誌上發表文章的權限。"
+
+#: functions.global.php:121
+msgid "By clicking the <strong>Set up Jetpack</strong> button, you agree to our <a href=\"%s\" target=\"_blank\">Terms of Service</a> and to <a href=\"%s\" target=\"_blank\">share details</a> with WordPress.com."
+msgstr "按一下<strong>「設定 Jetpack」</strong>按鈕，即表示你同意我們的<a href=\"%s\" target=\"_blank\">服務條款</a>，並同意與 WordPress.com <a href=\"%s\" target=\"_blank\">分享詳細資料</a>。"
 
 #: class.jetpack.php:4150
 msgid "Could not activate %s"
@@ -2125,9 +2133,17 @@ msgstr "不是有效的上線資料。"
 msgid "With Jetpack Professional, you can create the perfect site with one of over 300 professionally-designed WordPress themes, including more than 200 premium themes. Customize your content with a variety of widgets, or add unlimited videos to your posts and pages -- displayed free of ads or watermarks."
 msgstr "使用 Jetpack 專業版，你便可以建立完美的網站，其中有超過 300 種專業設計的 WordPress 佈景主題，包括超過 100 種進階版佈景主題。使用各種小工具自訂你的內容，或將無限制的影片新增到你的文章和頁面 -- 不顯示任何廣告或浮水印。"
 
+#: _inc/jetpack-strings.php:709
+msgid "Thanks for choosing Jetpack Professional. Jetpack is now backing up your content in real-time, indexing your content for search, scanning for security threats, and granting access to premium themes."
+msgstr "感謝你選擇 Jetpack 專業版。Jetpack 正在即時備份你的內容、為你的搜尋內容編列索引、掃描安全性威脅，並授予對進階版佈景主題的存取權。"
+
 #: _inc/jetpack-strings.php:714 _inc/jetpack-strings.php:723
 msgid "Growing your following is easy with your Professional plan, thanks to content sharing and scheduling, SEO tools, and built-in subscription options. You can monetize your site with a simple payment button and in-line ads, and monitor the success of your efforts by integrating with Google Analytics."
 msgstr "使用專業版方案的內容分享和排程、SEO 工具，以及內建的訂閱選項，可以輕鬆提高你的曝光追蹤。你可以利用簡單的付款按鈕和內置廣告來賺取網站獲利，並透過與 Google Analytics 整合，來監控你付出的努力是否獲得成效。"
+
+#: _inc/jetpack-strings.php:693
+msgid "Your Jetpack plan gives you everything you need to keep your hard work safe, including on-demand backups and malware scans with one-click restores and issue resolution. Your site will be fully protected against spam, malicious code, and brute force login attempts."
+msgstr "Jetpack 專業版方案提供保護你辛勤努力成果所需的一切，包括隨選即用備份和惡意軟體掃描，以及單鍵還原和問題解決。你的網站可完全防禦垃圾郵件、惡意程式碼，以及暴力破解密碼的登入嘗試。"
 
 #: _inc/jetpack-strings.php:715
 msgid "Start exploring Jetpack Professional now to see all the benefits of your new plan."
@@ -2621,6 +2637,10 @@ msgstr "星星"
 msgid "Jupiter"
 msgstr "木星"
 
+#: _inc/jetpack-strings.php:486
+msgid "By clicking the button below, you agree to our {{tosLink}}Terms of Service{{/tosLink}} and to {{shareDetailsLink}}share details{{/shareDetailsLink}} with WordPress.com."
+msgstr "按下方按鈕，即表示你同意我們的{{tosLink}}服務條款{{/tosLink}}，並同意與 WordPress.com {{shareDetailsLink}}分享詳細資料{{/shareDetailsLink}}。"
+
 #: _inc/jetpack-strings.php:316
 msgid "Display ads below posts on"
 msgstr "在文章下方顯示廣告"
@@ -2787,6 +2807,10 @@ msgstr "你想要顯示幾張相片？"
 #: modules/widgets/flickr/form.php:32
 msgid "Leave the Flickr RSS URL field blank to display <a target=\"_blank\" href=\"%s\">interesting</a> Flickr photos."
 msgstr "將 Flickr RSS URL 欄位留白，即可顯示<a target=\"_blank\" href=\"%s\">有趣的</a> Flickr 相片。"
+
+#: modules/widgets/flickr/form.php:26
+msgid "To find your Flickr RSS URL, go to your photostream, add \"?details=1\" to the URL, and hit enter. Scroll down until you see the RSS icon or the \"Latest\" link. Right-click on either options and copy the URL. Paste into the box above."
+msgstr "若要找出你的 Flickr RSS URL，請前往相片串流，在 URL 新增「?details=1」，然後按一下 Enter 鍵。向下捲動直到出現 RSS 圖示或「最新」連結。用滑鼠右鍵按一下選項，並複製 URL，再貼到上方的方塊。"
 
 #: modules/widgets/flickr/form.php:15
 msgid "Flickr RSS URL:"
@@ -3134,6 +3158,11 @@ msgstr "其他"
 msgid "More details about your Jetpack settings"
 msgstr "關於 Jetpack 設定的更多詳細資訊"
 
+#: modules/masterbar/masterbar.php:686
+msgctxt "admin bar menu group label"
+msgid "Manage"
+msgstr "管理"
+
 #: class.jetpack-debugger.php:291
 msgid "A connection problem with WordPress.com."
 msgstr "WordPress.com 的連結問題。"
@@ -3252,6 +3281,11 @@ msgstr "預覽"
 #: _inc/jetpack-strings.php:667
 msgid "Your paid plan gives you access to prioritized Jetpack support."
 msgstr "你的付費方案給予你優先的 Jetpack 支援。"
+
+#: _inc/jetpack-strings.php:617
+msgctxt "A heading for a block of related posts."
+msgid "Related"
+msgstr "相關文章"
 
 #: _inc/jetpack-strings.php:565
 msgid "By disconnecting %(siteName)s from WordPress.com you will no longer have access to the following:"
@@ -3375,6 +3409,10 @@ msgstr "顯示特色圖片"
 #: _inc/jetpack-strings.php:558
 msgid "Priority support"
 msgstr "優先支援服務"
+
+#: _inc/jetpack-strings.php:562
+msgid "Brute force attack protection and downtime monitoring"
+msgstr "暴力破解攻擊防護以及運作時間監控"
 
 #: _inc/jetpack-strings.php:410
 msgctxt "Settings header"
@@ -3718,6 +3756,10 @@ msgstr "帳號連結"
 msgid "Updated settings."
 msgstr "已更新設定。"
 
+#: _inc/jetpack-strings.php:38
+msgid "Error updating settings. %(error)s"
+msgstr "更新設定時發生錯誤。%(error)s"
+
 #: _inc/jetpack-strings.php:40
 msgid "Regenerated Post by Email address."
 msgstr "透過電子郵件地址重新產生文章。"
@@ -3848,10 +3890,6 @@ msgstr "全新免費服務：在商店顯示加拿大郵政 (Canada Post) 的送
 msgid "New free service: Show USPS shipping rates on your store! Added bonus: print shipping labels without leaving WooCommerce."
 msgstr "全新免費服務：在商店顯示美國郵政服務 (USPS) 的送貨費率！新增的獎勵：無需離開 WooCommerce 即可列印送貨標籤。"
 
-#: _inc/jetpack-strings.php:580
-msgid "Currently in {{a}}Development Mode{{/a}} (some features are disabled) because: {{reasons/}}"
-msgstr "目前處於{{a}}開發模式{{/a}} (已停用部分功能)，因為："
-
 #: _inc/jetpack-strings.php:577
 msgid "{{li}}The jetpack_development_mode filter is active{{/li}}"
 msgstr "{{li}}已啟用 jetpack_development_mode 篩選{{/li}}"
@@ -3875,6 +3913,10 @@ msgstr "將 Markdown 用於文章。"
 #: modules/infinite-scroll.php:99
 msgid "Track each scroll load (7 posts by default) as a page view in Google Analytics"
 msgstr "在 Google Analytics 追蹤每次捲動的文章載入 (預設為 7 篇文章)，將其視為網頁瀏覽次數"
+
+#: _inc/jetpack-strings.php:580
+msgid "Currently in {{a}}Development Mode{{/a}} (some features are disabled) because: {{reasons/}}"
+msgstr "目前處於{{a}}開發模式{{/a}} (已停用部分功能)，因為：{{reasons/}}"
 
 #: modules/module-headings.php:58
 msgctxt "Module Name"
@@ -5140,6 +5182,14 @@ msgstr "本分頁中有未儲存的設定，如果離開，這些設定便會遺
 msgid "Invalid parameter \"dismissed\"."
 msgstr "參數「dismissed」無效。"
 
+#: modules/module-info.php:632
+msgid ""
+"Automatically create two sitemap files that list the URLs of posts and pages in your site.\n"
+"\t\tThis makes it easier for search engines (like Google) to include your site in relevant search results."
+msgstr ""
+"自動建立兩個網站地圖檔案，以列出你網站的文章和網頁 URL。\n"
+"\t\t這樣可讓搜尋引擎 (例如 Google) 輕鬆將你的網站納入相關的搜尋結果中。"
+
 #: modules/module-info.php:616
 msgid ""
 "Manage and update this and other WordPress sites from one simple dashboard on WordPress.com. You can update\n"
@@ -5151,14 +5201,6 @@ msgstr ""
 "\t\t外掛程式、將它們設定為自動更新，並且以各別網站或大量的方式從\n"
 "\t\twordpress.com/plugins 加以啟用/停用。你也可以使用 WordPress.com 上全新且適用於手機的文章編輯器，\n"
 "\t\t還可以檢視和啟用已安裝的佈景主題，並建立或編輯網站選單。"
-
-#: modules/module-info.php:632
-msgid ""
-"Automatically create two sitemap files that list the URLs of posts and pages in your site.\n"
-"\t\tThis makes it easier for search engines (like Google) to include your site in relevant search results."
-msgstr ""
-"自動建立兩個網站地圖檔案，以列出你網站的文章和網頁 URL。\n"
-"\t\t這樣可讓搜尋引擎 (例如 Google) 輕鬆將你的網站納入相關的搜尋結果中。"
 
 #: modules/module-info.php:599
 msgid ""
@@ -6020,6 +6062,10 @@ msgstr "複製"
 msgid "Clichés"
 msgstr "陳腔濫調"
 
+#: _inc/jetpack-strings.php:602
+msgid "Activate recommended features"
+msgstr "啟用推薦的功能"
+
 #: _inc/jetpack-strings.php:604
 msgid "Jetpack's recommended features include:"
 msgstr "Jetpack 推薦的功能包括："
@@ -6069,6 +6115,10 @@ msgstr "你希望你的 Jetpack 儀表板顯示哪些內容？"
 #: _inc/jetpack-strings.php:570
 msgid "Would you tell us why? Just {{a}}answering two simple questions{{/a}} would help us improve Jetpack."
 msgstr "可以告訴我們原因嗎？只要{{a}}回答兩個簡單的問題，就{{/a}}能協助我們改善 Jetpack。"
+
+#: class.jetpack-connection-banner.php:985
+msgid "Connect to, or create, a WordPress.com account to start using Jetpack, and activate our powerful security, traffic and customization services."
+msgstr "請連結至或建立 WordPress.com 帳號，以開始使用 Jetpack。這樣會啟用強大的安全性、流量和自訂服務。"
 
 #: _inc/jetpack-strings.php:539
 msgctxt "Header. Noun: Monitor is a module of Jetpack."
@@ -6311,9 +6361,17 @@ msgstr "沒有找到威脅，你可以開始使用了！"
 msgid "Plugin Updates"
 msgstr "外掛程式更新"
 
+#: _inc/jetpack-strings.php:82
+msgid "Downtime monitoring"
+msgstr "停機時間監控"
+
 #: _inc/jetpack-strings.php:91
 msgid "{{a}}Activate{{/a}} to enhance the performance and speed of your images."
-msgstr "{{a}}啟用 Photon{{/a}} 可提升圖片的效能和速度。"
+msgstr "{{a}}啟用{{/a}}可提升圖片的效能和速度。"
+
+#: _inc/jetpack-strings.php:97
+msgid "{{a}}Turn on plugin autoupdates{{/a}}"
+msgstr "{{a}}開啟外掛自動更新{{/a}}"
 
 #: _inc/jetpack-strings.php:55
 msgid "For state-of-the-art spam defense, please {{a}}activate Akismet{{/a}}."
@@ -6436,9 +6494,13 @@ msgstr "%(slug)s 無法停用。%(error)s"
 msgid "Invalid key"
 msgstr "無效金鑰"
 
+#: _inc/jetpack-strings.php:86
+msgid "{{a}}Activate Monitor{{/a}} to receive email notifications if your site goes down."
+msgstr "{{a}}啟用監控{{/a}}可在網站停機時接收電子郵件通知。"
+
 #: _inc/jetpack-strings.php:64
 msgid "To automatically back up your entire site, please {{a}}upgrade your account{{/a}}."
-msgstr "若要自動備份整個網站，請{{a}}升級您的帳號{{/a}}。"
+msgstr "若要自動備份整個網站，請{{a}}升級你的帳戶{{/a}}。"
 
 #: _inc/jetpack-strings.php:11 _inc/jetpack-strings.php:647
 #: _inc/jetpack-strings.php:653
@@ -7330,6 +7392,13 @@ msgstr "使用規定"
 #: views/admin/network-settings.php:15
 msgid "These settings affect all sites on the network."
 msgstr "這些設定影響網路上的所有網站。"
+
+#. #-#-#-#-#  jetpack-code.pot (Jetpack by WordPress.com 6.4.1)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  jetpack-code.pot (Jetpack by WordPress.com 6.4.1)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://jetpack.com"
+msgstr "https://jetpack.com"
 
 #: modules/module-extras.php:62
 msgid "%s (Jetpack)"
@@ -8945,6 +9014,10 @@ msgstr "分享到 Pinterest"
 msgid "Click to share on %s"
 msgstr "分享到 %s"
 
+#: modules/sharedaddy/sharing.php:186
+msgid "This plugin will work without it, but multibyte support is used <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">if available</a>. You may see minor problems with Tweets and other sharing services."
+msgstr "此外掛程式的運作將不使用多位元組支援，但<a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">如果可用的話</a>，仍然會加以使用。你可能會發現推文與其他分享服務有些小問題。"
+
 #: modules/protect/math-fallback.php:53
 msgid "<strong>You failed to correctly answer the math problem.</strong>  This is used to combat spam when the Protect API is unavailable.  Please use your browser's back button to return to the login form, press the \"refresh\" button to generate a new math problem, and try to log in again."
 msgstr "<strong>你並未正確回答這題數學問題。</strong>沒有可用的 Protect API 時，這可用於阻擋垃圾訊息。請使用瀏覽器的「上一步」按鈕返回登入表單，按一下「重新整理」按鈕以產生新的數學問題，然後再次嘗試登入。"
@@ -9337,6 +9410,10 @@ msgstr ""
 #: modules/publicize/ui.php:464
 msgid "Before you hit Publish, please refresh the following connection(s) to make sure we can Publicize your post:"
 msgstr "點按「發表」之前，請重新整理以下連結，確保我們可以「宣傳」你的文章："
+
+#: modules/monitor.php:55
+msgid "Nobody likes downtime, and that's why Downtime Monitor is on the job, keeping tabs on your site by checking it every five minutes. As soon as any downtime is detected, you will receive an email notification alerting you to the issue. That way you can act quickly, to get your site back online again!"
+msgstr "沒有任何人喜歡停機，所以 Downtime Monitor 目前執行中，透過每五分鐘進行檢查以監控你的網站。只要偵測到任何停機，你將會收到電子郵件通知，警告你出現問題。如此一來，你就可以迅速行動，讓你的網站重新恢復線上狀態！"
 
 #: modules/module-headings.php:39
 msgctxt "Jumpstart Description"
@@ -10414,12 +10491,6 @@ msgstr "內容說明"
 msgid "Drop images to upload"
 msgstr "請將圖片拖曳到這裡上傳"
 
-#: modules/custom-css/custom-css-4.7.php:148
-#: modules/custom-css/custom-css-4.7.php:151
-#: modules/custom-css/custom-css.php:892
-msgid "Edit CSS"
-msgstr "編輯CSS"
-
 #: modules/custom-post-types/comics.php:226
 msgid "Edit Comic"
 msgstr "編輯漫畫"
@@ -11133,6 +11204,20 @@ msgstr ""
 "\n"
 "祝 笑口常開\n"
 "WordPress.com 團隊敬上"
+
+#: modules/custom-css/custom-css.php:1007
+msgid ""
+"New to CSS? Start with a <a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">beginner tutorial</a>. Questions?\n"
+"\t\tAsk in the <a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">Themes and Templates forum</a>."
+msgstr ""
+"對 CSS 不熟悉嗎？請從<a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">新手教學課程</a>開始吧。有任何問題嗎？\n"
+"\t\t歡迎到<a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">佈景主題和範本論壇</a>提問。"
+
+#: modules/custom-css/custom-css-4.7.php:148
+#: modules/custom-css/custom-css-4.7.php:151
+#: modules/custom-css/custom-css.php:892
+msgid "Edit CSS"
+msgstr "編輯 CSS"
 
 #: modules/contact-form/grunion-form-view.php:169
 msgctxt "%1$s = \"Click here\" in an HTML link"
@@ -13034,3 +13119,7 @@ msgstr "使用者 %s 無法中斷連結。您確定它們已連結？"
 #: class.jetpack-cli.php:614
 msgid "Sorry, no updating arrays at this time"
 msgstr "抱歉，目前不支援更新陣列格式的設定"
+
+#: class.jetpack-cli.php:206
+msgid "Jetpack has been successfully disconnected for %s."
+msgstr "Jetpack 已成功中斷 %s 的連結。"

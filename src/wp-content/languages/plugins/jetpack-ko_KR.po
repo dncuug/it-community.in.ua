@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-08 19:21:34+0000\n"
+"PO-Revision-Date: 2018-11-28 08:54:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -318,6 +318,10 @@ msgstr "나중에"
 #: class.jetpack-connection-banner.php:853
 msgid "Hassle-free design, marketing, and security — all in one place."
 msgstr "편리한 디자인, 마케팅 및 보안이 모두 한곳에서 가능합니다."
+
+#: class.jetpack-connection-banner.php:885
+msgid "Publish: Post on the go from any device using the WordPress apps for iOS, Android, Windows, Linux, and macOS."
+msgstr "게시: iOS, Android, Windows, Linux 및 macOS용 워드프레스 앱을 사용하여 이동 중에 모든 기기에서 게시합니다."
 
 #: class.jetpack-connection-banner.php:852
 msgid "The ideal way to experience WordPress"
@@ -708,6 +712,10 @@ msgstr "%s 더 보기"
 #: modules/comments/comments.php:317
 msgid "Comment Form"
 msgstr "댓글 양식"
+
+#: functions.global.php:121
+msgid "By clicking the <strong>Set up Jetpack</strong> button, you agree to our <a href=\"%s\" target=\"_blank\">Terms of Service</a> and to <a href=\"%s\" target=\"_blank\">share details</a> with WordPress.com."
+msgstr "<strong>젯팩 설정</strong> 버튼을 클릭하면 <a href=\"%s\" target=\"_blank\">서비스 약관</a> 및 워드프레스닷컴과 <a href=\"%s\" target=\"_blank\">세부 정보 공유</a>에 동의하는 것입니다."
 
 #: json-endpoints/class.wpcom-json-api-render-embed-endpoint.php:63
 msgid "The requested URL is not an embed."
@@ -2121,9 +2129,17 @@ msgstr "유효한 내부 데이터가 아닙니다."
 msgid "With Jetpack Professional, you can create the perfect site with one of over 300 professionally-designed WordPress themes, including more than 200 premium themes. Customize your content with a variety of widgets, or add unlimited videos to your posts and pages -- displayed free of ads or watermarks."
 msgstr "젯팩 프로를 사용하면 100개 이상의 프리미엄 테마를 포함하여 300개 이상의 전문적으로 디자인된 WordPress 테마 중 하나로 완벽한 사이트를 만들 수 있습니다. 다양한 위젯으로 콘텐츠를 사용자 정의하거나, 광고 또는 워터마크 없이 표시되는 무제한 동영상을 글과 페이지에 추가합니다."
 
+#: _inc/jetpack-strings.php:709
+msgid "Thanks for choosing Jetpack Professional. Jetpack is now backing up your content in real-time, indexing your content for search, scanning for security threats, and granting access to premium themes."
+msgstr "젯팩 프로를 선택해 주셔서 감사합니다. 젯팩은 이제 고객님의 콘텐츠를 실시간으로 백업하고, 검색할 콘텐츠를 인덱싱하고, 보안 위협을 검사하고, 프리미엄 테마에 액세스할 수 있는 권한을 제공합니다."
+
 #: _inc/jetpack-strings.php:714 _inc/jetpack-strings.php:723
 msgid "Growing your following is easy with your Professional plan, thanks to content sharing and scheduling, SEO tools, and built-in subscription options. You can monetize your site with a simple payment button and in-line ads, and monitor the success of your efforts by integrating with Google Analytics."
 msgstr "콘텐츠 공유 및 예약, SEO 도구 및 내장된 구독 옵션으로 인해 프로 요금제를 사용하면 팔로잉을 쉽게 늘릴 수 있습니다. 간단한 결제 버튼과 인라인 광고로 사이트를 수익화하고, Google 웹로그 분석과 통합하여 성공 여부를 모니터링할 수 있습니다."
+
+#: _inc/jetpack-strings.php:693
+msgid "Your Jetpack plan gives you everything you need to keep your hard work safe, including on-demand backups and malware scans with one-click restores and issue resolution. Your site will be fully protected against spam, malicious code, and brute force login attempts."
+msgstr "젯팩 요금제는 원클릭 복원 및 문제 해결을 통해 주문형 백업 및 악성 코드 검사 등의 힘든 작업을 안전하게 유지하는 데 필요한 모든 것을 제공합니다. 고객님의 사이트는 스팸, 악성 코드 및 무차별 대입 로그인 시도로부터 완벽하게 보호됩니다."
 
 #: _inc/jetpack-strings.php:715
 msgid "Start exploring Jetpack Professional now to see all the benefits of your new plan."
@@ -2616,6 +2632,10 @@ msgstr "목성"
 #: _inc/jetpack-strings.php:547
 msgid "Stars"
 msgstr "별"
+
+#: _inc/jetpack-strings.php:486
+msgid "By clicking the button below, you agree to our {{tosLink}}Terms of Service{{/tosLink}} and to {{shareDetailsLink}}share details{{/shareDetailsLink}} with WordPress.com."
+msgstr "아래 버튼을 클릭하면 {{tosLink}}서비스 약관{{/tosLink}} 및 워드프레스닷컴과의 {{shareDetailsLink}}세부 정보 공유{{/shareDetailsLink}}에 동의하는 것입니다"
 
 #: _inc/jetpack-strings.php:316
 msgid "Display ads below posts on"
@@ -3265,6 +3285,11 @@ msgctxt "Button caption"
 msgid "Save settings"
 msgstr "설정 저장"
 
+#: _inc/jetpack-strings.php:617
+msgctxt "A heading for a block of related posts."
+msgid "Related"
+msgstr "관련"
+
 #: _inc/jetpack-strings.php:621
 msgctxt "Noun, a header for a preview block in a configuration screen."
 msgid "Preview"
@@ -3392,6 +3417,10 @@ msgstr "프론트 페이지와 아카이브 페이지에 전체 글 대신 요�
 #: _inc/jetpack-strings.php:447
 msgid "Show featured images"
 msgstr "추천 이미지 표시"
+
+#: _inc/jetpack-strings.php:562
+msgid "Brute force attack protection and downtime monitoring"
+msgstr "무차별 공격 대입 보호 및 다운시간 모니터링"
 
 #: _inc/jetpack-strings.php:410
 msgctxt "Settings header"
@@ -4083,6 +4112,10 @@ msgstr "폭(픽셀):"
 #: modules/widgets/milestone/milestone.php:620
 msgid "Minutes"
 msgstr "분"
+
+#: modules/widgets/eu-cookie-law/form.php:201
+msgid "days"
+msgstr "일"
 
 #: modules/shortcodes/unavailable.php:61
 msgid "The Blip.tv service has been shut down since August 20th, 2015."
@@ -6127,6 +6160,10 @@ msgstr "젯팩을 시작합니다."
 msgid "Would you tell us why? Just {{a}}answering two simple questions{{/a}} would help us improve Jetpack."
 msgstr "이유를 말씀해 주시겠어요? {{a}}간단한 질문 두 가지에 대해 답변{{/a}}해 주시면 젯팩을 개선하는 데 도움이 됩니다."
 
+#: class.jetpack-connection-banner.php:985
+msgid "Connect to, or create, a WordPress.com account to start using Jetpack, and activate our powerful security, traffic and customization services."
+msgstr "젯팩 사용을 시작하려면 워드프레스닷컴 계정에 연결하거나 워드프레스닷컴 계정을 만들고, 강력한 보안, 트래픽 및 사용자 정의 서비스를 활성화합니다."
+
 #: _inc/jetpack-strings.php:542
 msgctxt "Header. Noun: Protect is a module of Jetpack."
 msgid "Protect"
@@ -6351,6 +6388,10 @@ msgstr "젯팩이 사이트를 모니터링합니다. 사이트가 다운된 상
 msgid "{{a}}Activate{{/a}} to enhance the performance and speed of your images."
 msgstr "이미지 성능 및 속도를 향상하려면 {{a}}Photon을 활성화{{/a}}하세요."
 
+#: _inc/jetpack-strings.php:97
+msgid "{{a}}Turn on plugin autoupdates{{/a}}"
+msgstr "{{a}}플러그인 자동 업데이트 켜기{{/a}}"
+
 #: _inc/jetpack-strings.php:92
 msgid "Plugin Updates"
 msgstr "플러그인 업데이트"
@@ -6371,6 +6412,10 @@ msgstr "{{a}}VaultPress.com에서 세부 사항 보기{{/a}}"
 msgid "Uh oh, %(number)s threat found."
 msgid_plural "Uh oh, %(number)s threats found."
 msgstr[0] "%(number)s 위협을 발견했습니다."
+
+#: _inc/jetpack-strings.php:82
+msgid "Downtime monitoring"
+msgstr "다운시간 모니터링"
 
 #: _inc/jetpack-strings.php:78 _inc/jetpack-strings.php:692
 #: modules/masterbar/masterbar.php:473
@@ -6496,6 +6541,10 @@ msgstr "전체 사이트를 자동으로 백업하려면 {{a}}계정을 업그�
 #: _inc/jetpack-strings.php:81 class.jetpack-connection-banner.php:207
 msgid "Performance"
 msgstr "성능"
+
+#: _inc/jetpack-strings.php:86
+msgid "{{a}}Activate Monitor{{/a}} to receive email notifications if your site goes down."
+msgstr "사이트가 다운된 경우 이메일 알림을 받으려면 {{a}}Monitor를 활성화{{/a}}하세요."
 
 #: _inc/jetpack-strings.php:34
 msgid "Regenerated %(slug)s address ."
@@ -8000,6 +8049,10 @@ msgstr "트위터 사용자명:"
 msgid "You need to enter your numeric user ID for the <a href=\"%1$s\">Goodreads Widget</a> to work correctly. <a href=\"%2$s\" target=\"_blank\">Full instructions</a>."
 msgstr "숫자로 된 사용자 ID를 입력해야 <a href=\"%1$s\">Goodreads 위젯</a>이 정상 작동합니다. <a href=\"%2$s\" target=\"_blank\">전체 지침</a>."
 
+#: modules/widgets/contact-info.php:25
+msgid "Display a map with your location, hours, and contact information."
+msgstr "위치, 영업시간, 연락처 정보가 담긴 지도를 표시하세요."
+
 #. Translators: Stats dashboard widget postviews list: "$post_title $views
 #. Views".
 #: modules/stats.php:1457
@@ -8997,6 +9050,10 @@ msgctxt "share to"
 msgid "Twitter"
 msgstr "트위터"
 
+#: modules/sharedaddy/sharing.php:186
+msgid "This plugin will work without it, but multibyte support is used <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">if available</a>. You may see minor problems with Tweets and other sharing services."
+msgstr "없을 경우 이 플러그인이 작동하지 않지만, <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">가능한 경우</a> 멀티바이트 지원이 사용됩니다. 트윗 및 다른 공유 서비스에 사소한 문제가 있을 수 있습니다."
+
 #: modules/protect/math-fallback.php:53
 msgid "<strong>You failed to correctly answer the math problem.</strong>  This is used to combat spam when the Protect API is unavailable.  Please use your browser's back button to return to the login form, press the \"refresh\" button to generate a new math problem, and try to log in again."
 msgstr "<strong>수학 문제에 올바르게 답하지 못했습니다.</strong> 이 방법은 프로텍트 API를 사용할 수 없을 경우 스팸을 차단하기 위해 사용됩니다. 브라우저의 뒤로 버튼을 사용하여 로그인 양식으로 돌아간 다음 \"새로고침\" 버튼을 눌러 수학 문제를 새로 생성하여 로그인을 다시 시도하세요."
@@ -9382,6 +9439,18 @@ msgstr "메인 블로그가 WordPress.com에 연결되지 않았습니다. 연�
 msgid "WordPress.com"
 msgstr "WordPress.com"
 
+#: modules/monitor.php:55
+msgid "Nobody likes downtime, and that's why Downtime Monitor is on the job, keeping tabs on your site by checking it every five minutes. As soon as any downtime is detected, you will receive an email notification alerting you to the issue. That way you can act quickly, to get your site back online again!"
+msgstr "다운시간을 좋아하는 사람은 아무도 없습니다. 다운시간 모니터링이 진행되어 5분마다 사이트를 확인하여 사이트에 탭을 보관하기 때문입니다. 다운시간이 감지되면 바로 이 문제에 대해 알리는 이메일을 받게 됩니다. 이 방법으로 빠르게 조치를 취하여 사이트를 다시 온라인으로 전환할 수 있습니다!"
+
+#: modules/module-info.php:308
+msgid ""
+"With Carousel active, any standard WordPress galleries or single images you have embedded in posts or pages will\n"
+"\t\tlaunch a full-screen photo browsing experience with comments and EXIF metadata."
+msgstr ""
+"전송기를 통해 글이나 페이지에 포함한 모든 표준 워드프레스 갤러리나 단일 이미지가 댓글 및\n"
+"\t\tEXIF 메타데이터로 전체 화면 사진 탐색 환경을 실행합니다."
+
 #: modules/module-headings.php:39
 msgctxt "Jumpstart Description"
 msgid "Adds a button to your post and page editors, allowing you to build simple forms to help visitors stay in touch."
@@ -9422,6 +9491,11 @@ msgctxt "Jumpstart Description"
 msgid "Mirrors and serves your images from our free and fast image CDN, improving your site’s performance with no additional load on your servers."
 msgstr "무료인 데다 속도도 빠른 이미지 CDN에서 이미지를 미러링하여 제공하므로 사용자의 서버에 부하가 추가되는 일 없이 사이트 성능을 향상할 수 있습니다."
 
+#: modules/module-headings.php:171
+msgctxt "Jumpstart Description"
+msgid "Twitter, Facebook and Google+ buttons at the bottom of each post, making it easy for visitors to share your content."
+msgstr "각 게시글 맨 아래에 있는 Twitter, Facebook 및 Google+ 버튼을 통해 방문자가 콘텐츠를 쉽게 공유할 수 있습니다."
+
 #: modules/module-headings.php:64
 msgctxt "Module Description"
 msgid "Enable pop-up business cards over commenters’ Gravatars."
@@ -9431,6 +9505,11 @@ msgstr "댓글자의 그라바타에 팝업 명함을 사용하도록 설정하�
 msgctxt "Module Description"
 msgid "Increase reach and traffic."
 msgstr "연결 및 트래픽을 늘립니다."
+
+#: modules/module-headings.php:102
+msgctxt "Module Description"
+msgid "Write posts or pages in plain-text Markdown syntax"
+msgstr "단순 텍스트 마크다운 문법으로 글이나 페이지를 작성하세요."
 
 #: modules/module-headings.php:79
 msgctxt "Module Name"
@@ -9451,6 +9530,11 @@ msgstr "문의 양식"
 msgctxt "Module Name"
 msgid "Custom CSS"
 msgstr "사용자 정의 CSS"
+
+#: modules/module-headings.php:43
+msgctxt "Module Name"
+msgid "Custom content types"
+msgstr "사용자 정의 콘텐츠 유형"
 
 #: modules/module-headings.php:53
 msgctxt "Module Name"
@@ -9512,6 +9596,11 @@ msgctxt "Module Name"
 msgid "Photon"
 msgstr "Photon"
 
+#: modules/module-headings.php:133
+msgctxt "Module Name"
+msgid "Post by email"
+msgstr "이메일로 게시"
+
 #: modules/module-headings.php:138
 msgctxt "Module Name"
 msgid "Protect"
@@ -9521,6 +9610,11 @@ msgstr "보호"
 msgctxt "Module Name"
 msgid "Publicize"
 msgstr "배포 기능"
+
+#: modules/module-headings.php:153
+msgctxt "Module Name"
+msgid "Related posts"
+msgstr "관련 글"
 
 #: modules/module-headings.php:169
 msgctxt "Module Name"
@@ -9541,6 +9635,11 @@ msgstr "SSO"
 msgctxt "Module Name"
 msgid "Site Stats"
 msgstr "사이트 통계"
+
+#: modules/module-headings.php:218
+msgctxt "Module Name"
+msgid "Site verification"
+msgstr "사이트 확인"
 
 #: modules/module-headings.php:201
 msgctxt "Module Name"
@@ -9674,6 +9773,11 @@ msgstr "사이트의 어느 곳에든지 사용자 정의할 수 있는 문의 �
 msgctxt "Module Description"
 msgid "Allow visitors to share your content."
 msgstr "방문자가 콘텐츠를 공유할 수 있도록 허용하세요."
+
+#: modules/module-headings.php:202
+msgctxt "Module Description"
+msgid "Allow users to subscribe to your posts and comments and receive notifications via email"
+msgstr "사용자가 글이나 댓글을 구독하고 이메일을 통해 알림을 받을 수 있도록 허용"
 
 #. translators: Date and time
 #. translators: 1: date, 2: time
@@ -11137,6 +11241,19 @@ msgstr ""
 "\n"
 "웃음이 가득한 하루를 보내시길 바랍니다.\n"
 "워드프레스닷컴 팀"
+
+#: modules/custom-css/custom-css.php:1007
+msgid ""
+"New to CSS? Start with a <a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">beginner tutorial</a>. Questions?\n"
+"\t\tAsk in the <a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">Themes and Templates forum</a>."
+msgstr ""
+"CSS가 처음이세요? <a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">초보자 강좌</a>로 시작하세요. 질문이 있나요?\n"
+"\t\t<a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">테마 및 템플릿 포럼</a>에서 질문하세요."
+
+#: modules/custom-css/custom-css.php:1081
+msgid "The default content width for the %s theme is %d pixel."
+msgid_plural "The default content width for the %s theme is %d pixels."
+msgstr[0] "%s 테마의 기본 콘텐츠 폭은 %d픽셀입니다."
 
 #: modules/contact-form/grunion-form-view.php:169
 msgctxt "%1$s = \"Click here\" in an HTML link"
@@ -13029,3 +13146,16 @@ msgstr "값"
 #: _inc/jetpack-strings.php:493
 msgid "Test your site’s compatibility with Jetpack."
 msgstr "사이트가 젯팩과 호환되는지 테스트하세요."
+
+#. translators: %s is a username
+#: class.jetpack-cli.php:216
+msgid "User %s could not be disconnected. Are you sure they're connected currently?"
+msgstr "%s 사용자를 연결 해제할 수 없습니다. 이들이 현재 연결되어 있나요?"
+
+#: class.jetpack-cli.php:213
+msgid "User has been successfully disconnected."
+msgstr "사용자가 연결 해제되었습니다."
+
+#: class.jetpack-cli.php:206
+msgid "Jetpack has been successfully disconnected for %s."
+msgstr "젯팩이 %s에 대해 연결 해제되었습니다."

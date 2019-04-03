@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-08 19:20:39+0000\n"
+"PO-Revision-Date: 2018-11-08 08:54:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -322,6 +322,10 @@ msgstr "以后再说"
 #: class.jetpack-connection-banner.php:853
 msgid "Hassle-free design, marketing, and security — all in one place."
 msgstr "提供设计、营销和安全一站式服务。"
+
+#: class.jetpack-connection-banner.php:885
+msgid "Publish: Post on the go from any device using the WordPress apps for iOS, Android, Windows, Linux, and macOS."
+msgstr "发布：通过适用于 iOS、Android、Windows、Linux 和 macOS 的 WordPress 应用程序，使用任何设备均可随时随地发布文章。"
 
 #. translators: %d is a numeric ID. Example: 1234.
 #: class.jetpack-cli.php:1405
@@ -729,6 +733,10 @@ msgstr "embed_url 参数必须是有效的 URL。"
 #: json-endpoints/class.wpcom-json-api-render-embed-endpoint.php:36
 msgid "Your token must have permission to post on this blog."
 msgstr "您的令牌必须拥有在此博客上发布博文的权限。"
+
+#: functions.global.php:121
+msgid "By clicking the <strong>Set up Jetpack</strong> button, you agree to our <a href=\"%s\" target=\"_blank\">Terms of Service</a> and to <a href=\"%s\" target=\"_blank\">share details</a> with WordPress.com."
+msgstr "点击<strong>设置 Jetpack</strong> 按钮即表示，您同意遵守我们的<a href=\"%s\" target=\"_blank\">服务条款</a>，并与 WordPress.com <a href=\"%s\" target=\"_blank\">共享详细信息</a>。"
 
 #: class.jetpack.php:4150
 msgid "Could not activate %s"
@@ -2125,9 +2133,17 @@ msgstr "不是有效的初始启用数据。"
 msgid "With Jetpack Professional, you can create the perfect site with one of over 300 professionally-designed WordPress themes, including more than 200 premium themes. Customize your content with a variety of widgets, or add unlimited videos to your posts and pages -- displayed free of ads or watermarks."
 msgstr "借助 Jetpack 专业版，您可以从 300 多种经过专业设计的 WordPress 主题（包括 200 多个高级套餐主题）中选择其一来创建完美的网站。使用各种小组件自定义您的内容，或者将不限数量的视频添加到您的文章和页面 - 可无广告或无水印显示。"
 
+#: _inc/jetpack-strings.php:709
+msgid "Thanks for choosing Jetpack Professional. Jetpack is now backing up your content in real-time, indexing your content for search, scanning for security threats, and granting access to premium themes."
+msgstr "感谢您选择 Jetpack 专业版套餐。Jetpack 现在可以实时备份内容，将内容编入索引以便于搜索，扫描安全威胁，并授予对高级套餐主题的访问权限。"
+
 #: _inc/jetpack-strings.php:714 _inc/jetpack-strings.php:723
 msgid "Growing your following is easy with your Professional plan, thanks to content sharing and scheduling, SEO tools, and built-in subscription options. You can monetize your site with a simple payment button and in-line ads, and monitor the success of your efforts by integrating with Google Analytics."
 msgstr "得益于专业版套餐的内容共享和预发布功能、搜索引擎优化 (SEO) 工具及内置的订阅选项，轻轻松松即可增加粉丝人数。您可以通过一个简单的付款按钮和一些内嵌广告来利用您的站点获利，并通过与 Google Analytics（分析）集成来监控您的工作成果。"
+
+#: _inc/jetpack-strings.php:693
+msgid "Your Jetpack plan gives you everything you need to keep your hard work safe, including on-demand backups and malware scans with one-click restores and issue resolution. Your site will be fully protected against spam, malicious code, and brute force login attempts."
+msgstr "Jetpack 套餐可为您提供所需的一切来保护您的工作成果安全无虞，其中包括按需备份和恶意软件扫描，以及一键还原和问题解决方案。您的站点将获得全面保护，有效防御垃圾邮件、恶意代码和暴力破解密码登录企图。"
 
 #: _inc/jetpack-strings.php:715
 msgid "Start exploring Jetpack Professional now to see all the benefits of your new plan."
@@ -2621,6 +2637,10 @@ msgstr "请稍候片刻，正在收集数据，稍后会在此处显示相关数
 msgid "Okay, got it!"
 msgstr "好，可以了！"
 
+#: _inc/jetpack-strings.php:486
+msgid "By clicking the button below, you agree to our {{tosLink}}Terms of Service{{/tosLink}} and to {{shareDetailsLink}}share details{{/shareDetailsLink}} with WordPress.com."
+msgstr "点击下方按钮即表示您同意我们的{{tosLink}}服务条款{{/tosLink}}，并与 WordPress.com {{shareDetailsLink}}共享详细信息{{/shareDetailsLink}}。"
+
 #: _inc/jetpack-strings.php:217
 msgid "Welcome to Jetpack Personal"
 msgstr "欢迎使用 Jetpack 个人版"
@@ -2684,6 +2704,10 @@ msgstr "无限制的付费主题"
 #: _inc/jetpack-strings.php:87
 msgid "Image Performance"
 msgstr "图像性能"
+
+#: _inc/jetpack-strings.php:156
+msgid "Exclusive hand-crafted designs you will love with dedicated support directly from the theme authors."
+msgstr "引人喜爱的独特手工设计，由主题创作者直接提供专属支持。"
 
 #: modules/widgets/flickr.php:151
 msgid "(Only admins can see this message)"
@@ -3258,6 +3282,11 @@ msgctxt "Noun, a header for a preview block in a configuration screen."
 msgid "Preview"
 msgstr "预览"
 
+#: _inc/jetpack-strings.php:617
+msgctxt "A heading for a block of related posts."
+msgid "Related"
+msgstr "相关文章"
+
 #: _inc/jetpack-strings.php:550 _inc/jetpack-strings.php:554
 #: _inc/jetpack-strings.php:558
 msgid "Priority support"
@@ -3380,6 +3409,10 @@ msgstr "在首页和存档页面上使用摘录，而非完整文章"
 #: _inc/jetpack-strings.php:447
 msgid "Show featured images"
 msgstr "显示特色图片"
+
+#: _inc/jetpack-strings.php:562
+msgid "Brute force attack protection and downtime monitoring"
+msgstr "暴力破解攻击防护和停机时间监控"
 
 #: _inc/jetpack-strings.php:410
 msgctxt "Settings header"
@@ -6115,6 +6148,10 @@ msgstr "您希望在 Jetpack 控制面板上看到哪些内容？"
 msgid "Would you tell us why? Just {{a}}answering two simple questions{{/a}} would help us improve Jetpack."
 msgstr "您可以告诉我们原因吗？只需{{a}}回答两个简单问题{{/a}}即可帮助我们改善 Jetpack。"
 
+#: class.jetpack-connection-banner.php:985
+msgid "Connect to, or create, a WordPress.com account to start using Jetpack, and activate our powerful security, traffic and customization services."
+msgstr "创建或连接至 WordPress.com 帐户以开始使用 Jetpack，并激活功能强大的安全、流量和自定义服务。"
+
 #: _inc/jetpack-strings.php:542
 msgctxt "Header. Noun: Protect is a module of Jetpack."
 msgid "Protect"
@@ -6484,6 +6521,10 @@ msgstr "键无效"
 #: _inc/jetpack-strings.php:64
 msgid "To automatically back up your entire site, please {{a}}upgrade your account{{/a}}."
 msgstr "要自动备份您整个站点，请{{a}}升级您的帐户{{/a}}。"
+
+#: _inc/jetpack-strings.php:86
+msgid "{{a}}Activate Monitor{{/a}} to receive email notifications if your site goes down."
+msgstr "{{a}}激活 Monitor{{/a}}，以便在您的站点出现故障时接收电子邮件通知。"
 
 #: _inc/jetpack-strings.php:11 _inc/jetpack-strings.php:647
 #: _inc/jetpack-strings.php:653
@@ -8996,6 +9037,10 @@ msgstr "Twitter"
 msgid "Log in with WordPress.com"
 msgstr "使用 WordPress.com 帐户登录"
 
+#: modules/sharedaddy/sharing.php:186
+msgid "This plugin will work without it, but multibyte support is used <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">if available</a>. You may see minor problems with Tweets and other sharing services."
+msgstr "如果没有多字节支持，此插件也能运行；但<a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">如果有</a>，便需使用该支持。您可能会看到推文及其他共享服务存在小问题。"
+
 #: modules/protect/math-fallback.php:53
 msgid "<strong>You failed to correctly answer the math problem.</strong>  This is used to combat spam when the Protect API is unavailable.  Please use your browser's back button to return to the login form, press the \"refresh\" button to generate a new math problem, and try to log in again."
 msgstr "<strong>您给出的数学问题答案有误。</strong>该方法可在 Protect API 不可用时抵御垃圾邮件。请使用浏览器的“返回”按钮返回到登录表格，并按下“刷新”按钮生成新的数学问题，重新尝试登录。"
@@ -9386,6 +9431,10 @@ msgid ""
 "With Carousel active, any standard WordPress galleries or single images you have embedded in posts or pages will\n"
 "\t\tlaunch a full-screen photo browsing experience with comments and EXIF metadata."
 msgstr "激活轮播方式后，您在文章或页面中嵌入的任何标准 WordPress 图库都将启动包含评论和 EXIF 元数据的全屏照片浏览体验。"
+
+#: modules/monitor.php:55
+msgid "Nobody likes downtime, and that's why Downtime Monitor is on the job, keeping tabs on your site by checking it every five minutes. As soon as any downtime is detected, you will receive an email notification alerting you to the issue. That way you can act quickly, to get your site back online again!"
+msgstr "任何人都不喜欢停机，这正是运行 Jetpack Monitor 的原因，它每五分钟会检查一次站点来对其保持密切关注。一旦检测到停机，您将收到一封电子邮件通知，警告您存在问题。这样您可以迅速采取行动，使您的站点再次回归上线状态！"
 
 #: modules/module-headings.php:39
 msgctxt "Jumpstart Description"
@@ -11182,6 +11231,14 @@ msgstr[0] "%s 主题的默认内容宽度是 %d 像素。"
 #: modules/masterbar/masterbar.php:809 modules/masterbar/masterbar.php:822
 msgid "Portfolio"
 msgstr "作品集"
+
+#: modules/custom-css/custom-css.php:1007
+msgid ""
+"New to CSS? Start with a <a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">beginner tutorial</a>. Questions?\n"
+"\t\tAsk in the <a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">Themes and Templates forum</a>."
+msgstr ""
+"不了解 CSS？首先查看<a href=\"http://www.htmldog.com/guides/cssbeginner/\" rel=\"noopener noreferrer\" target=\"_blank\">初学者教程</a>。有问题吗？\n"
+"\t\t在<a href=\"https://wordpress.org/support/forum/themes-and-templates\" rel=\"noopener noreferrer\" target=\"_blank\">“主题和模板”论坛</a>中提问。"
 
 #: modules/contact-form/grunion-form-view.php:169
 msgctxt "%1$s = \"Click here\" in an HTML link"

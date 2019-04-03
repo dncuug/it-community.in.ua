@@ -28,7 +28,6 @@ function wp_insert_form_accordion_tabs_notes($control, $identifier, $location) {
 		} else {
 			$title = $control->values['title'];
 		}
-		echo $title;
 		$control->add_control(array('type' => 'text', 'optionName' => 'title', 'helpText' => 'The title is used to identify your Ad Widget easily in future.  A Random Title will be assigned to your Ad widget by default.', 'value' => $title));
 		$control->create_section('Title');
 		echo $control->HTML;

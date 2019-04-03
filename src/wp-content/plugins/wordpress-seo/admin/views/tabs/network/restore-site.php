@@ -3,10 +3,8 @@
  * WPSEO plugin file.
  *
  * @package WPSEO\Admin\Views
- */
-
-/**
- * @var Yoast_Form $yform
+ *
+ * @uses Yoast_Form $yform Form object.
  */
 
 if ( ! defined( 'WPSEO_VERSION' ) ) {
@@ -23,7 +21,7 @@ if ( get_blog_count() <= 100 ) {
 	$yform->select(
 		'site_id',
 		__( 'Site ID', 'wordpress-seo' ),
-		$network_admin->get_site_choices()
+		$network_admin->get_site_choices( false, true )
 	);
 }
 else {

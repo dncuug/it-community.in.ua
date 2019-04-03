@@ -2,6 +2,8 @@
 
 final class ITSEC_Security_Check_Scanner {
 	private static $available_modules;
+
+	/** @var ITSEC_Security_Check_Feedback */
 	private static $feedback;
 
 
@@ -93,6 +95,8 @@ final class ITSEC_Security_Check_Scanner {
 		self::enforce_setting( 'global', 'write_files', true, __( 'Enabled the Write to Files setting in Global Settings.', 'better-wp-security' ) );
 
 		self::enforce_setting( 'online-files', 'compare_file_hashes', true, __( 'Enabled Online Files Comparison in File Change Detection.', 'better-wp-security' ) );
+		self::check_server_ips();
+		self::do_loopback();
 
 		do_action( 'itsec-security-check-after-default-checks', self::$feedback, self::$available_modules );
 	}
@@ -218,5 +222,70 @@ final class ITSEC_Security_Check_Scanner {
 			ITSEC_Response::add_js_function_call( 'setModuleToActive', 'network-brute-force' );
 			ITSEC_Response::set_response( '<p>' . __( 'Your site is now using Network Brute Force Protection.', 'better-wp-security' ) . '</p>' );
 		}
+	}
+
+	private static function check_server_ips() {
+
+		$response = dns_get_record( parse_url( site_url(), PHP_URL_HOST ), DNS_A + ( defined( 'DNS_AAAA' ) ? DNS_AAAA : 0 ) );
+
+		if ( ! $response ) {
+			return;
+		}
+
+		$ips = array();
+
+		foreach ( $response as $record ) {
+			if ( isset( $record['ipv6'] ) ) {
+				$ips[] = $record['ipv6'];
+			}
+
+			if ( isset( $record['ip'] ) ) {
+				$ips[] = $record['ip'];
+			}
+		}
+
+		if ( $ips ) {
+			ITSEC_Modules::set_setting( 'global', 'server_ips', array_merge( $ips, ITSEC_Modules::get_setting( 'global', 'server_ips' ) ) );
+
+			self::$feedback->add_section( 'server-ips', array( 'status' => 'action-taken' ) );
+			self::$feedback->add_text( __( 'Identified server IPs to determine loopback requests.', 'better-wp-security' ) );
+		}
+	}
+
+	private static function do_loopback() {
+		$exp    = ITSEC_Core::get_current_time_gmt() + 60;
+		$action = 'itsec-check-loopback';
+		$hash   = hash_hmac( 'sha1', "{$action}|{$exp}", wp_salt() );
+
+		$response = wp_remote_post( admin_url( 'admin-post.php' ), array(
+			'body' => array(
+				'action' => $action,
+				'hash'   => $hash,
+				'exp'    => $exp,
+			),
+		) );
+
+		if ( is_wp_error( $response ) ) {
+			self::$feedback->add_section( 'loopback', array( 'status' => 'error' ) );
+			self::$feedback->add_text( sprintf( __( 'Skipping loopback test: %s', 'better-wp-security' ), $response->get_error_message() ) );
+
+			return;
+		}
+
+		$ip = trim( wp_remote_retrieve_body( $response ) );
+
+		require_once( ITSEC_Core::get_core_dir() . '/lib/class-itsec-lib-ip-tools.php' );
+
+		if ( ! ITSEC_Lib_IP_Tools::validate( $ip ) ) {
+			self::$feedback->add_section( 'loopback', array( 'status' => 'error' ) );
+			self::$feedback->add_text( sprintf( __( 'Invalid IP returned: %s', 'better-wp-security' ), esc_attr( $ip ) ) );
+
+			return;
+		}
+
+		ITSEC_Modules::set_setting( 'global', 'server_ips', array_merge( array( $ip ), ITSEC_Modules::get_setting( 'global', 'server_ips' ) ) );
+
+		self::$feedback->add_section( 'loopback', array( 'status' => 'action-taken' ) );
+		self::$feedback->add_text( __( 'Identified loopback IP.', 'better-wp-security' ) );
 	}
 }

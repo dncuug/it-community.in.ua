@@ -94,7 +94,20 @@ add_filter('wp_insert_inpostads_form_accordion_tabs', 'wp_insert_form_accordion_
 add_filter('wp_insert_inpostads_form_accordion_tabs', 'wp_insert_form_accordion_tabs_geo_targeting', 40, 3);
 add_filter('wp_insert_inpostads_form_accordion_tabs', 'wp_insert_form_accordion_tabs_devices_styles', 50, 3);
 add_filter('wp_insert_inpostads_form_accordion_tabs', 'wp_insert_form_accordion_tabs_notes', 60, 3);
-add_filter('wp_insert_inpostads_form_accordion_tabs', 'wp_insert_inpostads_form_accordion_tabs_positioning', 70, 3);
+add_filter('wp_insert_inpostads_form_accordion_tabs', 'wp_insert_inpostads_form_accordion_tabs_manual_override', 70, 3);
+add_filter('wp_insert_inpostads_form_accordion_tabs', 'wp_insert_inpostads_form_accordion_tabs_positioning', 80, 3);
+
+function wp_insert_inpostads_form_accordion_tabs_manual_override($control, $identifier, $location) {
+	echo '<h3 class="wp_insert_inpostads_location_manual_override_panel">Manual Override</h3>';
+	echo '<div>';
+		$control->set_HTML('<p class="codeSnippet"><code>[wpinsertinpostad id="'.$identifier.'"]</code></p><p>For those extreme cases when auto positioning just doesnt work out the way you want, use the shortcode above to precisely position your ad unit inside your post content.<br>Gutenberg users can utilize "Wp-Insert" blocks for manual positioning within post content.</p>');
+		$control->create_section('Code to add to your post/page content');
+		echo $control->HTML;
+		$control->clear_controls();
+	echo '</div>';
+	return $control;
+}
+
 function wp_insert_inpostads_form_accordion_tabs_positioning($control, $identifier, $location) {
 	echo '<h3 class="wp_insert_inpostads_location_middle_panel">Positioning</h3>';
 	echo '<div>';
@@ -111,85 +124,100 @@ function wp_insert_inpostads_form_accordion_tabs_positioning($control, $identifi
 /* Begin In-Post Ads Ad Insertion */
 add_filter('the_content', 'wp_insert_inpostads_the_content', 100);
 function wp_insert_inpostads_the_content($content) {
+	global $post;
 	if(!is_feed() && is_main_query()) { 
 		$inpostads = get_option('wp_insert_inpostads');
 		if(isset($inpostads) && is_array($inpostads)) {
-			$paragraphCount = wp_insert_inpostads_get_paragraph_count($content);
-			foreach($inpostads as $key => $inpostad) {
-				if(!isset($inpostad['location'])) { //Get the location value from the key for old users who doesnt have a location saved.
-					switch($key) {
-						case 'above':
-							$inpostad['location'] = 'above';
-							break;
-						case 'middle':
-							$inpostad['location'] = 'middle';
-							break;
-						case 'below':
-							$inpostad['location'] = 'below';
-							break;
-						case 'left':
-							$inpostad['location'] = 'left';
-							break;
-						case 'right':
-							$inpostad['location'] = 'right';
-							break;
-						default:
-							$inpostad['location'] = 'above';
-							break;
+			$shortcodeInsertions = array();
+			if(preg_match_all('/'.get_shortcode_regex().'/s', $post->post_content, $matches) && array_key_exists(2, $matches) && in_array('wpinsertinpostad', $matches[2])) {
+				foreach($matches[2] as $key => $value) {
+					if('wpinsertinpostad' === $value) {
+						$shortcodeAtts = shortcode_parse_atts($matches[3][$key]);
+						if(isset($shortcodeAtts) && isset($shortcodeAtts['id']) && ($shortcodeAtts['id'] != '')) {
+							$shortcodeInsertions[] = $shortcodeAtts['id'];
+						}
 					}
 				}
-				
-				if(wp_insert_get_ad_status($inpostad)) {
-					switch($inpostad['location']) {
-						case 'above':	
-							$content = wp_insert_get_ad_unit($inpostad).$content;
-							break;
-						case 'middle':
-							if($paragraphCount > 1) {
-								if(($inpostad['paragraph_buffer_count'] == 0) || ($inpostad['paragraph_buffer_count'] == '')) {
-									$position = wp_insert_inpostads_get_insertion_position('/p>', $content, round($paragraphCount / 2));
-								} else {			
-									$position = wp_insert_inpostads_get_insertion_position('/p>', $content, $inpostad['paragraph_buffer_count']);
-								}
-								if($position) {
-									if(($inpostad['minimum_character_count'] == 0) || ($inpostad['minimum_character_count'] == '')) {
-										$content = substr_replace($content, '/p>'.wp_insert_get_ad_unit($inpostad), $position, 3);
-									} else {
-										if(strlen(strip_tags($content)) > $inpostad['minimum_character_count']) {
+			}
+			
+			$paragraphCount = wp_insert_inpostads_get_paragraph_count($content);
+			foreach($inpostads as $key => $inpostad) {
+				if(!in_array($key, $shortcodeInsertions)) {
+					if(!isset($inpostad['location'])) { //Get the location value from the key for old users who doesnt have a location saved.
+						switch($key) {
+							case 'above':
+								$inpostad['location'] = 'above';
+								break;
+							case 'middle':
+								$inpostad['location'] = 'middle';
+								break;
+							case 'below':
+								$inpostad['location'] = 'below';
+								break;
+							case 'left':
+								$inpostad['location'] = 'left';
+								break;
+							case 'right':
+								$inpostad['location'] = 'right';
+								break;
+							default:
+								$inpostad['location'] = 'above';
+								break;
+						}
+					}
+					
+					if(wp_insert_get_ad_status($inpostad)) {
+						switch($inpostad['location']) {
+							case 'above':
+								$content = wp_insert_get_ad_unit($inpostad).$content;
+								break;
+							case 'middle':
+								if($paragraphCount > 1) {
+									if(($inpostad['paragraph_buffer_count'] == 0) || ($inpostad['paragraph_buffer_count'] == '')) {
+										$position = wp_insert_inpostads_get_insertion_position('/p>', $content, round($paragraphCount / 2));
+									} else {			
+										$position = wp_insert_inpostads_get_insertion_position('/p>', $content, $inpostad['paragraph_buffer_count']);
+									}
+									if($position) {
+										if(($inpostad['minimum_character_count'] == 0) || ($inpostad['minimum_character_count'] == '')) {
 											$content = substr_replace($content, '/p>'.wp_insert_get_ad_unit($inpostad), $position, 3);
+										} else {
+											if(strlen(strip_tags($content)) > $inpostad['minimum_character_count']) {
+												$content = substr_replace($content, '/p>'.wp_insert_get_ad_unit($inpostad), $position, 3);
+											}
 										}
 									}
 								}
-							}
-							break;
-						case 'below':
-							$content = $content.wp_insert_get_ad_unit($inpostad);
-							break;
-						case 'left':
-							$content = wp_insert_get_ad_unit($inpostad, 'float: left;').$content;
-							break;
-						case 'right':
-							$content = wp_insert_get_ad_unit($inpostad, 'float: right;').$content;
-							break;
-						case 'paragraphtop':
-							if($paragraphCount > 1) {
-								$position = wp_insert_inpostads_get_insertion_position('/p>', $content, $inpostad['paragraphtopposition']);
-								if($position) {
-									$content = substr_replace($content, '/p>'.wp_insert_get_ad_unit($inpostad), $position, 3);
-								}
-							}
-							break;
-						case 'paragraphbottom':
-							if($paragraphCount > 1) {
-								$paragraphbottomposition = ($paragraphCount - (int)$inpostad['paragraphbottomposition']);
-								if(($paragraphbottomposition > 0) && ($paragraphbottomposition < $paragraphCount)) {
-									$position = wp_insert_inpostads_get_insertion_position('/p>', $content, $paragraphbottomposition);
+								break;
+							case 'below':
+								$content = $content.wp_insert_get_ad_unit($inpostad);
+								break;
+							case 'left':
+								$content = wp_insert_get_ad_unit($inpostad, 'float: left;').$content;
+								break;
+							case 'right':
+								$content = wp_insert_get_ad_unit($inpostad, 'float: right;').$content;
+								break;
+							case 'paragraphtop':
+								if($paragraphCount > 1) {
+									$position = wp_insert_inpostads_get_insertion_position('/p>', $content, $inpostad['paragraphtopposition']);
 									if($position) {
 										$content = substr_replace($content, '/p>'.wp_insert_get_ad_unit($inpostad), $position, 3);
 									}
 								}
-							}
-							break;
+								break;
+							case 'paragraphbottom':
+								if($paragraphCount > 1) {
+									$paragraphbottomposition = ($paragraphCount - (int)$inpostad['paragraphbottomposition']);
+									if(($paragraphbottomposition > 0) && ($paragraphbottomposition < $paragraphCount)) {
+										$position = wp_insert_inpostads_get_insertion_position('/p>', $content, $paragraphbottomposition);
+										if($position) {
+											$content = substr_replace($content, '/p>'.wp_insert_get_ad_unit($inpostad), $position, 3);
+										}
+									}
+								}
+								break;
+						}
 					}
 				}
 			}
@@ -226,4 +254,17 @@ function wp_insert_inpostads_get_insertion_position($search, $string, $offset) {
     }
 }
 /* End In-Post Ads Ad Insertion */
+
+/* Begin In-Post Ads Shortcode Ad Insertion */
+add_shortcode('wpinsertinpostad', 'wp_insert_inpostads_get_shortcode');
+function wp_insert_inpostads_get_shortcode($atts) {
+	$atts = shortcode_atts(array('id' => ''), $atts, 'wpinsertinpostad');
+	if(isset($atts['id']) && ($atts['id'] != '')) {
+		$adunit = get_option('wp_insert_inpostads');
+		if(isset($adunit) && isset($adunit[$atts['id']]) && is_array($adunit[$atts['id']]) && wp_insert_get_ad_status($adunit[$atts['id']])) {
+			return wp_insert_get_ad_unit($adunit[$atts['id']]);
+		}
+	}
+}
+/* End In-Post Ads Shortcode Ad Insertion */
 ?>

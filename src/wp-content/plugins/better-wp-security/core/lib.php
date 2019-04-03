@@ -167,7 +167,6 @@ final class ITSEC_Lib {
 			return $GLOBALS['__itsec_remote_ip'];
 		}
 
-
 		$ip = apply_filters( 'itsec-get-ip', false );
 
 		if ( false !== $ip ) {
@@ -182,24 +181,28 @@ final class ITSEC_Lib {
 
 		unset( $ip );
 
-
-		if ( ITSEC_Modules::get_setting( 'global', 'proxy_override' ) ) {
-			$GLOBALS['__itsec_remote_ip'] = $_SERVER['REMOTE_ADDR'];
-
-			return $GLOBALS['__itsec_remote_ip'];
-		}
-
 		$headers = array(
 			'HTTP_CF_CONNECTING_IP', // CloudFlare
 			'HTTP_X_FORWARDED_FOR',  // Squid and most other forward and reverse proxies
 			'REMOTE_ADDR',           // Default source of remote IP
 		);
 
-		$headers = apply_filters( 'itsec_filter_remote_addr_headers', $headers );
+		$headers = (array) apply_filters( 'itsec_filter_remote_addr_headers', $headers );
+		$proxy   = ITSEC_Modules::get_setting( 'global', 'proxy' );
 
-		$headers = (array) $headers;
+		switch ( $proxy ) {
+			case 'disabled':
+				return $GLOBALS['__itsec_remote_ip'] = $_SERVER['REMOTE_ADDR'];
+			case 'manual':
+				$header = ITSEC_Modules::get_setting( 'global', 'proxy_header' );
 
-		if ( ! in_array( 'REMOTE_ADDR', $headers ) ) {
+				if ( in_array( $header, $headers, true ) ) {
+					$headers = array( $header );
+				}
+				break;
+		}
+
+		if ( ! in_array( 'REMOTE_ADDR', $headers, true ) ) {
 			$headers[] = 'REMOTE_ADDR';
 		}
 
@@ -1221,6 +1224,92 @@ final class ITSEC_Lib {
 	}
 
 	/**
+	 * Parse a complex header that has attributes like quality values.
+	 *
+	 * @example Parsing the Accept-Language header.
+	 *
+	 * "en-US,en;q=0.9,de;q=0.8" transforms to:
+	 *
+	 * [
+	 *     'en-US' => [],
+	 *     'en'    => [ 'q' => 0.9 ],
+	 *     'de'    => [ 'q' => 0.8' ],
+	 * ]
+	 *
+	 * @param string $header
+	 *
+	 * @return string[]
+	 */
+	public static function parse_header_with_attributes( $header ) {
+
+		$parsed = array();
+		$list   = explode( ',', $header );
+
+		foreach ( $list as $value ) {
+
+			$attrs = array();
+			$parts = explode( ';', trim( $value ) );
+			$main  = $parts[0];
+
+			foreach ( $parts as $part ) {
+				if ( false === strpos( $part, '=' ) ) {
+					continue;
+				}
+
+				list( $key, $value ) = array_map( 'trim', explode( '=', $part, 2 ) );
+
+				$attrs[ $key ] = $value;
+			}
+
+			$parsed[ $main ] = $attrs;
+		}
+
+		return $parsed;
+	}
+
+	/**
+	 * Is a particular function allowed to be called.
+	 *
+	 * Checks disabled functions and the function blacklist.
+	 *
+	 * @param string $func
+	 *
+	 * @return bool
+	 */
+	public static function is_func_allowed( $func ) {
+
+		static $cache = array();
+		static $disabled;
+		static $suhosin;
+
+		if ( isset( $cache[ $func ] ) ) {
+			return $cache[ $func ];
+		}
+
+		if ( $disabled === null ) {
+			$disabled = preg_split( '/\s*,\s*/', (string) ini_get( 'disable_functions' ) );
+		}
+
+		if ( $suhosin === null ) {
+			$suhosin = preg_split( '/\s*,\s*/', (string) ini_get( 'suhosin.executor.func.blacklist' ) );
+		}
+
+		if ( ! is_callable( $func ) ) {
+			return $cache[ $func ] = false;
+		}
+
+		if ( in_array( $func, $disabled, true ) ) {
+			return $cache[ $func ] = false;
+		}
+
+		if ( in_array( $func, $suhosin, true ) ) {
+			return $cache[ $func ] = false;
+		}
+
+		return $cache[ $func ] = true;
+	}
+
+	/**
 	 * Get whatever backup plugin is being used on this site.
 	 *
 	 * @return string
@@ -1263,5 +1352,353 @@ final class ITSEC_Lib {
 		}
 
 		return '';
+	}
+
+	/**
+	 * Generate a random token.
+	 *
+	 * @return string Hex token.
+	 */
+	public static function generate_token() {
+
+		$length = 64;
+
+		try {
+			$random = bin2hex( random_bytes( $length / 2 ) );
+		} catch ( Exception $e ) {
+			$unpacked = unpack( 'H*', wp_generate_password( $length / 2, true, true ) );
+			$random   = reset( $unpacked );
+		}
+
+		return $random;
+	}
+
+	/**
+	 * Generate a hash of the token for storage.
+	 *
+	 * @param string $token
+	 *
+	 * @return false|string
+	 */
+	public static function hash_token( $token ) {
+		return hash_hmac( self::get_hash_algo(), $token, wp_salt() );
+	}
+
+	/**
+	 * Check if the provided token matches the stored hashed token.
+	 *
+	 * @param string $provided_token
+	 * @param string $hashed_token
+	 *
+	 * @return bool
+	 */
+	public static function verify_token( $provided_token, $hashed_token ) {
+
+		if ( ! $hashed_token || ! $provided_token ) {
+			return false;
+		}
+
+		return hash_equals( self::hash_token( $provided_token ), $hashed_token );
+	}
+
+	/**
+	 * Get the hash algorithm to use.
+	 *
+	 * PHP can be compiled without the hash extension and the supported hash algos can be variable. WordPress shims
+	 * support for md5 and sha1 hashes with hash_hmac.
+	 *
+	 * @return string
+	 */
+	public static function get_hash_algo() {
+
+		if ( ! function_exists( 'hash_algos' ) ) {
+			return 'sha1';
+		}
+
+		$algos = hash_algos();
+
+		if ( in_array( 'sha256', $algos, true ) ) {
+			return 'sha256';
+		}
+
+		return 'sha1';
+	}
+
+	public static function get_url_from_file( $file, $auto_ssl = true, $prevent_recursion = false ) {
+		$file = str_replace( '\\', '/', $file );
+
+		$url = '';
+
+		$upload_dir            = ITSEC_Core::get_wp_upload_dir();
+		$upload_dir['basedir'] = str_replace( '\\', '/', $upload_dir['basedir'] );
+
+		if ( is_array( $upload_dir ) && ( false === $upload_dir['error'] ) ) {
+			if ( 0 === strpos( $file, $upload_dir['basedir'] ) ) {
+				$url = str_replace( $upload_dir['basedir'], $upload_dir['baseurl'], $file );
+			} elseif ( false !== strpos( $file, 'wp-content/uploads' ) ) {
+				$path_pattern = 'wp-content/uploads';
+				$url_base     = $upload_dir['baseurl'];
+
+				if ( is_multisite() && ! ( is_main_network() && is_main_site() && defined( 'MULTISITE' ) ) ) {
+					if ( defined( 'MULTISITE' ) ) {
+						$mu_path = '/sites/' . get_current_blog_id();
+					} else {
+						$mu_path = '/' . get_current_blog_id();
+					}
+
+					if ( false === strpos( $file, "$path_pattern$mu_path" ) ) {
+						$url_base = substr( $url_base, 0, - strlen( $mu_path ) );
+					} else {
+						$path_pattern .= $mu_path;
+					}
+				}
+
+				$url = $url_base . substr( $file, strpos( $file, $path_pattern ) + strlen( $path_pattern ) );
+			}
+		}
+
+		if ( empty( $url ) ) {
+			if ( ! isset( $GLOBALS['__itsec_cache_wp_content_dir'] ) ) {
+				$GLOBALS['__itsec_cache_wp_content_dir'] = rtrim( str_replace( '\\', '/', WP_CONTENT_DIR ), '/' );
+			}
+			if ( ! isset( $GLOBALS['__itsec_cache_abspath'] ) ) {
+				$GLOBALS['__itsec_cache_abspath'] = rtrim( str_replace( '\\', '/', ABSPATH ), '/' );
+			}
+
+			if ( 0 === strpos( $file, $GLOBALS['__itsec_cache_wp_content_dir'] ) ) {
+				$url = WP_CONTENT_URL . str_replace( '\\', '/', preg_replace( '/^' . preg_quote( $GLOBALS['__itsec_cache_wp_content_dir'], '/' ) . '/', '', $file ) );
+			} elseif ( 0 === strpos( $file, $GLOBALS['__itsec_cache_abspath'] ) ) {
+				$url = get_option( 'siteurl' ) . str_replace( '\\', '/', preg_replace( '/^' . preg_quote( $GLOBALS['__itsec_cache_abspath'], '/' ) . '/', '', $file ) );
+			}
+		}
+
+		if ( empty( $url ) && ! $prevent_recursion ) {
+			$url = self::get_url_from_file( realpath( $file ), $auto_ssl, true );
+		}
+
+		if ( empty( $url ) ) {
+			return '';
+		}
+
+		if ( $auto_ssl ) {
+			$url = self::fix_url( $url );
+		}
+
+		return $url;
+	}
+
+	public static function get_file_from_url( $url ) {
+		$url = preg_replace( '/^https/', 'http', $url );
+		$url = preg_replace( '/\?.*$/', '', $url );
+
+		$file = '';
+
+		$upload_dir = ITSEC_Core::get_wp_upload_dir();
+
+		if ( is_array( $upload_dir ) && ( false === $upload_dir['error'] ) ) {
+			if ( 0 === strpos( $url, $upload_dir['baseurl'] ) ) {
+				$file = str_replace( $upload_dir['baseurl'], $upload_dir['basedir'], $url );
+			} elseif ( false !== strpos( $url, 'wp-content/uploads' ) ) {
+				$path_pattern = 'wp-content/uploads';
+				$file_base    = $upload_dir['basedir'];
+
+				if ( is_multisite() && ! ( is_main_network() && is_main_site() && defined( 'MULTISITE' ) ) ) {
+					if ( defined( 'MULTISITE' ) ) {
+						$mu_path = '/sites/' . get_current_blog_id();
+					} else {
+						$mu_path = '/' . get_current_blog_id();
+					}
+
+					if ( false === strpos( $url, "$path_pattern$mu_path" ) ) {
+						$file_base = substr( $file_base, 0, - strlen( $mu_path ) );
+					} else {
+						$path_pattern .= $mu_path;
+					}
+				}
+
+				$file = $file_base . substr( $url, strpos( $url, $path_pattern ) + strlen( $path_pattern ) );
+			}
+		}
+
+		if ( empty( $file ) ) {
+			if ( ! isset( $GLOBALS['__itsec_cache_wp_content_url'] ) ) {
+				$GLOBALS['__itsec_cache_wp_content_url'] = preg_replace( '/^https/', 'http', WP_CONTENT_URL );
+			}
+			if ( ! isset( $GLOBALS['__itsec_cache_siteurl'] ) ) {
+				$GLOBALS['__itsec_cache_siteurl'] = preg_replace( '/^https/', 'http', get_option( 'siteurl' ) );
+			}
+
+			if ( 0 === strpos( $url, $GLOBALS['__itsec_cache_wp_content_url'] ) ) {
+				$file = rtrim( WP_CONTENT_DIR, '\\\/' ) . preg_replace( '/^' . preg_quote( $GLOBALS['__itsec_cache_wp_content_url'], '/' ) . '/', '', $url );
+			} elseif ( 0 === strpos( $url, $GLOBALS['__itsec_cache_siteurl'] ) ) {
+				$file = rtrim( ABSPATH, '\\\/' ) . preg_replace( '/^' . preg_quote( $GLOBALS['__itsec_cache_siteurl'], '/' ) . '/', '', $url );
+			}
+		}
+
+		return $file;
+	}
+
+	public static function fix_url( $url ) {
+		if ( is_ssl() ) {
+			$url = preg_replace( '|^http://|', 'https://', $url );
+		} else {
+			$url = preg_replace( '|^https://|', 'http://', $url );
+		}
+
+		return $url;
+	}
+
+	/**
+	 * Set a cookie.
+	 *
+	 * @param string $name
+	 * @param string $value
+	 * @param array  $args
+	 */
+	public static function set_cookie( $name, $value, $args = array() ) {
+
+		$args = wp_parse_args( array(
+			'length'    => 0,
+			'http_only' => true,
+		), $args );
+
+		$expires = $args['length'] ? ITSEC_Core::get_current_time_gmt() + $args['length'] : 0;
+
+		setcookie( $name, $value, $expires, COOKIEPATH, COOKIE_DOMAIN, is_ssl(), $args['http_only'] );
+	}
+
+	/**
+	 * Clear a cookie.
+	 *
+	 * @param string $name
+	 */
+	public static function clear_cookie( $name ) {
+		setcookie( $name, ' ', ITSEC_Core::get_current_time_gmt() - YEAR_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN, false, false );
+	}
+
+	/**
+	 * Is the current request a loopback request.
+	 *
+	 * @return bool
+	 */
+	public static function is_loopback_request() {
+		return in_array( self::get_ip(), ITSEC_Modules::get_setting( 'global', 'server_ips' ), true );
+	}
+
+	/**
+	 * Version of {@see wp_slash()} that won't cast numbers to strings.
+	 *
+	 * @param array|string $value
+	 *
+	 * @return array|string
+	 */
+	public static function slash( $value ) {
+		if ( is_array( $value ) ) {
+			foreach ( $value as $k => $v ) {
+				if ( is_array( $v ) ) {
+					$value[ $k ] = self::slash( $v );
+				} elseif ( is_string( $v ) ) {
+					$value[ $k ] = addslashes( $v );
+				}
+			}
+		} elseif ( is_string( $value ) ) {
+			$value = addslashes( $value );
+		}
+
+		return $value;
+	}
+
+	/**
+	 * Format as a ISO 8601 date.
+	 *
+	 * @param int|string $date Epoch or strtotime compatible date.
+	 *
+	 * @return string|false
+	 */
+	public static function to_rest_date( $date = 0 ) {
+		if ( ! $date ) {
+			$date = ITSEC_Core::get_current_time_gmt();
+		} elseif ( ! is_int( $date ) ) {
+			$date = strtotime( $date );
+		}
+
+		return gmdate( 'Y-m-d\TH:i:sP', $date );
+	}
+
+	/**
+	 * Flatten an array.
+	 *
+	 * @param array $array
+	 *
+	 * @return array
+	 */
+	public static function flatten( $array ) {
+		if ( ! is_array( $array ) ) {
+			return array( $array );
+		}
+
+		$merge = array();
+
+		foreach ( $array as $value ) {
+			$merge[] = self::flatten( $value );
+		}
+
+		return $merge ? call_user_func_array( 'array_merge', $merge ) : array();
+	}
+
+	/**
+	 * Preload REST API requests.
+	 *
+	 * @param array $requests
+	 *
+	 * @return array
+	 */
+	public static function preload_rest_requests( $requests ) {
+		$preload = array();
+
+		foreach ( $requests as $key => $config ) {
+			if ( is_string( $config ) ) {
+				$key    = $config;
+				$config = array( 'route' => $config );
+			}
+
+			$request = new WP_REST_Request(
+				isset( $config['method'] ) ? $config['method'] : 'GET',
+				$config['route']
+			);
+
+			if ( ! empty( $config['query'] ) ) {
+				$request->set_query_params( $config['query'] );
+			}
+
+			$response = rest_do_request( $request );
+
+			if ( $response->get_status() >= 200 && $response->get_status() < 300 ) {
+				rest_send_allow_header( $response, rest_get_server(), $request );
+
+				$preload[ $key ] = array(
+					'body'    => rest_get_server()->response_to_data( $response, ! empty( $config['embed'] ) ),
+					'headers' => $response->get_headers()
+				);
+			}
+		}
+
+		return $preload;
+	}
+
+	/**
+	 * Check if the given string starts with the given needle.
+	 *
+	 * @param string $haystack
+	 * @param string $needle
+	 *
+	 * @return bool
+	 */
+	public static function str_starts_with( $haystack, $needle ) {
+		return 0 === strpos( $haystack, $needle );
+	}
+
+	public static function str_ends_with( $haystack, $needle ) {
+		return '' === $needle || substr_compare( $haystack, $needle, - strlen( $needle ) ) === 0;
 	}
 }

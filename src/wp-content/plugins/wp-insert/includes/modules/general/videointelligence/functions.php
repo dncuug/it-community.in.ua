@@ -30,7 +30,7 @@ function wp_insert_vi_login_form_get_content() {
 			wp_insert_vi_login_form_get_controls();
 		echo '</div>';
 		echo '<script type="text/javascript">';
-			echo $control->JS;
+			//echo $control->JS;
 			echo 'jQuery(".ui-dialog-buttonset").find("button").first().find("span:nth-child(2)").hide().after("<span class=\'ui-button-text\'>Login</span>");';
 			echo 'jQuery(".ui-dialog-buttonset").find("button").first().find("span:nth-child(1)").attr("class", "ui-button-icon-primary ui-icon ui-icon-key");';
 		echo '</script>';

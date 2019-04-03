@@ -183,6 +183,16 @@ final class ITSEC_Notification_Center {
 			$args['schedule'] = wp_parse_args( $args['schedule'], $schedule );
 		}
 
+		$optional = array(
+			'default' => true,
+		);
+
+		if ( $args['optional'] === true ) {
+			$args['optional'] = $optional;
+		} elseif ( is_array( $args['optional'] ) ) {
+			$args['optional'] = wp_parse_args( $args['optional'], $optional );
+		}
+
 		return $args;
 	}
 
@@ -312,17 +322,17 @@ final class ITSEC_Notification_Center {
 		$config = $this->get_notification( $notification );
 
 		if ( self::R_ADMIN === $config['recipient'] ) {
-			return array( get_option( 'admin_email' ) );
+			return $this->filter_recipients( array( get_option( 'admin_email' ) ), $notification );
 		}
 
 		if ( self::R_EMAIL_LIST === $config['recipient'] ) {
 			$settings = $this->get_notification_settings( $notification );
 
-			return ! empty( $settings['email_list'] ) ? $settings['email_list'] : array();
+			return $this->filter_recipients( ! empty( $settings['email_list'] ) ? $settings['email_list'] : array(), $notification );
 		}
 
 		if ( self::R_USER_LIST !== $config['recipient'] && self::R_USER_LIST_ADMIN_UPGRADE !== $config['recipient'] ) {
-			return array();
+			return $this->filter_recipients( array(), $notification );
 		}
 
 		$settings = $this->get_notification_settings( $notification );
@@ -353,8 +363,9 @@ final class ITSEC_Notification_Center {
 			}
 		}
 
-		require_once( ITSEC_Core::get_core_dir() . '/lib/class-itsec-lib-canonical-roles.php' );
-		$users = array_merge( $users, ITSEC_Lib_Canonical_Roles::get_users_with_canonical_role( $roles ) );
+		if ( $roles ) {
+			$users = array_merge( $users, get_users( array( 'role__in' => $roles ) ) );
+		}
 
 		foreach ( $users as $user ) {
 			if ( is_object( $user ) && ! empty( $user->user_email ) ) {
@@ -366,7 +377,41 @@ final class ITSEC_Notification_Center {
 			$addresses = array_merge( $addresses, $settings['previous_emails'] );
 		}
 
-		return array_unique( $addresses );
+		return $this->filter_recipients( array_unique( $addresses ), $notification );
+	}
+
+	/**
+	 * Filter the recipients for a notification.
+	 *
+	 * @since 4.8.4
+	 *
+	 * @param string[] $recipients   Array of email addresses.
+	 * @param string   $notification The notification slug.
+	 *
+	 * @return string[] Filtered array of email addresses.
+	 */
+	private function filter_recipients( $recipients, $notification ) {
+
+		/**
+		 * Fitler the email addresses that will receive the given notification.
+		 *
+		 * The dynamic portion of this hook '$notification' refers to the notification slug.
+		 *
+		 * @since 4.8.4
+		 *
+		 * @param string[] $recipients Array of email addresses.
+		 */
+		$recipients = apply_filters( "itsec_notification_{$notification}_email_recipients", $recipients );
+
+		/**
+		 * Filter the email addresses that will receive the given notification.
+		 *
+		 * @since 4.8.4
+		 *
+		 * @param string[] $recipients   Array of email addresses.
+		 * @param string   $notification The notification slug.
+		 */
+		return apply_filters( 'itsec_notification_email_recipients', $recipients, $notification );
 	}
 
 	/**

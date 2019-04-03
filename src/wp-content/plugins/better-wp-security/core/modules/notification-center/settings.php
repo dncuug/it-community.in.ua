@@ -60,6 +60,31 @@ class ITSEC_Notification_Center_Settings extends ITSEC_Settings {
 		unset( $this->settings['mail_errors'] );
 	}
 
+	protected function handle_settings_changes( $old_settings ) {
+
+		$nc = ITSEC_Core::get_notification_center();
+
+		foreach ( $this->settings['notifications'] as $slug => $notification ) {
+			if ( ! isset( $old_settings['notifications'][ $slug ] ) ) {
+				continue;
+			}
+
+			$config = $nc->get_notification( $slug );
+
+			if ( empty( $config['optional'] ) ) {
+				continue;
+			}
+
+			if ( $notification['enabled'] && ! $old_settings['notifications'][ $slug ]['enabled'] ) {
+				do_action( "itsec_notification_center_{$slug}_notification_enabled", $slug );
+				do_action( 'itsec_notification_center_notification_enabled', $slug );
+			} elseif ( ! $notification['enabled'] && $old_settings['notifications'][ $slug ]['enabled'] ) {
+				do_action( "itsec_notification_center_{$slug}_notification_disabled", $slug );
+				do_action( 'itsec_notification_center_notification_disabled', $slug );
+			}
+		}
+	}
+
 	public function refresh_notification_settings( $save = true ) {
 
 		$nc = ITSEC_Core::get_notification_center();
@@ -174,7 +199,7 @@ class ITSEC_Notification_Center_Settings extends ITSEC_Settings {
 		}
 
 		if ( ! empty( $notification['optional'] ) ) {
-			$defaults['enabled'] = true;
+			$defaults['enabled'] = $notification['optional']['default'];
 		}
 
 		if ( ITSEC_Notification_Center::R_USER_LIST === $notification['recipient'] ) {

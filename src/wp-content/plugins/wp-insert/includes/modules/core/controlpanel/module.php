@@ -13,7 +13,7 @@ function wp_insert_admin_menu() {
 	add_menu_page('Wp Insert', 'Wp Insert', 'manage_options', 'wp-insert', 'wp_insert_admin_page', WP_INSERT_URL.'/includes/assets/images/icon.png');
 }
 
-add_action('admin_enqueue_scripts', 'wp_insert_admin_enqueue_scripts');
+add_action('admin_enqueue_scripts', 'wp_insert_admin_enqueue_scripts', 99999);
 function wp_insert_admin_enqueue_scripts($page) {
 	wp_register_script('wp-insert-global-js', WP_INSERT_URL.'includes/assets/js/wp-insert-global.js', array('jquery'), WP_INSERT_VERSION);
 	wp_enqueue_script('wp-insert-global-js');
@@ -22,9 +22,9 @@ function wp_insert_admin_enqueue_scripts($page) {
 		wp_enqueue_style('wp-insert-css');
 		wp_register_style('wp-insert-jquery-ui', 'https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', array(), WP_INSERT_VERSION);
 		wp_enqueue_style('wp-insert-jquery-ui');
-		wp_register_script('wp-insert-js', WP_INSERT_URL.'includes/assets/js/wp-insert.js', array('jquery', 'jquery-ui-core', 'jquery-ui-accordion', 'jquery-ui-dialog'), WP_INSERT_VERSION.rand(0,9999));
+		wp_register_script('wp-insert-js', WP_INSERT_URL.'includes/assets/js/wp-insert.js', array('jquery', 'jquery-ui-core', 'jquery-ui-accordion', 'jquery-ui-dialog'), WP_INSERT_VERSION.rand(0,9999), true);
 		wp_enqueue_script('wp-insert-js');
-		wp_register_script('chart-js', WP_INSERT_URL.'includes/assets/js/Chart.bundle.min.js', array('jquery'), WP_INSERT_VERSION);
+		wp_register_script('chart-js', WP_INSERT_URL.'includes/assets/js/Chart.bundle.min.js', array('jquery'), WP_INSERT_VERSION, true);
 		wp_enqueue_script('chart-js');
 		do_action('wp_insert_modules_css');
 		do_action('wp_insert_modules_js');
@@ -32,6 +32,13 @@ function wp_insert_admin_enqueue_scripts($page) {
 		wp_enqueue_script('editor');
         wp_enqueue_script('quicktags');
 		wp_enqueue_style('buttons');
+		/*Page Links To Plugin incompatible code override*/
+		wp_dequeue_style('wp-jquery-ui-dialog');
+		wp_dequeue_script('plt-quick-add');
+		wp_dequeue_style('plt-quick-add');
+		wp_deregister_style('wp-jquery-ui-dialog');	
+		wp_deregister_script('plt-quick-add');
+		wp_deregister_style('plt-quick-add');
 	}
 }
 
@@ -52,13 +59,13 @@ add_action('wp_insert_plugin_card', 'wp_insert_title_plugin_card', 0);
 function wp_insert_title_plugin_card() {
 	echo '<div class="plugin-card">';
 		echo '<div class="plugin-card-top">';
-			echo '<a id="wpInsertLogo" href="http://www.wp-insert.smartlogix.co.in"><img src="'.WP_INSERT_URL.'/includes/assets/images/header-banner.png?'.WP_INSERT_VERSION.'" /></a>';
+			echo '<a id="wpInsertLogo" href="https://www.wpinsert.smartlogix.co.in"><img src="'.WP_INSERT_URL.'/includes/assets/images/header-banner.png?'.WP_INSERT_VERSION.'" /></a>';
 		echo '</div>';
 		echo '<div class="plugin-card-bottom">';
 			echo '<div id="wpInsertMeta">';
-				echo '<p><b>Donate :</b><br /><a target="_blank" href="http://wpinsert.smartlogix.co.in/support/">Click Here</a> to Donate and Promote further development of this plugin.</p>';
+				echo '<p><b>Donate :</b><br /><a target="_blank" href="https://wpinsert.smartlogix.co.in/support/">Click Here</a> to Donate and Promote further development of this plugin.</p>';
 				echo '<p><b>Like Us :</b><br /><a target="_blank" href="https://www.facebook.com/SmartLogix/">Click here</a> to like and support us on Facebook</p>';
-				echo '<p><b>Rate and Review :</b><br />If you find this plugin useful do leave a honest <a target="_blank" href="http://wordpress.org/plugins/wp-insert">RATING</a> and <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/wp-insert#postform">REVIEW</a><br /><span style="font-size: 15px; font-weight: 600;">You spending a few minutes to let us know your appreciation for the project will motivate us further in improving the plugin and adding new features.</span></p>';
+				echo '<div style="font-size: 16px; font-weight: 600; background: #FFFFAA; display: block; padding: 10px; text-align: justify; border: 1px dashed #FF0000; margin: 10px 0 0; border-radius: 5px;">Thanks for using Wp-Insert.  Positive <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/wp-insert#postform">reviews</a> are a great motivation for us to add new features, fix bugs and spend more time working on Wp-Insert.<br />Looking forward to your continued support and patronage - <i>Namith Jawahar</i>.</div>';
 			echo '</div>';
 		echo '</div>';
 	echo '</div>';
@@ -66,7 +73,7 @@ function wp_insert_title_plugin_card() {
 /* End Add Card in Admin Panel */
 
 /* Begin Admin Notice */
-add_action('admin_notices', 'wp_insert_admin_notices');
+/*add_action('admin_notices', 'wp_insert_admin_notices');
 function wp_insert_admin_notices() {	
 	if(current_user_can('manage_options')) {
 		$userId = get_current_user_id();
@@ -84,7 +91,7 @@ function wp_insert_admin_notices() {
 			echo '</div>';
 		}
 	}
-}
+}*/
 
 add_action('wp_ajax_wp_insert_admin_notice_dismiss', 'wp_insert_admin_notice_dismiss');
 function wp_insert_admin_notice_dismiss() {

@@ -1,4 +1,9 @@
 function wp_insert_ads_click_handler(type, identifier, title, isNew) {
+	var isDuplicate = false;
+	if(identifier.indexOf("###DUPLICATE###") != -1) {
+		isDuplicate = true;
+		identifier = identifier.replace("###DUPLICATE###","");
+	}
 	var preTitle = jQuery('#wp_insert_'+type+'_ad_'+identifier).attr('data-pre-title');
 	jQuery('<div id="wp_insert_'+type+'_'+identifier+'_dialog"></div>').html('<div class="wp_insert_ajaxloader"></div>').dialog({
 		'modal': true,
@@ -15,7 +20,7 @@ function wp_insert_ads_click_handler(type, identifier, title, isNew) {
 			jQuery.post(
 				jQuery('#wp_insert_admin_ajax').val(), {
 					'action': 'wp_insert_'+type+'_get_ad_form',
-					'wp_insert_identifier': identifier,
+					'wp_insert_identifier': ((isDuplicate)?'###DUPLICATE###':'')+identifier,
 					'wp_insert_type': type,
 					'wp_insert_nonce': jQuery('#wp_insert_nonce').val()
 				}, function(response) {
@@ -39,13 +44,19 @@ function wp_insert_ads_click_handler(type, identifier, title, isNew) {
 						var adLink = jQuery("<a></a>");
 						adLink.attr('id', 'wp_insert_'+type+'_ad_'+newIdentifier);
 						adLink.attr('href', 'javascript:;');
+						adLink.attr('class', 'wp_insert_ad_unit_title');
 						adLink.attr('data-pre-title', preTitle);
 						adLink.attr('onClick', "wp_insert_ads_click_handler(\'"+type+"\', \'"+newIdentifier+"\', \'"+jQuery('#wp_insert_'+type+'_'+newIdentifier+'_title').val()+"\', false)");
 						adLink.html(preTitle+' : '+jQuery('#wp_insert_'+type+'_'+newIdentifier+'_title').val());
 						var deleteButton = jQuery('<span></span>');
-						deleteButton.attr('class', 'dashicons dashicons-dismiss wp_insert_delete_icon');
+						deleteButton.attr('class', 'dashicons dashicons-no wp_insert_delete_icon');
+						deleteButton.attr('title', 'Delete Ad Unit');
 						deleteButton.attr('onClick', "wp_insert_ad_delete_handler(\'"+type+"\', \'"+newIdentifier+"\')");
-						jQuery('#wp_insert_'+type+'_ad_new').parent().before(jQuery('<p></p>').append(adLink, deleteButton));
+						var duplicateButton = jQuery('<span></span>');
+						duplicateButton.attr('class', 'dashicons dashicons-format-gallery wp_insert_duplicate_icon');
+						duplicateButton.attr('title', 'Duplicate Ad Unit');
+						duplicateButton.attr('onClick', "wp_insert_ads_click_handler(\'"+type+"\', \'###DUPLICATE###"+newIdentifier+"\', \'"+newIdentifier+"\', \'"+jQuery('#wp_insert_'+type+'_'+newIdentifier+'_title').val()+" Duplicate\', false)");
+						jQuery('#wp_insert_'+type+'_ad_new').parent().before(jQuery('<p></p>').append(adLink, deleteButton, duplicateButton));
 						wp_insert_ad_update_handler(type, newIdentifier);
 					} else {
 						jQuery("#wp_insert_"+type+"_ad_"+identifier).html(preTitle+' : '+jQuery('#wp_insert_'+type+'_'+identifier+'_title').val());

@@ -348,11 +348,21 @@ final class ITSEC_Logs_Page {
 				}
 
 				$details = wp_list_sort( $details, 'order', 'ASC', true );
+				$messages = ITSEC_Lib_Remote_Messages::get_messages_for_placement( array( 'logs' => array( 'module' => $entry['module'], 'code' => $entry['code'] ) ) );
 			}
 
 			ob_start();
 
 ?>
+	<?php if ( $messages ) : ?>
+		<div class="itsec-logs-service-status">
+			<?php foreach ( $messages as $message ): ?>
+				<div class="notice notice-alt notice-<?php echo esc_attr( $message['type'] ); ?> below-h2">
+					<p><?php echo $message['message']; ?></p>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?>
 	<table class="form-table">
 		<?php foreach ( $details as $row ) : ?>
 			<tr>

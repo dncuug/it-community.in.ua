@@ -12,11 +12,15 @@ class Yoast_Network_Admin implements WPSEO_WordPress_Integration, WPSEO_WordPres
 
 	/**
 	 * Action identifier for updating plugin network options.
+	 *
+	 * @var string
 	 */
 	const UPDATE_OPTIONS_ACTION = 'yoast_handle_network_options';
 
 	/**
 	 * Action identifier for restoring a site.
+	 *
+	 * @var string
 	 */
 	const RESTORE_SITE_ACTION = 'yoast_restore_site';
 
@@ -24,19 +28,33 @@ class Yoast_Network_Admin implements WPSEO_WordPress_Integration, WPSEO_WordPres
 	 * Gets the available sites as choices, e.g. for a dropdown.
 	 *
 	 * @param bool $include_empty Optional. Whether to include an initial placeholder choice.
+	 *                            Default false.
+	 * @param bool $show_title    Optional. Whether to show the title for each site. This requires
+	 *                            switching through the sites, so has performance implications for
+	 *                            sites that do not use a persistent cache.
+	 *                            Default false.
 	 *
 	 * @return array Choices as $site_id => $site_label pairs.
 	 */
-	public function get_site_choices( $include_empty = false ) {
+	public function get_site_choices( $include_empty = false, $show_title = false ) {
 		$choices = array();
 
 		if ( $include_empty ) {
 			$choices['-'] = __( 'None', 'wordpress-seo' );
 		}
 
-		$sites = get_sites( array( 'deleted' => 0 ) );
+		$criteria = array(
+			'deleted'    => 0,
+			'network_id' => get_current_network_id(),
+		);
+		$sites    = get_sites( $criteria );
+
 		foreach ( $sites as $site ) {
-			$choices[ $site->blog_id ] = $site->blog_id . ': ' . $site->domain . $site->path;
+			$site_name = $site->domain . $site->path;
+			if ( $show_title ) {
+				$site_name = $site->blogname . ' (' . $site->domain . $site->path . ')';
+			}
+			$choices[ $site->blog_id ] = $site->blog_id . ': ' . $site_name;
 
 			$site_states = $this->get_site_states( $site );
 			if ( ! empty( $site_states ) ) {
@@ -98,6 +116,7 @@ class Yoast_Network_Admin implements WPSEO_WordPress_Integration, WPSEO_WordPres
 		foreach ( $whitelist_options as $option_name ) {
 			$value = null;
 			if ( isset( $_POST[ $option_name ] ) ) { // WPCS: CSRF ok.
+			    // Adding sanitize_text_field around this will break the saving of settings because it expects a string: https://github.com/Yoast/wordpress-seo/issues/12440.
 				$value = wp_unslash( $_POST[ $option_name ] ); // WPCS: CSRF ok.
 			}
 
@@ -169,14 +188,17 @@ class Yoast_Network_Admin implements WPSEO_WordPress_Integration, WPSEO_WordPres
 		$asset_manager = new WPSEO_Admin_Asset_Manager();
 		$asset_manager->enqueue_script( 'network-admin-script' );
 
-		wp_localize_script( WPSEO_Admin_Asset_Manager::PREFIX . 'network-admin-script', 'wpseoNetworkAdminGlobalL10n', array(
-
+		$translations = array(
 			/* translators: %s: success message */
 			'success_prefix' => __( 'Success: %s', 'wordpress-seo' ),
-
 			/* translators: %s: error message */
 			'error_prefix'   => __( 'Error: %s', 'wordpress-seo' ),
-		) );
+		);
+		wp_localize_script(
+			WPSEO_Admin_Asset_Manager::PREFIX . 'network-admin-script',
+			'wpseoNetworkAdminGlobalL10n',
+			$translations
+		);
 	}
 
 	/**
@@ -238,7 +260,7 @@ class Yoast_Network_Admin implements WPSEO_WordPress_Integration, WPSEO_WordPres
 		check_admin_referer( $action, $query_arg );
 
 		if ( ! $has_access ) {
-			wp_die( __( 'You are not allowed to perform this action.', 'wordpress-seo' ) );
+			wp_die( esc_html__( 'You are not allowed to perform this action.', 'wordpress-seo' ) );
 		}
 	}
 

@@ -265,14 +265,20 @@ function wp_insert_get_ad_status($rules) {
 			break;
 		case 'PAGE':
 			if(isset($rules['rules_exclude_page']) && wp_validate_boolean($rules['rules_exclude_page']) ) {
-				return false;
+				if((!isset($rules['rules_page_exceptions'])) || (!is_array($rules['rules_page_exceptions'])) || (!in_array($page_details['ID'], $rules['rules_page_exceptions']))) {
+					return false;
+				}
 			} else if(isset($rules['rules_page_exceptions']) && is_array($rules['rules_page_exceptions']) && (in_array($page_details['ID'], $rules['rules_page_exceptions']))) {
 				return false;
 			}
 			break;
 		case 'POST':
 			if(isset($rules['rules_exclude_post']) && wp_validate_boolean($rules['rules_exclude_post']) ) {
-				return false;
+				if((!isset($rules['rules_post_exceptions'])) || (!is_array($rules['rules_post_exceptions'])) || (!in_array($page_details['ID'], $rules['rules_post_exceptions']))) {
+					return false;
+				} else if ((!isset($rules['rules_post_categories_exceptions'])) || (!is_array($rules['rules_post_categories_exceptions'])) || (!isset($page_details['categories'])) || (!is_array($page_details['categories'])) || (!(count(array_intersect($page_details['categories'], $rules['rules_post_categories_exceptions'])) > 0))) {
+					return false;
+				}
 			} else if(isset($rules['rules_post_exceptions']) && is_array($rules['rules_post_exceptions']) && (in_array($page_details['ID'], $rules['rules_post_exceptions']))) {
 				return false;
 			} else if(isset($rules['rules_post_categories_exceptions']) && isset($page_details['categories']) && is_array($rules['rules_post_categories_exceptions']) && is_array($page_details['categories']) && (count(array_intersect($page_details['categories'], $rules['rules_post_categories_exceptions'])) > 0)) {
@@ -281,7 +287,9 @@ function wp_insert_get_ad_status($rules) {
 			break;
 		case 'CATEGORY':
 			if(isset($rules['rules_exclude_categories']) && wp_validate_boolean($rules['rules_exclude_categories'])) {
-				return false;
+				if((!isset($rules['rules_categories_exceptions'])) || (!is_array($rules['rules_categories_exceptions'])) || (!in_array($page_details['ID'], $rules['rules_categories_exceptions']))) {
+					return false;
+				}
 			} else if(isset($rules['rules_categories_exceptions']) && is_array($rules['rules_categories_exceptions']) && (in_array($page_details['ID'], $rules['rules_categories_exceptions']))) {
 				return false;
 			} else if(isset($rules['rules_categories_instances']) && is_array($rules['rules_categories_instances']) && (in_array($wpInsertPostInstance, $rules['rules_categories_instances']))) {

@@ -185,6 +185,12 @@ abstract class ITSEC_Validator {
 			} else {
 				$error = sprintf( __( 'The %1$s value must be a positive integer.', 'better-wp-security' ), $name );
 			}
+		} else if ( 'number' === $type ) {
+			if ( is_numeric($this->settings[ $var ] ) ) {
+				$this->settings[ $var ] = (float) $this->settings[ $var ];
+			} else {
+				$error = sprintf( __( 'The %1$s value must be a number.', 'better-wp-security' ), $name );
+			}
 		} else if ( 'email' === $type ) {
 			$this->settings[$var] = sanitize_text_field( $this->settings[$var] );
 
@@ -320,7 +326,7 @@ abstract class ITSEC_Validator {
 			}
 		} elseif ( 'canonical-roles' === $type ) {
 			$roles = array( 'administrator', 'editor', 'author', 'contributor', 'subscriber' );
-			
+
 			if ( is_array( $this->settings[$var] ) ) {
 				$invalid_entries = array();
 

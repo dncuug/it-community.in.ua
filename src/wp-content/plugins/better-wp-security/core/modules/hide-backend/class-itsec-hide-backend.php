@@ -17,12 +17,12 @@ class ITSEC_Hide_Backend {
 		add_filter( 'itsec_notifications', array( $this, 'register_notification' ) );
 		add_filter( 'itsec_hide-backend_notification_strings', array( $this, 'notification_strings' ) );
 
-		if ( ! $this->settings['enabled'] ) {
+		if ( ! $this->settings['enabled'] || ITSEC_Core::is_temp_disable_modules_set() ) {
 			return;
 		}
 
 
-		add_action( 'init', array( $this, 'handle_specific_page_requests' ), 1000 );
+		add_action( 'itsec_initialized', array( $this, 'handle_specific_page_requests' ), 1000 );
 		add_action( 'signup_hidden_fields', array( $this, 'add_token_to_registration_form' ) );
 		add_action( 'login_enqueue_scripts', array( $this, 'login_enqueue' ) );
 
@@ -82,15 +82,19 @@ class ITSEC_Hide_Backend {
 
 		$request_path = ITSEC_Lib::get_request_path();
 
+		if ( strpos( $request_path, '/' ) !== false ) {
+			list( $request_path ) = explode( '/', $request_path );
+		}
+
 		if ( $request_path === $this->settings['slug'] ) {
 			$this->handle_login_alias();
-		} else if ( in_array( $request_path, array( 'wp-login', 'wp-login.php' ) ) ) {
+		} elseif ( in_array( $request_path, array( 'wp-login', 'wp-login.php' ) ) ) {
 			$this->handle_canonical_login_page();
-		} else if ( 'wp-admin' === $request_path || 'wp-admin/' === substr( $request_path, 0, 9 ) ) {
+		} elseif ( 'wp-admin' === $request_path || 'wp-admin/' === substr( $request_path, 0, 9 ) ) {
 			$this->handle_wp_admin_page();
-		} else if ( $request_path === $this->settings['register'] && $this->allow_access_to_wp_signup() ) {
+		} elseif ( $request_path === $this->settings['register'] && $this->allow_access_to_wp_signup() ) {
 			$this->handle_registration_alias();
-		} else if ( 'wp-signup.php' === $request_path ) {
+		} elseif ( 'wp-signup.php' === $request_path ) {
 			$this->handle_canonical_signup_page();
 		}
 	}
@@ -258,8 +262,10 @@ class ITSEC_Hide_Backend {
 			if ( false !== strpos( $path, 'action=postpass' ) ) {
 				// No special handling is needed for a password-protected post.
 				return $url;
-			} else if ( false !== strpos( $path, 'action=register' ) ) {
+			} elseif ( false !== strpos( $path, 'action=register' ) ) {
 				$url = $this->add_token_to_url( $url, 'register' );
+			} elseif ( false !== strpos( $path, 'action=rp' ) ) {
+				$url = $this->add_token_to_url( $url, 'login' );
 			} elseif ( 'wp-login.php' !== $request_path || empty( $_GET['action'] ) || 'register' !== $_GET['action'] ) {
 				$url = $this->add_token_to_url( $url, 'login' );
 			}

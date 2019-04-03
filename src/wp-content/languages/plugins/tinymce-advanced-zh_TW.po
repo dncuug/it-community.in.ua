@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - TinyMCE Advanced - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-08 10:59:43+0000\n"
+"PO-Revision-Date: 2019-02-26 13:05:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,250 +11,466 @@ msgstr ""
 "Language: zh_TW\n"
 "Project-Id-Version: Plugins - TinyMCE Advanced - Stable (latest release)\n"
 
-#: tadv_admin.php:334
+#: tinymce-advanced.php:826
+msgid "Text Background Color"
+msgstr "文字背景色彩"
+
+#: tinymce-advanced.php:824
+msgid "Text Color"
+msgstr "文字色彩"
+
+#: tinymce-advanced.php:822
+msgid "Underline"
+msgstr "底線"
+
+#: tinymce-advanced.php:821
+msgid "Mark"
+msgstr "資料標示"
+
+#: tinymce-advanced.php:820
+msgid "Subscript"
+msgstr "下標"
+
+#: tinymce-advanced.php:819
+msgid "Superscript"
+msgstr "上標"
+
+#: tinymce-advanced.php:818
+msgid "Remove formatting"
+msgstr "移除格式"
+
+#: tinymce-advanced.php:788
+msgid "For use instead of the Paragraph Block. Supports transforming to and from multiple Paragraph blocks, Image, Table, List, Quote, Custom HTML, and most other blocks."
+msgstr "這個區塊的目的在於取代內建的 [段落] 區塊，它能將內容轉換為 [段落]、[圖片]、[清單]、[引文]、[自訂 HTML] 及其他對應的內建區塊，或將支援的區塊轉換為 [傳統段落] 區塊。"
+
+#: tadv_admin.php:848
+msgid "TinyMCE editors on the front end of the site"
+msgstr "網站前端的 TinyMCE 編輯器"
+
+#: tadv_admin.php:844
+msgid "Other TinyMCE editors in wp-admin"
+msgstr "管理後台的其他 TinyMCE 編輯器"
+
+#: tadv_admin.php:837
+msgid "Enable the TinyMCE editor enhancements for:"
+msgstr "啟用以下 TinyMCE 編輯器增強功能:"
+
+#: tadv_admin.php:726
+msgid "In addition most default blocks can be transformed into classic paragraphs, and a Classic Paragraph can be converted to multiple blocks."
+msgstr "此外，多數預設區塊均可轉換為 [傳統段落] 區塊，而 [傳統編輯器] 區塊中的內容可轉換為多個內建預設區塊。"
+
+#: tadv_admin.php:711
+msgid "It also makes the Classic Block or the Classic Paragraph Block the default block inserted on pressing Enter in the title, or clicking under the last block."
+msgstr "這項設定還會將 [傳統編輯器] 及 [傳統段落] 區塊變更為在 [標題] 區塊按下 Enter 或點擊最後一個區塊後會預設插入的區塊。"
+
+#: tadv_admin.php:668
+msgid "Append all buttons to the top toolbar in the Classic Paragraph and Classic blocks."
+msgstr "將全部按鈕附加至 [傳統編輯器] 及 [傳統段落] 區塊上方的工具列。"
+
+#: tadv_admin.php:659
+msgid "This setting applies to WordPress 5.0 or later. You can pre-select it and it will be enabled as soon as you upgrade."
+msgstr "這項設定會套用至 WordPress 5.0 或更新版本，網站管理員可以預先進行設定，網站升級至對應版本後便會立即生效。"
+
+#: tadv_admin.php:443
+msgid "Unused Buttons for the Classic Block toolbars"
+msgstr "未使用於 [傳統編輯器] 區塊工具列的按鈕"
+
+#: tadv_admin.php:323
+msgid "The toolbars in the Classic Paragraph and Classic blocks are narrower and show on focus."
+msgstr "[傳統段落] 及 [傳統編輯器] 區塊中的工具列較窄，且僅顯示重點按鈕。"
+
+#: tadv_admin.php:320
+msgid "Toolbars for the Classic Paragraph and Classic blocks"
+msgstr "[傳統段落] 及 [傳統編輯器] 區塊的工具列"
+
+#: tadv_admin.php:301
+msgid "Enable setting of selected text background color"
+msgstr "啟用已選取文字的背景色彩設定"
+
+#: tadv_admin.php:296 tadv_admin.php:309
+msgid "No"
+msgstr "否"
+
+#: tadv_admin.php:292 tadv_admin.php:305
+msgid "Yes"
+msgstr "是"
+
+#: tadv_admin.php:288
+msgid "Enable setting of selected text color"
+msgstr "啟用已選取文字的色彩設定"
+
+#: tadv_admin.php:281 tinymce-advanced.php:827
+msgid "Selected text background color"
+msgstr "已選取文字的背景色彩"
+
+#: tadv_admin.php:277 tinymce-advanced.php:825
+msgid "Selected text color"
+msgstr "已選取文字的色彩"
+
+#: tadv_admin.php:273
+msgid "Text color"
+msgstr "文字色彩"
+
+#: tadv_admin.php:247
+msgid "Unused buttons for the blocks toolbars"
+msgstr "未使用於區塊工具列的按鈕"
+
+#: tadv_admin.php:219 tinymce-advanced.php:817
+msgid "Formatting"
+msgstr "格式化"
+
+#: tadv_admin.php:215
+msgid "(shown in the sidebar)"
+msgstr "(顯示於區塊編輯器資訊欄)"
+
+#: tadv_admin.php:214
+msgid "Alternative side toolbar"
+msgstr "替代用工具列"
+
+#: tadv_admin.php:179
+msgid "The Link button cannot be moved to the side toolbar."
+msgstr "在工具列中無法移動 [連結] 按鈕。"
+
+#: tadv_admin.php:178
+msgid "The Bold, Italic, and Strikethrough buttons can be disabled or moved to the side toolbar but cannot be reordered."
+msgstr "可以在工具列中停用或移動 [粗體]、[斜體]、[刪除線] 按鈕，但無法重新排列。"
+
+#: tadv_admin.php:177
+msgid "The alignment buttons cannot be arranged."
+msgstr "無法排列對齊按鈕。"
+
+#: tadv_admin.php:172
+msgid "Current limitations for the Block Editor toolbar:"
+msgstr "目前區塊編輯器工具列的使用限制:"
+
+#: tadv_admin.php:166
+msgid "(shown above the block)"
+msgstr "(顯示於區塊上方)"
+
+#: tadv_admin.php:165
+msgid "Main toolbar"
+msgstr "主要工具列"
+
+#: tadv_admin.php:155
+msgid "Toolbars for the Block Editor"
+msgstr "區塊編輯器工具列"
+
+#: tadv_admin.php:150
+msgid "Classic Editor (TinyMCE)"
+msgstr "傳統編輯器 (TinyMCE)"
+
+#: tadv_admin.php:145
+msgid "Block Editor (Gutenberg)"
+msgstr "區塊編輯器 (Gutenberg)"
+
+#: tadv_admin.php:727
+msgid "It can be used everywhere instead of the Paragraph Block including in columns, when creating reusable blocks, etc."
+msgstr "[傳統段落] 區塊可以取代 [段落] 區塊並用於各式內容，並且可用於 [內容欄] 或建立可重複使用區塊。"
+
+#: tadv_admin.php:722
+msgid "Also, like the Classic Block, most existing TinyMCE plugins and add-ons will continue to work."
+msgstr "大部分現有的 TinyMCE 相關外掛及附加元件，都能在 [傳統段落] 及 [傳統編輯器] 區塊中繼續使用。"
+
+#: tadv_admin.php:721
+msgid "You can add multiple paragraphs, tables, galleries, embed video, set fonts and colors, and generally use everything that is available in the Classic Editor."
+msgstr "使用者可以在 [傳統編輯器] 區塊中新增多個段落、表格、圖庫、嵌入視訊、設定字型及色彩，並使用這個區塊提供的全部功能。"
+
+#: tadv_admin.php:720
+msgid "The Classic Paragraph Block includes the familiar TinyMCE editor and is an extended and enhanced Classic Block."
+msgstr "[傳統段落] 區塊包含眾所熟悉的 TinyMCE 編輯器，這個區塊延伸並增強 [傳統編輯器] 區塊的功能。"
+
+#: tadv_admin.php:718
+msgid "Add &#8220;Classic Paragraph&#8221; Block."
+msgstr "將 [傳統段落] 區塊新增至區塊編輯器"
+
+#: tadv_admin.php:710
+msgid "Selecting this option makes the Classic Block in the Block Editor somewhat more prominent and adds improvements and fixes for it."
+msgstr "啟用這項設定後，[傳統編輯器] 區塊在區塊編輯器中會更加突出，並會加入多項改進及修正。"
+
+#: tinymce-advanced.php:786
+msgid "Classic Paragraph"
+msgstr "傳統段落"
+
+#: tadv_admin.php:818
+msgid "For other advanced TinyMCE settings, including settings for the Classic Block in the Block Editor, you can use the %1$sAdvanced TinyMCE Configuration plugin%2$s."
+msgstr "如需變更其他 TinyMCE 進階設定 (包含區塊編輯器中 [傳統編輯器] 區塊的設定)，請使用 %1$sAdvanced TinyMCE Configuration%2$s 外掛。"
+
+#: tadv_admin.php:796
+msgid "Disabled:"
+msgstr "已停用:"
+
+#: tadv_admin.php:762
+msgid "Recommended for better compatibility with the Block Editor (Gutenberg)."
+msgstr "建議啟用這項設定，以獲得與區塊編輯器/Gutenberg 較佳的相容性。"
+
+#: tadv_admin.php:747
+msgid "If you prefer to use both editors side by side, do not enable this option. It is better to install the %1$sClassic Editor plugin%2$s."
+msgstr "如果想在網站上同時使用區塊編輯器及傳統編輯器，請不要啟用這項設定。建議的方式是安裝%1$s傳統編輯器%2$s (Classic Editor) 外掛。"
+
+#: tadv_admin.php:742
+msgid "It will allow you to use other plugins that enhance that editor, add old-style Meta Boxes, or in some way depend on the previous Edit Post screen."
+msgstr "這項設定能讓使用者使用其他能擴充傳統編輯器的外掛、新增舊式中繼資料區塊，或其他用於舊版編輯文章畫面的功能。"
+
+#: tadv_admin.php:741
+msgid "Selecting this option will restore the previous (&#8220;classic&#8221;) editor and the previous Edit Post screen."
+msgstr "啟用這項設定後，便會還原為傳統編輯器及舊版的編輯文章畫面。"
+
+#: tadv_admin.php:739
+msgid "Replace the Block Editor with the Classic Editor"
+msgstr "以傳統編輯器取代區塊編輯器"
+
+#: tadv_admin.php:723
+msgid "This makes the Block Editor more familiar, easier to use, easier to get used to, and more compatible with your existing workflow."
+msgstr "這項設定會讓使用者更容易熟悉區塊編輯器、也讓它更加容易使用，並能與使用者現有的工作流程更加融合。"
+
+#: tadv_admin.php:709
+msgid "Brings the best of both editors together."
+msgstr "啟用這項設定便可將兩種編輯器的優勢結合在一起。"
+
+#: tadv_admin.php:707
+msgid "Hybrid Block Editor Mode"
+msgstr "混合式區塊編輯器模式"
+
+#: tadv_admin.php:669
+msgid "This affects buttons that are added by other plugins. These buttons will be appended to the top toolbar row instead of forming second, third, and forth rows."
+msgstr "這項設定會影響其他外掛加入的按鈕。這些由其他外掛加入的按鈕會附加至工具列第一列，而不會出現在第二、第三及第四列。"
+
+#: tadv_admin.php:330
+msgid "Enable the editor menu (recommended)."
+msgstr "啟用編輯器選單 (建議)"
+
+#: tadv_admin.php:325
+msgid "The buttons will wrap around depending on the width of the toolbar."
+msgstr "按鈕會依照工具列的寬度進行換行。"
+
+#: tadv_admin.php:324
+msgid "For best results enable the menu and add only essential buttons."
+msgstr "為取得最佳結果，請啟用選單並新增必要按鈕。"
+
+#: tadv_admin.php:440 tadv_admin.php:608
+msgid "Drop buttons in the toolbars, or drag the buttons to rearrange them."
+msgstr "移動按鈕置放於工具列，或拖曳按鈕以重新排列按鈕順序。"
+
+#: tadv_admin.php:489
+msgid "Toolbars for the Classic Editor (TinyMCE)"
+msgstr "傳統編輯器工具列 (TinyMCE)"
+
+#: tadv_admin.php:696
 msgid "Replace the size setting available for fonts with: %s."
 msgstr "將既有的字型大小設定取代為 %s。"
 
-#: tadv_admin.php:381
-msgid "To use this option, add editor-style.css to your theme or a child theme. Enabling this option will also load that stylesheet in the editor."
-msgstr "如需使用這項功能，請為使用中的佈景主題或子佈景主題加入名為 editor-style.css 的樣式表檔案。啟用這項設定後，便會在編輯器中載入 editor-style.css 的樣式表。"
-
-#: tadv_admin.php:376
+#: tadv_admin.php:797
 msgid "A stylesheet file named editor-style.css was not added by your theme."
 msgstr "目前使用的佈景主題並未加入名為 editor-style.css 樣式表檔案。"
 
-#: tadv_admin.php:370
-msgid "Your theme does not support editor-style.css."
-msgstr "目前使用的佈景主題不支援 editor-style.css。"
-
-#: tadv_admin.php:369 tadv_admin.php:375
-msgid "ERROR:"
-msgstr "錯誤:"
-
-#: tinymce-advanced.php:872
+#: tinymce-advanced.php:1134
 msgid "Settings"
 msgstr "設定"
 
-#: tadv_admin.php:429
-msgid "Editors on the front end of the site"
-msgstr "網站前端的編輯器"
+#: tadv_admin.php:840
+msgid "The Classic Editor (Add New and Edit posts and pages)"
+msgstr "傳統編輯器 (新增文章/頁面及編輯文章/頁面)"
 
-#: tadv_admin.php:425
-msgid "Other editors in wp-admin"
-msgstr "wp-admin 中的其他編輯器"
-
-#: tadv_admin.php:421
-msgid "The main editor (Add New and Edit posts and pages)"
-msgstr "主要編輯器 (新增/編輯文章及頁面)"
-
-#: tadv_admin.php:418
-msgid "Enable the editor enhancements for:"
-msgstr "為指定編輯器啟用增強功能"
-
-#: tadv_admin.php:411
+#: tadv_admin.php:830
 msgid "Settings import and export"
 msgstr "匯入/匯出設定"
 
-#: tadv_admin.php:389
+#: tadv_admin.php:761
 msgid "Keep paragraph tags"
 msgstr "保留段落標籤"
 
-#: tadv_admin.php:360
+#: tadv_admin.php:787
 msgid "Create CSS classes menu"
 msgstr "建立 CSS 類別選單"
 
-#: tadv_admin.php:333
+#: tadv_admin.php:695
 msgid "Font sizes"
 msgstr "字型大小"
 
-#: tadv_admin.php:328
+#: tadv_admin.php:690
 msgid "Open the TinyMCE link dialog when using the link button on the toolbar or the link menu item."
 msgstr "使用工具列上 [插入/編輯連結] 按鈕或選單中的 [連結] 項目時，改為顯示 TinyMCE 的 [插入連結] 對話方塊。"
 
-#: tadv_admin.php:326
+#: tadv_admin.php:689
 msgid "Alternative link dialog"
 msgstr "變更 [插入/編輯連結] 按鈕功能"
 
-#: tadv_admin.php:321
+#: tadv_admin.php:684
 msgid "Replace the browser context (right-click) menu."
 msgstr "取代瀏覽器的操作功能表 (需點擊右鍵才會出現)。"
 
-#: tadv_admin.php:314
+#: tadv_admin.php:677
 msgid "Enable more list options: upper or lower case letters for ordered lists, disk or square for unordered lists, etc."
-msgstr "啟用這項設定後，便能獲得更多列表設定，例如英文/希臘字元可區分大小寫的編號清單，圓圈 (空心圓點) 或方塊的項目符號清單等等。"
+msgstr "啟用這項設定後，便能獲得更多清單設定，例如英文/希臘字元可區分大小寫的編號清單，圓圈 (空心圓點) 或方塊的項目符號清單等等。"
 
-#: tadv_admin.php:309
+#: tadv_admin.php:664
 msgid "Options"
 msgstr "一般設定"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "http://www.laptoptips.ca/"
 msgstr "http://www.laptoptips.ca/"
 
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "Andrew Ozz"
 msgstr "Andrew Ozz"
 
-#. Description of the plugin/theme
+#. Description of the plugin
 msgid "Enables advanced features and plugins in TinyMCE, the visual editor in WordPress."
-msgstr "這是一款能在 WordPress 內建的視覺化編輯器 TinyMCE 中啟用進階功能的外掛。"
+msgstr "這是一款能在 WordPress 內建的 TinyMCE 視覺化編輯器中啟用進階功能的外掛。"
 
-#. Plugin URI of the plugin/theme
+#. Plugin URI of the plugin
 msgid "http://www.laptoptips.ca/projects/tinymce-advanced/"
 msgstr "http://www.laptoptips.ca/projects/tinymce-advanced/"
 
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
 msgid "TinyMCE Advanced"
 msgstr "TinyMCE Advanced"
 
-#: tinymce-advanced.php:301
+#: tinymce-advanced.php:362
 msgid "Please upgrade your WordPress installation or download an <a href=\"%s\">older version of the plugin</a>."
 msgstr "請為網站目前安裝的 WordPress 進行版本升級，或下載及安裝<a href=\"%s\" target=\"_blank\">舊版 TinyMCE Advanced 外掛</a>。"
 
-#: tinymce-advanced.php:294
+#: tinymce-advanced.php:355
 msgid "TinyMCE Advanced requires WordPress version %1$s or newer. It appears that you are running %2$s. This can make the editor unstable."
-msgstr "TinyMCE Advanced 須要 WordPress %1$s 版或更新版本，而網站目前使用的版本為 %2$s 版，這會讓編輯器產生不穩定的狀況。"
+msgstr "TinyMCE Advanced 需要 WordPress %1$s 版或更新版本，而網站目前使用的版本為 %2$s 版，這會讓編輯器產生不穩定的狀況。"
 
-#: tadv_admin.php:446
+#: tadv_admin.php:867
 msgid "The [Toolbar toggle] button shows or hides the second, third, and forth button rows. It will only work when it is in the first row and there are buttons in the second row."
 msgstr "[工具列開關] 按鈕能顯示或隱藏工具列第二、三、四列上的按鈕。[工具列開關] 按鈕僅能置於工具列第一列，且工具列第二列上必須有按鈕才能正確運作。"
 
-#: tadv_admin.php:440
+#: tadv_admin.php:861
 msgid "Restore Default Settings"
 msgstr "還原預設設定"
 
-#: tadv_admin.php:414
+#: tadv_admin.php:833
 msgid "Import Settings"
 msgstr "匯入設定"
 
-#: tadv_admin.php:413
+#: tadv_admin.php:832
 msgid "Export Settings"
 msgstr "匯出設定"
 
-#: tadv_admin.php:409
+#: tadv_admin.php:828
 msgid "Administration"
 msgstr "外掛管理"
 
-#: tadv_admin.php:403
+#: tadv_admin.php:811
 msgid "These images will not be available in the Media Library."
 msgstr "使用這項功能貼上的圖片，由於是透過 Base64 編碼加入內容，所以不會出現於 [媒體庫] 中。"
 
-#: tadv_admin.php:402
+#: tadv_admin.php:810
 msgid "This is not acceptable for larger images like photos or graphics, but may be useful in some cases for very small images like icons, not larger than 2-3KB."
 msgstr "這項功能不接受檔案較大的圖片 (例如照片或點陣圖)，但在某些使用情境中，對於檔案非常小的圖片 (例如大小不超過 2-3KB 的圖示) 來說非常有幫助。"
 
-#: tadv_admin.php:401
+#: tadv_admin.php:809
 msgid "Works only in Firefox and Safari. These browsers support pasting of images directly in the editor and convert them to base64 encoded text."
 msgstr "這項設定僅於使用 Firefox 及 Safari 瀏覽器時有效，因為只有這兩個瀏覽器支援直接在編輯器中貼上圖片，並將圖片轉換成 Base64 編碼文字。"
 
-#: tadv_admin.php:399
+#: tadv_admin.php:807
 msgid "Enable pasting of image source"
 msgstr "啟用直接貼上圖片來源"
 
-#: tadv_admin.php:394
-msgid "Line breaks in the Text editor would still affect the output, in particular do not use empty lines, line breaks inside HTML tags or multiple &lt;br /&gt; tags."
-msgstr "在 [文字] 標籤頁的編輯器中，分行符號仍會影響內容在網站前端的呈現，尤其不要使用空行、不要在 HTML 標籤內的置入分行符號，也不要使用多個 <code>&lt;br /&gt;</code> 標籤。"
+#: tadv_admin.php:767
+msgid "Line breaks in the Text editor would still affect the output, in particular do not use empty lines, line breaks inside HTML tags or multiple &lt;br&gt; tags."
+msgstr "在編輯器的 [文字] 分頁中，分行符號仍會影響內容在網站前端的呈現，尤其不要使用空行、不要在 HTML 標籤內的置入分行符號，也不要使用多個 <code>&lt;br /&gt;</code> 標籤。"
 
-#: tadv_admin.php:393
+#: tadv_admin.php:766
 msgid "However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently."
 msgstr "這項設定在極少數的狀況下會發生未預期的行為，請務必在永久啟用設定前進行詳細的測試。"
 
-#: tadv_admin.php:392
+#: tadv_admin.php:765
 msgid "This will make it possible to use more advanced coding in the Text editor without the back-end filtering affecting it much."
-msgstr "預設的網站後端篩選對內容標籤程式碼影響極大，啟用這項設定便可停用這些篩選，並在 [文字] 標籤頁的編輯器中使用更進階的內容標籤程式碼。"
+msgstr "預設的網站後端篩選對內容標籤程式碼影響極大，啟用這項設定便可停用這些篩選，並在編輯器的 [文字] 分頁中使用更進階的內容標籤程式碼。"
 
-#: tadv_admin.php:391
-msgid "Stop removing the &lt;p&gt; and &lt;br /&gt; tags when saving and show them in the Text editor."
-msgstr "系統在儲存內容以及在 [文字] 標籤頁顯示內容標籤程式碼時，不再移除 <code>&lt;p&gt;</code> 及 <code>&lt;br /&gt;</code> 標籤。"
+#: tadv_admin.php:764
+msgid "Stop removing the &lt;p&gt; and &lt;br&gt; tags when saving and show them in the Text editor."
+msgstr "啟用這項設定後，系統在儲存內容及在 [文字] 分頁顯示內容標籤程式碼時，便不會移除 <code>&lt;p&gt;</code> 及 <code>&lt;br /&gt;</code> 標籤。"
 
-#: tadv_admin.php:364
+#: tadv_admin.php:789
 msgid "Load the CSS classes used in editor-style.css and replace the Formats menu."
 msgstr "載入 editor-style.css 中的 CSS 類別，並取代 [格式] 選單中的項目。"
 
-#: tadv_admin.php:342
+#: tadv_admin.php:704
 msgid "Advanced Options"
 msgstr "進階設定"
 
-#: tadv_admin.php:319
+#: tadv_admin.php:683
 msgid "Context Menu"
 msgstr "操作功能表"
 
-#: tadv_admin.php:312
+#: tadv_admin.php:675
 msgid "List Style Options"
 msgstr "清單樣式設定"
 
-#: tadv_admin.php:267
+#: tadv_admin.php:611
 msgid "Unused Buttons"
 msgstr "未使用的按鈕"
 
-#: tadv_admin.php:264
-msgid "Drag buttons from the unused buttons below and drop them in the toolbars above, or drag the buttons in the toolbars to rearrange them."
-msgstr "請從下方 [未使用的按鈕] 中拖曳按鈕，並將這些按鈕置放於上方工具列，或在工具列上透過拖曳操作重新排列按鈕。"
-
-#: tadv_admin.php:152
+#: tadv_admin.php:494
 msgid "Enable the editor menu."
 msgstr "啟用編輯器選單"
 
-#: tadv_admin.php:145 tadv_admin.php:441
+#: tadv_admin.php:140 tadv_admin.php:862
 msgid "Save Changes"
-msgstr "儲存變更"
+msgstr "儲存設定"
 
-#: tadv_admin.php:136
+#: tadv_admin.php:128
 msgid "Settings saved."
 msgstr "設定已儲存。"
 
-#: tadv_admin.php:129
+#: tadv_admin.php:121
 msgid "Editor Settings"
 msgstr "編輯器設定"
 
-#: tadv_admin.php:118
+#: tadv_admin.php:110
 msgid "ERROR: All toolbars are empty. Default settings loaded."
-msgstr "錯誤: 所有工具列為空。預設設定已載入。"
+msgstr "錯誤: 全部工具列為空。預設設定已載入。"
 
-#: tadv_admin.php:105
+#: tadv_admin.php:101
 msgid "Importing of settings failed."
 msgstr "匯入設定時發生錯誤。"
 
-#: tadv_admin.php:87
+#: tadv_admin.php:83
 msgid "Import"
 msgstr "匯入"
 
-#: tadv_admin.php:86
+#: tadv_admin.php:82
 msgid "Verify"
 msgstr "驗證"
 
-#: tadv_admin.php:81
+#: tadv_admin.php:77
 msgid "The settings are imported from a JSON encoded string. Please paste the exported string in the text area below."
 msgstr "這項設定需要匯入 JSON 編碼字串，請在下方文字區域中貼上執行 [匯出設定] 時所取得的字串。"
 
-#: tadv_admin.php:78
+#: tadv_admin.php:74
 msgid "TinyMCE Advanced Settings Import"
 msgstr "匯入 TinyMCE Advanced 設定"
 
-#: tadv_admin.php:66 tadv_admin.php:92
+#: tadv_admin.php:62 tadv_admin.php:88
 msgid "Back to Editor Settings"
 msgstr "返回 [編輯器設定]"
 
-#: tadv_admin.php:64
+#: tadv_admin.php:60
 msgid "Select All"
 msgstr "選取全部"
 
-#: tadv_admin.php:59
+#: tadv_admin.php:55
 msgid "It is important that the export is not changed in any way, no spaces, line breaks, etc."
 msgstr "請注意，匯出的內容不得有任何編輯變更，例如自行加入空格或斷行等等。"
 
-#: tadv_admin.php:58
+#: tadv_admin.php:54
 msgid "Please copy the content and save it in a <b>text</b> (.txt) file, using a plain text editor like Notepad."
 msgstr "請複製下方的內容，並使用純文字編輯器 (例如 Windows 的 [記事本]) 將內容儲存為<b>文字檔</b> (.txt)。"
 
-#: tadv_admin.php:57
-msgid "The settings are exported as a JSON encoded string."
-msgstr "所有設定會匯出成為 JSON 編碼字串。"
-
 #: tadv_admin.php:53
+msgid "The settings are exported as a JSON encoded string."
+msgstr "全部設定會匯出成 JSON 編碼字串。"
+
+#: tadv_admin.php:49
 msgid "TinyMCE Advanced Settings Export"
 msgstr "匯出 TinyMCE Advanced 設定"
 
-#: tadv_admin.php:41
+#: tadv_admin.php:37
 msgid "Default settings restored."
 msgstr "預設設定已還原。"

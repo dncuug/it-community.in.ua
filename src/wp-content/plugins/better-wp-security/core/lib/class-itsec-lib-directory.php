@@ -138,7 +138,7 @@ if ( ! class_exists( 'ITSEC_Lib_Directory' ) ) {
 
 			$parent = dirname( $dir );
 
-			while ( ! empty( $parent ) && ( ! self::is_dir( $parent ) ) ) {
+			while ( ! empty( $parent ) && ! self::is_dir( $parent ) && dirname( $parent ) !== $parent ) {
 				$parent = dirname( $parent );
 			}
 

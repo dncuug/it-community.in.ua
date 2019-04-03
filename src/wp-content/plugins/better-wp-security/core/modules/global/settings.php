@@ -26,16 +26,19 @@ final class ITSEC_Global_Settings_New extends ITSEC_Settings {
 			'infinitewp_compatibility'  => false,
 			'did_upgrade'               => false,
 			'lock_file'                 => false,
-			'proxy_override'            => false,
+			'proxy'                     => 'automatic',
+			'proxy_header'              => 'HTTP_X_FORWARDED_FOR',
 			'hide_admin_bar'            => false,
 			'show_error_codes'          => false,
 			'show_security_check'       => true,
 			'build'                     => 0,
+			'initial_build'             => 0,
 			'activation_timestamp'      => 0,
 			'cron_status'               => - 1,
 			'use_cron'                  => true,
 			'cron_test_time'            => 0,
 			'enable_grade_report'       => false,
+			'server_ips'                => array(),
 		);
 	}
 

@@ -747,3 +747,54 @@
 	Bug Fix: Fixed how the Grade Report enable/disable status is stored to fix admin page loading issues on some sites.
 4.7.6 - 2018-08-14 - Chris Jean & Timothy Jacobs
 	Bug Fix: REST API Protection blocked the Taxonomies route for all users.
+4.8.0 - 2018-10-02 - Chris Jean & Timothy Jacobs
+	Enhancement: Block access to git and svn repositories when System Tweaks -> Protect System Files is enabled.
+	Tweak: Update jQuery Validation library to 1.17.0
+	Bug Fix: Improve detection of blocking the File Change Scan from being scheduled if one is already being run.
+	Bug Fix: Prevent infinite recursion error when trying to access directories outside of the allowed file tree.
+4.8.1 - 2018-10-10 - Chris Jean & Timothy Jacobs
+	Enhancement: Allow for selecting the particular Proxy header a server is configured to use. Improve the language to indicate the importance of configuring this setting. H/t Filippo Cavallarin CEO at wearesegment.com
+4.8.2 - 2018-10-10 - Chris Jean & Timothy Jacobs
+	Bug Fix: Fix issue with saving Global settings if Security Check Pro has detected the correct Proxy Header to use.
+4.8.3 - 2018-11-01 - Chris Jean & Timothy Jacobs
+	Enhancement: Add support for displaying status messages about services that might be encountering issues without updating the plugin.
+4.8.4 - 2018-12-04 - Chris Jean & Timothy Jacobs
+	Enhancement: Add Per-Content SSL toggle to the upcoming Block Editor interface.
+	Enhancement: Add filter to the recipients list for email notifications: "itsec_notification_{$notification}_email_recipients" and "itsec_notification_email_recipients".
+	Enhancement: Detect Server IPs in Security Check.
+	Tweak: Improve File Change locking to help prevent failing scans on sites with inconsistent cron scheduling.
+	Tweak: Improve "System Tweaks – Suspicious Query Strings – SQLI" to reduce false positives.
+	Tweak: Improve "System Tweaks – Disable PHP" to block PHP files in apache configurations that serve files with a trailing dot.
+	Tweak: Add additional safety checks when writing to system config files.
+	Tweak: Remove "Seznam Bot" from HackRepair List as it isn't present in the latest version.
+	Bug Fix: Notification Center - Only send notifications to users with an exact role match of selected roles instead of a fuzzy match based on selected capabilities.
+	Bug Fix: Resolve warnings on PHP 5.2.
+4.8.5 - 2018-12-04 - Chris Jean & Timothy Jacobs
+	Bug Fix: Don't try to get users with the selected role if no roles are selected.
+4.8.6 - 2018-12-11 - Chris Jean & Timothy Jacobs
+	Bug Fix: Only re-add Trusted Devices restricted capabilities filter if it was registered in the first place.
+	Bug Fix: Error when trying to edit reusable blocks with per-post SSL enabled.
+4.9.0 - 2019-01-10 - Chris Jean & Timothy Jacobs
+	Enhancement: Add loopback IP detection to Security Check.
+	Enhancement: Add define "ITSEC_DISABLE_TEMP_WHITELIST" to disable the Temporary IP Whitelisting for logged-in administrators.
+	Tweak: Only run Remote Messages API on Pro versions.
+4.9.1 - 2019-01-14 - Chris Jean & Timothy Jacobs
+	Bug Fix: Styling issue that made "Identified Loopback IP" look like an error message instead of a success.
+5.0.0 - 2019-01-16 - Chris Jean & Timothy Jacobs
+	Enhancement: Add support for number inputs and validators.
+5.1.0 - 2019-02-13 - Chris Jean & Timothy Jacobs
+	Enhancement: Improve redirecting after processing a login interstitial from a front-end login form.
+	Tweak: Add display description for log when safe guarding against an empty config file write.
+	Bug Fix: Include Hide Backend token when emailing a password reset URL.
+5.1.1 - 2019-02-19 - Chris Jean & Timothy Jacobs
+	Bug Fix: Tabnapping: Apply noopener to links instead of using blankshield script when available to prevent new pop-up blocker behavior from killing the links.
+5.1.2 - 2019-02-20 - Chris Jean & Timothy Jacobs
+	Enhancement: When ITSEC_DISABLE_MODULES is set, prevent hide backend from running.
+5.1.3 - 2019-03-12 - Chris Jean & Timothy Jacobs
+	Tweak: Allow the log description column to word break for URLs or other strings with no spaces.
+	Bug Fix: Hide Backend bypass on certain Apache configurations.
+	Bug Fix: Properly return error that occurs during a backup.
+	Bug Fix: Regex warning on PHP 7.3 in the File Change module.
+	Bug Fix: Resolve warning when a user is set to "No Role".
+5.1.4 - 2019-03-22 - Chris Jean & Timothy Jacobs
+	Bug Fix: Hide backend bypass.

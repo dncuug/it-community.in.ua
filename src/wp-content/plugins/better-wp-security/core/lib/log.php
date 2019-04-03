@@ -4,72 +4,72 @@ final class ITSEC_Log {
 	/* Critical issues are very important events that administrators should be notified about, such as finding malware
 	 * on the site or detecting a security breach.
 	 */
-	public static function add_critical_issue( $module, $code, $data = false ) {
-		return self::add( $module, $code, $data, 'critical-issue' );
+	public static function add_critical_issue( $module, $code, $data = false, $overrides = array() ) {
+		return self::add( $module, $code, $data, 'critical-issue', 0, $overrides );
 	}
 
 	/* Actions are noteworthy automated events that change the functionality of the site based upon certain criteria,
 	 * such as locking out an IP address due to bruteforce attempts.
 	 */
-	public static function add_action( $module, $code, $data = false ) {
-		return self::add( $module, $code, $data, 'action' );
+	public static function add_action( $module, $code, $data = false, $overrides = array() ) {
+		return self::add( $module, $code, $data, 'action', 0, $overrides );
 	}
 
 	/* Fatal errors are critical problems detected in the code that could and should be reserved for very rare but
 	 * highly problematic situations, such as a catch handler in a try/catch block or a shutdown handler running before
 	 * a process finishes.
 	 */
-	public static function add_fatal_error( $module, $code, $data = false ) {
-		return self::add( $module, $code, $data, 'fatal' );
+	public static function add_fatal_error( $module, $code, $data = false, $overrides = array() ) {
+		return self::add( $module, $code, $data, 'fatal', 0, $overrides );
 	}
 
 	/* Errors are events that indicate a failure of some sort, such as failure to write to a file or an inability to
 	 * request a remote URL.
 	 */
-	public static function add_error( $module, $code, $data = false ) {
-		return self::add( $module, $code, $data, 'error' );
+	public static function add_error( $module, $code, $data = false, $overrides = array() ) {
+		return self::add( $module, $code, $data, 'error', 0, $overrides );
 	}
 
 	/* Warnings are noteworthy events that might indicate an issue, such as finding changed files.
 	 */
-	public static function add_warning( $module, $code, $data = false ) {
-		return self::add( $module, $code, $data, 'warning' );
+	public static function add_warning( $module, $code, $data = false, $overrides = array() ) {
+		return self::add( $module, $code, $data, 'warning', 0, $overrides );
 	}
 
 	/* Notices keep track of events that should be tracked but do not necessarily indicate an issue, such as requests
 	 * for files that do not exist and completed scans that did not find any issues.
 	 */
-	public static function add_notice( $module, $code, $data = false ) {
-		return self::add( $module, $code, $data, 'notice' );
+	public static function add_notice( $module, $code, $data = false, $overrides = array() ) {
+		return self::add( $module, $code, $data, 'notice', 0, $overrides );
 	}
 
 	/* Debug events are to be used in situations where extra information about a specific process could be helpful to
 	 * have when investigating an issue but the information would typically be uninteresting to the user, such as
 	 * noting the use of a compatibility function.
 	 */
-	public static function add_debug( $module, $code, $data = false ) {
-		return self::add( $module, $code, $data, 'debug' );
+	public static function add_debug( $module, $code, $data = false, $overrides = array() ) {
+		return self::add( $module, $code, $data, 'debug', 0, $overrides );
 	}
 
 	/* Process events allow for creating single entries that have a start, zero or more updates, and a stopping point.
 	 * This allows for benchmarking performance of long-running code in addition to finding issues such as terminated
 	 * execution due to the missing process-stop entry.
 	 */
-	public static function add_process_start( $module, $code, $data = false ) {
-		$id = self::add( $module, $code, $data, 'process-start' );
+	public static function add_process_start( $module, $code, $data = false, $overrides = array() ) {
+		$id = self::add( $module, $code, $data, 'process-start', 0, $overrides );
 
 		return compact( 'module', 'code', 'id' );
 	}
 
-	public static function add_process_update( $reference, $data = false ) {
-		self::add( $reference['module'], $reference['code'], $data, 'process-update', $reference['id'] );
+	public static function add_process_update( $reference, $data = false, $overrides = array() ) {
+		self::add( $reference['module'], $reference['code'], $data, 'process-update', $reference['id'], $overrides );
 	}
 
-	public static function add_process_stop( $reference, $data = false ) {
-		self::add( $reference['module'], $reference['code'], $data, 'process-stop', $reference['id'] );
+	public static function add_process_stop( $reference, $data = false, $overrides = array() ) {
+		self::add( $reference['module'], $reference['code'], $data, 'process-stop', $reference['id'], $overrides );
 	}
 
-	private static function add( $module, $code, $data, $type, $parent_id = 0 ) {
+	private static function add( $module, $code, $data, $type, $parent_id = 0, $overrides = array() ) {
 		if ( defined( 'WP_CLI' ) && WP_CLI ) {
 			$url = 'wp-cli';
 		} else if ( ( is_callable( 'wp_doing_cron' ) && wp_doing_cron() ) || ( defined( 'DOING_CRON' ) && DOING_CRON ) ) {
@@ -80,7 +80,7 @@ final class ITSEC_Log {
 			$url = 'unknown';
 		}
 
-		$data = array(
+		$data = array_merge( array(
 			'parent_id'      => $parent_id,
 			'module'         => $module,
 			'code'           => $code,
@@ -94,7 +94,7 @@ final class ITSEC_Log {
 			'blog_id'        => get_current_blog_id(),
 			'user_id'        => get_current_user_id(),
 			'remote_ip'      => ITSEC_Lib::get_ip(),
-		);
+		), $overrides );
 
 		$log_type = ITSEC_Modules::get_setting( 'global', 'log_type' );
 

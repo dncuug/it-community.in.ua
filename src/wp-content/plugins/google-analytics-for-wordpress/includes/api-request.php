@@ -16,7 +16,7 @@ final class MonsterInsights_API_Request {
 	 *
 	 * @var string
 	 */
-	public $base = 'www.monsterinsights.com/v1/';
+	public $base = 'api.monsterinsights.com/v2/';
 
 	/**
 	 * Current API route.
@@ -44,6 +44,15 @@ final class MonsterInsights_API_Request {
 	 * @var bool|string
 	 */
 	public $method = false;
+
+	/**
+	 * Is a network request.
+	 *
+	 * @since 7.2.0
+	 *
+	 * @var bool
+	 */
+	public $network = false;
 
 	/**
 	 * API token.
@@ -109,6 +118,15 @@ final class MonsterInsights_API_Request {
 	public $plugin = false;
 
 	/**
+	 * URL to test connection with.
+	 *
+	 * @since 7.3.2
+	 *
+	 * @var string
+	 */
+	public $testurl = '';
+
+	/**
 	 * Additional data to add to request body
 	 *
 	 * @since 7.0.0
@@ -134,11 +152,11 @@ final class MonsterInsights_API_Request {
 		$this->protocol  = 'https://';
 		$this->url       = trailingslashit( $this->protocol . $this->base . $this->route );
 		$this->method    = $method;
+		$this->network   = is_network_admin() || ! empty( $args['network'] );
 
-		$default_token   = ! empty( $args['network'] ) && $args['network'] ? MonsterInsights()->auth->get_network_token() : MonsterInsights()->auth->get_token();
-		$default_key     = ! empty( $args['network'] ) && $args['network'] ? MonsterInsights()->auth->get_network_key()   : MonsterInsights()->auth->get_key();
-		
-		
+		$default_token   = $this->network ? MonsterInsights()->auth->get_network_token() : MonsterInsights()->auth->get_token();
+		$default_key     = $this->network ? MonsterInsights()->auth->get_network_key()   : MonsterInsights()->auth->get_key();
+
 		$this->token     = ! empty( $args['token'] )     ? $args['token']  : $default_token;
 		$this->key       = ! empty( $args['key'] ) 	     ? $args['key']    : $default_key;
 		$this->tt        = ! empty( $args['tt'] ) 		 ? $args['tt']     : '';
@@ -150,12 +168,12 @@ final class MonsterInsights_API_Request {
 		$this->site_url  = is_network_admin() ? network_admin_url() : site_url();
 
 		if ( monsterinsights_is_pro_version() ) {
-			$this->license   = is_network_admin() || ( ! empty( $args['network'] ) && $args['network'] ) ? MonsterInsights()->license->get_network_license_key() : MonsterInsights()->license->get_site_license_key();
+			$this->license   = $this->network ? MonsterInsights()->license->get_network_license_key() : MonsterInsights()->license->get_site_license_key();
 		}
 		$this->plugin    = MonsterInsights()->plugin_slug;
 		$this->miversion = MONSTERINSIGHTS_VERSION;
-		$this->sitei     = ! empty( $args['sitei'] ) ? $args['sitei'] : '';
-
+		$this->sitei     = ! empty( $args['sitei'] )   ? $args['sitei'] : '';
+		$this->testurl   = ! empty( $args['testurl'] ) ? $args['testurl']    : '';
 	}
 
 	/**
@@ -167,8 +185,13 @@ final class MonsterInsights_API_Request {
 	 */
 	public function request() {
 		// Make sure we're not blocked
-		if ( $this->is_blocked( $this->url ) ) {
-			return new WP_Error( 'api-error', __( 'The firewall of your server is blocking outbound calls. Please contact your hosting provider to fix this issue.', 'google-analytics-for-wordpress' ) );
+		$blocked = $this->is_blocked( $this->url );
+		if ( $blocked || is_wp_error( $blocked )  ) {
+			if ( is_wp_error( $blocked ) ) {
+				return new WP_Error( 'api-error', sprintf( __( 'The firewall of your server is blocking outbound calls. Please contact your hosting provider to fix this issue. %s', 'google-analytics-for-wordpress' ), $blocked->get_error_message() ) );
+			} else {
+				return new WP_Error( 'api-error', __( 'The firewall of your server is blocking outbound calls. Please contact your hosting provider to fix this issue.', 'google-analytics-for-wordpress' ) );
+			}
 		}
 
 		// Build the body of the request.
@@ -181,7 +204,7 @@ final class MonsterInsights_API_Request {
 		if ( ! empty( $this->key ) ) {
 			$body['key'] = $this->key;
 		}
-		
+
 		if ( ! empty( $this->tt ) ) {
 			$body['tt'] = $this->tt;
 		}
@@ -225,6 +248,8 @@ final class MonsterInsights_API_Request {
 
 		$body['timezone'] = date('e');
 
+		$body['network']  = $this->network ? 'network' : 'site';
+
 		$body['ip']   = ! empty( $_SERVER['SERVER_ADDR'] ) ? $_SERVER['SERVER_ADDR'] : '';
 
 		// This filter will be removed in the future.
@@ -257,7 +282,13 @@ final class MonsterInsights_API_Request {
 
 		// Perform the query and retrieve the response.
 		$response      = 'GET' == $this->method ? wp_remote_get( esc_url_raw( $this->url ) . '?' . $string, $data ) : wp_remote_post( esc_url_raw( $this->url ), $data );
+
 		//return new WP_Error( 'debug', '<pre>' . var_export( $response, true ) . '</pre>' );
+
+		if ( is_wp_error( $response ) ) {
+			return $response;
+		}
+
 		$response_code = wp_remote_retrieve_response_code( $response );
 		$response_body = json_decode( wp_remote_retrieve_body( $response ), true );
 		//return new WP_Error( 'debug', '<pre>' . var_export( $response_body, true ) . '</pre>' );
@@ -270,7 +301,7 @@ final class MonsterInsights_API_Request {
 		// If not a 200 status header, send back error.
 		if ( 200 != $response_code ) {
 			$type  = ! empty( $response_body['type'] ) ? $response_body['type'] : 'api-error';
-			
+
 			if ( empty( $response_code ) ) {
 				return new WP_Error( $type, __( 'The API was unreachable.', 'google-analytics-for-wordpress' ) );
 			}
@@ -290,12 +321,9 @@ final class MonsterInsights_API_Request {
 
 		// If TT required
 		if ( ! empty( $this->tt ) ) {
-			if ( empty( $response_body['tt'] ) || $response_body['tt'] != $this->tt ) {
+			if ( empty( $response_body['tt'] ) || ! hash_equals( $this->tt, $response_body['tt'] ) ) {
 				// TT isn't set on return or doesn't match
 				return new WP_Error( 'validation-error', sprintf( __( 'Improper API request.', 'google-analytics-for-wordpress' ) ) );
-			} else {
-				// if the TT is valid, reset so it cannot be replayed
-				MonsterInsights()->api_auth->rotate_tt();
 			}
 		}
 
@@ -351,21 +379,22 @@ final class MonsterInsights_API_Request {
 	}
 
 	private function is_blocked( $url = '' ) {
-		if ( defined( 'AIRMDE_VER' ) ) {
-			return false; // Airplane mode is active
+		global $Airplane_Mode_Core;
+		if ( defined( 'AIRMDE_VER' ) && ! empty( $Airplane_Mode_Core ) && $Airplane_Mode_Core->enabled() ) {
+			return new WP_Error( 'api-error', __( 'Reason: The API was unreachable because the Airplane Mode plugin is active.', 'google-analytics-for-wordpress' ) );
 		}
 
 		// The below page is a testing empty content HTML page used for firewall/router login detection
 		// and for image linking purposes in Google Images. We use it to test outbound connections since it is run on google.com
 		// and is only a few bytes large. Plus on Google's main CDN so it loads in most places in 0.07 seconds or less. Perfect for our
 		// use case of quickly testing outbound connections. 
-		$testurl = 'http://www.google.com/blank.html';
+		$testurl = ! empty( $this->testurl ) ? $this->testurl :'http://www.google.com/blank.html';
 		if ( defined( 'WP_HTTP_BLOCK_EXTERNAL' ) && WP_HTTP_BLOCK_EXTERNAL ) {
 			if ( defined( 'WP_ACCESSIBLE_HOSTS' ) ) {
 				$wp_http      = new WP_Http();
 				$on_blacklist = $wp_http->block_request( $url );
 				if ( $on_blacklist ) {
-					return true;
+					return new WP_Error( 'api-error', __( 'Reason: The API was unreachable because the API url is on the WP HTTP blocklist.', 'google-analytics-for-wordpress' ) );
 				} else {
 					$params = array(
 						'sslverify'     => false,
@@ -377,11 +406,15 @@ final class MonsterInsights_API_Request {
 					if( ! is_wp_error( $response ) && $response['response']['code'] >= 200 && $response['response']['code'] < 300 ) {
 						return false;
 					} else {
-						return true;
+						if ( is_wp_error( $response ) ) {
+							return $response;
+						} else {
+							return new WP_Error( 'api-error', __( 'Reason: The API was unreachable because the call to Google failed.', 'google-analytics-for-wordpress' ) );
+						}
 					}
 				}
 			} else {
-				return true;
+				return new WP_Error( 'api-error', __( 'Reason: The API was unreachable because no external hosts are allowed on this site.', 'google-analytics-for-wordpress' ) );
 			}
 		} else {
 			$params = array(
@@ -391,11 +424,15 @@ final class MonsterInsights_API_Request {
 				'body'          => ''
 			);
 			$response = wp_remote_get( $testurl, $params );
-			
+
 			if( ! is_wp_error( $response ) && $response['response']['code'] >= 200 && $response['response']['code'] < 300 ) {
 				return false;
 			} else {
-				return true;
+				if ( is_wp_error( $response ) ) {
+					return $response;
+				} else {
+					return new WP_Error( 'api-error', __( 'Reason: The API was unreachable because the call to Google failed.', 'google-analytics-for-wordpress' ) );
+				}
 			}
 		}
 	}

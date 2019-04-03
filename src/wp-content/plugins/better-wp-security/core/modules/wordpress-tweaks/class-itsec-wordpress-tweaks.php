@@ -447,7 +447,7 @@ final class ITSEC_WordPress_Tweaks {
 
 	public function add_block_tabnapping_script() {
 		wp_enqueue_script( 'blankshield', plugins_url( 'js/blankshield/blankshield.min.js', __FILE__ ), array(), ITSEC_Core::get_plugin_build(), true );
-		wp_enqueue_script( 'itsec-wt-block-tabnapping', plugins_url( 'js/block-tabnapping.js', __FILE__ ), array( 'blankshield' ), ITSEC_Core::get_plugin_build(), true );
+		wp_enqueue_script( 'itsec-wt-block-tabnapping', plugins_url( 'js/block-tabnapping.min.js', __FILE__ ), array( 'blankshield' ), ITSEC_Core::get_plugin_build(), true );
 	}
 
 	/**

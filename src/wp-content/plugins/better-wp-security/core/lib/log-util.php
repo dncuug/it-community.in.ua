@@ -59,7 +59,7 @@ final class ITSEC_Log_Util {
 
 
 		$get_count = false;
-		$min_timestamp = false;
+		$min_timestamp = $max_timestamp = false;
 
 		if ( isset( $filters['__get_count'] ) ) {
 			if ( $filters['__get_count'] ) {
@@ -73,6 +73,12 @@ final class ITSEC_Log_Util {
 			$min_timestamp = $filters['__min_timestamp'];
 			unset( $filters['__min_timestamp'] );
 		}
+
+		if ( isset( $filters['__max_timestamp'] ) ) {
+			$max_timestamp = $filters['__max_timestamp'];
+			unset( $filters['__max_timestamp'] );
+		}
+
 
 		$limit = max( 0, min( 100, intval( $limit ) ) );
 		$page = max( 1, intval( $page ) );
@@ -171,8 +177,13 @@ final class ITSEC_Log_Util {
 		}
 
 		if ( false !== $min_timestamp ) {
-			$where_entries[] = 'init_timestamp>%s';
+			$where_entries[] = 'timestamp>%s';
 			$prepare_args[] = date( 'Y-m-d H:i:s', $min_timestamp );
+		}
+
+		if ( false !== $max_timestamp ) {
+			$where_entries[] = 'timestamp<%s';
+			$prepare_args[] = date( 'Y-m-d H:i:s', $max_timestamp );
 		}
 
 		$query .= ' WHERE ' . implode( ' AND ', $where_entries );

@@ -352,6 +352,16 @@ final class ITSEC_Form {
 		$this->add_custom_input( $var, $options );
 	}
 
+	public function add_html5_input( $var, $type, $options = array() ) {
+		if ( ! is_array( $options ) ) {
+			$options = array( 'value' => $options );
+		}
+
+		$options['type'] = $type;
+
+		$this->add_custom_input( $var, $options );
+	}
+
 	public function add_textarea( $var, $options = array() ) {
 		if ( ! is_array( $options ) ) {
 			$options = array( 'value' => $options );

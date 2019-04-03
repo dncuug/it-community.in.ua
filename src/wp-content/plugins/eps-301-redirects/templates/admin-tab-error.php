@@ -6,7 +6,7 @@
  * The main admin area for the redirects tab.
  *
  * @package    EPS 301 Redirects
- * @author     Shawn Wernig ( shawn@eggplantstudios.ca )
+ * @author     WebFactory Ltd
  */
 ?>
 
@@ -25,8 +25,4 @@
     <div class="left">
         <?php do_action('eps_redirects_panels_left'); ?>
     </div>
-</div>
-    
-    
-    
-    
+</div> 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Redis Object Cache - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-03-22 10:23:41+0000\n"
+"PO-Revision-Date: 2018-11-28 02:54:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,25 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: Plugins - Redis Object Cache - Stable (latest release)\n"
 
-#: includes/admin-page.php:60
-msgid "Diagnostics"
-msgstr "Диагностика"
+#: includes/admin-page.php:18
+msgid "Download for Free"
+msgstr "Скачайте бесплатно"
 
-#: includes/admin-page.php:66
+#: includes/admin-page.php:11
+msgid "Are your email addresses protected?"
+msgstr "Защищен ли ваш адрес email?"
+
+#: includes/admin-page.php:14
+msgid "Enjoy a clean inbox and peace of mind knowing that your email address is safe from email-harvesting robots."
+msgstr "Получайте спокойствие и удовольствие от чистоты вашей почты, зная что ваш адрес в безопасности от ботов-сборщиков адресов эл.почты."
+
+#: includes/admin-page.php:90
 msgid "Show Diagnostics"
 msgstr "Показать диагностику"
+
+#: includes/admin-page.php:84
+msgid "Diagnostics"
+msgstr "Диагностика"
 
 #: includes/wp-cli-commands.php:144 redis-cache.php:270
 msgid "Object cache drop-in could not be updated."
@@ -39,13 +51,9 @@ msgstr "Найдено неизвестное вкрапление объект�
 msgid "Redis object cache already enabled."
 msgstr "Объектный кеш Redis уже активен"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "https://till.im/"
 msgstr "https://till.im/"
-
-#. Description of the plugin/theme
-msgid "A persistent object cache backend powered by Redis. Supports Predis, PhpRedis, HHVM, replication, clustering and WP-CLI."
-msgstr "Постоянный объектный кеш на основе Redis. Поддерживает Predis, PhpRedis (PECL), HHVM, репликацию, кластеринг и WP-CLI."
 
 #: includes/servers-list.php:76
 msgid "No"
@@ -59,29 +67,53 @@ msgstr "Да"
 msgid "Server"
 msgstr "Сервер"
 
-#: includes/admin-page.php:54 includes/servers-list.php:9
+#: includes/admin-page.php:77 includes/servers-list.php:9
 msgid "Servers"
 msgstr "Сервера"
 
-#: includes/admin-page.php:8
+#: includes/admin-page.php:26
 msgid "Overview"
 msgstr "Обзор"
+
+#. Description of the plugin
+msgid "A persistent object cache backend powered by Redis. Supports Predis, PhpRedis, HHVM, replication, clustering and WP-CLI."
+msgstr "Постоянный объектный кеш на основе Redis. Поддерживает Predis, PhpRedis (PECL), HHVM, репликацию, кластеринг и WP-CLI."
 
 #: includes/wp-cli-commands.php:23 redis-cache.php:149
 msgid "Disabled"
 msgstr "Отключено"
 
-#: includes/admin-page.php:13
+#: includes/admin-page.php:31
 msgid "Status:"
 msgstr "Состояние:"
 
-#. Author of the plugin/theme
+#: redis-cache.php:162
+msgid "Unknown"
+msgstr "Не известно"
+
+#. Author of the plugin
 msgid "Till Krüss"
 msgstr "Till Krüss"
 
-#. Plugin URI of the plugin/theme
+#. Plugin URI of the plugin
 msgid "https://wordpress.org/plugins/redis-cache/"
 msgstr "https://ru.wordpress.org/plugins/redis-cache/"
+
+#: redis-cache.php:240
+msgid "This plugin requires PHP 5.4 or greater."
+msgstr "Этот плагин требует PHP 5.4 или новее"
+
+#: redis-cache.php:224
+msgid "An unknown object cache drop-in was found. To use Redis, <a href=\"%s\">please replace it now</a>."
+msgstr "Найдено неизвестное вкрапление объектного кеша. Для использования Redis <a href=\"%s\">замените его</a>."
+
+#: redis-cache.php:219
+msgid "The Redis object cache drop-in is outdated. Please <a href=\"%s\">update it now</a>."
+msgstr "Вкрапление объектного кеша Redis устарело. <a href=\"%s\">Обновите его</a>."
+
+#: includes/wp-cli-commands.php:29 redis-cache.php:158
+msgid "Not Connected"
+msgstr "Не подключено"
 
 #: redis-cache.php:264
 msgid "Object cache could not be flushed."
@@ -107,26 +139,6 @@ msgstr "Объектный кеш не может быть активирова�
 msgid "Object cache enabled."
 msgstr "Объектный кеш активен"
 
-#: redis-cache.php:240
-msgid "This plugin requires PHP 5.4 or greater."
-msgstr "Этот плагин требует PHP 5.4 или новее"
-
-#: redis-cache.php:224
-msgid "An unknown object cache drop-in was found. To use Redis, <a href=\"%s\">please replace it now</a>."
-msgstr "Найдено неизвестное вкрапление объектного кеша. Для использования Redis <a href=\"%s\">замените его</a>."
-
-#: redis-cache.php:219
-msgid "The Redis object cache drop-in is outdated. Please <a href=\"%s\">update it now</a>."
-msgstr "Вкрапление объектного кеша Redis устарело. <a href=\"%s\">Обновите его</a>."
-
-#: redis-cache.php:162
-msgid "Unknown"
-msgstr "Не известно"
-
-#: includes/wp-cli-commands.php:29 redis-cache.php:158
-msgid "Not Connected"
-msgstr "Не подключено"
-
 #: includes/wp-cli-commands.php:26 redis-cache.php:154
 msgid "Connected"
 msgstr "Подключено"
@@ -135,32 +147,31 @@ msgstr "Подключено"
 msgid "Redis"
 msgstr "Redis"
 
-#: includes/admin-page.php:49
+#: includes/admin-page.php:67
 msgid "Disable Object Cache"
 msgstr "Отключить объектный кеш"
 
-#: includes/admin-page.php:47
+#: includes/admin-page.php:65
 msgid "Enable Object Cache"
 msgstr "Включить объектный кеш"
 
-#: includes/admin-page.php:43
+#: includes/admin-page.php:61
 msgid "Flush Cache"
 msgstr "Очистить кеш"
 
-#: includes/admin-page.php:33
+#: includes/admin-page.php:51
 msgid "Max. TTL:"
 msgstr "Макс время жизни:"
 
-#: includes/admin-page.php:26
+#: includes/admin-page.php:44
 msgid "Key Prefix:"
 msgstr "Префикс ключей:"
 
-#: includes/admin-page.php:19
+#: includes/admin-page.php:37
 msgid "Client:"
 msgstr "Клиент:"
 
-#. #-#-#-#-#  redis-cache-code.pot (Redis Object Cache 1.3.8)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
 #: includes/admin-page.php:6 redis-cache.php:58
 msgid "Redis Object Cache"
 msgstr "Redis объектный кэш"
