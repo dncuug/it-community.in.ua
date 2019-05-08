@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-02 08:25:32+0000\n"
+"PO-Revision-Date: 2019-04-11 15:52:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,15 +20,15 @@ msgstr "Puntuación SEO: %s"
 msgid "If a Wikipedia page for you or your organization exists, add it too."
 msgstr "Si existe una página tuya o de tu organización en la Wikipedia añádela también."
 
-#: admin/class-admin.php:273
+#: admin/class-admin.php:272
 msgid "Pinterest profile URL"
 msgstr "URL del perfil de Pinterest"
 
-#: admin/class-admin.php:271
+#: admin/class-admin.php:270
 msgid "LinkedIn profile URL"
 msgstr "URL del perfil de LinkedIn"
 
-#: admin/class-admin.php:269
+#: admin/class-admin.php:268
 msgid "Instagram profile URL"
 msgstr "URL del perfil de Instagram"
 
@@ -2149,7 +2149,7 @@ msgstr "Por defecto es %2$s, actualmente: %1$s"
 msgid "Allow search engines to show this %s in search results?"
 msgstr "¿Permitir a los motores de búsqueda mostrar esta %s en los resultados?"
 
-#: frontend/class-frontend.php:1193 admin/menu/class-admin-menu.php:89
+#: frontend/class-frontend.php:1176 admin/menu/class-admin-menu.php:89
 msgid "Search Appearance"
 msgstr "Apariencia en el buscador"
 
@@ -2897,7 +2897,7 @@ msgstr "Guardar cambios"
 #: admin/formatter/class-metabox-formatter.php:206
 #: admin/class-multiple-keywords-modal.php:39
 msgid "1 year free updates and upgrades included!"
-msgstr "¡Incluye 1 año de actualizaciones gratuitas!"
+msgstr "¡1 año de soporte y actualizaciones gratuitas incluido!"
 
 #. translators: %2$s expands to 'RS Head Cleaner' plugin name of possibly
 #. conflicting plugin with regard to differentiating output between search
@@ -2965,7 +2965,7 @@ msgstr "Variables disponibles"
 msgid "If you want more help creating awesome content, check out our %2$sSEO copywriting course%3$s. Do you want to know all about the features of the plugin, consider doing our %1$s!"
 msgstr "Si quieres más ayuda para crear contenido impactante revisa nuestro %2$scurso de escritura SEO%3$s. ¿Quieres conocer todas las características del plugin?, ¡plantéate hacer  nuestro %1$s!"
 
-#: admin/class-admin.php:304
+#: admin/class-admin.php:303
 msgid "Scroll to see the table content."
 msgstr "Navega para ver el contenido de la tabla."
 
@@ -3249,7 +3249,7 @@ msgstr "%1$s por %2$s"
 
 #. translators: %s: '%%term_title%%' variable used in titles and meta's
 #. template that's not compatible with the given template
-#: admin/class-admin.php:300
+#: admin/class-admin.php:299
 msgid "Warning: the variable %s cannot be used in this template. See the help center for more info."
 msgstr "Aviso: la variable %s no puede usarse en esta plantilla. Revisa el centro de ayuda para más información."
 
@@ -3657,7 +3657,7 @@ msgstr "Abre el artículo de la base de conocimiento en una nueva ventana o lée
 msgid "Search results"
 msgstr "Resultados de búsqueda"
 
-#: admin/class-admin.php:303
+#: admin/class-admin.php:302
 msgid "Yoast SEO video tutorial"
 msgstr "Tutorial en vídeo de Yoast SEO"
 
@@ -4028,22 +4028,22 @@ msgstr "La primera verdadera solución SEO todo en uno para WordPress, incluyend
 msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
-#: wp-seo-main.php:636
+#: wp-seo-main.php:639
 msgid "Activation failed:"
 msgstr "Ha fallado la activación:"
 
-#: wp-seo-main.php:626
+#: wp-seo-main.php:629
 msgid "The filter extension seem to be unavailable. Please ask your web host to enable it."
 msgstr "La extensión filtro parece no estar disponible. Por favor, pide a tu proveedor de alojamiento web que la habilite."
 
 #. translators: %1$s expands to Yoast SEO, %2$s / %3$s: links to the
 #. installation manual in the Readme for the Yoast SEO code repository on
 #. GitHub
-#: wp-seo-main.php:602
+#: wp-seo-main.php:605
 msgid "The %1$s plugin installation is incomplete. Please refer to %2$sinstallation instructions%3$s."
 msgstr "La instalación del plugin %1$s no se ha completado. Por favor, consulta las %2$sinstrucciones de instalación%3$s."
 
-#: wp-seo-main.php:580
+#: wp-seo-main.php:583
 msgid "The Standard PHP Library (SPL) extension seem to be unavailable. Please ask your web host to enable it."
 msgstr "La extensión de librería estándar PHP (SPL) parece no estar disponible. Por favor, pide a tu proveedor de hosting que la active. "
 
@@ -4113,15 +4113,15 @@ msgid "You searched for %s"
 msgstr "Has buscado %s"
 
 #. translators: %s expands to a twitter user name.
-#: inc/options/class-wpseo-option-social.php:180
+#: inc/options/class-wpseo-option-social.php:178
 msgid "%s does not seem to be a valid Twitter user-id. Please correct."
 msgstr "%s no parece ser un user-id válido de Twitter. Por favor, corrígelo."
 
-#: inc/options/class-wpseo-option-social.php:94
+#: inc/options/class-wpseo-option-social.php:93
 msgid "Summary with large image"
 msgstr "Resumen con imagen grande"
 
-#: inc/options/class-wpseo-option-social.php:93
+#: inc/options/class-wpseo-option-social.php:92
 msgid "Summary"
 msgstr "Resumen"
 
@@ -4314,12 +4314,12 @@ msgstr "Una variable de reemplazo solamente puede contener caracteres alfanumér
 
 #. Translators: %1$s resolves to the SEO menu item, %2$s resolves to the Search
 #. Appearance submenu item.
-#: frontend/class-frontend.php:1191
+#: frontend/class-frontend.php:1174
 msgid "Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [%1$s - %2$s] menu and set up a template."
 msgstr "Aviso solo para el Administrador: esta página no muestra una meta description porque no la tiene. Haz una de estas dos cosas: escribe una específicamente para esta página o ve al menú [%1$s - %2$s] y configura una plantilla."
 
 #: inc/options/class-wpseo-option-titles.php:207
-#: frontend/class-frontend.php:533
+#: frontend/class-frontend.php:532
 msgid "Page not found"
 msgstr "Página no encontrada"
 
@@ -4327,13 +4327,13 @@ msgstr "Página no encontrada"
 #. translators: %s expands to a time period, i.e. month name, year or specific
 #. date.
 #: inc/options/class-wpseo-option-titles.php:266
-#: frontend/class-frontend.php:510 frontend/class-frontend.php:514
-#: frontend/class-frontend.php:518
+#: frontend/class-frontend.php:509 frontend/class-frontend.php:513
+#: frontend/class-frontend.php:517
 msgid "%s Archives"
 msgstr "%s archivos"
 
 #. translators: %s expands to the search phrase.
-#: frontend/class-frontend.php:469
+#: frontend/class-frontend.php:468
 msgid "Search for \"%s\""
 msgstr "Buscar por \"%s\""
 
@@ -5104,7 +5104,7 @@ msgstr "Pinterest"
 msgid "Other"
 msgstr "Otro"
 
-#: frontend/class-frontend.php:521 admin/pages/metas.php:25
+#: frontend/class-frontend.php:520 admin/pages/metas.php:25
 msgid "Archives"
 msgstr "Archivos"
 
@@ -5470,23 +5470,23 @@ msgstr "Nueva meta description de Yoast"
 msgid "Existing Yoast Meta Description"
 msgstr "Meta description de Yoast actual"
 
-#: admin/class-admin.php:267
+#: admin/class-admin.php:266
 msgid "Facebook profile URL"
 msgstr "URL del perfil  de Facebook"
 
-#: admin/class-admin.php:275
+#: admin/class-admin.php:274
 msgid "Twitter username (without @)"
 msgstr "Usuario de Twitter (sin @)"
 
-#: languages/wordpress-seojs.php:139 admin/class-admin.php:232
+#: languages/wordpress-seojs.php:139 admin/class-admin.php:231
 msgid "FAQ"
 msgstr "Preguntas frecuentes"
 
-#: admin/class-admin.php:228
+#: admin/class-admin.php:227
 msgid "Premium Support"
 msgstr "Soporte premium"
 
-#: languages/wordpress-seojs.php:209 admin/class-admin.php:218
+#: languages/wordpress-seojs.php:209 admin/class-admin.php:217
 #: admin/google_search_console/class-gsc-platform-tabs.php:42
 #: admin/taxonomy/class-taxonomy-metabox.php:150
 #: admin/taxonomy/class-taxonomy-metabox.php:158
@@ -5504,7 +5504,7 @@ msgstr "Debes %1$sir a tus ajustes de lectura%2$s y desactivar la casilla de vis
 msgid "Huge SEO Issue: You're blocking access to robots."
 msgstr "Enorme problema de SEO: Estás bloqueando el acceso a los robots."
 
-#: admin/class-admin.php:182
+#: admin/class-admin.php:181
 msgid "Posts"
 msgstr "Entradas"
 
@@ -5554,7 +5554,7 @@ msgstr "Mapas del sitio XML"
 msgid "Social"
 msgstr "Social"
 
-#: inc/class-wpseo-admin-bar-menu.php:467 frontend/class-frontend.php:1192
+#: inc/class-wpseo-admin-bar-menu.php:467 frontend/class-frontend.php:1175
 #: admin/menu/class-admin-menu.php:38
 #: admin/menu/class-network-admin-menu.php:35
 msgid "SEO"

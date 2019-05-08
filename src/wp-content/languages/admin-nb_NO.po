@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.1.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-25 12:57:05+0000\n"
+"PO-Revision-Date: 2019-04-05 09:09:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8740,10 +8740,6 @@ msgstr "Denne tidssonen bruker ikke sommertid."
 msgid "Are you sure you wish to delete these files and data?"
 msgstr "Er du sikker på at du vil slette disse filene og data?"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:610
-msgid "Inactive:"
-msgstr "Inaktive:"
-
 #. translators: %s: plugin count
 #: wp-admin/includes/class-wp-plugins-list-table.php:442
 msgid "Must-Use <span class=\"count\">(%s)</span>"
@@ -8773,6 +8769,10 @@ msgstr "Slett utvidelse"
 #: wp-admin/plugins.php:321
 msgid "You are about to remove the following plugin:"
 msgstr "Du er i ferd med å fjerne følgende utvidelse:"
+
+#: wp-admin/includes/class-wp-plugins-list-table.php:610
+msgid "Inactive:"
+msgstr "Inaktiv:"
 
 #: wp-admin/includes/file.php:791
 msgid "File is empty. Please upload something more substantial."

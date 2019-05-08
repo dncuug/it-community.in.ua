@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-08 19:22:27+0000\n"
+"PO-Revision-Date: 2019-04-05 08:32:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5453,9 +5453,7 @@ msgid ""
 "\t\tto include  in your posts and comments. Enjoy all sorts of options and embrace your inner nerd."
 msgstr ""
 "%1$s är ett kraftfullt märkspråk för att skriva komplexa matematiska ekvationer och formler.\n"
-"\t\tJetpack kombinerar kraften hos %1$s med enkelheten i WordPress för att ge dig den bästa\n"
-"\t\tplattformen för mattebloggar. Använd $latex din latex-kod här$ eller [latex]din latex-kod här[/latex]\n"
-"\t\tför att inkludera i dina inlägg och kommentarer. Njut av alternativ av alla typer och omfamna din inre nörd."
+"Jetpack kombinerar kraften hos %1$s med enkelheten i WordPress för att ge dig den bästa plattformen för mattebloggar. Använd $latex din latex-kod här$ eller [latex]din latex-kod här[/latex] för att inkludera i dina inlägg och kommentarer. Njut av alternativ av alla typer och omfamna din inre nörd."
 
 #: modules/module-info.php:120
 msgid ""
